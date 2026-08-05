@@ -87,6 +87,23 @@
     }
   };
 
+  /* Carry search/filter state across the language switch. There are two of
+     these — the header pill and the footer link — and missing the second one
+     drops ?id= on detail pages, landing the reader on "not found". Called at
+     boot and again whenever a page rewrites its URL (the catalogue and the
+     schools filter both do, via replaceState), so the links always carry the
+     *current* filters, not the ones the page loaded with. */
+  function syncLangSwitch() {
+    document.querySelectorAll('[data-lang-switch]').forEach(function (link) {
+      let base = link.getAttribute('data-lang-base');
+      if (!base) {
+        base = (link.getAttribute('href') || '').split('?')[0];
+        link.setAttribute('data-lang-base', base);
+      }
+      link.setAttribute('href', base + location.search);
+    });
+  }
+
   const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5S3.5 15 3.5 9.2A4.7 4.7 0 0 1 12 6.6a4.7 4.7 0 0 1 8.5 2.6c0 5.8-8.5 11.3-8.5 11.3Z"/></svg>';
 
   function saveButton(c) {
@@ -227,14 +244,7 @@
       Shortlist.toggle(btn.getAttribute('data-course'));
     });
 
-    /* Carry search/filter state across the language switch. There are two of
-       these — the header pill and the footer link — and missing the second one
-       drops ?id= on detail pages, landing the reader on "not found". */
-    if (location.search) {
-      document.querySelectorAll('[data-lang-switch]').forEach(function (link) {
-        link.href = link.getAttribute('href') + location.search;
-      });
-    }
+    syncLangSwitch();
 
     const yr = document.querySelector('[data-year]');
     if (yr) yr.textContent = I.num(new Date().getFullYear());
@@ -411,6 +421,7 @@
       if (state.sort !== 'date') p.set('sort', state.sort);
       const qs = p.toString();
       history.replaceState(null, '', qs ? '?' + qs : location.pathname);
+      syncLangSwitch();
     }
 
     function renderFilters() {
@@ -705,6 +716,7 @@
           const p = new URLSearchParams();
           if (region) p.set('region', region);
           history.replaceState(null, '', p.toString() ? '?' + p : location.pathname);
+          syncLangSwitch();
           paint();
         });
       });
