@@ -21,10 +21,11 @@ expression is — the summary/audience/highlights columns are left empty for a
 human (or your own copywriting pass) to fill.
 
 Input formats
-    --dataset  Apify dataset export (.json array, .jsonl, or .csv) whose rows
-               carry `source_url` and `page_text` (the cheerio page function
-               and the actor both capture it). Rows already extracted from
-               JSON-LD are skipped unless --all is given.
+    --dataset  Apify dataset export (.json array, .jsonl, or .csv). Rows may
+               come from our crawlers (`source_url` + `page_text`) or from
+               Apify's Website Content Crawler (`url` + `text`/`markdown`).
+               Rows already extracted from JSON-LD are skipped unless --all
+               is given.
     --html     Raw saved pages; tags are stripped to text locally.
 
 Same legal note as the crawlers: whether you may republish a site's listings
@@ -168,7 +169,10 @@ def load_pages(args):
         for item in items:
             if not args.all and item.get("extraction") == "json-ld":
                 continue  # already structured; no model needed
-            text = (item.get("page_text") or "").strip()
+            # page_text is our crawlers' field; text/markdown covers datasets
+            # from Apify's Website Content Crawler (apify/website-content-crawler).
+            text = (item.get("page_text") or item.get("text")
+                    or item.get("markdown") or "").strip()
             if text:
                 yield item.get("source_url") or item.get("url") or "", text
             else:
