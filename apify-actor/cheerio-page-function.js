@@ -65,6 +65,12 @@ async function pageFunction(context) {
     row.source_url = request.url;
     row.scraped_at = new Date().toISOString();
 
+    // Visible page text rides along on every row so pages without JSON-LD
+    // can go through a second, LLM extraction pass (tools/llm-extract.py).
+    const bodyClone = $('body').clone();
+    bodyClone.find('script, style, noscript, svg, iframe').remove();
+    row.page_text = bodyClone.text().replace(/\s+/g, ' ').trim().slice(0, 30000);
+
     const node = nodes.find(isCourse);
     if (node) {
         row.title = text(first(node, 'name', 'headline'));

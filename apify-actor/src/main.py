@@ -150,6 +150,13 @@ async def main():
             if row and row["title"] and (confidence == "json-ld" or
                                          (pattern and re.search(pattern, url))):
                 row["extraction"] = confidence
+                # Visible page text rides along so pages without JSON-LD can
+                # go through the second, LLM extraction pass
+                # (tools/llm-extract.py) after the dataset is exported.
+                for tag in ctx.soup(["script", "style", "noscript"]):
+                    tag.decompose()
+                row["page_text"] = " ".join(
+                    ctx.soup.get_text(" ", strip=True).split())[:30000]
                 rows.append(row)
                 ctx.log.info(f"course: {row['title'][:60]}  [{confidence}]")
             else:
@@ -194,6 +201,7 @@ async def main():
         for row in rows:
             item = {c: row.get(c, "") for c in COLUMNS}
             item["extraction"] = row.get("extraction", "")
+            item["page_text"] = row.get("page_text", "")
             await Actor.push_data(item)
 
         await Actor.set_status_message(

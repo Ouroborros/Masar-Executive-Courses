@@ -45,6 +45,24 @@ python3 tools/merge-catalogue.py import --write
 python3 tools/build.py
 ```
 
+### Sites without JSON-LD: the second, LLM pass
+
+Some targets (executivecourses.com among them) publish no schema.org
+JSON-LD, so their rows arrive as `extraction: "meta"` — a title and nothing
+else. Every dataset row also carries `page_text` (the page's visible text)
+for exactly this case: run it through the metadata extractor, which has
+Claude pull out only the factual fields (school, fee, dates, format,
+location) and writes the same column contract:
+
+```bash
+python3 tools/llm-extract.py --dataset dataset.json --out courses-llm.csv
+python3 tools/spreadsheet-to-batch.py courses-llm.csv --out import/batch-scraped.json
+```
+
+It extracts facts only — course descriptions and other creative copy are
+deliberately out of its schema, because facts are not copyrightable and
+expression is.
+
 The dataset columns match the import spreadsheet exactly, so no reshaping is
 needed. Rows the converter rejects (missing Arabic, unparseable fields) land
 in a `.rejected.csv` with reasons.
