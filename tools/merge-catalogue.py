@@ -7,8 +7,14 @@ awkward to do by hand, so batches are written as JSON and folded in here.
 
     python3 tools/merge-catalogue.py <dir>        # check and report
     python3 tools/merge-catalogue.py <dir> --write
+    python3 tools/merge-catalogue.py <dir> --scraped --write
 
 <dir> holds schools.json (optional) and any number of batch-*.json files.
+
+--scraped admits fact-only records from the scraping pipeline: empty
+audience/highlights/school-about and an unstated founding year are allowed,
+and the price-per-day ceiling reflects real listings. Factual validation
+(the start window, subjects, formats, day and price ranges) is unchanged.
 
 Nothing is written unless every record passes validation: a half-merged
 catalogue is worse than none. Re-running is safe — records whose id is already
@@ -119,7 +125,14 @@ def is_pair(v):
         and v["en"].strip() and v["ar"].strip()
 
 
-def check_school(s, known_ids, errs, where):
+# --scraped relaxes the editorial-completeness checks and nothing else. A
+# fact-only scrape (tools/llm-extract.py, apify-actor) cannot produce an
+# 'about' paragraph, an audience line, highlights, or a founding year without
+# inventing them — so in scraped mode those may be empty. Every factual check
+# (ids, region, subject, format, the start window, langs, days, price) stays
+# hard: facts are exactly what a scrape must get right.
+
+def check_school(s, known_ids, errs, where, scraped=False):
     for f in SCHOOL_FIELDS:
         if f not in s:
             errs.append("{}: school missing field '{}'".format(where, f))
@@ -129,18 +142,21 @@ def check_school(s, known_ids, errs, where):
         errs.append("{}: bad school id '{}'".format(where, sid))
     if sid in known_ids:
         errs.append("{}: duplicate school id '{}'".format(where, sid))
-    for f in ("name", "city", "country", "about"):
+    required_pairs = ("name",) if scraped else ("name", "city", "country", "about")
+    for f in required_pairs:
         if not is_pair(s[f]):
             errs.append("{} [{}]: '{}' is not a filled en/ar pair".format(where, sid, f))
     if s["region"] not in REGIONS:
         errs.append("{} [{}]: unknown region '{}'".format(where, sid, s["region"]))
-    if not isinstance(s["founded"], int) or not 1900 <= s["founded"] <= 2020:
+    founded_ok = isinstance(s["founded"], int) and (
+        1900 <= s["founded"] <= 2020 or (scraped and s["founded"] == 0))
+    if not founded_ok:
         errs.append("{} [{}]: implausible founded year {}".format(where, sid, s["founded"]))
     if not isinstance(s["accreditation"], list):
         errs.append("{} [{}]: accreditation must be a list".format(where, sid))
 
 
-def check_course(c, known_course_ids, school_ids, errs, where):
+def check_course(c, known_course_ids, school_ids, errs, where, scraped=False):
     for f in COURSE_FIELDS:
         if f not in c:
             errs.append("{}: course missing field '{}'".format(where, f))
@@ -172,8 +188,10 @@ def check_course(c, known_course_ids, school_ids, errs, where):
         # Board-level short programmes really do cost this much: the existing
         # catalogue runs 2,042/day (c-agp) and 2,360/day (c-board-fin), so the
         # ceiling has to sit above them or the validator rejects its own data.
+        # Scraped reality outruns the editorial ceiling: Stanford's 2026
+        # short programmes list at up to 2,950/day (29,500 over 10 days).
         per_day = c["price"] / max(c["days"], 1)
-        if not 120 <= per_day <= 2500:
+        if not 120 <= per_day <= (3500 if scraped else 2500):
             errs.append("{} [{}]: {:.0f}/day is implausible ({} over {} days)".format(
                 where, cid, per_day, c["price"], c["days"]))
     if "rating" in c and (not isinstance(c["rating"], (int, float)) or not 3.5 <= c["rating"] <= 5.0):
@@ -184,13 +202,13 @@ def check_course(c, known_course_ids, school_ids, errs, where):
         errs.append("{} [{}]: rating and reviews must come together or not at all".format(where, cid))
     if "popularity" in c and (not isinstance(c["popularity"], int) or not 1 <= c["popularity"] <= 100):
         errs.append("{} [{}]: popularity {}".format(where, cid, c["popularity"]))
-    for f in ("title", "summary", "audience"):
+    for f in ("title", "summary") if scraped else ("title", "summary", "audience"):
         if not is_pair(c[f]):
             errs.append("{} [{}]: '{}' is not a filled en/ar pair".format(where, cid, f))
     h = c["highlights"]
     if not isinstance(h, dict) or not isinstance(h.get("en"), list) or not isinstance(h.get("ar"), list):
         errs.append("{} [{}]: highlights must hold en and ar arrays".format(where, cid))
-    elif len(h["en"]) != len(h["ar"]) or not h["en"]:
+    elif len(h["en"]) != len(h["ar"]) or (not h["en"] and not scraped):
         errs.append("{} [{}]: highlights en/ar length mismatch ({} vs {})".format(
             where, cid, len(h["en"]), len(h["ar"])))
     elif any(not str(x).strip() for x in h["en"] + h["ar"]):
@@ -226,6 +244,7 @@ def main():
         sys.exit(__doc__)
     batch_dir = sys.argv[1]
     write = "--write" in sys.argv
+    scraped = "--scraped" in sys.argv
 
     with open(DATA, encoding="utf-8") as fh:
         src = fh.read()
@@ -246,7 +265,7 @@ def main():
             if isinstance(s, dict) and s.get("id") in have_schools:
                 skipped.append(s["id"])
                 continue
-            check_school(s, seen, errs, "schools.json")
+            check_school(s, seen, errs, "schools.json", scraped=scraped)
             if isinstance(s, dict) and "id" in s:
                 seen.add(s["id"])
                 new_schools.append(s)
@@ -269,7 +288,7 @@ def main():
             if isinstance(c, dict) and c.get("id") in have_courses:
                 skipped.append(c["id"])
                 continue
-            check_course(c, seen_courses, school_ids, errs, name)
+            check_course(c, seen_courses, school_ids, errs, name, scraped=scraped)
             if isinstance(c, dict) and "id" in c:
                 seen_courses.add(c["id"])
                 new_courses.append(c)

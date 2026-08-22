@@ -1,0 +1,178 @@
+[
+ {
+  "id": "s-stanford-graduate-school-of-business",
+  "name": {
+   "en": "Stanford Graduate School of Business",
+   "ar": "كلية ستانفورد للدراسات العليا في الأعمال"
+  },
+  "city": {
+   "en": "Stanford",
+   "ar": "ستانفورد"
+  },
+  "country": {
+   "en": "United States",
+   "ar": "الولايات المتحدة"
+  },
+  "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-kellogg-school-of-management",
+  "name": {
+   "en": "Kellogg School of Management",
+   "ar": "كلية كيلوغ للإدارة"
+  },
+  "city": {
+   "en": "Evanston",
+   "ar": "إيفانستون"
+  },
+  "country": {
+   "en": "United States",
+   "ar": "الولايات المتحدة"
+  },
+  "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-nyu-stern-school-of-business",
+  "name": {
+   "en": "NYU Stern School of Business",
+   "ar": "كلية شتيرن للأعمال بجامعة نيويورك"
+  },
+  "city": {
+   "en": "New York",
+   "ar": "نيويورك"
+  },
+  "country": {
+   "en": "United States",
+   "ar": "الولايات المتحدة"
+  },
+  "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-michigan-ross-executive-education",
+  "name": {
+   "en": "Michigan Ross Executive Education",
+   "ar": "التعليم التنفيذي في كلية روس بجامعة ميشيغان"
+  },
+  "city": {
+   "en": "",
+   "ar": ""
+  },
+  "country": {
+   "en": "United States",
+   "ar": "الولايات المتحدة"
+  },
+  "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-mit-sloan-school-of-management",
+  "name": {
+   "en": "MIT Sloan School of Management",
+   "ar": "كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا"
+  },
+  "city": {
+   "en": "Cambridge",
+   "ar": "كامبريدج"
+  },
+  "country": {
+   "en": "United States",
+   "ar": "الولايات المتحدة"
+  },
+  "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-uc-berkeley-haas-school-of-business",
+  "name": {
+   "en": "UC Berkeley Haas School of Business",
+   "ar": "كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي"
+  },
+  "city": {
+   "en": "Berkeley",
+   "ar": "بيركلي"
+  },
+  "country": {
+   "en": "United States",
+   "ar": "الولايات المتحدة"
+  },
+  "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-harvard-kennedy-school",
+  "name": {
+   "en": "Harvard Kennedy School",
+   "ar": "كلية كينيدي بجامعة هارفارد"
+  },
+  "city": {
+   "en": "Cambridge",
+   "ar": "كامبريدج"
+  },
+  "country": {
+   "en": "United States",
+   "ar": "الولايات المتحدة"
+  },
+  "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-center-for-creative-leadership-singapo",
+  "name": {
+   "en": "Center for Creative Leadership – Singapore",
+   "ar": "مركز القيادة الإبداعية – سنغافورة"
+  },
+  "city": {
+   "en": "Singapore",
+   "ar": "سنغافورة"
+  },
+  "country": {
+   "en": "Singapore",
+   "ar": "سنغافورة"
+  },
+  "region": "asia",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ }
+]
