@@ -26,6 +26,9 @@ import json
 import os
 import re
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import fx
 from datetime import date
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -83,7 +86,7 @@ def course_js(c):
     return (
         "    {{\n"
         "      id: {id}, school: {school}, subject: {subject}, format: {format},\n"
-        "      start: {start}, days: {days}, price: {price}, langs: [{langs}], "
+        "      start: {start}, days: {days}, price: {price},{currency} langs: [{langs}], "
         "{metrics},\n"
         "      title: {title},\n"
         "      summary: {summary},\n"
@@ -93,6 +96,8 @@ def course_js(c):
     ).format(
         id=q(c["id"]), school=q(c["school"]), subject=q(c["subject"]), format=q(c["format"]),
         start=q(c["start"]), days=c["days"], price=c["price"],
+        currency=(" currency: {},".format(q(c["currency"]))
+                  if c.get("currency", "USD") != "USD" else ""),
         langs=", ".join(q(l) for l in c["langs"]),
         metrics=", ".join(metrics),
         title=pair(c["title"], 6), summary=pair(c["summary"], 6),
@@ -182,18 +187,25 @@ def check_course(c, known_course_ids, school_ids, errs, where, scraped=False):
         errs.append("{} [{}]: bad langs {}".format(where, cid, c["langs"]))
     if not isinstance(c["days"], int) or not 2 <= c["days"] <= 20:
         errs.append("{} [{}]: days out of range ({})".format(where, cid, c["days"]))
-    if not isinstance(c["price"], int) or not 300 <= c["price"] <= 60000:
-        errs.append("{} [{}]: price out of range ({})".format(where, cid, c["price"]))
+    # Fees are stored in the currency the source printed (absent = USD);
+    # the sanity bounds below are checked on the USD equivalent via tools/fx.py.
+    currency = c.get("currency", "USD")
+    usd = fx.to_usd(c["price"], currency) if isinstance(c["price"], int) else None
+    if currency not in fx.USD_PER:
+        errs.append("{} [{}]: unknown currency '{}'".format(where, cid, currency))
+    elif not isinstance(c["price"], int) or not 300 <= usd <= 60000:
+        errs.append("{} [{}]: price out of range ({} {})".format(
+            where, cid, c["price"], currency))
     else:
         # Board-level short programmes really do cost this much: the existing
         # catalogue runs 2,042/day (c-agp) and 2,360/day (c-board-fin), so the
         # ceiling has to sit above them or the validator rejects its own data.
         # Scraped reality outruns the editorial ceiling: Stanford's 2026
         # short programmes list at up to 2,950/day (29,500 over 10 days).
-        per_day = c["price"] / max(c["days"], 1)
+        per_day = usd / max(c["days"], 1)
         if not 120 <= per_day <= (3500 if scraped else 2500):
-            errs.append("{} [{}]: {:.0f}/day is implausible ({} over {} days)".format(
-                where, cid, per_day, c["price"], c["days"]))
+            errs.append("{} [{}]: {:.0f} USD/day is implausible ({} {} over {} days)".format(
+                where, cid, per_day, c["price"], currency, c["days"]))
     if "rating" in c and (not isinstance(c["rating"], (int, float)) or not 3.5 <= c["rating"] <= 5.0):
         errs.append("{} [{}]: rating {}".format(where, cid, c["rating"]))
     if "reviews" in c and (not isinstance(c["reviews"], int) or not 5 <= c["reviews"] <= 900):

@@ -32,6 +32,11 @@ window.MASAR_I18N = (function () {
       'filters.upTo': 'Up to {n}',
       'filters.noMax': 'No limit',
 
+      'currency.label': 'Prices in',
+      'currency.orig': 'Course currency',
+      'currency.sar': 'Saudi riyal (SAR)',
+      'currency.note': 'SAR amounts are converted at indicative rates.',
+
       'duration.short': '1–3 days',
       'duration.mid': '4–7 days',
       'duration.long': '8 days or more',
@@ -123,6 +128,11 @@ window.MASAR_I18N = (function () {
       'filters.any': 'الكل',
       'filters.upTo': 'حتى {n}',
       'filters.noMax': 'بلا حدّ',
+
+      'currency.label': 'الأسعار بـ',
+      'currency.orig': 'عملة البرنامج',
+      'currency.sar': 'الريال السعودي',
+      'currency.note': 'مبالغ الريال محوّلة بأسعار صرف استرشادية.',
 
       'duration.short': '1–3 أيام',
       'duration.mid': '4–7 أيام',
@@ -234,15 +244,51 @@ window.MASAR_I18N = (function () {
 
   const numLocale = LANG === 'ar' ? 'ar-u-nu-latn' : 'en';
 
-  function money(value) {
+  /* Fees are stored in each course's original currency; the viewer can opt
+     into seeing everything converted to SAR (rates: MASAR_DATA.fx, a dated
+     snapshot — display only, not billing). */
+  const CURRENCY_KEY = 'masar-currency';
+
+  function getCurrency() {
+    try {
+      return localStorage.getItem(CURRENCY_KEY) === 'sar' ? 'sar' : 'orig';
+    } catch (e) { return 'orig'; }
+  }
+
+  function setCurrency(pref) {
+    try { localStorage.setItem(CURRENCY_KEY, pref === 'sar' ? 'sar' : 'orig'); } catch (e) {}
+  }
+
+  function fxTable() {
+    return (window.MASAR_DATA && window.MASAR_DATA.fx) || { sarPerUsd: 3.75, usdPer: { USD: 1 } };
+  }
+
+  /* USD equivalent of a fee — used for the price filter and price sorting so
+     mixed currencies compare on one scale. Unknown codes fall back 1:1. */
+  function toUsd(value, currency) {
+    const rate = fxTable().usdPer[currency || 'USD'];
+    return value * (rate == null ? 1 : rate);
+  }
+
+  function format(value, code) {
     try {
       return new Intl.NumberFormat(numLocale, {
-        style: 'currency', currency: 'USD',
+        style: 'currency', currency: code,
         currencyDisplay: 'narrowSymbol', maximumFractionDigits: 0
       }).format(value);
     } catch (e) {
-      return '$' + value.toLocaleString('en');
+      return value.toLocaleString('en') + ' ' + code;
     }
+  }
+
+  /* Format a fee in its own currency (default), or converted to SAR when the
+     viewer selected the SAR option. */
+  function money(value, currency) {
+    const code = currency || 'USD';
+    if (getCurrency() === 'sar') {
+      return format(Math.round(toUsd(value, code) * fxTable().sarPerUsd), 'SAR');
+    }
+    return format(value, code);
   }
 
   function shortDate(iso) {
@@ -269,5 +315,6 @@ window.MASAR_I18N = (function () {
     try { return new Intl.NumberFormat(numLocale).format(n); } catch (e) { return String(n); }
   }
 
-  return { LANG, IS_RTL, t, pick, courseCount, dayCount, money, shortDate, monthLabel, num };
+  return { LANG, IS_RTL, t, pick, courseCount, dayCount, money, toUsd,
+    getCurrency, setCurrency, shortDate, monthLabel, num };
 })();

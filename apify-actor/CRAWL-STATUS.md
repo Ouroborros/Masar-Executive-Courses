@@ -101,3 +101,34 @@ pruned them. No browser engine was needed.
 
 Unchanged: robots.txt respected, rates throttled; republishing judgement is
 the operator's, and this file records that the operator directed the crawl.
+
+---
+
+# Currency policy adopted — 2026-08-23 (later the same day)
+
+The operator decided: **keep each fee in the currency the source printed it
+in, and offer SAR as a display option** (no conversion is baked into the
+data). Implementation:
+
+- Course records now carry `currency` (absent = USD). `spreadsheet-to-batch.py`
+  no longer rejects non-USD fees — only rows whose currency is unknown
+  (`UNKNOWN`, the Vlerick/IMI bare fees) stay rejected as unpriceable.
+- `tools/fx.py` + an `fx` block in `assets/js/data.js` hold one dated,
+  indicative rate table (SAR pegged at 3.75/USD; floating rates a snapshot,
+  asOf 2026-01). Pipeline sanity checks (price range, per-day plausibility)
+  run on the USD equivalent; the UI's SAR option converts at display time.
+- `tools/catalogue-gates.py` (new) applies the merge's factual gates to a
+  scraped batch beforehand — days 2–20, USD-equivalent price bounds, one
+  course per title at its next start, titles already in the catalogue — and
+  files every exclusion to `*.rejected.csv`, so the merge runs clean.
+- UI: a currency selector in the site header (both locales) switches between
+  "Course currency" and SAR; the price filter and price sorting compare
+  USD equivalents so mixed currencies rank sensibly. Verified in-browser:
+  CHF 10,900 renders as SAR 51,094 (× 1.25 × 3.75), Arabic pages render ر.س.
+
+Result: merge admitted **10 more schools and 119 more courses** (CAD 44,
+CHF 30, AUD 22, DKK 18, SGD 5, USD 1) on top of the 70 USD courses —
+189 scraped courses across 17 schools now in the catalogue. Still excluded,
+honestly: the 80 unknown-currency Vlerick/IMI rows, UCT's INR-suffixed fees
+(fail the USD-equivalent plausibility floor — likely a source-site error),
+and everything outside the 2–20-day scope.

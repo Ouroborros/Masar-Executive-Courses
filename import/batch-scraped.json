@@ -1,22 +1,23 @@
 [
  {
-  "id": "c-leadership-for-the-21st-century",
-  "school": "s-harvard-kennedy-school",
-  "subject": "leadership",
+  "id": "c-building-an-ai-strategy",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "digital",
   "format": "in-person",
-  "start": "2026-09-13",
-  "days": 6,
-  "price": 12900,
+  "start": "2026-09-01",
+  "days": 3,
+  "price": 5150,
+  "currency": "AUD",
   "langs": [
    "en"
   ],
   "title": {
-   "en": "Leadership for the 21st Century",
-   "ar": "القيادة للقرن الحادي والعشرين"
+   "en": "Building an AI Strategy",
+   "ar": "بناء استراتيجية للذكاء الاصطناعي"
   },
   "summary": {
-   "en": "A 6-day on-campus program from Harvard Kennedy School, running 13 September 2026 to 18 September 2026.",
-   "ar": "برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 13 سبتمبر 2026 إلى 18 سبتمبر 2026."
+   "en": "A 3-day on-campus program from AGSM, University of New South Wales, running 1 September 2026 to 3 September 2026.",
+   "ar": "برنامج حضوري لمدة 3 أيام من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 1 سبتمبر 2026 إلى 3 سبتمبر 2026."
   },
   "highlights": {
    "en": [],
@@ -26,26 +27,117 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
  },
  {
-  "id": "c-climate-change-policy-economics-and-po",
-  "school": "s-harvard-kennedy-school",
-  "subject": "sustainability",
-  "format": "online",
+  "id": "c-leader-as-coach",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "people",
+  "format": "in-person",
+  "start": "2026-09-01",
+  "days": 2,
+  "price": 3950,
+  "currency": "AUD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Leader as Coach",
+   "ar": "القائد كمدرب (كوتش)"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from AGSM, University of New South Wales, running 1 September 2026 to 2 September 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 1 سبتمبر 2026 إلى 2 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
+ },
+ {
+  "id": "c-ai-for-organisational-innovation",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "digital",
+  "format": "in-person",
+  "start": "2026-09-08",
+  "days": 2,
+  "price": 2300,
+  "currency": "AUD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "AI for Organisational Innovation",
+   "ar": "الذكاء الاصطناعي للابتكار المؤسسي"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from AGSM, University of New South Wales, running 8 September 2026 to 9 September 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 8 سبتمبر 2026 إلى 9 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
+ },
+ {
+  "id": "c-authentic-communicator-activating-pres",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "people",
+  "format": "in-person",
+  "start": "2026-09-08",
+  "days": 2,
+  "price": 3950,
+  "currency": "AUD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Authentic Communicator: Activating Presence",
+   "ar": "المتواصل الأصيل: تفعيل الحضور"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from AGSM, University of New South Wales, running 8 September 2026 to 9 September 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 8 سبتمبر 2026 إلى 9 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
+ },
+ {
+  "id": "c-general-manager-program",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "people",
+  "format": "in-person",
   "start": "2026-09-14",
   "days": 5,
-  "price": 5100,
+  "price": 14990,
+  "currency": "AUD",
   "langs": [
    "en"
   ],
   "title": {
-   "en": "Climate Change Policy: Economics and Politics",
-   "ar": "سياسات تغيّر المناخ: الاقتصاد والسياسة"
+   "en": "General Manager Program",
+   "ar": "برنامج المدير العام"
   },
   "summary": {
-   "en": "A 5-day online program from Harvard Kennedy School, running 14 September 2026 to 18 September 2026.",
-   "ar": "برنامج عبر الإنترنت لمدة 5 أيام من كلية كينيدي بجامعة هارفارد، من 14 سبتمبر 2026 إلى 18 سبتمبر 2026."
+   "en": "A 5-day on-campus program from AGSM, University of New South Wales, running 14 September 2026 to 18 September 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 14 سبتمبر 2026 إلى 18 سبتمبر 2026."
   },
   "highlights": {
    "en": [],
@@ -55,26 +147,27 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
  },
  {
-  "id": "c-strategic-management-of-regulatory-and",
-  "school": "s-harvard-kennedy-school",
+  "id": "c-strategic-adaptive-leadership",
+  "school": "s-agsm-university-of-new-south-wales",
   "subject": "strategy",
   "format": "in-person",
-  "start": "2026-09-20",
-  "days": 6,
-  "price": 11300,
+  "start": "2026-09-16",
+  "days": 3,
+  "price": 5150,
+  "currency": "AUD",
   "langs": [
    "en"
   ],
   "title": {
-   "en": "Strategic Management of Regulatory and Enforcement Agencies",
-   "ar": "الإدارة الاستراتيجية للهيئات التنظيمية وهيئات إنفاذ القانون"
+   "en": "Strategic & Adaptive Leadership",
+   "ar": "القيادة الاستراتيجية والتكيفية"
   },
   "summary": {
-   "en": "A 6-day on-campus program from Harvard Kennedy School, running 20 September 2026 to 25 September 2026.",
-   "ar": "برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 20 سبتمبر 2026 إلى 25 سبتمبر 2026."
+   "en": "A 3-day on-campus program from AGSM, University of New South Wales, running 16 September 2026 to 18 September 2026.",
+   "ar": "برنامج حضوري لمدة 3 أيام من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 16 سبتمبر 2026 إلى 18 سبتمبر 2026."
   },
   "highlights": {
    "en": [],
@@ -84,26 +177,27 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
  },
  {
-  "id": "c-executive-leaders-and-government",
-  "school": "s-harvard-kennedy-school",
+  "id": "c-emerging-leader-program",
+  "school": "s-agsm-university-of-new-south-wales",
   "subject": "leadership",
   "format": "in-person",
-  "start": "2026-10-18",
-  "days": 13,
-  "price": 18900,
+  "start": "2026-09-22",
+  "days": 4,
+  "price": 7150,
+  "currency": "AUD",
   "langs": [
    "en"
   ],
   "title": {
-   "en": "Executive Leaders and Government",
-   "ar": "القادة التنفيذيون والحكومة"
+   "en": "Emerging Leader Program",
+   "ar": "برنامج القائد الصاعد"
   },
   "summary": {
-   "en": "A 13-day on-campus program from Harvard Kennedy School, running 18 October 2026 to 30 October 2026.",
-   "ar": "برنامج حضوري لمدة 13 يومًا من كلية كينيدي بجامعة هارفارد، من 18 أكتوبر 2026 إلى 30 أكتوبر 2026."
+   "en": "A 4-day on-campus program from AGSM, University of New South Wales, running 22 September 2026 to 25 September 2026.",
+   "ar": "برنامج حضوري لمدة 4 أيام من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 22 سبتمبر 2026 إلى 25 سبتمبر 2026."
   },
   "highlights": {
    "en": [],
@@ -113,26 +207,177 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
  },
  {
-  "id": "c-investment-decisions-and-behavioral-fi",
-  "school": "s-harvard-kennedy-school",
+  "id": "c-design-thinking-experimentation",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "digital",
+  "format": "in-person",
+  "start": "2026-10-13",
+  "days": 3,
+  "price": 5150,
+  "currency": "AUD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Design Thinking & Experimentation",
+   "ar": "التفكير التصميمي والتجريب"
+  },
+  "summary": {
+   "en": "A 3-day on-campus program from AGSM, University of New South Wales, running 13 October 2026 to 15 October 2026.",
+   "ar": "برنامج حضوري لمدة 3 أيام من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 13 أكتوبر 2026 إلى 15 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
+ },
+ {
+  "id": "c-project-management-excellence",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-10-19",
+  "days": 2,
+  "price": 3950,
+  "currency": "AUD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Project Management Excellence",
+   "ar": "التميز في إدارة المشاريع"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from AGSM, University of New South Wales, running 19 October 2026 to 20 October 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 19 أكتوبر 2026 إلى 20 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
+ },
+ {
+  "id": "c-tackling-complexity-through-leadership",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-10-21",
+  "days": 2,
+  "price": 3950,
+  "currency": "AUD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Tackling Complexity through Leadership",
+   "ar": "مواجهة التعقيد من خلال القيادة"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from AGSM, University of New South Wales, running 21 October 2026 to 22 October 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 21 أكتوبر 2026 إلى 22 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
+ },
+ {
+  "id": "c-ai-for-business-leaders",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "digital",
+  "format": "online",
+  "start": "2026-10-28",
+  "days": 16,
+  "price": 3200,
+  "currency": "AUD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "AI for Business Leaders",
+   "ar": "الذكاء الاصطناعي لقادة الأعمال"
+  },
+  "summary": {
+   "en": "A 16-day online program from AGSM, University of New South Wales, running 28 October 2026 to 12 November 2026.",
+   "ar": "برنامج عبر الإنترنت لمدة 16 يومًا من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 28 أكتوبر 2026 إلى 12 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
+ },
+ {
+  "id": "c-leading-with-emotional-intelligence",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "people",
+  "format": "in-person",
+  "start": "2026-10-29",
+  "days": 2,
+  "price": 3950,
+  "currency": "AUD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Leading with Emotional Intelligence",
+   "ar": "القيادة بالذكاء العاطفي"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from AGSM, University of New South Wales, running 29 October 2026 to 30 October 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 29 أكتوبر 2026 إلى 30 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
+ },
+ {
+  "id": "c-essentials-of-finance-for-non-finance",
+  "school": "s-agsm-university-of-new-south-wales",
   "subject": "finance",
   "format": "in-person",
   "start": "2026-11-04",
   "days": 3,
-  "price": 6100,
+  "price": 5150,
+  "currency": "AUD",
   "langs": [
    "en"
   ],
   "title": {
-   "en": "Investment Decisions and Behavioral Finance",
-   "ar": "قرارات الاستثمار والتمويل السلوكي"
+   "en": "Essentials of Finance for Non-Finance Managers",
+   "ar": "أساسيات المالية للمديرين غير الماليين"
   },
   "summary": {
-   "en": "A 3-day on-campus program from Harvard Kennedy School, running 4 November 2026 to 6 November 2026.",
-   "ar": "برنامج حضوري لمدة 3 أيام من كلية كينيدي بجامعة هارفارد، من 4 نوفمبر 2026 إلى 6 نوفمبر 2026."
+   "en": "A 3-day on-campus program from AGSM, University of New South Wales, running 4 November 2026 to 6 November 2026.",
+   "ar": "برنامج حضوري لمدة 3 أيام من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 4 نوفمبر 2026 إلى 6 نوفمبر 2026."
   },
   "highlights": {
    "en": [],
@@ -142,374 +387,27 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
  },
  {
-  "id": "c-senior-executives-in-national-and-inte",
-  "school": "s-harvard-kennedy-school",
-  "subject": "leadership",
-  "format": "in-person",
-  "start": "2026-11-30",
-  "days": 6,
-  "price": 11500,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Senior Executives in National and International Security",
-   "ar": "كبار المديرين التنفيذيين في الأمن الوطني والدولي"
-  },
-  "summary": {
-   "en": "A 6-day on-campus program from Harvard Kennedy School, running 30 November 2026 to 5 December 2026.",
-   "ar": "برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 30 نوفمبر 2026 إلى 5 ديسمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
- },
- {
-  "id": "c-leadership-decision-making",
-  "school": "s-harvard-kennedy-school",
-  "subject": "leadership",
-  "format": "online",
-  "start": "2027-01-11",
-  "days": 12,
-  "price": 6600,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Leadership Decision Making",
-   "ar": "اتخاذ القرارات القيادية"
-  },
-  "summary": {
-   "en": "A 12-day online program from Harvard Kennedy School, running 11 January 2027 to 22 January 2027.",
-   "ar": "برنامج عبر الإنترنت لمدة 12 يومًا من كلية كينيدي بجامعة هارفارد، من 11 يناير 2027 إلى 22 يناير 2027."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
- },
- {
-  "id": "c-crisis-leadership-in-higher-education",
-  "school": "s-harvard-kennedy-school",
-  "subject": "leadership",
-  "format": "in-person",
-  "start": "2027-02-09",
-  "days": 4,
-  "price": 6100,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Crisis Leadership in Higher Education",
-   "ar": "قيادة الأزمات في التعليم العالي"
-  },
-  "summary": {
-   "en": "A 4-day on-campus program from Harvard Kennedy School, running 9 February 2027 to 12 February 2027.",
-   "ar": "برنامج حضوري لمدة 4 أيام من كلية كينيدي بجامعة هارفارد، من 9 فبراير 2027 إلى 12 فبراير 2027."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
- },
- {
-  "id": "c-behavioral-insights-and-public-policy",
-  "school": "s-harvard-kennedy-school",
-  "subject": "leadership",
-  "format": "online",
-  "start": "2027-02-22",
-  "days": 19,
-  "price": 4900,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Behavioral Insights and Public Policy",
-   "ar": "الرؤى السلوكية والسياسات العامة"
-  },
-  "summary": {
-   "en": "A 19-day online program from Harvard Kennedy School, running 22 February 2027 to 12 March 2027.",
-   "ar": "برنامج عبر الإنترنت لمدة 19 يومًا من كلية كينيدي بجامعة هارفارد، من 22 فبراير 2027 إلى 12 مارس 2027."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
- },
- {
-  "id": "c-negotiation-strategies-building-agreem",
-  "school": "s-harvard-kennedy-school",
-  "subject": "negotiation",
-  "format": "online",
-  "start": "2027-03-22",
-  "days": 5,
-  "price": 5100,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Negotiation Strategies: Building Agreement Across Boundaries",
-   "ar": "استراتيجيات التفاوض: بناء الاتفاق عبر الحدود"
-  },
-  "summary": {
-   "en": "A 5-day online program from Harvard Kennedy School, running 22 March 2027 to 26 March 2027.",
-   "ar": "برنامج عبر الإنترنت لمدة 5 أيام من كلية كينيدي بجامعة هارفارد، من 22 مارس 2027 إلى 26 مارس 2027."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
- },
- {
-  "id": "c-leadership-in-crises",
-  "school": "s-harvard-kennedy-school",
-  "subject": "leadership",
-  "format": "in-person",
-  "start": "2027-04-04",
-  "days": 6,
-  "price": 10900,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Leadership in Crises",
-   "ar": "القيادة في الأزمات"
-  },
-  "summary": {
-   "en": "A 6-day on-campus program from Harvard Kennedy School, running 4 April 2027 to 9 April 2027.",
-   "ar": "برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 4 أبريل 2027 إلى 9 أبريل 2027."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
- },
- {
-  "id": "c-women-and-power",
-  "school": "s-harvard-kennedy-school",
-  "subject": "leadership",
-  "format": "in-person",
-  "start": "2027-04-11",
-  "days": 6,
-  "price": 10900,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Women and Power",
-   "ar": "المرأة والسلطة"
-  },
-  "summary": {
-   "en": "A 6-day on-campus program from Harvard Kennedy School, running 11 April 2027 to 16 April 2027.",
-   "ar": "برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 11 أبريل 2027 إلى 16 أبريل 2027."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
- },
- {
-  "id": "c-infrastructure-financing-regulation-an",
-  "school": "s-harvard-kennedy-school",
-  "subject": "finance",
-  "format": "in-person",
-  "start": "2027-05-02",
-  "days": 6,
-  "price": 10600,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Infrastructure Financing, Regulation, and Management",
-   "ar": "تمويل البنية التحتية وتنظيمها وإدارتها"
-  },
-  "summary": {
-   "en": "A 6-day on-campus program from Harvard Kennedy School, running 2 May 2027 to 7 May 2027.",
-   "ar": "برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 2 مايو 2027 إلى 7 مايو 2027."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
- },
- {
-  "id": "c-leadership-in-emerging-technology-secu",
-  "school": "s-harvard-kennedy-school",
-  "subject": "digital",
-  "format": "in-person",
-  "start": "2027-05-02",
-  "days": 6,
-  "price": 11200,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Leadership in Emerging Technology: Security, Strategy & Risk",
-   "ar": "القيادة في التقنيات الناشئة: الأمن والاستراتيجية والمخاطر"
-  },
-  "summary": {
-   "en": "A 6-day on-campus program from Harvard Kennedy School, running 2 May 2027 to 7 May 2027.",
-   "ar": "برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 2 مايو 2027 إلى 7 مايو 2027."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
- },
- {
-  "id": "c-strategic-leadership-enhancing-your-pe",
-  "school": "s-harvard-kennedy-school",
-  "subject": "strategy",
-  "format": "online",
-  "start": "2027-05-03",
-  "days": 5,
-  "price": 5900,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Strategic Leadership: Enhancing Your Personal Effectiveness",
-   "ar": "القيادة الاستراتيجية: تعزيز فعاليتك الشخصية"
-  },
-  "summary": {
-   "en": "A 5-day online program from Harvard Kennedy School, running 3 May 2027 to 7 May 2027.",
-   "ar": "برنامج عبر الإنترنت لمدة 5 أيام من كلية كينيدي بجامعة هارفارد، من 3 مايو 2027 إلى 7 مايو 2027."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
- },
- {
-  "id": "c-major-events-navigating-opportunities",
-  "school": "s-harvard-kennedy-school",
-  "subject": "leadership",
-  "format": "in-person",
-  "start": "2027-05-10",
-  "days": 4,
-  "price": 7100,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Major Events: Navigating Opportunities and Challenges",
-   "ar": "الفعاليات الكبرى: استكشاف الفرص ومواجهة التحديات"
-  },
-  "summary": {
-   "en": "A 4-day on-campus program from Harvard Kennedy School, running 10 May 2027 to 13 May 2027.",
-   "ar": "برنامج حضوري لمدة 4 أيام من كلية كينيدي بجامعة هارفارد، من 10 مايو 2027 إلى 13 مايو 2027."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
- },
- {
-  "id": "c-art-and-practice-of-leadership-develop",
-  "school": "s-harvard-kennedy-school",
-  "subject": "leadership",
-  "format": "in-person",
-  "start": "2027-06-06",
-  "days": 6,
-  "price": 11300,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Art and Practice of Leadership Development",
-   "ar": "فن وممارسة تطوير القيادة"
-  },
-  "summary": {
-   "en": "A 6-day on-campus program from Harvard Kennedy School, running 6 June 2027 to 11 June 2027.",
-   "ar": "برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 6 يونيو 2027 إلى 11 يونيو 2027."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education"
- },
- {
-  "id": "c-competitive-strategy",
-  "school": "s-kellogg-school-of-management",
+  "id": "c-executing-strategy-for-results",
+  "school": "s-agsm-university-of-new-south-wales",
   "subject": "strategy",
   "format": "in-person",
-  "start": "2026-09-14",
-  "days": 5,
-  "price": 9950,
+  "start": "2026-11-05",
+  "days": 2,
+  "price": 3950,
+  "currency": "AUD",
   "langs": [
    "en"
   ],
   "title": {
-   "en": "Competitive Strategy",
-   "ar": "الاستراتيجية التنافسية"
+   "en": "Executing Strategy for Results",
+   "ar": "تنفيذ الاستراتيجية لتحقيق النتائج"
   },
   "summary": {
-   "en": "A 5-day on-campus program from Kellogg School of Management, running 14 September 2026 to 18 September 2026.",
-   "ar": "برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة، من 14 سبتمبر 2026 إلى 18 سبتمبر 2026."
+   "en": "A 2-day on-campus program from AGSM, University of New South Wales, running 5 November 2026 to 6 November 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 5 نوفمبر 2026 إلى 6 نوفمبر 2026."
   },
   "highlights": {
    "en": [],
@@ -519,490 +417,27 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
  },
  {
-  "id": "c-leading-with-ai",
-  "school": "s-kellogg-school-of-management",
-  "subject": "digital",
-  "format": "in-person",
-  "start": "2026-09-14",
-  "days": 4,
-  "price": 12500,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Leading with AI",
-   "ar": "القيادة بالذكاء الاصطناعي"
-  },
-  "summary": {
-   "en": "A 4-day on-campus program from Kellogg School of Management, running 14 September 2026 to 17 September 2026.",
-   "ar": "برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 14 سبتمبر 2026 إلى 17 سبتمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-operations-strategy",
-  "school": "s-kellogg-school-of-management",
-  "subject": "operations",
-  "format": "in-person",
-  "start": "2026-09-21",
-  "days": 3,
-  "price": 8950,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Operations Strategy",
-   "ar": "استراتيجية العمليات"
-  },
-  "summary": {
-   "en": "A 3-day on-campus program from Kellogg School of Management, running 21 September 2026 to 23 September 2026.",
-   "ar": "برنامج حضوري لمدة 3 أيام من كلية كيلوغ للإدارة، من 21 سبتمبر 2026 إلى 23 سبتمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-the-leader-within",
-  "school": "s-kellogg-school-of-management",
-  "subject": "leadership",
-  "format": "in-person",
-  "start": "2026-09-21",
-  "days": 5,
-  "price": 11500,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "The Leader Within",
-   "ar": "القائد في داخلك"
-  },
-  "summary": {
-   "en": "A 5-day on-campus program from Kellogg School of Management, running 21 September 2026 to 25 September 2026.",
-   "ar": "برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة، من 21 سبتمبر 2026 إلى 25 سبتمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-creating-and-managing-strategic-allian",
-  "school": "s-kellogg-school-of-management",
-  "subject": "strategy",
-  "format": "online",
-  "start": "2026-09-28",
-  "days": 5,
-  "price": 4950,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Creating and Managing Strategic Alliances",
-   "ar": "إنشاء التحالفات الاستراتيجية وإدارتها"
-  },
-  "summary": {
-   "en": "A 5-day online program from Kellogg School of Management, running 28 September 2026 to 2 October 2026.",
-   "ar": "برنامج عبر الإنترنت لمدة 5 أيام من كلية كيلوغ للإدارة، من 28 سبتمبر 2026 إلى 2 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-governing-family-enterprises",
-  "school": "s-kellogg-school-of-management",
-  "subject": "leadership",
-  "format": "blended",
-  "start": "2026-09-29",
-  "days": 11,
-  "price": 12000,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Governing Family Enterprises",
-   "ar": "حوكمة الشركات العائلية"
-  },
-  "summary": {
-   "en": "A 11-day hybrid program from Kellogg School of Management, running 29 September 2026 to 9 October 2026.",
-   "ar": "برنامج مدمج لمدة 11 يومًا من كلية كيلوغ للإدارة، من 29 سبتمبر 2026 إلى 9 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-leading-and-sustaining-a-culture-of-in",
-  "school": "s-kellogg-school-of-management",
-  "subject": "strategy",
-  "format": "in-person",
-  "start": "2026-10-05",
-  "days": 4,
-  "price": 11500,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Leading and Sustaining a Culture of Innovation",
-   "ar": "قيادة ثقافة الابتكار وإدامتها"
-  },
-  "summary": {
-   "en": "A 4-day on-campus program from Kellogg School of Management, running 5 October 2026 to 8 October 2026.",
-   "ar": "برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 5 أكتوبر 2026 إلى 8 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-executive-development-program",
-  "school": "s-kellogg-school-of-management",
-  "subject": "leadership",
-  "format": "in-person",
-  "start": "2026-10-11",
-  "days": 20,
-  "price": 39500,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Executive Development Program",
-   "ar": "برنامج التطوير التنفيذي"
-  },
-  "summary": {
-   "en": "A 20-day on-campus program from Kellogg School of Management, running 11 October 2026 to 30 October 2026.",
-   "ar": "برنامج حضوري لمدة 20 يومًا من كلية كيلوغ للإدارة، من 11 أكتوبر 2026 إلى 30 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-mergers-acquisitions",
-  "school": "s-kellogg-school-of-management",
-  "subject": "finance",
-  "format": "in-person",
-  "start": "2026-10-11",
-  "days": 6,
-  "price": 13100,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Mergers + Acquisitions",
-   "ar": "الاندماج والاستحواذ"
-  },
-  "summary": {
-   "en": "A 6-day on-campus program from Kellogg School of Management, running 11 October 2026 to 16 October 2026.",
-   "ar": "برنامج حضوري لمدة 6 أيام من كلية كيلوغ للإدارة، من 11 أكتوبر 2026 إلى 16 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-constructive-collaboration",
-  "school": "s-kellogg-school-of-management",
-  "subject": "leadership",
-  "format": "online",
-  "start": "2026-10-12",
-  "days": 5,
-  "price": 6500,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Constructive Collaboration",
-   "ar": "التعاون البنّاء"
-  },
-  "summary": {
-   "en": "A 5-day online program from Kellogg School of Management, running 12 October 2026 to 16 October 2026.",
-   "ar": "برنامج عبر الإنترنت لمدة 5 أيام من كلية كيلوغ للإدارة، من 12 أكتوبر 2026 إلى 16 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-business-marketing-strategy",
-  "school": "s-kellogg-school-of-management",
-  "subject": "marketing",
-  "format": "in-person",
-  "start": "2026-10-19",
-  "days": 5,
-  "price": 11500,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Business Marketing Strategy",
-   "ar": "استراتيجية تسويق الأعمال"
-  },
-  "summary": {
-   "en": "A 5-day on-campus program from Kellogg School of Management, running 19 October 2026 to 23 October 2026.",
-   "ar": "برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة، من 19 أكتوبر 2026 إلى 23 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-b2b-sales-force-strategy-effectiveness",
-  "school": "s-kellogg-school-of-management",
-  "subject": "digital",
-  "format": "in-person",
-  "start": "2026-10-25",
-  "days": 5,
-  "price": 9950,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "B2B Sales Force Strategy & Effectiveness in the Digital Age",
-   "ar": "استراتيجية وفعالية فرق مبيعات B2B في العصر الرقمي"
-  },
-  "summary": {
-   "en": "A 5-day on-campus program from Kellogg School of Management, running 25 October 2026 to 29 October 2026.",
-   "ar": "برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة، من 25 أكتوبر 2026 إلى 29 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-delivering-business-growth",
-  "school": "s-kellogg-school-of-management",
-  "subject": "strategy",
-  "format": "in-person",
-  "start": "2026-10-26",
-  "days": 4,
-  "price": 9950,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Delivering Business Growth",
-   "ar": "تحقيق نمو الأعمال"
-  },
-  "summary": {
-   "en": "A 4-day on-campus program from Kellogg School of Management, running 26 October 2026 to 29 October 2026.",
-   "ar": "برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 26 أكتوبر 2026 إلى 29 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-leading-high-impact-teams",
-  "school": "s-kellogg-school-of-management",
-  "subject": "leadership",
-  "format": "online",
-  "start": "2026-10-26",
-  "days": 5,
-  "price": 6500,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Leading High-Impact Teams",
-   "ar": "قيادة الفرق عالية التأثير"
-  },
-  "summary": {
-   "en": "A 5-day online program from Kellogg School of Management, running 26 October 2026 to 30 October 2026.",
-   "ar": "برنامج عبر الإنترنت لمدة 5 أيام من كلية كيلوغ للإدارة، من 26 أكتوبر 2026 إلى 30 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-family-enterprise-boards",
-  "school": "s-kellogg-school-of-management",
-  "subject": "leadership",
-  "format": "blended",
-  "start": "2026-10-27",
-  "days": 11,
-  "price": 12000,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Family Enterprise Boards",
-   "ar": "مجالس إدارة الشركات العائلية"
-  },
-  "summary": {
-   "en": "A 11-day hybrid program from Kellogg School of Management, running 27 October 2026 to 6 November 2026.",
-   "ar": "برنامج مدمج لمدة 11 يومًا من كلية كيلوغ للإدارة، من 27 أكتوبر 2026 إلى 6 نوفمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-finance-for-executives",
-  "school": "s-kellogg-school-of-management",
-  "subject": "finance",
-  "format": "in-person",
-  "start": "2026-11-01",
-  "days": 6,
-  "price": 11500,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Finance for Executives",
-   "ar": "المالية للمديرين التنفيذيين"
-  },
-  "summary": {
-   "en": "A 6-day on-campus program from Kellogg School of Management, running 1 November 2026 to 6 November 2026.",
-   "ar": "برنامج حضوري لمدة 6 أيام من كلية كيلوغ للإدارة، من 1 نوفمبر 2026 إلى 6 نوفمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-corporate-governance",
-  "school": "s-kellogg-school-of-management",
-  "subject": "leadership",
-  "format": "in-person",
-  "start": "2026-11-02",
-  "days": 4,
-  "price": 11500,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Corporate Governance",
-   "ar": "حوكمة الشركات"
-  },
-  "summary": {
-   "en": "A 4-day on-campus program from Kellogg School of Management, running 2 November 2026 to 5 November 2026.",
-   "ar": "برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 2 نوفمبر 2026 إلى 5 نوفمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-energizing-people-for-performance",
-  "school": "s-kellogg-school-of-management",
-  "subject": "people",
+  "id": "c-data-driven-leadership",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "data",
   "format": "in-person",
   "start": "2026-11-09",
-  "days": 4,
-  "price": 8950,
+  "days": 2,
+  "price": 3950,
+  "currency": "AUD",
   "langs": [
    "en"
   ],
   "title": {
-   "en": "Energizing People for Performance",
-   "ar": "تحفيز الأفراد لتحقيق الأداء"
+   "en": "Data Driven Leadership",
+   "ar": "القيادة المدفوعة بالبيانات"
   },
   "summary": {
-   "en": "A 4-day on-campus program from Kellogg School of Management, running 9 November 2026 to 12 November 2026.",
-   "ar": "برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 9 نوفمبر 2026 إلى 12 نوفمبر 2026."
+   "en": "A 2-day on-campus program from AGSM, University of New South Wales, running 9 November 2026 to 10 November 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 9 نوفمبر 2026 إلى 10 نوفمبر 2026."
   },
   "highlights": {
    "en": [],
@@ -1012,490 +447,27 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
  },
  {
-  "id": "c-the-strategy-of-leadership",
-  "school": "s-kellogg-school-of-management",
-  "subject": "strategy",
-  "format": "in-person",
-  "start": "2026-11-09",
-  "days": 3,
-  "price": 10450,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "The Strategy of Leadership",
-   "ar": "استراتيجية القيادة"
-  },
-  "summary": {
-   "en": "A 3-day on-campus program from Kellogg School of Management, running 9 November 2026 to 11 November 2026.",
-   "ar": "برنامج حضوري لمدة 3 أيام من كلية كيلوغ للإدارة، من 9 نوفمبر 2026 إلى 11 نوفمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-advanced-marketing-management",
-  "school": "s-kellogg-school-of-management",
-  "subject": "marketing",
-  "format": "in-person",
-  "start": "2026-11-16",
-  "days": 5,
-  "price": 9950,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Advanced Marketing Management",
-   "ar": "الإدارة المتقدمة للتسويق"
-  },
-  "summary": {
-   "en": "A 5-day on-campus program from Kellogg School of Management, running 16 November 2026 to 20 November 2026.",
-   "ar": "برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة، من 16 نوفمبر 2026 إلى 20 نوفمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-driving-organizational-change",
-  "school": "s-kellogg-school-of-management",
-  "subject": "leadership",
-  "format": "in-person",
-  "start": "2026-11-16",
-  "days": 4,
-  "price": 8950,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Driving Organizational Change",
-   "ar": "قيادة التغيير المؤسسي"
-  },
-  "summary": {
-   "en": "A 4-day on-campus program from Kellogg School of Management, running 16 November 2026 to 19 November 2026.",
-   "ar": "برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 16 نوفمبر 2026 إلى 19 نوفمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-negotiation-master-class",
-  "school": "s-kellogg-school-of-management",
-  "subject": "negotiation",
-  "format": "online",
-  "start": "2026-11-30",
-  "days": 12,
-  "price": 6900,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Negotiation Master Class",
-   "ar": "ماستر كلاس في التفاوض"
-  },
-  "summary": {
-   "en": "A 12-day online program from Kellogg School of Management, running 30 November 2026 to 11 December 2026.",
-   "ar": "برنامج عبر الإنترنت لمدة 12 يومًا من كلية كيلوغ للإدارة، من 30 نوفمبر 2026 إلى 11 ديسمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-growth-marketing",
-  "school": "s-kellogg-school-of-management",
-  "subject": "marketing",
-  "format": "in-person",
-  "start": "2026-12-07",
-  "days": 4,
-  "price": 8950,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Growth Marketing",
-   "ar": "تسويق النمو"
-  },
-  "summary": {
-   "en": "A 4-day on-campus program from Kellogg School of Management, running 7 December 2026 to 10 December 2026.",
-   "ar": "برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 7 ديسمبر 2026 إلى 10 ديسمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education"
- },
- {
-  "id": "c-leading-high-performing-teams",
-  "school": "s-michigan-ross-executive-education",
-  "subject": "leadership",
-  "format": "in-person",
-  "start": "2026-09-15",
-  "days": 4,
-  "price": 8900,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Leading High-Performing Teams",
-   "ar": "قيادة الفرق ذات الأداء العالي"
-  },
-  "summary": {
-   "en": "A 4-day on-campus program from Michigan Ross Executive Education, running 15 September 2026 to 18 September 2026.",
-   "ar": "برنامج حضوري لمدة 4 أيام من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 15 سبتمبر 2026 إلى 18 سبتمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/michigan/michigan-ross-executive-education-university-of-michigan"
- },
- {
-  "id": "c-emerging-leaders-program-becoming-a-tr",
-  "school": "s-michigan-ross-executive-education",
-  "subject": "leadership",
-  "format": "in-person",
-  "start": "2026-09-28",
-  "days": 5,
-  "price": 10700,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Emerging Leaders Program: Becoming a Transformational Leader",
-   "ar": "برنامج القادة الصاعدين: كيف تصبح قائداً تحويلياً"
-  },
-  "summary": {
-   "en": "A 5-day on-campus program from Michigan Ross Executive Education, running 28 September 2026 to 2 October 2026.",
-   "ar": "برنامج حضوري لمدة 5 أيام من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 28 سبتمبر 2026 إلى 2 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/michigan/michigan-ross-executive-education-university-of-michigan"
- },
- {
-  "id": "c-strategic-leaders-program-vision-strat",
-  "school": "s-michigan-ross-executive-education",
-  "subject": "strategy",
-  "format": "in-person",
-  "start": "2026-10-26",
-  "days": 5,
-  "price": 11500,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Strategic Leaders Program: Vision, Strategy, and Managing the Organization to Drive Results",
-   "ar": "برنامج القادة الاستراتيجيين: الرؤية والاستراتيجية وإدارة المؤسسة لتحقيق النتائج"
-  },
-  "summary": {
-   "en": "A 5-day on-campus program from Michigan Ross Executive Education, running 26 October 2026 to 30 October 2026.",
-   "ar": "برنامج حضوري لمدة 5 أيام من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 26 أكتوبر 2026 إلى 30 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/michigan/michigan-ross-executive-education-university-of-michigan"
- },
- {
-  "id": "c-executive-presence-through-strategic-c",
-  "school": "s-michigan-ross-executive-education",
+  "id": "c-leading-for-high-performance",
+  "school": "s-agsm-university-of-new-south-wales",
   "subject": "people",
-  "format": "in-person",
-  "start": "2026-10-27",
-  "days": 3,
-  "price": 5900,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Executive Presence Through Strategic Communication",
-   "ar": "الحضور التنفيذي من خلال التواصل الاستراتيجي"
-  },
-  "summary": {
-   "en": "A 3-day on-campus program from Michigan Ross Executive Education, running 27 October 2026 to 29 October 2026.",
-   "ar": "برنامج حضوري لمدة 3 أيام من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 27 أكتوبر 2026 إلى 29 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/michigan/michigan-ross-executive-education-university-of-michigan"
- },
- {
-  "id": "c-advanced-human-resource-executive--2",
-  "school": "s-michigan-ross-executive-education",
-  "subject": "people",
-  "format": "blended",
-  "start": "2027-04-05",
-  "days": 12,
-  "price": 25800,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Advanced Human Resource Executive Program (Blended)",
-   "ar": "البرنامج التنفيذي المتقدم للموارد البشرية (مدمج)"
-  },
-  "summary": {
-   "en": "A 12-day hybrid program from Michigan Ross Executive Education, running 5 April 2027 to 16 April 2027.",
-   "ar": "برنامج مدمج لمدة 12 يومًا من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 5 أبريل 2027 إلى 16 أبريل 2027."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/michigan/michigan-ross-executive-education-university-of-michigan"
- },
- {
-  "id": "c-leading-the-ai-driven-organization",
-  "school": "s-mit-sloan-school-of-management",
-  "subject": "digital",
-  "format": "in-person",
-  "start": "2026-09-14",
-  "days": 5,
-  "price": 12900,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Leading the AI-Driven Organization",
-   "ar": "قيادة المؤسسة المدفوعة بالذكاء الاصطناعي"
-  },
-  "summary": {
-   "en": "A 5-day on-campus program from MIT Sloan School of Management, running 14 September 2026 to 18 September 2026.",
-   "ar": "برنامج حضوري لمدة 5 أيام من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 14 سبتمبر 2026 إلى 18 سبتمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/massachusetts-institute-of-technology-mit-sloan-school-of-management-executive-education"
- },
- {
-  "id": "c-frontiers-of-generative-ai-in-business",
-  "school": "s-mit-sloan-school-of-management",
-  "subject": "digital",
-  "format": "in-person",
-  "start": "2026-09-22",
-  "days": 2,
-  "price": 5900,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Frontiers of Generative AI in Business",
-   "ar": "آفاق الذكاء الاصطناعي التوليدي في الأعمال"
-  },
-  "summary": {
-   "en": "A 2-day on-campus program from MIT Sloan School of Management, running 22 September 2026 to 23 September 2026.",
-   "ar": "برنامج حضوري لمدة يومين من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 22 سبتمبر 2026 إلى 23 سبتمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/massachusetts-institute-of-technology-mit-sloan-school-of-management-executive-education"
- },
- {
-  "id": "c-ai-essentials-accelerating-impactful-a",
-  "school": "s-mit-sloan-school-of-management",
-  "subject": "digital",
-  "format": "in-person",
-  "start": "2026-09-24",
-  "days": 2,
-  "price": 5700,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "AI Essentials: Accelerating Impactful Adoption",
-   "ar": "أساسيات الذكاء الاصطناعي: تسريع التبنّي المؤثر"
-  },
-  "summary": {
-   "en": "A 2-day on-campus program from MIT Sloan School of Management, running 24 September 2026 to 25 September 2026.",
-   "ar": "برنامج حضوري لمدة يومين من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 24 سبتمبر 2026 إلى 25 سبتمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/massachusetts-institute-of-technology-mit-sloan-school-of-management-executive-education"
- },
- {
-  "id": "c-understanding-and-solving-complex-busi",
-  "school": "s-mit-sloan-school-of-management",
-  "subject": "leadership",
-  "format": "in-person",
-  "start": "2026-10-15",
-  "days": 2,
-  "price": 4900,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Understanding and Solving Complex Business Problems",
-   "ar": "فهم مشكلات الأعمال المعقدة وحلها"
-  },
-  "summary": {
-   "en": "A 2-day on-campus program from MIT Sloan School of Management, running 15 October 2026 to 16 October 2026.",
-   "ar": "برنامج حضوري لمدة يومين من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 15 أكتوبر 2026 إلى 16 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/massachusetts-institute-of-technology-mit-sloan-school-of-management-executive-education"
- },
- {
-  "id": "c-negotiation-for-executives",
-  "school": "s-mit-sloan-school-of-management",
-  "subject": "negotiation",
-  "format": "in-person",
-  "start": "2026-11-17",
-  "days": 2,
-  "price": 5300,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Negotiation for Executives",
-   "ar": "التفاوض للمديرين التنفيذيين"
-  },
-  "summary": {
-   "en": "A 2-day on-campus program from MIT Sloan School of Management, running 17 November 2026 to 18 November 2026.",
-   "ar": "برنامج حضوري لمدة يومين من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 17 نوفمبر 2026 إلى 18 نوفمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/massachusetts-institute-of-technology-mit-sloan-school-of-management-executive-education"
- },
- {
-  "id": "c-communication-and-persuasion-in-the-di",
-  "school": "s-mit-sloan-school-of-management",
-  "subject": "digital",
-  "format": "online",
-  "start": "2026-12-08",
-  "days": 2,
-  "price": 4900,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Communication and Persuasion in the Digital Age",
-   "ar": "التواصل والإقناع في العصر الرقمي"
-  },
-  "summary": {
-   "en": "A 2-day online program from MIT Sloan School of Management, running 8 December 2026 to 9 December 2026.",
-   "ar": "برنامج عبر الإنترنت لمدة يومين من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 8 ديسمبر 2026 إلى 9 ديسمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/massachusetts/massachusetts-institute-of-technology-mit-sloan-school-of-management-executive-education"
- },
- {
-  "id": "c-leadership-training-for-high-potential",
-  "school": "s-nyu-stern-school-of-business",
-  "subject": "leadership",
   "format": "in-person",
   "start": "2026-11-10",
   "days": 2,
-  "price": 3344,
+  "price": 3950,
+  "currency": "AUD",
   "langs": [
    "en"
   ],
   "title": {
-   "en": "Leadership Training for High Potentials",
-   "ar": "تدريب قيادي لأصحاب الإمكانات العالية"
+   "en": "Leading for High Performance",
+   "ar": "القيادة من أجل الأداء العالي"
   },
   "summary": {
-   "en": "A 2-day on-campus program from NYU Stern School of Business, running 10 November 2026 to 11 November 2026.",
-   "ar": "برنامج حضوري لمدة يومين من كلية شتيرن للأعمال بجامعة نيويورك، من 10 نوفمبر 2026 إلى 11 نوفمبر 2026."
+   "en": "A 2-day on-campus program from AGSM, University of New South Wales, running 10 November 2026 to 11 November 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 10 نوفمبر 2026 إلى 11 نوفمبر 2026."
   },
   "highlights": {
    "en": [],
@@ -1505,26 +477,837 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/new-york/new-york-university-nyu-stern-school-of-business-executive-education"
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
  },
  {
-  "id": "c-design-thinking-bootcamp-make-impact-a",
-  "school": "s-stanford-graduate-school-of-business",
-  "subject": "marketing",
+  "id": "c-data-governance-for-leaders",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "data",
+  "format": "in-person",
+  "start": "2026-11-12",
+  "days": 2,
+  "price": 3950,
+  "currency": "AUD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Data Governance for Leaders",
+   "ar": "حوكمة البيانات للقادة"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from AGSM, University of New South Wales, running 12 November 2026 to 13 November 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 12 نوفمبر 2026 إلى 13 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
+ },
+ {
+  "id": "c-accelerated-leadership-program",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-11-16",
+  "days": 5,
+  "price": 8990,
+  "currency": "AUD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Accelerated Leadership Program",
+   "ar": "برنامج القيادة المعجّل"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from AGSM, University of New South Wales, running 16 November 2026 to 20 November 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 16 نوفمبر 2026 إلى 20 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
+ },
+ {
+  "id": "c-shaping-strategy-to-create-value",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "strategy",
+  "format": "in-person",
+  "start": "2026-11-16",
+  "days": 3,
+  "price": 5150,
+  "currency": "AUD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Shaping Strategy to Create Value",
+   "ar": "صياغة الاستراتيجية لخلق القيمة"
+  },
+  "summary": {
+   "en": "A 3-day on-campus program from AGSM, University of New South Wales, running 16 November 2026 to 18 November 2026.",
+   "ar": "برنامج حضوري لمدة 3 أيام من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 16 نوفمبر 2026 إلى 18 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
+ },
+ {
+  "id": "c-adaptive-leadership-program",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-11-23",
+  "days": 4,
+  "price": 7950,
+  "currency": "AUD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Adaptive Leadership Program",
+   "ar": "برنامج القيادة التكيفية"
+  },
+  "summary": {
+   "en": "A 4-day on-campus program from AGSM, University of New South Wales, running 23 November 2026 to 26 November 2026.",
+   "ar": "برنامج حضوري لمدة 4 أيام من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 23 نوفمبر 2026 إلى 26 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
+ },
+ {
+  "id": "c-strategic-negotiation-influence",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "negotiation",
+  "format": "in-person",
+  "start": "2026-11-23",
+  "days": 3,
+  "price": 5150,
+  "currency": "AUD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Strategic Negotiation & Influence",
+   "ar": "التفاوض الاستراتيجي والتأثير"
+  },
+  "summary": {
+   "en": "A 3-day on-campus program from AGSM, University of New South Wales, running 23 November 2026 to 25 November 2026.",
+   "ar": "برنامج حضوري لمدة 3 أيام من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 23 نوفمبر 2026 إلى 25 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
+ },
+ {
+  "id": "c-project-governance-for-leaders",
+  "school": "s-agsm-university-of-new-south-wales",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-11-26",
+  "days": 2,
+  "price": 3950,
+  "currency": "AUD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Project Governance for Leaders",
+   "ar": "حوكمة المشاريع للقادة"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from AGSM, University of New South Wales, running 26 November 2026 to 27 November 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 26 نوفمبر 2026 إلى 27 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/australia-nz/australia/university-of-new-south-wales-australian-school-of-business-agsm-executive-education"
+ },
+ {
+  "id": "c-brsens-bestyrelsesuddannelse-september",
+  "school": "s-cbs-executive-copenhagen-business-scho",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-09-02",
+  "days": 8,
+  "price": 69999,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Børsens Bestyrelsesuddannelse September 2026",
+   "ar": "برنامج Børsen لتأهيل أعضاء مجالس الإدارة سبتمبر 2026"
+  },
+  "summary": {
+   "en": "A 8-day on-campus program from CBS Executive, Copenhagen Business School, running 2 September 2026 to 2 December 2026.",
+   "ar": "برنامج حضوري لمدة 8 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 2 سبتمبر 2026 إلى 2 ديسمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs-cbs-executive"
+ },
+ {
+  "id": "c-blue-board-leadership-2026",
+  "school": "s-cbs-executive-copenhagen-business-scho",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-09-07",
+  "days": 8,
+  "price": 78225,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Blue Board Leadership 2026",
+   "ar": "برنامج Blue Board لقيادة مجالس الإدارة 2026"
+  },
+  "summary": {
+   "en": "A 8-day on-campus program from CBS Executive, Copenhagen Business School, running 7 September 2026 to 12 November 2026.",
+   "ar": "برنامج حضوري لمدة 8 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 7 سبتمبر 2026 إلى 12 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs-cbs-executive"
+ },
+ {
+  "id": "c-cbs-executive-bestyrelsesuddannelsen-s",
+  "school": "s-cbs-executive-copenhagen-business-scho",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-09-07",
+  "days": 16,
+  "price": 120000,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "CBS Executive Bestyrelsesuddannelsen September 2026",
+   "ar": "برنامج CBS Executive لتأهيل أعضاء مجالس الإدارة سبتمبر 2026"
+  },
+  "summary": {
+   "en": "A 16-day on-campus program from CBS Executive, Copenhagen Business School, running 7 September 2026 to 30 January 2027.",
+   "ar": "برنامج حضوري لمدة 16 يومًا من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 7 سبتمبر 2026 إلى 30 يناير 2027."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs-cbs-executive"
+ },
+ {
+  "id": "c-lobbyistens-vej-til-magten",
+  "school": "s-cbs-executive-copenhagen-business-scho",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-09-10",
+  "days": 2,
+  "price": 13500,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Lobbyistens vej til Magten",
+   "ar": "طريق جماعات الضغط إلى السلطة"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from CBS Executive, Copenhagen Business School, running 10 September 2026 to 17 September 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 10 سبتمبر 2026 إلى 17 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs-cbs-executive"
+ },
+ {
+  "id": "c-bestyrelsesarbejde-i-pension-forsikrin",
+  "school": "s-cbs-executive-copenhagen-business-scho",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-09-23",
+  "days": 5,
+  "price": 41600,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Bestyrelsesarbejde i Pension & Forsikring 2026",
+   "ar": "العمل في مجالس إدارة شركات التقاعد والتأمين 2026"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from CBS Executive, Copenhagen Business School, running 23 September 2026 to 29 September 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 23 سبتمبر 2026 إلى 29 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs-cbs-executive"
+ },
+ {
+  "id": "c-bestyrelsesarbejde-i-bank-realkredit-2",
+  "school": "s-cbs-executive-copenhagen-business-scho",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-10-28",
+  "days": 5,
+  "price": 41600,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Bestyrelsesarbejde i Bank & Realkredit 2026",
+   "ar": "العمل في مجالس إدارة البنوك والائتمان العقاري 2026"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from CBS Executive, Copenhagen Business School, running 28 October 2026 to 3 November 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 28 أكتوبر 2026 إلى 3 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs-cbs-executive"
+ },
+ {
+  "id": "c-bestyrelsesuddannelse-i-esg-bredygtigh",
+  "school": "s-cbs-executive-copenhagen-business-scho",
+  "subject": "sustainability",
+  "format": "in-person",
+  "start": "2026-11-02",
+  "days": 3,
+  "price": 29000,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Bestyrelsesuddannelse i ESG & Bæredygtighed 2026",
+   "ar": "برنامج تأهيل أعضاء مجالس الإدارة في ESG والاستدامة 2026"
+  },
+  "summary": {
+   "en": "A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 2 November 2026 to 4 November 2026.",
+   "ar": "برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 2 نوفمبر 2026 إلى 4 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs-cbs-executive"
+ },
+ {
+  "id": "c-leadership-for-the-future-2026",
+  "school": "s-cbs-executive-copenhagen-business-scho",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-11-16",
+  "days": 9,
+  "price": 79950,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Leadership for the Future 2026",
+   "ar": "القيادة من أجل المستقبل 2026"
+  },
+  "summary": {
+   "en": "A 9-day on-campus program from CBS Executive, Copenhagen Business School, running 16 November 2026 to 27 May 2027.",
+   "ar": "برنامج حضوري لمدة 9 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 16 نوفمبر 2026 إلى 27 مايو 2027."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs-cbs-executive"
+ },
+ {
+  "id": "c-masterclass-business-innovation-in-lif",
+  "school": "s-cbs-executive-copenhagen-business-scho",
+  "subject": "healthcare",
+  "format": "in-person",
+  "start": "2026-12-01",
+  "days": 3,
+  "price": 20000,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Masterclass: Business Innovation in Life Science 2025",
+   "ar": "ماستركلاس: ابتكار الأعمال في علوم الحياة 2025"
+  },
+  "summary": {
+   "en": "A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 1 December 2026 to 3 December 2026.",
+   "ar": "برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 1 ديسمبر 2026 إلى 3 ديسمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs-cbs-executive"
+ },
+ {
+  "id": "c-sustainability-transformation-accelera",
+  "school": "s-cbs-executive-copenhagen-business-scho",
+  "subject": "sustainability",
+  "format": "in-person",
+  "start": "2026-12-08",
+  "days": 3,
+  "price": 22500,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Sustainability Transformation Accelerator",
+   "ar": "مسرّع التحول نحو الاستدامة"
+  },
+  "summary": {
+   "en": "A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 8 December 2026 to 10 December 2026.",
+   "ar": "برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 8 ديسمبر 2026 إلى 10 ديسمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs-cbs-executive"
+ },
+ {
+  "id": "c-professional-negotiation",
+  "school": "s-cbs-executive-copenhagen-business-scho",
+  "subject": "negotiation",
+  "format": "in-person",
+  "start": "2027-01-18",
+  "days": 4,
+  "price": 25000,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Professional Negotiation",
+   "ar": "التفاوض الاحترافي"
+  },
+  "summary": {
+   "en": "A 4-day on-campus program from CBS Executive, Copenhagen Business School, running 18 January 2027 to 21 January 2027.",
+   "ar": "برنامج حضوري لمدة 4 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 18 يناير 2027 إلى 21 يناير 2027."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs-cbs-executive"
+ },
+ {
+  "id": "c-cbs-executive-bestyrelsesuddannelsen-f",
+  "school": "s-cbs-executive-copenhagen-business-scho",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2027-02-01",
+  "days": 16,
+  "price": 120000,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "CBS Executive Bestyrelsesuddannelsen Februar 2027",
+   "ar": "برنامج CBS Executive لتأهيل أعضاء مجالس الإدارة فبراير 2027"
+  },
+  "summary": {
+   "en": "A 16-day on-campus program from CBS Executive, Copenhagen Business School, running 1 February 2027 to 5 June 2027.",
+   "ar": "برنامج حضوري لمدة 16 يومًا من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 1 فبراير 2027 إلى 5 يونيو 2027."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs-cbs-executive"
+ },
+ {
+  "id": "c-grundlggende-bestyrelsesuddannelse-feb",
+  "school": "s-cbs-executive-copenhagen-business-scho",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2027-02-25",
+  "days": 3,
+  "price": 26800,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Grundlæggende Bestyrelsesuddannelse Februar 2027",
+   "ar": "التأهيل الأساسي لعضوية مجالس الإدارة - فبراير 2027"
+  },
+  "summary": {
+   "en": "A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 25 February 2027 to 28 February 2027.",
+   "ar": "برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 25 فبراير 2027 إلى 28 فبراير 2027."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs-cbs-executive"
+ },
+ {
+  "id": "c-grundlggende-bestyrelsesuddannelse-apr",
+  "school": "s-cbs-executive-copenhagen-business-scho",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2027-04-26",
+  "days": 3,
+  "price": 26800,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Grundlæggende Bestyrelsesuddannelse April 2027",
+   "ar": "التأهيل الأساسي لعضوية مجالس الإدارة - أبريل 2027"
+  },
+  "summary": {
+   "en": "A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 26 April 2027 to 28 April 2027.",
+   "ar": "برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 26 أبريل 2027 إلى 28 أبريل 2027."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs-cbs-executive"
+ },
+ {
+  "id": "c-grundlggende-bestyrelsesuddannelse-aug",
+  "school": "s-cbs-executive-copenhagen-business-scho",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2027-08-23",
+  "days": 3,
+  "price": 26800,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Grundlæggende Bestyrelsesuddannelse August 2027",
+   "ar": "التأهيل الأساسي لعضوية مجالس الإدارة - أغسطس 2027"
+  },
+  "summary": {
+   "en": "A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 23 August 2027 to 25 August 2027.",
+   "ar": "برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 23 أغسطس 2027 إلى 25 أغسطس 2027."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs-cbs-executive"
+ },
+ {
+  "id": "c-leadership-development-program-ldp",
+  "school": "s-center-for-creative-leadership-singapo",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-09-28",
+  "days": 5,
+  "price": 11500,
+  "currency": "SGD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Leadership Development Program (LDP)®",
+   "ar": "برنامج تطوير القيادة (LDP)®"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from Center for Creative Leadership – Singapore, running 28 September 2026 to 2 October 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من مركز القيادة الإبداعية – سنغافورة، من 28 سبتمبر 2026 إلى 2 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/asia/singapore/center-for-creative-leadership-singapore-campus"
+ },
+ {
+  "id": "c-senior-leadership-training-leading-for",
+  "school": "s-center-for-creative-leadership-singapo",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-11-23",
+  "days": 5,
+  "price": 14500,
+  "currency": "SGD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Senior Leadership Training: Leading for Organizational Impact",
+   "ar": "تدريب القيادات العليا: القيادة لتحقيق الأثر المؤسسي"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from Center for Creative Leadership – Singapore, running 23 November 2026 to 27 November 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من مركز القيادة الإبداعية – سنغافورة، من 23 نوفمبر 2026 إلى 27 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/asia/singapore/center-for-creative-leadership-singapore-campus"
+ },
+ {
+  "id": "c-brsens-bestyrelsesuddannelse",
+  "school": "s-copenhagen-business-school",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-09-02",
+  "days": 10,
+  "price": 69999,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Børsens Bestyrelsesuddannelse",
+   "ar": "برنامج Børsen لتأهيل أعضاء مجالس الإدارة"
+  },
+  "summary": {
+   "en": "A 10-day on-campus program from Copenhagen Business School, running 2 September 2026 to 11 September 2026.",
+   "ar": "برنامج حضوري لمدة 10 أيام من كلية كوبنهاغن للأعمال، من 2 سبتمبر 2026 إلى 11 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs"
+ },
+ {
+  "id": "c-bestyrelsesarbejde-i-bank-realkredit",
+  "school": "s-copenhagen-business-school",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-10-28",
+  "days": 7,
+  "price": 41600,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Bestyrelsesarbejde i Bank & Realkredit",
+   "ar": "العمل في مجالس إدارة البنوك والائتمان العقاري"
+  },
+  "summary": {
+   "en": "A 7-day on-campus program from Copenhagen Business School, running 28 October 2026 to 3 November 2026.",
+   "ar": "برنامج حضوري لمدة 7 أيام من كلية كوبنهاغن للأعمال، من 28 أكتوبر 2026 إلى 3 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs"
+ },
+ {
+  "id": "c-bestyrelsesuddannelse-i-esg-bredyg-2",
+  "school": "s-copenhagen-business-school",
+  "subject": "sustainability",
+  "format": "in-person",
+  "start": "2026-11-02",
+  "days": 3,
+  "price": 29000,
+  "currency": "DKK",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Bestyrelsesuddannelse i ESG & Bæredygtighed",
+   "ar": "برنامج تأهيل أعضاء مجالس الإدارة في ESG والاستدامة"
+  },
+  "summary": {
+   "en": "A 3-day on-campus program from Copenhagen Business School, running 2 November 2026 to 4 November 2026.",
+   "ar": "برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال، من 2 نوفمبر 2026 إلى 4 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/denmark/copenhagen-business-school-cbs"
+ },
+ {
+  "id": "c-high-performance-leadership",
+  "school": "s-imd-business-school",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-09-06",
+  "days": 6,
+  "price": 14900,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "High Performance Leadership",
+   "ar": "القيادة عالية الأداء"
+  },
+  "summary": {
+   "en": "A 6-day on-campus program from IMD Business School, running 6 September 2026 to 11 September 2026.",
+   "ar": "برنامج حضوري لمدة 6 أيام من كلية IMD للأعمال، من 6 سبتمبر 2026 إلى 11 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-leading-digital-execution",
+  "school": "s-imd-business-school",
+  "subject": "digital",
   "format": "in-person",
   "start": "2026-09-07",
   "days": 5,
-  "price": 14000,
+  "price": 10900,
+  "currency": "CHF",
   "langs": [
    "en"
   ],
   "title": {
-   "en": "Design Thinking Bootcamp: Make Impact and Drive Growth in Your Organization",
-   "ar": "معسكر التفكير التصميمي: اصنع الأثر وادفع عجلة النمو في مؤسستك"
+   "en": "Leading Digital Execution",
+   "ar": "قيادة التنفيذ الرقمي"
   },
   "summary": {
-   "en": "A 5-day on-campus program from Stanford Graduate School of Business, running 7 September 2026 to 11 September 2026.",
-   "ar": "برنامج حضوري لمدة 5 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 7 سبتمبر 2026 إلى 11 سبتمبر 2026."
+   "en": "A 5-day on-campus program from IMD Business School, running 7 September 2026 to 11 September 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 7 سبتمبر 2026 إلى 11 سبتمبر 2026."
   },
   "highlights": {
    "en": [],
@@ -1534,55 +1317,27 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/california/stanford-university-stanford-graduate-school-of-business-executive-education"
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
  },
  {
-  "id": "c-leading-change-and-organizational-rene",
-  "school": "s-stanford-graduate-school-of-business",
-  "subject": "strategy",
-  "format": "in-person",
-  "start": "2026-09-13",
-  "days": 6,
-  "price": 17000,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Leading Change and Organizational Renewal",
-   "ar": "قيادة التغيير والتجديد المؤسسي"
-  },
-  "summary": {
-   "en": "A 6-day on-campus program from Stanford Graduate School of Business, running 13 September 2026 to 18 September 2026.",
-   "ar": "برنامج حضوري لمدة 6 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 13 سبتمبر 2026 إلى 18 سبتمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/california/stanford-university-stanford-graduate-school-of-business-executive-education"
- },
- {
-  "id": "c-black-leadership-program",
-  "school": "s-stanford-graduate-school-of-business",
+  "id": "c-breakthrough-program-for-senior-execut",
+  "school": "s-imd-business-school",
   "subject": "leadership",
   "format": "in-person",
-  "start": "2026-09-20",
-  "days": 6,
-  "price": 15000,
+  "start": "2026-09-08",
+  "days": 10,
+  "price": 25500,
+  "currency": "CHF",
   "langs": [
    "en"
   ],
   "title": {
-   "en": "Black Leadership Program",
-   "ar": "برنامج القيادة للقادة السود"
+   "en": "Breakthrough Program for Senior Executives",
+   "ar": "برنامج الانطلاقة النوعية لكبار التنفيذيين"
   },
   "summary": {
-   "en": "A 6-day on-campus program from Stanford Graduate School of Business, running 20 September 2026 to 25 September 2026.",
-   "ar": "برنامج حضوري لمدة 6 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 20 سبتمبر 2026 إلى 25 سبتمبر 2026."
+   "en": "A 10-day on-campus program from IMD Business School, running 8 September 2026 to 17 September 2026.",
+   "ar": "برنامج حضوري لمدة 10 أيام من كلية IMD للأعمال، من 8 سبتمبر 2026 إلى 17 سبتمبر 2026."
   },
   "highlights": {
    "en": [],
@@ -1592,26 +1347,87 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/california/stanford-university-stanford-graduate-school-of-business-executive-education"
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
  },
  {
-  "id": "c-harnessing-ai-for-breakthrough-innovat",
-  "school": "s-stanford-graduate-school-of-business",
+  "id": "c-leading-high-performance-teams",
+  "school": "s-imd-business-school",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-09-08",
+  "days": 4,
+  "price": 7900,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Leading High-Performance Teams",
+   "ar": "قيادة الفرق عالية الأداء"
+  },
+  "summary": {
+   "en": "A 4-day on-campus program from IMD Business School, running 8 September 2026 to 11 September 2026.",
+   "ar": "برنامج حضوري لمدة 4 أيام من كلية IMD للأعمال، من 8 سبتمبر 2026 إلى 11 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-global-management-foundations",
+  "school": "s-imd-business-school",
+  "subject": "leadership",
+  "format": "blended",
+  "start": "2026-09-11",
+  "days": 9,
+  "price": 25000,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Global Management Foundations",
+   "ar": "أساسيات الإدارة العالمية"
+  },
+  "summary": {
+   "en": "A 9-day hybrid program from IMD Business School, running 11 September 2026 to 15 December 2026.",
+   "ar": "برنامج مدمج لمدة 9 أيام من كلية IMD للأعمال، من 11 سبتمبر 2026 إلى 15 ديسمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-ai-strategy-and-implementation",
+  "school": "s-imd-business-school",
   "subject": "digital",
   "format": "in-person",
-  "start": "2026-10-18",
-  "days": 6,
-  "price": 17500,
+  "start": "2026-09-14",
+  "days": 5,
+  "price": 10900,
+  "currency": "CHF",
   "langs": [
    "en"
   ],
   "title": {
-   "en": "Harnessing AI for Breakthrough Innovation and Strategic Impact",
-   "ar": "تسخير الذكاء الاصطناعي للابتكار والأثر الاستراتيجي"
+   "en": "AI Strategy and Implementation",
+   "ar": "استراتيجية الذكاء الاصطناعي وتطبيقها"
   },
   "summary": {
-   "en": "A 6-day on-campus program from Stanford Graduate School of Business, running 18 October 2026 to 23 October 2026.",
-   "ar": "برنامج حضوري لمدة 6 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 18 أكتوبر 2026 إلى 23 أكتوبر 2026."
+   "en": "A 5-day on-campus program from IMD Business School, running 14 September 2026 to 18 September 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 14 سبتمبر 2026 إلى 18 سبتمبر 2026."
   },
   "highlights": {
    "en": [],
@@ -1621,26 +1437,267 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/california/stanford-university-stanford-graduate-school-of-business-executive-education"
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
  },
  {
-  "id": "c-directors-consortium",
-  "school": "s-stanford-graduate-school-of-business",
-  "subject": "finance",
+  "id": "c-leading-your-family-business",
+  "school": "s-imd-business-school",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-09-14",
+  "days": 5,
+  "price": 11900,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Leading your Family Business",
+   "ar": "قيادة شركتك العائلية"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from IMD Business School, running 14 September 2026 to 18 September 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 14 سبتمبر 2026 إلى 18 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-strategies-for-leadership",
+  "school": "s-imd-business-school",
+  "subject": "strategy",
+  "format": "in-person",
+  "start": "2026-09-15",
+  "days": 4,
+  "price": 10900,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Strategies for Leadership",
+   "ar": "استراتيجيات القيادة"
+  },
+  "summary": {
+   "en": "A 4-day on-campus program from IMD Business School, running 15 September 2026 to 18 September 2026.",
+   "ar": "برنامج حضوري لمدة 4 أيام من كلية IMD للأعمال، من 15 سبتمبر 2026 إلى 18 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-the-first-90-days",
+  "school": "s-imd-business-school",
+  "subject": "strategy",
+  "format": "online",
+  "start": "2026-09-15",
+  "days": 3,
+  "price": 3900,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "The First 90 Days®",
+   "ar": "الأيام التسعون الأولى"
+  },
+  "summary": {
+   "en": "A 3-day online program from IMD Business School, running 15 September 2026 to 17 September 2026.",
+   "ar": "برنامج عبر الإنترنت لمدة 3 أيام من كلية IMD للأعمال، من 15 سبتمبر 2026 إلى 17 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-leading-digital-and-ai-transformation",
+  "school": "s-imd-business-school",
+  "subject": "digital",
+  "format": "in-person",
+  "start": "2026-09-28",
+  "days": 5,
+  "price": 10900,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Leading Digital and AI Transformation",
+   "ar": "قيادة التحول الرقمي وتحول الذكاء الاصطناعي"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from IMD Business School, running 28 September 2026 to 2 October 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 28 سبتمبر 2026 إلى 2 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-innovate-with-ai-and-tech",
+  "school": "s-imd-business-school",
+  "subject": "digital",
+  "format": "in-person",
+  "start": "2026-10-04",
+  "days": 5,
+  "price": 10900,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Innovate with AI and Tech",
+   "ar": "الابتكار بالذكاء الاصطناعي والتقنية"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from IMD Business School, running 4 October 2026 to 8 October 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 4 أكتوبر 2026 إلى 8 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-advanced-management-program",
+  "school": "s-imd-business-school",
+  "subject": "leadership",
+  "format": "blended",
+  "start": "2026-10-05",
+  "days": 15,
+  "price": 32500,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Advanced Management Program",
+   "ar": "برنامج الإدارة المتقدم"
+  },
+  "summary": {
+   "en": "A 15-day hybrid program from IMD Business School, running 5 October 2026 to 25 November 2026.",
+   "ar": "برنامج مدمج لمدة 15 يومًا من كلية IMD للأعمال، من 5 أكتوبر 2026 إلى 25 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-generative-ai-for-business-sprint",
+  "school": "s-imd-business-school",
+  "subject": "digital",
+  "format": "online",
+  "start": "2026-10-05",
+  "days": 5,
+  "price": 950,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Generative AI for Business Sprint",
+   "ar": "سباق الذكاء الاصطناعي التوليدي للأعمال"
+  },
+  "summary": {
+   "en": "A 5-day online program from IMD Business School, running 5 October 2026 to 12 October 2026.",
+   "ar": "برنامج عبر الإنترنت لمدة 5 أيام من كلية IMD للأعمال، من 5 أكتوبر 2026 إلى 12 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-mobilizing-people",
+  "school": "s-imd-business-school",
+  "subject": "people",
+  "format": "in-person",
+  "start": "2026-10-15",
+  "days": 9,
+  "price": 23000,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Mobilizing People",
+   "ar": "حشد الأفراد وتعبئتهم"
+  },
+  "summary": {
+   "en": "A 9-day on-campus program from IMD Business School, running 15 October 2026 to 23 October 2026.",
+   "ar": "برنامج حضوري لمدة 9 أيام من كلية IMD للأعمال، من 15 أكتوبر 2026 إلى 23 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-advanced-high-performance-leadership",
+  "school": "s-imd-business-school",
+  "subject": "leadership",
   "format": "in-person",
   "start": "2026-10-19",
   "days": 5,
-  "price": 16000,
+  "price": 9500,
+  "currency": "CHF",
   "langs": [
    "en"
   ],
   "title": {
-   "en": "Directors’ Consortium",
-   "ar": "ملتقى أعضاء مجالس الإدارة"
+   "en": "Advanced High Performance Leadership",
+   "ar": "القيادة عالية الأداء المتقدمة"
   },
   "summary": {
-   "en": "A 5-day on-campus program from Stanford Graduate School of Business, running 19 October 2026 to 23 October 2026.",
-   "ar": "برنامج حضوري لمدة 5 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 19 أكتوبر 2026 إلى 23 أكتوبر 2026."
+   "en": "A 5-day on-campus program from IMD Business School, running 19 October 2026 to 23 October 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 19 أكتوبر 2026 إلى 23 أكتوبر 2026."
   },
   "highlights": {
    "en": [],
@@ -1650,26 +1707,27 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/california/stanford-university-stanford-graduate-school-of-business-executive-education"
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
  },
  {
-  "id": "c-executive-program-in-leadership-the-ef",
-  "school": "s-stanford-graduate-school-of-business",
-  "subject": "leadership",
+  "id": "c-orchestrating-winning-performance",
+  "school": "s-imd-business-school",
+  "subject": "sustainability",
   "format": "in-person",
-  "start": "2026-11-15",
-  "days": 6,
-  "price": 16000,
+  "start": "2026-10-19",
+  "days": 5,
+  "price": 15600,
+  "currency": "SGD",
   "langs": [
    "en"
   ],
   "title": {
-   "en": "Executive Program in Leadership: The Effective Use of Power",
-   "ar": "البرنامج التنفيذي في القيادة: الاستخدام الفعّال للسلطة"
+   "en": "Orchestrating Winning Performance",
+   "ar": "تنسيق الأداء الرابح"
   },
   "summary": {
-   "en": "A 6-day on-campus program from Stanford Graduate School of Business, running 15 November 2026 to 20 November 2026.",
-   "ar": "برنامج حضوري لمدة 6 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 15 نوفمبر 2026 إلى 20 نوفمبر 2026."
+   "en": "A 5-day on-campus program from IMD Business School, running 19 October 2026 to 23 October 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 19 أكتوبر 2026 إلى 23 أكتوبر 2026."
   },
   "highlights": {
    "en": [],
@@ -1679,7 +1737,1627 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/california/stanford-university-stanford-graduate-school-of-business-executive-education"
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-negotiating-for-value-creation",
+  "school": "s-imd-business-school",
+  "subject": "negotiation",
+  "format": "in-person",
+  "start": "2026-10-20",
+  "days": 3,
+  "price": 6900,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Negotiating for Value Creation",
+   "ar": "التفاوض لخلق القيمة"
+  },
+  "summary": {
+   "en": "A 3-day on-campus program from IMD Business School, running 20 October 2026 to 22 October 2026.",
+   "ar": "برنامج حضوري لمدة 3 أيام من كلية IMD للأعمال، من 20 أكتوبر 2026 إلى 22 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-strategic-finance",
+  "school": "s-imd-business-school",
+  "subject": "finance",
+  "format": "in-person",
+  "start": "2026-10-26",
+  "days": 5,
+  "price": 10900,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Strategic Finance",
+   "ar": "المالية الاستراتيجية"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from IMD Business School, running 26 October 2026 to 30 October 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 26 أكتوبر 2026 إلى 30 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-strategic-supply-chain-leadership",
+  "school": "s-imd-business-school",
+  "subject": "operations",
+  "format": "blended",
+  "start": "2026-10-30",
+  "days": 3,
+  "price": 7900,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Strategic Supply Chain Leadership",
+   "ar": "القيادة الاستراتيجية لسلسلة الإمداد"
+  },
+  "summary": {
+   "en": "A 3-day hybrid program from IMD Business School, running 30 October 2026 to 11 November 2026.",
+   "ar": "برنامج مدمج لمدة 3 أيام من كلية IMD للأعمال، من 30 أكتوبر 2026 إلى 11 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-organizational-learning-in-action",
+  "school": "s-imd-business-school",
+  "subject": "people",
+  "format": "blended",
+  "start": "2026-11-02",
+  "days": 4,
+  "price": 9000,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Organizational Learning in Action",
+   "ar": "التعلم المؤسسي في التطبيق العملي"
+  },
+  "summary": {
+   "en": "A 4-day hybrid program from IMD Business School, running 2 November 2026 to 4 December 2026.",
+   "ar": "برنامج مدمج لمدة 4 أيام من كلية IMD للأعمال، من 2 نوفمبر 2026 إلى 4 ديسمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-reinventing-luxury-lab",
+  "school": "s-imd-business-school",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-11-05",
+  "days": 2,
+  "price": 3500,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Reinventing Luxury Lab",
+   "ar": "مختبر إعادة ابتكار قطاع الفخامة"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from IMD Business School, running 5 November 2026 to 6 November 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية IMD للأعمال، من 5 نوفمبر 2026 إلى 6 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-foundations-for-business-leadership",
+  "school": "s-imd-business-school",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-11-08",
+  "days": 15,
+  "price": 25000,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Foundations for Business Leadership",
+   "ar": "أسس قيادة الأعمال"
+  },
+  "summary": {
+   "en": "A 15-day on-campus program from IMD Business School, running 8 November 2026 to 27 November 2026.",
+   "ar": "برنامج حضوري لمدة 15 يومًا من كلية IMD للأعمال، من 8 نوفمبر 2026 إلى 27 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-digital-and-ai-accelerator",
+  "school": "s-imd-business-school",
+  "subject": "digital",
+  "format": "in-person",
+  "start": "2026-11-16",
+  "days": 5,
+  "price": 13900,
+  "currency": "SGD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Digital and AI Accelerator",
+   "ar": "مسرّعة التحول الرقمي والذكاء الاصطناعي"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from IMD Business School, running 16 November 2026 to 20 November 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 16 نوفمبر 2026 إلى 20 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-building-digital-ecosystems",
+  "school": "s-imd-business-school",
+  "subject": "digital",
+  "format": "in-person",
+  "start": "2026-11-23",
+  "days": 5,
+  "price": 10900,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Building Digital Ecosystems",
+   "ar": "بناء المنظومات الرقمية"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from IMD Business School, running 23 November 2026 to 27 November 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 23 نوفمبر 2026 إلى 27 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-leading-your-family-office",
+  "school": "s-imd-business-school",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2027-05-31",
+  "days": 5,
+  "price": 12400,
+  "currency": "CHF",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Leading your Family Office",
+   "ar": "قيادة مكتبك العائلي"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from IMD Business School, running 31 May 2027 to 4 June 2027.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 31 مايو 2027 إلى 4 يونيو 2027."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/imd-international-executive-education"
+ },
+ {
+  "id": "c-labour-and-employment-law-classroom-sy",
+  "school": "s-nus-business-school",
+  "subject": "leadership",
+  "format": "blended",
+  "start": "2026-10-05",
+  "days": 8,
+  "price": 2943,
+  "currency": "SGD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "LABOUR AND EMPLOYMENT LAW (CLASSROOM & SYNCHRONOUS E-LEARNING)",
+   "ar": "قانون العمل والتوظيف (حضوري وتعلم إلكتروني متزامن)"
+  },
+  "summary": {
+   "en": "A 8-day hybrid program from NUS Business School, running 5 October 2026 to 12 October 2026.",
+   "ar": "برنامج مدمج لمدة 8 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 5 أكتوبر 2026 إلى 12 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/asia/singapore/national-university-of-singapore-nus-business-school-executive-education"
+ },
+ {
+  "id": "c-developing-your-leadership-presence-vi",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "leadership",
+  "format": "online",
+  "start": "2026-09-22",
+  "days": 9,
+  "price": 3300,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Developing Your Leadership Presence - Virtual",
+   "ar": "تطوير حضورك القيادي - عن بُعد"
+  },
+  "summary": {
+   "en": "A 9-day online program from Smith School of Business, Queen's University, running 22 September 2026 to 30 September 2026.",
+   "ar": "برنامج عبر الإنترنت لمدة 9 أيام من كلية سميث للأعمال بجامعة كوينز، من 22 سبتمبر 2026 إلى 30 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-learning-to-lead-virtual",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "leadership",
+  "format": "online",
+  "start": "2026-09-24",
+  "days": 9,
+  "price": 2000,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Learning to Lead - Virtual",
+   "ar": "تعلم القيادة - عن بُعد"
+  },
+  "summary": {
+   "en": "A 9-day online program from Smith School of Business, Queen's University, running 24 September 2026 to 2 October 2026.",
+   "ar": "برنامج عبر الإنترنت لمدة 9 أيام من كلية سميث للأعمال بجامعة كوينز، من 24 سبتمبر 2026 إلى 2 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-leading-an-ai-ready-organization-found",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "digital",
+  "format": "in-person",
+  "start": "2026-09-29",
+  "days": 2,
+  "price": 3700,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Leading an AI-Ready Organization: Foundations for Business Leaders",
+   "ar": "قيادة مؤسسة جاهزة للذكاء الاصطناعي: أساسيات لقادة الأعمال"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 29 September 2026 to 30 September 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 29 سبتمبر 2026 إلى 30 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-developing-your-leadership-presence",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-10-01",
+  "days": 2,
+  "price": 3900,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Developing Your Leadership Presence",
+   "ar": "تطوير حضورك القيادي"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 1 October 2026 to 2 October 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 1 أكتوبر 2026 إلى 2 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-accounting-and-finance-fundamentals",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "finance",
+  "format": "in-person",
+  "start": "2026-10-05",
+  "days": 2,
+  "price": 3700,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Accounting and Finance Fundamentals",
+   "ar": "أساسيات المحاسبة والمالية"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 5 October 2026 to 6 October 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 5 أكتوبر 2026 إلى 6 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-emotional-intelligence-for-leaders",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-10-07",
+  "days": 2,
+  "price": 3700,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Emotional Intelligence for Leaders",
+   "ar": "الذكاء العاطفي للقادة"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 7 October 2026 to 8 October 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 7 أكتوبر 2026 إلى 8 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-closing-the-strategy-execution-gap-vir",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "strategy",
+  "format": "online",
+  "start": "2026-10-08",
+  "days": 9,
+  "price": 3000,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Closing the Strategy-Execution Gap - Virtual",
+   "ar": "سد الفجوة بين الاستراتيجية والتنفيذ - عن بُعد"
+  },
+  "summary": {
+   "en": "A 9-day online program from Smith School of Business, Queen's University, running 8 October 2026 to 16 October 2026.",
+   "ar": "برنامج عبر الإنترنت لمدة 9 أيام من كلية سميث للأعمال بجامعة كوينز، من 8 أكتوبر 2026 إلى 16 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-strategic-thinking-turning-complexity",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "strategy",
+  "format": "in-person",
+  "start": "2026-10-08",
+  "days": 2,
+  "price": 3700,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Strategic Thinking: Turning Complexity into Clarity",
+   "ar": "التفكير الاستراتيجي: تحويل التعقيد إلى وضوح"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 8 October 2026 to 9 October 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 8 أكتوبر 2026 إلى 9 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-coaching-for-high-performance",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "people",
+  "format": "in-person",
+  "start": "2026-10-14",
+  "days": 2,
+  "price": 3700,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Coaching for High Performance",
+   "ar": "التوجيه لتحقيق الأداء العالي"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 14 October 2026 to 15 October 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 14 أكتوبر 2026 إلى 15 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-public-executive-program",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-10-19",
+  "days": 5,
+  "price": 11000,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Public Executive Program",
+   "ar": "البرنامج التنفيذي للقطاع العام"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from Smith School of Business, Queen's University, running 19 October 2026 to 23 October 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية سميث للأعمال بجامعة كوينز، من 19 أكتوبر 2026 إلى 23 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-communicating-with-impact-virtual",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "people",
+  "format": "online",
+  "start": "2026-10-22",
+  "days": 9,
+  "price": 3000,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Communicating With Impact - Virtual",
+   "ar": "التواصل المؤثر - عن بُعد"
+  },
+  "summary": {
+   "en": "A 9-day online program from Smith School of Business, Queen's University, running 22 October 2026 to 30 October 2026.",
+   "ar": "برنامج عبر الإنترنت لمدة 9 أيام من كلية سميث للأعمال بجامعة كوينز، من 22 أكتوبر 2026 إلى 30 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-strategic-planning-and-leading-change",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "strategy",
+  "format": "in-person",
+  "start": "2026-10-22",
+  "days": 2,
+  "price": 3700,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Strategic Planning and Leading Change",
+   "ar": "التخطيط الاستراتيجي وقيادة التغيير"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 22 October 2026 to 23 October 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 22 أكتوبر 2026 إلى 23 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-ai-for-leaders",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "digital",
+  "format": "in-person",
+  "start": "2026-10-26",
+  "days": 5,
+  "price": 11000,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "AI for Leaders",
+   "ar": "الذكاء الاصطناعي للقادة"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from Smith School of Business, Queen's University, running 26 October 2026 to 30 October 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية سميث للأعمال بجامعة كوينز، من 26 أكتوبر 2026 إلى 30 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-learning-to-lead",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-11-02",
+  "days": 2,
+  "price": 2700,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Learning to Lead",
+   "ar": "تعلم القيادة"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 2 November 2026 to 3 November 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 2 نوفمبر 2026 إلى 3 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-strategic-execution",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "strategy",
+  "format": "in-person",
+  "start": "2026-11-02",
+  "days": 5,
+  "price": 11000,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Strategic Execution",
+   "ar": "التنفيذ الاستراتيجي"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from Smith School of Business, Queen's University, running 2 November 2026 to 6 November 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية سميث للأعمال بجامعة كوينز، من 2 نوفمبر 2026 إلى 6 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-leadership",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-11-09",
+  "days": 5,
+  "price": 11000,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Leadership",
+   "ar": "القيادة"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from Smith School of Business, Queen's University, running 9 November 2026 to 13 November 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية سميث للأعمال بجامعة كوينز، من 9 نوفمبر 2026 إلى 13 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-project-leadership",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-11-09",
+  "days": 2,
+  "price": 3700,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Project Leadership",
+   "ar": "قيادة المشاريع"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 9 November 2026 to 10 November 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 9 نوفمبر 2026 إلى 10 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-negotiating-and-consensus-building",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "negotiation",
+  "format": "in-person",
+  "start": "2026-11-11",
+  "days": 2,
+  "price": 3700,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Negotiating and Consensus Building",
+   "ar": "التفاوض وبناء التوافق"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 11 November 2026 to 12 November 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 11 نوفمبر 2026 إلى 12 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-strategic-planning-and-leading-cha-2",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "strategy",
+  "format": "online",
+  "start": "2026-11-12",
+  "days": 9,
+  "price": 3000,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Strategic Planning and Leading Change - Virtual",
+   "ar": "التخطيط الاستراتيجي وقيادة التغيير - افتراضي"
+  },
+  "summary": {
+   "en": "A 9-day online program from Smith School of Business, Queen's University, running 12 November 2026 to 20 November 2026.",
+   "ar": "برنامج عبر الإنترنت لمدة 9 أيام من كلية سميث للأعمال بجامعة كوينز، من 12 نوفمبر 2026 إلى 20 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-accounting-and-finance-fundamentals-vi",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "finance",
+  "format": "online",
+  "start": "2026-11-16",
+  "days": 9,
+  "price": 3000,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Accounting and Finance Fundamentals - Virtual",
+   "ar": "أساسيات المحاسبة والمالية - عن بُعد"
+  },
+  "summary": {
+   "en": "A 9-day online program from Smith School of Business, Queen's University, running 16 November 2026 to 24 November 2026.",
+   "ar": "برنامج عبر الإنترنت لمدة 9 أيام من كلية سميث للأعمال بجامعة كوينز، من 16 نوفمبر 2026 إلى 24 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-organizational-structure-and-culture",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-11-16",
+  "days": 2,
+  "price": 3700,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Organizational Structure and Culture",
+   "ar": "الهيكل التنظيمي والثقافة المؤسسية"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 16 November 2026 to 17 November 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 16 نوفمبر 2026 إلى 17 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-closing-the-strategy-execution-gap",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "strategy",
+  "format": "in-person",
+  "start": "2026-11-18",
+  "days": 2,
+  "price": 3700,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Closing the Strategy-Execution Gap",
+   "ar": "سد الفجوة بين الاستراتيجية والتنفيذ"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 18 November 2026 to 19 November 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 18 نوفمبر 2026 إلى 19 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-coaching-for-high-performance-virtual",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "people",
+  "format": "online",
+  "start": "2026-11-18",
+  "days": 15,
+  "price": 3000,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Coaching for High Performance - Virtual",
+   "ar": "التوجيه لتحقيق الأداء العالي - عن بُعد"
+  },
+  "summary": {
+   "en": "A 15-day online program from Smith School of Business, Queen's University, running 18 November 2026 to 2 December 2026.",
+   "ar": "برنامج عبر الإنترنت لمدة 15 يومًا من كلية سميث للأعمال بجامعة كوينز، من 18 نوفمبر 2026 إلى 2 ديسمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-communicating-with-impact",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "people",
+  "format": "in-person",
+  "start": "2026-11-23",
+  "days": 2,
+  "price": 3700,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Communicating With Impact",
+   "ar": "التواصل المؤثر"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 23 November 2026 to 24 November 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 23 نوفمبر 2026 إلى 24 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-conflict-management",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-11-25",
+  "days": 2,
+  "price": 3700,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Conflict Management",
+   "ar": "إدارة النزاعات"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 25 November 2026 to 26 November 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 25 نوفمبر 2026 إلى 26 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-leading-digital-transformation",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "digital",
+  "format": "in-person",
+  "start": "2026-11-30",
+  "days": 2,
+  "price": 3700,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Leading Digital Transformation",
+   "ar": "قيادة التحوّل الرقمي"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 30 November 2026 to 1 December 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 30 نوفمبر 2026 إلى 1 ديسمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-strategic-thinking-turning-complex-2",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "strategy",
+  "format": "online",
+  "start": "2026-11-30",
+  "days": 9,
+  "price": 3000,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Strategic Thinking: Turning Complexity into Clarity - Virtual",
+   "ar": "التفكير الاستراتيجي: تحويل التعقيد إلى وضوح - افتراضي"
+  },
+  "summary": {
+   "en": "A 9-day online program from Smith School of Business, Queen's University, running 30 November 2026 to 8 December 2026.",
+   "ar": "برنامج عبر الإنترنت لمدة 9 أيام من كلية سميث للأعمال بجامعة كوينز، من 30 نوفمبر 2026 إلى 8 ديسمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-building-an-ai-powered-organization-st",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "digital",
+  "format": "in-person",
+  "start": "2026-12-09",
+  "days": 2,
+  "price": 3700,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Building an AI-Powered Organization: Strategy, Governance, and Transformation",
+   "ar": "بناء مؤسسة مدعومة بالذكاء الاصطناعي: الاستراتيجية والحوكمة والتحول"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 9 December 2026 to 10 December 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 9 ديسمبر 2026 إلى 10 ديسمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-building-your-productivity-edge-with-a",
+  "school": "s-smith-school-of-business-queen-s-unive",
+  "subject": "digital",
+  "format": "in-person",
+  "start": "2026-12-14",
+  "days": 2,
+  "price": 4300,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Building Your Productivity Edge with AI",
+   "ar": "بناء تفوقك الإنتاجي بالذكاء الاصطناعي"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from Smith School of Business, Queen's University, running 14 December 2026 to 15 December 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 14 ديسمبر 2026 إلى 15 ديسمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/queens-university-queens-school-of-business-executive-education"
+ },
+ {
+  "id": "c-certified-scrummaster",
+  "school": "s-ubc-sauder-school-of-business",
+  "subject": "operations",
+  "format": "online",
+  "start": "2026-09-09",
+  "days": 2,
+  "price": 1250,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Certified ScrumMaster",
+   "ar": "سكرم ماستر معتمد (Certified ScrumMaster)"
+  },
+  "summary": {
+   "en": "A 2-day online program from UBC Sauder School of Business, running 9 September 2026 to 10 September 2026.",
+   "ar": "برنامج عبر الإنترنت لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 9 سبتمبر 2026 إلى 10 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/university-of-british-columbia-sauder-school-of-business-executive-education"
+ },
+ {
+  "id": "c-building-an-effective-strategy",
+  "school": "s-ubc-sauder-school-of-business",
+  "subject": "strategy",
+  "format": "in-person",
+  "start": "2026-09-10",
+  "days": 2,
+  "price": 2390,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Building an Effective Strategy",
+   "ar": "بناء استراتيجية فعالة"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from UBC Sauder School of Business, running 10 September 2026 to 11 September 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 10 سبتمبر 2026 إلى 11 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/university-of-british-columbia-sauder-school-of-business-executive-education"
+ },
+ {
+  "id": "c-conflict-management-strategies",
+  "school": "s-ubc-sauder-school-of-business",
+  "subject": "strategy",
+  "format": "in-person",
+  "start": "2026-09-16",
+  "days": 2,
+  "price": 2390,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Conflict Management Strategies",
+   "ar": "استراتيجيات إدارة النزاعات"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from UBC Sauder School of Business, running 16 September 2026 to 17 September 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 16 سبتمبر 2026 إلى 17 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/university-of-british-columbia-sauder-school-of-business-executive-education"
+ },
+ {
+  "id": "c-financial-statement-analysis-for-non-f",
+  "school": "s-ubc-sauder-school-of-business",
+  "subject": "finance",
+  "format": "in-person",
+  "start": "2026-09-24",
+  "days": 2,
+  "price": 2390,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Financial Statement Analysis for Non-Financial Managers",
+   "ar": "تحليل القوائم المالية للمديرين غير الماليين"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from UBC Sauder School of Business, running 24 September 2026 to 25 September 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 24 سبتمبر 2026 إلى 25 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/university-of-british-columbia-sauder-school-of-business-executive-education"
+ },
+ {
+  "id": "c-coaching-and-mentoring",
+  "school": "s-ubc-sauder-school-of-business",
+  "subject": "people",
+  "format": "in-person",
+  "start": "2026-10-14",
+  "days": 2,
+  "price": 2390,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Coaching and Mentoring",
+   "ar": "التوجيه والإرشاد"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from UBC Sauder School of Business, running 14 October 2026 to 15 October 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 14 أكتوبر 2026 إلى 15 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/university-of-british-columbia-sauder-school-of-business-executive-education"
+ },
+ {
+  "id": "c-high-performance-people-skills",
+  "school": "s-ubc-sauder-school-of-business",
+  "subject": "people",
+  "format": "in-person",
+  "start": "2026-10-15",
+  "days": 2,
+  "price": 2390,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "High-Performance People Skills",
+   "ar": "مهارات التعامل مع الأفراد بأداء عالٍ"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from UBC Sauder School of Business, running 15 October 2026 to 16 October 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 15 أكتوبر 2026 إلى 16 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/university-of-british-columbia-sauder-school-of-business-executive-education"
+ },
+ {
+  "id": "c-advanced-leadership-program",
+  "school": "s-ubc-sauder-school-of-business",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-10-26",
+  "days": 5,
+  "price": 5650,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Advanced Leadership Program",
+   "ar": "برنامج القيادة المتقدم"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from UBC Sauder School of Business, running 26 October 2026 to 30 October 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 26 أكتوبر 2026 إلى 30 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/university-of-british-columbia-sauder-school-of-business-executive-education"
+ },
+ {
+  "id": "c-employment-law-essentials",
+  "school": "s-ubc-sauder-school-of-business",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-10-28",
+  "days": 2,
+  "price": 2390,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Employment Law Essentials",
+   "ar": "أساسيات قانون العمل"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from UBC Sauder School of Business, running 28 October 2026 to 29 October 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 28 أكتوبر 2026 إلى 29 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/university-of-british-columbia-sauder-school-of-business-executive-education"
+ },
+ {
+  "id": "c-communication-and-emotional-intelligen",
+  "school": "s-ubc-sauder-school-of-business",
+  "subject": "people",
+  "format": "in-person",
+  "start": "2026-11-03",
+  "days": 2,
+  "price": 2390,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Communication and Emotional Intelligence for Managers",
+   "ar": "التواصل والذكاء العاطفي للمديرين"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from UBC Sauder School of Business, running 3 November 2026 to 4 November 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 3 نوفمبر 2026 إلى 4 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/university-of-british-columbia-sauder-school-of-business-executive-education"
+ },
+ {
+  "id": "c-ai-advantage-ai-strategies-for-busines",
+  "school": "s-ubc-sauder-school-of-business",
+  "subject": "digital",
+  "format": "in-person",
+  "start": "2026-11-16",
+  "days": 3,
+  "price": 2390,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "AI Advantage - AI Strategies for Business Leaders",
+   "ar": "AI Advantage - استراتيجيات الذكاء الاصطناعي لقادة الأعمال"
+  },
+  "summary": {
+   "en": "A 3-day on-campus program from UBC Sauder School of Business, running 16 November 2026 to 17 November 2026.",
+   "ar": "برنامج حضوري لمدة 3 أيام من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 16 نوفمبر 2026 إلى 17 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/university-of-british-columbia-sauder-school-of-business-executive-education"
+ },
+ {
+  "id": "c-essentials-in-supervisory-skills",
+  "school": "s-ubc-sauder-school-of-business",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-11-26",
+  "days": 2,
+  "price": 2390,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Essentials in Supervisory Skills",
+   "ar": "أساسيات المهارات الإشرافية"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from UBC Sauder School of Business, running 26 November 2026 to 27 November 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 26 نوفمبر 2026 إلى 27 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/university-of-british-columbia-sauder-school-of-business-executive-education"
+ },
+ {
+  "id": "c-essential-management-skills",
+  "school": "s-ubc-sauder-school-of-business",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-12-07",
+  "days": 5,
+  "price": 4390,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Essential Management Skills",
+   "ar": "مهارات الإدارة الأساسية"
+  },
+  "summary": {
+   "en": "A 5-day on-campus program from UBC Sauder School of Business, running 7 December 2026 to 11 December 2026.",
+   "ar": "برنامج حضوري لمدة 5 أيام من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 7 ديسمبر 2026 إلى 11 ديسمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/university-of-british-columbia-sauder-school-of-business-executive-education"
+ },
+ {
+  "id": "c-leadership-excellence-for-administrati",
+  "school": "s-ubc-sauder-school-of-business",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2026-12-07",
+  "days": 2,
+  "price": 2390,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Leadership Excellence for Administrative Professionals",
+   "ar": "التميز القيادي للمهنيين الإداريين"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from UBC Sauder School of Business, running 7 December 2026 to 8 December 2026.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 7 ديسمبر 2026 إلى 8 ديسمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/university-of-british-columbia-sauder-school-of-business-executive-education"
+ },
+ {
+  "id": "c-developing-successful-partnerships",
+  "school": "s-ubc-sauder-school-of-business",
+  "subject": "leadership",
+  "format": "in-person",
+  "start": "2027-02-08",
+  "days": 2,
+  "price": 2390,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Developing Successful Partnerships",
+   "ar": "بناء شراكات ناجحة"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from UBC Sauder School of Business, running 8 February 2027 to 9 February 2027.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 8 فبراير 2027 إلى 9 فبراير 2027."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/university-of-british-columbia-sauder-school-of-business-executive-education"
+ },
+ {
+  "id": "c-leading-people-through-change",
+  "school": "s-ubc-sauder-school-of-business",
+  "subject": "people",
+  "format": "in-person",
+  "start": "2027-02-10",
+  "days": 2,
+  "price": 2390,
+  "currency": "CAD",
+  "langs": [
+   "en"
+  ],
+  "title": {
+   "en": "Leading People Through Change",
+   "ar": "قيادة الأفراد خلال التغيير"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from UBC Sauder School of Business, running 10 February 2027 to 11 February 2027.",
+   "ar": "برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 10 فبراير 2027 إلى 11 فبراير 2027."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/canada/university-of-british-columbia-sauder-school-of-business-executive-education"
  },
  {
   "id": "c-women-s-executive-leadership-program",
@@ -1689,6 +3367,7 @@
   "start": "2026-09-22",
   "days": 4,
   "price": 6900,
+  "currency": "USD",
   "langs": [
    "en"
   ],
@@ -1711,23 +3390,84 @@
   "source_url": "https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education"
  },
  {
-  "id": "c-product-management-program",
-  "school": "s-uc-berkeley-haas-school-of-business",
+  "id": "c-strategic-performance-management",
+  "school": "s-university-of-st-gallen-executive-scho",
+  "subject": "strategy",
+  "format": "in-person",
+  "start": "2026-09-10",
+  "days": 2,
+  "price": 2250,
+  "currency": "CHF",
+  "langs": [
+   "de"
+  ],
+  "title": {
+   "en": "Strategic Performance Management",
+   "ar": "الإدارة الاستراتيجية للأداء"
+  },
+  "summary": {
+   "en": "A 2-day on-campus program from University of St. Gallen Executive School, starting 10 September 2026.",
+   "ar": "برنامج حضوري لمدة يومين من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 10 سبتمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/university-of-st-gallen-executive-school-of-management-technology-and-law-es-hsg"
+ },
+ {
+  "id": "c-data-protection-officer-dpo-hsg",
+  "school": "s-university-of-st-gallen-executive-scho",
+  "subject": "data",
+  "format": "in-person",
+  "start": "2026-09-14",
+  "days": 15,
+  "price": 13500,
+  "currency": "CHF",
+  "langs": [
+   "de"
+  ],
+  "title": {
+   "en": "Data Protection Officer (DPO HSG)",
+   "ar": "مسؤول حماية البيانات (DPO HSG)"
+  },
+  "summary": {
+   "en": "A 15-day on-campus program from University of St. Gallen Executive School, running 14 September 2026 to 2 October 2026.",
+   "ar": "برنامج حضوري لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 14 سبتمبر 2026 إلى 2 أكتوبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/university-of-st-gallen-executive-school-of-management-technology-and-law-es-hsg"
+ },
+ {
+  "id": "c-management-for-the-legal-profession-ca",
+  "school": "s-university-of-st-gallen-executive-scho",
   "subject": "leadership",
   "format": "in-person",
   "start": "2026-09-28",
-  "days": 5,
-  "price": 7900,
+  "days": 15,
+  "price": 13500,
+  "currency": "CHF",
   "langs": [
-   "en"
+   "de"
   ],
   "title": {
-   "en": "Product Management Program",
-   "ar": "برنامج إدارة المنتجات"
+   "en": "Management for the Legal Profession CAS-HSG",
+   "ar": "الإدارة للمهن القانونية CAS-HSG"
   },
   "summary": {
-   "en": "A 5-day on-campus program from UC Berkeley Haas School of Business, running 28 September 2026 to 2 October 2026.",
-   "ar": "برنامج حضوري لمدة 5 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 28 سبتمبر 2026 إلى 2 أكتوبر 2026."
+   "en": "A 15-day on-campus program from University of St. Gallen Executive School, running 28 September 2026 to 16 October 2026.",
+   "ar": "برنامج حضوري لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 28 سبتمبر 2026 إلى 16 أكتوبر 2026."
   },
   "highlights": {
    "en": [],
@@ -1737,84 +3477,27 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education"
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/university-of-st-gallen-executive-school-of-management-technology-and-law-es-hsg"
  },
  {
-  "id": "c-advanced-executive-presence-program",
-  "school": "s-uc-berkeley-haas-school-of-business",
-  "subject": "people",
-  "format": "in-person",
-  "start": "2026-09-30",
-  "days": 3,
-  "price": 5900,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Advanced Executive Presence Program",
-   "ar": "البرنامج المتقدم للحضور القيادي"
-  },
-  "summary": {
-   "en": "A 3-day on-campus program from UC Berkeley Haas School of Business, running 30 September 2026 to 2 October 2026.",
-   "ar": "برنامج حضوري لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 30 سبتمبر 2026 إلى 2 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education"
- },
- {
-  "id": "c-financial-data-analysis-for-leaders",
-  "school": "s-uc-berkeley-haas-school-of-business",
+  "id": "c-finanzbewusst-managen",
+  "school": "s-university-of-st-gallen-executive-scho",
   "subject": "finance",
   "format": "in-person",
-  "start": "2026-10-05",
-  "days": 5,
-  "price": 7500,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Financial Data Analysis for Leaders",
-   "ar": "تحليل البيانات المالية للقادة"
-  },
-  "summary": {
-   "en": "A 5-day on-campus program from UC Berkeley Haas School of Business, running 5 October 2026 to 9 October 2026.",
-   "ar": "برنامج حضوري لمدة 5 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 5 أكتوبر 2026 إلى 9 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education"
- },
- {
-  "id": "c-leadership-communications-program",
-  "school": "s-uc-berkeley-haas-school-of-business",
-  "subject": "people",
-  "format": "in-person",
-  "start": "2026-10-14",
+  "start": "2026-10-20",
   "days": 3,
-  "price": 5600,
+  "price": 4900,
+  "currency": "CHF",
   "langs": [
-   "en"
+   "de"
   ],
   "title": {
-   "en": "Leadership Communications Program",
-   "ar": "برنامج الاتصال القيادي"
+   "en": "Finanzbewusst managen",
+   "ar": "الإدارة بوعي مالي"
   },
   "summary": {
-   "en": "A 3-day on-campus program from UC Berkeley Haas School of Business, running 14 October 2026 to 16 October 2026.",
-   "ar": "برنامج حضوري لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 14 أكتوبر 2026 إلى 16 أكتوبر 2026."
+   "en": "A 3-day on-campus program from University of St. Gallen Executive School, starting 20 October 2026.",
+   "ar": "برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 20 أكتوبر 2026."
   },
   "highlights": {
    "en": [],
@@ -1824,171 +3507,27 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education"
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/university-of-st-gallen-executive-school-of-management-technology-and-law-es-hsg"
  },
  {
-  "id": "c-the-berkeley-executive-leadership-prog",
-  "school": "s-uc-berkeley-haas-school-of-business",
-  "subject": "leadership",
-  "format": "in-person",
-  "start": "2026-10-26",
-  "days": 5,
-  "price": 9900,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "The Berkeley Executive Leadership Program",
-   "ar": "برنامج بيركلي للقيادة التنفيذية"
-  },
-  "summary": {
-   "en": "A 5-day on-campus program from UC Berkeley Haas School of Business, running 26 October 2026 to 30 October 2026.",
-   "ar": "برنامج حضوري لمدة 5 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 26 أكتوبر 2026 إلى 30 أكتوبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education"
- },
- {
-  "id": "c-venture-capital-executive-program",
-  "school": "s-uc-berkeley-haas-school-of-business",
-  "subject": "entrepreneurship",
-  "format": "in-person",
-  "start": "2026-11-02",
-  "days": 5,
-  "price": 8700,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Venture Capital Executive Program",
-   "ar": "البرنامج التنفيذي لرأس المال الجريء"
-  },
-  "summary": {
-   "en": "A 5-day on-campus program from UC Berkeley Haas School of Business, running 2 November 2026 to 6 November 2026.",
-   "ar": "برنامج حضوري لمدة 5 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 2 نوفمبر 2026 إلى 6 نوفمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education"
- },
- {
-  "id": "c-high-impact-leadership-program",
-  "school": "s-uc-berkeley-haas-school-of-business",
-  "subject": "leadership",
-  "format": "in-person",
-  "start": "2026-11-04",
-  "days": 3,
-  "price": 5900,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "High-Impact Leadership Program",
-   "ar": "برنامج القيادة عالية التأثير"
-  },
-  "summary": {
-   "en": "A 3-day on-campus program from UC Berkeley Haas School of Business, running 4 November 2026 to 6 November 2026.",
-   "ar": "برنامج حضوري لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 4 نوفمبر 2026 إلى 6 نوفمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education"
- },
- {
-  "id": "c-leading-strategy-execution-through-cul",
-  "school": "s-uc-berkeley-haas-school-of-business",
-  "subject": "strategy",
-  "format": "online",
-  "start": "2026-11-04",
-  "days": 3,
-  "price": 3400,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "Leading Strategy Execution through Culture Program",
-   "ar": "برنامج قيادة تنفيذ الاستراتيجية من خلال الثقافة"
-  },
-  "summary": {
-   "en": "A 3-day online program from UC Berkeley Haas School of Business, running 4 November 2026 to 6 November 2026.",
-   "ar": "برنامج عبر الإنترنت لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 4 نوفمبر 2026 إلى 6 نوفمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education"
- },
- {
-  "id": "c-new-manager-boot-camp",
-  "school": "s-uc-berkeley-haas-school-of-business",
-  "subject": "leadership",
-  "format": "in-person",
-  "start": "2026-11-04",
-  "days": 3,
-  "price": 5400,
-  "langs": [
-   "en"
-  ],
-  "title": {
-   "en": "New Manager Boot Camp",
-   "ar": "معسكر المدير الجديد"
-  },
-  "summary": {
-   "en": "A 3-day on-campus program from UC Berkeley Haas School of Business, running 4 November 2026 to 6 November 2026.",
-   "ar": "برنامج حضوري لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 4 نوفمبر 2026 إلى 6 نوفمبر 2026."
-  },
-  "highlights": {
-   "en": [],
-   "ar": []
-  },
-  "audience": {
-   "en": "",
-   "ar": ""
-  },
-  "source_url": "https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education"
- },
- {
-  "id": "c-negotiation-and-influence",
-  "school": "s-uc-berkeley-haas-school-of-business",
+  "id": "c-erfolgreich-verhandeln-cas-hsg",
+  "school": "s-university-of-st-gallen-executive-scho",
   "subject": "negotiation",
   "format": "in-person",
-  "start": "2026-11-18",
-  "days": 3,
-  "price": 5100,
+  "start": "2026-11-02",
+  "days": 20,
+  "price": 19500,
+  "currency": "CHF",
   "langs": [
-   "en"
+   "de"
   ],
   "title": {
-   "en": "Negotiation and Influence",
-   "ar": "التفاوض والتأثير"
+   "en": "Erfolgreich verhandeln CAS-HSG",
+   "ar": "التفاوض الناجح CAS-HSG"
   },
   "summary": {
-   "en": "A 3-day on-campus program from UC Berkeley Haas School of Business, running 18 November 2026 to 20 November 2026.",
-   "ar": "برنامج حضوري لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 18 نوفمبر 2026 إلى 20 نوفمبر 2026."
+   "en": "A 20-day on-campus program from University of St. Gallen Executive School, running 2 November 2026 to 27 November 2026.",
+   "ar": "برنامج حضوري لمدة 20 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 2 نوفمبر 2026 إلى 27 نوفمبر 2026."
   },
   "highlights": {
    "en": [],
@@ -1998,26 +3537,27 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education"
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/university-of-st-gallen-executive-school-of-management-technology-and-law-es-hsg"
  },
  {
-  "id": "c-the-berkeley-changemaker-program",
-  "school": "s-uc-berkeley-haas-school-of-business",
+  "id": "c-st-galler-management-seminar-fur-kmu-c",
+  "school": "s-university-of-st-gallen-executive-scho",
   "subject": "leadership",
   "format": "in-person",
-  "start": "2026-12-09",
-  "days": 3,
-  "price": 4500,
+  "start": "2026-11-12",
+  "days": 20,
+  "price": 14900,
+  "currency": "CHF",
   "langs": [
-   "en"
+   "de"
   ],
   "title": {
-   "en": "The Berkeley Changemaker Program",
-   "ar": "برنامج بيركلي لصنّاع التغيير"
+   "en": "St.Galler Management Seminar für KMU (CAS)",
+   "ar": "ندوة سانت غالن في الإدارة للشركات الصغيرة والمتوسطة (CAS)"
   },
   "summary": {
-   "en": "A 3-day on-campus program from UC Berkeley Haas School of Business, running 9 December 2026 to 11 December 2026.",
-   "ar": "برنامج حضوري لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 9 ديسمبر 2026 إلى 11 ديسمبر 2026."
+   "en": "A 20-day on-campus program from University of St. Gallen Executive School, running 12 November 2026 to 1 December 2026.",
+   "ar": "برنامج حضوري لمدة 20 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 12 نوفمبر 2026 إلى 1 ديسمبر 2026."
   },
   "highlights": {
    "en": [],
@@ -2027,6 +3567,36 @@
    "en": "",
    "ar": ""
   },
-  "source_url": "https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education"
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/university-of-st-gallen-executive-school-of-management-technology-and-law-es-hsg"
+ },
+ {
+  "id": "c-gesprachsfuhrung-und-verhandlungstechn",
+  "school": "s-university-of-st-gallen-executive-scho",
+  "subject": "negotiation",
+  "format": "in-person",
+  "start": "2026-11-17",
+  "days": 3,
+  "price": 3900,
+  "currency": "CHF",
+  "langs": [
+   "de"
+  ],
+  "title": {
+   "en": "Gesprächsführung und Verhandlungstechnik",
+   "ar": "إدارة الحوار وتقنيات التفاوض"
+  },
+  "summary": {
+   "en": "A 3-day on-campus program from University of St. Gallen Executive School, starting 17 November 2026.",
+   "ar": "برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 17 نوفمبر 2026."
+  },
+  "highlights": {
+   "en": [],
+   "ar": []
+  },
+  "audience": {
+   "en": "",
+   "ar": ""
+  },
+  "source_url": "https://executivecourses.com/schools/europe/switzerland/university-of-st-gallen-executive-school-of-management-technology-and-law-es-hsg"
  }
 ]

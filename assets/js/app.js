@@ -114,7 +114,7 @@
           '<span class="pill">' + esc(c.langs.map(langLabel).join(' · ')) + '</span>' +
         '</div>' +
         '<div class="course-card__foot">' +
-          '<div class="course-card__price"><small>' + esc(t('card.from')) + '</small>' + esc(I.money(c.price)) + '</div>' +
+          '<div class="course-card__price"><small>' + esc(t('card.from')) + '</small>' + esc(I.money(c.price, c.currency)) + '</div>' +
           '<div class="course-card__date">' +
             esc(t('card.starts', { date: I.shortDate(c.start) })) +
             /* Imported listings carry no rating; the card simply omits the
@@ -154,6 +154,26 @@
 
   /* --- Chrome: theme, nav, drawer ---------------------------------------- */
   function initChrome() {
+    /* Currency preference: fees show in each course's own currency, or all
+       converted to SAR. Rendering reads the preference through I.money, so a
+       change simply reloads the page. */
+    const tools = document.querySelector('.header-tools');
+    if (tools) {
+      const sel = document.createElement('select');
+      sel.className = 'select select--sm currency-switch';
+      sel.setAttribute('aria-label', t('currency.label'));
+      sel.innerHTML =
+        '<option value="orig">' + esc(t('currency.orig')) + '</option>' +
+        '<option value="sar">' + esc(t('currency.sar')) + '</option>';
+      sel.value = I.getCurrency();
+      if (sel.value === 'sar') sel.title = t('currency.note');
+      sel.addEventListener('change', function () {
+        I.setCurrency(sel.value);
+        location.reload();
+      });
+      tools.insertBefore(sel, tools.firstChild);
+    }
+
     const themeBtn = document.querySelector('[data-theme-toggle]');
     if (themeBtn) {
       themeBtn.addEventListener('click', function () {
@@ -257,7 +277,7 @@
       return '<div class="drawer-item">' +
         '<div class="drawer-item__body">' +
           '<h4><a href="course.html?id=' + c.id + '">' + esc(pick(c.title)) + '</a></h4>' +
-          '<p>' + esc(pick(schoolOf(c).name)) + ' · ' + esc(I.money(c.price)) + '</p>' +
+          '<p>' + esc(pick(schoolOf(c).name)) + ' · ' + esc(I.money(c.price, c.currency)) + '</p>' +
         '</div>' +
         '<button type="button" data-remove="' + c.id + '">' + esc(t('shortlist.remove')) + '</button>' +
       '</div>';
@@ -381,7 +401,8 @@
         if (hay.indexOf(state.q.toLowerCase().trim()) === -1) return false;
       }
       if (state.school.length && state.school.indexOf(c.school) === -1) return false;
-      if (skipKey !== 'price' && c.price > state.max) return false;
+      /* The slider is a USD-equivalent ceiling so mixed currencies compare. */
+      if (skipKey !== 'price' && I.toUsd(c.price, c.currency) > state.max) return false;
       for (let i = 0; i < FACETS.length; i++) {
         const f = FACETS[i];
         if (f.key === skipKey) continue;
@@ -398,8 +419,8 @@
       popular: (a, b) => b.popularity - a.popularity,
       /* Unrated (imported) listings sort after every rated one. */
       rating: (a, b) => (b.rating || 0) - (a.rating || 0) || (b.reviews || 0) - (a.reviews || 0),
-      priceAsc: (a, b) => a.price - b.price,
-      priceDesc: (a, b) => b.price - a.price
+      priceAsc: (a, b) => I.toUsd(a.price, a.currency) - I.toUsd(b.price, b.currency),
+      priceDesc: (a, b) => I.toUsd(b.price, b.currency) - I.toUsd(a.price, a.currency)
     };
 
     function syncUrl() {
@@ -430,7 +451,7 @@
 
       const priceGroup = '<div class="filter-group"><h3>' + esc(t('filters.price')) + '</h3>' +
         '<div class="range-row"><span>' +
-          (state.max >= MAX_PRICE ? esc(t('filters.noMax')) : esc(t('filters.upTo', { n: I.money(state.max) }))) +
+          (state.max >= MAX_PRICE ? esc(t('filters.noMax')) : esc(t('filters.upTo', { n: I.money(state.max, 'USD') }))) +
         '</span></div>' +
         '<input type="range" data-price min="1000" max="' + MAX_PRICE + '" step="500" value="' + state.max + '" ' +
         'aria-label="' + esc(t('filters.price')) + '"></div>';
@@ -466,7 +487,7 @@
         if (SCHOOL[v]) chips.push({ key: 'school', val: v, label: pick(SCHOOL[v].name) });
       });
       if (state.q) chips.push({ key: 'q', val: state.q, label: '“' + state.q + '”' });
-      if (state.max < MAX_PRICE) chips.push({ key: 'price', val: '', label: t('filters.upTo', { n: I.money(state.max) }) });
+      if (state.max < MAX_PRICE) chips.push({ key: 'price', val: '', label: t('filters.upTo', { n: I.money(state.max, 'USD') }) });
 
       chipsEl.innerHTML = chips.map(function (c) {
         return '<button class="chip" type="button" data-chip="' + esc(c.key) + '" data-val="' + esc(c.val) + '">' +
@@ -522,7 +543,7 @@
       if (!skipFilterRerender) renderFilters();
       else {
         const row = filtersEl && filtersEl.querySelector('.range-row span');
-        if (row) row.textContent = state.max >= MAX_PRICE ? t('filters.noMax') : t('filters.upTo', { n: I.money(state.max) });
+        if (row) row.textContent = state.max >= MAX_PRICE ? t('filters.noMax') : t('filters.upTo', { n: I.money(state.max, 'USD') });
       }
       syncUrl();
       Shortlist.sync();
@@ -635,7 +656,7 @@
           '</div>' +
         '</div>' +
         '<aside class="booking-card">' +
-          '<div class="price">' + esc(I.money(c.price)) + '</div>' +
+          '<div class="price">' + esc(I.money(c.price, c.currency)) + '</div>' +
           '<div class="price-note">' + esc(t('card.from')) + ' · ' + esc(I.dayCount(c.days)) + '</div>' +
           '<ul class="fact-list">' +
             fact(t('course.start'), I.shortDate(c.start)) +

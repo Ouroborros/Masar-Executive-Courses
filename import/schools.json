@@ -1,5 +1,93 @@
 [
  {
+  "id": "s-agsm-university-of-new-south-wales",
+  "name": {
+   "en": "AGSM, University of New South Wales",
+   "ar": "كلية الدراسات العليا الأسترالية للإدارة (AGSM)"
+  },
+  "city": {
+   "en": "Sydney",
+   "ar": "سيدني"
+  },
+  "country": {
+   "en": "Australia",
+   "ar": "أستراليا"
+  },
+  "region": "oceania",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-cbs-executive-copenhagen-business-scho",
+  "name": {
+   "en": "CBS Executive, Copenhagen Business School",
+   "ar": "كلية كوبنهاغن للأعمال – التعليم التنفيذي"
+  },
+  "city": {
+   "en": "Copenhagen",
+   "ar": "كوبنهاغن"
+  },
+  "country": {
+   "en": "Denmark",
+   "ar": "الدنمارك"
+  },
+  "region": "europe",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-center-for-creative-leadership-singapo",
+  "name": {
+   "en": "Center for Creative Leadership – Singapore",
+   "ar": "مركز القيادة الإبداعية – سنغافورة"
+  },
+  "city": {
+   "en": "Singapore",
+   "ar": "سنغافورة"
+  },
+  "country": {
+   "en": "Singapore",
+   "ar": "سنغافورة"
+  },
+  "region": "asia",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-copenhagen-business-school",
+  "name": {
+   "en": "Copenhagen Business School",
+   "ar": "كلية كوبنهاغن للأعمال"
+  },
+  "city": {
+   "en": "Copenhagen",
+   "ar": "كوبنهاغن"
+  },
+  "country": {
+   "en": "Denmark",
+   "ar": "الدنمارك"
+  },
+  "region": "europe",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
   "id": "s-harvard-kennedy-school",
   "name": {
    "en": "Harvard Kennedy School",
@@ -14,6 +102,28 @@
    "ar": "الولايات المتحدة"
   },
   "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-imd-business-school",
+  "name": {
+   "en": "IMD Business School",
+   "ar": "كلية IMD للأعمال"
+  },
+  "city": {
+   "en": "Lausanne",
+   "ar": "لوزان"
+  },
+  "country": {
+   "en": "Switzerland",
+   "ar": "سويسرا"
+  },
+  "region": "europe",
   "founded": 0,
   "accreditation": [],
   "about": {
@@ -88,6 +198,28 @@
   }
  },
  {
+  "id": "s-nus-business-school",
+  "name": {
+   "en": "NUS Business School",
+   "ar": "كلية الأعمال بجامعة سنغافورة الوطنية"
+  },
+  "city": {
+   "en": "Singapore",
+   "ar": "سنغافورة"
+  },
+  "country": {
+   "en": "Singapore",
+   "ar": "سنغافورة"
+  },
+  "region": "asia",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
   "id": "s-nyu-stern-school-of-business",
   "name": {
    "en": "NYU Stern School of Business",
@@ -100,6 +232,28 @@
   "country": {
    "en": "United States",
    "ar": "الولايات المتحدة"
+  },
+  "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-smith-school-of-business-queen-s-unive",
+  "name": {
+   "en": "Smith School of Business, Queen's University",
+   "ar": "كلية سميث للأعمال بجامعة كوينز"
+  },
+  "city": {
+   "en": "Kingston",
+   "ar": "كينغستون"
+  },
+  "country": {
+   "en": "Canada",
+   "ar": "كندا"
   },
   "region": "americas",
   "founded": 0,
@@ -132,6 +286,28 @@
   }
  },
  {
+  "id": "s-ubc-sauder-school-of-business",
+  "name": {
+   "en": "UBC Sauder School of Business",
+   "ar": "كلية سودر للأعمال بجامعة كولومبيا البريطانية"
+  },
+  "city": {
+   "en": "",
+   "ar": ""
+  },
+  "country": {
+   "en": "Canada",
+   "ar": "كندا"
+  },
+  "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
   "id": "s-uc-berkeley-haas-school-of-business",
   "name": {
    "en": "UC Berkeley Haas School of Business",
@@ -146,6 +322,50 @@
    "ar": "الولايات المتحدة"
   },
   "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-uct-graduate-school-of-business",
+  "name": {
+   "en": "UCT Graduate School of Business",
+   "ar": "كلية الدراسات العليا في الأعمال بجامعة كيب تاون"
+  },
+  "city": {
+   "en": "Cape Town",
+   "ar": "كيب تاون"
+  },
+  "country": {
+   "en": "South Africa",
+   "ar": "جنوب أفريقيا"
+  },
+  "region": "africa",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-university-of-st-gallen-executive-scho",
+  "name": {
+   "en": "University of St. Gallen Executive School",
+   "ar": "المدرسة التنفيذية بجامعة سانت غالن"
+  },
+  "city": {
+   "en": "St. Gallen",
+   "ar": "سانت غالن"
+  },
+  "country": {
+   "en": "Switzerland",
+   "ar": "سويسرا"
+  },
+  "region": "europe",
   "founded": 0,
   "accreditation": [],
   "about": {

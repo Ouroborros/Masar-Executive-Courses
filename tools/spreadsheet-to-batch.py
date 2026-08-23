@@ -32,6 +32,8 @@ import unicodedata
 from datetime import date
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import fx
 
 SUBJECTS = {"leadership", "finance", "strategy", "digital", "data", "marketing",
             "operations", "people", "sustainability", "negotiation",
@@ -178,9 +180,13 @@ def main():
         price = parse_price(r.get("price"))
         if price is None:
             problems.append("price '{}' unparseable".format(get("price") or "(blank)"))
-        currency = get("currency").upper()
-        if price is not None and currency and currency != "USD":
-            problems.append("price is in {} — convert to USD first".format(currency))
+        # Fees stay in the currency the source printed them in; the
+        # catalogue converts only for display (SAR option) and for the
+        # USD-equivalent plausibility checks below. A row whose currency is
+        # unknown cannot be priced honestly, so it is rejected.
+        currency = get("currency").upper() or "USD"
+        if price is not None and currency not in fx.USD_PER:
+            problems.append("currency '{}' unknown — cannot price".format(currency))
 
         school_name = get("school")
         if not school_name:
@@ -226,7 +232,8 @@ def main():
 
         course = {
             "id": cid, "school": sid, "subject": subject, "format": fmt,
-            "start": start, "days": days, "price": price, "langs": langs,
+            "start": start, "days": days, "price": price, "currency": currency,
+            "langs": langs,
             "title": {"en": title, "ar": title_ar},
             "summary": {"en": get("summary"), "ar": get("summary_ar")},
             "highlights": {"en": hl_en, "ar": hl_ar},
