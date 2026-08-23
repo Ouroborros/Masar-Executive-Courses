@@ -52,3 +52,52 @@ convert, and:
 robots.txt was respected and request rates throttled on every run. Whether
 executivecourses.com's terms permit republishing its listings is the
 operator's decision; this file records that the operator directed the crawl.
+
+---
+
+# Follow-up run — 2026-08-23 (gap closed)
+
+The "one remaining gap" above is closed. Reading the diagnostic dataset
+`IhclEQclPkDnkCx3y` first (as this file suggested) showed the upcoming-sessions
+tables ARE server-rendered — the first crawl's text transformer had merely
+pruned them. No browser engine was needed.
+
+## What ran
+
+| Step | Detail |
+| --- | --- |
+| Crawler | `apify/website-content-crawler`, cheerio, `htmlTransformer: "none"`, robots.txt respected, maxConcurrency 2 |
+| Runs / datasets | `lYzNoUM7a6VvgeVDT` → `0TUcb8puHq2qKqvFB` (19 of 21 school pages; Stanford + Harvard Kennedy dropped by canonical dedup) and `JeM9iIzFXL9Acdypb` → `rfRYHMF4aFocpvwrD` (those 2 pages); 23 requests, 0 failures |
+| Capture | url + markdown of all 21 school pages → `apify-actor/dataset.executivecourses-schools.json` |
+| Extraction | in-session LLM extraction, facts only, sessions starting 2026-09-01 – 2027-08-31 → 500 rows, 19 schools, in `import/courses-scraped.csv` (replaces the 63 out-of-window rows; those remain in git history). Every extracted fee was mechanically verified to sit adjacent to its course title in the source capture. |
+| Conversion | `spreadsheet-to-batch.py` → 134 USD rows; 365 non-USD/UNKNOWN-currency rows honestly rejected to `*.rejected.csv` (AUD 29, CAD 80, CHF 134, DKK 24, GBP 1, INR 7, SGD 10, UNKNOWN 80 — bare fees on non-US pages stay UNKNOWN per the rule above), 1 row lost to unparseable duration |
+| Catalogue filter | post-filter before merge: 52 courses outside the 2–20-day / price-per-day gates and 12 later sessions of an already-kept course moved to `*.rejected.csv` |
+| Merge + build | `merge-catalogue.py import --scraped --write`: **7 schools, 70 courses admitted, validation clean** → `assets/js/data.js`; `build.py` rebuilt the site |
+
+## Extraction decisions (unchanged from above, plus)
+
+- Section headings that denote on-campus delivery (Short program, Full-time
+  program, Modular, Certificate Program, Executive Master's) map to
+  `in-person`; Online → `online`; Blended/Hybrid → `blended`.
+- `days`: the page's own "Duration: N days" wins; "N weeks" → N×5 (the
+  convention the 2026-08-22 extraction used); otherwise the printed date span
+  (end − start + 1). Rows with neither stay blank and are rejected downstream.
+- Course titles (343 unique) were translated to Arabic for `title_ar`;
+  summaries remain composed from extracted metadata only.
+- The catalogue models one course per title with its next upcoming start, so
+  later sessions of the same course were filed to the rejected CSV, not lost.
+
+## Remaining honest limits
+
+- Only US-school fees are USD-evidenced; the 365 non-USD/UNKNOWN rows await a
+  currency-conversion decision by the operator before they can be admitted.
+- Vlerick and IMI print bare fees with no currency marker anywhere on their
+  pages (recorded as UNKNOWN, likely EUR — unproven, so not guessed).
+- Site data quirks copied verbatim, not "fixed": a Michigan row prints a
+  reversed date range; a CBS cohort prints 12,000 DKK where siblings print
+  120,000; UCT fees are suffixed INR.
+
+## Legal note
+
+Unchanged: robots.txt respected, rates throttled; republishing judgement is
+the operator's, and this file records that the operator directed the crawl.

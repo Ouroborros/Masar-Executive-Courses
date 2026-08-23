@@ -1,19 +1,431 @@
 ﻿row,title,problems
-47,Inspirational Leadership,price is in CHF — convert to USD first
-48,Generative AI for Business Sprint,price is in CHF — convert to USD first
-49,The First 90 Days®,price is in CHF — convert to USD first
-50,St.Gallen Board Retreat,price is in CHF — convert to USD first
-51,Mergers & Acquisitions and Corporate Strategy,price is in CHF — convert to USD first
-52,Essential Management Skills,price is in CAD — convert to USD first
-53,Fundamentals of Accounting for Non-Financial Managers,price is in CAD — convert to USD first
-54,Accelerated Leadership Program,price is in AUD — convert to USD first
-55,AI for Business Leaders,price is in AUD — convert to USD first
-56,Advanced Negotiation Techniques,price is in DKK — convert to USD first
-57,Leading Strategic Transformations,price is in DKK — convert to USD first
-58,AI for Leaders: Leveraging Data Analytics for Business,price is in SGD — convert to USD first
-59,Innovation and Design Thinking,price is in SGD — convert to USD first
-60,Organizational Structure and Culture,price is in CAD — convert to USD first
-61,Developing Women in Leadership,price is in INR — convert to USD first
-62,Advanced Management Programme,price is in UNKNOWN — convert to USD first
-63,"Manage Self, Lead Better",price is in UNKNOWN — convert to USD first
-64,Leading Digital Transformation,price is in UNKNOWN — convert to USD first
+2,Building an AI Strategy,price is in AUD — convert to USD first
+3,Leader as Coach,price is in AUD — convert to USD first
+4,AI for Organisational Innovation,price is in AUD — convert to USD first
+5,Authentic Communicator: Activating Presence,price is in AUD — convert to USD first
+6,General Manager Program,price is in AUD — convert to USD first
+7,Strategic & Adaptive Leadership,price is in AUD — convert to USD first
+8,Emerging Leader Program,price is in AUD — convert to USD first
+9,Authentic Communicator: Activating Presence,price is in AUD — convert to USD first
+10,Design Thinking & Experimentation,price is in AUD — convert to USD first
+11,Project Management Excellence,price is in AUD — convert to USD first
+12,Tackling Complexity through Leadership,price is in AUD — convert to USD first
+13,General Manager Program,price is in AUD — convert to USD first
+14,AI for Business Leaders,price is in AUD — convert to USD first
+15,Leading with Emotional Intelligence,price is in AUD — convert to USD first
+16,Essentials of Finance for Non-Finance Managers,price is in AUD — convert to USD first
+17,Executing Strategy for Results,price is in AUD — convert to USD first
+18,Data Driven Leadership,price is in AUD — convert to USD first
+19,Authentic Communicator: Activating Presence,price is in AUD — convert to USD first
+20,Leading for High Performance,price is in AUD — convert to USD first
+21,Data Governance for Leaders,price is in AUD — convert to USD first
+22,Accelerated Leadership Program,price is in AUD — convert to USD first
+23,Shaping Strategy to Create Value,price is in AUD — convert to USD first
+24,Emerging Leader Program,price is in AUD — convert to USD first
+25,Adaptive Leadership Program,price is in AUD — convert to USD first
+26,Strategic Negotiation & Influence,price is in AUD — convert to USD first
+27,Project Governance for Leaders,price is in AUD — convert to USD first
+28,General Manager Program,price is in AUD — convert to USD first
+29,Strategic & Adaptive Leadership,price is in AUD — convert to USD first
+30,Authentic Communicator: Activating Presence,price is in AUD — convert to USD first
+31,Børsens Bestyrelsesuddannelse September 2026,price is in DKK — convert to USD first
+32,Blue Board Leadership 2026,price is in DKK — convert to USD first
+33,CBS Executive Bestyrelsesuddannelsen September 2026,price is in DKK — convert to USD first
+34,Lobbyistens vej til Magten,price is in DKK — convert to USD first
+35,Masterclass: Ledelse mellem Generationer,duration '(blank)' unparseable; price is in DKK — convert to USD first
+36,Bestyrelsesarbejde i Pension & Forsikring 2026,price is in DKK — convert to USD first
+37,Bestyrelsesarbejde i Bank & Realkredit 2026,price is in DKK — convert to USD first
+38,Bestyrelsesuddannelse i ESG & Bæredygtighed 2026,price is in DKK — convert to USD first
+39,Leadership for the Future 2026,price is in DKK — convert to USD first
+40,Masterclass: Business Innovation in Life Science 2025,price is in DKK — convert to USD first
+41,Sustainability Transformation Accelerator,price is in DKK — convert to USD first
+42,Professional Negotiation,price is in DKK — convert to USD first
+43,CBS Executive Bestyrelsesuddannelsen Februar 2027,price is in DKK — convert to USD first
+44,Grundlæggende Bestyrelsesuddannelse Februar 2027,price is in DKK — convert to USD first
+45,CBS Executive Bestyrelsesuddannelsen April 2027,price is in DKK — convert to USD first
+46,Grundlæggende Bestyrelsesuddannelse April 2027,price is in DKK — convert to USD first
+47,Grundlæggende Bestyrelsesuddannelse August 2027,price is in DKK — convert to USD first
+48,Leadership Development Program (LDP)®,price is in SGD — convert to USD first
+49,Leadership Development Program (LDP)®,price is in SGD — convert to USD first
+50,Senior Leadership Training: Leading for Organizational Impact,price is in SGD — convert to USD first
+51,Frontline Manager Leadership Program: Maximizing Your Leadership Potential,price is in UNKNOWN — convert to USD first
+52,Leadership Development Program (LDP)®,price is in SGD — convert to USD first
+53,Børsens Bestyrelsesuddannelse,price is in DKK — convert to USD first
+54,Blue Board Leadership 2026,price is in DKK — convert to USD first
+55,CBS Executive Bestyrelsesuddannelsen,price is in DKK — convert to USD first
+56,Bestyrelsesarbejde i Pension & Forsikring 2026,price is in DKK — convert to USD first
+57,Bestyrelsesarbejde i Bank & Realkredit,price is in DKK — convert to USD first
+58,Bestyrelsesuddannelse i ESG & Bæredygtighed,price is in DKK — convert to USD first
+59,CBS Executive Bestyrelsesuddannelsen,price is in DKK — convert to USD first
+88,High Performance Leadership,price is in CHF — convert to USD first
+89,Advanced Leadership,price is in CHF — convert to USD first
+90,Business Finance,price is in CHF — convert to USD first
+91,Complex Problem Solving,price is in CHF — convert to USD first
+92,Digital Transformation Sprint,price is in CHF — convert to USD first
+93,Leadership Essentials,price is in CHF — convert to USD first
+94,Leading Digital Execution,price is in CHF — convert to USD first
+95,Breakthrough Program for Senior Executives,price is in CHF — convert to USD first
+96,Leading High-Performance Teams,price is in CHF — convert to USD first
+97,Global Management Foundations,price is in CHF — convert to USD first
+98,Transformational Leader,price is in CHF — convert to USD first
+99,AI Strategy and Implementation,price is in CHF — convert to USD first
+100,Change Management,price is in CHF — convert to USD first
+101,Crisis Management,price is in CHF — convert to USD first
+102,Leading your Family Business,price is in CHF — convert to USD first
+103,Strategies for Leadership,price is in CHF — convert to USD first
+104,The First 90 Days®,price is in CHF — convert to USD first
+105,Business Creativity and Innovation Sprint,price is in CHF — convert to USD first
+106,Women on Boards,price is in CHF — convert to USD first
+107,Developing Digital Transformation Strategies,price is in CHF — convert to USD first
+108,Leading Digital and AI Transformation,price is in CHF — convert to USD first
+109,Marketing Strategy in the Digital Age,price is in CHF — convert to USD first
+110,Organizational Leadership,price is in CHF — convert to USD first
+111,Resilient Leadership Sprint,price is in CHF — convert to USD first
+112,Strategy Governance for Boards,price is in CHF — convert to USD first
+113,Transition to Business Leadership,price is in CHF — convert to USD first
+114,Boards and Risks,price is in CHF — convert to USD first
+115,Future-Proofing your Business Family,price is in SGD — convert to USD first
+116,Integrating Sustainability into Strategy,price is in CHF — convert to USD first
+117,Creating Value in the Circular Economy,price is in CHF — convert to USD first
+118,Digital and AI Transformation for Boards,price is in CHF — convert to USD first
+119,Driving Strategic Innovation,price is in UNKNOWN — convert to USD first
+120,High Performance Leadership,price is in CHF — convert to USD first
+121,Innovate with AI and Tech,price is in CHF — convert to USD first
+122,Leading Behavioral Change,price is in CHF — convert to USD first
+123,Advanced Management Program,price is in CHF — convert to USD first
+124,Business Analytics for Leaders,price is in CHF — convert to USD first
+125,Changing Employee Behavior,price is in CHF — convert to USD first
+126,Generative AI for Business Sprint,price is in CHF — convert to USD first
+127,Generative AI for Business Sprint,price is in CHF — convert to USD first
+128,High Performance Boards,price is in CHF — convert to USD first
+129,Innovate with AI and Tech,price is in CHF — convert to USD first
+130,Leading Behavioral Change,price is in CHF — convert to USD first
+131,Strategy Execution,price is in CHF — convert to USD first
+132,Leadership Skills for Sustainable Change,price is in CHF — convert to USD first
+133,Mobilizing People,price is in CHF — convert to USD first
+134,Advanced High Performance Leadership,price is in CHF — convert to USD first
+135,Inspirational Leadership,price is in CHF — convert to USD first
+136,Orchestrating Winning Performance,price is in SGD — convert to USD first
+137,Strategic Thinking,price is in CHF — convert to USD first
+138,Negotiating for Value Creation,price is in CHF — convert to USD first
+139,Managing and Measuring Sustainability Impact,price is in CHF — convert to USD first
+140,Digital Transformation in Practice,price is in CHF — convert to USD first
+141,Disruptive Innovation,price is in CHF — convert to USD first
+142,Mastering Board Governance,price is in CHF — convert to USD first
+143,Strategic Finance,price is in CHF — convert to USD first
+144,Strategic Supply Chain Leadership,price is in CHF — convert to USD first
+145,Strategic Supply Chain Leadership,price is in CHF — convert to USD first
+146,High Performance Leadership,price is in SGD — convert to USD first
+147,AI Strategy and Implementation,price is in CHF — convert to USD first
+148,Advanced Leadership,price is in CHF — convert to USD first
+149,Change Management,price is in CHF — convert to USD first
+150,Leadership Essentials,price is in CHF — convert to USD first
+151,Organizational Learning in Action,price is in CHF — convert to USD first
+152,Winning Sustainability Strategies,price is in CHF — convert to USD first
+153,Leading High-Performance Teams,price is in CHF — convert to USD first
+154,Reinventing Luxury Lab,price is in CHF — convert to USD first
+155,Foundations for Business Leadership,price is in CHF — convert to USD first
+156,Strategic Supply Chain Leadership,price is in CHF — convert to USD first
+157,Driving Sustainability from the Boardroom,price is in CHF — convert to USD first
+158,Role of the Chair,price is in CHF — convert to USD first
+159,Digital Transformation Sprint,price is in CHF — convert to USD first
+160,Digital and AI Accelerator,price is in SGD — convert to USD first
+161,Stakeholder Management for Boards,price is in CHF — convert to USD first
+162,The C-Suite Program,price is in CHF — convert to USD first
+163,Team Dynamics for Boards,price is in CHF — convert to USD first
+164,Finance for Boards,price is in CHF — convert to USD first
+165,Building Digital Ecosystems,price is in CHF — convert to USD first
+166,High Performance Boards,price is in CHF — convert to USD first
+167,Breakthrough Program for Senior Executives,price is in CHF — convert to USD first
+168,IMD Executive Coaching Certificate,price is in CHF — convert to USD first
+169,Leading Digital and AI Transformation,price is in CHF — convert to USD first
+170,Advanced High Performance Leadership,price is in CHF — convert to USD first
+171,High Performance Leadership,price is in CHF — convert to USD first
+172,Leading Digital and AI Transformation,price is in CHF — convert to USD first
+173,The First 90 Days®,price is in CHF — convert to USD first
+174,AI Strategy and Implementation,price is in CHF — convert to USD first
+175,Leading Digital and AI Transformation,price is in CHF — convert to USD first
+176,Inspirational Leadership,price is in CHF — convert to USD first
+177,Strategic Thinking,price is in CHF — convert to USD first
+178,Strategy Execution,price is in CHF — convert to USD first
+179,Advanced Leadership,price is in CHF — convert to USD first
+180,Leadership Essentials,price is in CHF — convert to USD first
+181,Mastering Board Governance,price is in CHF — convert to USD first
+182,Complex Problem Solving,price is in CHF — convert to USD first
+183,Disruptive Innovation,price is in CHF — convert to USD first
+184,Organizational Leadership,price is in CHF — convert to USD first
+185,Leading Digital Execution,price is in CHF — convert to USD first
+186,AI Strategy and Implementation,price is in CHF — convert to USD first
+187,Business Analytics for Leaders,price is in CHF — convert to USD first
+188,Marketing Strategy in the Digital Age,price is in CHF — convert to USD first
+189,Business Finance,price is in CHF — convert to USD first
+190,Digital Transformation in Practice,price is in CHF — convert to USD first
+191,Inspirational Leadership,price is in CHF — convert to USD first
+192,Leading Behavioral Change,price is in CHF — convert to USD first
+193,Leading Digital and AI Transformation,price is in CHF — convert to USD first
+194,Strategic Thinking,price is in CHF — convert to USD first
+195,Strategy Execution,price is in CHF — convert to USD first
+196,Innovate with AI and Tech,price is in CHF — convert to USD first
+197,Building Digital Ecosystems,price is in CHF — convert to USD first
+198,Advanced Leadership,price is in CHF — convert to USD first
+199,Leadership Essentials,price is in CHF — convert to USD first
+200,Mastering Board Governance,price is in CHF — convert to USD first
+201,Organizational Leadership,price is in CHF — convert to USD first
+202,Winning Sustainability Strategies,price is in CHF — convert to USD first
+203,AI Strategy and Implementation,price is in CHF — convert to USD first
+204,Leading your Family Office,price is in CHF — convert to USD first
+205,Strategic Supply Chain Leadership,price is in CHF — convert to USD first
+206,Leading Digital and AI Transformation,price is in CHF — convert to USD first
+207,Inspirational Leadership,price is in CHF — convert to USD first
+208,Strategic Thinking,price is in CHF — convert to USD first
+209,Advanced Negotiation Skills,price is in UNKNOWN — convert to USD first
+210,Emerging Tech Leaders Programme,price is in UNKNOWN — convert to USD first
+211,High Impact Leadership,price is in UNKNOWN — convert to USD first
+212,Shaping Your Leadership Identity,price is in UNKNOWN — convert to USD first
+213,First Time Managers,price is in UNKNOWN — convert to USD first
+214,Strategic Leadership Essentials,price is in UNKNOWN — convert to USD first
+215,AI for Marketing,price is in UNKNOWN — convert to USD first
+216,AI for Sales,price is in UNKNOWN — convert to USD first
+217,Communicating for Performance,price is in UNKNOWN — convert to USD first
+218,AI for SMEs,price is in UNKNOWN — convert to USD first
+219,AI for Finance,price is in UNKNOWN — convert to USD first
+220,Project Management for Non-Project Managers,price is in UNKNOWN — convert to USD first
+221,AI for HR,price is in UNKNOWN — convert to USD first
+222,Leading with Strategic Intent for FDI Multinationals,price is in UNKNOWN — convert to USD first
+223,Leading in Cybersecurity,price is in UNKNOWN — convert to USD first
+224,Professional Diploma in Strategy and Innovation,price is in UNKNOWN — convert to USD first
+225,Senior Executive Experience,price is in UNKNOWN — convert to USD first
+226,Leading High-Performance Teams,price is in UNKNOWN — convert to USD first
+227,Advancing Women in Leadership,price is in UNKNOWN — convert to USD first
+228,Professional Diploma in Executive Coaching,price is in UNKNOWN — convert to USD first
+229,Think on Your Feet®,price is in UNKNOWN — convert to USD first
+230,Group Facilitation Skills,price is in UNKNOWN — convert to USD first
+231,Professional Diploma in Leadership,price is in UNKNOWN — convert to USD first
+232,Professional Diploma in Management,price is in UNKNOWN — convert to USD first
+233,How Organisations Really Work,price is in UNKNOWN — convert to USD first
+234,High Impact Leadership,price is in UNKNOWN — convert to USD first
+235,Storytelling for Influential Leadership,price is in UNKNOWN — convert to USD first
+236,Reclaim 10 Hours a Week – AI Tools for Busy Professionals,price is in UNKNOWN — convert to USD first
+237,Finance for Non-Financial Managers,price is in UNKNOWN — convert to USD first
+238,High Impact Leadership Managing People,price is in UNKNOWN — convert to USD first
+239,AI for Marketing,price is in UNKNOWN — convert to USD first
+240,Communicating for Performance,price is in UNKNOWN — convert to USD first
+241,Leading High-Performance Teams,price is in UNKNOWN — convert to USD first
+242,AI for Sales,price is in UNKNOWN — convert to USD first
+243,AI for Finance,price is in UNKNOWN — convert to USD first
+302,AI-Enabled Management and Decision-Making,duration '(blank)' unparseable
+315,CAMBRIDGE AND NUS GLOBAL LEADERSHIP PROGRAMME: NAVIGATING FUTURE TRENDS,price is in GBP — convert to USD first
+316,LABOUR AND EMPLOYMENT LAW (CLASSROOM & SYNCHRONOUS E-LEARNING),price is in SGD — convert to USD first
+317,AI FOR TALENT MANAGEMENT AND ORGANIZATIONAL DESIGN (CLASSROOM & SYNCHRONOUS E-LEARNING),price is in SGD — convert to USD first
+319,Developing Your Leadership Presence - Virtual,price is in CAD — convert to USD first
+320,Learning to Lead - Virtual,price is in CAD — convert to USD first
+321,Leading an AI-Ready Organization: Foundations for Business Leaders,price is in CAD — convert to USD first
+322,Developing Your Leadership Presence,price is in CAD — convert to USD first
+323,Accounting and Finance Fundamentals,price is in CAD — convert to USD first
+324,Emotional Intelligence for Leaders,price is in CAD — convert to USD first
+325,Closing the Strategy-Execution Gap - Virtual,price is in CAD — convert to USD first
+326,Strategic Thinking: Turning Complexity into Clarity,price is in CAD — convert to USD first
+327,Coaching for High Performance,price is in CAD — convert to USD first
+328,Public Executive Program,price is in CAD — convert to USD first
+329,Communicating With Impact - Virtual,price is in CAD — convert to USD first
+330,Strategic Planning and Leading Change,price is in CAD — convert to USD first
+331,AI for Leaders,price is in CAD — convert to USD first
+332,Learning to Lead,price is in CAD — convert to USD first
+333,Strategic Execution,price is in CAD — convert to USD first
+334,Leadership,price is in CAD — convert to USD first
+335,Project Leadership,price is in CAD — convert to USD first
+336,Negotiating and Consensus Building,price is in CAD — convert to USD first
+337,Strategic Planning and Leading Change - Virtual,price is in CAD — convert to USD first
+338,Accounting and Finance Fundamentals - Virtual,price is in CAD — convert to USD first
+339,Organizational Structure and Culture,price is in CAD — convert to USD first
+340,Closing the Strategy-Execution Gap,price is in CAD — convert to USD first
+341,Coaching for High Performance - Virtual,price is in CAD — convert to USD first
+342,Communicating With Impact,price is in CAD — convert to USD first
+343,Conflict Management,price is in CAD — convert to USD first
+344,Developing Your Leadership Presence,price is in CAD — convert to USD first
+345,Leading Digital Transformation,price is in CAD — convert to USD first
+346,Strategic Thinking: Turning Complexity into Clarity - Virtual,price is in CAD — convert to USD first
+347,"Building an AI-Powered Organization: Strategy, Governance, and Transformation",price is in CAD — convert to USD first
+348,Building Your Productivity Edge with AI,price is in CAD — convert to USD first
+349,Public Executive Program,price is in CAD — convert to USD first
+350,Strategic Execution,price is in CAD — convert to USD first
+351,AI for Leaders,price is in CAD — convert to USD first
+352,Leadership,price is in CAD — convert to USD first
+363,Agile Project Management,price is in CAD — convert to USD first
+364,Leading from the Middle,price is in CAD — convert to USD first
+365,Business Analysis Bootcamp,price is in CAD — convert to USD first
+366,Applied Project Management,price is in CAD — convert to USD first
+367,Certified ScrumMaster,price is in CAD — convert to USD first
+368,Building an Effective Strategy,price is in CAD — convert to USD first
+369,"Digital Asset, Rights & Risk Management Bootcamp",price is in CAD — convert to USD first
+370,Conflict Management Strategies,price is in CAD — convert to USD first
+371,Business Analysis 3 Course Pack - 1,price is in CAD — convert to USD first
+372,Business Analysis 3 Course Pack - 2,price is in CAD — convert to USD first
+373,Business Analysis Fundamentals,price is in CAD — convert to USD first
+374,Business Analysis Strategic Analysis and Elicitation,price is in CAD — convert to USD first
+375,"Digital Asset, Rights & Risk Management Fundamentals",price is in CAD — convert to USD first
+376,Financial Statement Analysis for Non-Financial Managers,price is in CAD — convert to USD first
+377,Certified ScrumMaster,price is in CAD — convert to USD first
+378,Change Management Assessing and Planning,price is in CAD — convert to USD first
+379,Agile Product Ownership,price is in CAD — convert to USD first
+380,Agile Project Management,price is in CAD — convert to USD first
+381,Applied Project Management,price is in CAD — convert to USD first
+382,Coaching and Mentoring,price is in CAD — convert to USD first
+383,High-Performance People Skills,price is in CAD — convert to USD first
+384,"Business Analysis Planning, Risk Management and Performance Improvement",price is in CAD — convert to USD first
+385,Business Analysis Requirements Analysis and Management,price is in CAD — convert to USD first
+386,Change Management Implementing and Evaluating,price is in CAD — convert to USD first
+387,Advanced Leadership Program,price is in CAD — convert to USD first
+388,Employment Law Essentials,price is in CAD — convert to USD first
+389,Business Analysis Fundamentals,price is in CAD — convert to USD first
+390,Communication and Emotional Intelligence for Managers,price is in CAD — convert to USD first
+391,Leading from the Middle,price is in CAD — convert to USD first
+392,AI Advantage - AI Strategies for Business Leaders,price is in CAD — convert to USD first
+393,AI Product Management Bootcamp,price is in CAD — convert to USD first
+394,Business Analysis Leadership and Teamwork,price is in CAD — convert to USD first
+395,Change Management: Fostering Culture and Capability,price is in CAD — convert to USD first
+396,Essentials in Supervisory Skills,price is in CAD — convert to USD first
+397,Essential Management Skills,price is in CAD — convert to USD first
+398,Leadership Excellence for Administrative Professionals,price is in CAD — convert to USD first
+399,An Introduction to Labour Relations,price is in CAD — convert to USD first
+400,"Digital Asset, Rights & Risk Management Fundamentals",price is in CAD — convert to USD first
+401,Building an Effective Strategy,price is in CAD — convert to USD first
+402,High-Performance People Skills,price is in CAD — convert to USD first
+403,Developing Successful Partnerships,price is in CAD — convert to USD first
+404,Leading People Through Change,price is in CAD — convert to USD first
+405,Conflict Management Strategies,price is in CAD — convert to USD first
+406,Leadership Excellence for Administrative Professionals,price is in CAD — convert to USD first
+407,Building an Effective Strategy,price is in CAD — convert to USD first
+408,Essentials in Supervisory Skills,price is in CAD — convert to USD first
+434,Impact Investing in Africa,price is in INR — convert to USD first
+435,Integrating Human Rights Management in Business,price is in INR — convert to USD first
+436,Managing New Power Markets and Regulation in Africa,price is in INR — convert to USD first
+437,The New Manager,price is in INR — convert to USD first
+438,Programme for Management Development,price is in INR — convert to USD first
+439,Executive Development Programme,price is in INR — convert to USD first
+440,Financial Modelling for Power Project Finance,price is in INR — convert to USD first
+441,CAS Performance Management intensiv,price is in CHF — convert to USD first
+442,Strategic Performance Management,price is in CHF — convert to USD first
+443,Data Protection Officer (DPO HSG),price is in CHF — convert to USD first
+444,CAS Performance Management intensiv,price is in CHF — convert to USD first
+445,Advanced Management Program (CAS),price is in CHF — convert to USD first
+446,DAS Leadership Development Program,price is in CHF — convert to USD first
+447,CAS Performance Management intensiv,price is in CHF — convert to USD first
+448,Management for the Legal Profession CAS-HSG,price is in CHF — convert to USD first
+449,Weiterbildung für Politik – St.Galler Diplom für Politik (DAS),price is in CHF — convert to USD first
+450,Finanzbewusst managen,price is in CHF — convert to USD first
+451,CAS Performance Management intensiv,price is in CHF — convert to USD first
+452,Weiterbildung für Politik – St.Galler Diplom für Politik (DAS),price is in CHF — convert to USD first
+453,Erfolgreich verhandeln CAS-HSG,price is in CHF — convert to USD first
+454,St.Galler Management Seminar für KMU (CAS),price is in CHF — convert to USD first
+455,Gesprächsführung und Verhandlungstechnik,price is in CHF — convert to USD first
+456,Data Protection Officer (DPO HSG),price is in CHF — convert to USD first
+457,HSG-Diplomprogramm Insurance Management,price is in CHF — convert to USD first
+458,Strategic Performance Management,price is in CHF — convert to USD first
+459,Leadership Transition Programme,price is in UNKNOWN — convert to USD first
+460,Management for the Hospital Professional - Evaluating and improving value creation,price is in UNKNOWN — convert to USD first
+461,Management for the hospital professional,price is in UNKNOWN — convert to USD first
+462,Self-leadership,price is in UNKNOWN — convert to USD first
+463,Executive Master Certificate in Human Resource Management,price is in UNKNOWN — convert to USD first
+464,Brand Management,price is in UNKNOWN — convert to USD first
+465,Finance for Non-Financial Managers,price is in UNKNOWN — convert to USD first
+466,AI For Business,price is in UNKNOWN — convert to USD first
+467,Leadership Transition Programme,price is in UNKNOWN — convert to USD first
+468,Mastering Interim Management,price is in UNKNOWN — convert to USD first
+469,Self-leadership,price is in UNKNOWN — convert to USD first
+470,Management for Young Leaders,price is in UNKNOWN — convert to USD first
+471,Negotiating to create value,price is in UNKNOWN — convert to USD first
+472,Excellence in Corporate Finance,price is in UNKNOWN — convert to USD first
+473,Executive Development Programme,price is in UNKNOWN — convert to USD first
+474,Executive Master Class in Corporate Finance,price is in UNKNOWN — convert to USD first
+475,The People Manager,price is in UNKNOWN — convert to USD first
+476,Creating Value through M&A,price is in UNKNOWN — convert to USD first
+477,Leading Innovation,price is in UNKNOWN — convert to USD first
+478,Successful Strategy Execution,price is in UNKNOWN — convert to USD first
+479,New Business Development,price is in UNKNOWN — convert to USD first
+480,Operational Excellence,price is in UNKNOWN — convert to USD first
+481,Sales Management,price is in UNKNOWN — convert to USD first
+482,Advanced Management Programme,price is in UNKNOWN — convert to USD first
+483,Product management,price is in UNKNOWN — convert to USD first
+484,The People Manager,price is in UNKNOWN — convert to USD first
+485,Project Management,price is in UNKNOWN — convert to USD first
+486,Digital Strategy and AI,price is in UNKNOWN — convert to USD first
+487,AI For Business,price is in UNKNOWN — convert to USD first
+488,Transforming Supply Chain Management,price is in UNKNOWN — convert to USD first
+489,Management for the Hospital Professional - Future-proofing your hospital,price is in UNKNOWN — convert to USD first
+490,Self-leadership,price is in UNKNOWN — convert to USD first
+491,AI for Finance,price is in UNKNOWN — convert to USD first
+492,Compensation and Benefits Management,price is in UNKNOWN — convert to USD first
+493,Strategy in Uncertain Times,price is in UNKNOWN — convert to USD first
+494,Strategic HRM,price is in UNKNOWN — convert to USD first
+495,Management for the Hospital Professional - The hospital sector from a macro perspective,price is in UNKNOWN — convert to USD first
+496,Negotiating to create value,price is in UNKNOWN — convert to USD first
+497,Change Management,price is in UNKNOWN — convert to USD first
+498,Cyber Resilience,price is in UNKNOWN — convert to USD first
+499,Successful Strategy Execution,price is in UNKNOWN — convert to USD first
+500,Venture Capital and Private Equity,price is in UNKNOWN — convert to USD first
+501,Leading Digital Transformation,price is in UNKNOWN — convert to USD first
+c-generative-ai-how-to-use-it-and-why-it,Generative AI: How to Use It and Why It Matters,days out of catalogue range (40)
+c-leading-economic-growth,Leading Economic Growth,days out of catalogue range (68)
+c-nonprofit-financial-stewardship,Nonprofit Financial Stewardship,days out of catalogue range (35)
+c-senior-executive-fellows,Senior Executive Fellows,days out of catalogue range (26)
+c-strategies-for-inclusive-growth,Strategies for Inclusive Growth,days out of catalogue range (26)
+c-leadership-organizing-and-action-leadi,"Leadership, Organizing and Action: Leading Change",days out of catalogue range (117)
+c-navigating-ai-driving-business-impact,Navigating AI: Driving Business Impact and Developing Human Capability,days out of catalogue range (105)
+c-accelerating-digital-transformation-wi,Accelerating Digital Transformation with Algorithmic Business Thinking,days out of catalogue range (30)
+c-artificial-intelligence-in-health-care,Artificial Intelligence in Health Care,days out of catalogue range (30)
+c-data-monetization-strategy-creating-va,Data Monetization Strategy: Creating Value Through Data,days out of catalogue range (30)
+c-business-sustainability-strategy,Business Sustainability Strategy,days out of catalogue range (30)
+c-business-process-design-for-strategic,Business Process Design for Strategic Management,days out of catalogue range (30)
+c-digital-business-strategy-harnessing-o,Digital Business Strategy: Harnessing Our Digital Future,days out of catalogue range (30)
+c-inquiry-driven-leadership,Inquiry-Driven Leadership,days out of catalogue range (30)
+c-neuroscience-for-business,Neuroscience for Business,days out of catalogue range (30)
+c-artificial-intelligence-in-pharma-and,Artificial Intelligence in Pharma and Biotech,days out of catalogue range (30)
+c-organizational-design-for-digital-tran,Organizational Design for Digital Transformation,days out of catalogue range (30)
+c-artificial-intelligence-in-health--2,Artificial Intelligence in Health Care,days out of catalogue range (30)
+c-data-monetization-strategy-creatin-2,Data Monetization Strategy: Creating Value Through Data,days out of catalogue range (30)
+c-making-ai-work-machine-intelligence-fo,Making AI Work: Machine Intelligence for Business and Society,days out of catalogue range (30)
+c-executive-program-in-general-managemen,Executive Program in General Management,days out of catalogue range (154)
+c-accelerated-management-development-cer,Accelerated Management Development Certificate Program,days out of catalogue range (201)
+c-accounting-financial-decision-making,Accounting & Financial Decision-Making,days out of catalogue range (40)
+c-practicing-positive-leadership,Practicing Positive Leadership,days out of catalogue range (26)
+c-advanced-human-resource-executive-prog,Advanced Human Resource Executive Program (Blended),days out of catalogue range (43)
+c-advanced-strategic-leadership-harnessi,Advanced Strategic Leadership: Harnessing the Power of Foresight,days out of catalogue range (45)
+c-cxo-leadership-program,CXO Leadership Program,days out of catalogue range (162)
+c-creating-and-delivering-value-for-your,Creating and Delivering Value for Your Organization,days out of catalogue range (40)
+c-board-director-program,Board Director Program,days out of catalogue range (128)
+c-chief-data-and-ai-officer-program,Chief Data and AI Officer Program,days out of catalogue range (116)
+c-strategy-and-competitive-advantage,Strategy and Competitive Advantage,days out of catalogue range (47)
+c-cxo-leadership-program-2,CXO Leadership Program,days out of catalogue range (160)
+c-digital-transformation-and-innovation,Digital Transformation and Innovation,days out of catalogue range (34)
+c-accelerated-management-development-2,Accelerated Management Development Certificate Program,days out of catalogue range (190)
+c-creating-and-delivering-value-for--2,Creating and Delivering Value for Your Organization,days out of catalogue range (26)
+c-strategy-and-competitive-advantage-2,Strategy and Competitive Advantage,days out of catalogue range (41)
+c-leading-with-impact-culture-teams-and,"Leading with Impact: Culture, Teams, and Organizational Performance",days out of catalogue range (33)
+c-digital-transformation-and-innovat-2,Digital Transformation and Innovation,days out of catalogue range (33)
+c-stanford-ignite-post-9-11-veterans,Stanford Ignite – Post-9/11 Veterans,days out of catalogue range (26)
+c-stanford-executive-program,Stanford Executive Program,days out of catalogue range (113)
+c-stanford-ignite-part-time,Stanford Ignite – Part-Time,days out of catalogue range (54)
+c-artificial-intelligence-business-strat,Artificial Intelligence: Business Strategies and Applications,days out of catalogue range (57)
+c-professional-certificate-in-machine-le,Professional Certificate in Machine Learning and Artificial Intelligence,days out of catalogue range (183)
+c-business-analytics-and-ai-from-data-to,Business Analytics and AI: From Data to Decisions,days out of catalogue range (57)
+c-leading-complex-projects,Leading Complex Projects,days out of catalogue range (57)
+c-marketing-analytics-and-ai-strategies,Marketing Analytics and AI: Strategies and Tools,days out of catalogue range (57)
+c-berkeley-executive-program-in-ai-and-d,Berkeley Executive Program in AI and Digital Strategy,days out of catalogue range (264)
+c-product-management-studio-program,Product Management Studio Program,days out of catalogue range (74)
+c-chief-operating-officer-coo-program,Chief Operating Officer (COO) Program,days out of catalogue range (239)
+c-chief-strategy-officer-cso-program,Chief Strategy Officer (CSO) Program,days out of catalogue range (239)
+c-berkeley-technology-and-ai-leadership,Berkeley Technology and AI Leadership Program,days out of catalogue range (183)
+c-chief-financial-officer-cfo-program,Chief Financial Officer (CFO) Program,days out of catalogue range (197)
+c-leadership-for-the-21st-century-2,Leadership for the 21st Century,later session (2027-01-24) of a kept course
+c-strategic-management-of-regulatory-2,Strategic Management of Regulatory and Enforcement Agencies,later session (2027-02-22) of a kept course
+c-negotiation-strategies-building-ag-2,Negotiation Strategies: Building Agreement Across Boundaries,later session (2027-03-22) of a kept course
+c-negotiation-strategies-building-ag-3,Negotiation Strategies: Building Agreement Across Boundaries,later session (2027-04-25) of a kept course
+c-negotiation-strategies-building-ag-4,Negotiation Strategies: Building Agreement Across Boundaries,later session (2027-04-25) of a kept course
+c-the-leader-within-2,The Leader Within,later session (2026-11-30) of a kept course
+c-leading-the-ai-driven-organization-2,Leading the AI-Driven Organization,later session (2026-11-16) of a kept course
+c-understanding-and-solving-complex--2,Understanding and Solving Complex Business Problems,later session (2026-12-03) of a kept course
+c-leading-high-performing-teams-2,Leading High-Performing Teams,later session (2027-03-22) of a kept course
+c-design-thinking-bootcamp-make-impa-2,Design Thinking Bootcamp: Make Impact and Drive Growth in Your Organization,later session (2026-09-08) of a kept course
+c-financial-data-analysis-for-leader-2,Financial Data Analysis for Leaders,later session (2026-10-05) of a kept course
+c-high-impact-leadership-program-2,High-Impact Leadership Program,later session (2027-02-24) of a kept course

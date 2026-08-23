@@ -370,6 +370,62 @@ window.MASAR_DATA = (function () {
         en: 'Primary-sector management — dairy, forestry, horticulture — and the problem of taking a small domestic company into distant export markets.',
         ar: 'تُعنى بإدارة القطاعات الأولية من ألبان وأحراج وبستنة، وبمسألة نقل شركة محلية صغيرة إلى أسواق تصدير بعيدة.'
       }
+    },
+    {
+      id: 's-harvard-kennedy-school',
+      name: { en: 'Harvard Kennedy School', ar: 'كلية كينيدي بجامعة هارفارد' },
+      city: { en: 'Cambridge', ar: 'كامبريدج' },
+      country: { en: 'United States', ar: 'الولايات المتحدة' },
+      region: 'americas', founded: 0, accreditation: [],
+      about: { en: '', ar: '' }
+    },
+    {
+      id: 's-kellogg-school-of-management',
+      name: { en: 'Kellogg School of Management', ar: 'كلية كيلوغ للإدارة' },
+      city: { en: 'Evanston', ar: 'إيفانستون' },
+      country: { en: 'United States', ar: 'الولايات المتحدة' },
+      region: 'americas', founded: 0, accreditation: [],
+      about: { en: '', ar: '' }
+    },
+    {
+      id: 's-mit-sloan-school-of-management',
+      name: { en: 'MIT Sloan School of Management', ar: 'كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا' },
+      city: { en: 'Cambridge', ar: 'كامبريدج' },
+      country: { en: 'United States', ar: 'الولايات المتحدة' },
+      region: 'americas', founded: 0, accreditation: [],
+      about: { en: '', ar: '' }
+    },
+    {
+      id: 's-michigan-ross-executive-education',
+      name: { en: 'Michigan Ross Executive Education', ar: 'التعليم التنفيذي في كلية روس بجامعة ميشيغان' },
+      city: { en: '', ar: '' },
+      country: { en: 'United States', ar: 'الولايات المتحدة' },
+      region: 'americas', founded: 0, accreditation: [],
+      about: { en: '', ar: '' }
+    },
+    {
+      id: 's-nyu-stern-school-of-business',
+      name: { en: 'NYU Stern School of Business', ar: 'كلية شتيرن للأعمال بجامعة نيويورك' },
+      city: { en: 'New York', ar: 'نيويورك' },
+      country: { en: 'United States', ar: 'الولايات المتحدة' },
+      region: 'americas', founded: 0, accreditation: [],
+      about: { en: '', ar: '' }
+    },
+    {
+      id: 's-stanford-graduate-school-of-business',
+      name: { en: 'Stanford Graduate School of Business', ar: 'كلية ستانفورد للدراسات العليا في الأعمال' },
+      city: { en: 'Stanford', ar: 'ستانفورد' },
+      country: { en: 'United States', ar: 'الولايات المتحدة' },
+      region: 'americas', founded: 0, accreditation: [],
+      about: { en: '', ar: '' }
+    },
+    {
+      id: 's-uc-berkeley-haas-school-of-business',
+      name: { en: 'UC Berkeley Haas School of Business', ar: 'كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي' },
+      city: { en: 'Berkeley', ar: 'بيركلي' },
+      country: { en: 'United States', ar: 'الولايات المتحدة' },
+      region: 'americas', founded: 0, accreditation: [],
+      about: { en: '', ar: '' }
     }
   ];
 
@@ -2930,6 +2986,1037 @@ window.MASAR_DATA = (function () {
         ar: ['اقتصاديات البحث: كم يكلّفك بحث يمتدّ سنتين', 'الوصول إلى ملّاك مستعدّين للبيع دون طرح معلن', 'هياكل الدَّين التي يستطيع مشترٍ لأول مرة الحصول عليها واقعيًا', 'أول تسعين يومًا بصفتك المالك المدير الجديد']
       },
       audience: { en: 'Prospective owner-managers and their backers', ar: 'الراغبون في تملّك شركة وإدارتها ومموّلوهم' }
+    },
+    {
+      id: 'c-leadership-for-the-21st-century', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
+      start: '2026-09-13', days: 6, price: 12900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: { en: 'Leadership for the 21st Century', ar: 'القيادة للقرن الحادي والعشرين' },
+      summary: {
+        en: 'A 6-day on-campus program from Harvard Kennedy School, running 13 September 2026 to 18 September 2026.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 13 سبتمبر 2026 إلى 18 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-climate-change-policy-economics-and-po', school: 's-harvard-kennedy-school', subject: 'sustainability', format: 'online',
+      start: '2026-09-14', days: 5, price: 5100, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: { en: 'Climate Change Policy: Economics and Politics', ar: 'سياسات تغيّر المناخ: الاقتصاد والسياسة' },
+      summary: {
+        en: 'A 5-day online program from Harvard Kennedy School, running 14 September 2026 to 18 September 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من كلية كينيدي بجامعة هارفارد، من 14 سبتمبر 2026 إلى 18 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategic-management-of-regulatory-and', school: 's-harvard-kennedy-school', subject: 'strategy', format: 'in-person',
+      start: '2026-09-20', days: 6, price: 11300, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: {
+        en: 'Strategic Management of Regulatory and Enforcement Agencies',
+        ar: 'الإدارة الاستراتيجية للهيئات التنظيمية وهيئات إنفاذ القانون'
+      },
+      summary: {
+        en: 'A 6-day on-campus program from Harvard Kennedy School, running 20 September 2026 to 25 September 2026.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 20 سبتمبر 2026 إلى 25 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-executive-leaders-and-government', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
+      start: '2026-10-18', days: 13, price: 18900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: { en: 'Executive Leaders and Government', ar: 'القادة التنفيذيون والحكومة' },
+      summary: {
+        en: 'A 13-day on-campus program from Harvard Kennedy School, running 18 October 2026 to 30 October 2026.',
+        ar: 'برنامج حضوري لمدة 13 يومًا من كلية كينيدي بجامعة هارفارد، من 18 أكتوبر 2026 إلى 30 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-investment-decisions-and-behavioral-fi', school: 's-harvard-kennedy-school', subject: 'finance', format: 'in-person',
+      start: '2026-11-04', days: 3, price: 6100, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: { en: 'Investment Decisions and Behavioral Finance', ar: 'قرارات الاستثمار والتمويل السلوكي' },
+      summary: {
+        en: 'A 3-day on-campus program from Harvard Kennedy School, running 4 November 2026 to 6 November 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كينيدي بجامعة هارفارد، من 4 نوفمبر 2026 إلى 6 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-senior-executives-in-national-and-inte', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
+      start: '2026-11-30', days: 6, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: {
+        en: 'Senior Executives in National and International Security',
+        ar: 'كبار المديرين التنفيذيين في الأمن الوطني والدولي'
+      },
+      summary: {
+        en: 'A 6-day on-campus program from Harvard Kennedy School, running 30 November 2026 to 5 December 2026.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 30 نوفمبر 2026 إلى 5 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leadership-decision-making', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'online',
+      start: '2027-01-11', days: 12, price: 6600, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: { en: 'Leadership Decision Making', ar: 'اتخاذ القرارات القيادية' },
+      summary: {
+        en: 'A 12-day online program from Harvard Kennedy School, running 11 January 2027 to 22 January 2027.',
+        ar: 'برنامج عبر الإنترنت لمدة 12 يومًا من كلية كينيدي بجامعة هارفارد، من 11 يناير 2027 إلى 22 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-crisis-leadership-in-higher-education', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
+      start: '2027-02-09', days: 4, price: 6100, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: { en: 'Crisis Leadership in Higher Education', ar: 'قيادة الأزمات في التعليم العالي' },
+      summary: {
+        en: 'A 4-day on-campus program from Harvard Kennedy School, running 9 February 2027 to 12 February 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كينيدي بجامعة هارفارد، من 9 فبراير 2027 إلى 12 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-behavioral-insights-and-public-policy', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'online',
+      start: '2027-02-22', days: 19, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: { en: 'Behavioral Insights and Public Policy', ar: 'الرؤى السلوكية والسياسات العامة' },
+      summary: {
+        en: 'A 19-day online program from Harvard Kennedy School, running 22 February 2027 to 12 March 2027.',
+        ar: 'برنامج عبر الإنترنت لمدة 19 يومًا من كلية كينيدي بجامعة هارفارد، من 22 فبراير 2027 إلى 12 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-negotiation-strategies-building-agreem', school: 's-harvard-kennedy-school', subject: 'negotiation', format: 'online',
+      start: '2027-03-22', days: 5, price: 5100, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: {
+        en: 'Negotiation Strategies: Building Agreement Across Boundaries',
+        ar: 'استراتيجيات التفاوض: بناء الاتفاق عبر الحدود'
+      },
+      summary: {
+        en: 'A 5-day online program from Harvard Kennedy School, running 22 March 2027 to 26 March 2027.',
+        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من كلية كينيدي بجامعة هارفارد، من 22 مارس 2027 إلى 26 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leadership-in-crises', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
+      start: '2027-04-04', days: 6, price: 10900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: { en: 'Leadership in Crises', ar: 'القيادة في الأزمات' },
+      summary: {
+        en: 'A 6-day on-campus program from Harvard Kennedy School, running 4 April 2027 to 9 April 2027.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 4 أبريل 2027 إلى 9 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-women-and-power', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
+      start: '2027-04-11', days: 6, price: 10900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: { en: 'Women and Power', ar: 'المرأة والسلطة' },
+      summary: {
+        en: 'A 6-day on-campus program from Harvard Kennedy School, running 11 April 2027 to 16 April 2027.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 11 أبريل 2027 إلى 16 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-infrastructure-financing-regulation-an', school: 's-harvard-kennedy-school', subject: 'finance', format: 'in-person',
+      start: '2027-05-02', days: 6, price: 10600, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: {
+        en: 'Infrastructure Financing, Regulation, and Management',
+        ar: 'تمويل البنية التحتية وتنظيمها وإدارتها'
+      },
+      summary: {
+        en: 'A 6-day on-campus program from Harvard Kennedy School, running 2 May 2027 to 7 May 2027.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 2 مايو 2027 إلى 7 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leadership-in-emerging-technology-secu', school: 's-harvard-kennedy-school', subject: 'digital', format: 'in-person',
+      start: '2027-05-02', days: 6, price: 11200, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: {
+        en: 'Leadership in Emerging Technology: Security, Strategy & Risk',
+        ar: 'القيادة في التقنيات الناشئة: الأمن والاستراتيجية والمخاطر'
+      },
+      summary: {
+        en: 'A 6-day on-campus program from Harvard Kennedy School, running 2 May 2027 to 7 May 2027.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 2 مايو 2027 إلى 7 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategic-leadership-enhancing-your-pe', school: 's-harvard-kennedy-school', subject: 'strategy', format: 'online',
+      start: '2027-05-03', days: 5, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: {
+        en: 'Strategic Leadership: Enhancing Your Personal Effectiveness',
+        ar: 'القيادة الاستراتيجية: تعزيز فعاليتك الشخصية'
+      },
+      summary: {
+        en: 'A 5-day online program from Harvard Kennedy School, running 3 May 2027 to 7 May 2027.',
+        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من كلية كينيدي بجامعة هارفارد، من 3 مايو 2027 إلى 7 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-major-events-navigating-opportunities', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
+      start: '2027-05-10', days: 4, price: 7100, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: {
+        en: 'Major Events: Navigating Opportunities and Challenges',
+        ar: 'الفعاليات الكبرى: استكشاف الفرص ومواجهة التحديات'
+      },
+      summary: {
+        en: 'A 4-day on-campus program from Harvard Kennedy School, running 10 May 2027 to 13 May 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كينيدي بجامعة هارفارد، من 10 مايو 2027 إلى 13 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-art-and-practice-of-leadership-develop', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
+      start: '2027-06-06', days: 6, price: 11300, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/harvard-university-kennedy-school-of-government-executive-education',
+      title: { en: 'Art and Practice of Leadership Development', ar: 'فن وممارسة تطوير القيادة' },
+      summary: {
+        en: 'A 6-day on-campus program from Harvard Kennedy School, running 6 June 2027 to 11 June 2027.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 6 يونيو 2027 إلى 11 يونيو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-competitive-strategy', school: 's-kellogg-school-of-management', subject: 'strategy', format: 'in-person',
+      start: '2026-09-14', days: 5, price: 9950, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Competitive Strategy', ar: 'الاستراتيجية التنافسية' },
+      summary: {
+        en: 'A 5-day on-campus program from Kellogg School of Management, running 14 September 2026 to 18 September 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة، من 14 سبتمبر 2026 إلى 18 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-with-ai', school: 's-kellogg-school-of-management', subject: 'digital', format: 'in-person',
+      start: '2026-09-14', days: 4, price: 12500, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Leading with AI', ar: 'القيادة بالذكاء الاصطناعي' },
+      summary: {
+        en: 'A 4-day on-campus program from Kellogg School of Management, running 14 September 2026 to 17 September 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 14 سبتمبر 2026 إلى 17 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-operations-strategy', school: 's-kellogg-school-of-management', subject: 'operations', format: 'in-person',
+      start: '2026-09-21', days: 3, price: 8950, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Operations Strategy', ar: 'استراتيجية العمليات' },
+      summary: {
+        en: 'A 3-day on-campus program from Kellogg School of Management, running 21 September 2026 to 23 September 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كيلوغ للإدارة، من 21 سبتمبر 2026 إلى 23 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-the-leader-within', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'in-person',
+      start: '2026-09-21', days: 5, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'The Leader Within', ar: 'القائد في داخلك' },
+      summary: {
+        en: 'A 5-day on-campus program from Kellogg School of Management, running 21 September 2026 to 25 September 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة، من 21 سبتمبر 2026 إلى 25 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-creating-and-managing-strategic-allian', school: 's-kellogg-school-of-management', subject: 'strategy', format: 'online',
+      start: '2026-09-28', days: 5, price: 4950, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Creating and Managing Strategic Alliances', ar: 'إنشاء التحالفات الاستراتيجية وإدارتها' },
+      summary: {
+        en: 'A 5-day online program from Kellogg School of Management, running 28 September 2026 to 2 October 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من كلية كيلوغ للإدارة، من 28 سبتمبر 2026 إلى 2 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-governing-family-enterprises', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'blended',
+      start: '2026-09-29', days: 11, price: 12000, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Governing Family Enterprises', ar: 'حوكمة الشركات العائلية' },
+      summary: {
+        en: 'A 11-day hybrid program from Kellogg School of Management, running 29 September 2026 to 9 October 2026.',
+        ar: 'برنامج مدمج لمدة 11 يومًا من كلية كيلوغ للإدارة، من 29 سبتمبر 2026 إلى 9 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-and-sustaining-a-culture-of-in', school: 's-kellogg-school-of-management', subject: 'strategy', format: 'in-person',
+      start: '2026-10-05', days: 4, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Leading and Sustaining a Culture of Innovation', ar: 'قيادة ثقافة الابتكار وإدامتها' },
+      summary: {
+        en: 'A 4-day on-campus program from Kellogg School of Management, running 5 October 2026 to 8 October 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 5 أكتوبر 2026 إلى 8 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-executive-development-program', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'in-person',
+      start: '2026-10-11', days: 20, price: 39500, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Executive Development Program', ar: 'برنامج التطوير التنفيذي' },
+      summary: {
+        en: 'A 20-day on-campus program from Kellogg School of Management, running 11 October 2026 to 30 October 2026.',
+        ar: 'برنامج حضوري لمدة 20 يومًا من كلية كيلوغ للإدارة، من 11 أكتوبر 2026 إلى 30 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-mergers-acquisitions', school: 's-kellogg-school-of-management', subject: 'finance', format: 'in-person',
+      start: '2026-10-11', days: 6, price: 13100, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Mergers + Acquisitions', ar: 'الاندماج والاستحواذ' },
+      summary: {
+        en: 'A 6-day on-campus program from Kellogg School of Management, running 11 October 2026 to 16 October 2026.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية كيلوغ للإدارة، من 11 أكتوبر 2026 إلى 16 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-constructive-collaboration', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'online',
+      start: '2026-10-12', days: 5, price: 6500, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Constructive Collaboration', ar: 'التعاون البنّاء' },
+      summary: {
+        en: 'A 5-day online program from Kellogg School of Management, running 12 October 2026 to 16 October 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من كلية كيلوغ للإدارة، من 12 أكتوبر 2026 إلى 16 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-marketing-strategy', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'in-person',
+      start: '2026-10-19', days: 5, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Business Marketing Strategy', ar: 'استراتيجية تسويق الأعمال' },
+      summary: {
+        en: 'A 5-day on-campus program from Kellogg School of Management, running 19 October 2026 to 23 October 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة، من 19 أكتوبر 2026 إلى 23 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-b2b-sales-force-strategy-effectiveness', school: 's-kellogg-school-of-management', subject: 'digital', format: 'in-person',
+      start: '2026-10-25', days: 5, price: 9950, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: {
+        en: 'B2B Sales Force Strategy & Effectiveness in the Digital Age',
+        ar: 'استراتيجية وفعالية فرق مبيعات B2B في العصر الرقمي'
+      },
+      summary: {
+        en: 'A 5-day on-campus program from Kellogg School of Management, running 25 October 2026 to 29 October 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة، من 25 أكتوبر 2026 إلى 29 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-delivering-business-growth', school: 's-kellogg-school-of-management', subject: 'strategy', format: 'in-person',
+      start: '2026-10-26', days: 4, price: 9950, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Delivering Business Growth', ar: 'تحقيق نمو الأعمال' },
+      summary: {
+        en: 'A 4-day on-campus program from Kellogg School of Management, running 26 October 2026 to 29 October 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 26 أكتوبر 2026 إلى 29 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-high-impact-teams', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'online',
+      start: '2026-10-26', days: 5, price: 6500, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Leading High-Impact Teams', ar: 'قيادة الفرق عالية التأثير' },
+      summary: {
+        en: 'A 5-day online program from Kellogg School of Management, running 26 October 2026 to 30 October 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من كلية كيلوغ للإدارة، من 26 أكتوبر 2026 إلى 30 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-family-enterprise-boards', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'blended',
+      start: '2026-10-27', days: 11, price: 12000, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Family Enterprise Boards', ar: 'مجالس إدارة الشركات العائلية' },
+      summary: {
+        en: 'A 11-day hybrid program from Kellogg School of Management, running 27 October 2026 to 6 November 2026.',
+        ar: 'برنامج مدمج لمدة 11 يومًا من كلية كيلوغ للإدارة، من 27 أكتوبر 2026 إلى 6 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-finance-for-executives', school: 's-kellogg-school-of-management', subject: 'finance', format: 'in-person',
+      start: '2026-11-01', days: 6, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Finance for Executives', ar: 'المالية للمديرين التنفيذيين' },
+      summary: {
+        en: 'A 6-day on-campus program from Kellogg School of Management, running 1 November 2026 to 6 November 2026.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية كيلوغ للإدارة، من 1 نوفمبر 2026 إلى 6 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-corporate-governance', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'in-person',
+      start: '2026-11-02', days: 4, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Corporate Governance', ar: 'حوكمة الشركات' },
+      summary: {
+        en: 'A 4-day on-campus program from Kellogg School of Management, running 2 November 2026 to 5 November 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 2 نوفمبر 2026 إلى 5 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-energizing-people-for-performance', school: 's-kellogg-school-of-management', subject: 'people', format: 'in-person',
+      start: '2026-11-09', days: 4, price: 8950, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Energizing People for Performance', ar: 'تحفيز الأفراد لتحقيق الأداء' },
+      summary: {
+        en: 'A 4-day on-campus program from Kellogg School of Management, running 9 November 2026 to 12 November 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 9 نوفمبر 2026 إلى 12 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-the-strategy-of-leadership', school: 's-kellogg-school-of-management', subject: 'strategy', format: 'in-person',
+      start: '2026-11-09', days: 3, price: 10450, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'The Strategy of Leadership', ar: 'استراتيجية القيادة' },
+      summary: {
+        en: 'A 3-day on-campus program from Kellogg School of Management, running 9 November 2026 to 11 November 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كيلوغ للإدارة، من 9 نوفمبر 2026 إلى 11 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-advanced-marketing-management', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'in-person',
+      start: '2026-11-16', days: 5, price: 9950, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Advanced Marketing Management', ar: 'الإدارة المتقدمة للتسويق' },
+      summary: {
+        en: 'A 5-day on-campus program from Kellogg School of Management, running 16 November 2026 to 20 November 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة، من 16 نوفمبر 2026 إلى 20 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-driving-organizational-change', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'in-person',
+      start: '2026-11-16', days: 4, price: 8950, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Driving Organizational Change', ar: 'قيادة التغيير المؤسسي' },
+      summary: {
+        en: 'A 4-day on-campus program from Kellogg School of Management, running 16 November 2026 to 19 November 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 16 نوفمبر 2026 إلى 19 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-negotiation-master-class', school: 's-kellogg-school-of-management', subject: 'negotiation', format: 'online',
+      start: '2026-11-30', days: 12, price: 6900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Negotiation Master Class', ar: 'ماستر كلاس في التفاوض' },
+      summary: {
+        en: 'A 12-day online program from Kellogg School of Management, running 30 November 2026 to 11 December 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة 12 يومًا من كلية كيلوغ للإدارة، من 30 نوفمبر 2026 إلى 11 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-growth-marketing', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'in-person',
+      start: '2026-12-07', days: 4, price: 8950, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/illinois/northwestern-university-kellogg-school-of-management-executive-education',
+      title: { en: 'Growth Marketing', ar: 'تسويق النمو' },
+      summary: {
+        en: 'A 4-day on-campus program from Kellogg School of Management, running 7 December 2026 to 10 December 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 7 ديسمبر 2026 إلى 10 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-high-performing-teams', school: 's-michigan-ross-executive-education', subject: 'leadership', format: 'in-person',
+      start: '2026-09-15', days: 4, price: 8900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/michigan/michigan-ross-executive-education-university-of-michigan',
+      title: { en: 'Leading High-Performing Teams', ar: 'قيادة الفرق ذات الأداء العالي' },
+      summary: {
+        en: 'A 4-day on-campus program from Michigan Ross Executive Education, running 15 September 2026 to 18 September 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 15 سبتمبر 2026 إلى 18 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-emerging-leaders-program-becoming-a-tr', school: 's-michigan-ross-executive-education', subject: 'leadership', format: 'in-person',
+      start: '2026-09-28', days: 5, price: 10700, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/michigan/michigan-ross-executive-education-university-of-michigan',
+      title: {
+        en: 'Emerging Leaders Program: Becoming a Transformational Leader',
+        ar: 'برنامج القادة الصاعدين: كيف تصبح قائداً تحويلياً'
+      },
+      summary: {
+        en: 'A 5-day on-campus program from Michigan Ross Executive Education, running 28 September 2026 to 2 October 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 28 سبتمبر 2026 إلى 2 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategic-leaders-program-vision-strat', school: 's-michigan-ross-executive-education', subject: 'strategy', format: 'in-person',
+      start: '2026-10-26', days: 5, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/michigan/michigan-ross-executive-education-university-of-michigan',
+      title: {
+        en: 'Strategic Leaders Program: Vision, Strategy, and Managing the Organization to Drive Results',
+        ar: 'برنامج القادة الاستراتيجيين: الرؤية والاستراتيجية وإدارة المؤسسة لتحقيق النتائج'
+      },
+      summary: {
+        en: 'A 5-day on-campus program from Michigan Ross Executive Education, running 26 October 2026 to 30 October 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 26 أكتوبر 2026 إلى 30 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-executive-presence-through-strategic-c', school: 's-michigan-ross-executive-education', subject: 'people', format: 'in-person',
+      start: '2026-10-27', days: 3, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/michigan/michigan-ross-executive-education-university-of-michigan',
+      title: {
+        en: 'Executive Presence Through Strategic Communication',
+        ar: 'الحضور التنفيذي من خلال التواصل الاستراتيجي'
+      },
+      summary: {
+        en: 'A 3-day on-campus program from Michigan Ross Executive Education, running 27 October 2026 to 29 October 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 27 أكتوبر 2026 إلى 29 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-advanced-human-resource-executive--2', school: 's-michigan-ross-executive-education', subject: 'people', format: 'blended',
+      start: '2027-04-05', days: 12, price: 25800, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/michigan/michigan-ross-executive-education-university-of-michigan',
+      title: {
+        en: 'Advanced Human Resource Executive Program (Blended)',
+        ar: 'البرنامج التنفيذي المتقدم للموارد البشرية (مدمج)'
+      },
+      summary: {
+        en: 'A 12-day hybrid program from Michigan Ross Executive Education, running 5 April 2027 to 16 April 2027.',
+        ar: 'برنامج مدمج لمدة 12 يومًا من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 5 أبريل 2027 إلى 16 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-the-ai-driven-organization', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'in-person',
+      start: '2026-09-14', days: 5, price: 12900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/massachusetts-institute-of-technology-mit-sloan-school-of-management-executive-education',
+      title: { en: 'Leading the AI-Driven Organization', ar: 'قيادة المؤسسة المدفوعة بالذكاء الاصطناعي' },
+      summary: {
+        en: 'A 5-day on-campus program from MIT Sloan School of Management, running 14 September 2026 to 18 September 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 14 سبتمبر 2026 إلى 18 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-frontiers-of-generative-ai-in-business', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'in-person',
+      start: '2026-09-22', days: 2, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/massachusetts-institute-of-technology-mit-sloan-school-of-management-executive-education',
+      title: { en: 'Frontiers of Generative AI in Business', ar: 'آفاق الذكاء الاصطناعي التوليدي في الأعمال' },
+      summary: {
+        en: 'A 2-day on-campus program from MIT Sloan School of Management, running 22 September 2026 to 23 September 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 22 سبتمبر 2026 إلى 23 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-essentials-accelerating-impactful-a', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'in-person',
+      start: '2026-09-24', days: 2, price: 5700, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/massachusetts-institute-of-technology-mit-sloan-school-of-management-executive-education',
+      title: {
+        en: 'AI Essentials: Accelerating Impactful Adoption',
+        ar: 'أساسيات الذكاء الاصطناعي: تسريع التبنّي المؤثر'
+      },
+      summary: {
+        en: 'A 2-day on-campus program from MIT Sloan School of Management, running 24 September 2026 to 25 September 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 24 سبتمبر 2026 إلى 25 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-understanding-and-solving-complex-busi', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
+      start: '2026-10-15', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/massachusetts-institute-of-technology-mit-sloan-school-of-management-executive-education',
+      title: { en: 'Understanding and Solving Complex Business Problems', ar: 'فهم مشكلات الأعمال المعقدة وحلها' },
+      summary: {
+        en: 'A 2-day on-campus program from MIT Sloan School of Management, running 15 October 2026 to 16 October 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 15 أكتوبر 2026 إلى 16 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-negotiation-for-executives', school: 's-mit-sloan-school-of-management', subject: 'negotiation', format: 'in-person',
+      start: '2026-11-17', days: 2, price: 5300, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/massachusetts-institute-of-technology-mit-sloan-school-of-management-executive-education',
+      title: { en: 'Negotiation for Executives', ar: 'التفاوض للمديرين التنفيذيين' },
+      summary: {
+        en: 'A 2-day on-campus program from MIT Sloan School of Management, running 17 November 2026 to 18 November 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 17 نوفمبر 2026 إلى 18 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-communication-and-persuasion-in-the-di', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
+      start: '2026-12-08', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/massachusetts/massachusetts-institute-of-technology-mit-sloan-school-of-management-executive-education',
+      title: { en: 'Communication and Persuasion in the Digital Age', ar: 'التواصل والإقناع في العصر الرقمي' },
+      summary: {
+        en: 'A 2-day online program from MIT Sloan School of Management, running 8 December 2026 to 9 December 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة يومين من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 8 ديسمبر 2026 إلى 9 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leadership-training-for-high-potential', school: 's-nyu-stern-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2026-11-10', days: 2, price: 3344, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/new-york/new-york-university-nyu-stern-school-of-business-executive-education',
+      title: { en: 'Leadership Training for High Potentials', ar: 'تدريب قيادي لأصحاب الإمكانات العالية' },
+      summary: {
+        en: 'A 2-day on-campus program from NYU Stern School of Business, running 10 November 2026 to 11 November 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية شتيرن للأعمال بجامعة نيويورك، من 10 نوفمبر 2026 إلى 11 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-design-thinking-bootcamp-make-impact-a', school: 's-stanford-graduate-school-of-business', subject: 'marketing', format: 'in-person',
+      start: '2026-09-07', days: 5, price: 14000, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/stanford-university-stanford-graduate-school-of-business-executive-education',
+      title: {
+        en: 'Design Thinking Bootcamp: Make Impact and Drive Growth in Your Organization',
+        ar: 'معسكر التفكير التصميمي: اصنع الأثر وادفع عجلة النمو في مؤسستك'
+      },
+      summary: {
+        en: 'A 5-day on-campus program from Stanford Graduate School of Business, running 7 September 2026 to 11 September 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 7 سبتمبر 2026 إلى 11 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-change-and-organizational-rene', school: 's-stanford-graduate-school-of-business', subject: 'strategy', format: 'in-person',
+      start: '2026-09-13', days: 6, price: 17000, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/stanford-university-stanford-graduate-school-of-business-executive-education',
+      title: { en: 'Leading Change and Organizational Renewal', ar: 'قيادة التغيير والتجديد المؤسسي' },
+      summary: {
+        en: 'A 6-day on-campus program from Stanford Graduate School of Business, running 13 September 2026 to 18 September 2026.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 13 سبتمبر 2026 إلى 18 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-black-leadership-program', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2026-09-20', days: 6, price: 15000, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/stanford-university-stanford-graduate-school-of-business-executive-education',
+      title: { en: 'Black Leadership Program', ar: 'برنامج القيادة للقادة السود' },
+      summary: {
+        en: 'A 6-day on-campus program from Stanford Graduate School of Business, running 20 September 2026 to 25 September 2026.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 20 سبتمبر 2026 إلى 25 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-harnessing-ai-for-breakthrough-innovat', school: 's-stanford-graduate-school-of-business', subject: 'digital', format: 'in-person',
+      start: '2026-10-18', days: 6, price: 17500, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/stanford-university-stanford-graduate-school-of-business-executive-education',
+      title: {
+        en: 'Harnessing AI for Breakthrough Innovation and Strategic Impact',
+        ar: 'تسخير الذكاء الاصطناعي للابتكار والأثر الاستراتيجي'
+      },
+      summary: {
+        en: 'A 6-day on-campus program from Stanford Graduate School of Business, running 18 October 2026 to 23 October 2026.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 18 أكتوبر 2026 إلى 23 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-directors-consortium', school: 's-stanford-graduate-school-of-business', subject: 'finance', format: 'in-person',
+      start: '2026-10-19', days: 5, price: 16000, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/stanford-university-stanford-graduate-school-of-business-executive-education',
+      title: { en: 'Directors’ Consortium', ar: 'ملتقى أعضاء مجالس الإدارة' },
+      summary: {
+        en: 'A 5-day on-campus program from Stanford Graduate School of Business, running 19 October 2026 to 23 October 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 19 أكتوبر 2026 إلى 23 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-executive-program-in-leadership-the-ef', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2026-11-15', days: 6, price: 16000, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/stanford-university-stanford-graduate-school-of-business-executive-education',
+      title: {
+        en: 'Executive Program in Leadership: The Effective Use of Power',
+        ar: 'البرنامج التنفيذي في القيادة: الاستخدام الفعّال للسلطة'
+      },
+      summary: {
+        en: 'A 6-day on-campus program from Stanford Graduate School of Business, running 15 November 2026 to 20 November 2026.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 15 نوفمبر 2026 إلى 20 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-women-s-executive-leadership-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2026-09-22', days: 4, price: 6900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education',
+      title: { en: "Women's Executive Leadership Program", ar: 'برنامج القيادة التنفيذية للمرأة' },
+      summary: {
+        en: 'A 4-day on-campus program from UC Berkeley Haas School of Business, running 22 September 2026 to 25 September 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 22 سبتمبر 2026 إلى 25 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-product-management-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2026-09-28', days: 5, price: 7900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education',
+      title: { en: 'Product Management Program', ar: 'برنامج إدارة المنتجات' },
+      summary: {
+        en: 'A 5-day on-campus program from UC Berkeley Haas School of Business, running 28 September 2026 to 2 October 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 28 سبتمبر 2026 إلى 2 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-advanced-executive-presence-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'people', format: 'in-person',
+      start: '2026-09-30', days: 3, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education',
+      title: { en: 'Advanced Executive Presence Program', ar: 'البرنامج المتقدم للحضور القيادي' },
+      summary: {
+        en: 'A 3-day on-campus program from UC Berkeley Haas School of Business, running 30 September 2026 to 2 October 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 30 سبتمبر 2026 إلى 2 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-financial-data-analysis-for-leaders', school: 's-uc-berkeley-haas-school-of-business', subject: 'finance', format: 'in-person',
+      start: '2026-10-05', days: 5, price: 7500, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education',
+      title: { en: 'Financial Data Analysis for Leaders', ar: 'تحليل البيانات المالية للقادة' },
+      summary: {
+        en: 'A 5-day on-campus program from UC Berkeley Haas School of Business, running 5 October 2026 to 9 October 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 5 أكتوبر 2026 إلى 9 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leadership-communications-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'people', format: 'in-person',
+      start: '2026-10-14', days: 3, price: 5600, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education',
+      title: { en: 'Leadership Communications Program', ar: 'برنامج الاتصال القيادي' },
+      summary: {
+        en: 'A 3-day on-campus program from UC Berkeley Haas School of Business, running 14 October 2026 to 16 October 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 14 أكتوبر 2026 إلى 16 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-the-berkeley-executive-leadership-prog', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2026-10-26', days: 5, price: 9900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education',
+      title: { en: 'The Berkeley Executive Leadership Program', ar: 'برنامج بيركلي للقيادة التنفيذية' },
+      summary: {
+        en: 'A 5-day on-campus program from UC Berkeley Haas School of Business, running 26 October 2026 to 30 October 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 26 أكتوبر 2026 إلى 30 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-venture-capital-executive-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'entrepreneurship', format: 'in-person',
+      start: '2026-11-02', days: 5, price: 8700, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education',
+      title: { en: 'Venture Capital Executive Program', ar: 'البرنامج التنفيذي لرأس المال الجريء' },
+      summary: {
+        en: 'A 5-day on-campus program from UC Berkeley Haas School of Business, running 2 November 2026 to 6 November 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 2 نوفمبر 2026 إلى 6 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-high-impact-leadership-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2026-11-04', days: 3, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education',
+      title: { en: 'High-Impact Leadership Program', ar: 'برنامج القيادة عالية التأثير' },
+      summary: {
+        en: 'A 3-day on-campus program from UC Berkeley Haas School of Business, running 4 November 2026 to 6 November 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 4 نوفمبر 2026 إلى 6 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-strategy-execution-through-cul', school: 's-uc-berkeley-haas-school-of-business', subject: 'strategy', format: 'online',
+      start: '2026-11-04', days: 3, price: 3400, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education',
+      title: {
+        en: 'Leading Strategy Execution through Culture Program',
+        ar: 'برنامج قيادة تنفيذ الاستراتيجية من خلال الثقافة'
+      },
+      summary: {
+        en: 'A 3-day online program from UC Berkeley Haas School of Business, running 4 November 2026 to 6 November 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 4 نوفمبر 2026 إلى 6 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-new-manager-boot-camp', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2026-11-04', days: 3, price: 5400, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education',
+      title: { en: 'New Manager Boot Camp', ar: 'معسكر المدير الجديد' },
+      summary: {
+        en: 'A 3-day on-campus program from UC Berkeley Haas School of Business, running 4 November 2026 to 6 November 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 4 نوفمبر 2026 إلى 6 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-negotiation-and-influence', school: 's-uc-berkeley-haas-school-of-business', subject: 'negotiation', format: 'in-person',
+      start: '2026-11-18', days: 3, price: 5100, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education',
+      title: { en: 'Negotiation and Influence', ar: 'التفاوض والتأثير' },
+      summary: {
+        en: 'A 3-day on-campus program from UC Berkeley Haas School of Business, running 18 November 2026 to 20 November 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 18 نوفمبر 2026 إلى 20 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-the-berkeley-changemaker-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2026-12-09', days: 3, price: 4500, langs: ['en'], popularity: 50, sourceUrl: 'https://executivecourses.com/schools/usa/california/university-of-california-uc-berkeley-haas-school-of-business-center-for-executive-education',
+      title: { en: 'The Berkeley Changemaker Program', ar: 'برنامج بيركلي لصنّاع التغيير' },
+      summary: {
+        en: 'A 3-day on-campus program from UC Berkeley Haas School of Business, running 9 December 2026 to 11 December 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 9 ديسمبر 2026 إلى 11 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
     }
   ];
 
