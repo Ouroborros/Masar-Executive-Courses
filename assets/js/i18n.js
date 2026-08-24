@@ -33,8 +33,8 @@ window.MASAR_I18N = (function () {
       'filters.noMax': 'No limit',
 
       'currency.label': 'Prices in',
-      'currency.orig': 'Course currency',
-      'currency.sar': 'Saudi riyal (SAR)',
+      'currency.orig': 'Original prices',
+      'currency.sar': 'Saudi riyal',
       'currency.note': 'SAR amounts are converted at indicative rates.',
 
       'duration.short': '1–3 days',

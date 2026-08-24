@@ -210,7 +210,7 @@ html[lang="ar"] .brand-name small { letter-spacing: 0; font-size: .62rem; }
 .main-nav a[aria-current="page"] { color: var(--brand); background: var(--brand-soft); }
 
 .header-tools { display: flex; align-items: center; gap: 8px; flex: none; }
-.currency-switch { padding: 6px 10px; font-size: .78rem; max-width: 156px; }
+.currency-switch { padding: 6px 10px; font-size: .78rem; }
 @media (max-width: 560px) { .currency-switch { max-width: 96px; } }
 
 /* Four controls plus the wordmark do not fit a 320px phone at full size. */

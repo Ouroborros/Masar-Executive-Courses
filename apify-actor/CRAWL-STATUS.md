@@ -132,3 +132,19 @@ CHF 30, AUD 22, DKK 18, SGD 5, USD 1) on top of the 70 USD courses —
 honestly: the 80 unknown-currency Vlerick/IMI rows, UCT's INR-suffixed fees
 (fail the USD-equivalent plausibility floor — likely a source-site error),
 and everything outside the 2–20-day scope.
+
+---
+
+# Demo data removed — 2026-08-23
+
+The fictional portfolio-demo catalogue (30 invented schools, 168 invented
+courses) is gone from `assets/js/data.js`; the site now serves only the 189
+scraped listings across 17 real schools (UCT kept as a school record despite
+zero admitted courses — its fees are INR-suffixed at the source). Collections
+were repopulated from real courses only: six survive (AI, one-week,
+first-time leaders, online, finance, negotiation), and the three whose
+premise no real course can honestly satisfy (Arabic-taught, healthcare,
+Africa) were dropped rather than padded. Eight flagship courses are marked
+featured for the home page. Also fixed: the price slider's "No limit"
+position no longer silently hides fees above its own 25k USD-equivalent
+maximum.

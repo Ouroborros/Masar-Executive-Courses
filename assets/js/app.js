@@ -401,8 +401,11 @@
         if (hay.indexOf(state.q.toLowerCase().trim()) === -1) return false;
       }
       if (state.school.length && state.school.indexOf(c.school) === -1) return false;
-      /* The slider is a USD-equivalent ceiling so mixed currencies compare. */
-      if (skipKey !== 'price' && I.toUsd(c.price, c.currency) > state.max) return false;
+      /* The slider is a USD-equivalent ceiling so mixed currencies compare;
+         parked at the top it reads "No limit", so no course may be filtered
+         there (real fees can exceed the slider's own maximum). */
+      if (skipKey !== 'price' && state.max < MAX_PRICE &&
+          I.toUsd(c.price, c.currency) > state.max) return false;
       for (let i = 0; i < FACETS.length; i++) {
         const f = FACETS[i];
         if (f.key === skipKey) continue;
