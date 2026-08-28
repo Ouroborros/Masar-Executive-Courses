@@ -4890,10 +4890,17 @@ window.MASAR_I18N = (function () {
             langs: c.langs.map(langLabel).join(' · '),
             date: I.shortDate(c.start)
           })) + '</p>' +
-          '<h2>' + esc(t('course.highlights')) + '</h2>' +
-          '<ul class="ticks">' + pick(c.highlights).map((h) => '<li>' + esc(h) + '</li>').join('') + '</ul>' +
-          '<h2>' + esc(t('course.audience')) + '</h2>' +
-          '<p>' + esc(pick(c.audience)) + '</p>' +
+          /* Scraped records carry no editorial copy — a fact-only extraction
+             leaves highlights and audience empty, so those sections render
+             only when there is something true to put under the heading. */
+          (pick(c.highlights).length
+            ? '<h2>' + esc(t('course.highlights')) + '</h2>' +
+              '<ul class="ticks">' + pick(c.highlights).map((h) => '<li>' + esc(h) + '</li>').join('') + '</ul>'
+            : '') +
+          (pick(c.audience)
+            ? '<h2>' + esc(t('course.audience')) + '</h2>' +
+              '<p>' + esc(pick(c.audience)) + '</p>'
+            : '') +
           '<div class="school-strip">' +
             '<div class="school-strip__body">' +
               '<span class="eyebrow">' + esc(t('course.school')) + '</span>' +
