@@ -54,6 +54,13 @@ window.MASAR_I18N = (function () {
       'results.showing': 'Showing {n}',
 
       'card.from': 'from',
+      'card.new': 'New',
+      'spec.start': 'Starts',
+      'spec.location': 'Location',
+      'spec.duration': 'Duration',
+      'spec.fee': 'Fee',
+      'search.format': 'Any format',
+      'home.programmes': '{n} programmes',
       'card.days': '{n} days',
       'card.day': '1 day',
       'card.starts': 'Starts {date}',
@@ -151,6 +158,13 @@ window.MASAR_I18N = (function () {
       'results.showing': 'عرض {n}',
 
       'card.from': 'تبدأ من',
+      'card.new': 'جديد',
+      'spec.start': 'يبدأ',
+      'spec.location': 'الموقع',
+      'spec.duration': 'المدة',
+      'spec.fee': 'الرسوم',
+      'search.format': 'أي نمط دراسة',
+      'home.programmes': '{n} برامج',
       'card.days': '{n} أيام',
       'card.day': 'يوم واحد',
       'card.starts': 'يبدأ في {date}',
@@ -272,9 +286,12 @@ window.MASAR_I18N = (function () {
 
   function format(value, code) {
     try {
+      /* A bare "$" would make an Australian or Canadian fee read as US
+         dollars, so only USD gets the narrow symbol; others keep their
+         qualifier (A$, CA$, CHF, DKK…). */
       return new Intl.NumberFormat(numLocale, {
         style: 'currency', currency: code,
-        currencyDisplay: 'narrowSymbol', maximumFractionDigits: 0
+        currencyDisplay: code === 'USD' ? 'narrowSymbol' : 'symbol', maximumFractionDigits: 0
       }).format(value);
     } catch (e) {
       return value.toLocaleString('en') + ' ' + code;
@@ -302,6 +319,20 @@ window.MASAR_I18N = (function () {
     }
   }
 
+  /* Umm al-Qura Hijri date for the same day — shown beside the Gregorian
+     date so a cohort can be placed against Ramadan and the Eids at a glance. */
+  function hijriDate(iso) {
+    const d = new Date(iso + 'T00:00:00');
+    try {
+      return new Intl.DateTimeFormat(
+        LANG === 'ar' ? 'ar-SA-u-ca-islamic-umalqura-nu-latn' : 'en-u-ca-islamic-umalqura',
+        { day: 'numeric', month: 'short', year: 'numeric' }
+      ).format(d);
+    } catch (e) {
+      return '';
+    }
+  }
+
   function monthLabel(iso) {
     const d = new Date(iso + 'T00:00:00');
     try {
@@ -316,5 +347,5 @@ window.MASAR_I18N = (function () {
   }
 
   return { LANG, IS_RTL, t, pick, courseCount, dayCount, money, toUsd,
-    getCurrency, setCurrency, shortDate, monthLabel, num };
+    getCurrency, setCurrency, shortDate, hijriDate, monthLabel, num };
 })();

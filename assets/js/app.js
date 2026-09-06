@@ -95,6 +95,12 @@
   }
 
   /* --- Cards -------------------------------------------------------------- */
+  function spec(k, v, sub, price) {
+    return '<div><dt class="spec__k">' + esc(k) + '</dt>' +
+      '<dd class="spec__v' + (price ? ' spec__v--price' : '') + '">' + esc(v) +
+      (sub ? '<small>' + esc(sub) + '</small>' : '') + '</dd></div>';
+  }
+
   function courseCard(c) {
     const s = schoolOf(c);
     return '' +
@@ -102,30 +108,30 @@
         '<div class="course-card__top">' +
           '<div>' +
             '<a class="course-card__school" href="school.html?id=' + s.id + '">' + esc(pick(s.name)) + '</a>' +
-            '<div class="course-card__place">' + esc(homeOf(c)) + ' · ' + esc(formatLabel(c.format)) + '</div>' +
+            '<div class="course-card__place">' + esc(homeOf(c)) + '</div>' +
           '</div>' +
           saveButton(c) +
         '</div>' +
         '<h3><a href="course.html?id=' + c.id + '">' + esc(pick(c.title)) + '</a></h3>' +
-        '<p class="course-card__summary">' + esc(pick(c.summary)) + '</p>' +
         '<div class="course-card__meta">' +
           '<span class="pill pill--brand">' + esc(subjectLabel(c.subject)) + '</span>' +
-          '<span class="pill">' + esc(I.dayCount(c.days)) + '</span>' +
+          '<span class="pill">' + esc(formatLabel(c.format)) + '</span>' +
           '<span class="pill">' + esc(c.langs.map(langLabel).join(' · ')) + '</span>' +
+          /* Imported listings carry no rating; the card simply omits it
+             rather than showing an invented score. */
+          (c.rating != null
+            ? '<span class="rating"><span class="stars" aria-hidden="true">' + stars(c.rating) + '</span>' +
+              '<span class="sr-only">' + c.rating + '/5</span>' +
+              '<span class="count">' + esc(I.num(c.reviews)) + '</span></span>'
+            : '') +
         '</div>' +
-        '<div class="course-card__foot">' +
-          '<div class="course-card__price"><small>' + esc(t('card.from')) + '</small>' + esc(I.money(c.price, c.currency)) + '</div>' +
-          '<div class="course-card__date">' +
-            esc(t('card.starts', { date: I.shortDate(c.start) })) +
-            /* Imported listings carry no rating; the card simply omits the
-               line rather than showing an invented score. */
-            (c.rating != null
-              ? '<br><span class="rating"><span class="stars" aria-hidden="true">' + stars(c.rating) + '</span>' +
-                '<span class="sr-only">' + c.rating + '/5</span>' +
-                '<span class="count">' + esc(I.num(c.reviews)) + '</span></span>'
-              : '') +
-          '</div>' +
-        '</div>' +
+        /* The same four cells in the same order on every card. */
+        '<dl class="spec">' +
+          spec(t('spec.start'), I.shortDate(c.start), I.hijriDate(c.start)) +
+          spec(t('spec.location'), placeOf(c)) +
+          spec(t('spec.duration'), I.dayCount(c.days)) +
+          spec(t('spec.fee'), I.money(c.price, c.currency), t('card.from'), true) +
+        '</dl>' +
       '</article>';
   }
 
@@ -172,6 +178,17 @@
         location.reload();
       });
       tools.insertBefore(sel, tools.firstChild);
+      /* Twin inside the menu panel for phones (CSS decides which one shows). */
+      const navList = document.querySelector('.main-nav ul');
+      if (navList) {
+        const li = document.createElement('li');
+        const twin = sel.cloneNode(true);
+        twin.className = 'select currency-switch currency-switch--nav';
+        twin.value = sel.value;
+        twin.addEventListener('change', function () { I.setCurrency(twin.value); location.reload(); });
+        li.appendChild(twin);
+        navList.appendChild(li);
+      }
     }
 
     const themeBtn = document.querySelector('[data-theme-toggle]');
@@ -306,8 +323,10 @@
     if (subjects) {
       subjects.innerHTML = D.subjects.map(function (s) {
         const n = D.courses.filter((c) => c.subject === s.id).length;
-        return '<a class="subject-tile" href="courses.html?subject=' + s.id + '">' +
-          '<span>' + esc(pick(s)) + '</span><span class="n">' + esc(I.num(n)) + '</span></a>';
+        return { s: s, n: n };
+      }).sort((a, b) => b.n - a.n).map(function (x) {
+        return '<a class="subject-row" href="courses.html?subject=' + x.s.id + '">' +
+          '<span>' + esc(pick(x.s)) + '</span><span class="n">' + esc(I.num(x.n)) + '</span></a>';
       }).join('');
     }
 
@@ -316,25 +335,37 @@
 
     const schools = document.querySelector('[data-home-schools]');
     if (schools) {
-      schools.innerHTML = D.schools.slice(0, 6).map(function (s) {
-        return '<a class="subject-tile" href="school.html?id=' + s.id + '">' +
-          '<span>' + esc(pick(s.name)) + '</span>' +
-          '<span class="n">' + esc(pick(s.city)) + '</span></a>';
-      }).join('');
+      schools.innerHTML = D.schools.map(function (s) {
+        return { s: s, n: D.courses.filter((c) => c.school === s.id).length };
+      }).filter((x) => x.n > 0).sort((a, b) => b.n - a.n || pick(a.s.name).localeCompare(pick(b.s.name)))
+        .map(function (x) {
+          return '<a class="school-row" href="school.html?id=' + x.s.id + '">' +
+            '<span class="school-row__name">' + esc(pick(x.s.name)) + '</span>' +
+            '<span class="school-row__meta">' + esc(pick(x.s.city)) + ' · ' + esc(I.num(x.n)) + '</span></a>';
+        }).join('');
     }
 
     document.querySelectorAll('[data-stat]').forEach(function (el) {
       const key = el.getAttribute('data-stat');
+      const withCourses = D.schools.filter((s) => D.courses.some((c) => c.school === s.id));
+      const today = new Date().toISOString().slice(0, 10);
+      const next = D.courses.map((c) => c.start).filter((d) => d >= today).sort()[0];
       const values = {
         courses: D.courses.length,
-        schools: D.schools.length,
+        schools: withCourses.length,
         subjects: D.subjects.length,
-        countries: new Set(D.schools.map((s) => pick(s.country))).size
+        countries: new Set(withCourses.map((s) => pick(s.country))).size
       };
-      if (values[key] != null) el.textContent = I.num(values[key]) + '+';
+      if (key === 'next') { el.textContent = next ? I.shortDate(next) : '—'; return; }
+      if (values[key] != null) el.textContent = I.num(values[key]);
     });
 
     /* Hero search dropdowns are filled from the data so they cannot drift. */
+    const fmtSel = document.querySelector('[data-hero-format]');
+    if (fmtSel) {
+      fmtSel.innerHTML = '<option value="">' + esc(t('search.format')) + '</option>' +
+        D.formats.map((f) => '<option value="' + f.id + '">' + esc(pick(f)) + '</option>').join('');
+    }
     const subjSel = document.querySelector('[data-hero-subject]');
     if (subjSel) {
       subjSel.innerHTML = '<option value="">' + esc(t('search.subject')) + '</option>' +
@@ -669,7 +700,7 @@
           '<div class="price">' + esc(I.money(c.price, c.currency)) + '</div>' +
           '<div class="price-note">' + esc(t('card.from')) + ' · ' + esc(I.dayCount(c.days)) + '</div>' +
           '<ul class="fact-list">' +
-            fact(t('course.start'), I.shortDate(c.start)) +
+            fact(t('course.start'), I.shortDate(c.start), I.hijriDate(c.start)) +
             fact(t('course.format'), formatLabel(c.format)) +
             fact(t('course.location'), placeOf(c)) +
             fact(t('course.language'), c.langs.map(langLabel).join(' · ')) +
@@ -701,8 +732,9 @@
     Shortlist.sync();
   }
 
-  function fact(k, v) {
-    return '<li><span class="k">' + esc(k) + '</span><span class="v">' + esc(v) + '</span></li>';
+  function fact(k, v, sub) {
+    return '<li><span class="k">' + esc(k) + '</span><span class="v">' + esc(v) +
+      (sub ? '<small>' + esc(sub) + '</small>' : '') + '</span></li>';
   }
 
   /* --- Schools ------------------------------------------------------------ */
@@ -826,20 +858,31 @@
     }
 
     form.addEventListener('submit', function (e) {
-      e.preventDefault();
       /* The form carries novalidate so the timing is ours, but the required
-         fields still have to be honoured — reporting success on an empty
-         form and then disabling every control is a dead end for the reader. */
+         fields still have to be honoured. */
       if (!form.checkValidity()) {
+        e.preventDefault();
         form.reportValidity();
         return;
       }
+      /* A configured endpoint takes the native POST. Otherwise, with an
+         address configured, hand the reader a drafted email; with neither,
+         say so plainly rather than pretending the enquiry went somewhere. */
+      if (form.hasAttribute('data-endpoint')) return;
+      e.preventDefault();
       const note = form.querySelector('[data-form-status]');
-      if (note) {
-        note.hidden = false;
-        note.focus();
+      const mailto = form.getAttribute('data-mailto');
+      if (mailto) {
+        const f = new FormData(form);
+        const course = courseSel && courseSel.selectedOptions[0] ? courseSel.selectedOptions[0].textContent : '';
+        const body = ['Name: ' + f.get('name'), 'Organisation: ' + (f.get('organisation') || '-'),
+          'Mobile: ' + (f.get('phone') || '-'), 'Email: ' + f.get('email'),
+          'Programme: ' + (course || '-'), 'Enrolling: ' + f.get('group'),
+          'Reply in: ' + f.get('reply_language'), '', f.get('message')].join('\n');
+        location.href = 'mailto:' + mailto + '?subject=' + encodeURIComponent('Masar enquiry') +
+          '&body=' + encodeURIComponent(body);
       }
-      form.querySelectorAll('input, textarea, select, button').forEach((el) => { el.disabled = true; });
+      if (note) { note.hidden = false; note.focus(); }
     });
   }
 

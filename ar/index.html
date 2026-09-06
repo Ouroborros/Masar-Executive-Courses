@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>مسار — دليل البرامج التنفيذية حول العالم</title>
+  <title>مسار — البرامج التنفيذية من كليات الأعمال حول العالم</title>
   <meta name="description" content="ابحث في برامج التعليم التنفيذي من كليات إدارة الأعمال حول العالم حسب التخصّص والمنطقة ونمط الدراسة واللغة والرسوم. مجاني وثنائي اللغة وبلا إدراج مدفوع.">
   <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
   <link rel="alternate" hreflang="en" href="../index.html">
@@ -21,7 +21,7 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Markazi+Text:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="../assets/css/site.css">
 </head>
 <body>
@@ -30,8 +30,8 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">
-        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="none" stroke="currentColor" stroke-width="1.6" opacity=".28"/><path d="M7 22.5 16 6l9 16.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M11.5 22.5 16 14l4.5 8.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" opacity=".5"/></svg>
-        <span class="brand-name">مسار<small>دليل البرامج التنفيذية</small></span>
+        <svg class="brand-mark" viewBox="0 0 40 32" aria-hidden="true"><path class="brand-mark__path" d="M2 26 C 10 26, 12 8, 20 8 S 30 24, 38 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="38" cy="6" r="3" fill="currentColor"/></svg>
+        <span class="brand-name">مسار<small>البرامج التنفيذية</small></span>
       </a>
 
       <nav id="main-nav" class="main-nav" aria-label="التنقّل الرئيسي">
@@ -64,12 +64,13 @@
   <main id="main">
 
     <section class="hero">
+        <svg class="hero-path" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true"><path d="M0 190 C 220 190, 300 60, 480 60 S 760 200, 940 120 S 1120 20, 1200 30" fill="none" stroke="currentColor" stroke-width="2"/></svg>
       <div class="container hero-inner">
-        <p class="eyebrow">التعليم التنفيذي حول العالم</p>
-        <h1>اعثر على البرنامج الذي يستحق أسبوعًا من وقتك.</h1>
-        <p class="lede">يفهرس «مسار» البرامج التنفيذية من كليات إدارة الأعمال حول العالم —
-          صفِّ النتائج حسب التخصّص والمنطقة ونمط الدراسة ولغة التدريس والرسوم، ثم تواصل مع الكلية مباشرة.
-          بلا حساب، وبلا بيع لبياناتك، وبلا تصنيفات مصطنعة.</p>
+        <p class="eyebrow">برامج تنفيذية مفتوحة التسجيل</p>
+        <h1>برامج قصيرة تستحق أن تغادر مكتبك من أجلها.</h1>
+        <p class="lede"><span data-stat="courses">189</span> برنامجًا من <span data-stat="schools">17</span> كلية أعمال —
+          إم آي تي سلون، وآي إم دي، وكيلوغ، وكلية كينيدي في هارفارد، وهاس في بيركلي — مع التواريخ وأيام التدريس
+          والرسوم على كل بطاقة، بعملة الكلية أو بالريال السعودي.</p>
 
         <form class="hero-search" action="courses.html" method="get" role="search">
           <div class="field">
@@ -81,18 +82,54 @@
             <select id="subject" name="subject" data-hero-subject></select>
           </div>
           <div class="field">
-            <label for="region">المنطقة</label>
-            <select id="region" name="region" data-hero-region></select>
+            <label for="format">نمط الدراسة</label>
+            <select id="format" name="format" data-hero-format></select>
           </div>
-          <button class="btn btn--primary" type="submit">ابحث عن البرامج</button>
+          <button class="btn btn--primary" type="submit">ابحث عن برنامج</button>
         </form>
 
-        <div class="hero-stats">
-          <div class="hero-stat"><div class="n" data-stat="courses">—</div><div class="l">برنامجًا مفهرسًا</div></div>
-          <div class="hero-stat"><div class="n" data-stat="schools">—</div><div class="l">كلية أعمال</div></div>
-          <div class="hero-stat"><div class="n" data-stat="countries">—</div><div class="l">دولة</div></div>
-          <div class="hero-stat"><div class="n" data-stat="subjects">—</div><div class="l">مجالًا تخصّصيًا</div></div>
+        <div class="hero-chips" aria-label="تصفية سريعة">
+          <a class="chip-link" href="courses.html?sort=date">الأقرب بدءًا</a>
+          <a class="chip-link" href="courses.html?duration=short,mid">أسبوع أو أقل</a>
+          <a class="chip-link" href="courses.html?format=online">عن بُعد</a>
+          <a class="chip-link" href="courses.html?subject=leadership">القيادة</a>
+          <a class="chip-link" href="courses.html?subject=digital">الذكاء الاصطناعي والتحوّل الرقمي</a>
+          <a class="chip-link" href="courses.html?subject=finance">التمويل</a>
         </div>
+      </div>
+    </section>
+
+    <section class="proof">
+      <div class="container proof-grid">
+        <div class="proof-item"><div class="n" data-stat="courses">—</div><div class="l">برنامجًا مفهرسًا</div></div>
+        <div class="proof-item"><div class="n" data-stat="schools">—</div><div class="l">كلية أعمال</div></div>
+        <div class="proof-item"><div class="n" data-stat="countries">—</div><div class="l">دولة تُقدَّم فيها البرامج</div></div>
+        <div class="proof-item"><div class="n" data-stat="next">—</div><div class="l">أقرب موعد بدء</div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">أقرب الدفعات</span>
+            <h2 class="h2">الأقرب بدءًا</h2>
+            <p>مرتّبة حسب تاريخ البدء. تحمل كل بطاقة الرسوم وعدد أيام التدريس ولغة التدريس.</p>
+          </div>
+          <a class="link-arrow" href="courses.html?sort=date">التقويم الكامل <span class="arw" aria-hidden="true">→</span></a>
+        </div>
+        <div class="card-grid" data-home-upcoming></div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container split split--wide">
+        <div>
+          <span class="eyebrow">حسب التخصّص</span>
+          <h2 class="h2">ابدأ ممّا تحتاج إليه لتقود.</h2>
+          <p class="lede" style="margin-block-start:14px">اثنا عشر مجالًا، من حوكمة مجالس الإدارة إلى الذكاء الاصطناعي. الأعداد محدّثة باستمرار.</p>
+        </div>
+        <div class="subject-list" data-home-subjects></div>
       </div>
     </section>
 
@@ -101,8 +138,8 @@
         <div class="section-head">
           <div>
             <span class="eyebrow">مختارات</span>
-            <h2 class="h2">برامج تستحق نظرة ثانية</h2>
-            <p>اختارها فريق التحرير لعمق محتواها وجودة تدريسها — لا مقابل رسوم إدراج.</p>
+            <h2 class="h2">ثمانية برامج تبدأ منها</h2>
+            <p>برنامج واحد من كلٍّ من ثماني كليات رائدة في الدليل، اختاره فريق التحرير — ولا مقابل رسوم إدراج.</p>
           </div>
           <a class="link-arrow" href="courses.html">كل البرامج <span class="arw" aria-hidden="true">→</span></a>
         </div>
@@ -110,15 +147,34 @@
       </div>
     </section>
 
-    <section class="section section--alt">
+    <section class="section section--sea">
       <div class="container">
         <div class="section-head">
           <div>
-            <span class="eyebrow">حسب التخصّص</span>
-            <h2 class="h2">ابدأ ممّا تحتاج إلى تعلّمه</h2>
+            <span class="eyebrow">لمن يشتري في المملكة</span>
+            <h2 class="h2">مبني على الطريقة التي يُشترى بها التعليم التنفيذي فعلًا.</h2>
           </div>
         </div>
-        <div class="subject-grid" data-home-subjects></div>
+        <div class="feature-grid">
+          <div class="feature">
+            <h3>بالريال، أو بعملة الكلية</h3>
+            <p>تُعرض كل الرسوم كما تنشرها الكلية تمامًا، وتتحوّل إلى الريال بنقرة واحدة. لا أسعار مخفية، ولا حساب يلزم فتحه.</p>
+          </div>
+          <div class="feature">
+            <h3>التاريخان الهجري والميلادي</h3>
+            <p>مواعيد البدء على كل برنامج بالتقويمين، ليسهل التحقّق من موقع الدفعة من رمضان والأعياد والسنة المالية بنظرة واحدة.</p>
+          </div>
+          <div class="feature">
+            <h3>مستشار، لا نموذج لجمع البيانات</h3>
+            <p>اسأل بالعربية أو الإنجليزية وستصلك الإجابة خلال يومَي عمل، من الأحد إلى الخميس. تذهب بياناتك إلى الكلية التي تختارها، ولا إلى أي جهة أخرى.</p>
+            <a class="link-arrow link-arrow--light" href="contact.html">تحدّث مع مستشار <span class="arw" aria-hidden="true">→</span></a>
+          </div>
+          <div class="feature">
+            <h3>دفعات للمنشآت</h3>
+            <p>تسجّل فريقًا أو صفًّا قياديًا كاملًا؟ اطلب عرضًا لحجز جماعي أو لدفعة مغلقة تُقدَّم وفق تقويم منشأتك.</p>
+            <a class="link-arrow link-arrow--light" href="contact.html#corporate">اطلب عرضًا <span class="arw" aria-hidden="true">→</span></a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -126,13 +182,13 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <span class="eyebrow">تبدأ قريبًا</span>
-            <h2 class="h2">أقرب الدفعات</h2>
-            <p>مرتّبة حسب تاريخ البدء، لتعرف ما الذي ما زال بإمكانك اللحاق به.</p>
+            <span class="eyebrow">الكليات</span>
+            <h2 class="h2">بأسمائها، لا بعبارات التفخيم.</h2>
+            <p>كل مؤسسة في الدليل، مع المدينة التي تدرّس منها وعدد برامجها المدرجة.</p>
           </div>
-          <a class="link-arrow" href="courses.html?sort=date">استعرض المواعيد <span class="arw" aria-hidden="true">→</span></a>
+          <a class="link-arrow" href="schools.html">كل الكليات <span class="arw" aria-hidden="true">→</span></a>
         </div>
-        <div class="card-grid" data-home-upcoming></div>
+        <div class="school-strip-grid" data-home-schools></div>
       </div>
     </section>
 
@@ -141,8 +197,8 @@
         <div class="section-head">
           <div>
             <span class="eyebrow">مجموعات</span>
-            <h2 class="h2">اختيارات فريق التحرير</h2>
-            <p>مجمّعة حسب السؤال الذي يأتي به الزائر فعلًا، لا حسب الترتيب الأبجدي.</p>
+            <h2 class="h2">إجابات عن الأسئلة التي يأتي بها الزوّار</h2>
+            <p>اختيارات تحريرية لا تصنيفات. لم يُمنح أي برنامج درجة من مئة.</p>
           </div>
           <a class="link-arrow" href="lists.html">كل المجموعات <span class="arw" aria-hidden="true">→</span></a>
         </div>
@@ -153,55 +209,16 @@
     <section class="section">
       <div class="container split">
         <div>
-          <span class="eyebrow">كيف يعمل «مسار»</span>
-          <h2 class="h2">دليل لا يبيعك لأحد.</h2>
-          <p class="lede" style="margin-block-start:14px">معظم أدلّة البرامج التدريبية هي في حقيقتها
-            شركات لجمع بيانات العملاء المحتملين ترتدي ثوبًا تحريريًا. هذا الموقع بُني على العكس تمامًا.</p>
-          <blockquote class="quote" style="margin-block-start:26px">
-            وجود أي برنامج هنا سببه أنه يستحق مكانه في الدليل — لا أن أحدًا دفع مقابل هذا الموضع.
-            <footer>— سياسة التحرير في جملة واحدة</footer>
-          </blockquote>
+          <span class="eyebrow">كيف تصل البرامج إلى هنا</span>
+          <h2 class="h2">وقائع من الكليات. لا شيء مختلَق.</h2>
+          <p class="lede" style="margin-block-start:14px">يقرأ «مسار» صفحات البرامج التي تنشرها الكليات ويسجّل ما تقوله: العنوان والتواريخ وأيام التدريس ونمط الدراسة واللغة والرسوم. هذا كل ما تعرضه البطاقة، وكل ما تدّعيه.</p>
         </div>
         <ol class="step-list">
-          <li>
-            <div>
-              <h3>ابحث بلا حساب</h3>
-              <p>كل أدوات التصفية وكل البرامج وكل الرسوم ظاهرة دون تسجيل أي بيانات.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>قارن بما يهمّ فعلًا</h3>
-              <p>الرسوم وعدد الأيام ونمط الدراسة ولغة التدريس وتاريخ البدء — في كل بطاقة،
-                 وفي الموضع نفسه، لتصبح المقارنة مسألة ثوانٍ.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>احفظ قائمتك المختارة</h3>
-              <p>اجمع ما يعجبك في قائمة واحدة أثناء التصفّح. تبقى القائمة في متصفّحك وحده، ولا نطّلع عليها.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>تواصل مع الكلية مباشرة</h3>
-              <p>تذهب استفساراتك إلى الجهة التي تقدّم البرنامج، ولا يُعاد بيع بياناتك لأي طرف.</p>
-            </div>
-          </li>
+          <li><div><h3>من المصدر مباشرة</h3><p>تُؤخذ البرامج من التقويم المنشور لكل كلية وتُحدَّث دوريًا.</p></div></li>
+          <li><div><h3>لا تقييمات لم نستحقّها</h3><p>لا تحمل البرامج المستوردة نجومًا ولا شهادات ولا نصوصًا تسويقية. ما لم تذكره الكلية لا تذكره البطاقة.</p></div></li>
+          <li><div><h3>لا إدراج مدفوع</h3><p>الموضع في هذا الموقع غير معروض للبيع. والمجموعات تحريرية، وتقول ذلك صراحة.</p></div></li>
+          <li><div><h3>إلى الكلية مباشرة</h3><p>يذهب الاستفسار إلى المؤسسة التي تقدّم البرنامج، ولا يُعاد بيع بياناتك.</p></div></li>
         </ol>
-      </div>
-    </section>
-
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">المؤسسات</span>
-            <h2 class="h2">الكليات المدرجة في الدليل</h2>
-          </div>
-          <a class="link-arrow" href="schools.html">كل الكليات <span class="arw" aria-hidden="true">→</span></a>
-        </div>
-        <div class="subject-grid" data-home-schools></div>
       </div>
     </section>
   </main>
@@ -210,13 +227,15 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="none" stroke="currentColor" stroke-width="1.6" opacity=".28"/><path d="M7 22.5 16 6l9 16.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M11.5 22.5 16 14l4.5 8.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" opacity=".5"/></svg><span class="brand-name">مسار</span></a>
-          <p class="footer-blurb">دليل مستقل للتعليم التنفيذي — قابل للبحث بالعربية والإنجليزية، مجاني الاستخدام، وصريح بشأن ما لا يعرفه.</p>
+          <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 40 32" aria-hidden="true"><path class="brand-mark__path" d="M2 26 C 10 26, 12 8, 20 8 S 30 24, 38 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="38" cy="6" r="3" fill="currentColor"/></svg><span class="brand-name">مسار</span></a>
+          <p class="footer-blurb">دليل مستقل ثنائي اللغة للبرامج التنفيذية مفتوحة التسجيل من كليات الأعمال حول العالم، بُني في الرياض لقيادات المملكة ومن حولها.</p>
+
         </div>
         <div>
           <h3>تصفّح</h3>
           <ul>
             <li><a href="courses.html">البرامج</a></li>
+            <li><a href="courses.html?sort=date">مواعيد البدء</a></li>
             <li><a href="schools.html">الكليات</a></li>
             <li><a href="lists.html">المجموعات</a></li>
           </ul>
@@ -235,13 +254,14 @@
           <ul>
             <li><a href="about.html">عن مسار</a></li>
             <li><a href="contact.html">تواصل معنا</a></li>
+            <li><a href="contact.html#corporate">للمنشآت</a></li>
             <li><a href="../index.html" data-lang-switch>English</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
         <span>© <span data-year>2026</span> مسار</span>
-        <span>مشروع شخصي · الكليات والبرامج المعروضة بيانات تجريبية غير حقيقية</span>
+        <span class="footer-source">تُؤخذ البرامج من الصفحات المنشورة للكليات وتُحدَّث دوريًا. تُعرض الرسوم كما نُشرت، ومبالغ الريال تحويلات استرشادية.</span>
       </div>
     </div>
   </footer>

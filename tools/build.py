@@ -33,24 +33,35 @@ FONTS = {
         '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
         '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
         '  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
-        'family=Manrope:wght@400;500;600;700;800&'
-        'family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&display=swap">'
+        'family=IBM+Plex+Sans:wght@400;500;600&'
+        'family=IBM+Plex+Serif:wght@500;600&display=swap">'
     ),
     "ar": (
         '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
         '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
         '  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
-        'family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">'
+        'family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&'
+        'family=Markazi+Text:wght@500;600;700&display=swap">'
     ),
 }
 
+# Operator-set contact and legal details. Anything left empty is simply not
+# rendered — the site never shows a placeholder number or a made-up CR.
+SITE = {
+    "whatsapp": "",          # international format without +, e.g. "9665XXXXXXXX"
+    "phone": "",             # display form, e.g. "+966 11 000 0000"
+    "email": "",
+    "address": {"en": "", "ar": ""},
+    "cr": "",                # commercial registration number
+    "vat": "",               # VAT registration number
+    "form_endpoint": "",     # e.g. a Formspree/Basin URL; empty falls back to mailto: when email is set
+}
+
 BRAND_MARK = (
-    '<svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">'
-    '<circle cx="16" cy="16" r="15" fill="none" stroke="currentColor" stroke-width="1.6" opacity=".28"/>'
-    '<path d="M7 22.5 16 6l9 16.5" fill="none" stroke="currentColor" stroke-width="2.4" '
-    'stroke-linejoin="round" stroke-linecap="round"/>'
-    '<path d="M11.5 22.5 16 14l4.5 8.5" fill="none" stroke="currentColor" stroke-width="1.6" '
-    'stroke-linejoin="round" stroke-linecap="round" opacity=".5"/>'
+    '<svg class="brand-mark" viewBox="0 0 40 32" aria-hidden="true">'
+    '<path class="brand-mark__path" d="M2 26 C 10 26, 12 8, 20 8 S 30 24, 38 6" fill="none" '
+    'stroke="currentColor" stroke-width="3" stroke-linecap="round"/>'
+    '<circle cx="38" cy="6" r="3" fill="currentColor"/>'
     '</svg>'
 )
 
@@ -67,7 +78,7 @@ BOOKMARK = (
 )
 
 T = {
-    "tagline": {"en": "Executive Courses", "ar": "دليل البرامج التنفيذية"},
+    "tagline": {"en": "Executive programmes", "ar": "البرامج التنفيذية"},
     "skip": {"en": "Skip to content", "ar": "تخطَّ إلى المحتوى"},
     "menu": {"en": "Menu", "ar": "القائمة"},
     "theme": {"en": "Switch theme", "ar": "تبديل مظهر الموقع"},
@@ -82,15 +93,23 @@ T = {
     "f_subjects": {"en": "Popular subjects", "ar": "تخصّصات مطلوبة"},
     "f_site": {"en": "Masar", "ar": "مسار"},
     "f_blurb": {
-        "en": "An independent index of executive education — searchable in English and Arabic, "
-              "free to use, and honest about what it does not know.",
-        "ar": "دليل مستقل للتعليم التنفيذي — قابل للبحث بالعربية والإنجليزية، "
-              "مجاني الاستخدام، وصريح بشأن ما لا يعرفه.",
+        "en": "An independent, bilingual index of open-enrolment executive programmes from "
+              "the world's business schools, built in Riyadh for leaders in the Kingdom and beyond.",
+        "ar": "دليل مستقل ثنائي اللغة للبرامج التنفيذية مفتوحة التسجيل من كليات الأعمال حول العالم، "
+              "بُني في الرياض لقيادات المملكة ومن حولها.",
     },
-    "f_demo": {
-        "en": "Portfolio project · the schools and listings below are fictional sample data",
-        "ar": "مشروع شخصي · الكليات والبرامج المعروضة بيانات تجريبية غير حقيقية",
+    "f_source": {
+        "en": "Listings are taken from the schools' published programme pages and refreshed regularly. "
+              "Fees are shown as published; riyal amounts are indicative conversions.",
+        "ar": "تُؤخذ البرامج من الصفحات المنشورة للكليات وتُحدَّث دوريًا. "
+              "تُعرض الرسوم كما نُشرت، ومبالغ الريال تحويلات استرشادية.",
     },
+    "f_advisor": {"en": "Talk to an advisor", "ar": "تحدّث مع مستشار"},
+    "f_whatsapp": {"en": "WhatsApp", "ar": "واتساب"},
+    "f_call": {"en": "Request a call", "ar": "اطلب اتصالًا"},
+    "f_cr": {"en": "CR", "ar": "س.ت"},
+    "f_vat": {"en": "VAT", "ar": "الرقم الضريبي"},
+    "f_hours": {"en": "Sunday to Thursday, Riyadh time", "ar": "من الأحد إلى الخميس بتوقيت الرياض"},
 }
 
 FOOTER_SUBJECTS = [
@@ -116,6 +135,46 @@ def shell(lang, page, title, description, body, extra_head=""):
         )
         for href, en, ar in NAV
     )
+
+    wa = SITE["whatsapp"]
+    contact_rows = []
+    if wa:
+        contact_rows.append(
+            '            <li><a class="contact-row" href="https://wa.me/{n}" rel="noopener">'
+            '<span class="contact-row__k">{k}</span><span class="contact-row__v" dir="ltr">+{n}</span></a></li>'
+            .format(n=wa, k=T["f_whatsapp"][lang]))
+    if SITE["phone"]:
+        contact_rows.append(
+            '            <li><a class="contact-row" href="tel:{raw}">'
+            '<span class="contact-row__k">{k}</span><span class="contact-row__v" dir="ltr">{p}</span></a></li>'
+            .format(raw=SITE["phone"].replace(" ", ""), p=SITE["phone"], k="Phone" if lang == "en" else "هاتف"))
+    if SITE["email"]:
+        contact_rows.append(
+            '            <li><a class="contact-row" href="mailto:{e}">'
+            '<span class="contact-row__k">{k}</span><span class="contact-row__v" dir="ltr">{e}</span></a></li>'
+            .format(e=SITE["email"], k="Email" if lang == "en" else "البريد"))
+    advisor = ""
+    if contact_rows:
+        advisor = ('          <h3 class="footer-advisor__h">{h}</h3>\n          <ul class="footer-advisor">\n{rows}\n          </ul>\n'
+                   '          <p class="footer-hours">{hours}</p>').format(
+            h=T["f_advisor"][lang], rows="\n".join(contact_rows), hours=T["f_hours"][lang])
+
+    legal_bits = []
+    if SITE["address"][lang]:
+        legal_bits.append(SITE["address"][lang])
+    if SITE["cr"]:
+        legal_bits.append("{} {}".format(T["f_cr"][lang], SITE["cr"]))
+    if SITE["vat"]:
+        legal_bits.append("{} {}".format(T["f_vat"][lang], SITE["vat"]))
+    legal = (" · " + " · ".join(legal_bits)) if legal_bits else ""
+
+    float_cta = ""
+    if wa:
+        float_cta = (
+            '  <a class="wa-float" href="https://wa.me/{n}" rel="noopener" aria-label="{l}">'
+            '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4.1c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>'
+            '<span>{t}</span></a>\n'
+        ).format(n=wa, l=T["f_advisor"][lang], t=T["f_whatsapp"][lang])
 
     footer_subjects = "\n".join(
         '            <li><a href="courses.html?subject={sid}">{label}</a></li>'.format(
@@ -191,11 +250,13 @@ def shell(lang, page, title, description, body, extra_head=""):
         <div>
           <a class="brand" href="index.html">{mark}<span class="brand-name">{brandname}</span></a>
           <p class="footer-blurb">{f_blurb}</p>
+{advisor}
         </div>
         <div>
           <h3>{f_browse}</h3>
           <ul>
             <li><a href="courses.html">{n_courses}</a></li>
+            <li><a href="courses.html?sort=date">{n_calendar}</a></li>
             <li><a href="schools.html">{n_schools}</a></li>
             <li><a href="lists.html">{n_lists}</a></li>
           </ul>
@@ -211,17 +272,18 @@ def shell(lang, page, title, description, body, extra_head=""):
           <ul>
             <li><a href="about.html">{n_about}</a></li>
             <li><a href="contact.html">{n_contact}</a></li>
+            <li><a href="contact.html#corporate">{n_corporate}</a></li>
             <li><a href="{other}" data-lang-switch>{lang_other}</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span data-year>2026</span> {brandname}</span>
-        <span>{f_demo}</span>
+        <span>© <span data-year>2026</span> {brandname}{legal}</span>
+        <span class="footer-source">{f_source}</span>
       </div>
     </div>
   </footer>
-
+{float_cta}
   <div class="drawer-backdrop" data-drawer-backdrop></div>
   <aside class="drawer" data-drawer role="dialog" aria-modal="true"
          aria-label="{shortlist_title}" aria-hidden="true" inert>
@@ -277,8 +339,13 @@ def shell(lang, page, title, description, body, extra_head=""):
         f_browse=T["f_browse"][lang],
         f_subjects=T["f_subjects"][lang],
         f_site=T["f_site"][lang],
-        f_demo=T["f_demo"][lang],
+        f_source=T["f_source"][lang],
+        advisor=advisor,
+        legal=legal,
+        float_cta=float_cta,
         footer_subjects=footer_subjects,
+        n_calendar="مواعيد البدء" if is_ar else "Start dates",
+        n_corporate="للمنشآت" if is_ar else "For organisations",
         n_courses="البرامج" if is_ar else "Courses",
         n_schools="الكليات" if is_ar else "Schools",
         n_lists="المجموعات" if is_ar else "Collections",
@@ -295,35 +362,47 @@ HOME = {}
 
 HOME["en"] = """
     <section class="hero">
+        <svg class="hero-path" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true"><path d="M0 190 C 220 190, 300 60, 480 60 S 760 200, 940 120 S 1120 20, 1200 30" fill="none" stroke="currentColor" stroke-width="2"/></svg>
       <div class="container hero-inner">
-        <p class="eyebrow">Executive education, worldwide</p>
-        <h1>Find the course that is actually worth the week away.</h1>
-        <p class="lede">Masar indexes executive programmes from business schools around the world —
-          filter by subject, region, format, language and fee, then talk to the school directly.
-          No account, no lead-selling, no fake rankings.</p>
+        <p class="eyebrow">Open-enrolment executive programmes</p>
+        <h1>Short programmes worth leaving the office for.</h1>
+        <p class="lede"><span data-stat="courses">189</span> programmes from <span data-stat="schools">17</span>
+          business schools — MIT Sloan, IMD, Kellogg, Harvard Kennedy School, Berkeley Haas — with dates,
+          teaching days and fees on every card. In the school's currency, or in riyals.</p>
 
         <form class="hero-search" action="courses.html" method="get" role="search">
           <div class="field">
             <label for="q">Search</label>
-            <input id="q" name="q" type="search" placeholder="Course, subject or school" autocomplete="off">
+            <input id="q" name="q" type="search" placeholder="Programme, subject or school" autocomplete="off">
           </div>
           <div class="field">
             <label for="subject">Subject</label>
             <select id="subject" name="subject" data-hero-subject></select>
           </div>
           <div class="field">
-            <label for="region">Region</label>
-            <select id="region" name="region" data-hero-region></select>
+            <label for="format">Format</label>
+            <select id="format" name="format" data-hero-format></select>
           </div>
-          <button class="btn btn--primary" type="submit">Search courses</button>
+          <button class="btn btn--primary" type="submit">Find programmes</button>
         </form>
 
-        <div class="hero-stats">
-          <div class="hero-stat"><div class="n" data-stat="courses">—</div><div class="l">Courses indexed</div></div>
-          <div class="hero-stat"><div class="n" data-stat="schools">—</div><div class="l">Business schools</div></div>
-          <div class="hero-stat"><div class="n" data-stat="countries">—</div><div class="l">Countries</div></div>
-          <div class="hero-stat"><div class="n" data-stat="subjects">—</div><div class="l">Subject areas</div></div>
+        <div class="hero-chips" aria-label="Quick filters">
+          <a class="chip-link" href="courses.html?sort=date">Starting soonest</a>
+          <a class="chip-link" href="courses.html?duration=short,mid">Up to a week</a>
+          <a class="chip-link" href="courses.html?format=online">Online</a>
+          <a class="chip-link" href="courses.html?subject=leadership">Leadership</a>
+          <a class="chip-link" href="courses.html?subject=digital">AI &amp; digital</a>
+          <a class="chip-link" href="courses.html?subject=finance">Finance</a>
         </div>
+      </div>
+    </section>
+
+    <section class="proof">
+      <div class="container proof-grid">
+        <div class="proof-item"><div class="n" data-stat="courses">—</div><div class="l">Programmes indexed</div></div>
+        <div class="proof-item"><div class="n" data-stat="schools">—</div><div class="l">Business schools</div></div>
+        <div class="proof-item"><div class="n" data-stat="countries">—</div><div class="l">Countries of delivery</div></div>
+        <div class="proof-item"><div class="n" data-stat="next">—</div><div class="l">Next start date</div></div>
       </div>
     </section>
 
@@ -331,25 +410,69 @@ HOME["en"] = """
       <div class="container">
         <div class="section-head">
           <div>
-            <span class="eyebrow">Featured</span>
-            <h2 class="h2">Programmes worth a second look</h2>
-            <p>Chosen by our editors for depth and teaching quality — never for a placement fee.</p>
+            <span class="eyebrow">Next intakes</span>
+            <h2 class="h2">Starting soonest</h2>
+            <p>Sorted by start date. Each card carries the fee, the teaching days and the language of instruction.</p>
           </div>
-          <a class="link-arrow" href="courses.html">All courses <span class="arw" aria-hidden="true">→</span></a>
+          <a class="link-arrow" href="courses.html?sort=date">Full calendar <span class="arw" aria-hidden="true">→</span></a>
+        </div>
+        <div class="card-grid" data-home-upcoming></div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container split split--wide">
+        <div>
+          <span class="eyebrow">By subject</span>
+          <h2 class="h2">Start from what you need to lead.</h2>
+          <p class="lede" style="margin-block-start:14px">Twelve subject areas, from board governance to AI. Counts are live.</p>
+        </div>
+        <div class="subject-list" data-home-subjects></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Selected</span>
+            <h2 class="h2">Eight programmes to start with</h2>
+            <p>One programme from each of eight leading schools in the index, chosen by the editors — never for a placement fee.</p>
+          </div>
+          <a class="link-arrow" href="courses.html">All programmes <span class="arw" aria-hidden="true">→</span></a>
         </div>
         <div class="card-grid" data-home-featured></div>
       </div>
     </section>
 
-    <section class="section section--alt">
+    <section class="section section--sea">
       <div class="container">
         <div class="section-head">
           <div>
-            <span class="eyebrow">By subject</span>
-            <h2 class="h2">Start from what you need to learn</h2>
+            <span class="eyebrow">For buyers in the Kingdom</span>
+            <h2 class="h2">Built for how executive education is actually bought here.</h2>
           </div>
         </div>
-        <div class="subject-grid" data-home-subjects></div>
+        <div class="feature-grid">
+          <div class="feature">
+            <h3>Riyals, or the school's own currency</h3>
+            <p>Every fee is shown exactly as the school publishes it, and switches to riyals in one click. No hidden pricing, no account to open.</p>
+          </div>
+          <div class="feature">
+            <h3>Hijri and Gregorian dates</h3>
+            <p>Start dates on every programme in both calendars, so a cohort can be checked against Ramadan, Eid and the fiscal year at a glance.</p>
+          </div>
+          <div class="feature">
+            <h3>An advisor, not a lead form</h3>
+            <p>Ask in Arabic or English and get a reply within two working days, Sunday to Thursday. Your details go to the school you choose, and nowhere else.</p>
+            <a class="link-arrow link-arrow--light" href="contact.html">Talk to an advisor <span class="arw" aria-hidden="true">→</span></a>
+          </div>
+          <div class="feature">
+            <h3>Cohorts for organisations</h3>
+            <p>Enrolling a team or a leadership bench? Request a proposal for a group booking or a closed cohort delivered to your calendar.</p>
+            <a class="link-arrow link-arrow--light" href="contact.html#corporate">Request a proposal <span class="arw" aria-hidden="true">→</span></a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -357,13 +480,13 @@ HOME["en"] = """
       <div class="container">
         <div class="section-head">
           <div>
-            <span class="eyebrow">Starting soon</span>
-            <h2 class="h2">The next intakes</h2>
-            <p>Sorted by start date, so you can see what you can still get on.</p>
+            <span class="eyebrow">The schools</span>
+            <h2 class="h2">Named, not "world-class".</h2>
+            <p>Every institution in the index, with the city it teaches from and the number of programmes listed.</p>
           </div>
-          <a class="link-arrow" href="courses.html?sort=date">See the calendar <span class="arw" aria-hidden="true">→</span></a>
+          <a class="link-arrow" href="schools.html">All schools <span class="arw" aria-hidden="true">→</span></a>
         </div>
-        <div class="card-grid" data-home-upcoming></div>
+        <div class="school-strip-grid" data-home-schools></div>
       </div>
     </section>
 
@@ -372,8 +495,8 @@ HOME["en"] = """
         <div class="section-head">
           <div>
             <span class="eyebrow">Collections</span>
-            <h2 class="h2">Editors' shortlists</h2>
-            <p>Grouped by the question people actually arrive with, not by alphabet.</p>
+            <h2 class="h2">Answers to the questions people arrive with</h2>
+            <p>Editorial selections, not rankings. Nobody scored anything out of a hundred.</p>
           </div>
           <a class="link-arrow" href="lists.html">All collections <span class="arw" aria-hidden="true">→</span></a>
         </div>
@@ -384,68 +507,29 @@ HOME["en"] = """
     <section class="section">
       <div class="container split">
         <div>
-          <span class="eyebrow">How Masar works</span>
-          <h2 class="h2">A directory that does not sell you.</h2>
-          <p class="lede" style="margin-block-start:14px">Most course directories are lead-generation
-            businesses wearing an editorial coat. This one is built the other way round.</p>
-          <blockquote class="quote" style="margin-block-start:26px">
-            If a listing is here, it is because it belongs in the index — not because someone paid
-            for the position.
-            <footer>— The editorial policy, in one sentence</footer>
-          </blockquote>
+          <span class="eyebrow">How programmes get here</span>
+          <h2 class="h2">Facts from the schools. Nothing invented.</h2>
+          <p class="lede" style="margin-block-start:14px">Masar reads the programme pages the schools publish and records what they say — title, dates, teaching days, format, language and fee. That is all a card shows, and all it claims.</p>
         </div>
         <ol class="step-list">
-          <li>
-            <div>
-              <h3>Search without an account</h3>
-              <p>Every filter, every listing and every fee is visible without signing up for anything.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>Compare on what matters</h3>
-              <p>Fee, teaching days, format, language of instruction and start date — on every card,
-                 in the same place, so comparison takes seconds.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>Save a shortlist</h3>
-              <p>Keep candidates in one list as you browse. It stays in your own browser; we never see it.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>Go straight to the school</h3>
-              <p>Enquiries go to the institution running the programme. Your details are not resold.</p>
-            </div>
-          </li>
+          <li><div><h3>Taken from the source</h3><p>Listings come from each school's own published calendar and are refreshed regularly.</p></div></li>
+          <li><div><h3>No ratings we did not earn</h3><p>Imported programmes carry no star ratings, testimonials or marketing copy. If a school did not state it, the card does not either.</p></div></li>
+          <li><div><h3>No paid placement</h3><p>Position on this site is not for sale. Collections are editorial, and say so.</p></div></li>
+          <li><div><h3>Straight to the school</h3><p>An enquiry goes to the institution running the programme. Your details are not resold.</p></div></li>
         </ol>
-      </div>
-    </section>
-
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Institutions</span>
-            <h2 class="h2">Schools in the index</h2>
-          </div>
-          <a class="link-arrow" href="schools.html">All schools <span class="arw" aria-hidden="true">→</span></a>
-        </div>
-        <div class="subject-grid" data-home-schools></div>
       </div>
     </section>
 """
 
 HOME["ar"] = """
     <section class="hero">
+        <svg class="hero-path" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true"><path d="M0 190 C 220 190, 300 60, 480 60 S 760 200, 940 120 S 1120 20, 1200 30" fill="none" stroke="currentColor" stroke-width="2"/></svg>
       <div class="container hero-inner">
-        <p class="eyebrow">التعليم التنفيذي حول العالم</p>
-        <h1>اعثر على البرنامج الذي يستحق أسبوعًا من وقتك.</h1>
-        <p class="lede">يفهرس «مسار» البرامج التنفيذية من كليات إدارة الأعمال حول العالم —
-          صفِّ النتائج حسب التخصّص والمنطقة ونمط الدراسة ولغة التدريس والرسوم، ثم تواصل مع الكلية مباشرة.
-          بلا حساب، وبلا بيع لبياناتك، وبلا تصنيفات مصطنعة.</p>
+        <p class="eyebrow">برامج تنفيذية مفتوحة التسجيل</p>
+        <h1>برامج قصيرة تستحق أن تغادر مكتبك من أجلها.</h1>
+        <p class="lede"><span data-stat="courses">189</span> برنامجًا من <span data-stat="schools">17</span> كلية أعمال —
+          إم آي تي سلون، وآي إم دي، وكيلوغ، وكلية كينيدي في هارفارد، وهاس في بيركلي — مع التواريخ وأيام التدريس
+          والرسوم على كل بطاقة، بعملة الكلية أو بالريال السعودي.</p>
 
         <form class="hero-search" action="courses.html" method="get" role="search">
           <div class="field">
@@ -457,18 +541,54 @@ HOME["ar"] = """
             <select id="subject" name="subject" data-hero-subject></select>
           </div>
           <div class="field">
-            <label for="region">المنطقة</label>
-            <select id="region" name="region" data-hero-region></select>
+            <label for="format">نمط الدراسة</label>
+            <select id="format" name="format" data-hero-format></select>
           </div>
-          <button class="btn btn--primary" type="submit">ابحث عن البرامج</button>
+          <button class="btn btn--primary" type="submit">ابحث عن برنامج</button>
         </form>
 
-        <div class="hero-stats">
-          <div class="hero-stat"><div class="n" data-stat="courses">—</div><div class="l">برنامجًا مفهرسًا</div></div>
-          <div class="hero-stat"><div class="n" data-stat="schools">—</div><div class="l">كلية أعمال</div></div>
-          <div class="hero-stat"><div class="n" data-stat="countries">—</div><div class="l">دولة</div></div>
-          <div class="hero-stat"><div class="n" data-stat="subjects">—</div><div class="l">مجالًا تخصّصيًا</div></div>
+        <div class="hero-chips" aria-label="تصفية سريعة">
+          <a class="chip-link" href="courses.html?sort=date">الأقرب بدءًا</a>
+          <a class="chip-link" href="courses.html?duration=short,mid">أسبوع أو أقل</a>
+          <a class="chip-link" href="courses.html?format=online">عن بُعد</a>
+          <a class="chip-link" href="courses.html?subject=leadership">القيادة</a>
+          <a class="chip-link" href="courses.html?subject=digital">الذكاء الاصطناعي والتحوّل الرقمي</a>
+          <a class="chip-link" href="courses.html?subject=finance">التمويل</a>
         </div>
+      </div>
+    </section>
+
+    <section class="proof">
+      <div class="container proof-grid">
+        <div class="proof-item"><div class="n" data-stat="courses">—</div><div class="l">برنامجًا مفهرسًا</div></div>
+        <div class="proof-item"><div class="n" data-stat="schools">—</div><div class="l">كلية أعمال</div></div>
+        <div class="proof-item"><div class="n" data-stat="countries">—</div><div class="l">دولة تُقدَّم فيها البرامج</div></div>
+        <div class="proof-item"><div class="n" data-stat="next">—</div><div class="l">أقرب موعد بدء</div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">أقرب الدفعات</span>
+            <h2 class="h2">الأقرب بدءًا</h2>
+            <p>مرتّبة حسب تاريخ البدء. تحمل كل بطاقة الرسوم وعدد أيام التدريس ولغة التدريس.</p>
+          </div>
+          <a class="link-arrow" href="courses.html?sort=date">التقويم الكامل <span class="arw" aria-hidden="true">→</span></a>
+        </div>
+        <div class="card-grid" data-home-upcoming></div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container split split--wide">
+        <div>
+          <span class="eyebrow">حسب التخصّص</span>
+          <h2 class="h2">ابدأ ممّا تحتاج إليه لتقود.</h2>
+          <p class="lede" style="margin-block-start:14px">اثنا عشر مجالًا، من حوكمة مجالس الإدارة إلى الذكاء الاصطناعي. الأعداد محدّثة باستمرار.</p>
+        </div>
+        <div class="subject-list" data-home-subjects></div>
       </div>
     </section>
 
@@ -477,8 +597,8 @@ HOME["ar"] = """
         <div class="section-head">
           <div>
             <span class="eyebrow">مختارات</span>
-            <h2 class="h2">برامج تستحق نظرة ثانية</h2>
-            <p>اختارها فريق التحرير لعمق محتواها وجودة تدريسها — لا مقابل رسوم إدراج.</p>
+            <h2 class="h2">ثمانية برامج تبدأ منها</h2>
+            <p>برنامج واحد من كلٍّ من ثماني كليات رائدة في الدليل، اختاره فريق التحرير — ولا مقابل رسوم إدراج.</p>
           </div>
           <a class="link-arrow" href="courses.html">كل البرامج <span class="arw" aria-hidden="true">→</span></a>
         </div>
@@ -486,15 +606,34 @@ HOME["ar"] = """
       </div>
     </section>
 
-    <section class="section section--alt">
+    <section class="section section--sea">
       <div class="container">
         <div class="section-head">
           <div>
-            <span class="eyebrow">حسب التخصّص</span>
-            <h2 class="h2">ابدأ ممّا تحتاج إلى تعلّمه</h2>
+            <span class="eyebrow">لمن يشتري في المملكة</span>
+            <h2 class="h2">مبني على الطريقة التي يُشترى بها التعليم التنفيذي فعلًا.</h2>
           </div>
         </div>
-        <div class="subject-grid" data-home-subjects></div>
+        <div class="feature-grid">
+          <div class="feature">
+            <h3>بالريال، أو بعملة الكلية</h3>
+            <p>تُعرض كل الرسوم كما تنشرها الكلية تمامًا، وتتحوّل إلى الريال بنقرة واحدة. لا أسعار مخفية، ولا حساب يلزم فتحه.</p>
+          </div>
+          <div class="feature">
+            <h3>التاريخان الهجري والميلادي</h3>
+            <p>مواعيد البدء على كل برنامج بالتقويمين، ليسهل التحقّق من موقع الدفعة من رمضان والأعياد والسنة المالية بنظرة واحدة.</p>
+          </div>
+          <div class="feature">
+            <h3>مستشار، لا نموذج لجمع البيانات</h3>
+            <p>اسأل بالعربية أو الإنجليزية وستصلك الإجابة خلال يومَي عمل، من الأحد إلى الخميس. تذهب بياناتك إلى الكلية التي تختارها، ولا إلى أي جهة أخرى.</p>
+            <a class="link-arrow link-arrow--light" href="contact.html">تحدّث مع مستشار <span class="arw" aria-hidden="true">→</span></a>
+          </div>
+          <div class="feature">
+            <h3>دفعات للمنشآت</h3>
+            <p>تسجّل فريقًا أو صفًّا قياديًا كاملًا؟ اطلب عرضًا لحجز جماعي أو لدفعة مغلقة تُقدَّم وفق تقويم منشأتك.</p>
+            <a class="link-arrow link-arrow--light" href="contact.html#corporate">اطلب عرضًا <span class="arw" aria-hidden="true">→</span></a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -502,13 +641,13 @@ HOME["ar"] = """
       <div class="container">
         <div class="section-head">
           <div>
-            <span class="eyebrow">تبدأ قريبًا</span>
-            <h2 class="h2">أقرب الدفعات</h2>
-            <p>مرتّبة حسب تاريخ البدء، لتعرف ما الذي ما زال بإمكانك اللحاق به.</p>
+            <span class="eyebrow">الكليات</span>
+            <h2 class="h2">بأسمائها، لا بعبارات التفخيم.</h2>
+            <p>كل مؤسسة في الدليل، مع المدينة التي تدرّس منها وعدد برامجها المدرجة.</p>
           </div>
-          <a class="link-arrow" href="courses.html?sort=date">استعرض المواعيد <span class="arw" aria-hidden="true">→</span></a>
+          <a class="link-arrow" href="schools.html">كل الكليات <span class="arw" aria-hidden="true">→</span></a>
         </div>
-        <div class="card-grid" data-home-upcoming></div>
+        <div class="school-strip-grid" data-home-schools></div>
       </div>
     </section>
 
@@ -517,8 +656,8 @@ HOME["ar"] = """
         <div class="section-head">
           <div>
             <span class="eyebrow">مجموعات</span>
-            <h2 class="h2">اختيارات فريق التحرير</h2>
-            <p>مجمّعة حسب السؤال الذي يأتي به الزائر فعلًا، لا حسب الترتيب الأبجدي.</p>
+            <h2 class="h2">إجابات عن الأسئلة التي يأتي بها الزوّار</h2>
+            <p>اختيارات تحريرية لا تصنيفات. لم يُمنح أي برنامج درجة من مئة.</p>
           </div>
           <a class="link-arrow" href="lists.html">كل المجموعات <span class="arw" aria-hidden="true">→</span></a>
         </div>
@@ -529,55 +668,16 @@ HOME["ar"] = """
     <section class="section">
       <div class="container split">
         <div>
-          <span class="eyebrow">كيف يعمل «مسار»</span>
-          <h2 class="h2">دليل لا يبيعك لأحد.</h2>
-          <p class="lede" style="margin-block-start:14px">معظم أدلّة البرامج التدريبية هي في حقيقتها
-            شركات لجمع بيانات العملاء المحتملين ترتدي ثوبًا تحريريًا. هذا الموقع بُني على العكس تمامًا.</p>
-          <blockquote class="quote" style="margin-block-start:26px">
-            وجود أي برنامج هنا سببه أنه يستحق مكانه في الدليل — لا أن أحدًا دفع مقابل هذا الموضع.
-            <footer>— سياسة التحرير في جملة واحدة</footer>
-          </blockquote>
+          <span class="eyebrow">كيف تصل البرامج إلى هنا</span>
+          <h2 class="h2">وقائع من الكليات. لا شيء مختلَق.</h2>
+          <p class="lede" style="margin-block-start:14px">يقرأ «مسار» صفحات البرامج التي تنشرها الكليات ويسجّل ما تقوله: العنوان والتواريخ وأيام التدريس ونمط الدراسة واللغة والرسوم. هذا كل ما تعرضه البطاقة، وكل ما تدّعيه.</p>
         </div>
         <ol class="step-list">
-          <li>
-            <div>
-              <h3>ابحث بلا حساب</h3>
-              <p>كل أدوات التصفية وكل البرامج وكل الرسوم ظاهرة دون تسجيل أي بيانات.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>قارن بما يهمّ فعلًا</h3>
-              <p>الرسوم وعدد الأيام ونمط الدراسة ولغة التدريس وتاريخ البدء — في كل بطاقة،
-                 وفي الموضع نفسه، لتصبح المقارنة مسألة ثوانٍ.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>احفظ قائمتك المختارة</h3>
-              <p>اجمع ما يعجبك في قائمة واحدة أثناء التصفّح. تبقى القائمة في متصفّحك وحده، ولا نطّلع عليها.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>تواصل مع الكلية مباشرة</h3>
-              <p>تذهب استفساراتك إلى الجهة التي تقدّم البرنامج، ولا يُعاد بيع بياناتك لأي طرف.</p>
-            </div>
-          </li>
+          <li><div><h3>من المصدر مباشرة</h3><p>تُؤخذ البرامج من التقويم المنشور لكل كلية وتُحدَّث دوريًا.</p></div></li>
+          <li><div><h3>لا تقييمات لم نستحقّها</h3><p>لا تحمل البرامج المستوردة نجومًا ولا شهادات ولا نصوصًا تسويقية. ما لم تذكره الكلية لا تذكره البطاقة.</p></div></li>
+          <li><div><h3>لا إدراج مدفوع</h3><p>الموضع في هذا الموقع غير معروض للبيع. والمجموعات تحريرية، وتقول ذلك صراحة.</p></div></li>
+          <li><div><h3>إلى الكلية مباشرة</h3><p>يذهب الاستفسار إلى المؤسسة التي تقدّم البرنامج، ولا يُعاد بيع بياناتك.</p></div></li>
         </ol>
-      </div>
-    </section>
-
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">المؤسسات</span>
-            <h2 class="h2">الكليات المدرجة في الدليل</h2>
-          </div>
-          <a class="link-arrow" href="schools.html">كل الكليات <span class="arw" aria-hidden="true">→</span></a>
-        </div>
-        <div class="subject-grid" data-home-schools></div>
       </div>
     </section>
 """
@@ -588,14 +688,14 @@ COURSES["en"] = """
     <section class="section--tight" style="padding-block-start:34px">
       <div class="container">
         <span class="eyebrow">The index</span>
-        <h1 class="h2" style="margin-block:10px 12px">Executive courses</h1>
-        <p class="lede">Every programme in the index, with the fee, the number of teaching days and the
-          language of instruction on the card. Filters update the address bar, so a filtered view is a
-          link you can send to someone.</p>
+        <h1 class="h2" style="margin-block:10px 12px">Executive programmes</h1>
+        <p class="lede">Every programme in the index, with the fee, teaching days, start date and language of
+          instruction on the card. Filters live in the address bar, so a shortlist is a link you can forward
+          for approval.</p>
 
         <form role="search" style="margin-block-start:24px;max-width:560px">
-          <label class="sr-only" for="cat-q">Search courses</label>
-          <input id="cat-q" type="search" data-catalogue-search placeholder="Course, subject or school"
+          <label class="sr-only" for="cat-q">Search programmes</label>
+          <input id="cat-q" type="search" data-catalogue-search placeholder="Programme, subject or school"
                  style="width:100%;padding:14px 18px;border-radius:999px;border:1px solid var(--line-firm);background:var(--surface)">
         </form>
       </div>
@@ -639,8 +739,8 @@ COURSES["ar"] = """
       <div class="container">
         <span class="eyebrow">الدليل</span>
         <h1 class="h2" style="margin-block:10px 12px">البرامج التنفيذية</h1>
-        <p class="lede">كل برنامج في الدليل، وأمامه الرسوم وعدد أيام التدريس ولغة التدريس على البطاقة نفسها.
-          تُحدِّث أدوات التصفية عنوان الصفحة، فتصبح أي نتيجة مصفّاة رابطًا يمكنك إرساله إلى غيرك.</p>
+        <p class="lede">كل برنامج في الدليل، ومعه الرسوم وأيام التدريس وتاريخ البدء ولغة التدريس على البطاقة نفسها.
+          تعيش أدوات التصفية في عنوان الصفحة، فتصبح قائمتك المختصرة رابطًا يمكن تمريره لاعتماده.</p>
 
         <form role="search" style="margin-block-start:24px;max-width:560px">
           <label class="sr-only" for="cat-q">ابحث في البرامج</label>
@@ -734,8 +834,8 @@ SCHOOLS["en"] = """
       <div class="container">
         <span class="eyebrow">Institutions</span>
         <h1 class="h2" style="margin-block:10px 12px">Business schools</h1>
-        <p class="lede">Every school with programmes in the index, with what it is actually known for —
-          not a paragraph of marketing copy.</p>
+        <p class="lede">Every institution with programmes in the index, with the city it teaches from and
+          what it lists — not a paragraph of marketing copy.</p>
         <div style="display:flex;flex-wrap:wrap;gap:8px;margin-block-start:22px" data-region-filter></div>
       </div>
     </section>
@@ -805,8 +905,8 @@ LISTS["en"] = """
       <div class="container">
         <span class="eyebrow">Collections</span>
         <h1 class="h2" style="margin-block:10px 12px">Editors' shortlists</h1>
-        <p class="lede">Nine questions people arrive with, each answered with a handful of programmes.
-          These are editorial selections, not a ranking — nobody scored anything out of a hundred.</p>
+        <p class="lede">The questions people arrive with, each answered with a handful of programmes.
+          Editorial selections, not a ranking — nobody scored anything out of a hundred.</p>
       </div>
     </section>
 
@@ -822,8 +922,8 @@ LISTS["ar"] = """
       <div class="container">
         <span class="eyebrow">مجموعات</span>
         <h1 class="h2" style="margin-block:10px 12px">اختيارات فريق التحرير</h1>
-        <p class="lede">تسعة أسئلة يأتي بها الزوّار عادةً، يجيب عن كلٍّ منها عدد محدود من البرامج.
-          هذه اختيارات تحريرية لا تصنيفات — لم يُمنح أي برنامج درجة من مئة.</p>
+        <p class="lede">الأسئلة التي يأتي بها الزوّار عادةً، يجيب عن كلٍّ منها عدد محدود من البرامج.
+          اختيارات تحريرية لا تصنيفات — لم يُمنح أي برنامج درجة من مئة.</p>
       </div>
     </section>
 
@@ -873,48 +973,46 @@ ABOUT = {}
 ABOUT["en"] = """
     <section class="section">
       <div class="container" style="max-width:760px">
-        <span class="eyebrow">About</span>
-        <h1 class="display" style="margin-block:12px 18px">A course directory built the honest way round.</h1>
-        <p class="lede">Masar started from a simple annoyance: searching for an executive programme means
-          wading through directories that rank whoever paid the most, hide the fee until you hand over a
-          phone number, and have no Arabic version worth the name.</p>
+        <span class="eyebrow">About Masar</span>
+        <h1 class="display" style="margin-block:12px 18px">An index of executive programmes, built the honest way round.</h1>
+        <p class="lede">Choosing an executive programme usually means directories that rank whoever paid most,
+          hide the fee until you hand over a phone number, and have no Arabic version worth the name.
+          Masar (<span lang="ar">مسار</span>, "the path") was built in Riyadh to be the opposite.</p>
 
         <div class="prose" style="margin-block-start:32px">
-          <h2 class="h3" style="margin-block:28px 10px">What this site does</h2>
-          <p class="muted">It indexes executive programmes and lets you filter them on the things that
-            decide the choice: subject, region, format, language of instruction, length and fee. Everything
-            is visible without an account, and a filtered result is a shareable link.</p>
+          <h2 class="h3" style="margin-block:28px 10px">What is here</h2>
+          <p class="muted">Open-enrolment executive programmes from business schools around the world —
+            MIT Sloan, IMD, Kellogg, Harvard Kennedy School, Berkeley Haas, Queen's Smith, UBC Sauder, AGSM,
+            Copenhagen Business School, St. Gallen and others — each with its dates, teaching days, format,
+            language of instruction and fee. Everything is visible without an account, and any filtered view
+            is a link you can forward.</p>
 
-          <h2 class="h3" style="margin-block:28px 10px">How listings are chosen</h2>
-          <p class="muted">Editorially. Position in a list or a collection is never for sale, and there is
-            no paid placement tier. The collections are labelled as editorial selections rather than
-            rankings, because assigning a score out of a hundred to a four-day negotiation course would be
-            an invention.</p>
+          <h2 class="h3" style="margin-block:28px 10px">Where the data comes from</h2>
+          <p class="muted">From the schools themselves. Masar reads each institution's published programme
+            pages and records the facts they state. Nothing is paraphrased from a school's marketing copy,
+            no rating is invented, and a programme with no published fee is left out rather than guessed.
+            Fees appear in the currency the school publishes; the riyal figure is an indicative conversion
+            with the rate date shown.</p>
+
+          <h2 class="h3" style="margin-block:28px 10px">How programmes are selected</h2>
+          <p class="muted">Editorially. Position in the index or in a collection is never for sale and there
+            is no paid tier. Collections are labelled as editorial selections rather than rankings, because
+            scoring a four-day negotiation programme out of a hundred would be an invention.</p>
 
           <h2 class="h3" style="margin-block:28px 10px">Arabic, properly</h2>
-          <p class="muted">The Arabic site is not the English site run through a translation API. It is
-            written copy, a right-to-left layout built from the same stylesheet, Arabic plural forms for
-            counts, and localised dates and numbers. Both languages read from one catalogue, so a course
-            can never exist in one language and quietly disappear in the other.</p>
+          <p class="muted">The Arabic site is not the English site passed through a translation engine.
+            It is written copy, a right-to-left layout built from the same stylesheet, correct Arabic plural
+            forms, Hijri dates alongside Gregorian, and localised numbers. Both languages read from one
+            catalogue, so a programme cannot exist in one and quietly vanish in the other.</p>
 
           <h2 class="h3" style="margin-block:28px 10px">Privacy</h2>
-          <p class="muted">There is no tracking script on this site and no analytics. Your shortlist is
-            stored in your own browser's local storage and never leaves the device. Enquiries go to the
-            school running the programme.</p>
-
-          <div class="notice" style="margin-block-start:32px">
-            <div>
-              <strong>This is a portfolio project.</strong>
-              The schools, programmes, dates, fees and reviews on this site are invented sample data,
-              written to demonstrate the interface. No real institution is described here, and nothing on
-              the site should be treated as a real course offering.
-            </div>
-          </div>
+          <p class="muted">No tracking script, no analytics. Your shortlist lives in your own browser and
+            never leaves it. An enquiry goes to the school running the programme and is not resold.</p>
         </div>
 
         <div style="margin-block-start:34px;display:flex;gap:12px;flex-wrap:wrap">
           <a class="btn btn--primary" href="courses.html">Browse the index</a>
-          <a class="btn btn--ghost" href="contact.html">Get in touch</a>
+          <a class="btn btn--ghost" href="contact.html">Talk to an advisor</a>
         </div>
       </div>
     </section>
@@ -924,42 +1022,39 @@ ABOUT["ar"] = """
     <section class="section">
       <div class="container" style="max-width:760px">
         <span class="eyebrow">عن مسار</span>
-        <h1 class="display" style="margin-block:12px 18px">دليل برامج مبني بالطريقة الصادقة.</h1>
-        <p class="lede">بدأ «مسار» من انزعاج بسيط: البحث عن برنامج تنفيذي يعني التنقّل بين أدلّة تُصدِّر
-          من يدفع أكثر، وتُخفي الرسوم حتى تترك رقم هاتفك، وليس لها نسخة عربية تستحق هذا الاسم.</p>
+        <h1 class="display" style="margin-block:12px 18px">دليل للبرامج التنفيذية، مبني بالطريقة الصادقة.</h1>
+        <p class="lede">اختيار برنامج تنفيذي يعني عادةً أدلّة تُصدِّر من يدفع أكثر، وتُخفي الرسوم حتى تترك رقم هاتفك،
+          وليس لها نسخة عربية تستحق هذا الاسم. بُني «مسار» في الرياض ليكون النقيض.</p>
 
         <div class="prose" style="margin-block-start:32px">
-          <h2 class="h3" style="margin-block:28px 10px">ماذا يفعل هذا الموقع</h2>
-          <p class="muted">يفهرس البرامج التنفيذية ويتيح تصفيتها وفق ما يحسم القرار فعلًا: التخصّص والمنطقة
-            ونمط الدراسة ولغة التدريس والمدّة والرسوم. كل شيء ظاهر دون حساب، وأي نتيجة مصفّاة رابط قابل للمشاركة.</p>
+          <h2 class="h3" style="margin-block:28px 10px">ما الذي تجده هنا</h2>
+          <p class="muted">برامج تنفيذية مفتوحة التسجيل من كليات الأعمال حول العالم — إم آي تي سلون، وآي إم دي، وكيلوغ،
+            وكلية كينيدي في هارفارد، وهاس في بيركلي، وسميث في جامعة كوينز، وساودر في جامعة بريتيش كولومبيا،
+            وكلية كوبنهاغن للأعمال، وسانت غالن وغيرها — لكلٍّ منها تواريخه وأيام تدريسه ونمط دراسته ولغة التدريس والرسوم.
+            كل شيء ظاهر دون حساب، وأي نتيجة مصفّاة رابط يمكن تمريره.</p>
+
+          <h2 class="h3" style="margin-block:28px 10px">من أين تأتي البيانات</h2>
+          <p class="muted">من الكليات نفسها. يقرأ «مسار» صفحات البرامج المنشورة لكل مؤسسة ويسجّل الوقائع التي تذكرها.
+            لا يُعاد صياغة أي نص تسويقي، ولا يُختلق أي تقييم، والبرنامج الذي لم تُنشر رسومه يُستبعد ولا يُخمَّن.
+            تظهر الرسوم بالعملة التي تنشرها الكلية، ومبلغ الريال تحويل استرشادي مع تاريخ سعر الصرف.</p>
 
           <h2 class="h3" style="margin-block:28px 10px">كيف تُختار البرامج</h2>
-          <p class="muted">تحريريًا. الموضع في أي قائمة أو مجموعة غير معروض للبيع، ولا توجد فئة إدراج مدفوعة.
-            وقد وُصفت المجموعات بأنها اختيارات تحريرية لا تصنيفات، لأن منح برنامج تفاوض مدّته أربعة أيام درجةً
-            من مئة سيكون محض اختلاق.</p>
+          <p class="muted">تحريريًا. الموضع في الدليل أو في أي مجموعة غير معروض للبيع، ولا توجد فئة مدفوعة.
+            وُصفت المجموعات بأنها اختيارات تحريرية لا تصنيفات، لأن منح برنامج تفاوض مدّته أربعة أيام درجةً من مئة سيكون اختلاقًا.</p>
 
           <h2 class="h3" style="margin-block:28px 10px">العربية كما ينبغي</h2>
-          <p class="muted">النسخة العربية ليست ترجمة آلية للنسخة الإنجليزية. هي نصوص مكتوبة، وتخطيط من اليمين
-            إلى اليسار مبني من ملف التنسيق نفسه، وصيغ جمع عربية صحيحة للأعداد، وتواريخ وأرقام موطّنة.
-            وتقرأ اللغتان من دليل واحد، فلا يمكن أن يوجد برنامج بلغة ويختفي بهدوء في الأخرى.</p>
+          <p class="muted">النسخة العربية ليست النسخة الإنجليزية بعد تمريرها على محرّك ترجمة. هي نصوص مكتوبة، وتخطيط
+            من اليمين إلى اليسار مبني من ملف التنسيق نفسه، وصيغ جمع عربية صحيحة، وتواريخ هجرية إلى جانب الميلادية، وأرقام موطّنة.
+            تقرأ اللغتان من دليل واحد، فلا يمكن أن يوجد برنامج بلغة ويختفي بهدوء في الأخرى.</p>
 
           <h2 class="h3" style="margin-block:28px 10px">الخصوصية</h2>
-          <p class="muted">لا يوجد في هذا الموقع أي برنامج تتبّع أو تحليلات. تُحفظ قائمتك المختارة في التخزين
-            المحلي لمتصفّحك ولا تغادر جهازك. وتذهب الاستفسارات إلى الكلية التي تقدّم البرنامج.</p>
-
-          <div class="notice" style="margin-block-start:32px">
-            <div>
-              <strong>هذا مشروع شخصي لعرض العمل.</strong>
-              الكليات والبرامج والتواريخ والرسوم والتقييمات في هذا الموقع بيانات تجريبية مُختلقة،
-              كُتبت لعرض الواجهة فحسب. لا يصف الموقع أي مؤسسة حقيقية، ولا ينبغي التعامل مع أي محتوى فيه
-              على أنه عرض تدريبي فعلي.
-            </div>
-          </div>
+          <p class="muted">لا برامج تتبّع ولا تحليلات. تعيش قائمتك المختارة في متصفّحك ولا تغادره.
+            يذهب الاستفسار إلى الكلية التي تقدّم البرنامج ولا يُعاد بيعه.</p>
         </div>
 
         <div style="margin-block-start:34px;display:flex;gap:12px;flex-wrap:wrap">
           <a class="btn btn--primary" href="courses.html">تصفّح الدليل</a>
-          <a class="btn btn--ghost" href="contact.html">تواصل معنا</a>
+          <a class="btn btn--ghost" href="contact.html">تحدّث مع مستشار</a>
         </div>
       </div>
     </section>
@@ -967,41 +1062,77 @@ ABOUT["ar"] = """
 
 CONTACT = {}
 
+def contact_channels(lang):
+    """Direct channels, rendered only when the operator has set them."""
+    rows = []
+    if SITE["whatsapp"]:
+        rows.append('<a class="btn btn--primary" href="https://wa.me/{n}" rel="noopener">{t}</a>'.format(
+            n=SITE["whatsapp"], t="Message us on WhatsApp" if lang == "en" else "راسلنا عبر واتساب"))
+    if SITE["phone"]:
+        rows.append('<a class="btn btn--ghost" href="tel:{raw}" dir="ltr">{p}</a>'.format(
+            raw=SITE["phone"].replace(" ", ""), p=SITE["phone"]))
+    if SITE["email"]:
+        rows.append('<a class="btn btn--ghost" href="mailto:{e}">{e}</a>'.format(e=SITE["email"]))
+    if not rows:
+        return ""
+    return '<div class="channel-row">' + "".join(rows) + "</div>"
+
 CONTACT["en"] = """
     <section class="section">
       <div class="container split" style="align-items:start">
         <div>
           <span class="eyebrow">Contact</span>
-          <h1 class="h2" style="margin-block:12px 16px">Ask about a programme</h1>
-          <p class="lede">Tell us which course you are considering and what you need to know. Enquiries are
-            passed to the school running the programme — your details are not sold to anyone else.</p>
+          <h1 class="h2" style="margin-block:12px 16px">Talk to an advisor</h1>
+          <p class="lede">Tell us which programme you are weighing and what you need to know — dates,
+            fees, whether it suits your level, how to get it approved. We reply within two working days,
+            Sunday to Thursday, in Arabic or English. Your details go to the school you choose and nowhere else.</p>
+          {channels}
 
-          <div class="notice" style="margin-block-start:26px">
-            <div>
-              <strong>Demo form.</strong>
-              This is a portfolio project with no backend attached, so nothing is transmitted or stored
-              when you submit. Wire it to a form endpoint before using it for real.
-            </div>
-          </div>
+          <h2 class="h3" id="corporate" style="margin-block:34px 12px">For organisations</h2>
+          <p class="muted">Enrolling a team, a leadership bench or a full closed cohort? Say how many people
+            and which subjects, and we will come back with options, group terms and a proposal you can
+            forward internally.</p>
 
-          <h2 class="h3" style="margin-block:34px 12px">Listing a course</h2>
-          <p class="muted">Schools can suggest a programme for the index at no cost. Inclusion is an
-            editorial decision and position is never for sale.</p>
+          <h2 class="h3" style="margin-block:34px 12px">Listing a programme</h2>
+          <p class="muted">Schools can propose a programme for the index at no cost. Inclusion is an editorial
+            decision and position is never for sale.</p>
         </div>
 
-        <form class="form-grid" data-contact-form novalidate
-              style="background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px">
+        <form class="form-grid form-card" data-contact-form novalidate{action}>
           <div class="field-block">
             <label for="name">Your name</label>
             <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field-block">
+            <label for="org">Organisation</label>
+            <input id="org" name="organisation" type="text" autocomplete="organization">
+          </div>
+          <div class="field-block">
+            <label for="phone">Mobile</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" dir="ltr" placeholder="+966">
           </div>
           <div class="field-block">
             <label for="email">Email</label>
             <input id="email" name="email" type="email" autocomplete="email" required>
           </div>
           <div class="field-block field-block--wide">
-            <label for="course">Course you are asking about</label>
+            <label for="course">Programme you are asking about</label>
             <select id="course" name="course" data-course-select></select>
+          </div>
+          <div class="field-block">
+            <label for="size">Who is enrolling</label>
+            <select id="size" name="group">
+              <option value="1">Just me</option>
+              <option value="2-5">A team of 2–5</option>
+              <option value="6+">6 or more / closed cohort</option>
+            </select>
+          </div>
+          <div class="field-block">
+            <label for="lang">Reply in</label>
+            <select id="lang" name="reply_language">
+              <option value="en">English</option>
+              <option value="ar">Arabic</option>
+            </select>
           </div>
           <div class="field-block field-block--wide">
             <label for="message">Your question</label>
@@ -1009,10 +1140,9 @@ CONTACT["en"] = """
           </div>
           <div class="field-block field-block--wide">
             <button class="btn btn--primary" type="submit">Send enquiry</button>
-            <p class="form-note" style="margin-block-start:10px">We reply within two working days.</p>
+            <p class="form-note" style="margin-block-start:10px">Two working days, Sunday to Thursday, Riyadh time.</p>
             <p class="notice" data-form-status tabindex="-1" hidden style="margin-block-start:14px">
-              <span><strong>Thank you — in a live version this would now be with the school.</strong>
-              This demo does not transmit anything.</span>
+              <span>{status}</span>
             </p>
           </div>
         </form>
@@ -1025,28 +1155,32 @@ CONTACT["ar"] = """
       <div class="container split" style="align-items:start">
         <div>
           <span class="eyebrow">تواصل معنا</span>
-          <h1 class="h2" style="margin-block:12px 16px">اسأل عن برنامج</h1>
-          <p class="lede">أخبرنا بالبرنامج الذي تفكّر فيه وبما تريد معرفته. تُحال الاستفسارات إلى الكلية
-            التي تقدّم البرنامج — ولا تُباع بياناتك لأي جهة أخرى.</p>
+          <h1 class="h2" style="margin-block:12px 16px">تحدّث مع مستشار</h1>
+          <p class="lede">أخبرنا بالبرنامج الذي تفاضل بينه وبين غيره وبما تريد معرفته — المواعيد والرسوم ومدى ملاءمته
+            لمستواك وكيفية اعتماده. نردّ خلال يومَي عمل، من الأحد إلى الخميس، بالعربية أو الإنجليزية.
+            تذهب بياناتك إلى الكلية التي تختارها ولا إلى أي جهة أخرى.</p>
+          {channels}
 
-          <div class="notice" style="margin-block-start:26px">
-            <div>
-              <strong>نموذج تجريبي.</strong>
-              هذا مشروع شخصي بلا خادم متصل، فلا يُرسَل أو يُحفَظ أي شيء عند الإرسال.
-              اربطه بخدمة استقبال نماذج قبل استخدامه فعليًا.
-            </div>
-          </div>
+          <h2 class="h3" id="corporate" style="margin-block:34px 12px">للمنشآت</h2>
+          <p class="muted">تسجّل فريقًا أو صفًّا قياديًا أو دفعة مغلقة كاملة؟ اذكر عدد المشاركين والمجالات المطلوبة،
+            وسنعود إليك بالخيارات وشروط الحجز الجماعي وعرض يمكن تمريره داخل منشأتك.</p>
 
           <h2 class="h3" style="margin-block:34px 12px">إدراج برنامج</h2>
-          <p class="muted">يمكن للكليات اقتراح برنامج لإدراجه في الدليل مجانًا. الإدراج قرار تحريري،
-            والموضع غير معروض للبيع.</p>
+          <p class="muted">يمكن للكليات اقتراح برنامج لإدراجه في الدليل مجانًا. الإدراج قرار تحريري، والموضع غير معروض للبيع.</p>
         </div>
 
-        <form class="form-grid" data-contact-form novalidate
-              style="background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px">
+        <form class="form-grid form-card" data-contact-form novalidate{action}>
           <div class="field-block">
             <label for="name">الاسم</label>
             <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field-block">
+            <label for="org">المنشأة</label>
+            <input id="org" name="organisation" type="text" autocomplete="organization">
+          </div>
+          <div class="field-block">
+            <label for="phone">الجوال</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" dir="ltr" placeholder="+966">
           </div>
           <div class="field-block">
             <label for="email">البريد الإلكتروني</label>
@@ -1056,16 +1190,30 @@ CONTACT["ar"] = """
             <label for="course">البرنامج محلّ الاستفسار</label>
             <select id="course" name="course" data-course-select></select>
           </div>
+          <div class="field-block">
+            <label for="size">من سيلتحق</label>
+            <select id="size" name="group">
+              <option value="1">أنا فقط</option>
+              <option value="2-5">فريق من 2 إلى 5</option>
+              <option value="6+">6 فأكثر / دفعة مغلقة</option>
+            </select>
+          </div>
+          <div class="field-block">
+            <label for="lang">لغة الردّ</label>
+            <select id="lang" name="reply_language">
+              <option value="ar">العربية</option>
+              <option value="en">الإنجليزية</option>
+            </select>
+          </div>
           <div class="field-block field-block--wide">
             <label for="message">سؤالك</label>
             <textarea id="message" name="message" required></textarea>
           </div>
           <div class="field-block field-block--wide">
             <button class="btn btn--primary" type="submit">أرسل الاستفسار</button>
-            <p class="form-note" style="margin-block-start:10px">نردّ خلال يومَي عمل.</p>
+            <p class="form-note" style="margin-block-start:10px">خلال يومَي عمل، من الأحد إلى الخميس، بتوقيت الرياض.</p>
             <p class="notice" data-form-status tabindex="-1" hidden style="margin-block-start:14px">
-              <span><strong>شكرًا لك — في النسخة الفعلية كان استفسارك سيصل الآن إلى الكلية.</strong>
-              هذه النسخة التجريبية لا ترسل أي بيانات.</span>
+              <span>{status}</span>
             </p>
           </div>
         </form>
@@ -1073,26 +1221,46 @@ CONTACT["ar"] = """
     </section>
 """
 
+def contact_body(lang):
+    endpoint = SITE.get("form_endpoint", "")
+    if endpoint:
+        status = ("<strong>Thank you.</strong> Your enquiry has been sent; we reply within two working days."
+                  if lang == "en" else
+                  "<strong>شكرًا لك.</strong> وصلنا استفسارك، ونردّ خلال يومَي عمل.")
+    elif SITE["email"]:
+        status = ("<strong>Almost there.</strong> Your email app should now open with the enquiry drafted; send it to finish."
+                  if lang == "en" else
+                  "<strong>خطوة أخيرة.</strong> سيفتح تطبيق البريد الآن وبه الاستفسار جاهزًا؛ أرسله لإتمام الطلب.")
+    else:
+        status = ("<strong>This form is not connected yet.</strong> Please use the contact channels on this page."
+                  if lang == "en" else
+                  "<strong>لم يُربط هذا النموذج بعد.</strong> يُرجى استخدام قنوات التواصل في هذه الصفحة.")
+    return CONTACT[lang].replace("{channels}", contact_channels(lang)) \
+                        .replace("{action}", ' action="{}" method="post" data-endpoint'.format(endpoint) if endpoint
+                                 else (' data-mailto="{}"'.format(SITE["email"]) if SITE["email"] else "")) \
+                        .replace("{status}", status)
+
 PAGES = [
     {
         "file": "index.html", "body": HOME,
-        "title": {"en": "Masar — find executive courses worldwide",
-                  "ar": "مسار — دليل البرامج التنفيذية حول العالم"},
-        "desc": {"en": "Search executive education programmes from business schools worldwide by subject, "
-                       "region, format, language and fee. Free, bilingual and free of paid placement.",
+        "title": {"en": "Masar — executive programmes from the world's business schools",
+                  "ar": "مسار — البرامج التنفيذية من كليات الأعمال حول العالم"},
+        "desc": {"en": "Compare open-enrolment executive programmes from MIT Sloan, IMD, Kellogg, Harvard "
+                       "Kennedy School and more — dates, teaching days and fees in the school's currency or "
+                       "in Saudi riyals. Bilingual, free to use, no paid placement.",
                  "ar": "ابحث في برامج التعليم التنفيذي من كليات إدارة الأعمال حول العالم حسب التخصّص "
                        "والمنطقة ونمط الدراسة واللغة والرسوم. مجاني وثنائي اللغة وبلا إدراج مدفوع."},
     },
     {
         "file": "courses.html", "body": COURSES,
-        "title": {"en": "Executive courses | Masar", "ar": "البرامج التنفيذية | مسار"},
+        "title": {"en": "Executive programmes | Masar", "ar": "البرامج التنفيذية | مسار"},
         "desc": {"en": "Filter executive programmes by subject, region, format, language of instruction, "
                        "duration and fee.",
                  "ar": "صفِّ البرامج التنفيذية حسب التخصّص والمنطقة ونمط الدراسة ولغة التدريس والمدّة والرسوم."},
     },
     {
         "file": "course.html", "body": COURSE,
-        "title": {"en": "Course | Masar", "ar": "البرنامج | مسار"},
+        "title": {"en": "Programme | Masar", "ar": "البرنامج | مسار"},
         "desc": {"en": "Programme details, fee, dates and the school behind it.",
                  "ar": "تفاصيل البرنامج والرسوم والمواعيد والكلية التي تقدّمه."},
     },
@@ -1145,7 +1313,7 @@ def main():
                 page=page["file"],
                 title=page["title"][lang],
                 description=page["desc"][lang],
-                body=page["body"][lang].rstrip("\n"),
+                body=(contact_body(lang) if page["body"] is CONTACT else page["body"][lang]).rstrip("\n"),
             )
             out = os.path.join(HERE, page["file"]) if lang == "en" \
                 else os.path.join(HERE, "ar", page["file"])
