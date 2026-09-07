@@ -55,6 +55,7 @@ SITE = {
     "cr": "",                # commercial registration number
     "vat": "",               # VAT registration number
     "form_endpoint": "",     # e.g. a Formspree/Basin URL; empty falls back to mailto: when email is set
+    "refreshed": {"en": "23 August 2026", "ar": "23 أغسطس 2026"},   # date of the last listings refresh
 }
 
 BRAND_MARK = (
@@ -99,9 +100,9 @@ T = {
               "بُني في الرياض لقيادات المملكة ومن حولها.",
     },
     "f_source": {
-        "en": "Listings are taken from the schools' published programme pages and refreshed regularly. "
+        "en": "Listings are taken from the schools' published programme pages; last refreshed {date}. "
               "Fees are shown as published; riyal amounts are indicative conversions.",
-        "ar": "تُؤخذ البرامج من الصفحات المنشورة للكليات وتُحدَّث دوريًا. "
+        "ar": "تُؤخذ البرامج من الصفحات المنشورة للكليات؛ آخر تحديث {date}. "
               "تُعرض الرسوم كما نُشرت، ومبالغ الريال تحويلات استرشادية.",
     },
     "f_advisor": {"en": "Talk to an advisor", "ar": "تحدّث مع مستشار"},
@@ -339,7 +340,7 @@ def shell(lang, page, title, description, body, extra_head=""):
         f_browse=T["f_browse"][lang],
         f_subjects=T["f_subjects"][lang],
         f_site=T["f_site"][lang],
-        f_source=T["f_source"][lang],
+        f_source=T["f_source"][lang].replace("{date}", SITE["refreshed"][lang]),
         advisor=advisor,
         legal=legal,
         float_cta=float_cta,

@@ -707,6 +707,7 @@
             fact(t('course.subject'), subjectLabel(c.subject)) +
           '</ul>' +
           '<a class="btn btn--primary btn--block" href="contact.html?course=' + c.id + '">' + esc(t('course.request')) + '</a>' +
+          '<a class="btn btn--ghost btn--block" href="contact.html?course=' + c.id + '#corporate">' + esc(t('course.team')) + '</a>' +
           '<div style="height:10px"></div>' +
           '<button class="btn btn--ghost btn--block save-btn-wide" type="button" data-save-wide="' + c.id + '"></button>' +
         '</aside>' +

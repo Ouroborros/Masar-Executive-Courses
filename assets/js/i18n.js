@@ -55,6 +55,7 @@ window.MASAR_I18N = (function () {
 
       'card.from': 'from',
       'card.new': 'New',
+      'course.team': 'Enrol a team',
       'spec.start': 'Starts',
       'spec.location': 'Location',
       'spec.duration': 'Duration',
@@ -159,6 +160,7 @@ window.MASAR_I18N = (function () {
 
       'card.from': 'تبدأ من',
       'card.new': 'جديد',
+      'course.team': 'سجّل فريقًا',
       'spec.start': 'يبدأ',
       'spec.location': 'الموقع',
       'spec.duration': 'المدة',

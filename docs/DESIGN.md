@@ -9,6 +9,9 @@ The research behind it is in `docs/research/`:
 
 - `exec-ed-school-sites.md` — benchmark of HBS, Wharton, INSEAD, IMD, LBS,
   IESE, Stanford GSB and MIT Sloan executive-education sites (rendered live).
+- `exec-ed-marketplaces.md` — Emeritus, Coursera, GetSmarter, Class Central,
+  findcourses and others: card grammar, facets, trust and the lead-gen
+  anti-patterns to avoid.
 - `ksa-market-and-brand.md` — how executive education is actually bought in
   the Kingdom, Saudi digital-design conventions, typefaces, palettes, tone.
 
@@ -77,6 +80,13 @@ English: assured, specific, unhurried — numbers before adjectives; never
 "unlock", "empower", "journey", "world-class". Arabic: الفصحى المعاصرة، رصينة
 ودافئة، بلا مبالغة ولا علامات تعجّب ولا ترجمة حرفية؛ «برنامج تنفيذي» لا «دورة».
 Both languages are authored, not translated, and carry equal depth.
+
+## Not built yet, worth building next
+
+- Side-by-side compare from the shortlist (FT / Class Central pattern).
+- "Apply by" deadline state on cards, once deadlines are captured.
+- Commitment line on detail pages ("6 weeks · 6–8 hrs/week") from the
+  schools' published commitment field.
 
 ## Operator checklist before launch
 
