@@ -55,6 +55,11 @@ window.MASAR_I18N = (function () {
 
       'card.from': 'from',
       'card.new': 'New',
+      'spec.days': 'Days',
+      'tile.next': 'Next start',
+      'tile.teamsLabel': 'For teams',
+      'tile.teams': 'Enrolling a team? Ask for a group booking or a closed cohort.',
+      'tile.teamsCta': 'Request a proposal',
       'course.team': 'Enrol a team',
       'spec.start': 'Starts',
       'spec.location': 'Location',
@@ -160,6 +165,11 @@ window.MASAR_I18N = (function () {
 
       'card.from': 'تبدأ من',
       'card.new': 'جديد',
+      'spec.days': 'الأيام',
+      'tile.next': 'أقرب موعد بدء',
+      'tile.teamsLabel': 'للفرق',
+      'tile.teams': 'تسجّل فريقًا؟ اطلب حجزًا جماعيًا أو دفعة مغلقة.',
+      'tile.teamsCta': 'اطلب عرضًا',
       'course.team': 'سجّل فريقًا',
       'spec.start': 'يبدأ',
       'spec.location': 'الموقع',
@@ -335,6 +345,13 @@ window.MASAR_I18N = (function () {
     }
   }
 
+  function dayMonth(iso) {
+    const d = new Date(iso + 'T00:00:00');
+    try {
+      return new Intl.DateTimeFormat(numLocale, { day: 'numeric', month: 'short' }).format(d);
+    } catch (e) { return iso.slice(5); }
+  }
+
   function monthLabel(iso) {
     const d = new Date(iso + 'T00:00:00');
     try {
@@ -349,5 +366,5 @@ window.MASAR_I18N = (function () {
   }
 
   return { LANG, IS_RTL, t, pick, courseCount, dayCount, money, toUsd,
-    getCurrency, setCurrency, shortDate, hijriDate, monthLabel, num };
+    getCurrency, setCurrency, shortDate, hijriDate, dayMonth, monthLabel, num };
 })();

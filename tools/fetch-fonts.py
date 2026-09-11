@@ -37,10 +37,9 @@ UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
 # is skipped — site.css puts Manrope behind it in the Arabic stack, so Latin
 # runs inside Arabic text fall through to a face already being loaded.
 FAMILIES = [
-    ("IBM+Plex+Sans:wght@400;500;600", {"latin"}),
-    ("IBM+Plex+Serif:wght@500;600", {"latin"}),
+    ("Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800", {"latin"}),
+    ("Reem+Kufi:wght@500..700", {"arabic"}),
     ("IBM+Plex+Sans+Arabic:wght@400;500;600;700", {"arabic"}),
-    ("Markazi+Text:wght@500..700", {"arabic"}),
 ]
 
 

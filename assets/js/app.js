@@ -306,11 +306,49 @@
 
   /* --- Home --------------------------------------------------------------- */
   function initHome() {
-    const featured = document.querySelector('[data-home-featured]');
+    const featured = document.querySelector('[data-home-featured], [data-home-tiles]');
     if (!featured) return;
 
-    /* Eight fills two clean rows of the four-column grid; six leaves a gap. */
-    featured.innerHTML = D.courses.filter((c) => c.featured).slice(0, 8).map(courseCard).join('');
+    if (featured.hasAttribute('data-home-featured')) {
+      featured.innerHTML = D.courses.filter((c) => c.featured).slice(0, 8).map(courseCard).join('');
+    }
+
+    /* The front door: next start, then the editors' picks as tiles. */
+    const tiles = document.querySelector('[data-home-tiles]');
+    if (tiles) {
+      const today = new Date().toISOString().slice(0, 10);
+      const next = D.courses.filter((c) => c.start >= today).sort((a, b) => a.start.localeCompare(b.start))[0];
+      const feat = D.courses.filter((c) => c.featured && (!next || c.id !== next.id)).slice(0, 5);
+      const tile = (c, cls) => {
+        const s = schoolOf(c);
+        return '<article class="tile ' + cls + '">' +
+          '<div class="tile__top"><span>' + esc(pick(s.name)) + '</span><span class="place">' + esc(homeOf(c)) + '</span></div>' +
+          '<h3><a class="tile__link" href="course.html?id=' + c.id + '">' + esc(pick(c.title)) + '</a></h3>' +
+          '<div class="tile__spec">' +
+            '<div><span class="k">' + esc(t('spec.start')) + '</span><span class="v">' + esc(I.dayMonth(c.start)) + '</span></div>' +
+            '<div><span class="k">' + esc(t('spec.days')) + '</span><span class="v">' + esc(I.num(c.days)) + '</span></div>' +
+            '<div><span class="k">' + esc(t('spec.fee')) + '</span><span class="v">' + esc(I.money(c.price, c.currency)) + '</span></div>' +
+          '</div></article>';
+      };
+      const nextTile = next
+        ? '<article class="tile tile--large tile--violet">' +
+            '<div class="tile__label">' + esc(t('tile.next')) + '</div>' +
+            '<div><div class="tile__num">' + esc(I.dayMonth(next.start)) + '</div>' +
+            '<div class="tile__sub">' + esc(I.hijriDate(next.start)) + ' · ' + esc(pick(schoolOf(next).name)) + ', ' + esc(pick(schoolOf(next).city)) + '<br>' +
+            '<a class="tile__link" href="course.html?id=' + next.id + '">' + esc(pick(next.title)) + '</a> · ' + esc(I.money(next.price, next.currency)) + '</div></div>' +
+          '</article>'
+        : '';
+      const teams = '<article class="tile tile--small tile--ink">' +
+        '<div class="tile__label">' + esc(t('tile.teamsLabel')) + '</div>' +
+        '<h3>' + esc(t('tile.teams')) + '</h3>' +
+        '<a class="tile__link link-arrow link-arrow--light" href="contact.html#corporate">' + esc(t('tile.teamsCta')) + ' <span class="arw" aria-hidden="true">→</span></a>' +
+        '</article>';
+      tiles.innerHTML = nextTile +
+        (feat[0] ? tile(feat[0], 'tile--large') : '') +
+        (feat[1] ? tile(feat[1], 'tile--large tile--peach') : '') +
+        feat.slice(2, 5).map((c) => tile(c, 'tile--small')).join('') +
+        teams;
+    }
 
     const upcoming = document.querySelector('[data-home-upcoming]');
     if (upcoming) {
@@ -904,9 +942,21 @@
     initContact();
   }
 
+  function initReveal() {
+    if (!('IntersectionObserver' in window)) return;
+    const els = document.querySelectorAll('.tile, .course-card, .section-head, .list-card, .school-card');
+    const io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function (el) { el.setAttribute('data-reveal', ''); io.observe(el); });
+  }
+
   function boot() {
     initChrome();
     mount();
+    initReveal();
   }
 
   window.MASAR_APP = { boot: boot, mount: mount };

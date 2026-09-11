@@ -21,7 +21,7 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Reem+Kufi:wght@700&display=swap">
   <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
@@ -30,7 +30,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">
-        <svg class="brand-mark" viewBox="0 0 40 32" aria-hidden="true"><path class="brand-mark__path" d="M2 26 C 10 26, 12 8, 20 8 S 30 24, 38 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="38" cy="6" r="3" fill="currentColor"/></svg>
+        <span class="brand-kufi" lang="ar" dir="rtl" aria-hidden="true">مسار</span>
         <span class="brand-name">Masar<small>Executive programmes</small></span>
       </a>
 
@@ -64,13 +64,18 @@
   <main id="main">
 
     <section class="hero">
-        <svg class="hero-path" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true"><path d="M0 190 C 220 190, 300 60, 480 60 S 760 200, 940 120 S 1120 20, 1200 30" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-      <div class="container hero-inner">
-        <p class="eyebrow">Open-enrolment executive programmes</p>
-        <h1>Short programmes worth leaving the office for.</h1>
-        <p class="lede"><span data-stat="courses">189</span> programmes from <span data-stat="schools">17</span>
-          business schools — MIT Sloan, IMD, Kellogg, Harvard Kennedy School, Berkeley Haas — with dates,
-          teaching days and fees on every card. In the school's currency, or in riyals.</p>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1>Learn what the <span class="tint">next decade</span> of leadership demands.</h1>
+          </div>
+          <div class="hero-side">
+            <p>Intensive programmes from MIT Sloan, IMD, Kellogg, Harvard Kennedy School and twelve more —
+              <span data-stat="courses">189</span> of them, with the fee, the city and the dates on every card.
+              In riyals or the school's currency.</p>
+            <p class="tag" lang="ar" dir="rtl">الرسوم كما نُشرت، والتواريخ كما أُعلنت.</p>
+          </div>
+        </div>
 
         <form class="hero-search" action="courses.html" method="get" role="search">
           <div class="field">
@@ -85,26 +90,24 @@
             <label for="format">Format</label>
             <select id="format" name="format" data-hero-format></select>
           </div>
-          <button class="btn btn--primary" type="submit">Find programmes</button>
+          <button class="btn btn--primary" type="submit">Find</button>
         </form>
 
-        <div class="hero-chips" aria-label="Quick filters">
-          <a class="chip-link" href="courses.html?sort=date">Starting soonest</a>
-          <a class="chip-link" href="courses.html?duration=short,mid">Up to a week</a>
-          <a class="chip-link" href="courses.html?format=online">Online</a>
-          <a class="chip-link" href="courses.html?subject=leadership">Leadership</a>
-          <a class="chip-link" href="courses.html?subject=digital">AI &amp; digital</a>
-          <a class="chip-link" href="courses.html?subject=finance">Finance</a>
-        </div>
-      </div>
-    </section>
+        <nav class="ambitions" aria-label="Explore by ambition">
+          <a class="ambition" href="courses.html?subject=leadership">Become a better leader <span class="arw" aria-hidden="true">→</span></a>
+          <a class="ambition" href="courses.html?subject=digital">Master AI strategy <span class="arw" aria-hidden="true">→</span></a>
+          <a class="ambition" href="courses.html?q=chief">Move into the C-suite <span class="arw" aria-hidden="true">→</span></a>
+          <a class="ambition" href="courses.html?subject=finance">Understand finance <span class="arw" aria-hidden="true">→</span></a>
+          <a class="ambition" href="courses.html?subject=entrepreneurship">Build a new venture <span class="arw" aria-hidden="true">→</span></a>
+          <a class="ambition" href="courses.html?subject=negotiation">Negotiate better <span class="arw" aria-hidden="true">→</span></a>
+        </nav>
 
-    <section class="proof">
-      <div class="container proof-grid">
-        <div class="proof-item"><div class="n" data-stat="courses">—</div><div class="l">Programmes indexed</div></div>
-        <div class="proof-item"><div class="n" data-stat="schools">—</div><div class="l">Business schools</div></div>
-        <div class="proof-item"><div class="n" data-stat="countries">—</div><div class="l">Countries of delivery</div></div>
-        <div class="proof-item"><div class="n" data-stat="next">—</div><div class="l">Next start date</div></div>
+        <div class="tiles" data-home-tiles></div>
+
+        <div class="action-bar">
+          <p>Ask in Arabic or English — a reply within two working days, Sunday to Thursday.</p>
+          <div class="row"><a class="btn btn--ghost" href="contact.html">Request a call</a></div>
+        </div>
       </div>
     </section>
 
@@ -133,19 +136,6 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Selected</span>
-            <h2 class="h2">Eight programmes to start with</h2>
-            <p>One programme from each of eight leading schools in the index, chosen by the editors — never for a placement fee.</p>
-          </div>
-          <a class="link-arrow" href="courses.html">All programmes <span class="arw" aria-hidden="true">→</span></a>
-        </div>
-        <div class="card-grid" data-home-featured></div>
-      </div>
-    </section>
 
     <section class="section section--sea">
       <div class="container">
@@ -227,7 +217,7 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 40 32" aria-hidden="true"><path class="brand-mark__path" d="M2 26 C 10 26, 12 8, 20 8 S 30 24, 38 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="38" cy="6" r="3" fill="currentColor"/></svg><span class="brand-name">Masar</span></a>
+          <a class="brand" href="index.html"><span class="brand-kufi" lang="ar" dir="rtl" aria-hidden="true">مسار</span><span class="brand-name">Masar</span></a>
           <p class="footer-blurb">An independent, bilingual index of open-enrolment executive programmes from the world's business schools, built in Riyadh for leaders in the Kingdom and beyond.</p>
 
         </div>

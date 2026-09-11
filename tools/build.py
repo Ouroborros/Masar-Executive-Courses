@@ -33,15 +33,16 @@ FONTS = {
         '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
         '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
         '  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
-        'family=IBM+Plex+Sans:wght@400;500;600&'
-        'family=IBM+Plex+Serif:wght@500;600&display=swap">'
+        'family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&'
+        'family=Reem+Kufi:wght@700&display=swap">'
     ),
     "ar": (
         '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
         '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
         '  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
+        'family=Reem+Kufi:wght@500;600;700&'
         'family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&'
-        'family=Markazi+Text:wght@500;600;700&display=swap">'
+        'family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,600..800&display=swap">'
     ),
 }
 
@@ -59,11 +60,7 @@ SITE = {
 }
 
 BRAND_MARK = (
-    '<svg class="brand-mark" viewBox="0 0 40 32" aria-hidden="true">'
-    '<path class="brand-mark__path" d="M2 26 C 10 26, 12 8, 20 8 S 30 24, 38 6" fill="none" '
-    'stroke="currentColor" stroke-width="3" stroke-linecap="round"/>'
-    '<circle cx="38" cy="6" r="3" fill="currentColor"/>'
-    '</svg>'
+    '<span class="brand-kufi" lang="ar" dir="rtl" aria-hidden="true">مسار</span>'
 )
 
 SUN_MOON = (
@@ -319,7 +316,7 @@ def shell(lang, page, title, description, body, extra_head=""):
         extra_head=extra_head,
         skip=T["skip"][lang],
         mark=BRAND_MARK,
-        brandname="مسار" if is_ar else "Masar",
+        brandname="Masar",
         tagline=T["tagline"][lang],
         navlabel="التنقّل الرئيسي" if is_ar else "Primary",
         nav=nav,
@@ -363,13 +360,18 @@ HOME = {}
 
 HOME["en"] = """
     <section class="hero">
-        <svg class="hero-path" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true"><path d="M0 190 C 220 190, 300 60, 480 60 S 760 200, 940 120 S 1120 20, 1200 30" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-      <div class="container hero-inner">
-        <p class="eyebrow">Open-enrolment executive programmes</p>
-        <h1>Short programmes worth leaving the office for.</h1>
-        <p class="lede"><span data-stat="courses">189</span> programmes from <span data-stat="schools">17</span>
-          business schools — MIT Sloan, IMD, Kellogg, Harvard Kennedy School, Berkeley Haas — with dates,
-          teaching days and fees on every card. In the school's currency, or in riyals.</p>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1>Learn what the <span class="tint">next decade</span> of leadership demands.</h1>
+          </div>
+          <div class="hero-side">
+            <p>Intensive programmes from MIT Sloan, IMD, Kellogg, Harvard Kennedy School and twelve more —
+              <span data-stat="courses">189</span> of them, with the fee, the city and the dates on every card.
+              In riyals or the school's currency.</p>
+            <p class="tag" lang="ar" dir="rtl">الرسوم كما نُشرت، والتواريخ كما أُعلنت.</p>
+          </div>
+        </div>
 
         <form class="hero-search" action="courses.html" method="get" role="search">
           <div class="field">
@@ -384,26 +386,24 @@ HOME["en"] = """
             <label for="format">Format</label>
             <select id="format" name="format" data-hero-format></select>
           </div>
-          <button class="btn btn--primary" type="submit">Find programmes</button>
+          <button class="btn btn--primary" type="submit">Find</button>
         </form>
 
-        <div class="hero-chips" aria-label="Quick filters">
-          <a class="chip-link" href="courses.html?sort=date">Starting soonest</a>
-          <a class="chip-link" href="courses.html?duration=short,mid">Up to a week</a>
-          <a class="chip-link" href="courses.html?format=online">Online</a>
-          <a class="chip-link" href="courses.html?subject=leadership">Leadership</a>
-          <a class="chip-link" href="courses.html?subject=digital">AI &amp; digital</a>
-          <a class="chip-link" href="courses.html?subject=finance">Finance</a>
-        </div>
-      </div>
-    </section>
+        <nav class="ambitions" aria-label="Explore by ambition">
+          <a class="ambition" href="courses.html?subject=leadership">Become a better leader <span class="arw" aria-hidden="true">→</span></a>
+          <a class="ambition" href="courses.html?subject=digital">Master AI strategy <span class="arw" aria-hidden="true">→</span></a>
+          <a class="ambition" href="courses.html?q=chief">Move into the C-suite <span class="arw" aria-hidden="true">→</span></a>
+          <a class="ambition" href="courses.html?subject=finance">Understand finance <span class="arw" aria-hidden="true">→</span></a>
+          <a class="ambition" href="courses.html?subject=entrepreneurship">Build a new venture <span class="arw" aria-hidden="true">→</span></a>
+          <a class="ambition" href="courses.html?subject=negotiation">Negotiate better <span class="arw" aria-hidden="true">→</span></a>
+        </nav>
 
-    <section class="proof">
-      <div class="container proof-grid">
-        <div class="proof-item"><div class="n" data-stat="courses">—</div><div class="l">Programmes indexed</div></div>
-        <div class="proof-item"><div class="n" data-stat="schools">—</div><div class="l">Business schools</div></div>
-        <div class="proof-item"><div class="n" data-stat="countries">—</div><div class="l">Countries of delivery</div></div>
-        <div class="proof-item"><div class="n" data-stat="next">—</div><div class="l">Next start date</div></div>
+        <div class="tiles" data-home-tiles></div>
+
+        <div class="action-bar">
+          <p>Ask in Arabic or English — a reply within two working days, Sunday to Thursday.</p>
+          <div class="row">{wa_button}<a class="btn btn--ghost" href="contact.html">Request a call</a></div>
+        </div>
       </div>
     </section>
 
@@ -432,19 +432,6 @@ HOME["en"] = """
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Selected</span>
-            <h2 class="h2">Eight programmes to start with</h2>
-            <p>One programme from each of eight leading schools in the index, chosen by the editors — never for a placement fee.</p>
-          </div>
-          <a class="link-arrow" href="courses.html">All programmes <span class="arw" aria-hidden="true">→</span></a>
-        </div>
-        <div class="card-grid" data-home-featured></div>
-      </div>
-    </section>
 
     <section class="section section--sea">
       <div class="container">
@@ -524,13 +511,18 @@ HOME["en"] = """
 
 HOME["ar"] = """
     <section class="hero">
-        <svg class="hero-path" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true"><path d="M0 190 C 220 190, 300 60, 480 60 S 760 200, 940 120 S 1120 20, 1200 30" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-      <div class="container hero-inner">
-        <p class="eyebrow">برامج تنفيذية مفتوحة التسجيل</p>
-        <h1>برامج قصيرة تستحق أن تغادر مكتبك من أجلها.</h1>
-        <p class="lede"><span data-stat="courses">189</span> برنامجًا من <span data-stat="schools">17</span> كلية أعمال —
-          إم آي تي سلون، وآي إم دي، وكيلوغ، وكلية كينيدي في هارفارد، وهاس في بيركلي — مع التواريخ وأيام التدريس
-          والرسوم على كل بطاقة، بعملة الكلية أو بالريال السعودي.</p>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1>تعلّم ما يتطلّبه <span class="tint">العقد القادم</span> من القيادة.</h1>
+          </div>
+          <div class="hero-side">
+            <p>برامج مكثّفة من إم آي تي سلون، وآي إم دي، وكيلوغ، وكلية كينيدي في هارفارد واثنتي عشرة كلية أخرى —
+              <span data-stat="courses">189</span> برنامجًا، مع الرسوم والمدينة والتواريخ على كل بطاقة.
+              بالريال أو بعملة الكلية.</p>
+            <p class="tag" lang="en" dir="ltr">Real fees. Real dates.</p>
+          </div>
+        </div>
 
         <form class="hero-search" action="courses.html" method="get" role="search">
           <div class="field">
@@ -545,26 +537,24 @@ HOME["ar"] = """
             <label for="format">نمط الدراسة</label>
             <select id="format" name="format" data-hero-format></select>
           </div>
-          <button class="btn btn--primary" type="submit">ابحث عن برنامج</button>
+          <button class="btn btn--primary" type="submit">ابحث</button>
         </form>
 
-        <div class="hero-chips" aria-label="تصفية سريعة">
-          <a class="chip-link" href="courses.html?sort=date">الأقرب بدءًا</a>
-          <a class="chip-link" href="courses.html?duration=short,mid">أسبوع أو أقل</a>
-          <a class="chip-link" href="courses.html?format=online">عن بُعد</a>
-          <a class="chip-link" href="courses.html?subject=leadership">القيادة</a>
-          <a class="chip-link" href="courses.html?subject=digital">الذكاء الاصطناعي والتحوّل الرقمي</a>
-          <a class="chip-link" href="courses.html?subject=finance">التمويل</a>
-        </div>
-      </div>
-    </section>
+        <nav class="ambitions" aria-label="استكشف حسب طموحك">
+          <a class="ambition" href="courses.html?subject=leadership">كن قائدًا أفضل <span class="arw" aria-hidden="true">→</span></a>
+          <a class="ambition" href="courses.html?subject=digital">أتقن استراتيجية الذكاء الاصطناعي <span class="arw" aria-hidden="true">→</span></a>
+          <a class="ambition" href="courses.html?q=chief">انتقل إلى الصف القيادي الأول <span class="arw" aria-hidden="true">→</span></a>
+          <a class="ambition" href="courses.html?subject=finance">افهم التمويل <span class="arw" aria-hidden="true">→</span></a>
+          <a class="ambition" href="courses.html?subject=entrepreneurship">ابنِ مشروعًا جديدًا <span class="arw" aria-hidden="true">→</span></a>
+          <a class="ambition" href="courses.html?subject=negotiation">تفاوض بشكل أفضل <span class="arw" aria-hidden="true">→</span></a>
+        </nav>
 
-    <section class="proof">
-      <div class="container proof-grid">
-        <div class="proof-item"><div class="n" data-stat="courses">—</div><div class="l">برنامجًا مفهرسًا</div></div>
-        <div class="proof-item"><div class="n" data-stat="schools">—</div><div class="l">كلية أعمال</div></div>
-        <div class="proof-item"><div class="n" data-stat="countries">—</div><div class="l">دولة تُقدَّم فيها البرامج</div></div>
-        <div class="proof-item"><div class="n" data-stat="next">—</div><div class="l">أقرب موعد بدء</div></div>
+        <div class="tiles" data-home-tiles></div>
+
+        <div class="action-bar">
+          <p>اسأل بالعربية أو الإنجليزية — ستصلك الإجابة خلال يومَي عمل، من الأحد إلى الخميس.</p>
+          <div class="row">{wa_button}<a class="btn btn--ghost" href="contact.html">اطلب اتصالًا</a></div>
+        </div>
       </div>
     </section>
 
@@ -593,19 +583,6 @@ HOME["ar"] = """
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">مختارات</span>
-            <h2 class="h2">ثمانية برامج تبدأ منها</h2>
-            <p>برنامج واحد من كلٍّ من ثماني كليات رائدة في الدليل، اختاره فريق التحرير — ولا مقابل رسوم إدراج.</p>
-          </div>
-          <a class="link-arrow" href="courses.html">كل البرامج <span class="arw" aria-hidden="true">→</span></a>
-        </div>
-        <div class="card-grid" data-home-featured></div>
-      </div>
-    </section>
 
     <section class="section section--sea">
       <div class="container">
@@ -696,8 +673,7 @@ COURSES["en"] = """
 
         <form role="search" style="margin-block-start:24px;max-width:560px">
           <label class="sr-only" for="cat-q">Search programmes</label>
-          <input id="cat-q" type="search" data-catalogue-search placeholder="Programme, subject or school"
-                 style="width:100%;padding:14px 18px;border-radius:999px;border:1px solid var(--line-firm);background:var(--surface)">
+          <input id="cat-q" type="search" data-catalogue-search placeholder="Programme, subject or school" class="catalogue-search">
         </form>
       </div>
     </section>
@@ -745,8 +721,7 @@ COURSES["ar"] = """
 
         <form role="search" style="margin-block-start:24px;max-width:560px">
           <label class="sr-only" for="cat-q">ابحث في البرامج</label>
-          <input id="cat-q" type="search" data-catalogue-search placeholder="برنامج أو تخصّص أو كلية"
-                 style="width:100%;padding:14px 18px;border-radius:999px;border:1px solid var(--line-firm);background:var(--surface)">
+          <input id="cat-q" type="search" data-catalogue-search placeholder="برنامج أو تخصّص أو كلية" class="catalogue-search">
         </form>
       </div>
     </section>
@@ -1063,6 +1038,13 @@ ABOUT["ar"] = """
 
 CONTACT = {}
 
+def wa_button(lang):
+    if not SITE["whatsapp"]:
+        return ""
+    return '<a class="btn btn--wa" href="https://wa.me/{n}" rel="noopener">{t}</a>'.format(
+        n=SITE["whatsapp"], t="WhatsApp" if lang == "en" else "واتساب")
+
+
 def contact_channels(lang):
     """Direct channels, rendered only when the operator has set them."""
     rows = []
@@ -1314,7 +1296,8 @@ def main():
                 page=page["file"],
                 title=page["title"][lang],
                 description=page["desc"][lang],
-                body=(contact_body(lang) if page["body"] is CONTACT else page["body"][lang]).rstrip("\n"),
+                body=(contact_body(lang) if page["body"] is CONTACT else page["body"][lang]).rstrip("\n")
+                    .replace("{wa_button}", wa_button(lang)),
             )
             out = os.path.join(HERE, page["file"]) if lang == "en" \
                 else os.path.join(HERE, "ar", page["file"])
