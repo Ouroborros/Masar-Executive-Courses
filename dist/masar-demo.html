@@ -4002,6 +4002,7 @@ window.MASAR_I18N = (function () {
       'spec.duration': 'Duration',
       'spec.fee': 'Fee',
       'search.format': 'Any format',
+      'search.see': 'See {n}',
       'home.programmes': '{n} programmes',
       'card.days': '{n} days',
       'card.day': '1 day',
@@ -4112,6 +4113,7 @@ window.MASAR_I18N = (function () {
       'spec.duration': 'المدة',
       'spec.fee': 'الرسوم',
       'search.format': 'أي نمط دراسة',
+      'search.see': 'اعرض {n}',
       'home.programmes': '{n} برامج',
       'card.days': '{n} أيام',
       'card.day': 'يوم واحد',
@@ -4188,7 +4190,7 @@ window.MASAR_I18N = (function () {
   /* Arabic counts genuinely need six forms — doing this properly is the
      difference between a translated site and a localised one. */
   function courseCount(n) {
-    if (LANG !== 'ar') return n === 1 ? '1 course' : n.toLocaleString('en') + ' courses';
+    if (LANG !== 'ar') return n === 1 ? '1 programme' : n.toLocaleString('en') + ' programmes';
     if (n === 0) return 'لا توجد برامج';
     if (n === 1) return 'برنامج واحد';
     if (n === 2) return 'برنامجان';
@@ -4713,6 +4715,33 @@ window.MASAR_I18N = (function () {
     if (fmtSel) {
       fmtSel.innerHTML = '<option value="">' + esc(t('search.format')) + '</option>' +
         D.formats.map((f) => '<option value="' + f.id + '">' + esc(pick(f)) + '</option>').join('');
+    }
+    /* The hero is the filter: as the selects change, the button says how many
+       programmes the search would return. */
+    const heroForm = document.querySelector('.hero-search');
+    if (heroForm) {
+      const btn = heroForm.querySelector('button[type="submit"]');
+      const base = btn ? btn.textContent : '';
+      const q = heroForm.querySelector('input[name="q"]');
+      const paint = function () {
+        const subj = heroForm.querySelector('[data-hero-subject]');
+        const fmt = heroForm.querySelector('[data-hero-format]');
+        const s = subj ? subj.value : '', f = fmt ? fmt.value : '';
+        const text = q && q.value ? q.value.toLowerCase().trim() : '';
+        if (!s && !f && !text) { btn.textContent = base; return; }
+        const n = D.courses.filter(function (c) {
+          if (s && c.subject !== s) return false;
+          if (f && c.format !== f) return false;
+          if (text) {
+            const hay = [pick(c.title), pick(schoolOf(c).name), subjectLabel(c.subject)].join(' ').toLowerCase();
+            if (hay.indexOf(text) === -1) return false;
+          }
+          return true;
+        }).length;
+        btn.textContent = t('search.see', { n: I.courseCount(n) });
+      };
+      heroForm.querySelectorAll('select').forEach((el) => el.addEventListener('change', paint));
+      if (q) q.addEventListener('input', paint);
     }
     const subjSel = document.querySelector('[data-hero-subject]');
     if (subjSel) {

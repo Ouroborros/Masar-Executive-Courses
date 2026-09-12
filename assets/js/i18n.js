@@ -66,6 +66,7 @@ window.MASAR_I18N = (function () {
       'spec.duration': 'Duration',
       'spec.fee': 'Fee',
       'search.format': 'Any format',
+      'search.see': 'See {n}',
       'home.programmes': '{n} programmes',
       'card.days': '{n} days',
       'card.day': '1 day',
@@ -176,6 +177,7 @@ window.MASAR_I18N = (function () {
       'spec.duration': 'المدة',
       'spec.fee': 'الرسوم',
       'search.format': 'أي نمط دراسة',
+      'search.see': 'اعرض {n}',
       'home.programmes': '{n} برامج',
       'card.days': '{n} أيام',
       'card.day': 'يوم واحد',
@@ -252,7 +254,7 @@ window.MASAR_I18N = (function () {
   /* Arabic counts genuinely need six forms — doing this properly is the
      difference between a translated site and a localised one. */
   function courseCount(n) {
-    if (LANG !== 'ar') return n === 1 ? '1 course' : n.toLocaleString('en') + ' courses';
+    if (LANG !== 'ar') return n === 1 ? '1 programme' : n.toLocaleString('en') + ' programmes';
     if (n === 0) return 'لا توجد برامج';
     if (n === 1) return 'برنامج واحد';
     if (n === 2) return 'برنامجان';

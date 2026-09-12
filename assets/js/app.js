@@ -404,6 +404,33 @@
       fmtSel.innerHTML = '<option value="">' + esc(t('search.format')) + '</option>' +
         D.formats.map((f) => '<option value="' + f.id + '">' + esc(pick(f)) + '</option>').join('');
     }
+    /* The hero is the filter: as the selects change, the button says how many
+       programmes the search would return. */
+    const heroForm = document.querySelector('.hero-search');
+    if (heroForm) {
+      const btn = heroForm.querySelector('button[type="submit"]');
+      const base = btn ? btn.textContent : '';
+      const q = heroForm.querySelector('input[name="q"]');
+      const paint = function () {
+        const subj = heroForm.querySelector('[data-hero-subject]');
+        const fmt = heroForm.querySelector('[data-hero-format]');
+        const s = subj ? subj.value : '', f = fmt ? fmt.value : '';
+        const text = q && q.value ? q.value.toLowerCase().trim() : '';
+        if (!s && !f && !text) { btn.textContent = base; return; }
+        const n = D.courses.filter(function (c) {
+          if (s && c.subject !== s) return false;
+          if (f && c.format !== f) return false;
+          if (text) {
+            const hay = [pick(c.title), pick(schoolOf(c).name), subjectLabel(c.subject)].join(' ').toLowerCase();
+            if (hay.indexOf(text) === -1) return false;
+          }
+          return true;
+        }).length;
+        btn.textContent = t('search.see', { n: I.courseCount(n) });
+      };
+      heroForm.querySelectorAll('select').forEach((el) => el.addEventListener('change', paint));
+      if (q) q.addEventListener('input', paint);
+    }
     const subjSel = document.querySelector('[data-hero-subject]');
     if (subjSel) {
       subjSel.innerHTML = '<option value="">' + esc(t('search.subject')) + '</option>' +

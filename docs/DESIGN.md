@@ -14,6 +14,10 @@ The research behind it is in `docs/research/`:
   anti-patterns to avoid.
 - `ksa-market-and-brand.md` — how executive education is actually bought in
   the Kingdom, Saudi digital-design conventions, typefaces, palettes, tone.
+- `premium-editorial-references.md` — Porto Business School (an Awwwards
+  Honorable Mention in 2018, not a Site of the Day; the live 2025–26 rebuild
+  was measured instead), MIT Sloan, MasterClass and recent award-winning
+  editorial sites: ten buildable moves and five award-site habits to avoid.
 
 ## The idea
 
