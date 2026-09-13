@@ -69,7 +69,11 @@ in a `.rejected.csv` with reasons.
 
 ## What the Actor does — and refuses to do
 
-- **robots.txt is respected** (`respect_robots_txt_file=True`) and requests
+- **robots.txt is respected** (`respect_robots_txt_file=True`) — but note
+  that a crawler only checks the rules for its OWN user agent. A site may
+  disallow AI agents by name while allowing the generic `*` agent; see
+  `docs/research/source-site-legal-position.md` for a live example, and
+  check the target's robots.txt yourself before trusting a green run. Requests
   are throttled (`requestsPerMinute`, default 30). A hard page budget caps
   the crawl.
 - **Extraction prefers schema.org JSON-LD** (Course / Event / Product nodes,

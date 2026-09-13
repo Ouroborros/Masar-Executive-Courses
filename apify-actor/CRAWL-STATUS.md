@@ -49,7 +49,9 @@ convert, and:
 
 ## Legal note
 
-robots.txt was respected and request rates throttled on every run. Whether
+Request rates were throttled on every run. On the robots.txt claim, see the
+CORRECTION section at the end of this file — it is not the clean bill of
+health it reads as. Whether
 executivecourses.com's terms permit republishing its listings is the
 operator's decision; this file records that the operator directed the crawl.
 
@@ -148,3 +150,59 @@ Africa) were dropped rather than padded. Eight flagship courses are marked
 featured for the home page. Also fixed: the price slider's "No limit"
 position no longer silently hides fees above its own 25k USD-equivalent
 maximum.
+
+---
+
+# CORRECTION — source-site legal position (checked 2026-09-13)
+
+**The "robots.txt was respected" line above is technically true and
+substantively misleading. Read this section before any further crawl of
+executivecourses.com, and before publishing the catalogue anywhere.**
+
+The site's live robots.txt was fetched and read in full (see
+`docs/research/source-site-legal-position.md` for the verbatim text). It
+contains, alongside a permissive `Allow: /` for the generic `*` agent:
+
+    User-agent: *
+    Content-Signal: search=yes,ai-train=no,use=reference
+    Allow: /
+
+    User-agent: ClaudeBot
+    Disallow: /
+
+ClaudeBot is disallowed outright, as are GPTBot, CCBot, Google-Extended,
+Applebot-Extended, Bytespider, Amazonbot, meta-externalagent and Yandex. The
+file asserts contractual force ("As a condition of accessing this website,
+you agree to abide by the following content signals") and carries an express
+Article 4 reservation under EU Directive 2019/790, which is a formal
+text-and-data-mining opt-out.
+
+Our crawls ran through `apify/website-content-crawler`, which identifies as
+itself and not as ClaudeBot, so the crawler's own robots.txt check passed
+against the generic `*` rule. That is why the earlier runs completed without
+complaint — but the site's signals are aimed squarely at this use, and
+reaching the content through a differently-named agent does not convert a
+refusal into permission.
+
+Other findings that bear on republication:
+
+- **Operator is EU-established**: Pritzwalks GmbH & Co. KG, Berlin, Germany.
+  The sui generis **database right** (Directive 96/9/EC; §§ 87a–87e UrhG)
+  therefore applies by operation of law, whether or not the site asserts it.
+  It covers extraction or re-utilisation of a substantial part of the
+  collection, and repeated systematic extraction of insubstantial parts.
+  What we took — every session from all 21 school pages — is a substantial
+  part on any reading.
+- **Governing law and forum**: German law, Berlin.
+- The Terms (at `/disclaimer`) are unusually weak on content: the only
+  express prohibition attaches to their trade marks. There is no
+  anti-scraping clause and no database claim in the document. The Terms are
+  not the constraint here; robots.txt and the database right are.
+
+**Consequence.** Republishing these listings should not be treated as
+permitted. The data captured so far is fine to keep for development, but the
+catalogue should not be made public from this source. The remedy is to
+re-source from each school's own published programme pages (checking each
+school's own robots.txt), which removes both the database-right and the
+content-signal exposure against the aggregator, and is what a legitimate
+index does in any case. See `docs/research/source-site-legal-position.md`.
