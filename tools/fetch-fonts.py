@@ -26,20 +26,21 @@ OUT = os.path.join(HERE, "dist", "fonts.css")
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
       "Chrome/124.0.0.0 Safari/537.36")
 
-# Weights are exactly the ones site.css asks for — 400/700/800 for UI text,
-# 600/700 for the serif display, and the Arabic face doing both jobs. Subset
-# names are matched exactly, so latin-ext (which this site never renders)
-# does not sneak in and double the payload.
-# Manrope and Newsreader are variable fonts: asking for a weight *range*
-# returns one file covering it, where listing weights individually returns a
-# full copy of the variable font per weight (Newsreader is 129 KB a time).
-# IBM Plex Sans Arabic is static, so its weights are listed. Its latin subset
-# is skipped — site.css puts Manrope behind it in the Arabic stack, so Latin
-# runs inside Arabic text fall through to a face already being loaded.
+# Weights match the <link> build.py emits, one for one. Subset names are
+# matched exactly, so latin-ext (which this site never renders) does not
+# sneak in and double the payload.
+# Newsreader is a variable font: asking for a weight *range* returns one file
+# covering it, where listing weights individually returns a full copy of the
+# variable font per weight. The static families list their weights.
+# The Arabic faces skip their latin subset — site.css puts Archivo behind
+# them in the Arabic stack, so Latin runs inside Arabic text fall through to
+# a face already being loaded.
 FAMILIES = [
-    ("Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800", {"latin"}),
-    ("Reem+Kufi:wght@500..700", {"arabic"}),
-    ("IBM+Plex+Sans+Arabic:wght@400;500;600;700", {"arabic"}),
+    ("Newsreader:opsz,wght@6..72,300..500", {"latin"}),
+    ("Archivo:wght@400;500;600", {"latin"}),
+    ("IBM+Plex+Mono:wght@400;500", {"latin"}),
+    ("Markazi+Text:wght@500;600", {"arabic"}),
+    ("IBM+Plex+Sans+Arabic:wght@400;500;600", {"arabic"}),
 ]
 
 

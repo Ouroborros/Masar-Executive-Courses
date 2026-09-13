@@ -1,13 +1,15 @@
 /* ==========================================================================
-   Masar — sample catalogue data
+   Masar — catalogue data
    --------------------------------------------------------------------------
    Every human-readable string is stored as { en, ar } so both locales render
    from one source of truth. Plain JS (not JSON) so the site works from
    file:// without a server — fetch() would be blocked there.
 
-   NOTE: the schools below are fictional. This is demo data for a portfolio
-   project; inventing dates and prices for real institutions would misrepresent
-   them. Swap in a real feed before this is ever used for anything.
+   Schools, programmes, dates and fees below are real listings, written by
+   tools/merge-catalogue.py from the crawl pipeline. Fees are stored in the
+   school's own published currency; the riyal figure is computed for display
+   only, from the snapshot in tools/fx.py. Nothing here is invented: a field
+   we have not recorded is empty, and the site prints an em dash for it.
    ========================================================================== */
 
 window.MASAR_DATA = (function () {
@@ -179,7 +181,8 @@ window.MASAR_DATA = (function () {
     }
   ];
 
-  /* start: ISO date · days: teaching days · price: USD · rating out of 5 */
+  /* start: ISO date · days: teaching days · price + currency: the school's own
+     published figure · sourceUrl: internal provenance, never rendered */
   const courses = [
     {
       id: 'c-leadership-for-the-21st-century', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',

@@ -1,372 +1,338 @@
 /* ==========================================================================
    Masar — locale runtime
-   The page shells carry their own translated markup; this file covers every
-   string that JavaScript renders (cards, filters, result counts, detail
-   pages). Locale is read from <html lang>, so nothing here needs configuring
-   per page.
+
+   Every string the JS renders, in both languages, plus the formatters the
+   ledger depends on: dual dating (Gregorian + Umm al-Qura), the fee lockup,
+   Arabic number agreement, and the search normaliser. Locale comes from
+   <html lang>, so nothing here needs configuring per page.
    ========================================================================== */
 
 window.MASAR_I18N = (function () {
   const LANG = document.documentElement.lang === 'ar' ? 'ar' : 'en';
   const IS_RTL = LANG === 'ar';
+  const AR = IS_RTL;
 
   const strings = {
     en: {
-      'search.keyword': 'Course, subject or school',
-      'search.subject': 'All subjects',
-      'search.location': 'Anywhere',
-      'search.submit': 'Search courses',
-
-      'filters.title': 'Refine',
-      'filters.subject': 'Subject',
-      'filters.format': 'Format',
-      'filters.region': 'Region',
-      'filters.language': 'Taught in',
-      'filters.duration': 'Duration',
-      'filters.price': 'Maximum price',
-      'filters.school': 'School',
-      'filters.clear': 'Clear all',
-      'filters.show': 'Filters',
-      'filters.hide': 'Done',
-      'filters.any': 'Any',
-      'filters.upTo': 'Up to {n}',
-      'filters.noMax': 'No limit',
-
-      'currency.label': 'Prices in',
-      'currency.orig': 'Original prices',
-      'currency.sar': 'Saudi riyal',
-      'currency.note': 'SAR amounts are converted at indicative rates.',
-
-      'duration.short': '1–3 days',
-      'duration.mid': '4–7 days',
-      'duration.long': '8 days or more',
-
-      'sort.label': 'Sort by',
-      'sort.date': 'Starting soonest',
-      'sort.popular': 'Most popular',
-      'sort.rating': 'Highest rated',
-      'sort.priceAsc': 'Price: low to high',
-      'sort.priceDesc': 'Price: high to low',
-
-      'results.none.title': 'No courses match those filters',
-      'results.none.body': 'Try widening the region or removing the price limit.',
-      'results.reset': 'Clear all filters',
-      'results.showing': 'Showing {n}',
-
-      'card.from': 'from',
-      'card.new': 'New',
-      'spec.days': 'Days',
-      'tile.next': 'Next start',
-      'tile.teamsLabel': 'For teams',
-      'tile.teams': 'Enrolling a team? Ask for a group booking or a closed cohort.',
-      'tile.teamsCta': 'Request a proposal',
-      'course.team': 'Enrol a team',
-      'spec.start': 'Starts',
-      'spec.location': 'Location',
-      'spec.duration': 'Duration',
+      'spec.starts': 'Starts',
+      'spec.school': 'School',
+      'spec.city': 'City',
+      'spec.country': 'Country',
+      'spec.days': 'Teaching days',
       'spec.fee': 'Fee',
-      'search.format': 'Any format',
-      'search.see': 'See {n}',
-      'home.programmes': '{n} programmes',
-      'card.days': '{n} days',
-      'card.day': '1 day',
-      'card.starts': 'Starts {date}',
-      'card.reviews': '{n} reviews',
+      'spec.format': 'Format',
+      'spec.language': 'Language of delivery',
+      'spec.ends': 'Ends',
+      'spec.subject': 'Field',
+      'spec.programmes': 'Programmes',
+
+      'sort.date': 'Date',
+      'sort.fee': 'Fee',
+      'sort.days': 'Days',
+      'sort.school': 'School',
+      'sort.name': 'Name',
+      'sort.count': 'Programmes',
+
+      'form.nocourse': 'Not decided yet',
+      'facet.subject': 'Field',
+      'facet.format': 'Format',
+      'facet.city': 'City',
+      'facet.country': 'Country',
+      'facet.month': 'Month',
+      'facet.days': 'Teaching days',
+      'facet.fee': 'Fee band',
+      'facet.language': 'Language of delivery',
+      'facet.school': 'School',
+      'facet.clear': 'Clear all',
+      'facet.filters': 'Filters',
+      'facet.show': 'Show results',
+      'facet.remove': 'Remove filter',
+
+      'days.1': '1–3 days',
+      'days.2': '4–6 days',
+      'days.3': '1–3 weeks',
+      'days.4': '4 weeks or more',
+
+      'results.match': 'programmes match.',
+      'results.none': 'Nothing here matches that.',
+      'results.noneBody': 'The full index holds {n} across {s} — a wider search will find them.',
+      'results.widen': 'Clear the filters',
+      'results.more': 'Show {n} more',
+      'results.showing': 'Showing {a} of {b}',
+
       'card.save': 'Save',
       'card.saved': 'Saved',
       'card.saveA11y': 'Save {title} to your shortlist',
+      'card.rowA11y': '{title} — {school}, {city}, starts {date}, {days}, {fee}',
 
-      'course.about': 'About this programme',
-      'course.blurb': '{school} runs this programme over {days} — {format} delivery, {place} — '
-        + 'with instruction in {langs}. The next cohort starts on {date}.',
-      'course.highlights': 'What you will do',
-      'course.audience': 'Who it is for',
-      'course.facts': 'At a glance',
-      'course.format': 'Format',
-      'course.duration': 'Duration',
-      'course.start': 'Next start',
-      'course.price': 'Fee',
-      'course.language': 'Taught in',
-      'course.subject': 'Subject',
-      'course.location': 'Location',
-      'course.request': 'Request information',
-      'course.brochure': 'Download brochure',
-      'course.school': 'Offered by',
-      'course.schoolLink': 'All courses from this school',
-      'course.similar': 'Similar programmes',
-      'course.notFound': 'That course could not be found.',
-      'course.back': 'Browse all courses',
-
-      'school.founded': 'Founded',
-      'school.accreditation': 'Accreditation',
-      'school.location': 'Location',
-      'school.courses': 'Courses from this school',
-      'school.count': '{n} courses',
-      'school.notFound': 'That school could not be found.',
-      'school.back': 'Browse all schools',
-      'school.view': 'View school',
-
-      'list.notFound': 'That collection could not be found.',
-      'list.back': 'All collections',
-      'list.count': '{n} courses',
-
-      'shortlist.title': 'Your shortlist',
-      'shortlist.empty': 'Nothing saved yet. Use the Save button on any course to keep it here.',
-      'shortlist.clear': 'Clear shortlist',
-      'shortlist.open': 'Shortlist',
+      'shortlist.empty': 'Nothing saved yet. The heart on any row keeps it here.',
       'shortlist.remove': 'Remove',
+      'shortlist.clear': 'Empty the shortlist',
+      'shortlist.copy': 'Copy as text',
+      'shortlist.copied': 'Copied',
 
-      'a11y.close': 'Close',
-      'misc.free': 'On request',
+      'fee.indicative': '≈ {sar} · indicative, rate of {date} · not a quote',
+      'fee.published': 'as published',
+
+      'rec.enrol': 'Enrol with the school.',
+      'rec.enrolBody': 'Masar points you at the intake. The contract, the classroom and the certificate stay with the school.',
+      'rec.proposal': 'Request a proposal',
+      'rec.hours': 'Answered in Riyadh hours, Sunday to Thursday.',
+      'rec.other': 'Other programmes at this school',
+      'rec.similar': 'Other programmes in this field',
+      'rec.notFound': 'No such programme in the index.',
+      'rec.back': 'Back to the index',
+
+      'school.notFound': 'No such school in the index.',
+      'school.back': 'Back to the schools',
+      'set.notFound': 'No such set in the index.',
+      'set.back': 'Back to the sets',
+      'set.basis': 'Selected by the editors on the basis stated here. A selection, not a ranking.',
+
       'misc.online': 'Online',
-      'misc.viewAll': 'View all'
+      'misc.and': 'and',
+      'currency.orig': 'Fees as published',
+      'currency.sar': 'Fees in riyals',
+      'theme.label': 'Ground',
     },
-
     ar: {
-      'search.keyword': 'برنامج أو تخصّص أو كلية',
-      'search.subject': 'كل التخصّصات',
-      'search.location': 'كل المواقع',
-      'search.submit': 'ابحث عن البرامج',
-
-      'filters.title': 'تصفية النتائج',
-      'filters.subject': 'التخصّص',
-      'filters.format': 'نمط الدراسة',
-      'filters.region': 'المنطقة',
-      'filters.language': 'لغة التدريس',
-      'filters.duration': 'المدّة',
-      'filters.price': 'الحدّ الأعلى للرسوم',
-      'filters.school': 'الكلية',
-      'filters.clear': 'مسح الكل',
-      'filters.show': 'التصفية',
-      'filters.hide': 'تم',
-      'filters.any': 'الكل',
-      'filters.upTo': 'حتى {n}',
-      'filters.noMax': 'بلا حدّ',
-
-      'currency.label': 'الأسعار بـ',
-      'currency.orig': 'عملة البرنامج',
-      'currency.sar': 'الريال السعودي',
-      'currency.note': 'مبالغ الريال محوّلة بأسعار صرف استرشادية.',
-
-      'duration.short': '1–3 أيام',
-      'duration.mid': '4–7 أيام',
-      'duration.long': '8 أيام فأكثر',
-
-      'sort.label': 'الترتيب',
-      'sort.date': 'الأقرب بدءًا',
-      'sort.popular': 'الأكثر رواجًا',
-      'sort.rating': 'الأعلى تقييمًا',
-      'sort.priceAsc': 'الرسوم: من الأقل',
-      'sort.priceDesc': 'الرسوم: من الأعلى',
-
-      'results.none.title': 'لا توجد برامج مطابقة لهذه المعايير',
-      'results.none.body': 'جرّب توسيع نطاق المنطقة أو رفع الحدّ الأعلى للرسوم.',
-      'results.reset': 'مسح كل عوامل التصفية',
-      'results.showing': 'عرض {n}',
-
-      'card.from': 'تبدأ من',
-      'card.new': 'جديد',
-      'spec.days': 'الأيام',
-      'tile.next': 'أقرب موعد بدء',
-      'tile.teamsLabel': 'للفرق',
-      'tile.teams': 'تسجّل فريقًا؟ اطلب حجزًا جماعيًا أو دفعة مغلقة.',
-      'tile.teamsCta': 'اطلب عرضًا',
-      'course.team': 'سجّل فريقًا',
-      'spec.start': 'يبدأ',
-      'spec.location': 'الموقع',
-      'spec.duration': 'المدة',
+      'spec.starts': 'يبدأ',
+      'spec.school': 'الكلية',
+      'spec.city': 'المدينة',
+      'spec.country': 'الدولة',
+      'spec.days': 'أيام التدريس',
       'spec.fee': 'الرسوم',
-      'search.format': 'أي نمط دراسة',
-      'search.see': 'اعرض {n}',
-      'home.programmes': '{n} برامج',
-      'card.days': '{n} أيام',
-      'card.day': 'يوم واحد',
-      'card.starts': 'يبدأ في {date}',
-      'card.reviews': '{n} تقييمًا',
-      'card.save': 'حفظ',
+      'spec.format': 'نمط الدراسة',
+      'spec.language': 'لغة التدريس',
+      'spec.ends': 'ينتهي',
+      'spec.subject': 'الحقل',
+      'spec.programmes': 'البرامج',
+
+      'sort.date': 'التاريخ',
+      'sort.fee': 'الرسوم',
+      'sort.days': 'الأيام',
+      'sort.school': 'الكلية',
+      'sort.name': 'الاسم',
+      'sort.count': 'عدد البرامج',
+
+      'form.nocourse': 'لم أُحدِّد بعد',
+      'facet.subject': 'الحقل',
+      'facet.format': 'نمط الدراسة',
+      'facet.city': 'المدينة',
+      'facet.country': 'الدولة',
+      'facet.month': 'الشهر',
+      'facet.days': 'أيام التدريس',
+      'facet.fee': 'شريحة الرسوم',
+      'facet.language': 'لغة التدريس',
+      'facet.school': 'الكلية',
+      'facet.clear': 'امسح الكل',
+      'facet.filters': 'التصفية',
+      'facet.show': 'اعرض النتائج',
+      'facet.remove': 'أزل المرشّح',
+
+      'days.1': '١–٣ أيام',
+      'days.2': '٤–٦ أيام',
+      'days.3': 'أسبوع إلى ٣ أسابيع',
+      'days.4': '٤ أسابيع فأكثر',
+
+      'results.match': 'مطابقة للبحث.',
+      'results.none': 'لا شيء هنا يطابق ذلك.',
+      'results.noneBody': 'يضمّ الفهرس كاملًا {n} من {s} — وبحث أوسع سيجدها.',
+      'results.widen': 'امسح المرشّحات',
+      'results.more': 'اعرض {n} إضافية',
+      'results.showing': 'معروض {a} من {b}',
+
+      'card.save': 'احفظ',
       'card.saved': 'محفوظ',
-      'card.saveA11y': 'حفظ {title} في قائمتك',
+      'card.saveA11y': 'احفظ {title} في قائمتك',
+      'card.rowA11y': '{title} — {school}، {city}، يبدأ {date}، {days}، {fee}',
 
-      'course.about': 'عن البرنامج',
-      'course.blurb': 'يُقدَّم هذا البرنامج من {school} على مدى {days} — {format}، {place} — '
-        + 'ولغة التدريس: {langs}. تبدأ الدفعة القادمة في {date}.',
-      'course.highlights': 'ماذا ستفعل خلال البرنامج',
-      'course.audience': 'لمن هذا البرنامج',
-      'course.facts': 'نظرة سريعة',
-      'course.format': 'نمط الدراسة',
-      'course.duration': 'المدّة',
-      'course.start': 'أقرب موعد',
-      'course.price': 'الرسوم',
-      'course.language': 'لغة التدريس',
-      'course.subject': 'التخصّص',
-      'course.location': 'الموقع',
-      'course.request': 'اطلب معلومات',
-      'course.brochure': 'حمّل الكتيّب',
-      'course.school': 'تقدّمه',
-      'course.schoolLink': 'كل برامج هذه الكلية',
-      'course.similar': 'برامج مشابهة',
-      'course.notFound': 'تعذّر العثور على هذا البرنامج.',
-      'course.back': 'تصفّح كل البرامج',
+      'shortlist.empty': 'لم تحفظ شيئًا بعد. زرّ الحفظ في أي سطر يبقيه هنا.',
+      'shortlist.remove': 'أزل',
+      'shortlist.clear': 'أفرغ القائمة',
+      'shortlist.copy': 'انسخ نصًّا',
+      'shortlist.copied': 'نُسخ',
 
-      'school.founded': 'سنة التأسيس',
-      'school.accreditation': 'الاعتمادات',
-      'school.location': 'الموقع',
-      'school.courses': 'برامج هذه الكلية',
-      'school.count': '{n}',
-      'school.notFound': 'تعذّر العثور على هذه الكلية.',
-      'school.back': 'تصفّح كل الكليات',
-      'school.view': 'عرض الكلية',
+      'fee.indicative': '≈ {sar} · استرشادي، بسعر {date} · ليس عرض سعر',
+      'fee.published': 'كما نُشرت',
 
-      'list.notFound': 'تعذّر العثور على هذه المجموعة.',
-      'list.back': 'كل المجموعات',
-      'list.count': '{n}',
+      'rec.enrol': 'سجّل لدى الكلية.',
+      'rec.enrolBody': 'يدلّك «مسار» على الدفعة. أما العقد والقاعة والشهادة فتبقى لدى الكلية.',
+      'rec.proposal': 'اطلب عرضًا',
+      'rec.hours': 'نردّ بتوقيت الرياض، من الأحد إلى الخميس.',
+      'rec.other': 'برامج أخرى في هذه الكلية',
+      'rec.similar': 'برامج أخرى في هذا الحقل',
+      'rec.notFound': 'لا يوجد برنامج بهذا الاسم في الفهرس.',
+      'rec.back': 'العودة إلى الفهرس',
 
-      'shortlist.title': 'قائمتك المختارة',
-      'shortlist.empty': 'لم تحفظ أي برنامج بعد. استخدم زر «حفظ» في أي برنامج ليظهر هنا.',
-      'shortlist.clear': 'إفراغ القائمة',
-      'shortlist.open': 'قائمتي',
-      'shortlist.remove': 'إزالة',
+      'school.notFound': 'لا توجد كلية بهذا الاسم في الفهرس.',
+      'school.back': 'العودة إلى الكليات',
+      'set.notFound': 'لا توجد مجموعة بهذا الاسم في الفهرس.',
+      'set.back': 'العودة إلى المجموعات',
+      'set.basis': 'اختارها فريق التحرير على الأساس المذكور هنا. اختيار، لا تصنيف.',
 
-      'a11y.close': 'إغلاق',
-      'misc.free': 'عند الطلب',
       'misc.online': 'عن بُعد',
-      'misc.viewAll': 'عرض الكل'
+      'misc.and': 'و',
+      'currency.orig': 'الرسوم كما نُشرت',
+      'currency.sar': 'الرسوم بالريال',
+      'theme.label': 'الخلفية',
     }
   };
 
   function t(key, vars) {
     let out = (strings[LANG] && strings[LANG][key]) || strings.en[key] || key;
-    if (vars) {
-      Object.keys(vars).forEach(function (k) {
-        out = out.replace('{' + k + '}', vars[k]);
-      });
-    }
+    if (vars) Object.keys(vars).forEach(function (k) { out = out.replace('{' + k + '}', vars[k]); });
     return out;
   }
 
-  /* Pick the localised half of a { en, ar } pair. */
   function pick(pair) {
     if (pair == null) return '';
     if (typeof pair === 'string') return pair;
-    return pair[LANG] != null ? pair[LANG] : pair.en;
+    return pair[LANG] != null && pair[LANG] !== '' ? pair[LANG] : pair.en;
   }
 
-  /* Arabic counts genuinely need six forms — doing this properly is the
-     difference between a translated site and a localised one. */
-  function courseCount(n) {
-    if (LANG !== 'ar') return n === 1 ? '1 programme' : n.toLocaleString('en') + ' programmes';
-    if (n === 0) return 'لا توجد برامج';
-    if (n === 1) return 'برنامج واحد';
-    if (n === 2) return 'برنامجان';
-    if (n <= 10) return n + ' برامج';
-    return n + ' برنامجًا';
-  }
-
-  function dayCount(n) {
-    if (LANG !== 'ar') return n === 1 ? '1 day' : n + ' days';
-    if (n === 1) return 'يوم واحد';
-    if (n === 2) return 'يومان';
-    if (n <= 10) return n + ' أيام';
-    return n + ' يومًا';
-  }
-
-  const numLocale = LANG === 'ar' ? 'ar-u-nu-latn' : 'en';
-
-  /* Fees are stored in each course's original currency; the viewer can opt
-     into seeing everything converted to SAR (rates: MASAR_DATA.fx, a dated
-     snapshot — display only, not billing). */
-  const CURRENCY_KEY = 'masar-currency';
-
-  function getCurrency() {
-    try {
-      return localStorage.getItem(CURRENCY_KEY) === 'sar' ? 'sar' : 'orig';
-    } catch (e) { return 'orig'; }
-  }
-
-  function setCurrency(pref) {
-    try { localStorage.setItem(CURRENCY_KEY, pref === 'sar' ? 'sar' : 'orig'); } catch (e) {}
-  }
-
-  function fxTable() {
-    return (window.MASAR_DATA && window.MASAR_DATA.fx) || { sarPerUsd: 3.75, usdPer: { USD: 1 } };
-  }
-
-  /* USD equivalent of a fee — used for the price filter and price sorting so
-     mixed currencies compare on one scale. Unknown codes fall back 1:1. */
-  function toUsd(value, currency) {
-    const rate = fxTable().usdPer[currency || 'USD'];
-    return value * (rate == null ? 1 : rate);
-  }
-
-  function format(value, code) {
-    try {
-      /* A bare "$" would make an Australian or Canadian fee read as US
-         dollars, so only USD gets the narrow symbol; others keep their
-         qualifier (A$, CA$, CHF, DKK…). */
-      return new Intl.NumberFormat(numLocale, {
-        style: 'currency', currency: code,
-        currencyDisplay: code === 'USD' ? 'narrowSymbol' : 'symbol', maximumFractionDigits: 0
-      }).format(value);
-    } catch (e) {
-      return value.toLocaleString('en') + ' ' + code;
-    }
-  }
-
-  /* Format a fee in its own currency (default), or converted to SAR when the
-     viewer selected the SAR option. */
-  function money(value, currency) {
-    const code = currency || 'USD';
-    if (getCurrency() === 'sar') {
-      return format(Math.round(toUsd(value, code) * fxTable().sarPerUsd), 'SAR');
-    }
-    return format(value, code);
-  }
-
-  function shortDate(iso) {
-    const d = new Date(iso + 'T00:00:00');
-    try {
-      return new Intl.DateTimeFormat(numLocale, {
-        day: 'numeric', month: 'short', year: 'numeric'
-      }).format(d);
-    } catch (e) {
-      return iso;
-    }
-  }
-
-  /* Umm al-Qura Hijri date for the same day — shown beside the Gregorian
-     date so a cohort can be placed against Ramadan and the Eids at a glance. */
-  function hijriDate(iso) {
-    const d = new Date(iso + 'T00:00:00');
-    try {
-      return new Intl.DateTimeFormat(
-        LANG === 'ar' ? 'ar-SA-u-ca-islamic-umalqura-nu-latn' : 'en-u-ca-islamic-umalqura',
-        { day: 'numeric', month: 'short', year: 'numeric' }
-      ).format(d);
-    } catch (e) {
-      return '';
-    }
-  }
-
-  function dayMonth(iso) {
-    const d = new Date(iso + 'T00:00:00');
-    try {
-      return new Intl.DateTimeFormat(numLocale, { day: 'numeric', month: 'short' }).format(d);
-    } catch (e) { return iso.slice(5); }
-  }
-
-  function monthLabel(iso) {
-    const d = new Date(iso + 'T00:00:00');
-    try {
-      return new Intl.DateTimeFormat(numLocale, { month: 'long', year: 'numeric' }).format(d);
-    } catch (e) {
-      return iso.slice(0, 7);
-    }
-  }
+  const numLocale = AR ? 'ar-u-nu-latn' : 'en';
 
   function num(n) {
     try { return new Intl.NumberFormat(numLocale).format(n); } catch (e) { return String(n); }
   }
 
-  return { LANG, IS_RTL, t, pick, courseCount, dayCount, money, toUsd,
-    getCurrency, setCurrency, shortDate, hijriDate, dayMonth, monthLabel, num };
+  /* --- Arabic number agreement ------------------------------------------- */
+  /* 1 → singular, 2 → dual, 3–10 → plural, 11+ → singular accusative. */
+  function agree(n, forms) {
+    if (!AR) return n === 1 ? '1 ' + forms.en1 : num(n) + ' ' + forms.en;
+    if (n === 0) return forms.zero;
+    if (n === 1) return forms.one;
+    if (n === 2) return forms.two;
+    if (n <= 10) return num(n) + ' ' + forms.few;
+    return num(n) + ' ' + forms.many;
+  }
+
+  const programmeCount = (n) => agree(n, {
+    en1: 'programme', en: 'programmes',
+    zero: 'لا برامج', one: 'برنامج واحد', two: 'برنامجان', few: 'برامج', many: 'برنامجًا'
+  });
+  const schoolCount = (n) => agree(n, {
+    en1: 'school', en: 'schools',
+    zero: 'لا كليات', one: 'كلية واحدة', two: 'كليتان', few: 'كليات', many: 'كلية'
+  });
+  const intakeCount = (n) => agree(n, {
+    en1: 'intake', en: 'intakes',
+    zero: 'لا دفعات', one: 'دفعة واحدة', two: 'دفعتان', few: 'دفعات', many: 'دفعةً'
+  });
+  const dayCount = (n) => agree(n, {
+    en1: 'day', en: 'days',
+    zero: 'لا أيام', one: 'يوم واحد', two: 'يومان', few: 'أيام', many: 'يومًا'
+  });
+
+  /* --- Dates -------------------------------------------------------------- */
+  /* Anchored at midday UTC so a timezone never shifts the calendar day. */
+  const at = (iso) => new Date(iso + 'T12:00:00Z');
+
+  function fmt(iso, opts, locale) {
+    try { return new Intl.DateTimeFormat(locale || numLocale, opts).format(at(iso)); }
+    catch (e) { return iso; }
+  }
+
+  const shortDate = (iso) => fmt(iso, { day: 'numeric', month: 'short', year: 'numeric' });
+  const longDate  = (iso) => fmt(iso, { day: 'numeric', month: 'long', year: 'numeric' });
+  const dayNum    = (iso) => fmt(iso, { day: 'numeric' });
+  const monthAbbr = (iso) => fmt(iso, { month: 'short' });
+  const monthLabel = (iso) => fmt(iso, { month: 'long', year: 'numeric' });
+
+  /* The Hijri date is rendered in Arabic script with هـ in BOTH locales — a
+     Latin transliteration of an Umm al-Qura month is nobody's convention. */
+  function hijri(iso) {
+    try {
+      return new Intl.DateTimeFormat('ar-SA-u-ca-islamic-umalqura-nu-latn',
+        { day: 'numeric', month: 'long', year: 'numeric' }).format(at(iso)) + 'هـ';
+    } catch (e) { return ''; }
+  }
+
+  function todayISO() {
+    const d = new Date();
+    return [d.getFullYear(), String(d.getMonth() + 1).padStart(2, '0'),
+            String(d.getDate()).padStart(2, '0')].join('-');
+  }
+
+  /* --- Money -------------------------------------------------------------- */
+  const CURRENCY_KEY = 'masar-currency';
+
+  function getCurrency() {
+    try { return localStorage.getItem(CURRENCY_KEY) === 'sar' ? 'sar' : 'orig'; }
+    catch (e) { return 'orig'; }
+  }
+  function setCurrency(v) {
+    try { localStorage.setItem(CURRENCY_KEY, v === 'sar' ? 'sar' : 'orig'); } catch (e) {}
+  }
+
+  const fx = () => (window.MASAR_DATA && window.MASAR_DATA.fx) || { sarPerUsd: 3.75, usdPer: { USD: 1 }, asOf: '' };
+
+  function toUsd(value, currency) {
+    const r = fx().usdPer[currency || 'USD'];
+    return value * (r == null ? 1 : r);
+  }
+  const toSar = (value, currency) => Math.round(toUsd(value, currency) * fx().sarPerUsd);
+
+  /* Amount without a symbol — the currency code is set separately in the
+     fee lockup, tracked, in the index track. */
+  function amount(n) {
+    try { return new Intl.NumberFormat(numLocale, { maximumFractionDigits: 0 }).format(n); }
+    catch (e) { return String(n); }
+  }
+
+  /* The pair a fee is printed as: a primary figure and the line beneath it.
+     Default keeps the school's own currency; the toggle promotes the riyal. */
+  function fee(price, currency) {
+    const code = currency || 'USD';
+    const sar = toSar(price, code);
+    if (getCurrency() === 'sar') {
+      return { code: 'SAR', amount: amount(sar),
+               sub: code + ' ' + amount(price) + ' · ' + t('fee.published') };
+    }
+    return { code: code, amount: amount(price),
+             sub: t('fee.indicative', { sar: 'SAR ' + amount(sar), date: fxDate() }) };
+  }
+
+  function fxDate() {
+    const a = fx().asOf;
+    if (!a) return '';
+    const parts = String(a).split('-');
+    if (parts.length < 2) return a;
+    try {
+      return new Intl.DateTimeFormat(numLocale, { month: 'long', year: 'numeric' })
+        .format(new Date(Date.UTC(+parts[0], +parts[1] - 1, 1)));
+    } catch (e) { return a; }
+  }
+
+  /* A compact one-line fee, for the drawer and the mobile bar. */
+  const feeLine = (price, currency) => {
+    const f = fee(price, currency);
+    return f.code + ' ' + f.amount;
+  };
+
+  /* --- Text --------------------------------------------------------------- */
+  /* Arabic search has to survive alef and taa-marbuta variants on both the
+     index and the query, or a search for لوزان misses لوزان. */
+  function normalise(s) {
+    return String(s || '').toLowerCase()
+      .replace(/[أإآٱ]/g, 'ا')
+      .replace(/ة/g, 'ه')
+      .replace(/ى/g, 'ي')
+      .replace(/[ً-ْـ]/g, '')
+      .trim();
+  }
+
+  const collator = (() => {
+    try { return new Intl.Collator(AR ? 'ar' : 'en', { sensitivity: 'base', numeric: true }); }
+    catch (e) { return { compare: (a, b) => String(a).localeCompare(String(b)) }; }
+  })();
+
+  return {
+    LANG, IS_RTL, t, pick, num,
+    programmeCount, schoolCount, intakeCount, dayCount,
+    shortDate, longDate, dayNum, monthAbbr, monthLabel, hijri, todayISO,
+    getCurrency, setCurrency, toUsd, toSar, amount, fee, feeLine, fxDate,
+    normalise, collator
+  };
 })();

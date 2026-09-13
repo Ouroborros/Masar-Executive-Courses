@@ -3,60 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>مسار — البرامج التنفيذية من كليات الأعمال حول العالم</title>
-  <meta name="description" content="ابحث في برامج التعليم التنفيذي من كليات إدارة الأعمال حول العالم حسب التخصّص والمنطقة ونمط الدراسة واللغة والرسوم. مجاني وثنائي اللغة وبلا إدراج مدفوع.">
+  <title>مسار — فهرس مستقل للبرامج التنفيذية</title>
+  <meta name="description" content="الرسوم والمدينة والتواريخ للبرامج التنفيذية مفتوحة التسجيل من إم آي تي سلون وآي إم دي وكيلوغ وكلية كينيدي في هارفارد وغيرها. بلا تصنيفات وبلا إدراج مدفوع.">
   <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
   <link rel="alternate" hreflang="en" href="../index.html">
   <link rel="alternate" hreflang="ar" href="../ar/index.html">
   <link rel="alternate" hreflang="x-default" href="../index.html">
   <script>
-    /* Set the theme before first paint so the page never flashes light. */
+    /* Ground and script state before first paint: no flash, and nothing is
+       hidden for readers without JS. */
     (function () {
+      var r = document.documentElement;
+      r.className += ' js';
       try {
-        var saved = localStorage.getItem('masar:theme');
-        if (!saved) saved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        document.documentElement.setAttribute('data-theme', saved);
+        var t = localStorage.getItem('masar-theme');
+        if (t === 'light' || t === 'dark') r.setAttribute('data-theme', t);
       } catch (e) {}
     })();
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,600..800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Markazi+Text:wght@500;600&family=Newsreader:opsz,wght@6..72,300..500&display=swap">
   <link rel="stylesheet" href="../assets/css/site.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+  <a class="skip-link" href="#main">تخطَّ إلى الفهرس</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-kufi" lang="ar" dir="rtl" aria-hidden="true">مسار</span>
-        <span class="brand-name">Masar<small>البرامج التنفيذية</small></span>
-      </a>
+  <header class="masthead">
+    <div class="sheet masthead__in">
+      <a class="wordmark" href="index.html" aria-label="Masar"><svg class="wordmark__kufi" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="0" y="1" width="24" height="3.4"/><rect x="20.6" y="1" width="3.4" height="11"/><rect x="8" y="8.6" width="16" height="3.4"/><rect x="8" y="8.6" width="3.4" height="11"/><rect x="0" y="16.2" width="11.4" height="3.4"/></svg><span class="wordmark__ar" lang="ar">مسار</span><span class="wordmark__bar" aria-hidden="true"></span><span class="wordmark__la">Masar</span></a>
 
-      <nav id="main-nav" class="main-nav" aria-label="التنقّل الرئيسي">
+      <nav id="chapnav" class="chapnav" aria-label="الفصول">
         <ul>
-          <li><a href="courses.html">البرامج</a></li>
-          <li><a href="schools.html">الكليات</a></li>
-          <li><a href="lists.html">المجموعات</a></li>
-          <li><a href="about.html">عن مسار</a></li>
-          <li><a href="contact.html">تواصل معنا</a></li>
+            <li><a href="index.html" aria-current="page"><span class="sr-only">§01 </span>الحقول</a></li>
+            <li><a href="courses.html"><span class="sr-only">§02 </span>الفهرس</a></li>
+            <li><a href="schools.html"><span class="sr-only">§03 </span>الكليات</a></li>
+            <li><a href="lists.html"><span class="sr-only">§04 </span>المجموعات</a></li>
+            <li><a href="about.html"><span class="sr-only">§05 </span>المنهج</a></li>
+            <li><a href="contact.html"><span class="sr-only">§06 </span>التواصل</a></li>
         </ul>
       </nav>
 
-      <div class="header-tools">
-        <a class="lang-switch" href="../index.html" data-lang-switch hreflang="en" lang="en"
-           aria-label="Read this page in English">English</a>
-        <button class="icon-btn shortlist-btn" type="button" data-drawer-open aria-label="قائمتي">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-4-6 4V5a1 1 0 0 1 1-1Z"/></svg><span class="shortlist-count" data-shortlist-count>0</span>
-        </button>
-        <button class="icon-btn" type="button" data-theme-toggle aria-label="تبديل مظهر الموقع"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7Z"/></svg></button>
-        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false"
-                aria-controls="main-nav" aria-label="القائمة">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-            <path d="M4 7h16M4 12h16M4 17h16"/>
-          </svg>
-        </button>
+      <div class="tools">
+        <button class="ctl" type="button" data-currency aria-pressed="false">الرسوم كما نُشرت</button>
+        <a class="ctl" href="../index.html" data-lang-switch data-lang-code="EN" hreflang="en" lang="en" aria-label="Read this page in English">English</a>
+        
+        <button class="ctl" type="button" data-drawer-open aria-label="المختارة"><span class="only-wide">المختارة</span><span data-shortlist-count>0</span></button>
+        <button class="ctl nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="chapnav" aria-label="الفصول">الفصول</button>
       </div>
     </div>
   </header>
@@ -64,212 +57,238 @@
   <main id="main">
 
     <section class="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <h1>تعلّم ما يتطلّبه <span class="tint">العقد القادم</span> من القيادة.</h1>
-          </div>
-          <div class="hero-side">
-            <p>برامج مكثّفة من إم آي تي سلون، وآي إم دي، وكيلوغ، وكلية كينيدي في هارفارد واثنتي عشرة كلية أخرى —
-              <span data-stat="courses">189</span> برنامجًا، مع الرسوم والمدينة والتواريخ على كل بطاقة.
-              بالريال أو بعملة الكلية.</p>
-            <p class="tag" lang="en" dir="ltr">Real fees. Real dates.</p>
-          </div>
-        </div>
+      <div class="sheet">
+        <p class="dateline lbl">
+          <span>فهرس مستقل · الرياض</span>
+          <span class="dateline__sep" aria-hidden="true">/</span>
+          <span data-today>—</span>
+          <span class="dateline__sep" aria-hidden="true">/</span>
+          <span class="hijri" data-today-hijri>—</span>
+        </p>
 
-        <form class="hero-search" action="courses.html" method="get" role="search">
-          <div class="field">
-            <label for="q">البحث</label>
-            <input id="q" name="q" type="search" placeholder="برنامج أو تخصّص أو كلية" autocomplete="off">
-          </div>
-          <div class="field">
-            <label for="subject">التخصّص</label>
-            <select id="subject" name="subject" data-hero-subject></select>
-          </div>
-          <div class="field">
-            <label for="format">نمط الدراسة</label>
-            <select id="format" name="format" data-hero-format></select>
-          </div>
-          <button class="btn btn--primary" type="submit">ابحث</button>
-        </form>
-
-        <nav class="ambitions" aria-label="استكشف حسب طموحك">
-          <a class="ambition" href="courses.html?subject=leadership">كن قائدًا أفضل <span class="arw" aria-hidden="true">→</span></a>
-          <a class="ambition" href="courses.html?subject=digital">أتقن استراتيجية الذكاء الاصطناعي <span class="arw" aria-hidden="true">→</span></a>
-          <a class="ambition" href="courses.html?q=chief">انتقل إلى الصف القيادي الأول <span class="arw" aria-hidden="true">→</span></a>
-          <a class="ambition" href="courses.html?subject=finance">افهم التمويل <span class="arw" aria-hidden="true">→</span></a>
-          <a class="ambition" href="courses.html?subject=entrepreneurship">ابنِ مشروعًا جديدًا <span class="arw" aria-hidden="true">→</span></a>
-          <a class="ambition" href="courses.html?subject=negotiation">تفاوض بشكل أفضل <span class="arw" aria-hidden="true">→</span></a>
-        </nav>
-
-        <div class="tiles" data-home-tiles></div>
-
-        <div class="action-bar">
-          <p>اسأل بالعربية أو الإنجليزية — ستصلك الإجابة خلال يومَي عمل، من الأحد إلى الخميس.</p>
-          <div class="row"><a class="btn btn--ghost" href="contact.html">اطلب اتصالًا</a></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
+        <div class="hero__grid">
           <div>
-            <span class="eyebrow">أقرب الدفعات</span>
-            <h2 class="h2">الأقرب بدءًا</h2>
-            <p>مرتّبة حسب تاريخ البدء. تحمل كل بطاقة الرسوم وعدد أيام التدريس ولغة التدريس.</p>
+            <h1>
+              <span class="ln" data-reveal style="--i:0">الرسوم.</span>
+              <span class="ln" data-reveal style="--i:1">المدينة.</span>
+              <span class="ln" data-reveal style="--i:2">التواريخ.</span>
+            </h1>
+            <span class="hero__echo alt-run" lang="en">The fee. The city. The dates.</span>
+            <p class="hero__stand">يفهرس «مسار» البرامج التنفيذية مفتوحة التسجيل من كليات الأعمال
+              حول العالم: الرسوم التي تنشرها كل كلية، والمدينة التي يُدرَّس فيها البرنامج، وتواريخه،
+              وعدد أيام التدريس. لا تصنيف، ولا بيع.</p>
+            <div class="hero__acts">
+              <a class="btn btn--solid" href="courses.html">تصفَّح الفهرس</a>
+              <a class="btn btn--ghost" href="contact.html#teams">سجّل فريقًا</a>
+            </div>
           </div>
-          <a class="link-arrow" href="courses.html?sort=date">التقويم الكامل <span class="arw" aria-hidden="true">→</span></a>
-        </div>
-        <div class="card-grid" data-home-upcoming></div>
-      </div>
-    </section>
 
-    <section class="section section--alt">
-      <div class="container split split--wide">
-        <div>
-          <span class="eyebrow">حسب التخصّص</span>
-          <h2 class="h2">ابدأ ممّا تحتاج إليه لتقود.</h2>
-          <p class="lede" style="margin-block-start:14px">اثنا عشر مجالًا، من حوكمة مجالس الإدارة إلى الذكاء الاصطناعي. الأعداد محدّثة باستمرار.</p>
-        </div>
-        <div class="subject-list" data-home-subjects></div>
-      </div>
-    </section>
-
-
-    <section class="section section--sea">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">لمن يشتري في المملكة</span>
-            <h2 class="h2">مبني على الطريقة التي يُشترى بها التعليم التنفيذي فعلًا.</h2>
-          </div>
-        </div>
-        <div class="feature-grid">
-          <div class="feature">
-            <h3>بالريال، أو بعملة الكلية</h3>
-            <p>تُعرض كل الرسوم كما تنشرها الكلية تمامًا، وتتحوّل إلى الريال بنقرة واحدة. لا أسعار مخفية، ولا حساب يلزم فتحه.</p>
-          </div>
-          <div class="feature">
-            <h3>التاريخان الهجري والميلادي</h3>
-            <p>مواعيد البدء على كل برنامج بالتقويمين، ليسهل التحقّق من موقع الدفعة من رمضان والأعياد والسنة المالية بنظرة واحدة.</p>
-          </div>
-          <div class="feature">
-            <h3>مستشار، لا نموذج لجمع البيانات</h3>
-            <p>اسأل بالعربية أو الإنجليزية وستصلك الإجابة خلال يومَي عمل، من الأحد إلى الخميس. تذهب بياناتك إلى الكلية التي تختارها، ولا إلى أي جهة أخرى.</p>
-            <a class="link-arrow link-arrow--light" href="contact.html">تحدّث مع مستشار <span class="arw" aria-hidden="true">→</span></a>
-          </div>
-          <div class="feature">
-            <h3>دفعات للمنشآت</h3>
-            <p>تسجّل فريقًا أو صفًّا قياديًا كاملًا؟ اطلب عرضًا لحجز جماعي أو لدفعة مغلقة تُقدَّم وفق تقويم منشأتك.</p>
-            <a class="link-arrow link-arrow--light" href="contact.html#corporate">اطلب عرضًا <span class="arw" aria-hidden="true">→</span></a>
+          <div class="totals">
+            <a class="totals__it" href="courses.html">
+              <span class="totals__n num" data-stat="programmes">189</span>
+              <span class="totals__l lbl">برنامجًا</span>
+            </a>
+            <a class="totals__it" href="schools.html">
+              <span class="totals__n num" data-stat="schools">16</span>
+              <span class="totals__l lbl">كلية أعمال</span>
+            </a>
+            <a class="totals__it" href="courses.html">
+              <span class="totals__n num" data-stat="countries">6</span>
+              <span class="totals__l lbl">دولة تُقدَّم فيها</span>
+            </a>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">الكليات</span>
-            <h2 class="h2">بأسمائها، لا بعبارات التفخيم.</h2>
-            <p>كل مؤسسة في الدليل، مع المدينة التي تدرّس منها وعدد برامجها المدرجة.</p>
-          </div>
-          <a class="link-arrow" href="schools.html">كل الكليات <span class="arw" aria-hidden="true">→</span></a>
+    <section class="chapter">
+      <div class="sheet">
+        <div class="chap-head">
+          <span class="chap-num">§01</span>
+          <h2 class="chap-title">الحقول<span class="alt-run">Fields</span></h2>
+          <p class="chap-note">اثنا عشر حقلًا تمرّ عبر الفهرس. اختر واحدًا ليُفتح الفهرس مصفّى عليه.</p>
         </div>
-        <div class="school-strip-grid" data-home-schools></div>
+        <div class="chap-body">
+          <div class="fields" data-home-fields></div>
+        </div>
+      </div>
+    </section>
+    <section class="chapter">
+      <div class="sheet">
+        <div class="chap-head">
+          <span class="chap-num">§02</span>
+          <h2 class="chap-title">أقرب الدفعات<span class="alt-run">The next intakes</span></h2>
+          <p class="chap-note">مجمّعة حسب تاريخ البدء، الأقرب أولًا. عشرة هنا، وبقيتها في الفهرس.</p>
+        </div>
+        <div class="chap-body">
+          <div class="ledger" data-home-ledger></div>
+          <div class="ledger-foot">
+            <a class="btn btn--ghost" href="courses.html" data-all-programmes>اعرض الفهرس كاملًا</a>
+            <span class="lbl">— غير مسجّل</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="chapter">
+      <div class="sheet">
+        <div class="chap-head">
+          <span class="chap-num">§03</span>
+          <h2 class="chap-title">الكليات<span class="alt-run">The schools</span></h2>
+          <p class="chap-note">كل مؤسسة لها برامج في الفهرس، باسمها — بلا شعارات وبلا تصنيفات.</p>
+        </div>
+        <div class="chap-body">
+          <div data-home-schools></div>
+        </div>
       </div>
     </section>
 
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">مجموعات</span>
-            <h2 class="h2">إجابات عن الأسئلة التي يأتي بها الزوّار</h2>
-            <p>اختيارات تحريرية لا تصنيفات. لم يُمنح أي برنامج درجة من مئة.</p>
-          </div>
-          <a class="link-arrow" href="lists.html">كل المجموعات <span class="arw" aria-hidden="true">→</span></a>
+    <section class="chapter chapter--band" id="method">
+      <div class="sheet">
+        <div class="chap-head">
+          <span class="chap-num">§04</span>
+          <h2 class="chap-title">المنهج<span class="alt-run" lang="en">Method</span></h2>
+          <p class="chap-note">كيف يدخل البرنامج إلى الفهرس، وما الذي لن نفعله به.</p>
         </div>
-        <div class="card-grid" data-home-lists></div>
+        <div class="chap-body">
+          <p class="creed">نحن نفهرس، ولا نبيع.</p>
+
+          <div class="tenets">
+            <div class="tenet">
+              <span class="tenet__n">٠١</span>
+              <h3>المصدر</h3>
+              <p>كل سجل مأخوذ من صفحة البرنامج التي تنشرها الكلية نفسها. وما لم تذكره الكلية
+                لا يذكره هذا الفهرس.</p>
+            </div>
+            <div class="tenet">
+              <span class="tenet__n">٠٢</span>
+              <h3>العملة</h3>
+              <p>الرسم رسم الكلية، وبعملتها. ولا نحوّل الرقم الذي ننشره.</p>
+            </div>
+            <div class="tenet">
+              <span class="tenet__n">٠٣</span>
+              <h3>الصمت</h3>
+              <p>الحقل غير المسجّل تُطبَع مكانه شَرطة. والفهرس الذي يملأ فجواته بنفسه ليس فهرسًا.</p>
+            </div>
+            <div class="tenet">
+              <span class="tenet__n">٠٤</span>
+              <h3>الترتيب</h3>
+              <p>لا تصنيفات ولا تقييمات ولا مواضع مميّزة ولا إدراج مدفوع. الترتيب بالتاريخ أو
+                الرسوم أو أيام التدريس أو الكلية — كما تختار أنت.</p>
+            </div>
+          </div>
+
+          <div class="plate">
+            <p class="plate__codes">USD&nbsp;&nbsp;CHF&nbsp;&nbsp;AUD&nbsp;&nbsp;CAD&nbsp;&nbsp;DKK</p>
+            <div>
+              <p>تظهر خمس عملات في هذا الفهرس لأن خمس عملات تظهر في صفحات الكليات نفسها.
+                وتحويلها سيكون تخمينًا يُطبَع بوصفه واقعة.</p>
+              <p>وإلى جانب كل رسم نطبع أيضًا مبلغًا استرشاديًا بالريال وتاريخ سعر الصرف المستخدم.
+                هو إشارة لبند في الميزانية، لا عرض سعر.</p>
+            </div>
+          </div>
+
+          <div class="alt-block">
+            <span class="alt-run" lang="en">The figure is the school's own. No conversion, no estimate.</span>
+          </div>
+        </div>
       </div>
     </section>
-
-    <section class="section">
-      <div class="container split">
-        <div>
-          <span class="eyebrow">كيف تصل البرامج إلى هنا</span>
-          <h2 class="h2">وقائع من الكليات. لا شيء مختلَق.</h2>
-          <p class="lede" style="margin-block-start:14px">يقرأ «مسار» صفحات البرامج التي تنشرها الكليات ويسجّل ما تقوله: العنوان والتواريخ وأيام التدريس ونمط الدراسة واللغة والرسوم. هذا كل ما تعرضه البطاقة، وكل ما تدّعيه.</p>
+    <section class="chapter" id="teams">
+      <div class="sheet">
+        <div class="chap-head">
+          <span class="chap-num">§05</span>
+          <h2 class="chap-title">تسجيل فريق<span class="alt-run">Enrolling a team</span></h2>
+          <p class="chap-note">لا يسجّل «مسار» نيابةً عن أي كلية. هو يدلّك على الدفعة الصحيحة وعلى الجهة الصحيحة.</p>
         </div>
-        <ol class="step-list">
-          <li><div><h3>من المصدر مباشرة</h3><p>تُؤخذ البرامج من التقويم المنشور لكل كلية وتُحدَّث دوريًا.</p></div></li>
-          <li><div><h3>لا تقييمات لم نستحقّها</h3><p>لا تحمل البرامج المستوردة نجومًا ولا شهادات ولا نصوصًا تسويقية. ما لم تذكره الكلية لا تذكره البطاقة.</p></div></li>
-          <li><div><h3>لا إدراج مدفوع</h3><p>الموضع في هذا الموقع غير معروض للبيع. والمجموعات تحريرية، وتقول ذلك صراحة.</p></div></li>
-          <li><div><h3>إلى الكلية مباشرة</h3><p>يذهب الاستفسار إلى المؤسسة التي تقدّم البرنامج، ولا يُعاد بيع بياناتك.</p></div></li>
-        </ol>
+        <div class="chap-body">
+          <div class="steps">
+            <div class="step"><span class="step__n">٠١</span><h3>اختر الدفعات</h3><p>صفِّ الفهرس حسب الحقل أو المدينة أو الشهر أو أيام التدريس أو الرسوم، واحتفظ بما يناسبك.</p></div>
+            <div class="step"><span class="step__n">٠٢</span><h3>مرّرها</h3><p>أي نتيجة مصفّاة رابط، والقائمة المختارة تُنسَخ نصًّا — وكلاهما يصل إلى الجهة الداعمة كما هو.</p></div>
+            <div class="step"><span class="step__n">٠٣</span><h3>اطلب عرضًا</h3><p>أخبرنا بعدد المقاعد والرُّبع المطلوب. وتُتَّفق شروط المجموعات والدفعات المغلقة مع الكلية، لا معنا.</p></div>
+          </div>
+          <div class="ledger-foot"><a class="btn btn--solid" href="contact.html#teams">اطلب عرضًا</a></div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
+  <footer class="colophon">
+    <div class="sheet">
+      <div class="colo-grid">
         <div>
-          <a class="brand" href="index.html"><span class="brand-kufi" lang="ar" dir="rtl" aria-hidden="true">مسار</span><span class="brand-name">Masar</span></a>
-          <p class="footer-blurb">دليل مستقل ثنائي اللغة للبرامج التنفيذية مفتوحة التسجيل من كليات الأعمال حول العالم، بُني في الرياض لقيادات المملكة ومن حولها.</p>
-
+          <span class="wordmark"><svg class="wordmark__kufi" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="0" y="1" width="24" height="3.4"/><rect x="20.6" y="1" width="3.4" height="11"/><rect x="8" y="8.6" width="16" height="3.4"/><rect x="8" y="8.6" width="3.4" height="11"/><rect x="0" y="16.2" width="11.4" height="3.4"/></svg><span class="wordmark__ar" lang="ar">مسار</span><span class="wordmark__bar" aria-hidden="true"></span><span class="wordmark__la">Masar</span></span>
+          <p style="margin-block-start:var(--sp-4);max-inline-size:38ch">فهرس مستقل للبرامج التنفيذية مفتوحة التسجيل، بُني في الرياض. نحن نفهرس، ولا نبيع.</p>
         </div>
         <div>
-          <h3>تصفّح</h3>
+          <h3>الفصول</h3>
           <ul>
-            <li><a href="courses.html">البرامج</a></li>
-            <li><a href="courses.html?sort=date">مواعيد البدء</a></li>
+            <li><a href="index.html">الحقول</a></li>
+            <li><a href="courses.html">الفهرس</a></li>
             <li><a href="schools.html">الكليات</a></li>
             <li><a href="lists.html">المجموعات</a></li>
+            <li><a href="about.html">المنهج</a></li>
+            <li><a href="contact.html">التواصل</a></li>
           </ul>
         </div>
         <div>
-          <h3>تخصّصات مطلوبة</h3>
+          <h3>اللغة</h3>
           <ul>
-            <li><a href="courses.html?subject=leadership">القيادة</a></li>
-            <li><a href="courses.html?subject=finance">التمويل</a></li>
-            <li><a href="courses.html?subject=digital">الذكاء الاصطناعي</a></li>
-            <li><a href="courses.html?subject=strategy">الاستراتيجية</a></li>
+            <li><a href="../index.html" data-lang-switch lang="en">English</a></li>
+            <li><button class="ctl" type="button" data-theme-toggle style="margin-block-start:var(--sp-2)">Ground</button></li>
           </ul>
         </div>
         <div>
-          <h3>مسار</h3>
-          <ul>
-            <li><a href="about.html">عن مسار</a></li>
-            <li><a href="contact.html">تواصل معنا</a></li>
-            <li><a href="contact.html#corporate">للمنشآت</a></li>
-            <li><a href="../index.html" data-lang-switch>English</a></li>
-          </ul>
+          <h3>السجل</h3>
+      <div class="record">
+        <div class="record__r">
+          <span class="lbl">السجل التجاري</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">الرقم الضريبي</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">معروف</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">العنوان</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">الهاتف</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">واتساب</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">آخر تحديث</span>
+          <span class="record__v"><span dir="ltr">٢٣ أغسطس ٢٠٢٦</span></span>
+        </div>
+        <p class="record__note">يُطبَع بالقاعدة نفسها التي يُطبَع بها الفهرس: الشَّرطة تعني أننا لم نسجّله بعد، لا أنه غير موجود.</p>
+      </div>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="colo-base">
         <span>© <span data-year>2026</span> Masar</span>
-        <span class="footer-source">تُؤخذ البرامج من الصفحات المنشورة للكليات؛ آخر تحديث 23 أغسطس 2026. تُعرض الرسوم كما نُشرت، ومبالغ الريال تحويلات استرشادية.</span>
+        <span>— غير مسجّل</span>
+        <span>كل رسم هو الرقم الذي نشرته الكلية نفسها، وبعملتها.</span>
       </div>
     </div>
   </footer>
 
-  <div class="drawer-backdrop" data-drawer-backdrop></div>
-  <aside class="drawer" data-drawer role="dialog" aria-modal="true"
-         aria-label="قائمتك المختارة" aria-hidden="true" inert>
-    <div class="drawer__head">
-      <h2 class="h3">قائمتك المختارة</h2>
-      <button class="icon-btn" type="button" data-drawer-close aria-label="إغلاق">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-          <path d="M6 6l12 12M18 6 6 18"/>
-        </svg>
-      </button>
+  <div class="drawer-back" data-drawer-backdrop></div>
+  <aside class="drawer" data-drawer role="dialog" aria-modal="true" aria-label="المختارة" aria-hidden="true" inert>
+    <div class="drawer__h">
+      <h2 style="font-size:var(--fs-500)">المختارة</h2>
+      <button class="ctl" type="button" data-drawer-close>إغلاق</button>
     </div>
-    <div class="drawer__body" data-drawer-body></div>
-    <div class="drawer__foot">
-      <button class="btn btn--ghost btn--block" type="button" data-shortlist-clear>إفراغ القائمة</button>
+    <div class="drawer__b" data-drawer-body></div>
+    <div class="drawer__f">
+      <button class="btn btn--ghost btn--block" type="button" data-shortlist-copy></button>
+      <button class="btn btn--ghost btn--block" type="button" data-shortlist-clear></button>
     </div>
   </aside>
 

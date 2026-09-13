@@ -1,7 +1,18 @@
 /* ==========================================================================
    Masar — app.js
-   Vanilla JS, no build step. Each page mounts only the pieces it declares
-   through data-* hooks, so one script serves every page in both locales.
+
+   The ledger, rendered. One component does most of the work: `.row`, a ruled
+   hairline record whose date, teaching days and fee are set as numerals and
+   are the page's only imagery. The same row serves the home ledger, the
+   catalogue, a school's page and a set.
+
+   Two rules govern everything below:
+     1. The data never animates. Rows are ruled from the first paint; the
+        reveal draws a heavier rule on top and disarms itself after 2.8s, so
+        filtering and sorting never re-animate.
+     2. Nothing is invented. An unrecorded field prints an em dash with a
+        visually-hidden "not recorded", and a control with no destination is
+        not rendered at all.
    ========================================================================== */
 (function () {
   'use strict';
@@ -10,13 +21,11 @@
   const I = window.MASAR_I18N;
   const t = I.t, pick = I.pick;
 
-  /* --- Lookups ----------------------------------------------------------- */
   const byId = (arr) => arr.reduce((m, x) => (m[x.id] = x, m), {});
   const SCHOOL = byId(D.schools);
   const SUBJECT = byId(D.subjects);
   const FORMAT = byId(D.formats);
   const LANGUAGE = byId(D.languages);
-  const REGION = byId(D.regions);
   const COURSE = byId(D.courses);
   const LIST = byId(D.lists);
 
@@ -25,186 +34,157 @@
   ));
 
   const SEP = I.LANG === 'ar' ? '، ' : ', ';
-  const schoolOf = (c) => SCHOOL[c.school];
-
-  /* City-states list the same name twice ("Singapore, Singapore") — say it once. */
-  function cityCountry(s) {
-    const city = pick(s.city), country = pick(s.country);
-    return city === country ? city : city + SEP + country;
-  }
-  /* Where the school is. Used on cards, where the format is shown separately. */
-  const homeOf = (c) => cityCountry(schoolOf(c));
-  /* Where you would actually be. Used for the "Location" fact on detail pages. */
-  const placeOf = (c) => (c.format === 'online' ? t('misc.online') : cityCountry(schoolOf(c)));
+  const schoolOf = (c) => SCHOOL[c.school] || {};
   const subjectLabel = (id) => pick(SUBJECT[id]);
   const formatLabel = (id) => pick(FORMAT[id]);
-  const regionLabel = (id) => pick(REGION[id]);
   const langLabel = (id) => pick(LANGUAGE[id]);
 
-  const stars = (r) => '★'.repeat(Math.round(r)) + '☆'.repeat(5 - Math.round(r));
+  /* An unrecorded value is printed, never dropped. */
+  const DASH = '<span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span>';
+  const val = (s) => (s ? esc(s) : DASH);
 
-  /* --- Shortlist (shared between locales via one storage key) ------------- */
-  const STORE_KEY = 'masar:shortlist';
+  function cityCountry(s) {
+    const city = pick(s.city), country = pick(s.country);
+    if (!city && !country) return '';
+    if (!city) return country;
+    if (!country || city === country) return city;
+    return city + SEP + country;
+  }
+  const placeOf = (c) => (c.format === 'online' ? t('misc.online') : cityCountry(schoolOf(c)));
+
+  const ARROW = '<svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
+    'stroke-width="1.5" stroke-linecap="square" aria-hidden="true"><path d="M3 12h16M13 6l6 6-6 6"/></svg>';
+  const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true" width="15" height="15" fill="none" ' +
+    'stroke="currentColor" stroke-width="1.7"><path d="M12 20.5S3.5 15 3.5 9.2A4.7 4.7 0 0 1 12 6.6a4.7 4.7 0 0 1 8.5 2.6c0 5.8-8.5 11.3-8.5 11.3Z"/></svg>';
+
+  /* --- Shortlist ---------------------------------------------------------- */
+  const STORE = 'masar:shortlist';
   const Shortlist = {
     read() {
-      /* Anything at all can be sitting under this key — another app, an old
-         format, a half-written value. JSON.parse succeeding is not enough:
-         a parsed string or object would sail past the catch and then throw
-         on .filter() deep inside a render. */
       try {
-        const raw = JSON.parse(localStorage.getItem(STORE_KEY));
-        return Array.isArray(raw) ? raw.filter((id) => typeof id === 'string') : [];
-      } catch (e) {
-        return [];
-      }
+        const raw = JSON.parse(localStorage.getItem(STORE));
+        return Array.isArray(raw) ? raw.filter((x) => typeof x === 'string') : [];
+      } catch (e) { return []; }
     },
     write(ids) {
-      try { localStorage.setItem(STORE_KEY, JSON.stringify(ids)); } catch (e) { /* private mode */ }
+      try { localStorage.setItem(STORE, JSON.stringify(ids)); } catch (e) {}
       Shortlist.sync();
     },
     has(id) { return Shortlist.read().indexOf(id) !== -1; },
     toggle(id) {
-      const ids = Shortlist.read();
-      const i = ids.indexOf(id);
+      const ids = Shortlist.read(), i = ids.indexOf(id);
       if (i === -1) ids.push(id); else ids.splice(i, 1);
       Shortlist.write(ids);
-      return i === -1;
     },
-    remove(id) { Shortlist.write(Shortlist.read().filter((x) => x !== id)); },
     clear() { Shortlist.write([]); },
     sync() {
       const ids = Shortlist.read();
-      document.querySelectorAll('[data-shortlist-count]').forEach((el) => {
-        el.textContent = I.num(ids.length);
-        if (ids.length) el.setAttribute('data-has', ''); else el.removeAttribute('data-has');
-      });
-      document.querySelectorAll('.save-btn[data-course]').forEach((btn) => {
-        const on = ids.indexOf(btn.getAttribute('data-course')) !== -1;
-        btn.setAttribute('aria-pressed', on ? 'true' : 'false');
-        btn.title = on ? t('card.saved') : t('card.save');
+      document.querySelectorAll('[data-shortlist-count]').forEach((el) => { el.textContent = I.num(ids.length); });
+      document.querySelectorAll('.save[data-course]').forEach((b) => {
+        const on = ids.indexOf(b.getAttribute('data-course')) !== -1;
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        b.title = on ? t('card.saved') : t('card.save');
       });
       renderDrawer();
     }
   };
 
-  const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5S3.5 15 3.5 9.2A4.7 4.7 0 0 1 12 6.6a4.7 4.7 0 0 1 8.5 2.6c0 5.8-8.5 11.3-8.5 11.3Z"/></svg>';
-
   function saveButton(c) {
-    return '<button class="save-btn" type="button" data-course="' + c.id + '" aria-pressed="false"' +
-      ' aria-label="' + esc(t('card.saveA11y', { title: pick(c.title) })) + '">' + HEART + '</button>';
+    return '<button class="ctl save" type="button" data-course="' + c.id + '" aria-pressed="false" ' +
+      'aria-label="' + esc(t('card.saveA11y', { title: pick(c.title) })) + '">' + HEART + '</button>';
   }
 
-  /* --- Cards -------------------------------------------------------------- */
-  function spec(k, v, sub, price) {
-    return '<div><dt class="spec__k">' + esc(k) + '</dt>' +
-      '<dd class="spec__v' + (price ? ' spec__v--price' : '') + '">' + esc(v) +
-      (sub ? '<small>' + esc(sub) + '</small>' : '') + '</dd></div>';
-  }
-
-  function courseCard(c) {
+  /* --- The row ------------------------------------------------------------ */
+  /* opts.i     stagger index (capped by the caller)
+     opts.n     lot number shown in the index track
+     opts.alt   print the opposite-language title (home page only)         */
+  function row(c, opts) {
+    opts = opts || {};
     const s = schoolOf(c);
+    const f = I.fee(c.price, c.currency);
+    const meta = [placeOf(c), formatLabel(c.format), subjectLabel(c.subject)].filter(Boolean);
+    const label = t('card.rowA11y', {
+      title: pick(c.title), school: pick(s.name), city: placeOf(c),
+      date: I.longDate(c.start), days: I.dayCount(c.days), fee: f.code + ' ' + f.amount
+    });
+    const altTitle = I.LANG === 'ar' ? (c.title && c.title.en) : (c.title && c.title.ar);
+
     return '' +
-      '<article class="course-card">' +
-        '<div class="course-card__top">' +
-          '<div>' +
-            '<a class="course-card__school" href="school.html?id=' + s.id + '">' + esc(pick(s.name)) + '</a>' +
-            '<div class="course-card__place">' + esc(homeOf(c)) + '</div>' +
-          '</div>' +
-          saveButton(c) +
-        '</div>' +
-        '<h3><a href="course.html?id=' + c.id + '">' + esc(pick(c.title)) + '</a></h3>' +
-        '<div class="course-card__meta">' +
-          '<span class="pill pill--brand">' + esc(subjectLabel(c.subject)) + '</span>' +
-          '<span class="pill">' + esc(formatLabel(c.format)) + '</span>' +
-          '<span class="pill">' + esc(c.langs.map(langLabel).join(' · ')) + '</span>' +
-          /* Imported listings carry no rating; the card simply omits it
-             rather than showing an invented score. */
-          (c.rating != null
-            ? '<span class="rating"><span class="stars" aria-hidden="true">' + stars(c.rating) + '</span>' +
-              '<span class="sr-only">' + c.rating + '/5</span>' +
-              '<span class="count">' + esc(I.num(c.reviews)) + '</span></span>'
+      '<article class="row" data-reveal style="--i:' + (opts.i || 0) + '">' +
+        '<span class="row__idx lbl" aria-hidden="true">' + (opts.n != null ? String(opts.n).padStart(2, '0') : '') + '</span>' +
+        '<span class="row__date">' +
+          '<span class="row__d num">' + esc(I.dayNum(c.start)) + '</span>' +
+          '<span class="row__m lbl">' + esc(I.monthAbbr(c.start)) + '</span>' +
+        '</span>' +
+        '<div class="row__main">' +
+          '<h3 class="row__t"><a href="course.html?id=' + c.id + '" aria-label="' + esc(label) + '">' +
+            esc(pick(c.title)) + '</a></h3>' +
+          (opts.alt && altTitle
+            ? '<span class="row__alt alt-run" lang="' + (I.LANG === 'ar' ? 'en' : 'ar') + '" aria-hidden="true">' +
+              esc(altTitle) + '</span>'
             : '') +
         '</div>' +
-        /* The same four cells in the same order on every card. */
-        '<dl class="spec">' +
-          spec(t('spec.start'), I.shortDate(c.start), I.hijriDate(c.start)) +
-          spec(t('spec.location'), placeOf(c)) +
-          spec(t('spec.duration'), I.dayCount(c.days)) +
-          spec(t('spec.fee'), I.money(c.price, c.currency), t('card.from'), true) +
-        '</dl>' +
-      '</article>';
-  }
-
-  function schoolCard(s) {
-    const n = D.courses.filter((c) => c.school === s.id).length;
-    return '' +
-      '<article class="school-card">' +
-        '<h3><a href="school.html?id=' + s.id + '">' + esc(pick(s.name)) + '</a></h3>' +
-        '<div class="school-card__place">' + esc(cityCountry(s)) + '</div>' +
-        '<p class="muted" style="font-size:.9rem">' + esc(pick(s.about)) + '</p>' +
-        '<div class="school-card__foot">' +
-          '<span class="pill pill--brand">' + esc(I.courseCount(n)) + '</span>' +
-          s.accreditation.map((a) => '<span class="pill pill--ltr">' + esc(a) + '</span>').join('') +
+        '<div class="row__org" aria-hidden="true">' +
+          '<span class="row__school">' + val(pick(s.name)) + '</span>' +
+          '<span class="row__meta lbl">' +
+            meta.map((m, k) => (k === 0 && c.format === 'online'
+              ? '<span class="online">' + esc(m) + '</span>' : esc(m))).join(' / ') +
+          '</span>' +
+        '</div>' +
+        /* The printed columns repeat what the link's aria-label already says
+           as one sentence, so they are hidden from the accessibility tree —
+           but the save button is focusable and must stay out of that, or it
+           would be a tab stop with no accessible name. */
+        '<div class="row__foot">' +
+          '<div class="row__days" aria-hidden="true">' +
+            '<span class="lbl">' + esc(t('spec.days')) + '</span>' +
+            '<span class="row__n num">' + esc(I.num(c.days)) + '</span>' +
+          '</div>' +
+          '<div class="row__fee" aria-hidden="true">' +
+            '<span class="lbl">' + esc(t('spec.fee')) + ' · ' + esc(f.code) + '</span>' +
+            '<span class="row__fee-n num">' + esc(f.amount) + '</span>' +
+            '<span class="row__sar">' + esc(f.sub) + '</span>' +
+          '</div>' +
+          '<span class="row__go">' + saveButton(c) + ARROW + '</span>' +
         '</div>' +
       '</article>';
   }
 
-  function listCard(l) {
-    return '' +
-      '<article class="list-card">' +
-        '<span class="list-card__n">' + esc(I.courseCount(l.courses.length)) + '</span>' +
-        '<h3><a href="list.html?id=' + l.id + '">' + esc(pick(l.title)) + '</a></h3>' +
-        '<p>' + esc(pick(l.blurb)) + '</p>' +
-      '</article>';
+  /* Rows grouped under a sticky start-date head. */
+  function ledger(courses, opts) {
+    opts = opts || {};
+    const groups = [];
+    courses.forEach((c) => {
+      const last = groups[groups.length - 1];
+      if (last && last.key === c.start) last.items.push(c);
+      else groups.push({ key: c.start, items: [c] });
+    });
+    let n = 0;
+    return groups.map((g) => {
+      const head = '<div class="grp-head">' +
+        '<span class="grp-head__g">' + esc(I.longDate(g.key)) + '</span>' +
+        '<span class="grp-head__h" lang="ar">' + esc(I.hijri(g.key)) + '</span>' +
+        '<span class="grp-head__c">' + esc(I.intakeCount(g.items.length)) + '</span>' +
+        '</div>';
+      const body = g.items.map((c) => row(c, { i: Math.min(n, 6), n: ++n, alt: opts.alt })).join('');
+      return head + body;
+    }).join('');
   }
 
-  /* --- Chrome: theme, nav, drawer ---------------------------------------- */
+  /* --- Chrome ------------------------------------------------------------- */
   function initChrome() {
-    /* Currency preference: fees show in each course's own currency, or all
-       converted to SAR. Rendering reads the preference through I.money, so a
-       change simply reloads the page. */
-    const tools = document.querySelector('.header-tools');
-    if (tools) {
-      const sel = document.createElement('select');
-      sel.className = 'select select--sm currency-switch';
-      sel.setAttribute('aria-label', t('currency.label'));
-      sel.innerHTML =
-        '<option value="orig">' + esc(t('currency.orig')) + '</option>' +
-        '<option value="sar">' + esc(t('currency.sar')) + '</option>';
-      sel.value = I.getCurrency();
-      if (sel.value === 'sar') sel.title = t('currency.note');
-      sel.addEventListener('change', function () {
-        I.setCurrency(sel.value);
-        location.reload();
-      });
-      tools.insertBefore(sel, tools.firstChild);
-      /* Twin inside the menu panel for phones (CSS decides which one shows). */
-      const navList = document.querySelector('.main-nav ul');
-      if (navList) {
-        const li = document.createElement('li');
-        const twin = sel.cloneNode(true);
-        twin.className = 'select currency-switch currency-switch--nav';
-        twin.value = sel.value;
-        twin.addEventListener('change', function () { I.setCurrency(twin.value); location.reload(); });
-        li.appendChild(twin);
-        navList.appendChild(li);
-      }
+    /* The sticky offsets are measured, not assumed: Arabic nav labels are a
+       different width, and the faces land after first paint. */
+    const masthead = document.querySelector('.masthead');
+    const nav = document.getElementById('chapnav');
+    function measure() {
+      if (masthead) document.documentElement.style.setProperty('--hdr-h', masthead.offsetHeight + 'px');
     }
-
-    const themeBtn = document.querySelector('[data-theme-toggle]');
-    if (themeBtn) {
-      themeBtn.addEventListener('click', function () {
-        const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        try { localStorage.setItem('masar:theme', next); } catch (e) { /* ignore */ }
-        themeBtn.setAttribute('aria-pressed', next === 'dark' ? 'true' : 'false');
-      });
-      themeBtn.setAttribute('aria-pressed',
-        document.documentElement.getAttribute('data-theme') === 'dark' ? 'true' : 'false');
-    }
+    measure();
+    window.addEventListener('resize', measure);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(measure);
 
     const navBtn = document.querySelector('[data-nav-toggle]');
-    const nav = document.getElementById('main-nav');
     if (navBtn && nav) {
       navBtn.addEventListener('click', function () {
         const open = nav.hasAttribute('data-open');
@@ -213,72 +193,105 @@
       });
     }
 
-    /* Shortlist drawer */
-    const drawer = document.querySelector('[data-drawer]');
-    const backdrop = document.querySelector('[data-drawer-backdrop]');
-    const openBtns = document.querySelectorAll('[data-drawer-open]');
-    if (drawer && backdrop) {
-      let opener = null;
-
-      const open = (e) => {
-        opener = (e && e.currentTarget) || document.activeElement;
-        drawer.setAttribute('data-open', ''); backdrop.setAttribute('data-open', '');
-        drawer.removeAttribute('aria-hidden');
-        drawer.removeAttribute('inert');
-        openBtns.forEach((b) => b.setAttribute('aria-expanded', 'true'));
-        const closeBtn = drawer.querySelector('[data-drawer-close]');
-        if (closeBtn) closeBtn.focus();
+    /* Fees keep the school's currency by default; the toggle promotes the
+       riyal and demotes the published figure to the line beneath. */
+    const cur = document.querySelector('[data-currency]');
+    if (cur) {
+      const paint = () => {
+        const sar = I.getCurrency() === 'sar';
+        cur.textContent = sar ? t('currency.sar') : t('currency.orig');
+        cur.setAttribute('aria-pressed', sar ? 'true' : 'false');
       };
-
-      const close = () => {
-        if (!drawer.hasAttribute('data-open')) return;
-        drawer.removeAttribute('data-open'); backdrop.removeAttribute('data-open');
-        openBtns.forEach((b) => b.setAttribute('aria-expanded', 'false'));
-        /* Focus has to leave before the panel is hidden — aria-hidden and
-           inert must never be applied to a subtree that still holds focus. */
-        if (drawer.contains(document.activeElement)) {
-          if (opener && document.contains(opener)) opener.focus();
-          else document.body.focus();
-        }
-        drawer.setAttribute('aria-hidden', 'true');
-        drawer.setAttribute('inert', '');
-        opener = null;
+      paint();
+      const flip = function () {
+        I.setCurrency(I.getCurrency() === 'sar' ? 'orig' : 'sar');
+        location.reload();
       };
-
-      openBtns.forEach((b) => {
-        b.setAttribute('aria-expanded', 'false');
-        b.addEventListener('click', open);
-      });
-      backdrop.addEventListener('click', close);
-      drawer.querySelectorAll('[data-drawer-close]').forEach((b) => b.addEventListener('click', close));
-      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
-      const clearBtn = drawer.querySelector('[data-shortlist-clear]');
-      if (clearBtn) clearBtn.addEventListener('click', () => Shortlist.clear());
+      cur.addEventListener('click', flip);
+      /* The phone header has no room for it, so a twin lives in the panel. */
+      const list = nav && nav.querySelector('ul');
+      if (list) {
+        const li = document.createElement('li');
+        li.className = 'nav-currency';
+        const twin = cur.cloneNode(true);
+        twin.classList.add('currency-in-nav');
+        twin.addEventListener('click', flip);
+        li.appendChild(twin);
+        list.appendChild(li);
+      }
     }
 
-    /* Save buttons are delegated so dynamically rendered cards work too. */
+    const theme = document.querySelector('[data-theme-toggle]');
+    if (theme) {
+      const read = () => { try { return localStorage.getItem('masar-theme') || 'system'; } catch (e) { return 'system'; } };
+      const names = { system: I.LANG === 'ar' ? 'تلقائي' : 'System',
+                      light:  I.LANG === 'ar' ? 'فاتحة' : 'Light',
+                      dark:   I.LANG === 'ar' ? 'داكنة' : 'Dark' };
+      const paint = () => { theme.textContent = t('theme.label') + ' · ' + names[read()]; };
+      paint();
+      theme.addEventListener('click', function () {
+        const next = { system: 'light', light: 'dark', dark: 'system' }[read()];
+        try {
+          if (next === 'system') localStorage.removeItem('masar-theme');
+          else localStorage.setItem('masar-theme', next);
+        } catch (e) {}
+        if (next === 'system') document.documentElement.removeAttribute('data-theme');
+        else document.documentElement.setAttribute('data-theme', next);
+        paint();
+      });
+    }
+
+    /* Save buttons are delegated: rows are re-rendered constantly. */
     document.addEventListener('click', function (e) {
-      const btn = e.target.closest ? e.target.closest('.save-btn[data-course]') : null;
-      if (!btn) return;
+      const b = e.target.closest && e.target.closest('.save[data-course]');
+      if (!b) return;
       e.preventDefault();
-      Shortlist.toggle(btn.getAttribute('data-course'));
+      Shortlist.toggle(b.getAttribute('data-course'));
     });
 
-    /* Carry search/filter state across the language switch. There are two of
-       these — the header pill and the footer link — and missing the second one
-       drops ?id= on detail pages, landing the reader on "not found". */
-    if (location.search) {
-      document.querySelectorAll('[data-lang-switch]').forEach(function (link) {
-        link.href = link.getAttribute('href') + location.search;
+    initDrawer();
+    document.querySelectorAll('[data-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    const today = I.todayISO();
+    document.querySelectorAll('[data-today]').forEach((el) => { el.textContent = I.longDate(today); });
+    document.querySelectorAll('[data-today-hijri]').forEach((el) => { el.textContent = I.hijri(today); });
+
+    Shortlist.sync();
+  }
+
+  function initDrawer() {
+    const drawer = document.querySelector('[data-drawer]');
+    const back = document.querySelector('[data-drawer-backdrop]');
+    if (!drawer) return;
+    const open = (on) => {
+      if (on) { drawer.setAttribute('data-open', ''); back.setAttribute('data-open', ''); drawer.removeAttribute('inert'); drawer.setAttribute('aria-hidden', 'false'); }
+      else { drawer.removeAttribute('data-open'); back.removeAttribute('data-open'); drawer.setAttribute('inert', ''); drawer.setAttribute('aria-hidden', 'true'); }
+    };
+    document.querySelectorAll('[data-drawer-open]').forEach((b) => b.addEventListener('click', () => open(true)));
+    document.querySelectorAll('[data-drawer-close]').forEach((b) => b.addEventListener('click', () => open(false)));
+    if (back) back.addEventListener('click', () => open(false));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') open(false); });
+
+    const clear = document.querySelector('[data-shortlist-clear]');
+    if (clear) { clear.textContent = t('shortlist.clear'); clear.addEventListener('click', () => Shortlist.clear()); }
+
+    const copy = document.querySelector('[data-shortlist-copy]');
+    if (copy) {
+      copy.textContent = t('shortlist.copy');
+      copy.addEventListener('click', function () {
+        const text = Shortlist.read().map((id) => COURSE[id]).filter(Boolean).map((c) => {
+          const f = I.fee(c.price, c.currency);
+          return [pick(c.title), pick(schoolOf(c).name), I.longDate(c.start),
+                  I.dayCount(c.days), f.code + ' ' + f.amount].join(' · ');
+        }).join('\n');
+        if (navigator.clipboard && text) {
+          navigator.clipboard.writeText(text).then(() => {
+            copy.textContent = t('shortlist.copied');
+            setTimeout(() => { copy.textContent = t('shortlist.copy'); }, 1600);
+          }).catch(() => {});
+        }
       });
     }
-
-    const yr = document.querySelector('[data-year]');
-    if (yr) yr.textContent = I.num(new Date().getFullYear());
-
-    /* The shortlist is a nicety; the catalogue is the site. Never let a
-       storage problem here abort boot() and leave every page empty. */
-    try { Shortlist.sync(); } catch (e) { /* badge and drawer only */ }
   }
 
   function renderDrawer() {
@@ -286,226 +299,178 @@
     if (!body) return;
     const ids = Shortlist.read().filter((id) => COURSE[id]);
     if (!ids.length) {
-      body.innerHTML = '<p class="muted" style="padding-block:20px">' + esc(t('shortlist.empty')) + '</p>';
+      body.innerHTML = '<p class="note note--bare">' + esc(t('shortlist.empty')) + '</p>';
       return;
     }
-    body.innerHTML = ids.map(function (id) {
-      const c = COURSE[id];
-      return '<div class="drawer-item">' +
-        '<div class="drawer-item__body">' +
-          '<h4><a href="course.html?id=' + c.id + '">' + esc(pick(c.title)) + '</a></h4>' +
-          '<p>' + esc(pick(schoolOf(c).name)) + ' · ' + esc(I.money(c.price, c.currency)) + '</p>' +
-        '</div>' +
-        '<button type="button" data-remove="' + c.id + '">' + esc(t('shortlist.remove')) + '</button>' +
-      '</div>';
+    body.innerHTML = ids.map((id) => {
+      const c = COURSE[id], f = I.fee(c.price, c.currency);
+      return '<div class="school-row school-row--saved">' +
+        '<div><a class="school-row__name" href="course.html?id=' + c.id + '">' +
+          esc(pick(c.title)) + '</a>' +
+        '<span class="row__meta lbl">' + esc(pick(schoolOf(c).name)) + ' / ' + esc(I.shortDate(c.start)) +
+        ' / ' + esc(f.code + ' ' + f.amount) + '</span></div>' +
+        '<button class="ctl" type="button" data-remove="' + c.id + '">' + esc(t('shortlist.remove')) + '</button>' +
+        '</div>';
     }).join('');
-    body.querySelectorAll('[data-remove]').forEach((b) => {
-      b.addEventListener('click', () => Shortlist.remove(b.getAttribute('data-remove')));
-    });
+    body.querySelectorAll('[data-remove]').forEach((b) =>
+      b.addEventListener('click', () => Shortlist.toggle(b.getAttribute('data-remove'))));
   }
 
   /* --- Home --------------------------------------------------------------- */
   function initHome() {
-    const featured = document.querySelector('[data-home-featured], [data-home-tiles]');
-    if (!featured) return;
+    const fields = document.querySelector('[data-home-fields]');
+    const led = document.querySelector('[data-home-ledger]');
+    const schools = document.querySelector('[data-home-schools]');
+    if (!fields && !led && !schools) return;
 
-    if (featured.hasAttribute('data-home-featured')) {
-      featured.innerHTML = D.courses.filter((c) => c.featured).slice(0, 8).map(courseCard).join('');
-    }
+    const counts = {};
+    D.courses.forEach((c) => { counts[c.subject] = (counts[c.subject] || 0) + 1; });
 
-    /* The front door: next start, then the editors' picks as tiles. */
-    const tiles = document.querySelector('[data-home-tiles]');
-    if (tiles) {
-      const today = new Date().toISOString().slice(0, 10);
-      const next = D.courses.filter((c) => c.start >= today).sort((a, b) => a.start.localeCompare(b.start))[0];
-      const feat = D.courses.filter((c) => c.featured && (!next || c.id !== next.id)).slice(0, 5);
-      const tile = (c, cls) => {
-        const s = schoolOf(c);
-        return '<article class="tile ' + cls + '">' +
-          '<div class="tile__top"><span>' + esc(pick(s.name)) + '</span><span class="place">' + esc(homeOf(c)) + '</span></div>' +
-          '<h3><a class="tile__link" href="course.html?id=' + c.id + '">' + esc(pick(c.title)) + '</a></h3>' +
-          '<div class="tile__spec">' +
-            '<div><span class="k">' + esc(t('spec.start')) + '</span><span class="v">' + esc(I.dayMonth(c.start)) + '</span></div>' +
-            '<div><span class="k">' + esc(t('spec.days')) + '</span><span class="v">' + esc(I.num(c.days)) + '</span></div>' +
-            '<div><span class="k">' + esc(t('spec.fee')) + '</span><span class="v">' + esc(I.money(c.price, c.currency)) + '</span></div>' +
-          '</div></article>';
-      };
-      const nextTile = next
-        ? '<article class="tile tile--large tile--violet">' +
-            '<div class="tile__label">' + esc(t('tile.next')) + '</div>' +
-            '<div><div class="tile__num">' + esc(I.dayMonth(next.start)) + '</div>' +
-            '<div class="tile__sub">' + esc(I.hijriDate(next.start)) + ' · ' + esc(pick(schoolOf(next).name)) + ', ' + esc(pick(schoolOf(next).city)) + '<br>' +
-            '<a class="tile__link" href="course.html?id=' + next.id + '">' + esc(pick(next.title)) + '</a> · ' + esc(I.money(next.price, next.currency)) + '</div></div>' +
-          '</article>'
-        : '';
-      const teams = '<article class="tile tile--small tile--ink">' +
-        '<div class="tile__label">' + esc(t('tile.teamsLabel')) + '</div>' +
-        '<h3>' + esc(t('tile.teams')) + '</h3>' +
-        '<a class="tile__link link-arrow link-arrow--light" href="contact.html#corporate">' + esc(t('tile.teamsCta')) + ' <span class="arw" aria-hidden="true">→</span></a>' +
-        '</article>';
-      tiles.innerHTML = nextTile +
-        (feat[0] ? tile(feat[0], 'tile--large') : '') +
-        (feat[1] ? tile(feat[1], 'tile--large tile--peach') : '') +
-        feat.slice(2, 5).map((c) => tile(c, 'tile--small')).join('') +
-        teams;
-    }
-
-    const upcoming = document.querySelector('[data-home-upcoming]');
-    if (upcoming) {
-      upcoming.innerHTML = D.courses.slice()
-        .sort((a, b) => a.start.localeCompare(b.start))
-        .slice(0, 6).map(courseCard).join('');
-    }
-
-    const subjects = document.querySelector('[data-home-subjects]');
-    if (subjects) {
-      subjects.innerHTML = D.subjects.map(function (s) {
-        const n = D.courses.filter((c) => c.subject === s.id).length;
-        return { s: s, n: n };
-      }).sort((a, b) => b.n - a.n).map(function (x) {
-        return '<a class="subject-row" href="courses.html?subject=' + x.s.id + '">' +
-          '<span>' + esc(pick(x.s)) + '</span><span class="n">' + esc(I.num(x.n)) + '</span></a>';
+    if (fields) {
+      fields.innerHTML = D.subjects.map(function (s, i) {
+        const n = counts[s.id] || 0;
+        const inner =
+          '<span class="field__n" aria-hidden="true">' + String(i + 1).padStart(2, '0') + '</span>' +
+          '<span class="field__name">' + esc(pick(s)) + '</span>' +
+          '<span class="field__c">' + esc(I.num(n)) + '</span>' + ARROW;
+        return n
+          ? '<a class="field" href="courses.html?subject=' + s.id + '">' + inner + '</a>'
+          : '<div class="field" aria-disabled="true">' + inner + '</div>';
       }).join('');
     }
 
-    const lists = document.querySelector('[data-home-lists]');
-    if (lists) lists.innerHTML = D.lists.slice(0, 3).map(listCard).join('');
+    if (led) {
+      const today = I.todayISO();
+      const next = D.courses.filter((c) => c.start >= today)
+        .sort((a, b) => a.start.localeCompare(b.start)).slice(0, 10);
+      led.innerHTML = ledger(next, { alt: true });
+    }
 
-    const schools = document.querySelector('[data-home-schools]');
+    const all = document.querySelector('[data-all-programmes]');
+    if (all) all.textContent = all.textContent.replace(/\d+/, I.num(D.courses.length));
+
     if (schools) {
-      schools.innerHTML = D.schools.map(function (s) {
-        return { s: s, n: D.courses.filter((c) => c.school === s.id).length };
-      }).filter((x) => x.n > 0).sort((a, b) => b.n - a.n || pick(a.s.name).localeCompare(pick(b.s.name)))
-        .map(function (x) {
-          return '<a class="school-row" href="school.html?id=' + x.s.id + '">' +
-            '<span class="school-row__name">' + esc(pick(x.s.name)) + '</span>' +
-            '<span class="school-row__meta">' + esc(pick(x.s.city)) + ' · ' + esc(I.num(x.n)) + '</span></a>';
-        }).join('');
+      const list = D.schools.map((s) => ({ s: s, n: D.courses.filter((c) => c.school === s.id).length }))
+        .filter((x) => x.n > 0)
+        .sort((a, b) => b.n - a.n || I.collator.compare(pick(a.s.name), pick(b.s.name)));
+      schools.innerHTML = list.map((x, i) => schoolRow(x.s, x.n, i + 1, Math.min(i, 6))).join('');
     }
 
     document.querySelectorAll('[data-stat]').forEach(function (el) {
-      const key = el.getAttribute('data-stat');
       const withCourses = D.schools.filter((s) => D.courses.some((c) => c.school === s.id));
-      const today = new Date().toISOString().slice(0, 10);
-      const next = D.courses.map((c) => c.start).filter((d) => d >= today).sort()[0];
-      const values = {
-        courses: D.courses.length,
+      const v = {
+        programmes: D.courses.length,
         schools: withCourses.length,
-        subjects: D.subjects.length,
-        countries: new Set(withCourses.map((s) => pick(s.country))).size
-      };
-      if (key === 'next') { el.textContent = next ? I.shortDate(next) : '—'; return; }
-      if (values[key] != null) el.textContent = I.num(values[key]);
+        countries: new Set(withCourses.map((s) => pick(s.country)).filter(Boolean)).size
+      }[el.getAttribute('data-stat')];
+      if (v != null) el.textContent = I.num(v);
     });
+  }
 
-    /* Hero search dropdowns are filled from the data so they cannot drift. */
-    const fmtSel = document.querySelector('[data-hero-format]');
-    if (fmtSel) {
-      fmtSel.innerHTML = '<option value="">' + esc(t('search.format')) + '</option>' +
-        D.formats.map((f) => '<option value="' + f.id + '">' + esc(pick(f)) + '</option>').join('');
-    }
-    /* The hero is the filter: as the selects change, the button says how many
-       programmes the search would return. */
-    const heroForm = document.querySelector('.hero-search');
-    if (heroForm) {
-      const btn = heroForm.querySelector('button[type="submit"]');
-      const base = btn ? btn.textContent : '';
-      const q = heroForm.querySelector('input[name="q"]');
-      const paint = function () {
-        const subj = heroForm.querySelector('[data-hero-subject]');
-        const fmt = heroForm.querySelector('[data-hero-format]');
-        const s = subj ? subj.value : '', f = fmt ? fmt.value : '';
-        const text = q && q.value ? q.value.toLowerCase().trim() : '';
-        if (!s && !f && !text) { btn.textContent = base; return; }
-        const n = D.courses.filter(function (c) {
-          if (s && c.subject !== s) return false;
-          if (f && c.format !== f) return false;
-          if (text) {
-            const hay = [pick(c.title), pick(schoolOf(c).name), subjectLabel(c.subject)].join(' ').toLowerCase();
-            if (hay.indexOf(text) === -1) return false;
-          }
-          return true;
-        }).length;
-        btn.textContent = t('search.see', { n: I.courseCount(n) });
-      };
-      heroForm.querySelectorAll('select').forEach((el) => el.addEventListener('change', paint));
-      if (q) q.addEventListener('input', paint);
-    }
-    const subjSel = document.querySelector('[data-hero-subject]');
-    if (subjSel) {
-      subjSel.innerHTML = '<option value="">' + esc(t('search.subject')) + '</option>' +
-        D.subjects.map((s) => '<option value="' + s.id + '">' + esc(pick(s)) + '</option>').join('');
-    }
-    const regSel = document.querySelector('[data-hero-region]');
-    if (regSel) {
-      regSel.innerHTML = '<option value="">' + esc(t('search.location')) + '</option>' +
-        D.regions.map((r) => '<option value="' + r.id + '">' + esc(pick(r)) + '</option>').join('');
-    }
+  function schoolRow(s, n, lot, i) {
+    return '<article class="school-row" data-reveal style="--i:' + i + '">' +
+      '<span class="school-row__n" aria-hidden="true">' + String(lot).padStart(2, '0') + '</span>' +
+      '<h3 class="school-row__name"><a href="school.html?id=' + s.id + '">' + esc(pick(s.name)) + '</a></h3>' +
+      '<span class="lbl">' + val(pick(s.city)) + '</span>' +
+      '<span class="lbl">' + val(pick(s.country)) + '</span>' +
+      '<span class="lbl">' + esc(I.programmeCount(n)) + '</span>' +
+      '</article>';
   }
 
   /* --- Catalogue ---------------------------------------------------------- */
-  const FACETS = [
-    { key: 'subject', source: () => D.subjects, label: 'filters.subject', of: (c) => [c.subject] },
-    { key: 'format',  source: () => D.formats,  label: 'filters.format',  of: (c) => [c.format] },
-    { key: 'region',  source: () => D.regions,  label: 'filters.region',  of: (c) => [schoolOf(c).region] },
-    { key: 'lang',    source: () => D.languages, label: 'filters.language', of: (c) => c.langs },
-    {
-      key: 'dur',
-      source: () => [
-        { id: 'short', en: '1–3 days', ar: '1–3 أيام' },
-        { id: 'mid', en: '4–7 days', ar: '4–7 أيام' },
-        { id: 'long', en: '8+ days', ar: '8 أيام فأكثر' }
-      ],
-      label: 'filters.duration',
-      of: (c) => [c.days <= 3 ? 'short' : c.days <= 7 ? 'mid' : 'long']
-    }
+  const FEE_BANDS = [
+    { id: 'a', max: 3000 }, { id: 'b', min: 3000, max: 6000 },
+    { id: 'c', min: 6000, max: 12000 }, { id: 'd', min: 12000 }
+  ];
+  const DAY_BANDS = [
+    { id: '1', lo: 1, hi: 3 }, { id: '2', lo: 4, hi: 6 },
+    { id: '3', lo: 7, hi: 21 }, { id: '4', lo: 22, hi: 9999 }
   ];
 
-  const MAX_PRICE = 25000;
-
   function initCatalogue() {
-    const results = document.querySelector('[data-results]');
-    if (!results) return;
-
-    const filtersEl = document.querySelector('[data-filters]');
-    const countEl = document.querySelector('[data-results-count]');
-    const chipsEl = document.querySelector('[data-active-filters]');
-    const sortEl = document.querySelector('[data-sort]');
-    const searchInput = document.querySelector('[data-catalogue-search]');
+    const mount = document.querySelector('[data-results]');
+    if (!mount) return;
 
     const params = new URLSearchParams(location.search);
     const state = {
       q: params.get('q') || '',
       sort: params.get('sort') || 'date',
-      max: parseInt(params.get('max'), 10) || MAX_PRICE
+      page: 1,
+      f: {}
     };
-    FACETS.forEach(function (f) {
-      const raw = params.get(f.key);
-      state[f.key] = raw ? raw.split(',').filter(Boolean) : [];
+    ['subject', 'format', 'city', 'country', 'month', 'days', 'fee', 'language', 'school']
+      .forEach((k) => { state.f[k] = (params.get(k) || '').split(',').filter(Boolean); });
+
+    const search = document.querySelector('[data-search]');
+    if (search) search.value = state.q;
+
+    /* Facet vocabulary, built from the data so it can never drift. */
+    const months = [];
+    D.courses.map((c) => c.start.slice(0, 7)).sort().forEach((m) => { if (months.indexOf(m) === -1) months.push(m); });
+
+    const FACETS = [
+      { key: 'subject', label: 'facet.subject',
+        opts: () => D.subjects.map((s) => ({ id: s.id, name: pick(s) })),
+        of: (c) => [c.subject] },
+      { key: 'format', label: 'facet.format',
+        opts: () => D.formats.map((f) => ({ id: f.id, name: pick(f) })),
+        of: (c) => [c.format] },
+      { key: 'city', label: 'facet.city',
+        opts: () => uniq(D.courses.map((c) => pick(schoolOf(c).city)).filter(Boolean)).map((x) => ({ id: x, name: x })),
+        of: (c) => [pick(schoolOf(c).city)].filter(Boolean) },
+      { key: 'country', label: 'facet.country',
+        opts: () => uniq(D.courses.map((c) => pick(schoolOf(c).country)).filter(Boolean)).map((x) => ({ id: x, name: x })),
+        of: (c) => [pick(schoolOf(c).country)].filter(Boolean) },
+      { key: 'month', label: 'facet.month',
+        opts: () => months.map((m) => ({ id: m, name: I.monthLabel(m + '-01') })),
+        of: (c) => [c.start.slice(0, 7)] },
+      { key: 'days', label: 'facet.days',
+        opts: () => DAY_BANDS.map((b) => ({ id: b.id, name: t('days.' + b.id) })),
+        of: (c) => DAY_BANDS.filter((b) => c.days >= b.lo && c.days <= b.hi).map((b) => b.id) },
+      { key: 'fee', label: 'facet.fee',
+        opts: () => FEE_BANDS.map((b) => ({ id: b.id, name: feeBandName(b) })),
+        of: (c) => {
+          const u = I.toUsd(c.price, c.currency);
+          return FEE_BANDS.filter((b) => (b.min == null || u >= b.min) && (b.max == null || u < b.max)).map((b) => b.id);
+        } },
+      { key: 'language', label: 'facet.language',
+        opts: () => D.languages.map((l) => ({ id: l.id, name: pick(l) })),
+        of: (c) => c.langs || [] },
+      { key: 'school', label: 'facet.school',
+        opts: () => D.schools.filter((s) => D.courses.some((c) => c.school === s.id))
+          .map((s) => ({ id: s.id, name: pick(s.name) })),
+        of: (c) => [c.school] }
+    ];
+
+    function uniq(a) { const o = []; a.forEach((x) => { if (o.indexOf(x) === -1) o.push(x); }); return o.sort(I.collator.compare); }
+    function feeBandName(b) {
+      const f = (n) => 'USD ' + I.amount(n);
+      if (b.min == null) return (I.LANG === 'ar' ? 'أقل من ' : 'Under ') + f(b.max);
+      if (b.max == null) return f(b.min) + (I.LANG === 'ar' ? ' فأكثر' : ' and over');
+      return f(b.min) + ' – ' + f(b.max);
+    }
+
+    const haystack = {};
+    D.courses.forEach((c) => {
+      const s = schoolOf(c);
+      haystack[c.id] = I.normalise([
+        c.title && c.title.en, c.title && c.title.ar,
+        s.name && s.name.en, s.name && s.name.ar,
+        s.city && s.city.en, s.city && s.city.ar,
+        s.country && s.country.en, s.country && s.country.ar,
+        subjectLabel(c.subject)
+      ].filter(Boolean).join(' '));
     });
-    /* A single ?school= from a school page acts as an extra filter. */
-    state.school = params.get('school') ? params.get('school').split(',') : [];
 
-    if (searchInput) searchInput.value = state.q;
-    if (sortEl) sortEl.value = state.sort;
-
-    function matches(c, skipKey) {
+    function matches(c, skip) {
       if (state.q) {
-        const hay = [pick(c.title), pick(c.summary), pick(schoolOf(c).name),
-          subjectLabel(c.subject), pick(schoolOf(c).city), pick(schoolOf(c).country)]
-          .join(' ').toLowerCase();
-        if (hay.indexOf(state.q.toLowerCase().trim()) === -1) return false;
+        const q = I.normalise(state.q);
+        if (q && haystack[c.id].indexOf(q) === -1) return false;
       }
-      if (state.school.length && state.school.indexOf(c.school) === -1) return false;
-      /* The slider is a USD-equivalent ceiling so mixed currencies compare;
-         parked at the top it reads "No limit", so no course may be filtered
-         there (real fees can exceed the slider's own maximum). */
-      if (skipKey !== 'price' && state.max < MAX_PRICE &&
-          I.toUsd(c.price, c.currency) > state.max) return false;
       for (let i = 0; i < FACETS.length; i++) {
         const f = FACETS[i];
-        if (f.key === skipKey) continue;
-        const sel = state[f.key];
+        if (f.key === skip) continue;
+        const sel = state.f[f.key];
         if (!sel.length) continue;
         const vals = f.of(c);
         if (!vals.some((v) => sel.indexOf(v) !== -1)) return false;
@@ -514,329 +479,275 @@
     }
 
     const SORTERS = {
-      date: (a, b) => a.start.localeCompare(b.start),
-      popular: (a, b) => b.popularity - a.popularity,
-      /* Unrated (imported) listings sort after every rated one. */
-      rating: (a, b) => (b.rating || 0) - (a.rating || 0) || (b.reviews || 0) - (a.reviews || 0),
-      priceAsc: (a, b) => I.toUsd(a.price, a.currency) - I.toUsd(b.price, b.currency),
-      priceDesc: (a, b) => I.toUsd(b.price, b.currency) - I.toUsd(a.price, a.currency)
+      date:  (a, b) => a.start.localeCompare(b.start),
+      fee:   (a, b) => I.toUsd(a.price, a.currency) - I.toUsd(b.price, b.currency),
+      days:  (a, b) => a.days - b.days,
+      school: (a, b) => I.collator.compare(pick(schoolOf(a).name), pick(schoolOf(b).name)) ||
+                        a.start.localeCompare(b.start)
     };
+
+    const sortBox = document.querySelector('[data-sort]');
+    if (sortBox) {
+      sortBox.innerHTML = ['date', 'fee', 'days', 'school'].map((k) =>
+        '<button class="ctl" type="button" data-sortkey="' + k + '" aria-pressed="false">' +
+        esc(t('sort.' + k)) + '</button>').join('');
+      sortBox.querySelectorAll('[data-sortkey]').forEach((b) =>
+        b.addEventListener('click', function () { state.sort = b.getAttribute('data-sortkey'); state.page = 1; update(); }));
+    }
+
+    function renderFacets() {
+      const box = document.querySelector('[data-facet-body]');
+      if (!box) return;
+      box.innerHTML = FACETS.map(function (f) {
+        const sel = state.f[f.key];
+        const opts = f.opts().map(function (o) {
+          const n = D.courses.filter((c) => matches(c, f.key) && f.of(c).indexOf(o.id) !== -1).length;
+          const on = sel.indexOf(o.id) !== -1;
+          const dis = n === 0 && !on;
+          return '<label class="facet-opt"' + (dis ? ' aria-disabled="true"' : '') + '>' +
+            '<input type="checkbox" data-facet="' + f.key + '" value="' + esc(o.id) + '"' +
+              (on ? ' checked' : '') + (dis ? ' disabled' : '') + '>' +
+            '<span>' + esc(o.name) + '</span><span class="c">' + esc(I.num(n)) + '</span></label>';
+        }).join('');
+        return '<fieldset class="facet"><legend>' + esc(t(f.label)) + '</legend>' + opts + '</fieldset>';
+      }).join('');
+
+      box.querySelectorAll('[data-facet]').forEach((input) =>
+        input.addEventListener('change', function () {
+          const k = input.getAttribute('data-facet'), v = input.value;
+          const i = state.f[k].indexOf(v);
+          if (input.checked && i === -1) state.f[k].push(v);
+          if (!input.checked && i !== -1) state.f[k].splice(i, 1);
+          state.page = 1;
+          update();
+        }));
+    }
+
+    function renderApplied(total) {
+      const box = document.querySelector('[data-applied]');
+      if (!box) return;
+      const chips = [];
+      FACETS.forEach((f) => state.f[f.key].forEach((v) => {
+        const o = f.opts().filter((x) => x.id === v)[0];
+        chips.push({ k: f.key, v: v, label: o ? o.name : v });
+      }));
+      if (state.q) chips.push({ k: 'q', v: '', label: '“' + state.q + '”' });
+      box.innerHTML = chips.length
+        ? chips.map((c) => '<span class="pill">' + esc(c.label) +
+            '<button type="button" data-drop="' + c.k + '" data-val="' + esc(c.v) + '" ' +
+            'aria-label="' + esc(t('facet.remove')) + '">×</button></span>').join('') +
+          '<button class="ctl" type="button" data-clear>' + esc(t('facet.clear')) + '</button>'
+        : '';
+      box.querySelectorAll('[data-drop]').forEach((b) => b.addEventListener('click', function () {
+        const k = b.getAttribute('data-drop');
+        if (k === 'q') { state.q = ''; if (search) search.value = ''; }
+        else state.f[k] = state.f[k].filter((x) => x !== b.getAttribute('data-val'));
+        state.page = 1; update();
+      }));
+      const clr = box.querySelector('[data-clear]');
+      if (clr) clr.addEventListener('click', function () {
+        Object.keys(state.f).forEach((k) => { state.f[k] = []; });
+        state.q = ''; if (search) search.value = '';
+        state.page = 1; update();
+      });
+    }
 
     function syncUrl() {
       const p = new URLSearchParams();
       if (state.q) p.set('q', state.q);
-      FACETS.forEach((f) => { if (state[f.key].length) p.set(f.key, state[f.key].join(',')); });
-      if (state.school.length) p.set('school', state.school.join(','));
-      if (state.max < MAX_PRICE) p.set('max', state.max);
+      Object.keys(state.f).forEach((k) => { if (state.f[k].length) p.set(k, state.f[k].join(',')); });
       if (state.sort !== 'date') p.set('sort', state.sort);
       const qs = p.toString();
       history.replaceState(null, '', qs ? '?' + qs : location.pathname);
     }
 
-    function renderFilters() {
-      if (!filtersEl) return;
-      const groups = FACETS.map(function (f) {
-        const opts = f.source().map(function (o) {
-          /* Faceted counts: everything else applied, this facet ignored. */
-          const n = D.courses.filter((c) => matches(c, f.key) && f.of(c).indexOf(o.id) !== -1).length;
-          const on = state[f.key].indexOf(o.id) !== -1;
-          if (!n && !on) return '';
-          return '<label class="check">' +
-            '<input type="checkbox" data-facet="' + f.key + '" value="' + o.id + '"' + (on ? ' checked' : '') + '>' +
-            '<span>' + esc(pick(o)) + '</span><span class="n">' + esc(I.num(n)) + '</span></label>';
-        }).join('');
-        return '<fieldset class="filter-group"><legend>' + esc(t(f.label)) + '</legend>' + opts + '</fieldset>';
-      }).join('');
+    const PAGE = 24;
+    function update() {
+      const found = D.courses.filter((c) => matches(c)).sort(SORTERS[state.sort] || SORTERS.date);
+      const shown = found.slice(0, state.page * PAGE);
 
-      const priceGroup = '<div class="filter-group"><h3>' + esc(t('filters.price')) + '</h3>' +
-        '<div class="range-row"><span>' +
-          (state.max >= MAX_PRICE ? esc(t('filters.noMax')) : esc(t('filters.upTo', { n: I.money(state.max, 'USD') }))) +
-        '</span></div>' +
-        '<input type="range" data-price min="1000" max="' + MAX_PRICE + '" step="500" value="' + state.max + '" ' +
-        'aria-label="' + esc(t('filters.price')) + '"></div>';
+      const countEl = document.querySelector('[data-results-count]');
+      const labelEl = document.querySelector('[data-results-label]');
+      if (countEl) countEl.textContent = I.num(found.length);
+      if (labelEl) labelEl.textContent = t('results.match');
+      const bar = document.querySelector('[data-bar-count]');
+      if (bar) bar.textContent = I.programmeCount(found.length);
 
-      filtersEl.querySelector('[data-filter-body]').innerHTML = groups + priceGroup;
-
-      filtersEl.querySelectorAll('[data-facet]').forEach(function (input) {
-        input.addEventListener('change', function () {
-          const key = input.getAttribute('data-facet');
-          const val = input.value;
-          const i = state[key].indexOf(val);
-          if (input.checked && i === -1) state[key].push(val);
-          if (!input.checked && i !== -1) state[key].splice(i, 1);
-          update();
+      if (!found.length) {
+        mount.innerHTML = '<div class="empty"><h3>' + esc(t('results.none')) + '</h3><p>' +
+          esc(t('results.noneBody', {
+            n: I.programmeCount(D.courses.length),
+            s: I.schoolCount(D.schools.filter((s) => D.courses.some((c) => c.school === s.id)).length)
+          })) + '</p><button class="btn btn--solid" type="button" data-widen>' +
+          esc(t('results.widen')) + '</button></div>';
+        const w = mount.querySelector('[data-widen]');
+        if (w) w.addEventListener('click', function () {
+          Object.keys(state.f).forEach((k) => { state.f[k] = []; });
+          state.q = ''; if (search) search.value = ''; state.page = 1; update();
         });
-      });
-      const range = filtersEl.querySelector('[data-price]');
-      if (range) {
-        range.addEventListener('input', function () { state.max = parseInt(range.value, 10); update(true); });
-      }
-    }
-
-    function renderChips() {
-      if (!chipsEl) return;
-      const chips = [];
-      FACETS.forEach(function (f) {
-        state[f.key].forEach(function (v) {
-          const o = f.source().filter((x) => x.id === v)[0];
-          if (o) chips.push({ key: f.key, val: v, label: pick(o) });
-        });
-      });
-      state.school.forEach(function (v) {
-        if (SCHOOL[v]) chips.push({ key: 'school', val: v, label: pick(SCHOOL[v].name) });
-      });
-      if (state.q) chips.push({ key: 'q', val: state.q, label: '“' + state.q + '”' });
-      if (state.max < MAX_PRICE) chips.push({ key: 'price', val: '', label: t('filters.upTo', { n: I.money(state.max, 'USD') }) });
-
-      chipsEl.innerHTML = chips.map(function (c) {
-        return '<button class="chip" type="button" data-chip="' + esc(c.key) + '" data-val="' + esc(c.val) + '">' +
-          esc(c.label) + '<span class="x" aria-hidden="true">×</span>' +
-          '<span class="sr-only">' + esc(t('filters.clear')) + '</span></button>';
-      }).join('') + (chips.length > 1
-        ? '<button class="chip" type="button" data-chip="all">' + esc(t('filters.clear')) + '</button>' : '');
-
-      chipsEl.querySelectorAll('[data-chip]').forEach(function (b) {
-        b.addEventListener('click', function () {
-          const key = b.getAttribute('data-chip');
-          const val = b.getAttribute('data-val');
-          if (key === 'all') {
-            FACETS.forEach((f) => { state[f.key] = []; });
-            state.school = []; state.q = ''; state.max = MAX_PRICE;
-            if (searchInput) searchInput.value = '';
-          } else if (key === 'q') {
-            state.q = ''; if (searchInput) searchInput.value = '';
-          } else if (key === 'price') {
-            state.max = MAX_PRICE;
-          } else if (key === 'school') {
-            state.school = state.school.filter((x) => x !== val);
-          } else {
-            state[key] = state[key].filter((x) => x !== val);
-          }
-          update();
-        });
-      });
-    }
-
-    function update(skipFilterRerender) {
-      const list = D.courses.filter((c) => matches(c));
-      list.sort(SORTERS[state.sort] || SORTERS.date);
-
-      results.innerHTML = list.length
-        ? list.map(courseCard).join('')
-        : '<div class="empty-state"><h3>' + esc(t('results.none.title')) + '</h3>' +
-          '<p>' + esc(t('results.none.body')) + '</p>' +
-          '<button class="btn btn--ghost" type="button" data-reset>' + esc(t('results.reset')) + '</button></div>';
-
-      const resetBtn = results.querySelector('[data-reset]');
-      if (resetBtn) {
-        resetBtn.addEventListener('click', function () {
-          FACETS.forEach((f) => { state[f.key] = []; });
-          state.school = []; state.q = ''; state.max = MAX_PRICE;
-          if (searchInput) searchInput.value = '';
-          update();
-        });
+      } else {
+        mount.innerHTML = state.sort === 'date'
+          ? ledger(shown)
+          : shown.map((c, i) => row(c, { i: Math.min(i, 6), n: i + 1 })).join('');
       }
 
-      if (countEl) countEl.textContent = I.courseCount(list.length);
-      renderChips();
-      if (!skipFilterRerender) renderFilters();
-      else {
-        const row = filtersEl && filtersEl.querySelector('.range-row span');
-        if (row) row.textContent = state.max >= MAX_PRICE ? t('filters.noMax') : t('filters.upTo', { n: I.money(state.max, 'USD') });
+      const more = document.querySelector('[data-more]');
+      if (more) {
+        const left = found.length - shown.length;
+        more.hidden = left <= 0;
+        more.textContent = t('results.more', { n: I.num(Math.min(left, PAGE)) });
       }
+
+      if (sortBox) sortBox.querySelectorAll('[data-sortkey]').forEach((b) =>
+        b.setAttribute('aria-pressed', b.getAttribute('data-sortkey') === state.sort ? 'true' : 'false'));
+
+      renderFacets();
+      renderApplied(found.length);
       syncUrl();
       Shortlist.sync();
+      settle(mount);
     }
 
-    if (searchInput) {
-      let timer;
-      searchInput.addEventListener('input', function () {
+    const more = document.querySelector('[data-more]');
+    if (more) more.addEventListener('click', function () { state.page += 1; update(); });
+
+    if (search) {
+      let timer = null;
+      search.addEventListener('input', function () {
         clearTimeout(timer);
-        timer = setTimeout(function () { state.q = searchInput.value; update(); }, 200);
+        timer = setTimeout(function () { state.q = search.value; state.page = 1; update(); }, 140);
       });
-      const form = searchInput.closest('form');
-      if (form) form.addEventListener('submit', function (e) { e.preventDefault(); state.q = searchInput.value; update(); });
     }
-    if (sortEl) sortEl.addEventListener('change', function () { state.sort = sortEl.value; update(); });
 
-    /* Mobile filter sheet */
-    const openFilters = document.querySelector('[data-filters-open]');
-    if (openFilters && filtersEl) {
-      const openSheet = function () {
-        filtersEl.setAttribute('data-open', '');
-        document.body.style.overflow = 'hidden';
-        openFilters.setAttribute('aria-expanded', 'true');
-      };
-      const closeSheet = function () {
-        filtersEl.removeAttribute('data-open');
-        document.body.style.overflow = '';
-        openFilters.setAttribute('aria-expanded', 'false');
-      };
-
-      openFilters.setAttribute('aria-expanded', 'false');
-      openFilters.addEventListener('click', openSheet);
-      filtersEl.querySelectorAll('[data-filters-close]').forEach(function (b) {
-        b.addEventListener('click', closeSheet);
-      });
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') closeSheet();
-      });
-
-      /* Above 900px the sheet becomes a static sidebar and every control that
-         could close it is display:none. Without this the scroll lock survives
-         the breakpoint and the page can only be freed by reloading. */
-      const desktop = window.matchMedia('(min-width: 901px)');
-      const onBreakpoint = function (ev) { if (ev.matches) closeSheet(); };
-      if (desktop.addEventListener) desktop.addEventListener('change', onBreakpoint);
-      else if (desktop.addListener) desktop.addListener(onBreakpoint);
-    }
+    /* Mobile: the facet sheet. */
+    const sheet = document.querySelector('[data-facets]');
+    document.querySelectorAll('[data-facets-open]').forEach((b) =>
+      b.addEventListener('click', () => sheet && sheet.setAttribute('data-open', '')));
+    document.querySelectorAll('[data-facets-close]').forEach((b) =>
+      b.addEventListener('click', () => sheet && sheet.removeAttribute('data-open')));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && sheet) sheet.removeAttribute('data-open'); });
 
     update();
   }
 
-  /* --- Course detail ------------------------------------------------------ */
-  function initCourseDetail() {
-    const mount = document.querySelector('[data-course-detail]');
+  /* --- Programme record --------------------------------------------------- */
+  function initRecord() {
+    const mount = document.querySelector('[data-record]');
     if (!mount) return;
-    const id = new URLSearchParams(location.search).get('id');
-    const c = COURSE[id];
+    const c = COURSE[new URLSearchParams(location.search).get('id')];
 
     if (!c) {
-      mount.innerHTML = '<div class="empty-state"><h3>' + esc(t('course.notFound')) + '</h3>' +
-        '<p><a class="link-arrow" href="courses.html">' + esc(t('course.back')) + '</a></p></div>';
+      mount.innerHTML = '<div class="empty"><h3>' + esc(t('rec.notFound')) + '</h3>' +
+        '<p><a class="btn btn--ghost" href="courses.html">' + esc(t('rec.back')) + '</a></p></div>';
       return;
     }
 
     const s = schoolOf(c);
+    const f = I.fee(c.price, c.currency);
+    const altTitle = I.LANG === 'ar' ? (c.title && c.title.en) : (c.title && c.title.ar);
     document.title = pick(c.title) + ' — ' + pick(s.name) + ' | Masar';
-    const desc = document.querySelector('meta[name="description"]');
-    if (desc) desc.setAttribute('content', pick(c.summary));
+    const crumb = document.querySelector('[data-crumb-school]');
+    if (crumb) crumb.textContent = pick(s.name);
 
-    const crumbs = document.querySelector('[data-course-crumb]');
-    if (crumbs) crumbs.textContent = pick(c.title);
+    const fact = (k, v, sub) => '<div class="facts__r"><span class="lbl">' + esc(k) + '</span>' +
+      '<div class="facts__v">' + v + (sub ? '<span class="hijri" lang="ar">' + esc(sub) + '</span>' : '') + '</div></div>';
+
+    const wa = SITE_WA ? '<a class="btn btn--solid btn--block" rel="noopener" href="https://wa.me/' + SITE_WA +
+      '?text=' + encodeURIComponent(pick(c.title) + ' — ' + I.longDate(c.start)) + '">WhatsApp</a>' : '';
 
     mount.innerHTML = '' +
-      '<div class="detail-head">' +
-        '<span class="eyebrow">' + esc(subjectLabel(c.subject)) + '</span>' +
+      '<div class="rec-head">' +
+        '<a class="rec-head__school" href="school.html?id=' + s.id + '">' + esc(pick(s.name)) + '</a>' +
         '<h1>' + esc(pick(c.title)) + '</h1>' +
-        '<p class="lede">' + esc(pick(c.summary)) + '</p>' +
-        '<div class="detail-meta">' +
-          '<span class="pill pill--brand">' + esc(formatLabel(c.format)) + '</span>' +
-          '<span class="pill">' + esc(homeOf(c)) + '</span>' +
-          '<span class="pill">' + esc(I.dayCount(c.days)) + '</span>' +
-          (c.rating != null
-            ? '<span class="pill pill--accent">★ ' + c.rating + ' · ' + esc(t('card.reviews', { n: I.num(c.reviews) })) + '</span>'
-            : '') +
-        '</div>' +
+        (altTitle ? '<span class="rec-head__alt alt-run" lang="' + (I.LANG === 'ar' ? 'en' : 'ar') + '">' +
+          esc(altTitle) + '</span>' : '') +
       '</div>' +
-      '<div class="detail">' +
-        '<div class="detail-body prose">' +
-          '<h2>' + esc(t('course.about')) + '</h2>' +
-          /* Composed from the record rather than repeating the lede above it. */
-          '<p>' + esc(t('course.blurb', {
-            school: pick(s.name),
-            days: I.dayCount(c.days),
-            format: formatLabel(c.format),
-            place: homeOf(c),
-            langs: c.langs.map(langLabel).join(' · '),
-            date: I.shortDate(c.start)
-          })) + '</p>' +
-          /* Scraped records carry no editorial copy — a fact-only extraction
-             leaves highlights and audience empty, so those sections render
-             only when there is something true to put under the heading. */
-          (pick(c.highlights).length
-            ? '<h2>' + esc(t('course.highlights')) + '</h2>' +
-              '<ul class="ticks">' + pick(c.highlights).map((h) => '<li>' + esc(h) + '</li>').join('') + '</ul>'
-            : '') +
-          (pick(c.audience)
-            ? '<h2>' + esc(t('course.audience')) + '</h2>' +
-              '<p>' + esc(pick(c.audience)) + '</p>'
-            : '') +
-          '<div class="school-strip">' +
-            '<div class="school-strip__body">' +
-              '<span class="eyebrow">' + esc(t('course.school')) + '</span>' +
-              '<h3>' + esc(pick(s.name)) + '</h3>' +
-              '<p>' + esc(pick(s.about)) + '</p>' +
-            '</div>' +
-            '<a class="btn btn--ghost btn--sm" href="school.html?id=' + s.id + '">' + esc(t('course.schoolLink')) + '</a>' +
+      '<div class="rec">' +
+        '<div>' +
+          '<div class="facts">' +
+            fact(t('spec.school'), esc(pick(s.name))) +
+            fact(t('spec.city'), val(placeOf(c))) +
+            fact(t('spec.format'), esc(formatLabel(c.format))) +
+            fact(t('spec.language'), esc((c.langs || []).map(langLabel).join(' / '))) +
+            fact(t('spec.starts'), esc(I.longDate(c.start)), I.hijri(c.start)) +
+            fact(t('spec.days'), esc(I.dayCount(c.days))) +
+            fact(t('spec.subject'), esc(subjectLabel(c.subject))) +
+          '</div>' +
+
+          '<div class="fee-lockup">' +
+            '<span class="fee-lockup__cur">' + esc(t('spec.fee')) + ' · ' + esc(f.code) + '</span>' +
+            '<span class="fee-lockup__n num">' + esc(f.amount) + '</span>' +
+            '<span class="fee-lockup__sar">' + esc(f.sub) + '</span>' +
           '</div>' +
         '</div>' +
-        '<aside class="booking-card">' +
-          '<div class="price">' + esc(I.money(c.price, c.currency)) + '</div>' +
-          '<div class="price-note">' + esc(t('card.from')) + ' · ' + esc(I.dayCount(c.days)) + '</div>' +
-          '<ul class="fact-list">' +
-            fact(t('course.start'), I.shortDate(c.start), I.hijriDate(c.start)) +
-            fact(t('course.format'), formatLabel(c.format)) +
-            fact(t('course.location'), placeOf(c)) +
-            fact(t('course.language'), c.langs.map(langLabel).join(' · ')) +
-            fact(t('course.subject'), subjectLabel(c.subject)) +
-          '</ul>' +
-          '<a class="btn btn--primary btn--block" href="contact.html?course=' + c.id + '">' + esc(t('course.request')) + '</a>' +
-          '<a class="btn btn--ghost btn--block" href="contact.html?course=' + c.id + '#corporate">' + esc(t('course.team')) + '</a>' +
-          '<div style="height:10px"></div>' +
-          '<button class="btn btn--ghost btn--block save-btn-wide" type="button" data-save-wide="' + c.id + '"></button>' +
+
+        '<aside class="enquiry">' +
+          '<h2>' + esc(t('rec.enrol')) + '</h2>' +
+          '<p>' + esc(t('rec.enrolBody')) + '</p>' +
+          wa +
+          '<a class="btn btn--ghost btn--block" href="contact.html?course=' + c.id + '#teams-form">' +
+            esc(t('rec.proposal')) + '</a>' +
+          '<button class="ctl save btn--block enquiry__save" type="button" data-course="' + c.id + '" ' +
+            'aria-pressed="false">' + HEART + ' ' + esc(t('card.save')) + '</button>' +
+          '<p>' + esc(t('rec.hours')) + '</p>' +
         '</aside>' +
       '</div>';
 
-    /* Wide save button mirrors the shortlist state of the card buttons. */
-    const wide = mount.querySelector('[data-save-wide]');
-    function paintWide() {
-      const on = Shortlist.has(c.id);
-      wide.textContent = on ? t('card.saved') : t('card.save');
-      wide.setAttribute('aria-pressed', on ? 'true' : 'false');
-    }
-    wide.addEventListener('click', function () { Shortlist.toggle(c.id); paintWide(); });
-    paintWide();
+    const others = D.courses.filter((x) => x.id !== c.id && x.school === c.school)
+      .sort((a, b) => a.start.localeCompare(b.start)).slice(0, 4);
+    const similar = D.courses.filter((x) => x.id !== c.id && x.school !== c.school && x.subject === c.subject)
+      .sort((a, b) => a.start.localeCompare(b.start)).slice(0, 4);
+    let tail = '';
+    if (others.length) tail += '<div class="mini"><h2>' + esc(t('rec.other')) + '</h2>' +
+      others.map((x, i) => row(x, { i: Math.min(i, 6), n: i + 1 })).join('') + '</div>';
+    if (similar.length) tail += '<div class="mini"><h2>' + esc(t('rec.similar')) + '</h2>' +
+      similar.map((x, i) => row(x, { i: Math.min(i, 6), n: i + 1 })).join('') + '</div>';
+    if (tail) mount.insertAdjacentHTML('beforeend', tail);
 
-    const similar = document.querySelector('[data-similar]');
-    if (similar) {
-      const rel = D.courses
-        .filter((x) => x.id !== c.id && (x.subject === c.subject || x.school === c.school))
-        .sort((a, b) => b.popularity - a.popularity).slice(0, 3);
-      similar.innerHTML = rel.map(courseCard).join('');
-    }
+    /* The mobile action bar repeats the fee and the primary action. */
+    const bar = document.createElement('div');
+    bar.className = 'rec-bar';
+    bar.innerHTML = '<span class="rec-bar__fee num">' + esc(f.code + ' ' + f.amount) + '</span>' +
+      (SITE_WA
+        ? '<a class="btn btn--solid" rel="noopener" href="https://wa.me/' + SITE_WA + '">WhatsApp</a>'
+        : '<a class="btn btn--solid" href="contact.html?course=' + c.id + '#teams-form">' + esc(t('rec.proposal')) + '</a>');
+    document.body.appendChild(bar);
+
     Shortlist.sync();
+    settle(mount);
   }
 
-  function fact(k, v, sub) {
-    return '<li><span class="k">' + esc(k) + '</span><span class="v">' + esc(v) +
-      (sub ? '<small>' + esc(sub) + '</small>' : '') + '</span></li>';
-  }
+  /* The builder writes the operator's WhatsApp number into the masthead when
+     it is set; the record page reads it from there rather than duplicating it. */
+  const SITE_WA = (function () {
+    const a = document.querySelector('.tools a[href^="https://wa.me/"]');
+    return a ? a.getAttribute('href').split('wa.me/')[1].split('?')[0] : '';
+  })();
 
   /* --- Schools ------------------------------------------------------------ */
   function initSchools() {
     const mount = document.querySelector('[data-schools]');
     if (!mount) return;
-    let region = new URLSearchParams(location.search).get('region') || '';
-
-    const nav = document.querySelector('[data-region-filter]');
-    function paint() {
-      const list = D.schools.filter((s) => !region || s.region === region);
-      mount.innerHTML = list.map(schoolCard).join('');
-      if (nav) {
-        nav.querySelectorAll('[data-region]').forEach(function (b) {
-          b.setAttribute('aria-pressed', b.getAttribute('data-region') === region ? 'true' : 'false');
-          b.classList.toggle('btn--primary', b.getAttribute('data-region') === region);
-          b.classList.toggle('btn--ghost', b.getAttribute('data-region') !== region);
-        });
-      }
+    let sort = 'count';
+    const box = document.querySelector('[data-school-sort]');
+    if (box) {
+      box.innerHTML = ['count', 'name', 'country'].map((k) =>
+        '<button class="ctl" type="button" data-k="' + k + '" aria-pressed="false">' +
+        esc(t(k === 'country' ? 'spec.country' : 'sort.' + k)) + '</button>').join('');
+      box.querySelectorAll('[data-k]').forEach((b) => b.addEventListener('click', function () {
+        sort = b.getAttribute('data-k'); paint();
+      }));
     }
-    if (nav) {
-      nav.innerHTML = '<button class="btn btn--ghost btn--sm" type="button" data-region="">' + esc(t('filters.any')) + '</button>' +
-        D.regions.map(function (r) {
-          const n = D.schools.filter((s) => s.region === r.id).length;
-          if (!n) return '';
-          return '<button class="btn btn--ghost btn--sm" type="button" data-region="' + r.id + '">' + esc(pick(r)) + '</button>';
-        }).join('');
-      nav.querySelectorAll('[data-region]').forEach(function (b) {
-        b.addEventListener('click', function () {
-          region = b.getAttribute('data-region');
-          const p = new URLSearchParams();
-          if (region) p.set('region', region);
-          history.replaceState(null, '', p.toString() ? '?' + p : location.pathname);
-          paint();
-        });
-      });
+    function paint() {
+      const rows = D.schools.map((s) => ({ s: s, n: D.courses.filter((c) => c.school === s.id).length }))
+        .filter((x) => x.n > 0);
+      rows.sort((a, b) => sort === 'name' ? I.collator.compare(pick(a.s.name), pick(b.s.name))
+        : sort === 'country' ? I.collator.compare(pick(a.s.country), pick(b.s.country))
+        : b.n - a.n);
+      mount.innerHTML = rows.map((x, i) => schoolRow(x.s, x.n, i + 1, Math.min(i, 6))).join('');
+      if (box) box.querySelectorAll('[data-k]').forEach((b) =>
+        b.setAttribute('aria-pressed', b.getAttribute('data-k') === sort ? 'true' : 'false'));
+      settle(mount);
     }
     paint();
   }
@@ -844,107 +755,96 @@
   function initSchoolDetail() {
     const mount = document.querySelector('[data-school-detail]');
     if (!mount) return;
-    const id = new URLSearchParams(location.search).get('id');
-    const s = SCHOOL[id];
-
+    const s = SCHOOL[new URLSearchParams(location.search).get('id')];
     if (!s) {
-      mount.innerHTML = '<div class="empty-state"><h3>' + esc(t('school.notFound')) + '</h3>' +
-        '<p><a class="link-arrow" href="schools.html">' + esc(t('school.back')) + '</a></p></div>';
+      mount.innerHTML = '<div class="empty"><h3>' + esc(t('school.notFound')) + '</h3>' +
+        '<p><a class="btn btn--ghost" href="schools.html">' + esc(t('school.back')) + '</a></p></div>';
       return;
     }
-
     document.title = pick(s.name) + ' | Masar';
-    const crumb = document.querySelector('[data-school-crumb]');
+    const crumb = document.querySelector('[data-crumb-school]');
     if (crumb) crumb.textContent = pick(s.name);
 
     const courses = D.courses.filter((c) => c.school === s.id).sort((a, b) => a.start.localeCompare(b.start));
-
-    mount.innerHTML = '' +
-      '<div class="detail-head">' +
-        '<span class="eyebrow">' + esc(cityCountry(s)) + '</span>' +
-        '<h1>' + esc(pick(s.name)) + '</h1>' +
-        '<p class="lede">' + esc(pick(s.about)) + '</p>' +
-        '<div class="detail-meta">' +
-          '<span class="pill pill--brand">' + esc(I.courseCount(courses.length)) + '</span>' +
-          '<span class="pill">' + esc(t('school.founded')) + ' ' + esc(I.num(s.founded)) + '</span>' +
-          s.accreditation.map((a) => '<span class="pill pill--ltr">' + esc(a) + '</span>').join('') +
-        '</div>' +
+    mount.innerHTML =
+      '<div class="chap-head">' +
+        '<span class="chap-num num">' + esc(I.num(courses.length)) + '</span>' +
+        '<h1 class="chap-title">' + esc(pick(s.name)) + '</h1>' +
+        '<p class="chap-note">' + val(cityCountry(s)) + '</p>' +
       '</div>' +
-      '<h2 class="h3" style="margin-block:12px 18px">' + esc(t('school.courses')) + '</h2>' +
-      '<div class="card-grid">' + courses.map(courseCard).join('') + '</div>';
+      '<div class="ledger">' + ledger(courses) + '</div>';
     Shortlist.sync();
+    settle(mount);
   }
 
-  /* --- Collections -------------------------------------------------------- */
+  /* --- Sets --------------------------------------------------------------- */
   function initLists() {
     const mount = document.querySelector('[data-lists]');
     if (!mount) return;
-    mount.innerHTML = D.lists.map(listCard).join('');
+    mount.innerHTML = D.lists.map(function (l, i) {
+      const alt = I.LANG === 'ar' ? (l.title && l.title.en) : (l.title && l.title.ar);
+      return '<article class="coll-row" data-reveal style="--i:' + Math.min(i, 6) + '">' +
+        '<span class="school-row__n" aria-hidden="true">' + String(i + 1).padStart(2, '0') + '</span>' +
+        '<div><h3 class="coll-row__t"><a href="list.html?id=' + l.id + '">' + esc(pick(l.title)) + '</a></h3>' +
+        (alt ? '<span class="row__alt alt-run" lang="' + (I.LANG === 'ar' ? 'en' : 'ar') + '">' + esc(alt) + '</span>' : '') +
+        '<p class="coll-row__b">' + esc(pick(l.blurb)) + '</p></div>' +
+        '<span class="coll-row__c"><span class="num">' + esc(I.num(l.courses.length)) + '</span>' +
+        '<span class="lbl">' + esc(t('spec.programmes')) + '</span></span>' +
+        '</article>';
+    }).join('');
+    settle(mount);
   }
 
   function initListDetail() {
     const mount = document.querySelector('[data-list-detail]');
     if (!mount) return;
-    const id = new URLSearchParams(location.search).get('id');
-    const l = LIST[id];
-
+    const l = LIST[new URLSearchParams(location.search).get('id')];
     if (!l) {
-      mount.innerHTML = '<div class="empty-state"><h3>' + esc(t('list.notFound')) + '</h3>' +
-        '<p><a class="link-arrow" href="lists.html">' + esc(t('list.back')) + '</a></p></div>';
+      mount.innerHTML = '<div class="empty"><h3>' + esc(t('set.notFound')) + '</h3>' +
+        '<p><a class="btn btn--ghost" href="lists.html">' + esc(t('set.back')) + '</a></p></div>';
       return;
     }
-
     document.title = pick(l.title) + ' | Masar';
-    const crumb = document.querySelector('[data-list-crumb]');
+    const crumb = document.querySelector('[data-crumb-list]');
     if (crumb) crumb.textContent = pick(l.title);
-
-    const courses = l.courses.map((cid) => COURSE[cid]).filter(Boolean);
-    mount.innerHTML = '' +
-      '<div class="detail-head">' +
-        '<span class="eyebrow">' + esc(I.courseCount(courses.length)) + '</span>' +
-        '<h1>' + esc(pick(l.title)) + '</h1>' +
-        '<p class="lede">' + esc(pick(l.blurb)) + '</p>' +
+    const courses = l.courses.map((id) => COURSE[id]).filter(Boolean)
+      .sort((a, b) => a.start.localeCompare(b.start));
+    mount.innerHTML =
+      '<div class="chap-head">' +
+        '<span class="chap-num num">' + esc(I.num(courses.length)) + '</span>' +
+        '<h1 class="chap-title">' + esc(pick(l.title)) + '</h1>' +
+        '<p class="chap-note">' + esc(pick(l.blurb)) + ' ' + esc(t('set.basis')) + '</p>' +
       '</div>' +
-      '<div class="card-grid">' + courses.map(courseCard).join('') + '</div>';
+      '<div class="ledger">' + ledger(courses) + '</div>';
     Shortlist.sync();
+    settle(mount);
   }
 
   /* --- Contact ------------------------------------------------------------ */
   function initContact() {
     const form = document.querySelector('[data-contact-form]');
     if (!form) return;
-
-    const courseSel = form.querySelector('[data-course-select]');
-    if (courseSel) {
+    const sel = form.querySelector('[data-course-select]');
+    if (sel) {
       const preset = new URLSearchParams(location.search).get('course');
-      courseSel.innerHTML = '<option value="">—</option>' + D.courses
-        .slice().sort((a, b) => pick(a.title).localeCompare(pick(b.title)))
+      sel.innerHTML = '<option value="">' + esc(t('form.nocourse')) + '</option>' + D.courses.slice()
+        .sort((a, b) => I.collator.compare(pick(a.title), pick(b.title)))
         .map((c) => '<option value="' + c.id + '"' + (c.id === preset ? ' selected' : '') + '>' +
           esc(pick(c.title)) + ' — ' + esc(pick(schoolOf(c).name)) + '</option>').join('');
     }
-
     form.addEventListener('submit', function (e) {
-      /* The form carries novalidate so the timing is ours, but the required
-         fields still have to be honoured. */
-      if (!form.checkValidity()) {
-        e.preventDefault();
-        form.reportValidity();
-        return;
-      }
-      /* A configured endpoint takes the native POST. Otherwise, with an
-         address configured, hand the reader a drafted email; with neither,
-         say so plainly rather than pretending the enquiry went somewhere. */
+      if (!form.checkValidity()) { e.preventDefault(); form.reportValidity(); return; }
       if (form.hasAttribute('data-endpoint')) return;
       e.preventDefault();
       const note = form.querySelector('[data-form-status]');
       const mailto = form.getAttribute('data-mailto');
       if (mailto) {
-        const f = new FormData(form);
-        const course = courseSel && courseSel.selectedOptions[0] ? courseSel.selectedOptions[0].textContent : '';
-        const body = ['Name: ' + f.get('name'), 'Organisation: ' + (f.get('organisation') || '-'),
-          'Mobile: ' + (f.get('phone') || '-'), 'Email: ' + f.get('email'),
-          'Programme: ' + (course || '-'), 'Enrolling: ' + f.get('group'),
-          'Reply in: ' + f.get('reply_language'), '', f.get('message')].join('\n');
+        const d = new FormData(form);
+        const body = ['Name: ' + d.get('name'), 'Organisation: ' + (d.get('organisation') || '-'),
+          'Mobile: ' + (d.get('phone') || '-'), 'Email: ' + d.get('email'),
+          'Programme: ' + (sel && sel.selectedOptions[0] ? sel.selectedOptions[0].textContent : '-'),
+          'Seats: ' + (d.get('seats') || '1'), 'Reply in: ' + d.get('reply_language'),
+          '', d.get('message')].join('\n');
         location.href = 'mailto:' + mailto + '?subject=' + encodeURIComponent('Masar enquiry') +
           '&body=' + encodeURIComponent(body);
       }
@@ -952,41 +852,54 @@
     });
   }
 
-  /* --- Boot --------------------------------------------------------------- */
+  /* --- The one motion idea ------------------------------------------------ */
+  /* The rules draw. Nothing else moves, and nothing waits on the observer to
+     become visible: every row is ruled from first paint. */
+  let booted = false;
+  let io = null;
 
-  /* Page-level wiring. Split out from boot() because the header, the drawer
-     and the delegated save-button listener must only ever be bound once,
-     while the page body can be swapped and re-mounted (the single-file demo
-     build in tools/bundle.py does exactly that). */
-  function mount() {
+  function initReveal() {
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce || !('IntersectionObserver' in window)) {
+      document.querySelectorAll('[data-reveal]').forEach((el) => el.classList.add('is-in'));
+      booted = true;
+      return;
+    }
+    io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.04 });
+
+    document.querySelectorAll('[data-reveal]').forEach((el) => io.observe(el));
+    setTimeout(function () { booted = true; }, 2800);
+  }
+
+  /* Nodes rendered after the opening sequence are shown at once — filtering
+     and sorting must never re-animate the table. */
+  function settle(scope) {
+    const els = (scope || document).querySelectorAll('[data-reveal]:not(.is-in)');
+    if (booted || !io) { els.forEach((el) => el.classList.add('is-in')); return; }
+    els.forEach((el) => io.observe(el));
+  }
+
+  function boot() {
+    initChrome();
     initHome();
     initCatalogue();
-    initCourseDetail();
+    initRecord();
     initSchools();
     initSchoolDetail();
     initLists();
     initListDetail();
     initContact();
-  }
-
-  function initReveal() {
-    if (!('IntersectionObserver' in window)) return;
-    const els = document.querySelectorAll('.tile, .course-card, .section-head, .list-card, .school-card');
-    const io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
-      });
-    }, { rootMargin: '0px 0px -8% 0px' });
-    els.forEach(function (el) { el.setAttribute('data-reveal', ''); io.observe(el); });
-  }
-
-  function boot() {
-    initChrome();
-    mount();
     initReveal();
   }
 
-  window.MASAR_APP = { boot: boot, mount: mount };
+  /* The multi-page site boots once per document. The single-file bundle
+     (tools/bundle.py) swaps the <main> body on hash routes and re-mounts
+     through this handle; nothing else uses it. */
+  window.MASAR_APP = { mount: boot };
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();

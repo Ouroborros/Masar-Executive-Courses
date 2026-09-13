@@ -3,60 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Masar — executive programmes from the world's business schools</title>
-  <meta name="description" content="Compare open-enrolment executive programmes from MIT Sloan, IMD, Kellogg, Harvard Kennedy School and more — dates, teaching days and fees in the school's currency or in Saudi riyals. Bilingual, free to use, no paid placement.">
+  <title>Masar — an independent index of executive programmes</title>
+  <meta name="description" content="The fee, the city and the dates for open-enrolment executive programmes from MIT Sloan, IMD, Kellogg, Harvard Kennedy School and more. No rankings, no paid placement.">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="alternate" hreflang="en" href="index.html">
   <link rel="alternate" hreflang="ar" href="ar/index.html">
   <link rel="alternate" hreflang="x-default" href="index.html">
   <script>
-    /* Set the theme before first paint so the page never flashes light. */
+    /* Ground and script state before first paint: no flash, and nothing is
+       hidden for readers without JS. */
     (function () {
+      var r = document.documentElement;
+      r.className += ' js';
       try {
-        var saved = localStorage.getItem('masar:theme');
-        if (!saved) saved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        document.documentElement.setAttribute('data-theme', saved);
+        var t = localStorage.getItem('masar-theme');
+        if (t === 'light' || t === 'dark') r.setAttribute('data-theme', t);
       } catch (e) {}
     })();
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Reem+Kufi:wght@700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Markazi+Text:wght@500;600&family=Newsreader:opsz,wght@6..72,300..500&display=swap">
   <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to the index</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-kufi" lang="ar" dir="rtl" aria-hidden="true">مسار</span>
-        <span class="brand-name">Masar<small>Executive programmes</small></span>
-      </a>
+  <header class="masthead">
+    <div class="sheet masthead__in">
+      <a class="wordmark" href="index.html" aria-label="Masar"><svg class="wordmark__kufi" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="0" y="1" width="24" height="3.4"/><rect x="20.6" y="1" width="3.4" height="11"/><rect x="8" y="8.6" width="16" height="3.4"/><rect x="8" y="8.6" width="3.4" height="11"/><rect x="0" y="16.2" width="11.4" height="3.4"/></svg><span class="wordmark__la">Masar</span><span class="wordmark__bar" aria-hidden="true"></span><span class="wordmark__ar" lang="ar">مسار</span></a>
 
-      <nav id="main-nav" class="main-nav" aria-label="Primary">
+      <nav id="chapnav" class="chapnav" aria-label="Chapters">
         <ul>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="schools.html">Schools</a></li>
-          <li><a href="lists.html">Collections</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" aria-current="page"><span class="sr-only">§01 </span>Fields</a></li>
+            <li><a href="courses.html"><span class="sr-only">§02 </span>The index</a></li>
+            <li><a href="schools.html"><span class="sr-only">§03 </span>Schools</a></li>
+            <li><a href="lists.html"><span class="sr-only">§04 </span>Sets</a></li>
+            <li><a href="about.html"><span class="sr-only">§05 </span>Method</a></li>
+            <li><a href="contact.html"><span class="sr-only">§06 </span>Contact</a></li>
         </ul>
       </nav>
 
-      <div class="header-tools">
-        <a class="lang-switch" href="ar/index.html" data-lang-switch hreflang="ar" lang="ar"
-           aria-label="اقرأ هذه الصفحة بالعربية">العربية</a>
-        <button class="icon-btn shortlist-btn" type="button" data-drawer-open aria-label="Shortlist">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-4-6 4V5a1 1 0 0 1 1-1Z"/></svg><span class="shortlist-count" data-shortlist-count>0</span>
-        </button>
-        <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7Z"/></svg></button>
-        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false"
-                aria-controls="main-nav" aria-label="Menu">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-            <path d="M4 7h16M4 12h16M4 17h16"/>
-          </svg>
-        </button>
+      <div class="tools">
+        <button class="ctl" type="button" data-currency aria-pressed="false">Fees as published</button>
+        <a class="ctl" href="ar/index.html" data-lang-switch data-lang-code="AR" hreflang="ar" lang="ar" aria-label="اقرأ هذه الصفحة بالعربية">العربية</a>
+        
+        <button class="ctl" type="button" data-drawer-open aria-label="Shortlist"><span class="only-wide">Shortlist</span><span data-shortlist-count>0</span></button>
+        <button class="ctl nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="chapnav" aria-label="Chapters">Chapters</button>
       </div>
     </div>
   </header>
@@ -64,212 +57,240 @@
   <main id="main">
 
     <section class="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <h1>Learn what the <span class="tint">next decade</span> of leadership demands.</h1>
-          </div>
-          <div class="hero-side">
-            <p>Intensive programmes from MIT Sloan, IMD, Kellogg, Harvard Kennedy School and twelve more —
-              <span data-stat="courses">189</span> of them, with the fee, the city and the dates on every card.
-              In riyals or the school's currency.</p>
-            <p class="tag" lang="ar" dir="rtl">الرسوم كما نُشرت، والتواريخ كما أُعلنت.</p>
-          </div>
-        </div>
+      <div class="sheet">
+        <p class="dateline lbl">
+          <span>An independent index · Riyadh</span>
+          <span class="dateline__sep" aria-hidden="true">/</span>
+          <span data-today>—</span>
+          <span class="dateline__sep" aria-hidden="true">/</span>
+          <span class="hijri" lang="ar" data-today-hijri>—</span>
+        </p>
 
-        <form class="hero-search" action="courses.html" method="get" role="search">
-          <div class="field">
-            <label for="q">Search</label>
-            <input id="q" name="q" type="search" placeholder="Programme, subject or school" autocomplete="off">
-          </div>
-          <div class="field">
-            <label for="subject">Subject</label>
-            <select id="subject" name="subject" data-hero-subject></select>
-          </div>
-          <div class="field">
-            <label for="format">Format</label>
-            <select id="format" name="format" data-hero-format></select>
-          </div>
-          <button class="btn btn--primary" type="submit">Find</button>
-        </form>
-
-        <nav class="ambitions" aria-label="Explore by ambition">
-          <a class="ambition" href="courses.html?subject=leadership">Become a better leader <span class="arw" aria-hidden="true">→</span></a>
-          <a class="ambition" href="courses.html?subject=digital">Master AI strategy <span class="arw" aria-hidden="true">→</span></a>
-          <a class="ambition" href="courses.html?q=chief">Move into the C-suite <span class="arw" aria-hidden="true">→</span></a>
-          <a class="ambition" href="courses.html?subject=finance">Understand finance <span class="arw" aria-hidden="true">→</span></a>
-          <a class="ambition" href="courses.html?subject=entrepreneurship">Build a new venture <span class="arw" aria-hidden="true">→</span></a>
-          <a class="ambition" href="courses.html?subject=negotiation">Negotiate better <span class="arw" aria-hidden="true">→</span></a>
-        </nav>
-
-        <div class="tiles" data-home-tiles></div>
-
-        <div class="action-bar">
-          <p>Ask in Arabic or English — a reply within two working days, Sunday to Thursday.</p>
-          <div class="row"><a class="btn btn--ghost" href="contact.html">Request a call</a></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
+        <div class="hero__grid">
           <div>
-            <span class="eyebrow">Next intakes</span>
-            <h2 class="h2">Starting soonest</h2>
-            <p>Sorted by start date. Each card carries the fee, the teaching days and the language of instruction.</p>
+            <h1>
+              <span class="ln" data-reveal style="--i:0">The fee.</span>
+              <span class="ln" data-reveal style="--i:1">The city.</span>
+              <span class="ln" data-reveal style="--i:2">The dates.</span>
+            </h1>
+            <span class="hero__echo alt-run" lang="ar">الرسوم. المدينة. التواريخ.</span>
+            <p class="hero__stand">Masar lists open-enrolment executive programmes from the
+              world's business schools — the fee each school publishes, the city it is taught in,
+              the dates it runs and the number of teaching days. Nothing is ranked. Nothing is sold.</p>
+            <div class="hero__acts">
+              <a class="btn btn--solid" href="courses.html">Browse the index</a>
+              <a class="btn btn--ghost" href="contact.html#teams">Enrol a team</a>
+            </div>
           </div>
-          <a class="link-arrow" href="courses.html?sort=date">Full calendar <span class="arw" aria-hidden="true">→</span></a>
-        </div>
-        <div class="card-grid" data-home-upcoming></div>
-      </div>
-    </section>
 
-    <section class="section section--alt">
-      <div class="container split split--wide">
-        <div>
-          <span class="eyebrow">By subject</span>
-          <h2 class="h2">Start from what you need to lead.</h2>
-          <p class="lede" style="margin-block-start:14px">Twelve subject areas, from board governance to AI. Counts are live.</p>
-        </div>
-        <div class="subject-list" data-home-subjects></div>
-      </div>
-    </section>
-
-
-    <section class="section section--sea">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">For buyers in the Kingdom</span>
-            <h2 class="h2">Built for how executive education is actually bought here.</h2>
-          </div>
-        </div>
-        <div class="feature-grid">
-          <div class="feature">
-            <h3>Riyals, or the school's own currency</h3>
-            <p>Every fee is shown exactly as the school publishes it, and switches to riyals in one click. No hidden pricing, no account to open.</p>
-          </div>
-          <div class="feature">
-            <h3>Hijri and Gregorian dates</h3>
-            <p>Start dates on every programme in both calendars, so a cohort can be checked against Ramadan, Eid and the fiscal year at a glance.</p>
-          </div>
-          <div class="feature">
-            <h3>An advisor, not a lead form</h3>
-            <p>Ask in Arabic or English and get a reply within two working days, Sunday to Thursday. Your details go to the school you choose, and nowhere else.</p>
-            <a class="link-arrow link-arrow--light" href="contact.html">Talk to an advisor <span class="arw" aria-hidden="true">→</span></a>
-          </div>
-          <div class="feature">
-            <h3>Cohorts for organisations</h3>
-            <p>Enrolling a team or a leadership bench? Request a proposal for a group booking or a closed cohort delivered to your calendar.</p>
-            <a class="link-arrow link-arrow--light" href="contact.html#corporate">Request a proposal <span class="arw" aria-hidden="true">→</span></a>
+          <div class="totals">
+            <a class="totals__it" href="courses.html">
+              <span class="totals__n num" data-stat="programmes">189</span>
+              <span class="totals__l lbl">Programmes</span>
+            </a>
+            <a class="totals__it" href="schools.html">
+              <span class="totals__n num" data-stat="schools">16</span>
+              <span class="totals__l lbl">Business schools</span>
+            </a>
+            <a class="totals__it" href="courses.html">
+              <span class="totals__n num" data-stat="countries">6</span>
+              <span class="totals__l lbl">Countries of delivery</span>
+            </a>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">The schools</span>
-            <h2 class="h2">Named, not "world-class".</h2>
-            <p>Every institution in the index, with the city it teaches from and the number of programmes listed.</p>
-          </div>
-          <a class="link-arrow" href="schools.html">All schools <span class="arw" aria-hidden="true">→</span></a>
+    <section class="chapter">
+      <div class="sheet">
+        <div class="chap-head">
+          <span class="chap-num">§01</span>
+          <h2 class="chap-title">Fields<span class="alt-run">الحقول</span></h2>
+          <p class="chap-note">Twelve fields run through the index. Choose one and the catalogue opens filtered to it.</p>
         </div>
-        <div class="school-strip-grid" data-home-schools></div>
+        <div class="chap-body">
+          <div class="fields" data-home-fields></div>
+        </div>
+      </div>
+    </section>
+    <section class="chapter">
+      <div class="sheet">
+        <div class="chap-head">
+          <span class="chap-num">§02</span>
+          <h2 class="chap-title">The next intakes<span class="alt-run">أقرب الدفعات</span></h2>
+          <p class="chap-note">Grouped by start date, soonest first. Ten here; the rest are in the index.</p>
+        </div>
+        <div class="chap-body">
+          <div class="ledger" data-home-ledger></div>
+          <div class="ledger-foot">
+            <a class="btn btn--ghost" href="courses.html" data-all-programmes>See the whole index</a>
+            <span class="lbl">— not recorded</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="chapter">
+      <div class="sheet">
+        <div class="chap-head">
+          <span class="chap-num">§03</span>
+          <h2 class="chap-title">The schools<span class="alt-run">الكليات</span></h2>
+          <p class="chap-note">Every institution with programmes in the index, named — no logos, no rankings.</p>
+        </div>
+        <div class="chap-body">
+          <div data-home-schools></div>
+        </div>
       </div>
     </section>
 
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Collections</span>
-            <h2 class="h2">Answers to the questions people arrive with</h2>
-            <p>Editorial selections, not rankings. Nobody scored anything out of a hundred.</p>
-          </div>
-          <a class="link-arrow" href="lists.html">All collections <span class="arw" aria-hidden="true">→</span></a>
+    <section class="chapter chapter--band" id="method">
+      <div class="sheet">
+        <div class="chap-head">
+          <span class="chap-num">§04</span>
+          <h2 class="chap-title">Method<span class="alt-run" lang="ar">المنهج</span></h2>
+          <p class="chap-note">How a programme gets into the index, and what we will not do to it.</p>
         </div>
-        <div class="card-grid" data-home-lists></div>
+        <div class="chap-body">
+          <p class="creed">We list. We do not sell.</p>
+
+          <div class="tenets">
+            <div class="tenet">
+              <span class="tenet__n">01</span>
+              <h3>Source</h3>
+              <p>Every record is taken from the school's own published programme page. If a school
+                did not state it, this index does not state it either.</p>
+            </div>
+            <div class="tenet">
+              <span class="tenet__n">02</span>
+              <h3>Currency</h3>
+              <p>The fee is the school's own, in the school's own currency. We do not convert the
+                figure we publish.</p>
+            </div>
+            <div class="tenet">
+              <span class="tenet__n">03</span>
+              <h3>Silence</h3>
+              <p>An unrecorded field prints an em dash. An index that fills its own gaps is not
+                an index.</p>
+            </div>
+            <div class="tenet">
+              <span class="tenet__n">04</span>
+              <h3>Position</h3>
+              <p>No rankings, no ratings, no featured slots, no paid placement. Order is by date,
+                fee, teaching days or school — whichever you choose.</p>
+            </div>
+          </div>
+
+          <div class="plate">
+            <p class="plate__codes">USD&nbsp;&nbsp;CHF&nbsp;&nbsp;AUD&nbsp;&nbsp;CAD&nbsp;&nbsp;DKK</p>
+            <div>
+              <p>Five currencies appear in this index because five currencies appear on the
+                schools' own pages. Converting them would be a guess printed as a fact.</p>
+              <p>Beside every fee we also print an indicative riyal figure and the date of the
+                rate we used. It is an indication for a budget line, not a quote.</p>
+            </div>
+          </div>
+
+          <div class="alt-block">
+            <span class="alt-run" lang="ar">الرقم كما نشرته الكلية. لا تحويل، ولا تقدير.</span>
+          </div>
+        </div>
       </div>
     </section>
-
-    <section class="section">
-      <div class="container split">
-        <div>
-          <span class="eyebrow">How programmes get here</span>
-          <h2 class="h2">Facts from the schools. Nothing invented.</h2>
-          <p class="lede" style="margin-block-start:14px">Masar reads the programme pages the schools publish and records what they say — title, dates, teaching days, format, language and fee. That is all a card shows, and all it claims.</p>
+    <section class="chapter" id="teams">
+      <div class="sheet">
+        <div class="chap-head">
+          <span class="chap-num">§05</span>
+          <h2 class="chap-title">Enrolling a team<span class="alt-run">تسجيل فريق</span></h2>
+          <p class="chap-note">Masar does not enrol on a school's behalf. It points you at the right intake and the right desk.</p>
         </div>
-        <ol class="step-list">
-          <li><div><h3>Taken from the source</h3><p>Listings come from each school's own published calendar and are refreshed regularly.</p></div></li>
-          <li><div><h3>No ratings we did not earn</h3><p>Imported programmes carry no star ratings, testimonials or marketing copy. If a school did not state it, the card does not either.</p></div></li>
-          <li><div><h3>No paid placement</h3><p>Position on this site is not for sale. Collections are editorial, and say so.</p></div></li>
-          <li><div><h3>Straight to the school</h3><p>An enquiry goes to the institution running the programme. Your details are not resold.</p></div></li>
-        </ol>
+        <div class="chap-body">
+          <div class="steps">
+            <div class="step"><span class="step__n">01</span><h3>Shortlist the intakes</h3><p>Filter the index by field, city, month, teaching days or fee, and keep what fits.</p></div>
+            <div class="step"><span class="step__n">02</span><h3>Send it on</h3><p>A filtered view is a link, and a shortlist copies as plain text — both forward to a sponsor intact.</p></div>
+            <div class="step"><span class="step__n">03</span><h3>Ask for a proposal</h3><p>Tell us the seats and the quarter. Group terms and closed cohorts are agreed with the school, not with us.</p></div>
+          </div>
+          <div class="ledger-foot"><a class="btn btn--solid" href="contact.html#teams">Request a proposal</a></div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
+  <footer class="colophon">
+    <div class="sheet">
+      <div class="colo-grid">
         <div>
-          <a class="brand" href="index.html"><span class="brand-kufi" lang="ar" dir="rtl" aria-hidden="true">مسار</span><span class="brand-name">Masar</span></a>
-          <p class="footer-blurb">An independent, bilingual index of open-enrolment executive programmes from the world's business schools, built in Riyadh for leaders in the Kingdom and beyond.</p>
-
+          <span class="wordmark"><svg class="wordmark__kufi" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="0" y="1" width="24" height="3.4"/><rect x="20.6" y="1" width="3.4" height="11"/><rect x="8" y="8.6" width="16" height="3.4"/><rect x="8" y="8.6" width="3.4" height="11"/><rect x="0" y="16.2" width="11.4" height="3.4"/></svg><span class="wordmark__la">Masar</span><span class="wordmark__bar" aria-hidden="true"></span><span class="wordmark__ar" lang="ar">مسار</span></span>
+          <p style="margin-block-start:var(--sp-4);max-inline-size:38ch">An independent index of open-enrolment executive programmes, built in Riyadh. We list. We do not sell.</p>
         </div>
         <div>
-          <h3>Browse</h3>
+          <h3>Chapters</h3>
           <ul>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="courses.html?sort=date">Start dates</a></li>
+            <li><a href="index.html">Fields</a></li>
+            <li><a href="courses.html">The index</a></li>
             <li><a href="schools.html">Schools</a></li>
-            <li><a href="lists.html">Collections</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Popular subjects</h3>
-          <ul>
-            <li><a href="courses.html?subject=leadership">Leadership</a></li>
-            <li><a href="courses.html?subject=finance">Finance</a></li>
-            <li><a href="courses.html?subject=digital">AI & digital</a></li>
-            <li><a href="courses.html?subject=strategy">Strategy</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Masar</h3>
-          <ul>
-            <li><a href="about.html">About</a></li>
+            <li><a href="lists.html">Sets</a></li>
+            <li><a href="about.html">Method</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="contact.html#corporate">For organisations</a></li>
-            <li><a href="ar/index.html" data-lang-switch>العربية</a></li>
           </ul>
+        </div>
+        <div>
+          <h3>Language</h3>
+          <ul>
+            <li><a href="ar/index.html" data-lang-switch lang="ar">العربية</a></li>
+            <li><button class="ctl" type="button" data-theme-toggle style="margin-block-start:var(--sp-2)">Ground</button></li>
+          </ul>
+        </div>
+        <div>
+          <h3>The record</h3>
+      <div class="record">
+        <div class="record__r">
+          <span class="lbl">Commercial registration</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">VAT number</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">Maroof</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">Address</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">Telephone</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">WhatsApp</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">Last refreshed</span>
+          <span class="record__v"><span dir="ltr">23 August 2026</span></span>
+        </div>
+        <p class="record__note">Printed by the same rule as the rest of the index: an em dash means we have not recorded it yet, not that it does not exist.</p>
+      </div>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="colo-base">
         <span>© <span data-year>2026</span> Masar</span>
-        <span class="footer-source">Listings are taken from the schools' published programme pages; last refreshed 23 August 2026. Fees are shown as published; riyal amounts are indicative conversions.</span>
+        <span>— not recorded</span>
+        <span>Every fee is the school's own published figure, in the school's own currency.</span>
       </div>
     </div>
   </footer>
 
-  <div class="drawer-backdrop" data-drawer-backdrop></div>
-  <aside class="drawer" data-drawer role="dialog" aria-modal="true"
-         aria-label="Your shortlist" aria-hidden="true" inert>
-    <div class="drawer__head">
-      <h2 class="h3">Your shortlist</h2>
-      <button class="icon-btn" type="button" data-drawer-close aria-label="Close">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-          <path d="M6 6l12 12M18 6 6 18"/>
-        </svg>
-      </button>
+  <div class="drawer-back" data-drawer-backdrop></div>
+  <aside class="drawer" data-drawer role="dialog" aria-modal="true" aria-label="Shortlist" aria-hidden="true" inert>
+    <div class="drawer__h">
+      <h2 style="font-size:var(--fs-500)">Shortlist</h2>
+      <button class="ctl" type="button" data-drawer-close>Close</button>
     </div>
-    <div class="drawer__body" data-drawer-body></div>
-    <div class="drawer__foot">
-      <button class="btn btn--ghost btn--block" type="button" data-shortlist-clear>Clear shortlist</button>
+    <div class="drawer__b" data-drawer-body></div>
+    <div class="drawer__f">
+      <button class="btn btn--ghost btn--block" type="button" data-shortlist-copy></button>
+      <button class="btn btn--ghost btn--block" type="button" data-shortlist-clear></button>
     </div>
   </aside>
 

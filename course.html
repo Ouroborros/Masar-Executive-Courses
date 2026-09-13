@@ -4,142 +4,146 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Programme | Masar</title>
-  <meta name="description" content="Programme details, fee, dates and the school behind it.">
+  <meta name="description" content="The recorded facts for one executive programme: school, city, dates, teaching days and fee.">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="alternate" hreflang="en" href="course.html">
   <link rel="alternate" hreflang="ar" href="ar/course.html">
   <link rel="alternate" hreflang="x-default" href="course.html">
   <script>
-    /* Set the theme before first paint so the page never flashes light. */
+    /* Ground and script state before first paint: no flash, and nothing is
+       hidden for readers without JS. */
     (function () {
+      var r = document.documentElement;
+      r.className += ' js';
       try {
-        var saved = localStorage.getItem('masar:theme');
-        if (!saved) saved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        document.documentElement.setAttribute('data-theme', saved);
+        var t = localStorage.getItem('masar-theme');
+        if (t === 'light' || t === 'dark') r.setAttribute('data-theme', t);
       } catch (e) {}
     })();
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Reem+Kufi:wght@700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Markazi+Text:wght@500;600&family=Newsreader:opsz,wght@6..72,300..500&display=swap">
   <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to the index</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-kufi" lang="ar" dir="rtl" aria-hidden="true">مسار</span>
-        <span class="brand-name">Masar<small>Executive programmes</small></span>
-      </a>
+  <header class="masthead">
+    <div class="sheet masthead__in">
+      <a class="wordmark" href="index.html" aria-label="Masar"><svg class="wordmark__kufi" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="0" y="1" width="24" height="3.4"/><rect x="20.6" y="1" width="3.4" height="11"/><rect x="8" y="8.6" width="16" height="3.4"/><rect x="8" y="8.6" width="3.4" height="11"/><rect x="0" y="16.2" width="11.4" height="3.4"/></svg><span class="wordmark__la">Masar</span><span class="wordmark__bar" aria-hidden="true"></span><span class="wordmark__ar" lang="ar">مسار</span></a>
 
-      <nav id="main-nav" class="main-nav" aria-label="Primary">
+      <nav id="chapnav" class="chapnav" aria-label="Chapters">
         <ul>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="schools.html">Schools</a></li>
-          <li><a href="lists.html">Collections</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html"><span class="sr-only">§01 </span>Fields</a></li>
+            <li><a href="courses.html"><span class="sr-only">§02 </span>The index</a></li>
+            <li><a href="schools.html"><span class="sr-only">§03 </span>Schools</a></li>
+            <li><a href="lists.html"><span class="sr-only">§04 </span>Sets</a></li>
+            <li><a href="about.html"><span class="sr-only">§05 </span>Method</a></li>
+            <li><a href="contact.html"><span class="sr-only">§06 </span>Contact</a></li>
         </ul>
       </nav>
 
-      <div class="header-tools">
-        <a class="lang-switch" href="ar/course.html" data-lang-switch hreflang="ar" lang="ar"
-           aria-label="اقرأ هذه الصفحة بالعربية">العربية</a>
-        <button class="icon-btn shortlist-btn" type="button" data-drawer-open aria-label="Shortlist">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-4-6 4V5a1 1 0 0 1 1-1Z"/></svg><span class="shortlist-count" data-shortlist-count>0</span>
-        </button>
-        <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7Z"/></svg></button>
-        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false"
-                aria-controls="main-nav" aria-label="Menu">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-            <path d="M4 7h16M4 12h16M4 17h16"/>
-          </svg>
-        </button>
+      <div class="tools">
+        <button class="ctl" type="button" data-currency aria-pressed="false">Fees as published</button>
+        <a class="ctl" href="ar/course.html" data-lang-switch data-lang-code="AR" hreflang="ar" lang="ar" aria-label="اقرأ هذه الصفحة بالعربية">العربية</a>
+        
+        <button class="ctl" type="button" data-drawer-open aria-label="Shortlist"><span class="only-wide">Shortlist</span><span data-shortlist-count>0</span></button>
+        <button class="ctl nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="chapnav" aria-label="Chapters">Chapters</button>
       </div>
     </div>
   </header>
 
   <main id="main">
 
-    <div class="container">
-      <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li aria-current="page" data-course-crumb>Course</li>
-        </ol>
+    <div class="sheet">
+      <nav class="crumb lbl" aria-label="Index">
+        <a href="courses.html">Index</a>
+        <span aria-hidden="true">/</span>
+        <span data-crumb-school>School</span>
       </nav>
     </div>
-
-    <div class="container" data-course-detail></div>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-head"><h2 class="h2">Similar programmes</h2></div>
-        <div class="card-grid" data-similar></div>
-      </div>
-    </section>
+    <div class="sheet" data-record></div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
+  <footer class="colophon">
+    <div class="sheet">
+      <div class="colo-grid">
         <div>
-          <a class="brand" href="index.html"><span class="brand-kufi" lang="ar" dir="rtl" aria-hidden="true">مسار</span><span class="brand-name">Masar</span></a>
-          <p class="footer-blurb">An independent, bilingual index of open-enrolment executive programmes from the world's business schools, built in Riyadh for leaders in the Kingdom and beyond.</p>
-
+          <span class="wordmark"><svg class="wordmark__kufi" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="0" y="1" width="24" height="3.4"/><rect x="20.6" y="1" width="3.4" height="11"/><rect x="8" y="8.6" width="16" height="3.4"/><rect x="8" y="8.6" width="3.4" height="11"/><rect x="0" y="16.2" width="11.4" height="3.4"/></svg><span class="wordmark__la">Masar</span><span class="wordmark__bar" aria-hidden="true"></span><span class="wordmark__ar" lang="ar">مسار</span></span>
+          <p style="margin-block-start:var(--sp-4);max-inline-size:38ch">An independent index of open-enrolment executive programmes, built in Riyadh. We list. We do not sell.</p>
         </div>
         <div>
-          <h3>Browse</h3>
+          <h3>Chapters</h3>
           <ul>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="courses.html?sort=date">Start dates</a></li>
+            <li><a href="index.html">Fields</a></li>
+            <li><a href="courses.html">The index</a></li>
             <li><a href="schools.html">Schools</a></li>
-            <li><a href="lists.html">Collections</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Popular subjects</h3>
-          <ul>
-            <li><a href="courses.html?subject=leadership">Leadership</a></li>
-            <li><a href="courses.html?subject=finance">Finance</a></li>
-            <li><a href="courses.html?subject=digital">AI & digital</a></li>
-            <li><a href="courses.html?subject=strategy">Strategy</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Masar</h3>
-          <ul>
-            <li><a href="about.html">About</a></li>
+            <li><a href="lists.html">Sets</a></li>
+            <li><a href="about.html">Method</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="contact.html#corporate">For organisations</a></li>
-            <li><a href="ar/course.html" data-lang-switch>العربية</a></li>
           </ul>
+        </div>
+        <div>
+          <h3>Language</h3>
+          <ul>
+            <li><a href="ar/course.html" data-lang-switch lang="ar">العربية</a></li>
+            <li><button class="ctl" type="button" data-theme-toggle style="margin-block-start:var(--sp-2)">Ground</button></li>
+          </ul>
+        </div>
+        <div>
+          <h3>The record</h3>
+      <div class="record">
+        <div class="record__r">
+          <span class="lbl">Commercial registration</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">VAT number</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">Maroof</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">Address</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">Telephone</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">WhatsApp</span>
+          <span class="record__v"><span class="dash" aria-hidden="true">—</span><span class="sr-only">not recorded</span></span>
+        </div>
+        <div class="record__r">
+          <span class="lbl">Last refreshed</span>
+          <span class="record__v"><span dir="ltr">23 August 2026</span></span>
+        </div>
+        <p class="record__note">Printed by the same rule as the rest of the index: an em dash means we have not recorded it yet, not that it does not exist.</p>
+      </div>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="colo-base">
         <span>© <span data-year>2026</span> Masar</span>
-        <span class="footer-source">Listings are taken from the schools' published programme pages; last refreshed 23 August 2026. Fees are shown as published; riyal amounts are indicative conversions.</span>
+        <span>— not recorded</span>
+        <span>Every fee is the school's own published figure, in the school's own currency.</span>
       </div>
     </div>
   </footer>
 
-  <div class="drawer-backdrop" data-drawer-backdrop></div>
-  <aside class="drawer" data-drawer role="dialog" aria-modal="true"
-         aria-label="Your shortlist" aria-hidden="true" inert>
-    <div class="drawer__head">
-      <h2 class="h3">Your shortlist</h2>
-      <button class="icon-btn" type="button" data-drawer-close aria-label="Close">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-          <path d="M6 6l12 12M18 6 6 18"/>
-        </svg>
-      </button>
+  <div class="drawer-back" data-drawer-backdrop></div>
+  <aside class="drawer" data-drawer role="dialog" aria-modal="true" aria-label="Shortlist" aria-hidden="true" inert>
+    <div class="drawer__h">
+      <h2 style="font-size:var(--fs-500)">Shortlist</h2>
+      <button class="ctl" type="button" data-drawer-close>Close</button>
     </div>
-    <div class="drawer__body" data-drawer-body></div>
-    <div class="drawer__foot">
-      <button class="btn btn--ghost btn--block" type="button" data-shortlist-clear>Clear shortlist</button>
+    <div class="drawer__b" data-drawer-body></div>
+    <div class="drawer__f">
+      <button class="btn btn--ghost btn--block" type="button" data-shortlist-copy></button>
+      <button class="btn btn--ghost btn--block" type="button" data-shortlist-clear></button>
     </div>
   </aside>
 

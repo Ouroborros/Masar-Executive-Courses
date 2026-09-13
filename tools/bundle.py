@@ -75,9 +75,9 @@ def main():
         html = read("ar", "index.html") if lang == "ar" else read("index.html")
         chrome[lang] = {
             "skip": grab(r'(<a class="skip-link".*?</a>)', html, "the skip link"),
-            "header": grab(r'(<header class="site-header">.*?</header>)', html, "the header"),
-            "footer": grab(r'(<footer class="site-footer">.*?</footer>)', html, "the footer"),
-            "drawer": grab(r'(<div class="drawer-backdrop".*?</aside>)', html, "the shortlist drawer"),
+            "header": grab(r'(<header class="masthead">.*?</header>)', html, "the header"),
+            "footer": grab(r'(<footer class="colophon">.*?</footer>)', html, "the footer"),
+            "drawer": grab(r'(<div class="drawer-back".*?</aside>)', html, "the shortlist drawer"),
         }
 
     fonts = read("dist", "fonts.css")
@@ -107,7 +107,7 @@ def main():
 
 /* Demo-only: the host page supplies the document chrome, so give the bundle
    the same page background the real site sets on <html>. */
-html {{ background: var(--bg); }}
+html {{ background: var(--ground); }}
 </style>
 
 <script>
@@ -196,12 +196,12 @@ html {{ background: var(--bg); }}
     var r = route();
     document.getElementById('main').innerHTML = BODIES[r.page][LANG];
     document.title = TITLES[r.page][LANG];
-    document.querySelectorAll('.main-nav a').forEach(function (a) {{
+    document.querySelectorAll('.chapnav a').forEach(function (a) {{
       var target = (a.getAttribute('href') || '').split('?')[0];
       if (target === r.page) a.setAttribute('aria-current', 'page');
       else a.removeAttribute('aria-current');
     }});
-    var nav = document.getElementById('main-nav');
+    var nav = document.getElementById('chapnav');
     if (nav) nav.removeAttribute('data-open');
     if (window.MASAR_APP) window.MASAR_APP.mount();
     if (scroll) window.scrollTo({{ top: 0, behavior: 'instant' }});
