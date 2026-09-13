@@ -579,6 +579,9 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
   font-size: clamp(1.5rem, 3.1vw, 2.375rem); line-height: 1.5;
   color: var(--band-ink); letter-spacing: .06em;
   direction: ltr; unicode-bidi: isolate;
+  /* Spans in a wrapping flow, not one unbreakable run: at 320px the five
+     codes have to fold onto a second line rather than widen the document. */
+  display: flex; flex-wrap: wrap; gap: 0 .5em;
 }
 .plate p { color: var(--band-muted); }
 .plate p + p { margin-block-start: var(--sp-4); }

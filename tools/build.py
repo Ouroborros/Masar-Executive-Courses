@@ -489,7 +489,7 @@ HOME["en"] += """
           </div>
 
           <div class="plate">
-            <p class="plate__codes">USD&nbsp;&nbsp;CHF&nbsp;&nbsp;AUD&nbsp;&nbsp;CAD&nbsp;&nbsp;DKK</p>
+            <p class="plate__codes"><span>USD</span><span>CHF</span><span>AUD</span><span>CAD</span><span>DKK</span></p>
             <div>
               <p>Five currencies appear in this index because five currencies appear on the
                 schools' own pages. Converting them would be a guess printed as a fact.</p>
@@ -560,7 +560,7 @@ HOME["ar"] += """
           </div>
 
           <div class="plate">
-            <p class="plate__codes">USD&nbsp;&nbsp;CHF&nbsp;&nbsp;AUD&nbsp;&nbsp;CAD&nbsp;&nbsp;DKK</p>
+            <p class="plate__codes"><span>USD</span><span>CHF</span><span>AUD</span><span>CAD</span><span>DKK</span></p>
             <div>
               <p>تظهر خمس عملات في هذا الفهرس لأن خمس عملات تظهر في صفحات الكليات نفسها.
                 وتحويلها سيكون تخمينًا يُطبَع بوصفه واقعة.</p>
