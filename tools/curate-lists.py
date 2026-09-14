@@ -17,9 +17,11 @@ per school so one large catalogue does not crowd a set out.
   l-finance     subject finance
   l-negotiation subject negotiation, or a title that names negotiation
 
-Featured: one course per school for the eight schools with the most courses,
-the earliest-starting in-person course of each; these carry `featured: true`
-and the front page draws its opening rows from them.
+Featured: one course per school for the eight schools with the most courses:
+the in-person course with the highest published fee (USD-equivalent, via
+tools/fx.py) among those starting in the first six months of the window —
+each school's flagship short programme. These carry `featured: true` and the
+front page draws its opening rows from them.
 """
 
 import json
@@ -27,6 +29,9 @@ import os
 import re
 import subprocess
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import fx
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(HERE, "assets", "js", "data.js")
@@ -86,9 +91,10 @@ def main():
     top = sorted(by_school, key=lambda s: -len(by_school[s]))[:8]
     featured = []
     for s in top:
-        cs = sorted([c for c in by_school[s] if c["format"] == "in-person"] or by_school[s],
-                    key=lambda c: c["start"])
-        featured.append(cs[0]["id"])
+        pool = [c for c in by_school[s] if c["format"] == "in-person" and c["start"] <= "2027-02-28"]
+        pool = pool or [c for c in by_school[s] if c["format"] == "in-person"] or by_school[s]
+        best = max(pool, key=lambda c: (fx.to_usd(c["price"], c.get("currency", "USD")), c["start"]))
+        featured.append(best["id"])
     print("featured: {}".format(", ".join(featured)))
 
     src = src.replace(" featured: true,", "")

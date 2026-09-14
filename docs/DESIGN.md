@@ -167,10 +167,10 @@ trip" became «يستحق عناء السفر», not «يستحق الرحلة»
 - Fees are stored in the school's own published currency. The riyal figure is
   computed for display only, from the dated snapshot in `tools/fx.py`, and is
   always labelled indicative and dated.
-- `sourceUrl` is provenance held in the data and **never rendered**. See
-  `docs/research/source-site-legal-position.md` and the correction in
-  `apify-actor/CRAWL-STATUS.md` — the catalogue should be re-sourced from the
-  schools' own pages before this is published.
+- `sourceUrl` is provenance held in the data and **never rendered**. Since
+  2026-09-14 every record's source is the school's own programme page; see
+  `docs/research/school-robots-2026-09-14.md` and the re-source section of
+  `apify-actor/CRAWL-STATUS.md`. Nothing derives from an aggregator.
 - A school with no programmes does not appear in the schools chapter.
 
 ## Not built yet, worth building next
@@ -186,5 +186,5 @@ trip" became «يستحق عناء السفر», not «يستحق الرحلة»
    CR and VAT numbers, Maroof, and a form endpoint (or the mailto fallback
    engages). Every unset field prints an em dash, by design.
 2. Replace the indicative FX snapshot in `tools/fx.py` and `data.js`.
-3. Re-source the catalogue from the schools' own pages before publishing —
-   see the legal note above.
+3. Re-crawl the schools' pages each intake season with the runbook in
+   `apify-actor/CRAWL-STATUS.md`; the tools re-run end to end.

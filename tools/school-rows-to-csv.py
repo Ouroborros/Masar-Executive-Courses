@@ -227,12 +227,24 @@ def main():
     later = len(rows) - len(best)
     rows = sorted(best.values(), key=lambda r: (r["school"], r["start"], r["title"]))
 
+    # The catalogue models one city per school (the campus), not one per
+    # session. Schools already in data.js keep their recorded city; a new
+    # school takes the city and country most of its in-person sessions print.
+    home = {}
+    for r in rows:
+        if not r.get("city"):
+            continue
+        key = (r["city"], r.get("country", ""))
+        home.setdefault(r["school"], {}).setdefault(key, 0)
+        home[r["school"]][key] += 1
+    home = {s: max(v, key=v.get) for s, v in home.items()}
+
     out_rows, untranslated = [], set()
     for r in rows:
         ex = existing.get(r["school"], {})
         school_ar = ex.get("name_ar") or extra_ar.get(r["school"], "")
-        city = r.get("city") or ex.get("city", "")
-        country = r.get("country") or ex.get("country", "")
+        city = ex.get("city") or home.get(r["school"], ("", ""))[0]
+        country = ex.get("country") or home.get(r["school"], ("", ""))[1]
         title_ar = tr.get(tkey(r["title"]), "")
         if not title_ar:
             untranslated.add(r["title"])

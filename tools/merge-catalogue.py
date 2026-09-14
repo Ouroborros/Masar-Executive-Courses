@@ -335,14 +335,18 @@ def main():
         print("(dry run — pass --write to apply)")
         return
 
+    # An empty array (after reset-catalogue.py) must not get a leading comma:
+    # `[, {...}]` is a JS elision and yields an undefined first element.
     if new_schools:
         lo, hi = array_span(src, "schools")
-        block = ",\n" + ",\n".join(school_js(s) for s in new_schools) + "\n  "
+        sep = ",\n" if src[lo:hi].strip() else "\n"
+        block = sep + ",\n".join(school_js(s) for s in new_schools) + "\n  "
         src = src[:hi].rstrip() + block + src[hi:]
 
     if new_courses:
         lo, hi = array_span(src, "courses")
-        block = ",\n" + ",\n".join(course_js(c) for c in new_courses) + "\n  "
+        sep = ",\n" if src[lo:hi].strip() else "\n"
+        block = sep + ",\n".join(course_js(c) for c in new_courses) + "\n  "
         src = src[:hi].rstrip() + block + src[hi:]
 
     with open(DATA, "w", encoding="utf-8") as fh:

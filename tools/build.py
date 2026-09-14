@@ -32,7 +32,7 @@ SITE = {
     "maroof": "",
     "address": {"en": "", "ar": ""},
     "form_endpoint": "",
-    "refreshed": {"en": "23 August 2026", "ar": "٢٣ أغسطس ٢٠٢٦"},
+    "refreshed": {"en": "14 September 2026", "ar": "١٤ سبتمبر ٢٠٢٦"},
     "fx_date": {"en": "13 September 2026", "ar": "١٣ سبتمبر ٢٠٢٦"},
 }
 
@@ -489,9 +489,9 @@ HOME["en"] += """
           </div>
 
           <div class="plate">
-            <p class="plate__codes"><span>USD</span><span>CHF</span><span>AUD</span><span>CAD</span><span>DKK</span></p>
+            <p class="plate__codes"><span>USD</span><span>CHF</span><span>CAD</span><span>SGD</span><span>AUD</span><span>DKK</span><span>EUR</span></p>
             <div>
-              <p>Five currencies appear in this index because five currencies appear on the
+              <p>Seven currencies appear in this index because seven currencies appear on the
                 schools' own pages. Converting them would be a guess printed as a fact.</p>
               <p>Beside every fee we also print an indicative riyal figure and the date of the
                 rate we used. It is an indication for a budget line, not a quote.</p>
@@ -560,9 +560,9 @@ HOME["ar"] += """
           </div>
 
           <div class="plate">
-            <p class="plate__codes"><span>USD</span><span>CHF</span><span>AUD</span><span>CAD</span><span>DKK</span></p>
+            <p class="plate__codes"><span>USD</span><span>CHF</span><span>CAD</span><span>SGD</span><span>AUD</span><span>DKK</span><span>EUR</span></p>
             <div>
-              <p>تظهر خمس عملات في هذا الفهرس لأن خمس عملات تظهر في صفحات الكليات نفسها.
+              <p>تظهر سبع عملات في هذا الفهرس لأن سبع عملات تظهر في صفحات الكليات نفسها.
                 وتحويلها سيكون تخمينًا يُطبَع بوصفه واقعة.</p>
               <p>وإلى جانب كل رسم نطبع أيضًا مبلغًا استرشاديًا بالريال وتاريخ سعر الصرف المستخدم.
                 هو إشارة لبند في الميزانية، لا عرض سعر.</p>

@@ -206,3 +206,86 @@ re-source from each school's own published programme pages (checking each
 school's own robots.txt), which removes both the database-right and the
 content-signal exposure against the aggregator, and is what a legitimate
 index does in any case. See `docs/research/source-site-legal-position.md`.
+
+---
+
+# Re-sourced from the schools' own pages — 2026-09-14
+
+The CORRECTION above is acted on. Every course in `assets/js/data.js` now
+comes from the school's own programme page; nothing derives from
+executivecourses.com any more. The aggregator-derived batch, CSV and school
+records were deleted from `import/` (they remain in git history before this
+commit).
+
+## Before any page was fetched
+
+`robots.txt` was read in full for all 17 hosts involved (through the crawler,
+because the sandbox's egress proxy blocks the school domains and api.apify.com
+alike). None names an AI crawler, none carries a Content-Signal line or an
+Article 4 DSM reservation, and all programme paths are allowed. Four hosts set
+`Crawl-delay: 10` (Stanford GSB, IMD, St. Gallen, UNSW); those crawls ran with
+one concurrent request. Full table: `docs/research/school-robots-2026-09-14.md`.
+
+## What ran
+
+| Step | Detail |
+| --- | --- |
+| Discovery | Each school's listing page fetched once (cheerio), then read by an agent per school to learn the programme-page URL pattern and whether the listing itself carries dates and fees. Six listings render client-side (HKS, Kellogg, MIT Sloan, NYU Stern, IMD, Sauder); those were re-fetched in a browser and, where still partial, their programme pages were found through the site's own sitemap with a tight URL glob. |
+| Crawl | One bounded run per school, `respectRobotsTxtFile: true`, `htmlTransformer: none`, markdown saved. 17 runs, ~900 pages, 0 failed requests. CBS Executive's Danish-taught programmes are published only at Danish-locale URLs whose facts render client-side; two attempts yielded nothing usable, so CBS carries only its 12 English-language pages. |
+| Extraction | Sonnet agents, one per ~30 pages, following `EXTRACT-RULES` (facts only: title, school, city, start, end, teaching days, fee, currency as printed, format, language). Where a page embeds schema.org JSON-LD (HKS Events, CCL / MIT Sloan / St. Gallen / IMD Courses) the rows were built from that first, with the page text as fallback. 930 session rows across 15 schools. |
+| Conversion | `tools/school-rows-to-csv.py` → `import/courses-school.csv`: 238 sessions filed as not priceable/datable for a short-course catalogue (232 of them multi-week programmes with no teaching-day count, 4 with no printed fee), 287 later intakes folded into their course's earliest start, 405 courses. Arabic titles from `import/translations-school.json` (409 titles, agent-translated, reviewed by sample). |
+| Gates + merge | `spreadsheet-to-batch.py` → `catalogue-gates.py` (61 rejected: days outside 2–20 or fee implausible per day on the USD equivalent, all listed in `import/batch-school.json.rejected.csv`) → `reset-catalogue.py --write` → `merge-catalogue.py import --scraped --write`: **15 schools, 344 courses, validation clean**. |
+| Lists + featured | `tools/curate-lists.py --write` refilled the six editorial sets by rule (8 each) and flagged one flagship per school for the eight largest schools. |
+| Build | `tools/build.py`, verified in a browser: 344 / 15 / 6 on the front page, 344 in the index in both locales, record pages in both locales, no page errors. |
+
+## By school
+
+| School | Courses | Source host |
+| --- | --- | --- |
+| University of St. Gallen Executive School | 53 | es.unisg.ch |
+| MIT Sloan School of Management | 45 | executive.mit.edu |
+| UBC Sauder School of Business | 37 | growth.sauder.ubc.ca |
+| Harvard Kennedy School | 30 | www.hks.harvard.edu |
+| NUS Business School | 30 | executive-education.nus.edu.sg |
+| Kellogg School of Management | 27 | www.kellogg.northwestern.edu |
+| Smith School of Business, Queen's University | 27 | smith.queensu.ca |
+| Stanford Graduate School of Business | 18 | www.gsb.stanford.edu |
+| AGSM, University of New South Wales | 17 | www.unsw.edu.au |
+| IMD Business School | 15 | www.imd.org |
+| UC Berkeley Haas School of Business | 13 | executive.berkeley.edu |
+| CBS Executive, Copenhagen Business School | 12 | cbs-executive.dk |
+| Center for Creative Leadership | 8 | www.ccl.org |
+| Michigan Ross Executive Education | 6 | michiganross.umich.edu |
+| NYU Stern School of Business | 6 | execed.stern.nyu.edu |
+
+UCT Graduate School of Business, which carried no admitted course, is no
+longer a school record. The Center for Creative Leadership is one school
+record again (home Greensboro); its sessions run in several cities and the
+catalogue models a school's city, not a session's.
+
+## Decisions worth knowing
+
+- Danish is now a recognised language of instruction (`da`) across the
+  pipeline and the site's language facet; CBS board programmes carry it.
+- All-capitals titles (NUS) are printed in title case; acronyms are kept.
+- A session with no printed teaching-day count takes `end − start + 1` only
+  when both dates are printed and the span is 20 days or fewer — the same
+  rule the extraction agents were given, applied once more deterministically.
+- Seven currencies appear (USD, CHF, CAD, SGD, AUD, DKK, EUR), so the Method
+  chapter's copy and the `plate__codes` line were updated to match.
+- `merge-catalogue.py` no longer emits a leading comma into an emptied array
+  (a JS elision that yielded an undefined first record).
+
+## Runbook for the next intake season
+
+    python3 tools/school-rows-to-csv.py <extract-dir> --out import/courses-school.csv \
+        --schools-existing <schools.json from data.js> --translations import/translations-school.json
+    python3 tools/spreadsheet-to-batch.py import/courses-school.csv --out import/batch-school.json
+    python3 tools/catalogue-gates.py import/batch-school.json
+    python3 tools/reset-catalogue.py --write
+    python3 tools/merge-catalogue.py import --scraped --write
+    python3 tools/curate-lists.py --write
+    python3 tools/build.py && python3 tools/bundle.py
+
+Crawl inputs and datasets are on the Apify account under the run ids in the
+session transcript; the robots review lists the ones that matter.

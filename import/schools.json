@@ -44,42 +44,20 @@
   }
  },
  {
-  "id": "s-center-for-creative-leadership-singapo",
+  "id": "s-center-for-creative-leadership",
   "name": {
-   "en": "Center for Creative Leadership – Singapore",
-   "ar": "مركز القيادة الإبداعية – سنغافورة"
+   "en": "Center for Creative Leadership",
+   "ar": "Center for Creative Leadership"
   },
   "city": {
-   "en": "Singapore",
-   "ar": "سنغافورة"
+   "en": "Greensboro",
+   "ar": "غرينزبورو"
   },
   "country": {
-   "en": "Singapore",
-   "ar": "سنغافورة"
+   "en": "United States",
+   "ar": "الولايات المتحدة"
   },
-  "region": "asia",
-  "founded": 0,
-  "accreditation": [],
-  "about": {
-   "en": "",
-   "ar": ""
-  }
- },
- {
-  "id": "s-copenhagen-business-school",
-  "name": {
-   "en": "Copenhagen Business School",
-   "ar": "كلية كوبنهاغن للأعمال"
-  },
-  "city": {
-   "en": "Copenhagen",
-   "ar": "كوبنهاغن"
-  },
-  "country": {
-   "en": "Denmark",
-   "ar": "الدنمارك"
-  },
-  "region": "europe",
+  "region": "americas",
   "founded": 0,
   "accreditation": [],
   "about": {
@@ -182,8 +160,8 @@
    "ar": "التعليم التنفيذي في كلية روس بجامعة ميشيغان"
   },
   "city": {
-   "en": "",
-   "ar": ""
+   "en": "Ann Arbor",
+   "ar": "آن آربر"
   },
   "country": {
    "en": "United States",
@@ -292,8 +270,8 @@
    "ar": "كلية سودر للأعمال بجامعة كولومبيا البريطانية"
   },
   "city": {
-   "en": "",
-   "ar": ""
+   "en": "Vancouver",
+   "ar": "فانكوفر"
   },
   "country": {
    "en": "Canada",
@@ -322,28 +300,6 @@
    "ar": "الولايات المتحدة"
   },
   "region": "americas",
-  "founded": 0,
-  "accreditation": [],
-  "about": {
-   "en": "",
-   "ar": ""
-  }
- },
- {
-  "id": "s-uct-graduate-school-of-business",
-  "name": {
-   "en": "UCT Graduate School of Business",
-   "ar": "كلية الدراسات العليا في الأعمال بجامعة كيب تاون"
-  },
-  "city": {
-   "en": "Cape Town",
-   "ar": "كيب تاون"
-  },
-  "country": {
-   "en": "South Africa",
-   "ar": "جنوب أفريقيا"
-  },
-  "region": "africa",
   "founded": 0,
   "accreditation": [],
   "about": {
