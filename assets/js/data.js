@@ -39,7 +39,8 @@ window.MASAR_DATA = (function () {
     { id: 'ar', en: 'Arabic',  ar: 'العربية' },
     { id: 'fr', en: 'French',  ar: 'الفرنسية' },
     { id: 'es', en: 'Spanish', ar: 'الإسبانية' },
-    { id: 'de', en: 'German',  ar: 'الألمانية' }
+    { id: 'de', en: 'German',  ar: 'الألمانية' },
+    { id: 'da', en: 'Danish',  ar: 'الدنماركية' }
   ];
 
   const schools = [

@@ -35,7 +35,7 @@ HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(HERE, "assets", "js", "data.js")
 
 FORMATS = {"in-person", "online", "blended"}
-LANGS = {"en", "ar", "fr", "es", "de"}
+LANGS = {"en", "ar", "fr", "es", "de", "da"}
 REGIONS = {"mena", "europe", "americas", "asia", "africa", "oceania"}
 SUBJECTS = {"leadership", "finance", "strategy", "digital", "data", "marketing",
             "operations", "people", "sustainability", "negotiation",

@@ -38,7 +38,7 @@ import fx
 SUBJECTS = {"leadership", "finance", "strategy", "digital", "data", "marketing",
             "operations", "people", "sustainability", "negotiation",
             "entrepreneurship", "healthcare"}
-LANGS = {"en", "ar", "fr", "es", "de"}
+LANGS = {"en", "ar", "fr", "es", "de", "da"}
 
 FORMAT_ALIASES = {
     "online": "online", "onlineeventattendancemode": "online", "distance": "online",
@@ -53,6 +53,7 @@ LANG_ALIASES = {
     "english": "en", "en": "en", "en-gb": "en", "en-us": "en",
     "arabic": "ar", "ar": "ar", "french": "fr", "fr": "fr",
     "spanish": "es", "es": "es", "german": "de", "de": "de",
+    "danish": "da", "dansk": "da", "da": "da",
 }
 
 
