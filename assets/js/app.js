@@ -52,6 +52,47 @@
   }
   const placeOf = (c) => (c.format === 'online' ? t('misc.online') : cityCountry(schoolOf(c)));
 
+  /* --- The school's mark and tone ----------------------------------------- */
+  /* A school prints as its short name on its own colour pair: the row's one
+     "image". The pair is assigned by position in the catalogue, so it never
+     changes between builds; the short name is the one the school itself uses,
+     with a plain initials rule for any school the table does not know. */
+  const MARKS = {
+    's-agsm-university-of-new-south-wales': 'AGSM',
+    's-cbs-executive-copenhagen-business-scho': 'CBS',
+    's-center-for-creative-leadership': 'CCL',
+    's-harvard-kennedy-school': 'HKS',
+    's-imd-business-school': 'IMD',
+    's-kellogg-school-of-management': 'Kellogg',
+    's-mit-sloan-school-of-management': 'MIT',
+    's-michigan-ross-executive-education': 'Ross',
+    's-nus-business-school': 'NUS',
+    's-nyu-stern-school-of-business': 'Stern',
+    's-smith-school-of-business-queen-s-unive': 'Smith',
+    's-stanford-graduate-school-of-business': 'GSB',
+    's-ubc-sauder-school-of-business': 'Sauder',
+    's-uc-berkeley-haas-school-of-business': 'Haas',
+    's-university-of-st-gallen-executive-scho': 'HSG'
+  };
+  const STOP = /^(of|the|and|for|at|in|school|business|executive|education|university|college|management|graduate|institute)$/i;
+  function schoolMark(s) {
+    if (!s || !s.id) return '';
+    if (s.mark) return String(s.mark);
+    if (MARKS[s.id]) return MARKS[s.id];
+    const name = (s.name && s.name.en) || '';
+    const words = name.replace(/[^A-Za-z0-9 ]/g, ' ').split(/\s+/).filter(Boolean);
+    const caps = words.filter((w) => /^[A-Z]{2,5}$/.test(w))[0];
+    if (caps) return caps;
+    const kept = words.filter((w) => !STOP.test(w));
+    return (kept.length ? kept : words).slice(0, 3).map((w) => w.charAt(0).toUpperCase()).join('') || '—';
+  }
+  const TONES = 8;
+  const TONE_OF = {};
+  D.schools.forEach((s, i) => { TONE_OF[s.id] = (i % TONES) + 1; });
+  const toneOf = (s) => (s && TONE_OF[s.id]) || '';
+  const mark = (s, large) => '<span class="mark' + (large ? ' mark--l' : '') + '" lang="en" aria-hidden="true">' +
+    esc(schoolMark(s)) + '</span>';
+
   const ARROW = '<svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
     'stroke-width="1.5" stroke-linecap="square" aria-hidden="true"><path d="M3 12h16M13 6l6 6-6 6"/></svg>';
   const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true" width="15" height="15" fill="none" ' +
@@ -110,7 +151,7 @@
     const altTitle = I.LANG === 'ar' ? (c.title && c.title.en) : (c.title && c.title.ar);
 
     return '' +
-      '<article class="row" data-reveal style="--i:' + (opts.i || 0) + '">' +
+      '<article class="row" data-reveal data-tone="' + toneOf(s) + '" style="--i:' + (opts.i || 0) + '">' +
         '<span class="row__idx lbl" aria-hidden="true">' + (opts.n != null ? String(opts.n).padStart(2, '0') : '') + '</span>' +
         '<span class="row__date">' +
           '<span class="row__d num">' + esc(I.dayNum(c.start)) + '</span>' +
@@ -125,10 +166,13 @@
             : '') +
         '</div>' +
         '<div class="row__org" aria-hidden="true">' +
-          '<span class="row__school">' + val(pick(s.name)) + '</span>' +
-          '<span class="row__meta lbl">' +
-            meta.map((m, k) => (k === 0 && c.format === 'online'
-              ? '<span class="online">' + esc(m) + '</span>' : esc(m))).join(' / ') +
+          mark(s) +
+          '<span class="row__orgtxt">' +
+            '<span class="row__school">' + val(pick(s.name)) + '</span>' +
+            '<span class="row__meta lbl">' +
+              meta.map((m, k) => (k === 0 && c.format === 'online'
+                ? '<span class="online">' + esc(m) + '</span>' : esc(m))).join(' / ') +
+            '</span>' +
           '</span>' +
         '</div>' +
         /* The printed columns repeat what the link's aria-label already says
@@ -349,6 +393,9 @@
     const all = document.querySelector('[data-all-programmes]');
     if (all) all.textContent = all.textContent.replace(/\d+/, I.num(D.courses.length));
 
+    const finder = document.querySelector('[data-home-finder]');
+    if (finder) initFinder(finder);
+
     if (schools) {
       const list = D.schools.map((s) => ({ s: s, n: D.courses.filter((c) => c.school === s.id).length }))
         .filter((x) => x.n > 0)
@@ -367,10 +414,72 @@
     });
   }
 
+  /* --- The hero is the filter --------------------------------------------- */
+  /* Field · city · month, and a count that answers as you choose. The three
+     axes are the catalogue's own facets under the same keys, so the button
+     is a plain link into the index with the selection already applied. */
+  function initFinder(box) {
+    const sel = {
+      subject: box.querySelector('[data-finder="subject"]'),
+      city: box.querySelector('[data-finder="city"]'),
+      month: box.querySelector('[data-finder="month"]')
+    };
+    const go = document.querySelector('[data-finder-go]');
+    if (!sel.subject || !sel.city || !sel.month || !go) return;
+
+    const cityOf = (c) => pick(schoolOf(c).city) || '';
+    const monthOf = (c) => c.start.slice(0, 7);
+    const months = [];
+    D.courses.map(monthOf).sort().forEach((m) => { if (months.indexOf(m) === -1) months.push(m); });
+    const cities = [];
+    D.courses.map(cityOf).filter(Boolean).forEach((x) => { if (cities.indexOf(x) === -1) cities.push(x); });
+    cities.sort(I.collator.compare);
+
+    const DIM = {
+      subject: { of: (c) => c.subject, any: 'hero.anyField',
+                 opts: D.subjects.map((s) => ({ id: s.id, name: pick(s) })) },
+      city:    { of: cityOf, any: 'hero.anyCity',
+                 opts: cities.map((x) => ({ id: x, name: x })) },
+      month:   { of: monthOf, any: 'hero.anyMonth',
+                 opts: months.map((m) => ({ id: m, name: I.monthLabel(m + '-01') })) }
+    };
+    const KEYS = Object.keys(DIM);
+    const state = { subject: '', city: '', month: '' };
+
+    function matches(c, skip) {
+      return KEYS.every((k) => k === skip || !state[k] || DIM[k].of(c) === state[k]);
+    }
+
+    function paint() {
+      KEYS.forEach(function (k) {
+        const d = DIM[k];
+        sel[k].innerHTML = '<option value="">' + esc(t(d.any)) + '</option>' +
+          d.opts.map(function (o) {
+            const n = D.courses.filter((c) => matches(c, k) && d.of(c) === o.id).length;
+            return '<option value="' + esc(o.id) + '"' +
+              (o.id === state[k] ? ' selected' : '') + (n ? '' : ' disabled') + '>' +
+              esc(o.name) + ' · ' + esc(I.num(n)) + '</option>';
+          }).join('');
+      });
+      const n = D.courses.filter((c) => matches(c)).length;
+      const p = new URLSearchParams();
+      KEYS.forEach((k) => { if (state[k]) p.set(k, state[k]); });
+      const qs = p.toString();
+      go.setAttribute('href', 'courses.html' + (qs ? '?' + qs : ''));
+      go.textContent = n ? t('hero.see', { n: I.programmeCount(n) }) : t('hero.none');
+    }
+
+    KEYS.forEach((k) => sel[k].addEventListener('change', function () {
+      state[k] = sel[k].value; paint();
+    }));
+    paint();
+  }
+
   function schoolRow(s, n, lot, i) {
-    return '<article class="school-row" data-reveal style="--i:' + i + '">' +
+    return '<article class="school-row" data-reveal data-tone="' + toneOf(s) + '" style="--i:' + i + '">' +
       '<span class="school-row__n" aria-hidden="true">' + String(lot).padStart(2, '0') + '</span>' +
-      '<h3 class="school-row__name"><a href="school.html?id=' + s.id + '">' + esc(pick(s.name)) + '</a></h3>' +
+      '<h3 class="school-row__name">' + mark(s, true) +
+        '<a href="school.html?id=' + s.id + '">' + esc(pick(s.name)) + '</a></h3>' +
       '<span class="lbl">' + val(pick(s.city)) + '</span>' +
       '<span class="lbl">' + val(pick(s.country)) + '</span>' +
       '<span class="lbl">' + esc(I.programmeCount(n)) + '</span>' +
@@ -857,6 +966,15 @@
      become visible: every row is ruled from first paint. */
   let booted = false;
   let io = null;
+  let listening = false;
+
+  /* A block is masked only once the observer holds it (.will-reveal), so a
+     block the script never reaches is never hidden. The mask is dropped once
+     its wipe has run, so the settled page carries no masks at all. */
+  function arm(el) {
+    el.classList.add('will-reveal');
+    io.observe(el);
+  }
 
   function initReveal() {
     const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -871,7 +989,16 @@
       });
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.04 });
 
-    document.querySelectorAll('[data-reveal]').forEach((el) => io.observe(el));
+    if (!listening) {
+      listening = true;
+      document.addEventListener('transitionend', function (e) {
+        if (e.propertyName !== 'mask-size' && e.propertyName !== '-webkit-mask-size') return;
+        const el = e.target;
+        if (el.nodeType === 1 && el.hasAttribute('data-reveal')) el.classList.add('is-settled');
+      });
+    }
+
+    document.querySelectorAll('[data-reveal]:not(.is-in)').forEach(arm);
     setTimeout(function () { booted = true; }, 2800);
   }
 
@@ -880,7 +1007,7 @@
   function settle(scope) {
     const els = (scope || document).querySelectorAll('[data-reveal]:not(.is-in)');
     if (booted || !io) { els.forEach((el) => el.classList.add('is-in')); return; }
-    els.forEach((el) => io.observe(el));
+    els.forEach(arm);
   }
 
   function boot() {

@@ -46,6 +46,17 @@
   --band-rule:  #3A322A;
   --band-clay:  #D9764F;
 
+  /* tones — one warm pair per school, the row's only "image". Panels on the
+     dark ground are deep and their ink is pale; light flips both. */
+  --tone-1-bg: #4A3B25; --tone-1-ink: #F3E3C2;   /* sand  */
+  --tone-2-bg: #5A2F1E; --tone-2-ink: #F6D3C1;   /* clay  */
+  --tone-3-bg: #3B4229; --tone-3-ink: #DCE4C4;   /* olive */
+  --tone-4-bg: #2C3A4A; --tone-4-ink: #CFE0F0;   /* dusk  */
+  --tone-5-bg: #4A2C3E; --tone-5-ink: #F0D2E2;   /* plum  */
+  --tone-6-bg: #2F4436; --tone-6-ink: #CBE3D2;   /* moss  */
+  --tone-7-bg: #5A4614; --tone-7-ink: #F5E4B0;   /* ochre */
+  --tone-8-bg: #4F2A2A; --tone-8-ink: #F2CFC9;   /* rust  */
+
   /* faces */
   --latin-display: "Newsreader", Georgia, "Times New Roman", serif;
   --latin-body:    "Archivo", "Helvetica Neue", Helvetica, sans-serif;
@@ -125,6 +136,14 @@
     --clay-on:   #FFFFFF;
     --dusk:      #2E4157;
     --olive:     #4F5F40;
+    --tone-1-bg: #E8D9B8; --tone-1-ink: #4A3B25;
+    --tone-2-bg: #EFCDBD; --tone-2-ink: #5A2F1E;
+    --tone-3-bg: #DCE0C4; --tone-3-ink: #3B4229;
+    --tone-4-bg: #CFDBE6; --tone-4-ink: #2C3A4A;
+    --tone-5-bg: #E7D3DE; --tone-5-ink: #4A2C3E;
+    --tone-6-bg: #CFE0D4; --tone-6-ink: #2F4436;
+    --tone-7-bg: #EEDFA8; --tone-7-ink: #5A4614;
+    --tone-8-bg: #E9CBC6; --tone-8-ink: #4F2A2A;
   }
 }
 :root[data-theme="light"] {
@@ -142,7 +161,26 @@
   --clay-on:   #FFFFFF;
   --dusk:      #2E4157;
   --olive:     #4F5F40;
+  --tone-1-bg: #E8D9B8; --tone-1-ink: #4A3B25;
+  --tone-2-bg: #EFCDBD; --tone-2-ink: #5A2F1E;
+  --tone-3-bg: #DCE0C4; --tone-3-ink: #3B4229;
+  --tone-4-bg: #CFDBE6; --tone-4-ink: #2C3A4A;
+  --tone-5-bg: #E7D3DE; --tone-5-ink: #4A2C3E;
+  --tone-6-bg: #CFE0D4; --tone-6-ink: #2F4436;
+  --tone-7-bg: #EEDFA8; --tone-7-ink: #5A4614;
+  --tone-8-bg: #E9CBC6; --tone-8-ink: #4F2A2A;
 }
+
+/* A row or a school carries its tone as a data attribute; the pair resolves
+   to --sbg / --sink here, once, for both grounds. */
+[data-tone="1"] { --sbg: var(--tone-1-bg); --sink: var(--tone-1-ink); }
+[data-tone="2"] { --sbg: var(--tone-2-bg); --sink: var(--tone-2-ink); }
+[data-tone="3"] { --sbg: var(--tone-3-bg); --sink: var(--tone-3-ink); }
+[data-tone="4"] { --sbg: var(--tone-4-bg); --sink: var(--tone-4-ink); }
+[data-tone="5"] { --sbg: var(--tone-5-bg); --sink: var(--tone-5-ink); }
+[data-tone="6"] { --sbg: var(--tone-6-bg); --sink: var(--tone-6-ink); }
+[data-tone="7"] { --sbg: var(--tone-7-bg); --sink: var(--tone-7-ink); }
+[data-tone="8"] { --sbg: var(--tone-8-bg); --sink: var(--tone-8-ink); }
 
 /* --- Base ---------------------------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -241,6 +279,19 @@ h3, h4 { font-weight: 400; line-height: var(--lh-title); }
 
 /* An unrecorded value is printed, not omitted. */
 .dash { color: var(--muted); }
+
+/* The school's mark: its short name set in the display face on the school's
+   own tone. It stands in for photography and stays Latin in both locales,
+   like the numerals. */
+.mark {
+  display: inline-grid; place-items: center; flex: none;
+  min-inline-size: 44px; block-size: 44px; padding-inline: 8px;
+  background: var(--sbg, var(--wash)); color: var(--sink, var(--ink));
+  font-family: var(--latin-display); font-weight: 400; font-size: 1.125rem;
+  letter-spacing: -.01em; line-height: 1; white-space: nowrap;
+  direction: ltr; unicode-bidi: isolate;
+}
+.mark--l { min-inline-size: 60px; block-size: 60px; padding-inline: 10px; font-size: 1.5rem; }
 
 /* The leak-proof backstop. Tracking and caps must never reach Arabic, no
    matter which component forgot to reset them. Keep this after everything. */
@@ -392,10 +443,68 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .dateline .hijri { color: var(--dusk); }
 
 .hero h1 { font-size: var(--fs-900); }
+/* Arabic display sits at the floor of its leading range here, so the hero
+   keeps the first screen; body and title leading are untouched. */
+:root[dir="rtl"] .hero h1 { font-size: calc(var(--fs-900) * .84); line-height: 1.18; }
 .hero h1 .ln { display: block; inline-size: fit-content; max-inline-size: 100%; padding-block-end: .06em; }
 .hero__echo { display: block; color: var(--clay); font-size: var(--fs-700); margin-block-start: var(--sp-4); }
 .hero__stand { color: var(--ink-2); font-size: var(--fs-400); max-inline-size: 54ch; margin-block-start: var(--sp-5); }
 .hero__acts { display: flex; flex-wrap: wrap; gap: var(--sp-3); margin-block-start: var(--sp-6); }
+
+/* The hero is the filter: three typographic selects and a count that answers
+   back. Native selects — they work on every phone and mirror for free. The
+   button joins the row on a wide screen so the answer sits on the first
+   screen; below that it takes the full width under the selects. */
+.finder {
+  display: grid; gap: var(--sp-4) var(--sp-5); align-items: end;
+  max-inline-size: 640px; margin-block-start: var(--sp-5);
+  padding-block-start: var(--sp-4);
+}
+.finder__go { white-space: nowrap; }
+@media (min-width: 640px) {
+  .finder { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .finder__go { grid-column: 1 / -1; justify-self: start; }
+}
+@media (min-width: 1200px) {
+  .finder { grid-template-columns: repeat(3, minmax(0, 1fr)) auto; max-inline-size: 880px; }
+  .finder__go { grid-column: auto; }
+}
+/* On a short laptop screen the hero gives up a little size and air so the
+   finder and its answer stay on the first screen. */
+@media (min-width: 960px) and (max-height: 820px) {
+  .hero { padding-block-start: var(--sp-5); }
+  .hero h1 { font-size: calc(var(--fs-900) * .82); }
+  :root[dir="rtl"] .hero h1 { font-size: calc(var(--fs-900) * .72); }
+  .hero__echo { font-size: var(--fs-600); margin-block-start: var(--sp-3); }
+  .hero__stand { margin-block-start: var(--sp-4); }
+  .finder { margin-block-start: var(--sp-4); }
+  .dateline { margin-block-end: var(--sp-4); }
+}
+.finder__aside { margin-block-start: var(--sp-4); font-size: var(--fs-300); color: var(--muted); }
+.finder__aside a { text-decoration: underline; text-underline-offset: .2em; text-decoration-color: var(--rule); }
+.finder__aside a:hover { color: var(--clay); text-decoration-color: currentColor; }
+.finder__f { position: relative; display: grid; gap: var(--sp-2); min-inline-size: 0; }
+.finder__f select {
+  appearance: none; -webkit-appearance: none;
+  inline-size: 100%; min-block-size: 44px; margin: 0;
+  padding-block: 6px; padding-inline: 0 28px;
+  background: transparent; border: 0; border-radius: 0;
+  border-block-end: 1px solid var(--rule);
+  color: var(--ink);
+  font-family: var(--font-display); font-size: var(--fs-500); line-height: var(--lh-title);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  cursor: pointer; transition: border-color .2s;
+}
+.finder__f select:hover { border-block-end-color: var(--ink); }
+.finder__f select:focus-visible { outline: 2px solid var(--clay); outline-offset: 3px; }
+.finder__f select option { font-family: var(--font-body); font-size: 1rem; }
+/* The chevron: a stroked corner, symmetric, so it needs no mirroring. */
+.finder__f::after {
+  content: ""; position: absolute; inset-inline-end: 4px; inset-block-end: 17px;
+  inline-size: 8px; block-size: 8px; pointer-events: none;
+  border-inline-end: 1px solid var(--muted); border-block-end: 1px solid var(--muted);
+  transform: rotate(45deg);
+}
 
 .totals { display: grid; }
 .totals__it { display: block; padding-block: var(--sp-4); border-block-start: 1px solid var(--rule); }
@@ -459,10 +568,13 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 }
 .grp-head + .row { border-block-start: 0; }
 .row:hover { background: var(--paper); }
+/* The hover tint is the school's own tone, mixed into the paper. */
+.row[data-tone]:hover { background: color-mix(in srgb, var(--sbg) 30%, var(--paper)); }
 .row__idx  { grid-area: idx;  display: none; }
 .row__date { grid-area: date; }
 .row__main { grid-area: main; min-inline-size: 0; }
-.row__org  { grid-area: org;  min-inline-size: 0; margin-block-start: var(--sp-2); }
+.row__org  { grid-area: org;  min-inline-size: 0; margin-block-start: var(--sp-2); display: flex; gap: var(--sp-3); align-items: flex-start; }
+.row__orgtxt { display: block; min-inline-size: 0; }
 .row__foot { grid-area: foot; display: flex; flex-wrap: wrap; gap: var(--sp-5); align-items: baseline; margin-block-start: var(--sp-3); }
 .row__days { }
 .row__fee  { margin-inline-start: auto; text-align: end; }
@@ -487,7 +599,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 
 @media (min-width: 900px) {
   .row {
-    grid-template-columns: 34px 72px minmax(0, 1fr) minmax(130px, .66fr) 62px 168px 68px;
+    grid-template-columns: 34px 72px minmax(0, 1fr) minmax(176px, .75fr) 62px 160px 68px;
     grid-template-areas: "idx date main org days fee go";
     align-items: start; gap: 0 var(--sp-4);
   }
@@ -498,7 +610,15 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
   .row__fee { margin-inline-start: 0; }
 }
 @media (min-width: 1140px) {
-  .row { grid-template-columns: 42px 88px minmax(0, 1fr) minmax(170px, .6fr) 74px 196px 76px; }
+  .row { grid-template-columns: 42px 88px minmax(0, 1fr) minmax(210px, .75fr) 68px 176px 68px; }
+  .row .mark { min-inline-size: 52px; block-size: 52px; font-size: 1.3125rem; }
+}
+/* Beside the facet rail the row is narrower by the rail's width: until the
+   screen is wide it keeps the leaner school column and leaves the mark to
+   the hover tint and the school's own page. */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .cat .row { grid-template-columns: 34px 72px minmax(0, 1fr) minmax(150px, .6fr) 62px 160px 68px; }
+  .cat .row .mark { display: none; }
 }
 
 .rule-legend {
@@ -523,6 +643,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
   transition: background-color .2s;
 }
 .school-row:hover { background: var(--paper); }
+.school-row[data-tone]:hover { background: color-mix(in srgb, var(--sbg) 30%, var(--paper)); }
 /* In the shortlist drawer the header already draws a rule, so the first
    row's own top border would read as a stray mark below it. */
 .school-row--saved { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
@@ -532,7 +653,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .enquiry__save { margin-block-start: var(--sp-2); }
 .school-row__n { font-family: var(--font-mono); font-size: var(--fs-100); color: var(--muted); }
 :root[dir="rtl"] .school-row__n { font-size: var(--fs-150); }
-.school-row__name { font-family: var(--font-display); font-size: var(--fs-500); line-height: var(--lh-title); }
+.school-row__name { font-family: var(--font-display); font-size: var(--fs-500); line-height: var(--lh-title); display: flex; gap: var(--sp-3); align-items: center; min-inline-size: 0; }
 .school-row__name a::after { content: ""; position: absolute; inset: 0; }
 @media (min-width: 820px) {
   /* Five real columns: lot, name, city, country, programme count. Every one
@@ -653,14 +774,16 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 
 /* --- Catalogue ----------------------------------------------------------- */
 .cat { display: grid; gap: var(--sp-6); align-items: start; }
-@media (min-width: 1080px) { .cat { grid-template-columns: 260px minmax(0, 1fr); gap: var(--sp-8); } }
+/* The rail sits beside the ledger only where a seven-column row still has
+   room for its title; below that the facets are the sheet, as on a phone. */
+@media (min-width: 1200px) { .cat { grid-template-columns: 260px minmax(0, 1fr); gap: var(--sp-8); } }
 
 .count-hero { display: flex; flex-wrap: wrap; gap: var(--sp-4); align-items: baseline; padding-block: var(--sp-5); }
 .count-hero__n { font-size: var(--fs-num-l); line-height: .9; }
 .count-hero__l { font-size: var(--fs-500); color: var(--ink-2); }
 
 .facets { border-block-start: 1px solid var(--rule); }
-@media (min-width: 1080px) { .facets { position: sticky; inset-block-start: calc(var(--hdr-h) + 16px); max-block-size: calc(100vh - var(--hdr-h) - 32px); overflow-y: auto; } }
+@media (min-width: 1200px) { .facets { position: sticky; inset-block-start: calc(var(--hdr-h) + 16px); max-block-size: calc(100vh - var(--hdr-h) - 32px); overflow-y: auto; } }
 .facet { border: 0; border-block-end: 1px solid var(--rule-hair); padding: var(--sp-4) 0; margin: 0; }
 .facet > legend, .facet > h3 { padding: 0; margin-block-end: var(--sp-3); font-family: var(--font-label); font-size: var(--fs-100); font-weight: 500; letter-spacing: var(--track); text-transform: var(--caps); color: var(--muted); }
 :root[dir="rtl"] .facet > legend, :root[dir="rtl"] .facet > h3 { font-family: var(--arabic-body); font-size: var(--fs-150); }
@@ -690,7 +813,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 /* Mobile: the toolbar becomes a bottom-pinned bar so the controls are
    reachable from anywhere in a long list. */
 .filters-bar { display: none; }
-@media (max-width: 1079px) {
+@media (max-width: 1199px) {
   .filters-bar {
     position: fixed; inset-inline: 0; inset-block-end: 0; z-index: 90;
     display: flex; align-items: center; gap: var(--sp-3);
@@ -809,9 +932,29 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
   block-size: 1px; background: var(--rule);
   transform: scaleX(0); transform-origin: var(--origin);
   transition: transform .62s cubic-bezier(.22, .72, .2, 1);
-  transition-delay: calc(var(--i, 0) * 55ms);
+  transition-delay: calc(var(--i, 0) * 80ms);
 }
 [data-reveal].is-in::before { transform: scaleX(1); }
+/* Some blocks take part in the sequence without wanting a rule drawn above. */
+.reveal--bare::before { display: none; }
+
+/* The mask. A block enters from under its own rule: the container is masked,
+   never the text, and the mask wipes down with the same 80ms stagger. It is a
+   mask, not a clip — a clip would hide the block from its own observer and
+   from the pointer. Only a block the script has armed (.will-reveal) is ever
+   masked, so a block the script never reaches is simply visible; once the
+   wipe has run the mask is dropped and the settled page carries none. The
+   2px starting band keeps the rule itself visible from the first paint. */
+[data-reveal].will-reveal {
+  -webkit-mask-image: linear-gradient(#000, #000); mask-image: linear-gradient(#000, #000);
+  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+  -webkit-mask-position: 0 0; mask-position: 0 0;
+  -webkit-mask-size: 100% 2px; mask-size: 100% 2px;
+  transition: -webkit-mask-size .7s cubic-bezier(.22, .72, .2, 1), mask-size .7s cubic-bezier(.22, .72, .2, 1);
+  transition-delay: calc(var(--i, 0) * 80ms);
+}
+[data-reveal].will-reveal.is-in { -webkit-mask-size: 100% 100%; mask-size: 100% 100%; }
+[data-reveal].is-settled { -webkit-mask-image: none; mask-image: none; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -820,6 +963,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
     scroll-behavior: auto !important;
   }
   [data-reveal]::before { transform: scaleX(1); }
+  [data-reveal] { -webkit-mask-image: none !important; mask-image: none !important; }
 }
 
 /* --- The Arabic backstop, last ------------------------------------------- */

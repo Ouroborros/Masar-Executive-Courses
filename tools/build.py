@@ -356,26 +356,40 @@ HOME["en"] = """
               <span class="ln" data-reveal style="--i:1">The city.</span>
               <span class="ln" data-reveal style="--i:2">The dates.</span>
             </h1>
-            <span class="hero__echo alt-run" lang="ar">الرسوم. المدينة. التواريخ.</span>
-            <p class="hero__stand">Masar lists open-enrolment executive programmes from the
+            <span class="hero__echo alt-run reveal--bare" lang="ar" data-reveal style="--i:3">الرسوم. المدينة. التواريخ.</span>
+            <p class="hero__stand reveal--bare" data-reveal style="--i:4">Masar lists open-enrolment executive programmes from the
               world's business schools — the fee each school publishes, the city it is taught in,
               the dates it runs and the number of teaching days. Nothing is ranked. Nothing is sold.</p>
-            <div class="hero__acts">
-              <a class="btn btn--solid" href="courses.html">Browse the index</a>
-              <a class="btn btn--ghost" href="contact.html#teams">Enrol a team</a>
+            <div class="finder" data-home-finder data-reveal style="--i:5">
+              <label class="finder__f">
+                <span class="lbl">Field</span>
+                <select data-finder="subject"><option value="">Any field</option></select>
+              </label>
+              <label class="finder__f">
+                <span class="lbl">City</span>
+                <select data-finder="city"><option value="">Any city</option></select>
+              </label>
+              <label class="finder__f">
+                <span class="lbl">Month</span>
+                <select data-finder="month"><option value="">Any month</option></select>
+              </label>
+              <a class="btn btn--solid finder__go" href="courses.html" data-finder-go>Browse the index</a>
             </div>
+            <p class="finder__aside reveal--bare" data-reveal style="--i:6">
+              <a href="contact.html#teams">Enrolling a team?</a>
+            </p>
           </div>
 
           <div class="totals">
-            <a class="totals__it" href="courses.html">
+            <a class="totals__it" href="courses.html" data-reveal style="--i:1">
               <span class="totals__n num" data-stat="programmes">189</span>
               <span class="totals__l lbl">Programmes</span>
             </a>
-            <a class="totals__it" href="schools.html">
+            <a class="totals__it" href="schools.html" data-reveal style="--i:2">
               <span class="totals__n num" data-stat="schools">16</span>
               <span class="totals__l lbl">Business schools</span>
             </a>
-            <a class="totals__it" href="courses.html">
+            <a class="totals__it" href="courses.html" data-reveal style="--i:3">
               <span class="totals__n num" data-stat="countries">6</span>
               <span class="totals__l lbl">Countries of delivery</span>
             </a>
@@ -403,26 +417,40 @@ HOME["ar"] = """
               <span class="ln" data-reveal style="--i:1">المدينة.</span>
               <span class="ln" data-reveal style="--i:2">التواريخ.</span>
             </h1>
-            <span class="hero__echo alt-run" lang="en">The fee. The city. The dates.</span>
-            <p class="hero__stand">يفهرس «مسار» البرامج التنفيذية مفتوحة التسجيل من كليات الأعمال
+            <span class="hero__echo alt-run reveal--bare" lang="en" data-reveal style="--i:3">The fee. The city. The dates.</span>
+            <p class="hero__stand reveal--bare" data-reveal style="--i:4">يفهرس «مسار» البرامج التنفيذية مفتوحة التسجيل من كليات الأعمال
               حول العالم: الرسوم التي تنشرها كل كلية، والمدينة التي يُدرَّس فيها البرنامج، وتواريخه،
               وعدد أيام التدريس. لا تصنيف، ولا بيع.</p>
-            <div class="hero__acts">
-              <a class="btn btn--solid" href="courses.html">تصفَّح الفهرس</a>
-              <a class="btn btn--ghost" href="contact.html#teams">سجّل فريقًا</a>
+            <div class="finder" data-home-finder data-reveal style="--i:5">
+              <label class="finder__f">
+                <span class="lbl">الحقل</span>
+                <select data-finder="subject"><option value="">كل الحقول</option></select>
+              </label>
+              <label class="finder__f">
+                <span class="lbl">المدينة</span>
+                <select data-finder="city"><option value="">كل المدن</option></select>
+              </label>
+              <label class="finder__f">
+                <span class="lbl">الشهر</span>
+                <select data-finder="month"><option value="">كل الأشهر</option></select>
+              </label>
+              <a class="btn btn--solid finder__go" href="courses.html" data-finder-go>تصفَّح الفهرس</a>
             </div>
+            <p class="finder__aside reveal--bare" data-reveal style="--i:6">
+              <a href="contact.html#teams">تسجيل فريق؟</a>
+            </p>
           </div>
 
           <div class="totals">
-            <a class="totals__it" href="courses.html">
+            <a class="totals__it" href="courses.html" data-reveal style="--i:1">
               <span class="totals__n num" data-stat="programmes">189</span>
               <span class="totals__l lbl">برنامجًا</span>
             </a>
-            <a class="totals__it" href="schools.html">
+            <a class="totals__it" href="schools.html" data-reveal style="--i:2">
               <span class="totals__n num" data-stat="schools">16</span>
               <span class="totals__l lbl">كلية أعمال</span>
             </a>
-            <a class="totals__it" href="courses.html">
+            <a class="totals__it" href="courses.html" data-reveal style="--i:3">
               <span class="totals__n num" data-stat="countries">6</span>
               <span class="totals__l lbl">دولة تُقدَّم فيها</span>
             </a>

@@ -89,6 +89,12 @@ window.MASAR_I18N = (function () {
       'set.back': 'Back to the sets',
       'set.basis': 'Selected by the editors on the basis stated here. A selection, not a ranking.',
 
+      'hero.anyField': 'Any field',
+      'hero.anyCity': 'Any city',
+      'hero.anyMonth': 'Any month',
+      'hero.see': 'See {n}',
+      'hero.none': 'Nothing matches — widen it',
+
       'misc.online': 'Online',
       'misc.and': 'and',
       'currency.orig': 'Fees as published',
@@ -170,6 +176,12 @@ window.MASAR_I18N = (function () {
       'set.notFound': 'لا توجد مجموعة بهذا الاسم في الفهرس.',
       'set.back': 'العودة إلى المجموعات',
       'set.basis': 'اختارها فريق التحرير على الأساس المذكور هنا. اختيار، لا تصنيف.',
+
+      'hero.anyField': 'كل الحقول',
+      'hero.anyCity': 'كل المدن',
+      'hero.anyMonth': 'كل الأشهر',
+      'hero.see': 'اعرض {n}',
+      'hero.none': 'لا شيء يطابق — وسّع البحث',
 
       'misc.online': 'عن بُعد',
       'misc.and': 'و',
