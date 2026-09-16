@@ -86,13 +86,31 @@ def api(params):
 
 def fetch(url):
   req = urllib.request.Request(url, headers={"User-Agent": UA})
-  for attempt in range(4):
+  for attempt in range(7):
     try:
       with urllib.request.urlopen(req, timeout=120) as r:
-        return r.read()
+        data = r.read()
+      time.sleep(PAUSE)
+      return data
+    except urllib.error.HTTPError as e:
+      if e.code == 429 and attempt < 6:
+        wait = int(e.headers.get("Retry-After") or 0) or 20 * (attempt + 1)
+        print(f"  429 fetching {url[-40:]}, waiting {wait}s", flush=True)
+        time.sleep(wait); continue
+      if attempt == 6: raise
+      time.sleep(3 * (attempt + 1))
     except Exception:  # noqa: BLE001
-      if attempt == 3: raise
-      time.sleep(2 * (attempt + 1))
+      if attempt == 6: raise
+      time.sleep(3 * (attempt + 1))
+
+def rendition(title, width):
+  """A server-side rendition at one of the standard widths (Commons refuses
+  bulk downloads of originals and asks for these instead)."""
+  q = api({"action": "query", "prop": "imageinfo", "titles": title, "iiprop": "url", "iiurlwidth": width})
+  for pg in q.get("query", {}).get("pages", {}).values():
+    ii = (pg.get("imageinfo") or [None])[0]
+    if ii and ii.get("thumburl"): return ii["thumburl"]
+  raise RuntimeError("no rendition for " + title)
 
 def search(term, limit=10):
   q = api({"action": "query", "list": "search", "srsearch": term + " filetype:bitmap",
@@ -166,7 +184,7 @@ def final(cands_path, picks_path, out):
     # when a better photograph sits under another search key
     src_key, idx = (str(pick).split(":") + [None])[:2] if ":" in str(pick) else (key, pick)
     c = cands[src_key][int(idx)]
-    raw = fetch(c["url"])
+    raw = fetch(rendition(c["title"], 2048))
     im = ImageOps.exif_transpose(Image.open(io.BytesIO(raw))).convert("RGB")
     for w, suffix in ((1800, ""), (900, "-s")):
       r = w / float(im.width)
