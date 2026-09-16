@@ -32,13 +32,13 @@ TERMS = {
   "school-haas":     ["Haas School of Business Berkeley building", "Chou Hall Berkeley Haas"],
   "school-stern":    ["Kaufman Management Center NYU Stern", "NYU Stern School of Business building"],
   "school-ross":     ["Ross School of Business building Ann Arbor", "Stephen M. Ross School of Business"],
-  "school-nus":      ["NUS Business School Mochtar Riady Building", "NUS Business School building Singapore"],
+  "school-nus":      ["NUS Business School Mochtar Riady Building", "National University of Singapore Kent Ridge campus", "University Town NUS Singapore", "National University of Singapore campus"],
   "school-agsm":     ["AGSM building UNSW Kensington", "UNSW Business School building"],
   "school-cbs":      ["Copenhagen Business School Solbjerg Plads", "Copenhagen Business School Kilen building"],
   "school-smith":    ["Goodes Hall Queen's University", "Queen's University Kingston Grant Hall"],
   "school-sauder":   ["Henry Angus Building UBC Sauder", "UBC Sauder School of Business building"],
   "school-stgallen": ["University of St. Gallen main building", "Universität St. Gallen Hauptgebäude"],
-  "school-ccl":      ["Center for Creative Leadership Greensboro", "Downtown Greensboro North Carolina skyline"],
+  "school-ccl":      ["Center for Creative Leadership Greensboro", "Greensboro North Carolina downtown skyline", "Greensboro Historical Museum", "Greensboro North Carolina Elm Street"],
   # places
   "city-riyadh":     ["Riyadh skyline King Abdullah Financial District", "Riyadh skyline night"],
   "city-jeddah":     ["Jeddah corniche skyline", "Al-Balad Jeddah rawashin"],
@@ -128,9 +128,14 @@ def usable(c):
   return 1.15 <= r <= 2.4
 
 def candidates(root, per=6):
+  """KEYS=a,b in the environment restricts the pass to those keys and merges
+  the result into an existing candidates.json instead of replacing it."""
   os.makedirs(root, exist_ok=True)
-  report = {}
+  only = [k for k in os.environ.get("KEYS", "").split(",") if k]
+  path = os.path.join(root, "candidates.json")
+  report = json.load(open(path)) if only and os.path.exists(path) else {}
   for key, terms in TERMS.items():
+    if only and key not in only: continue
     picked = []
     try:
       for term in terms:
@@ -149,7 +154,7 @@ def candidates(root, per=6):
       time.sleep(0.8)
     report[key] = picked
     print(f"{key}: {len(picked)} candidates", flush=True)
-  json.dump(report, open(os.path.join(root, "candidates.json"), "w"), indent=1, ensure_ascii=False)
+  json.dump(report, open(path, "w"), indent=1, ensure_ascii=False)
 
 def final(cands_path, picks_path, out):
   from PIL import Image, ImageOps
@@ -170,6 +175,11 @@ def final(cands_path, picks_path, out):
     credits[key] = {k: c[k] for k in ("title", "author", "licence", "licence_url", "page")}
     print(f"{key}: {c['title']}", flush=True)
     time.sleep(0.4)
+  # a photograph no longer picked does not linger on the site
+  for name in os.listdir(out):
+    stem = name[:-4].removesuffix("-s")
+    if name.endswith(".jpg") and stem not in picks:
+      os.remove(os.path.join(out, name)); print(f"removed {name}", flush=True)
   json.dump(credits, open(os.path.join(out, "credits.json"), "w"), indent=1, ensure_ascii=False)
 
 if __name__ == "__main__":

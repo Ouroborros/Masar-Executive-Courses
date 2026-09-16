@@ -10,6 +10,10 @@ on:
         description: candidates or final
         required: true
         default: candidates
+      keys:
+        description: comma-separated keys to (re)search in candidates mode; empty for all
+        required: false
+        default: ""
   push:
     paths:
       - import/img-picks.json
@@ -42,6 +46,8 @@ jobs:
           fi
           echo "mode=$m" >> "$GITHUB_OUTPUT"
       - run: python tools/fetch-images.py "${{ steps.mode.outputs.mode }}"
+        env:
+          KEYS: ${{ github.event.inputs.keys }}
       - name: Commit results
         run: |
           git config user.name "masar-images[bot]"
