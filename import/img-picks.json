@@ -1,0 +1,17 @@
+{
+ "city-riyadh": 1,
+ "school-mit": 2,
+ "school-imd": 0,
+ "school-kellogg": 3,
+ "school-hks": 3,
+ "school-stanford": 2,
+ "school-haas": "city-berkeley:0",
+ "school-stern": 1,
+ "school-ross": 0,
+ "school-nus": 0,
+ "school-agsm": 0,
+ "school-cbs": 4,
+ "school-smith": 0,
+ "school-sauder": 0,
+ "school-stgallen": 1
+}

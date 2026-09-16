@@ -156,8 +156,11 @@ def final(cands_path, picks_path, out):
   cands = json.load(open(cands_path)); picks = json.load(open(picks_path))
   os.makedirs(out, exist_ok=True)
   credits = {}
-  for key, idx in picks.items():
-    c = cands[key][int(idx)]
+  for key, pick in picks.items():
+    # a pick is an index into the key's own candidates, or "otherkey:index"
+    # when a better photograph sits under another search key
+    src_key, idx = (str(pick).split(":") + [None])[:2] if ":" in str(pick) else (key, pick)
+    c = cands[src_key][int(idx)]
     raw = fetch(c["url"])
     im = ImageOps.exif_transpose(Image.open(io.BytesIO(raw))).convert("RGB")
     for w, suffix in ((1800, ""), (900, "-s")):
