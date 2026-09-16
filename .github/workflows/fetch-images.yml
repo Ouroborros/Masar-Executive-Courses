@@ -1,0 +1,52 @@
+name: Fetch site images
+
+# The authoring sandbox cannot reach Wikimedia Commons, so the runner does
+# the fetching and commits the result back to the branch it ran on.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: candidates or final
+        required: true
+        default: candidates
+  push:
+    paths:
+      - import/img-picks.json
+      - tools/fetch-images.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-images-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pillow
+      - name: Decide mode
+        id: mode
+        run: |
+          m="${{ github.event.inputs.mode }}"
+          if [ -z "$m" ]; then
+            if [ -f import/img-picks.json ]; then m=final; else m=candidates; fi
+          fi
+          echo "mode=$m" >> "$GITHUB_OUTPUT"
+      - run: python tools/fetch-images.py "${{ steps.mode.outputs.mode }}"
+      - name: Commit results
+        run: |
+          git config user.name "masar-images[bot]"
+          git config user.email "masar-images@users.noreply.github.com"
+          git add -A import/img-candidates assets/img || true
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "Fetch ${{ steps.mode.outputs.mode }} images from Wikimedia Commons"
+          git push origin HEAD:${{ github.ref_name }}
