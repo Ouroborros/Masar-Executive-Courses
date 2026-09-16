@@ -12,6 +12,7 @@ str.replace, so the HTML can carry braces without escaping games.
     python3 tools/build.py          # writes *.html and ar/*.html
 """
 
+import json
 import os
 import re
 import sys
@@ -33,6 +34,7 @@ SITE = {
     "address": {"en": "", "ar": ""},
     "form_endpoint": "",
     "refreshed": {"en": "14 September 2026", "ar": "١٤ سبتمبر ٢٠٢٦"},
+    "hero_image": "city-riyadh",   # a key from tools/fetch-images.py TERMS
     "fx_date": {"en": "13 September 2026", "ar": "١٣ سبتمبر ٢٠٢٦"},
 }
 
@@ -141,6 +143,55 @@ def wa_button(lang, classes="btn btn--solid"):
         c=classes, n=SITE["whatsapp"], t="WhatsApp" if lang == "en" else "واتساب")
 
 
+IMG_DIR = os.path.join(HERE, "assets", "img")
+
+
+def load_credits():
+    path = os.path.join(IMG_DIR, "credits.json")
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def hero_img(a):
+    """The home hero photograph, if the runner has fetched it (see
+    tools/fetch-images.py). Without it the hero falls back to the wash."""
+    key = SITE["hero_image"]
+    if not os.path.exists(os.path.join(IMG_DIR, key + ".jpg")):
+        return ""
+    return ('<img src="{a}img/{k}.jpg" srcset="{a}img/{k}-s.jpg 900w, {a}img/{k}.jpg 1800w" '
+            'sizes="100vw" alt="" fetchpriority="high" decoding="async">').format(a=a, k=key)
+
+
+def credits_block(lang):
+    """Every photograph on the site, credited: author, licence, source."""
+    credits = load_credits()
+    if not credits:
+        return ""
+    is_ar = lang == "ar"
+    rows = []
+    for key in sorted(credits):
+        c = credits[key]
+        rows.append(
+            '            <div class="credit-row"><span class="lbl">{key}</span>'
+            '<span>{title}</span><span>{author}</span>'
+            '<a href="{page}" rel="noopener">{lic}</a></div>'.format(
+                key=key, title=c.get("title", "").replace("File:", ""), author=c.get("author", "—") or "—",
+                page=c.get("page", "#"), lic=c.get("licence", "")))
+    return (
+        '          <div class="chap-head" style="padding-block-end:0;margin-block-start:var(--sp-7)">\n'
+        '            <h2 class="chap-title" style="font-size:var(--fs-600)">{h}</h2>\n'
+        '            <p class="chap-note">{note}</p>\n'
+        '          </div>\n'
+        '          <div class="credits">\n{rows}\n          </div>\n'
+    ).format(h="الصور" if is_ar else "Photographs",
+             note=("كل صورة في الموقع مرخّصة ترخيصًا مفتوحًا من ويكيميديا كومنز، مع اسم مصوّرها ورخصتها ومصدرها."
+                   if is_ar else
+                   "Every photograph on the site is openly licensed from Wikimedia Commons, credited here with its author, licence and source."),
+             rows="\n".join(rows))
+
+
 def shell(lang, page, title, description, body):
     is_ar = lang == "ar"
     a = "../assets/" if is_ar else "assets/"
@@ -202,13 +253,14 @@ def shell(lang, page, title, description, body):
         "legend_dash": T["legend_dash"][lang],
         "legend_fee": T["legend_fee"][lang],
         "wa_header": wa_button(lang, "ctl") or "",
+        "hero_img": hero_img(a),
     }.items():
         html = html.replace("{{%s}}" % key, val)
     return html
 
 
 TEMPLATE = """<!DOCTYPE html>
-<html lang="{{lang}}" dir="{{dir}}">
+<html lang="{{lang}}" dir="{{dir}}" data-assets="{{a}}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -310,6 +362,7 @@ TEMPLATE = """<!DOCTYPE html>
 
   <script src="{{a}}js/data.js"></script>
   <script src="{{a}}js/i18n.js"></script>
+  <script src="{{a}}js/credits.js"></script>
   <script src="{{a}}js/app.js"></script>
 </body>
 </html>
@@ -325,7 +378,6 @@ def chapter(num, title, alt, note, body, band=False, cid=None):
         '    <section class="chapter{band}"{cid}>\n'
         '      <div class="sheet">\n'
         '        <div class="chap-head">\n'
-        '          <span class="chap-num">{num}</span>\n'
         '          <h2 class="chap-title">{title}<span class="alt-run">{alt}</span></h2>\n'
         '          <p class="chap-note">{note}</p>\n'
         '        </div>\n'
@@ -339,8 +391,9 @@ def chapter(num, title, alt, note, body, band=False, cid=None):
 HOME = {}
 
 HOME["en"] = """
-    <section class="hero">
-      <div class="sheet">
+    <section class="hero hero--photo">
+      <div class="hero__fig" aria-hidden="true">{{hero_img}}</div>
+      <div class="sheet hero__in">
         <p class="dateline lbl">
           <span>An independent index · Riyadh</span>
           <span class="dateline__sep" aria-hidden="true">/</span>
@@ -348,114 +401,105 @@ HOME["en"] = """
           <span class="dateline__sep" aria-hidden="true">/</span>
           <span class="hijri" lang="ar" data-today-hijri>—</span>
         </p>
-
-        <div class="hero__grid">
-          <div>
-            <h1>
-              <span class="ln" data-reveal style="--i:0">The fee.</span>
-              <span class="ln" data-reveal style="--i:1">The city.</span>
-              <span class="ln" data-reveal style="--i:2">The dates.</span>
-            </h1>
-            <span class="hero__echo alt-run reveal--bare" lang="ar" data-reveal style="--i:3">الرسوم. المدينة. التواريخ.</span>
-            <p class="hero__stand reveal--bare" data-reveal style="--i:4">Masar lists open-enrolment executive programmes from the
-              world's business schools — the fee each school publishes, the city it is taught in,
-              the dates it runs and the number of teaching days. Nothing is ranked. Nothing is sold.</p>
-            <div class="finder" data-home-finder data-reveal style="--i:5">
-              <label class="finder__f">
-                <span class="lbl">Field</span>
-                <select data-finder="subject"><option value="">Any field</option></select>
-              </label>
-              <label class="finder__f">
-                <span class="lbl">City</span>
-                <select data-finder="city"><option value="">Any city</option></select>
-              </label>
-              <label class="finder__f">
-                <span class="lbl">Month</span>
-                <select data-finder="month"><option value="">Any month</option></select>
-              </label>
-              <a class="btn btn--solid finder__go" href="courses.html" data-finder-go>Browse the index</a>
-            </div>
-            <p class="finder__aside reveal--bare" data-reveal style="--i:6">
-              <a href="contact.html#teams">Enrolling a team?</a>
-            </p>
-          </div>
-
-          <div class="totals">
-            <a class="totals__it" href="courses.html" data-reveal style="--i:1">
-              <span class="totals__n num" data-stat="programmes">189</span>
-              <span class="totals__l lbl">Programmes</span>
-            </a>
-            <a class="totals__it" href="schools.html" data-reveal style="--i:2">
-              <span class="totals__n num" data-stat="schools">16</span>
-              <span class="totals__l lbl">Business schools</span>
-            </a>
-            <a class="totals__it" href="courses.html" data-reveal style="--i:3">
-              <span class="totals__n num" data-stat="countries">6</span>
-              <span class="totals__l lbl">Countries of delivery</span>
-            </a>
-          </div>
+        <h1 class="hero__t" data-reveal style="--i:0">Executive programmes,<br>listed plainly.</h1>
+        <p class="hero__stand" data-reveal style="--i:1">Open-enrolment programmes from the world's business schools —
+          the fee each school publishes, the city it is taught in, the dates and the teaching days.
+          Nothing is ranked. Nothing is sold.</p>
+      </div>
+      <div class="sheet">
+        <div class="finder finder--panel" data-home-finder data-reveal style="--i:2">
+          <label class="finder__f">
+            <span class="lbl">Field</span>
+            <select data-finder="subject"><option value="">Any field</option></select>
+          </label>
+          <label class="finder__f">
+            <span class="lbl">City</span>
+            <select data-finder="city"><option value="">Any city</option></select>
+          </label>
+          <label class="finder__f">
+            <span class="lbl">Month</span>
+            <select data-finder="month"><option value="">Any month</option></select>
+          </label>
+          <a class="btn btn--solid finder__go" href="courses.html" data-finder-go>Browse the index</a>
         </div>
+      </div>
+    </section>
+
+    <section class="totals-band">
+      <div class="sheet totals">
+        <a class="totals__it" href="courses.html" data-reveal style="--i:1">
+          <span class="totals__n num" data-stat="programmes">189</span>
+          <span class="totals__l lbl">Programmes</span>
+        </a>
+        <a class="totals__it" href="schools.html" data-reveal style="--i:2">
+          <span class="totals__n num" data-stat="schools">16</span>
+          <span class="totals__l lbl">Business schools</span>
+        </a>
+        <a class="totals__it" href="courses.html" data-reveal style="--i:3">
+          <span class="totals__n num" data-stat="countries">6</span>
+          <span class="totals__l lbl">Countries of delivery</span>
+        </a>
+        <a class="totals__it totals__it--link" href="contact.html#teams" data-reveal style="--i:4">
+          <span class="totals__n">Enrolling a team?</span>
+          <span class="totals__l lbl">Ask for a proposal</span>
+        </a>
       </div>
     </section>
 """
 
 HOME["ar"] = """
-    <section class="hero">
-      <div class="sheet">
+    <section class="hero hero--photo">
+      <div class="hero__fig" aria-hidden="true">{{hero_img}}</div>
+      <div class="sheet hero__in">
         <p class="dateline lbl">
           <span>فهرس مستقل · الرياض</span>
           <span class="dateline__sep" aria-hidden="true">/</span>
           <span data-today>—</span>
           <span class="dateline__sep" aria-hidden="true">/</span>
-          <span class="hijri" data-today-hijri>—</span>
+          <span class="hijri" lang="ar" data-today-hijri>—</span>
         </p>
-
-        <div class="hero__grid">
-          <div>
-            <h1>
-              <span class="ln" data-reveal style="--i:0">الرسوم.</span>
-              <span class="ln" data-reveal style="--i:1">المدينة.</span>
-              <span class="ln" data-reveal style="--i:2">التواريخ.</span>
-            </h1>
-            <span class="hero__echo alt-run reveal--bare" lang="en" data-reveal style="--i:3">The fee. The city. The dates.</span>
-            <p class="hero__stand reveal--bare" data-reveal style="--i:4">يفهرس «مسار» البرامج التنفيذية مفتوحة التسجيل من كليات الأعمال
-              حول العالم: الرسوم التي تنشرها كل كلية، والمدينة التي يُدرَّس فيها البرنامج، وتواريخه،
-              وعدد أيام التدريس. لا تصنيف، ولا بيع.</p>
-            <div class="finder" data-home-finder data-reveal style="--i:5">
-              <label class="finder__f">
-                <span class="lbl">الحقل</span>
-                <select data-finder="subject"><option value="">كل الحقول</option></select>
-              </label>
-              <label class="finder__f">
-                <span class="lbl">المدينة</span>
-                <select data-finder="city"><option value="">كل المدن</option></select>
-              </label>
-              <label class="finder__f">
-                <span class="lbl">الشهر</span>
-                <select data-finder="month"><option value="">كل الأشهر</option></select>
-              </label>
-              <a class="btn btn--solid finder__go" href="courses.html" data-finder-go>تصفَّح الفهرس</a>
-            </div>
-            <p class="finder__aside reveal--bare" data-reveal style="--i:6">
-              <a href="contact.html#teams">تسجيل فريق؟</a>
-            </p>
-          </div>
-
-          <div class="totals">
-            <a class="totals__it" href="courses.html" data-reveal style="--i:1">
-              <span class="totals__n num" data-stat="programmes">189</span>
-              <span class="totals__l lbl">برنامجًا</span>
-            </a>
-            <a class="totals__it" href="schools.html" data-reveal style="--i:2">
-              <span class="totals__n num" data-stat="schools">16</span>
-              <span class="totals__l lbl">كلية أعمال</span>
-            </a>
-            <a class="totals__it" href="courses.html" data-reveal style="--i:3">
-              <span class="totals__n num" data-stat="countries">6</span>
-              <span class="totals__l lbl">دولة تُقدَّم فيها</span>
-            </a>
-          </div>
+        <h1 class="hero__t" data-reveal style="--i:0">برامج تنفيذية،<br>مُدرجة بوضوح.</h1>
+        <p class="hero__stand" data-reveal style="--i:1">برامج مفتوحة التسجيل من كليات الأعمال حول العالم —
+          الرسوم كما تنشرها كل كلية، والمدينة التي يُدرَّس فيها البرنامج، والتواريخ وأيام التدريس.
+          لا شيء مصنَّف، ولا شيء يُباع.</p>
+      </div>
+      <div class="sheet">
+        <div class="finder finder--panel" data-home-finder data-reveal style="--i:2">
+          <label class="finder__f">
+            <span class="lbl">الحقل</span>
+            <select data-finder="subject"><option value="">كل الحقول</option></select>
+          </label>
+          <label class="finder__f">
+            <span class="lbl">المدينة</span>
+            <select data-finder="city"><option value="">كل المدن</option></select>
+          </label>
+          <label class="finder__f">
+            <span class="lbl">الشهر</span>
+            <select data-finder="month"><option value="">كل الأشهر</option></select>
+          </label>
+          <a class="btn btn--solid finder__go" href="courses.html" data-finder-go>تصفّح الفهرس</a>
         </div>
+      </div>
+    </section>
+
+    <section class="totals-band">
+      <div class="sheet totals">
+        <a class="totals__it" href="courses.html" data-reveal style="--i:1">
+          <span class="totals__n num" data-stat="programmes">189</span>
+          <span class="totals__l lbl">برنامجًا</span>
+        </a>
+        <a class="totals__it" href="schools.html" data-reveal style="--i:2">
+          <span class="totals__n num" data-stat="schools">16</span>
+          <span class="totals__l lbl">كلية أعمال</span>
+        </a>
+        <a class="totals__it" href="courses.html" data-reveal style="--i:3">
+          <span class="totals__n num" data-stat="countries">6</span>
+          <span class="totals__l lbl">دول تُدرَّس فيها</span>
+        </a>
+        <a class="totals__it totals__it--link" href="contact.html#teams" data-reveal style="--i:4">
+          <span class="totals__n">تسجّل فريقًا؟</span>
+          <span class="totals__l lbl">اطلب عرضًا</span>
+        </a>
       </div>
     </section>
 """
@@ -482,7 +526,6 @@ HOME["en"] += """
     <section class="chapter chapter--band" id="method">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§04</span>
           <h2 class="chap-title">Method<span class="alt-run" lang="ar">المنهج</span></h2>
           <p class="chap-note">How a programme gets into the index, and what we will not do to it.</p>
         </div>
@@ -555,7 +598,6 @@ HOME["ar"] += """
     <section class="chapter chapter--band" id="method">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§04</span>
           <h2 class="chap-title">المنهج<span class="alt-run" lang="en">Method</span></h2>
           <p class="chap-note">كيف يدخل البرنامج إلى الفهرس، وما الذي لن نفعله به.</p>
         </div>
@@ -639,7 +681,6 @@ COURSES["en"] = """
     <section class="chapter">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§02</span>
           <h2 class="chap-title">The index<span class="alt-run" lang="ar">الفهرس</span></h2>
           <p class="chap-note">Sort by the axis you compare on: date, fee, teaching days or school.</p>
         </div>
@@ -684,7 +725,6 @@ COURSES["ar"] = """
     <section class="chapter">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§02</span>
           <h2 class="chap-title">الفهرس<span class="alt-run" lang="en">The index</span></h2>
           <p class="chap-note">رتّب حسب المحور الذي تقارن به: التاريخ أو الرسوم أو أيام التدريس أو الكلية.</p>
         </div>
@@ -743,7 +783,6 @@ SCHOOLS["en"] = """
     <section class="chapter">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§03</span>
           <h2 class="chap-title">The schools<span class="alt-run" lang="ar">الكليات</span></h2>
           <p class="chap-note">Sortable by name, country or number of programmes in the index.</p>
         </div>
@@ -758,7 +797,6 @@ SCHOOLS["ar"] = """
     <section class="chapter">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§03</span>
           <h2 class="chap-title">الكليات<span class="alt-run" lang="en">The schools</span></h2>
           <p class="chap-note">يمكن ترتيبها بالاسم أو الدولة أو عدد البرامج في الفهرس.</p>
         </div>
@@ -788,7 +826,6 @@ LISTS["en"] = """
     <section class="chapter">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§04</span>
           <h2 class="chap-title">Sets<span class="alt-run" lang="ar">المجموعات</span></h2>
           <p class="chap-note">Editorial cuts of the index. Each states who selected it and on what basis — they are selections, not rankings.</p>
         </div>
@@ -800,7 +837,6 @@ LISTS["ar"] = """
     <section class="chapter">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§04</span>
           <h2 class="chap-title">المجموعات<span class="alt-run" lang="en">Sets</span></h2>
           <p class="chap-note">مقاطع تحريرية من الفهرس. تذكر كل مجموعة من اختارها وعلى أي أساس — فهي اختيارات لا تصنيفات.</p>
         </div>
@@ -827,7 +863,6 @@ ABOUT["en"] = """
     <section class="chapter">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§05</span>
           <h2 class="chap-title">Method<span class="alt-run" lang="ar">المنهج</span></h2>
           <p class="chap-note">What this index is, where every figure comes from, and what it refuses to do.</p>
         </div>
@@ -859,6 +894,7 @@ ABOUT["en"] = """
               never leaves the device.</div></div>
           </div>
 
+{{credits}}
           <div class="alt-block">
             <span class="alt-run" lang="ar">مسار فهرس مستقل: لا يُدرّس ولا يمنح شهادات.</span>
           </div>
@@ -870,7 +906,6 @@ ABOUT["ar"] = """
     <section class="chapter">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§05</span>
           <h2 class="chap-title">المنهج<span class="alt-run" lang="en">Method</span></h2>
           <p class="chap-note">ما هذا الفهرس، ومن أين يأتي كل رقم فيه، وما الذي يرفض أن يفعله.</p>
         </div>
@@ -896,6 +931,7 @@ ABOUT["ar"] = """
               لا برامج تتبّع ولا تحليلات. وتُحفَظ القائمة المختارة في متصفّحك ولا تغادر جهازك.</div></div>
           </div>
 
+{{credits}}
           <div class="alt-block">
             <span class="alt-run" lang="en">Masar is an independent index. It does not teach and it does not certify.</span>
           </div>
@@ -965,7 +1001,6 @@ def contact_body(lang):
     <section class="chapter">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§06</span>
           <h2 class="chap-title">{title}<span class="alt-run" lang="{alt}">{altt}</span></h2>
           <p class="chap-note">{note}</p>
         </div>
@@ -973,7 +1008,6 @@ def contact_body(lang):
 {rows}
 
           <div id="teams" class="chap-head" style="padding-block-end:0">
-            <span class="chap-num">§06.1</span>
             <h2 class="chap-title" style="font-size:var(--fs-600)">{teams}</h2>
             <p class="chap-note">{teamsnote}</p>
           </div>
@@ -995,7 +1029,6 @@ def contact_body(lang):
           </form>
 
           <div class="chap-head" style="padding-block-end:0;margin-block-start:var(--sp-7)">
-            <span class="chap-num">§06.2</span>
             <h2 class="chap-title" style="font-size:var(--fs-600)">{recordh}</h2>
             <p class="chap-note">{recordnote}</p>
           </div>
@@ -1074,13 +1107,22 @@ PAGES = [
 ]
 
 
+def write_credits_js():
+    out = os.path.join(HERE, "assets", "js", "credits.js")
+    with open(out, "w", encoding="utf-8") as fh:
+        fh.write("/* Generated by tools/build.py from assets/img/credits.json. */\n"
+                 "window.MASAR_CREDITS = " + json.dumps(load_credits(), ensure_ascii=False, indent=1) + ";\n")
+
+
 def main():
     os.makedirs(os.path.join(HERE, "ar"), exist_ok=True)
+    write_credits_js()
     written, problems = [], []
 
     for page in PAGES:
         for lang in LOCALES:
             body = contact_body(lang) if page["body"] is CONTACT else page["body"][lang]
+            body = body.replace("{{credits}}", credits_block(lang))
             html = shell(lang, page["file"], page["title"][lang], page["desc"][lang], body.rstrip("\n"))
 
             # No dead links and no bare wa.me may reach a shipped page.

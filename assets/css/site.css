@@ -1,15 +1,15 @@
 /* ==========================================================================
    Masar — site.css
 
-   THE LEDGER. The whole site is one ruled ledger: numbered chapters, a
-   monospace index track, and hairline data rows — no cards, no boxes — where
-   the start date, the teaching days and the fee are set as oversized numerals
-   and ARE the imagery. Honesty is structural: an unrecorded field prints an
-   em dash against a printed legend rather than disappearing.
+   THE WARM GALLERY. Paper ground, one clay accent, and the schools shown by
+   openly licensed photographs of their own campuses. The record is still the
+   point — the fee, the city, the dates and the teaching days are set large
+   and never hidden — but it is carried on a warm, photographic page rather
+   than a dark ledger. Honesty is structural: an unrecorded field prints an em
+   dash against a printed legend rather than disappearing.
 
-   Ground is Kohl; ink is Limestone; one Clay accent, budgeted. Dusk is
-   reserved for the Hijri track and nothing else; Olive marks "Online" and
-   nothing else.
+   Dusk is reserved for the Hijri track and nothing else; Olive marks "Online"
+   and nothing else. Dark is the alternate ground, kept for readers who ask.
 
    Direction is a token block, not a second stylesheet: every rule below uses
    logical properties, and [dir="rtl"] flips tracking, caps, leading, the
@@ -17,45 +17,46 @@
    left/right properties must return nothing.
    ========================================================================== */
 
-/* --- Tokens: palette (dark is the default ground) ------------------------- */
+/* --- Tokens: palette (paper is the default ground) ------------------------ */
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 
   /* grounds */
-  --ground:     #1F1B17;   /* Kohl — page */
-  --paper:      #272219;   /* raised: row hover, sheet fill */
-  --wash:       #2E2820;   /* chips, active-filter bar, tinted band */
+  --ground:     #F4EEE4;   /* paper — page */
+  --paper:      #FBF8F2;   /* raised: panels, cards, row hover */
+  --wash:       #EADFCF;   /* sand: the warm band, chips, empty photo */
   /* ink */
-  --ink:        #F3EDE3;   /* Limestone — 13.9:1 on ground */
-  --ink-2:      #C9BFAE;   /*  9.4:1 — secondary values */
-  --muted:      #A79E90;   /*  6.6:1 — labels, meta (floor for text) */
-  /* rules — two weights */
-  --rule-hair:  #3D3630;   /* intra-group separators only */
-  --rule:       #5A5045;   /* group/set boundaries, control borders */
-  --rule-ink:   var(--ink);/* chapter boundaries */
+  --ink:        #221D18;
+  --ink-2:      #57504A;
+  --muted:      #6E6459;   /* labels, meta — 5.1:1 on ground */
+  /* rules */
+  --rule-hair:  #DCD1BE;
+  --rule:       #B5A68E;
+  --rule-ink:   #221D18;
   /* accents */
-  --clay:       #D9764F;   /*  5.5:1 on ground */
-  --clay-deep:  #E8906C;   /* hover on filled */
-  --clay-on:    #1F1B17;   /* text on a filled clay control */
-  --dusk:       #8FB0CE;   /* RESERVED: the Hijri track, nothing else */
-  --olive:      #93A67E;   /* RESERVED: the "Online" format token */
-  /* the one darker band */
-  --band:       #16130F;
-  --band-ink:   #EFE7DA;
-  --band-muted: #A79E90;
-  --band-rule:  #3A322A;
-  --band-clay:  #D9764F;
-
-  /* tones — one warm pair per school, the row's only "image". Panels on the
-     dark ground are deep and their ink is pale; light flips both. */
-  --tone-1-bg: #4A3B25; --tone-1-ink: #F3E3C2;   /* sand  */
-  --tone-2-bg: #5A2F1E; --tone-2-ink: #F6D3C1;   /* clay  */
-  --tone-3-bg: #3B4229; --tone-3-ink: #DCE4C4;   /* olive */
-  --tone-4-bg: #2C3A4A; --tone-4-ink: #CFE0F0;   /* dusk  */
-  --tone-5-bg: #4A2C3E; --tone-5-ink: #F0D2E2;   /* plum  */
-  --tone-6-bg: #2F4436; --tone-6-ink: #CBE3D2;   /* moss  */
-  --tone-7-bg: #5A4614; --tone-7-ink: #F5E4B0;   /* ochre */
-  --tone-8-bg: #4F2A2A; --tone-8-ink: #F2CFC9;   /* rust  */
+  --clay:       #A9502D;   /* Diriyah clay — the one accent */
+  --clay-deep:  #8E3F21;
+  --clay-on:    #FFFFFF;
+  --dusk:       #2E4157;   /* RESERVED: the Hijri track */
+  --olive:      #4F5F40;   /* RESERVED: the "Online" format */
+  /* the warm band (Method) */
+  --band:       #EADFCF;
+  --band-ink:   #221D18;
+  --band-muted: #6E6459;
+  --band-rule:  #CDBDA1;
+  --band-clay:  #A9502D;
+  /* the colophon is the one dark surface */
+  --colo:       #241E18;
+  --colo-ink:   #F3EDE3;
+  --colo-muted: #A79E90;
+  --colo-rule:  #3D3630;
+  --colo-clay:  #D9764F;
+  /* photographs */
+  --scrim:      rgba(24, 18, 12, .55);
+  --on-photo:   #F7F1E7;
+  --radius:     12px;
+  --radius-s:   7px;
+  --shadow:     0 1px 2px rgba(34, 29, 24, .06), 0 18px 40px -20px rgba(34, 29, 24, .32);
 
   /* faces */
   --latin-display: "Newsreader", Georgia, "Times New Roman", serif;
@@ -65,8 +66,8 @@
   --font-mono:     "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /* type scale — the ONLY sizes in this stylesheet */
-  --fs-100: .75rem;      /* 12px — Latin micro-label floor */
-  --fs-150: .8125rem;    /* 13px — the Arabic twin of --fs-100 */
+  --fs-100: .75rem;
+  --fs-150: .8125rem;
   --fs-200: .875rem;
   --fs-300: .9375rem;
   --fs-400: 1.0625rem;
@@ -74,8 +75,7 @@
   --fs-600: clamp(1.375rem, 1.05rem + 1.15vw, 1.75rem);
   --fs-700: clamp(1.75rem, 1.15rem + 2.1vw, 2.75rem);
   --fs-800: clamp(2.25rem, 1.3rem + 4vw, 4rem);
-  --fs-900: clamp(2.75rem, 1.1rem + 6.8vw, 6rem);
-  /* the numerals ARE the imagery */
+  --fs-900: clamp(2.5rem, 1.1rem + 5.4vw, 5rem);
   --fs-num-s: clamp(1.375rem, 1.05rem + 1.35vw, 1.875rem);
   --fs-num-m: clamp(1.75rem, 1.1rem + 2.3vw, 2.75rem);
   --fs-num-l: clamp(3rem, 1.4rem + 6.2vw, 6rem);
@@ -89,17 +89,17 @@
   --hdr-h: 64px;
 
   /* direction tokens — LTR values here, flipped once under [dir="rtl"] */
-  --track: .12em;
-  --track-display: -.02em;
+  --track: .08em;
+  --track-display: -.015em;
   --caps: uppercase;
   --lh-display: 1.06;
-  --lh-title: 1.18;
+  --lh-title: 1.2;
   --lh-body: 1.62;
   --origin: left;
   --dirx: 1;
   --font-display: var(--latin-display);
   --font-body:    var(--latin-body);
-  --font-label:   var(--font-mono);
+  --font-label:   var(--latin-body);
   --font-num:     var(--latin-display);
 }
 
@@ -114,73 +114,60 @@
   --dirx: -1;
   --font-display: var(--arabic-display);
   --font-body:    var(--arabic-body);
-  --font-label:   var(--arabic-body);   /* mono never carries Arabic */
+  --font-label:   var(--arabic-body);
   --font-num:     var(--latin-display); /* numerals stay Newsreader in both */
 }
 
-/* Light is the alternate ground, not the default. Both the media query and
-   the explicit attribute are handled, in this order. */
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) {
-    color-scheme: light;
-    --ground:    #F3EDE3;
-    --paper:     #FAF6EE;
-    --wash:      #E9E0D2;
-    --ink:       #1F1B17;
-    --ink-2:     #56504A;
-    --muted:     #6B6257;
-    --rule-hair: #B9A98F;
-    --rule:      #8E8271;
-    --clay:      #A64B2A;
-    --clay-deep: #8E3D20;
-    --clay-on:   #FFFFFF;
-    --dusk:      #2E4157;
-    --olive:     #4F5F40;
-    --tone-1-bg: #E8D9B8; --tone-1-ink: #4A3B25;
-    --tone-2-bg: #EFCDBD; --tone-2-ink: #5A2F1E;
-    --tone-3-bg: #DCE0C4; --tone-3-ink: #3B4229;
-    --tone-4-bg: #CFDBE6; --tone-4-ink: #2C3A4A;
-    --tone-5-bg: #E7D3DE; --tone-5-ink: #4A2C3E;
-    --tone-6-bg: #CFE0D4; --tone-6-ink: #2F4436;
-    --tone-7-bg: #EEDFA8; --tone-7-ink: #5A4614;
-    --tone-8-bg: #E9CBC6; --tone-8-ink: #4F2A2A;
+/* Dark is the alternate ground. Both the media query and the explicit
+   attribute are handled, in this order, so the toggle wins both ways. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --ground:    #1F1B17;
+    --paper:     #272219;
+    --wash:      #2E2820;
+    --ink:       #F3EDE3;
+    --ink-2:     #C9BFAE;
+    --muted:     #A79E90;
+    --rule-hair: #3D3630;
+    --rule:      #5A5045;
+    --rule-ink:  #F3EDE3;
+    --clay:      #D9764F;
+    --clay-deep: #E8906C;
+    --clay-on:   #1F1B17;
+    --dusk:      #8FB0CE;
+    --olive:     #93A67E;
+    --band:      #2A241D;
+    --band-ink:  #F3EDE3;
+    --band-muted:#A79E90;
+    --band-rule: #443B31;
+    --band-clay: #D9764F;
+    --shadow:    0 1px 2px rgba(0, 0, 0, .3), 0 18px 40px -20px rgba(0, 0, 0, .7);
   }
 }
-:root[data-theme="light"] {
-  color-scheme: light;
-  --ground:    #F3EDE3;
-  --paper:     #FAF6EE;
-  --wash:      #E9E0D2;
-  --ink:       #1F1B17;
-  --ink-2:     #56504A;
-  --muted:     #6B6257;
-  --rule-hair: #B9A98F;
-  --rule:      #8E8271;
-  --clay:      #A64B2A;
-  --clay-deep: #8E3D20;
-  --clay-on:   #FFFFFF;
-  --dusk:      #2E4157;
-  --olive:     #4F5F40;
-  --tone-1-bg: #E8D9B8; --tone-1-ink: #4A3B25;
-  --tone-2-bg: #EFCDBD; --tone-2-ink: #5A2F1E;
-  --tone-3-bg: #DCE0C4; --tone-3-ink: #3B4229;
-  --tone-4-bg: #CFDBE6; --tone-4-ink: #2C3A4A;
-  --tone-5-bg: #E7D3DE; --tone-5-ink: #4A2C3E;
-  --tone-6-bg: #CFE0D4; --tone-6-ink: #2F4436;
-  --tone-7-bg: #EEDFA8; --tone-7-ink: #5A4614;
-  --tone-8-bg: #E9CBC6; --tone-8-ink: #4F2A2A;
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ground:    #1F1B17;
+  --paper:     #272219;
+  --wash:      #2E2820;
+  --ink:       #F3EDE3;
+  --ink-2:     #C9BFAE;
+  --muted:     #A79E90;
+  --rule-hair: #3D3630;
+  --rule:      #5A5045;
+  --rule-ink:  #F3EDE3;
+  --clay:      #D9764F;
+  --clay-deep: #E8906C;
+  --clay-on:   #1F1B17;
+  --dusk:      #8FB0CE;
+  --olive:     #93A67E;
+  --band:      #2A241D;
+  --band-ink:  #F3EDE3;
+  --band-muted:#A79E90;
+  --band-rule: #443B31;
+  --band-clay: #D9764F;
+  --shadow:    0 1px 2px rgba(0, 0, 0, .3), 0 18px 40px -20px rgba(0, 0, 0, .7);
 }
-
-/* A row or a school carries its tone as a data attribute; the pair resolves
-   to --sbg / --sink here, once, for both grounds. */
-[data-tone="1"] { --sbg: var(--tone-1-bg); --sink: var(--tone-1-ink); }
-[data-tone="2"] { --sbg: var(--tone-2-bg); --sink: var(--tone-2-ink); }
-[data-tone="3"] { --sbg: var(--tone-3-bg); --sink: var(--tone-3-ink); }
-[data-tone="4"] { --sbg: var(--tone-4-bg); --sink: var(--tone-4-ink); }
-[data-tone="5"] { --sbg: var(--tone-5-bg); --sink: var(--tone-5-ink); }
-[data-tone="6"] { --sbg: var(--tone-6-bg); --sink: var(--tone-6-ink); }
-[data-tone="7"] { --sbg: var(--tone-7-bg); --sink: var(--tone-7-ink); }
-[data-tone="8"] { --sbg: var(--tone-8-bg); --sink: var(--tone-8-ink); }
 
 /* --- Base ---------------------------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -210,7 +197,7 @@ a { color: inherit; text-decoration: none; }
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
-  font-weight: 300;
+  font-weight: 400;
   line-height: var(--lh-display);
   letter-spacing: var(--track-display);
 }
@@ -244,7 +231,7 @@ h3, h4 { font-weight: 400; line-height: var(--lh-title); }
 .lbl {
   font-family: var(--font-label);
   font-size: var(--fs-100);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: var(--track);
   text-transform: var(--caps);
   color: var(--muted);
@@ -255,7 +242,7 @@ h3, h4 { font-weight: 400; line-height: var(--lh-title); }
 .num {
   font-family: var(--font-num);
   font-variant-numeric: lining-nums tabular-nums;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: var(--track-display);
 }
 
@@ -280,18 +267,15 @@ h3, h4 { font-weight: 400; line-height: var(--lh-title); }
 /* An unrecorded value is printed, not omitted. */
 .dash { color: var(--muted); }
 
-/* The school's mark: its short name set in the display face on the school's
-   own tone. It stands in for photography and stays Latin in both locales,
-   like the numerals. */
-.mark {
-  display: inline-grid; place-items: center; flex: none;
-  min-inline-size: 44px; block-size: 44px; padding-inline: 8px;
-  background: var(--sbg, var(--wash)); color: var(--sink, var(--ink));
-  font-family: var(--latin-display); font-weight: 400; font-size: 1.125rem;
-  letter-spacing: -.01em; line-height: 1; white-space: nowrap;
-  direction: ltr; unicode-bidi: isolate;
-}
-.mark--l { min-inline-size: 60px; block-size: 60px; padding-inline: 10px; font-size: 1.5rem; }
+/* A photograph. Every image on the site sits in one of these: it is
+   cropped to the box, rounded, and shows the sand wash until it arrives. */
+.photo { display: block; position: relative; overflow: hidden; border-radius: var(--radius); background: var(--wash); }
+.photo img { inline-size: 100%; block-size: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.22, .72, .2, 1); }
+.photo--empty { background: linear-gradient(135deg, var(--wash), var(--paper)); }
+.credit { margin-block-start: var(--sp-2); color: var(--muted); font-size: var(--fs-100); }
+:root[dir="rtl"] .credit { font-size: var(--fs-150); }
+.credit a { text-decoration: underline; text-underline-offset: .2em; text-decoration-color: var(--rule); }
+.credit a:hover { color: var(--clay); }
 
 /* The leak-proof backstop. Tracking and caps must never reach Arabic, no
    matter which component forgot to reset them. Keep this after everything. */
@@ -332,6 +316,7 @@ h3, h4 { font-weight: 400; line-height: var(--lh-title); }
 .tools { display: flex; align-items: center; gap: var(--sp-2); flex: none; }
 
 .ctl {
+  border-radius: var(--radius-s);
   display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2);
   min-block-size: 44px; min-inline-size: 44px; padding-inline: 12px;
   border: 1px solid var(--rule); background: transparent; color: var(--ink);
@@ -414,7 +399,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 }
 
 /* --- Chapter ------------------------------------------------------------- */
-.chapter { border-block-start: 1px solid var(--rule-ink); }
+.chapter { border-block-start: 1px solid var(--rule-hair); }
 .chapter:first-of-type { border-block-start: 0; }
 .chapter--band { background: var(--band); color: var(--band-ink); border-block-color: var(--band-rule); }
 .chapter--band .lbl, .chapter--band .chap-note { color: var(--band-muted); }
@@ -425,64 +410,58 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
   padding-block: clamp(34px, 5vw, 66px) clamp(20px, 2.6vw, 32px);
 }
 @media (min-width: 900px) {
-  .chap-head { grid-template-columns: 84px minmax(0, 1fr) minmax(230px, 25rem); gap: var(--sp-5); align-items: start; }
+  .chap-head { grid-template-columns: minmax(0, 1fr) minmax(230px, 25rem); gap: var(--sp-5) var(--sp-8); align-items: end; }
 }
-.chap-num { font-family: var(--font-mono); font-size: var(--fs-100); font-weight: 500; letter-spacing: var(--track); color: var(--clay); direction: ltr; unicode-bidi: isolate; text-align: start; }
+/* A count above a title (the school and set pages). */
+.chap-num { grid-column: 1 / -1; font-family: var(--font-num); font-size: var(--fs-num-m); line-height: 1; color: var(--clay); direction: ltr; unicode-bidi: isolate; text-align: start; }
 .chap-title { font-size: var(--fs-700); }
-.chap-title .alt-run { display: block; font-size: var(--fs-600); color: var(--muted); margin-block-start: var(--sp-1); }
+.chap-title .alt-run { display: block; font-size: var(--fs-600); color: var(--clay); margin-block-start: var(--sp-1); }
 .chap-note { color: var(--muted); font-size: var(--fs-300); }
 .chap-body { padding-block-end: clamp(40px, 5vw, 88px); }
 
-/* --- §01 Hero ------------------------------------------------------------ */
-.hero { padding-block: clamp(28px, 4vw, 56px) clamp(40px, 5vw, 80px); }
-.hero__grid { display: grid; gap: var(--sp-7); }
-@media (min-width: 960px) { .hero__grid { grid-template-columns: minmax(0, 1fr) 300px; gap: var(--sp-8); align-items: start; } }
-
-.dateline { display: flex; flex-wrap: wrap; gap: var(--sp-3); align-items: baseline; margin-block-end: var(--sp-5); }
+/* --- §01 Hero: a photograph, and the finder on a paper panel at its foot -- */
+.hero--photo { position: relative; isolation: isolate; color: var(--on-photo); }
+.hero__fig {
+  position: absolute; inset: 0; inset-block-end: clamp(56px, 8vw, 96px); z-index: -1; overflow: hidden;
+  background: linear-gradient(160deg, #4A3B2C, #7A5540 60%, #A9502D);
+}
+.hero__fig img { inline-size: 100%; block-size: 100%; object-fit: cover; }
+.hero__fig::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(24, 18, 12, .86) 0%, rgba(24, 18, 12, .5) 45%, rgba(24, 18, 12, .28) 100%);
+}
+.hero__in { padding-block: clamp(56px, 9vw, 128px) clamp(36px, 5vw, 64px); }
+.hero--photo .lbl, .hero--photo .dateline__sep { color: rgba(247, 241, 231, .78); }
+.hero--photo .dateline .hijri { color: #BFD6EC; }
+.dateline { display: flex; flex-wrap: wrap; gap: var(--sp-3); align-items: baseline; margin-block-end: var(--sp-6); }
 .dateline__sep { color: var(--rule); }
 .dateline .hijri { color: var(--dusk); }
 
-.hero h1 { font-size: var(--fs-900); }
-/* Arabic display sits at the floor of its leading range here, so the hero
-   keeps the first screen; body and title leading are untouched. */
-:root[dir="rtl"] .hero h1 { font-size: calc(var(--fs-900) * .84); line-height: 1.18; }
-.hero h1 .ln { display: block; inline-size: fit-content; max-inline-size: 100%; padding-block-end: .06em; }
-.hero__echo { display: block; color: var(--clay); font-size: var(--fs-700); margin-block-start: var(--sp-4); }
-.hero__stand { color: var(--ink-2); font-size: var(--fs-400); max-inline-size: 54ch; margin-block-start: var(--sp-5); }
-.hero__acts { display: flex; flex-wrap: wrap; gap: var(--sp-3); margin-block-start: var(--sp-6); }
+.hero__t { font-size: var(--fs-900); max-inline-size: 18ch; text-wrap: balance; color: var(--on-photo); }
+:root[dir="rtl"] .hero__t { font-size: calc(var(--fs-900) * .9); }
+.hero__stand { color: rgba(247, 241, 231, .9); font-size: var(--fs-500); max-inline-size: 50ch; margin-block-start: var(--sp-5); }
 
-/* The hero is the filter: three typographic selects and a count that answers
-   back. Native selects — they work on every phone and mirror for free. The
-   button joins the row on a wide screen so the answer sits on the first
-   screen; below that it takes the full width under the selects. */
+/* The finder: three typographic selects and a count that answers back, on
+   a paper panel that overlaps the photograph's foot. */
 .finder {
   display: grid; gap: var(--sp-4) var(--sp-5); align-items: end;
-  max-inline-size: 640px; margin-block-start: var(--sp-5);
-  padding-block-start: var(--sp-4);
+}
+.finder--panel {
+  position: relative; z-index: 2;
+  background: var(--paper); color: var(--ink);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: var(--sp-5) var(--sp-5) var(--sp-5);
 }
 .finder__go { white-space: nowrap; }
 @media (min-width: 640px) {
   .finder { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .finder__go { grid-column: 1 / -1; justify-self: start; }
 }
-@media (min-width: 1200px) {
-  .finder { grid-template-columns: repeat(3, minmax(0, 1fr)) auto; max-inline-size: 880px; }
+@media (min-width: 1000px) {
+  .finder { grid-template-columns: repeat(3, minmax(0, 1fr)) auto; gap: var(--sp-4) var(--sp-6); }
+  .finder--panel { padding: var(--sp-5) var(--sp-6); }
   .finder__go { grid-column: auto; }
 }
-/* On a short laptop screen the hero gives up a little size and air so the
-   finder and its answer stay on the first screen. */
-@media (min-width: 960px) and (max-height: 820px) {
-  .hero { padding-block-start: var(--sp-5); }
-  .hero h1 { font-size: calc(var(--fs-900) * .82); }
-  :root[dir="rtl"] .hero h1 { font-size: calc(var(--fs-900) * .72); }
-  .hero__echo { font-size: var(--fs-600); margin-block-start: var(--sp-3); }
-  .hero__stand { margin-block-start: var(--sp-4); }
-  .finder { margin-block-start: var(--sp-4); }
-  .dateline { margin-block-end: var(--sp-4); }
-}
-.finder__aside { margin-block-start: var(--sp-4); font-size: var(--fs-300); color: var(--muted); }
-.finder__aside a { text-decoration: underline; text-underline-offset: .2em; text-decoration-color: var(--rule); }
-.finder__aside a:hover { color: var(--clay); text-decoration-color: currentColor; }
 .finder__f { position: relative; display: grid; gap: var(--sp-2); min-inline-size: 0; }
 .finder__f select {
   appearance: none; -webkit-appearance: none;
@@ -498,7 +477,6 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .finder__f select:hover { border-block-end-color: var(--ink); }
 .finder__f select:focus-visible { outline: 2px solid var(--clay); outline-offset: 3px; }
 .finder__f select option { font-family: var(--font-body); font-size: 1rem; }
-/* The chevron: a stroked corner, symmetric, so it needs no mirroring. */
 .finder__f::after {
   content: ""; position: absolute; inset-inline-end: 4px; inset-block-end: 17px;
   inline-size: 8px; block-size: 8px; pointer-events: none;
@@ -506,15 +484,15 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
   transform: rotate(45deg);
 }
 
-.totals { display: grid; }
-.totals__it { display: block; padding-block: var(--sp-4); border-block-start: 1px solid var(--rule); }
-.totals__it:first-child { border-block-start: 1px solid var(--rule-ink); }
-.totals__n { display: block; font-size: var(--fs-num-l); line-height: .9; }
+/* The four figures under the hero. */
+.totals-band { border-block-end: 1px solid var(--rule-hair); }
+.totals { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-5) var(--sp-4); padding-block: var(--sp-6); }
+@media (min-width: 900px) { .totals { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--sp-6); padding-block: var(--sp-7); } }
+.totals__it { display: block; min-inline-size: 0; }
+.totals__n { display: block; font-size: var(--fs-num-m); line-height: .95; }
 .totals__l { display: block; margin-block-start: var(--sp-2); }
-@media (max-width: 959px) {
-  .totals { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--sp-4); }
-  .totals__n { font-size: var(--fs-num-m); }
-}
+.totals__it--link .totals__n { font-family: var(--font-display); font-size: var(--fs-600); line-height: var(--lh-title); color: var(--clay); }
+.totals__it--link:hover .totals__n { color: var(--clay-deep); text-decoration: underline; text-underline-offset: .15em; }
 
 /* --- §02 Fields (the twelve subjects) ------------------------------------ */
 /* Hairline grid: gap:1px over a rule background, opaque cells. */
@@ -525,14 +503,14 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
   display: grid; grid-template-columns: 34px minmax(0, 1fr) auto auto;
   align-items: center; gap: var(--sp-3);
   min-block-size: 62px; padding: var(--sp-3) var(--sp-4);
-  background: var(--ground);
+  background: var(--paper);
   transition: background-color .2s;
 }
-.field:hover { background: var(--paper); }
-.field__n { font-family: var(--font-mono); font-size: var(--fs-100); color: var(--muted); }
+.field:hover { background: var(--wash); }
+.field__n { font-family: var(--font-num); font-size: var(--fs-300); color: var(--clay); }
 :root[dir="rtl"] .field__n { font-size: var(--fs-150); }
 .field__name { font-family: var(--font-display); font-size: var(--fs-600); line-height: var(--lh-title); }
-.field__c { font-family: var(--font-mono); font-size: var(--fs-100); color: var(--muted); }
+.field__c { font-family: var(--font-num); font-size: var(--fs-400); color: var(--muted); }
 :root[dir="rtl"] .field__c { font-family: var(--arabic-body); font-size: var(--fs-150); }
 .field[aria-disabled="true"] { color: var(--muted); }
 .field[aria-disabled="true"] .go { display: none; }
@@ -540,7 +518,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 /* --- The arrow ----------------------------------------------------------- */
 /* An SVG, never a → character: the glyph is not bidi-mirrored. */
 .go { inline-size: 18px; block-size: 18px; flex: none; color: var(--muted); transform: scaleX(var(--dirx)); transition: transform .25s, color .2s; }
-.row:hover .go, .field:hover .go, .school-row:hover .go { color: var(--clay); transform: scaleX(var(--dirx)) translateX(4px); }
+.row:hover .go, .field:hover .go, .scard:hover .go { color: var(--clay); transform: scaleX(var(--dirx)) translateX(4px); }
 
 /* --- §03 The ledger row -------------------------------------------------- */
 .ledger { border-block-start: 1px solid var(--rule); }
@@ -568,9 +546,9 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 }
 .grp-head + .row { border-block-start: 0; }
 .row:hover { background: var(--paper); }
-/* The hover tint is the school's own tone, mixed into the paper. */
-.row[data-tone]:hover { background: color-mix(in srgb, var(--sbg) 30%, var(--paper)); }
-.row__idx  { grid-area: idx;  display: none; }
+.row__idx  { display: none; }
+.row__thumb { grid-area: thumb; display: none; aspect-ratio: 4 / 3; inline-size: 72px; border-radius: var(--radius-s); align-self: start; }
+.row:hover .row__thumb img { transform: scale(1.04); }
 .row__date { grid-area: date; }
 .row__main { grid-area: main; min-inline-size: 0; }
 .row__org  { grid-area: org;  min-inline-size: 0; margin-block-start: var(--sp-2); display: flex; gap: var(--sp-3); align-items: flex-start; }
@@ -583,6 +561,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .row__d { display: block; font-size: var(--fs-num-s); line-height: 1; }
 .row__m { display: block; margin-block-start: 2px; }
 .row__t { font-family: var(--font-display); font-size: var(--fs-600); line-height: var(--lh-title); font-weight: 400; }
+.row__t a:hover { color: var(--clay); }
 .row__t a { display: inline; }
 /* Full-row stretched link; the ring lands on the row, not the text. */
 .row__t a::after { content: ""; position: absolute; inset: 0; }
@@ -599,26 +578,27 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 
 @media (min-width: 900px) {
   .row {
-    grid-template-columns: 34px 72px minmax(0, 1fr) minmax(176px, .75fr) 62px 160px 68px;
-    grid-template-areas: "idx date main org days fee go";
+    grid-template-columns: 72px 72px minmax(0, 1fr) minmax(176px, .75fr) 62px 160px 68px;
+    grid-template-areas: "date thumb main org days fee go";
     align-items: start; gap: 0 var(--sp-4);
   }
-  .row__idx { display: block; }
+  .row__thumb { display: block; }
+  .row:not(:has(.row__thumb)) { grid-template-columns: 72px minmax(0, 1fr) minmax(176px, .75fr) 62px 160px 68px; grid-template-areas: "date main org days fee go"; }
   .row__foot { display: contents; }
   .row__org { margin-block-start: 0; }
   .row__days, .row__fee { margin-block-start: 0; }
   .row__fee { margin-inline-start: 0; }
 }
 @media (min-width: 1140px) {
-  .row { grid-template-columns: 42px 88px minmax(0, 1fr) minmax(210px, .75fr) 68px 176px 68px; }
-  .row .mark { min-inline-size: 52px; block-size: 52px; font-size: 1.3125rem; }
+  .row { grid-template-columns: 88px 88px minmax(0, 1fr) minmax(210px, .75fr) 68px 176px 68px; }
+  .row:not(:has(.row__thumb)) { grid-template-columns: 88px minmax(0, 1fr) minmax(210px, .75fr) 68px 176px 68px; }
+  .row__thumb { inline-size: 88px; }
 }
 /* Beside the facet rail the row is narrower by the rail's width: until the
-   screen is wide it keeps the leaner school column and leaves the mark to
-   the hover tint and the school's own page. */
+   screen is wide it drops the thumbnail and keeps a leaner school column. */
 @media (min-width: 1200px) and (max-width: 1439px) {
-  .cat .row { grid-template-columns: 34px 72px minmax(0, 1fr) minmax(150px, .6fr) 62px 160px 68px; }
-  .cat .row .mark { display: none; }
+  .cat .row { grid-template-columns: 72px minmax(0, 1fr) minmax(150px, .6fr) 62px 160px 68px; grid-template-areas: "date main org days fee go"; }
+  .cat .row .row__thumb { display: none; }
 }
 
 .rule-legend {
@@ -634,37 +614,50 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .save[aria-pressed="true"] svg { fill: currentColor; }
 .save.btn--block { inline-size: 100%; min-block-size: 48px; gap: var(--sp-2); }
 
-/* --- §04 School row ------------------------------------------------------ */
+/* --- §04 School cards ---------------------------------------------------- */
+.scards { display: grid; gap: var(--sp-7) var(--sp-5); padding-block: var(--sp-2); }
+@media (min-width: 700px)  { .scards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1080px) { .scards { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.scard { position: relative; display: grid; gap: var(--sp-4); align-content: start; }
+.scard__photo { aspect-ratio: 3 / 2; }
+.scard:hover .scard__photo img { transform: scale(1.035); }
+.scard__body { display: grid; gap: var(--sp-1); }
+.scard__name { font-family: var(--font-display); font-size: var(--fs-600); line-height: var(--lh-title); }
+.scard__name a::after { content: ""; position: absolute; inset: 0; border-radius: var(--radius); }
+.scard:hover .scard__name { color: var(--clay); }
+.scard:has(a:focus-visible) { outline: 2px solid var(--clay); outline-offset: 6px; border-radius: var(--radius); }
+.scard__meta { color: var(--muted); font-size: var(--fs-300); }
+.scard__count { display: flex; gap: var(--sp-2); align-items: baseline; margin-block-start: var(--sp-1); }
+.scard__count .num { font-size: var(--fs-num-s); line-height: 1; }
+
+/* The shortlist drawer lists saved programmes as plain rows. */
 .school-row {
   position: relative; display: grid; gap: var(--sp-1) var(--sp-4);
-  grid-template-columns: 42px minmax(0, 1fr);
   padding-block: var(--sp-4);
   border-block-start: 1px solid var(--rule-hair);
-  transition: background-color .2s;
 }
-.school-row:hover { background: var(--paper); }
-.school-row[data-tone]:hover { background: color-mix(in srgb, var(--sbg) 30%, var(--paper)); }
-/* In the shortlist drawer the header already draws a rule, so the first
-   row's own top border would read as a stray mark below it. */
 .school-row--saved { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
 .school-row--saved:first-child { border-block-start: 0; }
-.school-row--saved .school-row__name { font-size: var(--fs-500); }
+.school-row__name { font-family: var(--font-display); font-size: var(--fs-500); line-height: var(--lh-title); min-inline-size: 0; }
+.school-row__name:hover { color: var(--clay); }
 .note--bare { border: 0; }
 .enquiry__save { margin-block-start: var(--sp-2); }
-.school-row__n { font-family: var(--font-mono); font-size: var(--fs-100); color: var(--muted); }
-:root[dir="rtl"] .school-row__n { font-size: var(--fs-150); }
-.school-row__name { font-family: var(--font-display); font-size: var(--fs-500); line-height: var(--lh-title); display: flex; gap: var(--sp-3); align-items: center; min-inline-size: 0; }
-.school-row__name a::after { content: ""; position: absolute; inset: 0; }
-@media (min-width: 820px) {
-  /* Five real columns: lot, name, city, country, programme count. Every one
-     after the name is allowed to shrink, or a long count spills the row. */
-  .school-row {
-    grid-template-columns:
-      42px minmax(0, 1fr) minmax(0, 176px) minmax(0, 150px) minmax(0, 132px);
-    align-items: baseline;
-  }
-  .school-row > :last-child { text-align: end; }
-}
+
+/* The school page opens on its campus; the record page shows it small. */
+.hero-fig { margin-block-start: var(--sp-4); }
+.hero-fig__photo { aspect-ratio: 21 / 9; }
+@media (max-width: 700px) { .hero-fig__photo { aspect-ratio: 3 / 2; } }
+.enquiry__fig { margin: calc(-1 * var(--sp-5) - 1px) calc(-1 * var(--sp-5) - 1px) var(--sp-4); }
+.enquiry__photo { aspect-ratio: 3 / 2; border-radius: var(--radius) var(--radius) 0 0; }
+.enquiry__fig .credit { padding-inline: var(--sp-5); }
+
+/* Every photograph, credited (the about page). */
+.credits { border-block-start: 1px solid var(--rule); margin-block-start: var(--sp-4); }
+.credit-row { display: grid; gap: var(--sp-1) var(--sp-4); padding-block: var(--sp-3); border-block-start: 1px solid var(--rule-hair); font-size: var(--fs-200); }
+.credit-row:first-child { border-block-start: 0; }
+.credit-row a { text-decoration: underline; text-underline-offset: .2em; text-decoration-color: var(--rule); }
+.credit-row a:hover { color: var(--clay); }
+@media (min-width: 820px) { .credit-row { grid-template-columns: 150px minmax(0, 1.4fr) minmax(0, 1fr) auto; align-items: baseline; } }
 
 /* --- Collection row ------------------------------------------------------ */
 .coll-row {
@@ -689,7 +682,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 @media (min-width: 820px) { .tenets { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 1140px) { .tenets { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .tenet { background: var(--band); padding: var(--sp-5) var(--sp-4) var(--sp-5) 0; }
-.tenet__n { font-family: var(--font-mono); font-size: var(--fs-100); color: var(--band-clay); letter-spacing: var(--track); direction: ltr; unicode-bidi: isolate; }
+.tenet__n { font-family: var(--font-num); font-size: var(--fs-num-s); line-height: 1; color: var(--band-clay); direction: ltr; unicode-bidi: isolate; }
 .tenet h3 { font-size: var(--fs-500); margin-block: var(--sp-2) var(--sp-2); color: var(--band-ink); }
 .tenet p { color: var(--band-muted); font-size: var(--fs-300); }
 
@@ -716,8 +709,8 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 /* --- §06 Steps ----------------------------------------------------------- */
 .steps { display: grid; gap: 1px; background: var(--rule-hair); border-block: 1px solid var(--rule); }
 @media (min-width: 820px) { .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-.step { background: var(--ground); padding: var(--sp-5) var(--sp-4) var(--sp-6); }
-.step__n { font-family: var(--font-mono); font-size: var(--fs-100); color: var(--clay); letter-spacing: var(--track); direction: ltr; unicode-bidi: isolate; }
+.step { background: var(--paper); padding: var(--sp-5) var(--sp-4) var(--sp-6); }
+.step__n { font-family: var(--font-num); font-size: var(--fs-num-s); line-height: 1; color: var(--clay); direction: ltr; unicode-bidi: isolate; }
 .step h3 { font-size: var(--fs-500); margin-block: var(--sp-2); }
 .step p { color: var(--muted); font-size: var(--fs-300); }
 
@@ -744,7 +737,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
   min-block-size: 48px; padding: 12px 22px;
   font-family: var(--font-label); font-size: var(--fs-100); font-weight: 500;
   letter-spacing: var(--track); text-transform: var(--caps);
-  border: 1px solid currentColor; cursor: pointer; background: transparent; color: var(--ink);
+  border: 1px solid currentColor; border-radius: 999px; cursor: pointer; background: transparent; color: var(--ink);
   transition: background-color .2s, color .2s, border-color .2s;
 }
 :root[dir="rtl"] .btn { font-family: var(--arabic-body); font-size: var(--fs-300); letter-spacing: 0; text-transform: none; }
@@ -755,14 +748,15 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .chapter--band .btn--solid { background: var(--band-clay); border-color: var(--band-clay); color: var(--band); }
 /* Controls sitting on the inverted band must read against it, not against
    the page ground — in light mode the page ink is dark and the band is not. */
-.chapter--band .ctl, .colophon .ctl { color: var(--band-ink); border-color: var(--band-rule); }
-.chapter--band .ctl:hover, .colophon .ctl:hover,
-.chapter--band .ctl[aria-pressed="true"], .colophon .ctl[aria-pressed="true"] {
+.chapter--band .ctl { color: var(--band-ink); border-color: var(--band-rule); }
+.chapter--band .ctl:hover,
+.chapter--band .ctl[aria-pressed="true"] {
   background: var(--band-ink); color: var(--band); border-color: var(--band-ink);
 }
 .btn--block { inline-size: 100%; }
 
 .pill {
+  border-radius: 999px;
   display: inline-flex; align-items: center; gap: var(--sp-2);
   min-block-size: 34px; padding-inline: var(--sp-3);
   background: var(--wash); color: var(--ink);
@@ -798,7 +792,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .facets__done { display: none; }
 
 .toolbar { display: flex; flex-wrap: wrap; gap: var(--sp-3); align-items: center; padding-block: var(--sp-4); border-block-start: 1px solid var(--rule); }
-.search { flex: 1; min-inline-size: 220px; display: flex; align-items: center; border: 1px solid var(--rule); }
+.search { flex: 1; min-inline-size: 220px; display: flex; align-items: center; border: 1px solid var(--rule); border-radius: var(--radius-s); background: var(--paper); }
 .search input { inline-size: 100%; border: 0; background: transparent; padding: 12px 14px; font-family: var(--font-display); font-size: 1.125rem; }
 .search input:focus { outline: none; }
 .search:focus-within { box-shadow: inset 0 -2px 0 0 var(--clay); }
@@ -854,7 +848,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .fee-lockup__n { display: block; font-size: var(--fs-num-l); line-height: .95; direction: ltr; unicode-bidi: isolate; }
 .fee-lockup__sar { display: block; margin-block-start: var(--sp-2); color: var(--muted); font-size: var(--fs-300); }
 
-.enquiry { border: 1px solid var(--rule); padding: var(--sp-5); }
+.enquiry { border: 1px solid var(--rule-hair); border-radius: var(--radius); padding: var(--sp-5); background: var(--paper); }
 .enquiry h2 { font-size: var(--fs-600); }
 .enquiry p { color: var(--muted); font-size: var(--fs-300); margin-block-start: var(--sp-3); }
 .enquiry .btn { margin-block-start: var(--sp-3); }
@@ -885,7 +879,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 :root[dir="rtl"] .fld label { font-family: var(--arabic-body); font-size: var(--fs-150); letter-spacing: 0; text-transform: none; }
 .fld input, .fld select, .fld textarea {
   min-block-size: 48px; padding: 12px 14px;
-  border: 1px solid var(--rule); background: var(--paper); color: var(--ink);
+  border: 1px solid var(--rule); border-radius: var(--radius-s); background: var(--paper); color: var(--ink);
 }
 .fld textarea { min-block-size: 132px; resize: vertical; }
 .fld input:focus, .fld select:focus, .fld textarea:focus { outline: none; border-color: var(--clay); box-shadow: inset 0 -2px 0 0 var(--clay); }
@@ -909,52 +903,33 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .drawer__b { flex: 1; overflow-y: auto; padding-inline: var(--gutter); }
 .drawer__f { padding: var(--sp-4) var(--gutter); border-block-start: 1px solid var(--rule); display: grid; gap: var(--sp-2); }
 
-/* --- Colophon ------------------------------------------------------------ */
-.colophon { background: var(--band); color: var(--band-ink); border-block-start: 1px solid var(--band-rule); padding-block: var(--sp-8) var(--sp-5); }
-.colophon a:hover { color: var(--band-clay); }
-.colophon .lbl, .colophon p { color: var(--band-muted); }
+/* --- Colophon: the one dark surface -------------------------------------- */
+.colophon { background: var(--colo); color: var(--colo-ink); padding-block: var(--sp-8) var(--sp-5); }
+.colophon a:hover { color: var(--colo-clay); }
+.colophon .lbl, .colophon p { color: var(--colo-muted); }
+.colophon .wordmark__ar { color: var(--colo-clay); }
+.colophon .wordmark__bar { background: var(--colo-rule); }
 .colophon .record__r { grid-template-columns: minmax(0, 1fr) auto; gap: var(--sp-2) var(--sp-3); }
-.colophon .record__v { color: var(--band-ink); white-space: nowrap; }
-.colophon .record, .colophon .record__r, .colophon .record__note { border-block-color: var(--band-rule); }
+.colophon .record__v { color: var(--colo-ink); white-space: nowrap; }
+.colophon .record, .colophon .record__r, .colophon .record__note { border-block-color: var(--colo-rule); }
+.colophon .ctl { color: var(--colo-ink); border-color: var(--colo-rule); }
+.colophon .ctl:hover, .colophon .ctl[aria-pressed="true"] { background: var(--colo-ink); color: var(--colo); border-color: var(--colo-ink); }
 .colo-grid { display: grid; gap: var(--sp-6); }
 @media (min-width: 860px) { .colo-grid { grid-template-columns: 1.6fr repeat(3, minmax(0, 1fr)); gap: var(--sp-7); } }
-.colo-grid h3 { font-family: var(--font-label); font-size: var(--fs-100); font-weight: 500; letter-spacing: var(--track); text-transform: var(--caps); color: var(--band-muted); margin-block-end: var(--sp-4); }
+.colo-grid h3 { font-family: var(--font-label); font-size: var(--fs-100); font-weight: 600; letter-spacing: var(--track); text-transform: var(--caps); color: var(--colo-muted); margin-block-end: var(--sp-4); }
 :root[dir="rtl"] .colo-grid h3 { font-family: var(--arabic-body); font-size: var(--fs-150); }
 .colo-grid ul { list-style: none; padding: 0; display: grid; gap: var(--sp-2); font-size: var(--fs-300); }
-.colo-base { display: flex; flex-wrap: wrap; gap: var(--sp-3) var(--sp-5); justify-content: space-between; margin-block-start: var(--sp-7); padding-block-start: var(--sp-4); border-block-start: 1px solid var(--band-rule); font-size: var(--fs-200); color: var(--band-muted); }
+.colo-base { display: flex; flex-wrap: wrap; gap: var(--sp-3) var(--sp-5); justify-content: space-between; margin-block-start: var(--sp-7); padding-block-start: var(--sp-4); border-block-start: 1px solid var(--colo-rule); font-size: var(--fs-200); color: var(--colo-muted); }
 
-/* --- The one motion idea: the rules draw --------------------------------- */
-/* The data never animates. Every row is ruled at all times; the reveal draws
-   a heavier overlay on top of the static hairline. */
-[data-reveal] { position: relative; }
-[data-reveal]::before {
-  content: ""; position: absolute; inset-block-start: -1px; inset-inline: 0;
-  block-size: 1px; background: var(--rule);
-  transform: scaleX(0); transform-origin: var(--origin);
-  transition: transform .62s cubic-bezier(.22, .72, .2, 1);
-  transition-delay: calc(var(--i, 0) * 80ms);
+/* --- Motion: blocks rise softly into place --------------------------------- */
+/* Only a page the script has reached (.js on the root) ever hides a block,
+   and the observer is the only thing that shows it again. */
+.js [data-reveal] {
+  opacity: 0; transform: translateY(14px);
+  transition: opacity .7s cubic-bezier(.22, .72, .2, 1), transform .7s cubic-bezier(.22, .72, .2, 1);
+  transition-delay: calc(var(--i, 0) * 70ms);
 }
-[data-reveal].is-in::before { transform: scaleX(1); }
-/* Some blocks take part in the sequence without wanting a rule drawn above. */
-.reveal--bare::before { display: none; }
-
-/* The mask. A block enters from under its own rule: the container is masked,
-   never the text, and the mask wipes down with the same 80ms stagger. It is a
-   mask, not a clip — a clip would hide the block from its own observer and
-   from the pointer. Only a block the script has armed (.will-reveal) is ever
-   masked, so a block the script never reaches is simply visible; once the
-   wipe has run the mask is dropped and the settled page carries none. The
-   2px starting band keeps the rule itself visible from the first paint. */
-[data-reveal].will-reveal {
-  -webkit-mask-image: linear-gradient(#000, #000); mask-image: linear-gradient(#000, #000);
-  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
-  -webkit-mask-position: 0 0; mask-position: 0 0;
-  -webkit-mask-size: 100% 2px; mask-size: 100% 2px;
-  transition: -webkit-mask-size .7s cubic-bezier(.22, .72, .2, 1), mask-size .7s cubic-bezier(.22, .72, .2, 1);
-  transition-delay: calc(var(--i, 0) * 80ms);
-}
-[data-reveal].will-reveal.is-in { -webkit-mask-size: 100% 100%; mask-size: 100% 100%; }
-[data-reveal].is-settled { -webkit-mask-image: none; mask-image: none; }
+.js [data-reveal].is-in { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -962,8 +937,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
     animation-duration: .001ms !important;
     scroll-behavior: auto !important;
   }
-  [data-reveal]::before { transform: scaleX(1); }
-  [data-reveal] { -webkit-mask-image: none !important; mask-image: none !important; }
+  .js [data-reveal] { opacity: 1; transform: none; }
 }
 
 /* --- The Arabic backstop, last ------------------------------------------- */

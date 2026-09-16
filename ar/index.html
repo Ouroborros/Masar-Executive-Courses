@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-assets="../assets/">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,68 +56,63 @@
 
   <main id="main">
 
-    <section class="hero">
-      <div class="sheet">
+    <section class="hero hero--photo">
+      <div class="hero__fig" aria-hidden="true"></div>
+      <div class="sheet hero__in">
         <p class="dateline lbl">
           <span>فهرس مستقل · الرياض</span>
           <span class="dateline__sep" aria-hidden="true">/</span>
           <span data-today>—</span>
           <span class="dateline__sep" aria-hidden="true">/</span>
-          <span class="hijri" data-today-hijri>—</span>
+          <span class="hijri" lang="ar" data-today-hijri>—</span>
         </p>
-
-        <div class="hero__grid">
-          <div>
-            <h1>
-              <span class="ln" data-reveal style="--i:0">الرسوم.</span>
-              <span class="ln" data-reveal style="--i:1">المدينة.</span>
-              <span class="ln" data-reveal style="--i:2">التواريخ.</span>
-            </h1>
-            <span class="hero__echo alt-run reveal--bare" lang="en" data-reveal style="--i:3">The fee. The city. The dates.</span>
-            <p class="hero__stand reveal--bare" data-reveal style="--i:4">يفهرس «مسار» البرامج التنفيذية مفتوحة التسجيل من كليات الأعمال
-              حول العالم: الرسوم التي تنشرها كل كلية، والمدينة التي يُدرَّس فيها البرنامج، وتواريخه،
-              وعدد أيام التدريس. لا تصنيف، ولا بيع.</p>
-            <div class="finder" data-home-finder data-reveal style="--i:5">
-              <label class="finder__f">
-                <span class="lbl">الحقل</span>
-                <select data-finder="subject"><option value="">كل الحقول</option></select>
-              </label>
-              <label class="finder__f">
-                <span class="lbl">المدينة</span>
-                <select data-finder="city"><option value="">كل المدن</option></select>
-              </label>
-              <label class="finder__f">
-                <span class="lbl">الشهر</span>
-                <select data-finder="month"><option value="">كل الأشهر</option></select>
-              </label>
-              <a class="btn btn--solid finder__go" href="courses.html" data-finder-go>تصفَّح الفهرس</a>
-            </div>
-            <p class="finder__aside reveal--bare" data-reveal style="--i:6">
-              <a href="contact.html#teams">تسجيل فريق؟</a>
-            </p>
-          </div>
-
-          <div class="totals">
-            <a class="totals__it" href="courses.html" data-reveal style="--i:1">
-              <span class="totals__n num" data-stat="programmes">189</span>
-              <span class="totals__l lbl">برنامجًا</span>
-            </a>
-            <a class="totals__it" href="schools.html" data-reveal style="--i:2">
-              <span class="totals__n num" data-stat="schools">16</span>
-              <span class="totals__l lbl">كلية أعمال</span>
-            </a>
-            <a class="totals__it" href="courses.html" data-reveal style="--i:3">
-              <span class="totals__n num" data-stat="countries">6</span>
-              <span class="totals__l lbl">دولة تُقدَّم فيها</span>
-            </a>
-          </div>
+        <h1 class="hero__t" data-reveal style="--i:0">برامج تنفيذية،<br>مُدرجة بوضوح.</h1>
+        <p class="hero__stand" data-reveal style="--i:1">برامج مفتوحة التسجيل من كليات الأعمال حول العالم —
+          الرسوم كما تنشرها كل كلية، والمدينة التي يُدرَّس فيها البرنامج، والتواريخ وأيام التدريس.
+          لا شيء مصنَّف، ولا شيء يُباع.</p>
+      </div>
+      <div class="sheet">
+        <div class="finder finder--panel" data-home-finder data-reveal style="--i:2">
+          <label class="finder__f">
+            <span class="lbl">الحقل</span>
+            <select data-finder="subject"><option value="">كل الحقول</option></select>
+          </label>
+          <label class="finder__f">
+            <span class="lbl">المدينة</span>
+            <select data-finder="city"><option value="">كل المدن</option></select>
+          </label>
+          <label class="finder__f">
+            <span class="lbl">الشهر</span>
+            <select data-finder="month"><option value="">كل الأشهر</option></select>
+          </label>
+          <a class="btn btn--solid finder__go" href="courses.html" data-finder-go>تصفّح الفهرس</a>
         </div>
+      </div>
+    </section>
+
+    <section class="totals-band">
+      <div class="sheet totals">
+        <a class="totals__it" href="courses.html" data-reveal style="--i:1">
+          <span class="totals__n num" data-stat="programmes">189</span>
+          <span class="totals__l lbl">برنامجًا</span>
+        </a>
+        <a class="totals__it" href="schools.html" data-reveal style="--i:2">
+          <span class="totals__n num" data-stat="schools">16</span>
+          <span class="totals__l lbl">كلية أعمال</span>
+        </a>
+        <a class="totals__it" href="courses.html" data-reveal style="--i:3">
+          <span class="totals__n num" data-stat="countries">6</span>
+          <span class="totals__l lbl">دول تُدرَّس فيها</span>
+        </a>
+        <a class="totals__it totals__it--link" href="contact.html#teams" data-reveal style="--i:4">
+          <span class="totals__n">تسجّل فريقًا؟</span>
+          <span class="totals__l lbl">اطلب عرضًا</span>
+        </a>
       </div>
     </section>
     <section class="chapter">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§01</span>
           <h2 class="chap-title">الحقول<span class="alt-run">Fields</span></h2>
           <p class="chap-note">اثنا عشر حقلًا تمرّ عبر الفهرس. اختر واحدًا ليُفتح الفهرس مصفّى عليه.</p>
         </div>
@@ -129,7 +124,6 @@
     <section class="chapter">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§02</span>
           <h2 class="chap-title">أقرب الدفعات<span class="alt-run">The next intakes</span></h2>
           <p class="chap-note">مجمّعة حسب تاريخ البدء، الأقرب أولًا. عشرة هنا، وبقيتها في الفهرس.</p>
         </div>
@@ -145,7 +139,6 @@
     <section class="chapter">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§03</span>
           <h2 class="chap-title">الكليات<span class="alt-run">The schools</span></h2>
           <p class="chap-note">كل مؤسسة لها برامج في الفهرس، باسمها — بلا شعارات وبلا تصنيفات.</p>
         </div>
@@ -158,7 +151,6 @@
     <section class="chapter chapter--band" id="method">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§04</span>
           <h2 class="chap-title">المنهج<span class="alt-run" lang="en">Method</span></h2>
           <p class="chap-note">كيف يدخل البرنامج إلى الفهرس، وما الذي لن نفعله به.</p>
         </div>
@@ -209,7 +201,6 @@
     <section class="chapter" id="teams">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§05</span>
           <h2 class="chap-title">تسجيل فريق<span class="alt-run">Enrolling a team</span></h2>
           <p class="chap-note">لا يسجّل «مسار» نيابةً عن أي كلية. هو يدلّك على الدفعة الصحيحة وعلى الجهة الصحيحة.</p>
         </div>
@@ -308,6 +299,7 @@
 
   <script src="../assets/js/data.js"></script>
   <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/credits.js"></script>
   <script src="../assets/js/app.js"></script>
 </body>
 </html>

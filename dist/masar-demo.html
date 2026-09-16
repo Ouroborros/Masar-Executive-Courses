@@ -110,15 +110,15 @@
 /* ==========================================================================
    Masar — site.css
 
-   THE LEDGER. The whole site is one ruled ledger: numbered chapters, a
-   monospace index track, and hairline data rows — no cards, no boxes — where
-   the start date, the teaching days and the fee are set as oversized numerals
-   and ARE the imagery. Honesty is structural: an unrecorded field prints an
-   em dash against a printed legend rather than disappearing.
+   THE WARM GALLERY. Paper ground, one clay accent, and the schools shown by
+   openly licensed photographs of their own campuses. The record is still the
+   point — the fee, the city, the dates and the teaching days are set large
+   and never hidden — but it is carried on a warm, photographic page rather
+   than a dark ledger. Honesty is structural: an unrecorded field prints an em
+   dash against a printed legend rather than disappearing.
 
-   Ground is Kohl; ink is Limestone; one Clay accent, budgeted. Dusk is
-   reserved for the Hijri track and nothing else; Olive marks "Online" and
-   nothing else.
+   Dusk is reserved for the Hijri track and nothing else; Olive marks "Online"
+   and nothing else. Dark is the alternate ground, kept for readers who ask.
 
    Direction is a token block, not a second stylesheet: every rule below uses
    logical properties, and [dir="rtl"] flips tracking, caps, leading, the
@@ -126,45 +126,46 @@
    left/right properties must return nothing.
    ========================================================================== */
 
-/* --- Tokens: palette (dark is the default ground) ------------------------- */
+/* --- Tokens: palette (paper is the default ground) ------------------------ */
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 
   /* grounds */
-  --ground:     #1F1B17;   /* Kohl — page */
-  --paper:      #272219;   /* raised: row hover, sheet fill */
-  --wash:       #2E2820;   /* chips, active-filter bar, tinted band */
+  --ground:     #F4EEE4;   /* paper — page */
+  --paper:      #FBF8F2;   /* raised: panels, cards, row hover */
+  --wash:       #EADFCF;   /* sand: the warm band, chips, empty photo */
   /* ink */
-  --ink:        #F3EDE3;   /* Limestone — 13.9:1 on ground */
-  --ink-2:      #C9BFAE;   /*  9.4:1 — secondary values */
-  --muted:      #A79E90;   /*  6.6:1 — labels, meta (floor for text) */
-  /* rules — two weights */
-  --rule-hair:  #3D3630;   /* intra-group separators only */
-  --rule:       #5A5045;   /* group/set boundaries, control borders */
-  --rule-ink:   var(--ink);/* chapter boundaries */
+  --ink:        #221D18;
+  --ink-2:      #57504A;
+  --muted:      #6E6459;   /* labels, meta — 5.1:1 on ground */
+  /* rules */
+  --rule-hair:  #DCD1BE;
+  --rule:       #B5A68E;
+  --rule-ink:   #221D18;
   /* accents */
-  --clay:       #D9764F;   /*  5.5:1 on ground */
-  --clay-deep:  #E8906C;   /* hover on filled */
-  --clay-on:    #1F1B17;   /* text on a filled clay control */
-  --dusk:       #8FB0CE;   /* RESERVED: the Hijri track, nothing else */
-  --olive:      #93A67E;   /* RESERVED: the "Online" format token */
-  /* the one darker band */
-  --band:       #16130F;
-  --band-ink:   #EFE7DA;
-  --band-muted: #A79E90;
-  --band-rule:  #3A322A;
-  --band-clay:  #D9764F;
-
-  /* tones — one warm pair per school, the row's only "image". Panels on the
-     dark ground are deep and their ink is pale; light flips both. */
-  --tone-1-bg: #4A3B25; --tone-1-ink: #F3E3C2;   /* sand  */
-  --tone-2-bg: #5A2F1E; --tone-2-ink: #F6D3C1;   /* clay  */
-  --tone-3-bg: #3B4229; --tone-3-ink: #DCE4C4;   /* olive */
-  --tone-4-bg: #2C3A4A; --tone-4-ink: #CFE0F0;   /* dusk  */
-  --tone-5-bg: #4A2C3E; --tone-5-ink: #F0D2E2;   /* plum  */
-  --tone-6-bg: #2F4436; --tone-6-ink: #CBE3D2;   /* moss  */
-  --tone-7-bg: #5A4614; --tone-7-ink: #F5E4B0;   /* ochre */
-  --tone-8-bg: #4F2A2A; --tone-8-ink: #F2CFC9;   /* rust  */
+  --clay:       #A9502D;   /* Diriyah clay — the one accent */
+  --clay-deep:  #8E3F21;
+  --clay-on:    #FFFFFF;
+  --dusk:       #2E4157;   /* RESERVED: the Hijri track */
+  --olive:      #4F5F40;   /* RESERVED: the "Online" format */
+  /* the warm band (Method) */
+  --band:       #EADFCF;
+  --band-ink:   #221D18;
+  --band-muted: #6E6459;
+  --band-rule:  #CDBDA1;
+  --band-clay:  #A9502D;
+  /* the colophon is the one dark surface */
+  --colo:       #241E18;
+  --colo-ink:   #F3EDE3;
+  --colo-muted: #A79E90;
+  --colo-rule:  #3D3630;
+  --colo-clay:  #D9764F;
+  /* photographs */
+  --scrim:      rgba(24, 18, 12, .55);
+  --on-photo:   #F7F1E7;
+  --radius:     12px;
+  --radius-s:   7px;
+  --shadow:     0 1px 2px rgba(34, 29, 24, .06), 0 18px 40px -20px rgba(34, 29, 24, .32);
 
   /* faces */
   --latin-display: "Newsreader", Georgia, "Times New Roman", serif;
@@ -174,8 +175,8 @@
   --font-mono:     "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /* type scale — the ONLY sizes in this stylesheet */
-  --fs-100: .75rem;      /* 12px — Latin micro-label floor */
-  --fs-150: .8125rem;    /* 13px — the Arabic twin of --fs-100 */
+  --fs-100: .75rem;
+  --fs-150: .8125rem;
   --fs-200: .875rem;
   --fs-300: .9375rem;
   --fs-400: 1.0625rem;
@@ -183,8 +184,7 @@
   --fs-600: clamp(1.375rem, 1.05rem + 1.15vw, 1.75rem);
   --fs-700: clamp(1.75rem, 1.15rem + 2.1vw, 2.75rem);
   --fs-800: clamp(2.25rem, 1.3rem + 4vw, 4rem);
-  --fs-900: clamp(2.75rem, 1.1rem + 6.8vw, 6rem);
-  /* the numerals ARE the imagery */
+  --fs-900: clamp(2.5rem, 1.1rem + 5.4vw, 5rem);
   --fs-num-s: clamp(1.375rem, 1.05rem + 1.35vw, 1.875rem);
   --fs-num-m: clamp(1.75rem, 1.1rem + 2.3vw, 2.75rem);
   --fs-num-l: clamp(3rem, 1.4rem + 6.2vw, 6rem);
@@ -198,17 +198,17 @@
   --hdr-h: 64px;
 
   /* direction tokens — LTR values here, flipped once under [dir="rtl"] */
-  --track: .12em;
-  --track-display: -.02em;
+  --track: .08em;
+  --track-display: -.015em;
   --caps: uppercase;
   --lh-display: 1.06;
-  --lh-title: 1.18;
+  --lh-title: 1.2;
   --lh-body: 1.62;
   --origin: left;
   --dirx: 1;
   --font-display: var(--latin-display);
   --font-body:    var(--latin-body);
-  --font-label:   var(--font-mono);
+  --font-label:   var(--latin-body);
   --font-num:     var(--latin-display);
 }
 
@@ -223,73 +223,60 @@
   --dirx: -1;
   --font-display: var(--arabic-display);
   --font-body:    var(--arabic-body);
-  --font-label:   var(--arabic-body);   /* mono never carries Arabic */
+  --font-label:   var(--arabic-body);
   --font-num:     var(--latin-display); /* numerals stay Newsreader in both */
 }
 
-/* Light is the alternate ground, not the default. Both the media query and
-   the explicit attribute are handled, in this order. */
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) {
-    color-scheme: light;
-    --ground:    #F3EDE3;
-    --paper:     #FAF6EE;
-    --wash:      #E9E0D2;
-    --ink:       #1F1B17;
-    --ink-2:     #56504A;
-    --muted:     #6B6257;
-    --rule-hair: #B9A98F;
-    --rule:      #8E8271;
-    --clay:      #A64B2A;
-    --clay-deep: #8E3D20;
-    --clay-on:   #FFFFFF;
-    --dusk:      #2E4157;
-    --olive:     #4F5F40;
-    --tone-1-bg: #E8D9B8; --tone-1-ink: #4A3B25;
-    --tone-2-bg: #EFCDBD; --tone-2-ink: #5A2F1E;
-    --tone-3-bg: #DCE0C4; --tone-3-ink: #3B4229;
-    --tone-4-bg: #CFDBE6; --tone-4-ink: #2C3A4A;
-    --tone-5-bg: #E7D3DE; --tone-5-ink: #4A2C3E;
-    --tone-6-bg: #CFE0D4; --tone-6-ink: #2F4436;
-    --tone-7-bg: #EEDFA8; --tone-7-ink: #5A4614;
-    --tone-8-bg: #E9CBC6; --tone-8-ink: #4F2A2A;
+/* Dark is the alternate ground. Both the media query and the explicit
+   attribute are handled, in this order, so the toggle wins both ways. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --ground:    #1F1B17;
+    --paper:     #272219;
+    --wash:      #2E2820;
+    --ink:       #F3EDE3;
+    --ink-2:     #C9BFAE;
+    --muted:     #A79E90;
+    --rule-hair: #3D3630;
+    --rule:      #5A5045;
+    --rule-ink:  #F3EDE3;
+    --clay:      #D9764F;
+    --clay-deep: #E8906C;
+    --clay-on:   #1F1B17;
+    --dusk:      #8FB0CE;
+    --olive:     #93A67E;
+    --band:      #2A241D;
+    --band-ink:  #F3EDE3;
+    --band-muted:#A79E90;
+    --band-rule: #443B31;
+    --band-clay: #D9764F;
+    --shadow:    0 1px 2px rgba(0, 0, 0, .3), 0 18px 40px -20px rgba(0, 0, 0, .7);
   }
 }
-:root[data-theme="light"] {
-  color-scheme: light;
-  --ground:    #F3EDE3;
-  --paper:     #FAF6EE;
-  --wash:      #E9E0D2;
-  --ink:       #1F1B17;
-  --ink-2:     #56504A;
-  --muted:     #6B6257;
-  --rule-hair: #B9A98F;
-  --rule:      #8E8271;
-  --clay:      #A64B2A;
-  --clay-deep: #8E3D20;
-  --clay-on:   #FFFFFF;
-  --dusk:      #2E4157;
-  --olive:     #4F5F40;
-  --tone-1-bg: #E8D9B8; --tone-1-ink: #4A3B25;
-  --tone-2-bg: #EFCDBD; --tone-2-ink: #5A2F1E;
-  --tone-3-bg: #DCE0C4; --tone-3-ink: #3B4229;
-  --tone-4-bg: #CFDBE6; --tone-4-ink: #2C3A4A;
-  --tone-5-bg: #E7D3DE; --tone-5-ink: #4A2C3E;
-  --tone-6-bg: #CFE0D4; --tone-6-ink: #2F4436;
-  --tone-7-bg: #EEDFA8; --tone-7-ink: #5A4614;
-  --tone-8-bg: #E9CBC6; --tone-8-ink: #4F2A2A;
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ground:    #1F1B17;
+  --paper:     #272219;
+  --wash:      #2E2820;
+  --ink:       #F3EDE3;
+  --ink-2:     #C9BFAE;
+  --muted:     #A79E90;
+  --rule-hair: #3D3630;
+  --rule:      #5A5045;
+  --rule-ink:  #F3EDE3;
+  --clay:      #D9764F;
+  --clay-deep: #E8906C;
+  --clay-on:   #1F1B17;
+  --dusk:      #8FB0CE;
+  --olive:     #93A67E;
+  --band:      #2A241D;
+  --band-ink:  #F3EDE3;
+  --band-muted:#A79E90;
+  --band-rule: #443B31;
+  --band-clay: #D9764F;
+  --shadow:    0 1px 2px rgba(0, 0, 0, .3), 0 18px 40px -20px rgba(0, 0, 0, .7);
 }
-
-/* A row or a school carries its tone as a data attribute; the pair resolves
-   to --sbg / --sink here, once, for both grounds. */
-[data-tone="1"] { --sbg: var(--tone-1-bg); --sink: var(--tone-1-ink); }
-[data-tone="2"] { --sbg: var(--tone-2-bg); --sink: var(--tone-2-ink); }
-[data-tone="3"] { --sbg: var(--tone-3-bg); --sink: var(--tone-3-ink); }
-[data-tone="4"] { --sbg: var(--tone-4-bg); --sink: var(--tone-4-ink); }
-[data-tone="5"] { --sbg: var(--tone-5-bg); --sink: var(--tone-5-ink); }
-[data-tone="6"] { --sbg: var(--tone-6-bg); --sink: var(--tone-6-ink); }
-[data-tone="7"] { --sbg: var(--tone-7-bg); --sink: var(--tone-7-ink); }
-[data-tone="8"] { --sbg: var(--tone-8-bg); --sink: var(--tone-8-ink); }
 
 /* --- Base ---------------------------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -319,7 +306,7 @@ a { color: inherit; text-decoration: none; }
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
-  font-weight: 300;
+  font-weight: 400;
   line-height: var(--lh-display);
   letter-spacing: var(--track-display);
 }
@@ -353,7 +340,7 @@ h3, h4 { font-weight: 400; line-height: var(--lh-title); }
 .lbl {
   font-family: var(--font-label);
   font-size: var(--fs-100);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: var(--track);
   text-transform: var(--caps);
   color: var(--muted);
@@ -364,7 +351,7 @@ h3, h4 { font-weight: 400; line-height: var(--lh-title); }
 .num {
   font-family: var(--font-num);
   font-variant-numeric: lining-nums tabular-nums;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: var(--track-display);
 }
 
@@ -389,18 +376,15 @@ h3, h4 { font-weight: 400; line-height: var(--lh-title); }
 /* An unrecorded value is printed, not omitted. */
 .dash { color: var(--muted); }
 
-/* The school's mark: its short name set in the display face on the school's
-   own tone. It stands in for photography and stays Latin in both locales,
-   like the numerals. */
-.mark {
-  display: inline-grid; place-items: center; flex: none;
-  min-inline-size: 44px; block-size: 44px; padding-inline: 8px;
-  background: var(--sbg, var(--wash)); color: var(--sink, var(--ink));
-  font-family: var(--latin-display); font-weight: 400; font-size: 1.125rem;
-  letter-spacing: -.01em; line-height: 1; white-space: nowrap;
-  direction: ltr; unicode-bidi: isolate;
-}
-.mark--l { min-inline-size: 60px; block-size: 60px; padding-inline: 10px; font-size: 1.5rem; }
+/* A photograph. Every image on the site sits in one of these: it is
+   cropped to the box, rounded, and shows the sand wash until it arrives. */
+.photo { display: block; position: relative; overflow: hidden; border-radius: var(--radius); background: var(--wash); }
+.photo img { inline-size: 100%; block-size: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.22, .72, .2, 1); }
+.photo--empty { background: linear-gradient(135deg, var(--wash), var(--paper)); }
+.credit { margin-block-start: var(--sp-2); color: var(--muted); font-size: var(--fs-100); }
+:root[dir="rtl"] .credit { font-size: var(--fs-150); }
+.credit a { text-decoration: underline; text-underline-offset: .2em; text-decoration-color: var(--rule); }
+.credit a:hover { color: var(--clay); }
 
 /* The leak-proof backstop. Tracking and caps must never reach Arabic, no
    matter which component forgot to reset them. Keep this after everything. */
@@ -441,6 +425,7 @@ h3, h4 { font-weight: 400; line-height: var(--lh-title); }
 .tools { display: flex; align-items: center; gap: var(--sp-2); flex: none; }
 
 .ctl {
+  border-radius: var(--radius-s);
   display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2);
   min-block-size: 44px; min-inline-size: 44px; padding-inline: 12px;
   border: 1px solid var(--rule); background: transparent; color: var(--ink);
@@ -523,7 +508,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 }
 
 /* --- Chapter ------------------------------------------------------------- */
-.chapter { border-block-start: 1px solid var(--rule-ink); }
+.chapter { border-block-start: 1px solid var(--rule-hair); }
 .chapter:first-of-type { border-block-start: 0; }
 .chapter--band { background: var(--band); color: var(--band-ink); border-block-color: var(--band-rule); }
 .chapter--band .lbl, .chapter--band .chap-note { color: var(--band-muted); }
@@ -534,64 +519,58 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
   padding-block: clamp(34px, 5vw, 66px) clamp(20px, 2.6vw, 32px);
 }
 @media (min-width: 900px) {
-  .chap-head { grid-template-columns: 84px minmax(0, 1fr) minmax(230px, 25rem); gap: var(--sp-5); align-items: start; }
+  .chap-head { grid-template-columns: minmax(0, 1fr) minmax(230px, 25rem); gap: var(--sp-5) var(--sp-8); align-items: end; }
 }
-.chap-num { font-family: var(--font-mono); font-size: var(--fs-100); font-weight: 500; letter-spacing: var(--track); color: var(--clay); direction: ltr; unicode-bidi: isolate; text-align: start; }
+/* A count above a title (the school and set pages). */
+.chap-num { grid-column: 1 / -1; font-family: var(--font-num); font-size: var(--fs-num-m); line-height: 1; color: var(--clay); direction: ltr; unicode-bidi: isolate; text-align: start; }
 .chap-title { font-size: var(--fs-700); }
-.chap-title .alt-run { display: block; font-size: var(--fs-600); color: var(--muted); margin-block-start: var(--sp-1); }
+.chap-title .alt-run { display: block; font-size: var(--fs-600); color: var(--clay); margin-block-start: var(--sp-1); }
 .chap-note { color: var(--muted); font-size: var(--fs-300); }
 .chap-body { padding-block-end: clamp(40px, 5vw, 88px); }
 
-/* --- §01 Hero ------------------------------------------------------------ */
-.hero { padding-block: clamp(28px, 4vw, 56px) clamp(40px, 5vw, 80px); }
-.hero__grid { display: grid; gap: var(--sp-7); }
-@media (min-width: 960px) { .hero__grid { grid-template-columns: minmax(0, 1fr) 300px; gap: var(--sp-8); align-items: start; } }
-
-.dateline { display: flex; flex-wrap: wrap; gap: var(--sp-3); align-items: baseline; margin-block-end: var(--sp-5); }
+/* --- §01 Hero: a photograph, and the finder on a paper panel at its foot -- */
+.hero--photo { position: relative; isolation: isolate; color: var(--on-photo); }
+.hero__fig {
+  position: absolute; inset: 0; inset-block-end: clamp(56px, 8vw, 96px); z-index: -1; overflow: hidden;
+  background: linear-gradient(160deg, #4A3B2C, #7A5540 60%, #A9502D);
+}
+.hero__fig img { inline-size: 100%; block-size: 100%; object-fit: cover; }
+.hero__fig::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(24, 18, 12, .86) 0%, rgba(24, 18, 12, .5) 45%, rgba(24, 18, 12, .28) 100%);
+}
+.hero__in { padding-block: clamp(56px, 9vw, 128px) clamp(36px, 5vw, 64px); }
+.hero--photo .lbl, .hero--photo .dateline__sep { color: rgba(247, 241, 231, .78); }
+.hero--photo .dateline .hijri { color: #BFD6EC; }
+.dateline { display: flex; flex-wrap: wrap; gap: var(--sp-3); align-items: baseline; margin-block-end: var(--sp-6); }
 .dateline__sep { color: var(--rule); }
 .dateline .hijri { color: var(--dusk); }
 
-.hero h1 { font-size: var(--fs-900); }
-/* Arabic display sits at the floor of its leading range here, so the hero
-   keeps the first screen; body and title leading are untouched. */
-:root[dir="rtl"] .hero h1 { font-size: calc(var(--fs-900) * .84); line-height: 1.18; }
-.hero h1 .ln { display: block; inline-size: fit-content; max-inline-size: 100%; padding-block-end: .06em; }
-.hero__echo { display: block; color: var(--clay); font-size: var(--fs-700); margin-block-start: var(--sp-4); }
-.hero__stand { color: var(--ink-2); font-size: var(--fs-400); max-inline-size: 54ch; margin-block-start: var(--sp-5); }
-.hero__acts { display: flex; flex-wrap: wrap; gap: var(--sp-3); margin-block-start: var(--sp-6); }
+.hero__t { font-size: var(--fs-900); max-inline-size: 18ch; text-wrap: balance; color: var(--on-photo); }
+:root[dir="rtl"] .hero__t { font-size: calc(var(--fs-900) * .9); }
+.hero__stand { color: rgba(247, 241, 231, .9); font-size: var(--fs-500); max-inline-size: 50ch; margin-block-start: var(--sp-5); }
 
-/* The hero is the filter: three typographic selects and a count that answers
-   back. Native selects — they work on every phone and mirror for free. The
-   button joins the row on a wide screen so the answer sits on the first
-   screen; below that it takes the full width under the selects. */
+/* The finder: three typographic selects and a count that answers back, on
+   a paper panel that overlaps the photograph's foot. */
 .finder {
   display: grid; gap: var(--sp-4) var(--sp-5); align-items: end;
-  max-inline-size: 640px; margin-block-start: var(--sp-5);
-  padding-block-start: var(--sp-4);
+}
+.finder--panel {
+  position: relative; z-index: 2;
+  background: var(--paper); color: var(--ink);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: var(--sp-5) var(--sp-5) var(--sp-5);
 }
 .finder__go { white-space: nowrap; }
 @media (min-width: 640px) {
   .finder { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .finder__go { grid-column: 1 / -1; justify-self: start; }
 }
-@media (min-width: 1200px) {
-  .finder { grid-template-columns: repeat(3, minmax(0, 1fr)) auto; max-inline-size: 880px; }
+@media (min-width: 1000px) {
+  .finder { grid-template-columns: repeat(3, minmax(0, 1fr)) auto; gap: var(--sp-4) var(--sp-6); }
+  .finder--panel { padding: var(--sp-5) var(--sp-6); }
   .finder__go { grid-column: auto; }
 }
-/* On a short laptop screen the hero gives up a little size and air so the
-   finder and its answer stay on the first screen. */
-@media (min-width: 960px) and (max-height: 820px) {
-  .hero { padding-block-start: var(--sp-5); }
-  .hero h1 { font-size: calc(var(--fs-900) * .82); }
-  :root[dir="rtl"] .hero h1 { font-size: calc(var(--fs-900) * .72); }
-  .hero__echo { font-size: var(--fs-600); margin-block-start: var(--sp-3); }
-  .hero__stand { margin-block-start: var(--sp-4); }
-  .finder { margin-block-start: var(--sp-4); }
-  .dateline { margin-block-end: var(--sp-4); }
-}
-.finder__aside { margin-block-start: var(--sp-4); font-size: var(--fs-300); color: var(--muted); }
-.finder__aside a { text-decoration: underline; text-underline-offset: .2em; text-decoration-color: var(--rule); }
-.finder__aside a:hover { color: var(--clay); text-decoration-color: currentColor; }
 .finder__f { position: relative; display: grid; gap: var(--sp-2); min-inline-size: 0; }
 .finder__f select {
   appearance: none; -webkit-appearance: none;
@@ -607,7 +586,6 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .finder__f select:hover { border-block-end-color: var(--ink); }
 .finder__f select:focus-visible { outline: 2px solid var(--clay); outline-offset: 3px; }
 .finder__f select option { font-family: var(--font-body); font-size: 1rem; }
-/* The chevron: a stroked corner, symmetric, so it needs no mirroring. */
 .finder__f::after {
   content: ""; position: absolute; inset-inline-end: 4px; inset-block-end: 17px;
   inline-size: 8px; block-size: 8px; pointer-events: none;
@@ -615,15 +593,15 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
   transform: rotate(45deg);
 }
 
-.totals { display: grid; }
-.totals__it { display: block; padding-block: var(--sp-4); border-block-start: 1px solid var(--rule); }
-.totals__it:first-child { border-block-start: 1px solid var(--rule-ink); }
-.totals__n { display: block; font-size: var(--fs-num-l); line-height: .9; }
+/* The four figures under the hero. */
+.totals-band { border-block-end: 1px solid var(--rule-hair); }
+.totals { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-5) var(--sp-4); padding-block: var(--sp-6); }
+@media (min-width: 900px) { .totals { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--sp-6); padding-block: var(--sp-7); } }
+.totals__it { display: block; min-inline-size: 0; }
+.totals__n { display: block; font-size: var(--fs-num-m); line-height: .95; }
 .totals__l { display: block; margin-block-start: var(--sp-2); }
-@media (max-width: 959px) {
-  .totals { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--sp-4); }
-  .totals__n { font-size: var(--fs-num-m); }
-}
+.totals__it--link .totals__n { font-family: var(--font-display); font-size: var(--fs-600); line-height: var(--lh-title); color: var(--clay); }
+.totals__it--link:hover .totals__n { color: var(--clay-deep); text-decoration: underline; text-underline-offset: .15em; }
 
 /* --- §02 Fields (the twelve subjects) ------------------------------------ */
 /* Hairline grid: gap:1px over a rule background, opaque cells. */
@@ -634,14 +612,14 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
   display: grid; grid-template-columns: 34px minmax(0, 1fr) auto auto;
   align-items: center; gap: var(--sp-3);
   min-block-size: 62px; padding: var(--sp-3) var(--sp-4);
-  background: var(--ground);
+  background: var(--paper);
   transition: background-color .2s;
 }
-.field:hover { background: var(--paper); }
-.field__n { font-family: var(--font-mono); font-size: var(--fs-100); color: var(--muted); }
+.field:hover { background: var(--wash); }
+.field__n { font-family: var(--font-num); font-size: var(--fs-300); color: var(--clay); }
 :root[dir="rtl"] .field__n { font-size: var(--fs-150); }
 .field__name { font-family: var(--font-display); font-size: var(--fs-600); line-height: var(--lh-title); }
-.field__c { font-family: var(--font-mono); font-size: var(--fs-100); color: var(--muted); }
+.field__c { font-family: var(--font-num); font-size: var(--fs-400); color: var(--muted); }
 :root[dir="rtl"] .field__c { font-family: var(--arabic-body); font-size: var(--fs-150); }
 .field[aria-disabled="true"] { color: var(--muted); }
 .field[aria-disabled="true"] .go { display: none; }
@@ -649,7 +627,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 /* --- The arrow ----------------------------------------------------------- */
 /* An SVG, never a → character: the glyph is not bidi-mirrored. */
 .go { inline-size: 18px; block-size: 18px; flex: none; color: var(--muted); transform: scaleX(var(--dirx)); transition: transform .25s, color .2s; }
-.row:hover .go, .field:hover .go, .school-row:hover .go { color: var(--clay); transform: scaleX(var(--dirx)) translateX(4px); }
+.row:hover .go, .field:hover .go, .scard:hover .go { color: var(--clay); transform: scaleX(var(--dirx)) translateX(4px); }
 
 /* --- §03 The ledger row -------------------------------------------------- */
 .ledger { border-block-start: 1px solid var(--rule); }
@@ -677,9 +655,9 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 }
 .grp-head + .row { border-block-start: 0; }
 .row:hover { background: var(--paper); }
-/* The hover tint is the school's own tone, mixed into the paper. */
-.row[data-tone]:hover { background: color-mix(in srgb, var(--sbg) 30%, var(--paper)); }
-.row__idx  { grid-area: idx;  display: none; }
+.row__idx  { display: none; }
+.row__thumb { grid-area: thumb; display: none; aspect-ratio: 4 / 3; inline-size: 72px; border-radius: var(--radius-s); align-self: start; }
+.row:hover .row__thumb img { transform: scale(1.04); }
 .row__date { grid-area: date; }
 .row__main { grid-area: main; min-inline-size: 0; }
 .row__org  { grid-area: org;  min-inline-size: 0; margin-block-start: var(--sp-2); display: flex; gap: var(--sp-3); align-items: flex-start; }
@@ -692,6 +670,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .row__d { display: block; font-size: var(--fs-num-s); line-height: 1; }
 .row__m { display: block; margin-block-start: 2px; }
 .row__t { font-family: var(--font-display); font-size: var(--fs-600); line-height: var(--lh-title); font-weight: 400; }
+.row__t a:hover { color: var(--clay); }
 .row__t a { display: inline; }
 /* Full-row stretched link; the ring lands on the row, not the text. */
 .row__t a::after { content: ""; position: absolute; inset: 0; }
@@ -708,26 +687,27 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 
 @media (min-width: 900px) {
   .row {
-    grid-template-columns: 34px 72px minmax(0, 1fr) minmax(176px, .75fr) 62px 160px 68px;
-    grid-template-areas: "idx date main org days fee go";
+    grid-template-columns: 72px 72px minmax(0, 1fr) minmax(176px, .75fr) 62px 160px 68px;
+    grid-template-areas: "date thumb main org days fee go";
     align-items: start; gap: 0 var(--sp-4);
   }
-  .row__idx { display: block; }
+  .row__thumb { display: block; }
+  .row:not(:has(.row__thumb)) { grid-template-columns: 72px minmax(0, 1fr) minmax(176px, .75fr) 62px 160px 68px; grid-template-areas: "date main org days fee go"; }
   .row__foot { display: contents; }
   .row__org { margin-block-start: 0; }
   .row__days, .row__fee { margin-block-start: 0; }
   .row__fee { margin-inline-start: 0; }
 }
 @media (min-width: 1140px) {
-  .row { grid-template-columns: 42px 88px minmax(0, 1fr) minmax(210px, .75fr) 68px 176px 68px; }
-  .row .mark { min-inline-size: 52px; block-size: 52px; font-size: 1.3125rem; }
+  .row { grid-template-columns: 88px 88px minmax(0, 1fr) minmax(210px, .75fr) 68px 176px 68px; }
+  .row:not(:has(.row__thumb)) { grid-template-columns: 88px minmax(0, 1fr) minmax(210px, .75fr) 68px 176px 68px; }
+  .row__thumb { inline-size: 88px; }
 }
 /* Beside the facet rail the row is narrower by the rail's width: until the
-   screen is wide it keeps the leaner school column and leaves the mark to
-   the hover tint and the school's own page. */
+   screen is wide it drops the thumbnail and keeps a leaner school column. */
 @media (min-width: 1200px) and (max-width: 1439px) {
-  .cat .row { grid-template-columns: 34px 72px minmax(0, 1fr) minmax(150px, .6fr) 62px 160px 68px; }
-  .cat .row .mark { display: none; }
+  .cat .row { grid-template-columns: 72px minmax(0, 1fr) minmax(150px, .6fr) 62px 160px 68px; grid-template-areas: "date main org days fee go"; }
+  .cat .row .row__thumb { display: none; }
 }
 
 .rule-legend {
@@ -743,37 +723,50 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .save[aria-pressed="true"] svg { fill: currentColor; }
 .save.btn--block { inline-size: 100%; min-block-size: 48px; gap: var(--sp-2); }
 
-/* --- §04 School row ------------------------------------------------------ */
+/* --- §04 School cards ---------------------------------------------------- */
+.scards { display: grid; gap: var(--sp-7) var(--sp-5); padding-block: var(--sp-2); }
+@media (min-width: 700px)  { .scards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1080px) { .scards { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.scard { position: relative; display: grid; gap: var(--sp-4); align-content: start; }
+.scard__photo { aspect-ratio: 3 / 2; }
+.scard:hover .scard__photo img { transform: scale(1.035); }
+.scard__body { display: grid; gap: var(--sp-1); }
+.scard__name { font-family: var(--font-display); font-size: var(--fs-600); line-height: var(--lh-title); }
+.scard__name a::after { content: ""; position: absolute; inset: 0; border-radius: var(--radius); }
+.scard:hover .scard__name { color: var(--clay); }
+.scard:has(a:focus-visible) { outline: 2px solid var(--clay); outline-offset: 6px; border-radius: var(--radius); }
+.scard__meta { color: var(--muted); font-size: var(--fs-300); }
+.scard__count { display: flex; gap: var(--sp-2); align-items: baseline; margin-block-start: var(--sp-1); }
+.scard__count .num { font-size: var(--fs-num-s); line-height: 1; }
+
+/* The shortlist drawer lists saved programmes as plain rows. */
 .school-row {
   position: relative; display: grid; gap: var(--sp-1) var(--sp-4);
-  grid-template-columns: 42px minmax(0, 1fr);
   padding-block: var(--sp-4);
   border-block-start: 1px solid var(--rule-hair);
-  transition: background-color .2s;
 }
-.school-row:hover { background: var(--paper); }
-.school-row[data-tone]:hover { background: color-mix(in srgb, var(--sbg) 30%, var(--paper)); }
-/* In the shortlist drawer the header already draws a rule, so the first
-   row's own top border would read as a stray mark below it. */
 .school-row--saved { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
 .school-row--saved:first-child { border-block-start: 0; }
-.school-row--saved .school-row__name { font-size: var(--fs-500); }
+.school-row__name { font-family: var(--font-display); font-size: var(--fs-500); line-height: var(--lh-title); min-inline-size: 0; }
+.school-row__name:hover { color: var(--clay); }
 .note--bare { border: 0; }
 .enquiry__save { margin-block-start: var(--sp-2); }
-.school-row__n { font-family: var(--font-mono); font-size: var(--fs-100); color: var(--muted); }
-:root[dir="rtl"] .school-row__n { font-size: var(--fs-150); }
-.school-row__name { font-family: var(--font-display); font-size: var(--fs-500); line-height: var(--lh-title); display: flex; gap: var(--sp-3); align-items: center; min-inline-size: 0; }
-.school-row__name a::after { content: ""; position: absolute; inset: 0; }
-@media (min-width: 820px) {
-  /* Five real columns: lot, name, city, country, programme count. Every one
-     after the name is allowed to shrink, or a long count spills the row. */
-  .school-row {
-    grid-template-columns:
-      42px minmax(0, 1fr) minmax(0, 176px) minmax(0, 150px) minmax(0, 132px);
-    align-items: baseline;
-  }
-  .school-row > :last-child { text-align: end; }
-}
+
+/* The school page opens on its campus; the record page shows it small. */
+.hero-fig { margin-block-start: var(--sp-4); }
+.hero-fig__photo { aspect-ratio: 21 / 9; }
+@media (max-width: 700px) { .hero-fig__photo { aspect-ratio: 3 / 2; } }
+.enquiry__fig { margin: calc(-1 * var(--sp-5) - 1px) calc(-1 * var(--sp-5) - 1px) var(--sp-4); }
+.enquiry__photo { aspect-ratio: 3 / 2; border-radius: var(--radius) var(--radius) 0 0; }
+.enquiry__fig .credit { padding-inline: var(--sp-5); }
+
+/* Every photograph, credited (the about page). */
+.credits { border-block-start: 1px solid var(--rule); margin-block-start: var(--sp-4); }
+.credit-row { display: grid; gap: var(--sp-1) var(--sp-4); padding-block: var(--sp-3); border-block-start: 1px solid var(--rule-hair); font-size: var(--fs-200); }
+.credit-row:first-child { border-block-start: 0; }
+.credit-row a { text-decoration: underline; text-underline-offset: .2em; text-decoration-color: var(--rule); }
+.credit-row a:hover { color: var(--clay); }
+@media (min-width: 820px) { .credit-row { grid-template-columns: 150px minmax(0, 1.4fr) minmax(0, 1fr) auto; align-items: baseline; } }
 
 /* --- Collection row ------------------------------------------------------ */
 .coll-row {
@@ -798,7 +791,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 @media (min-width: 820px) { .tenets { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 1140px) { .tenets { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .tenet { background: var(--band); padding: var(--sp-5) var(--sp-4) var(--sp-5) 0; }
-.tenet__n { font-family: var(--font-mono); font-size: var(--fs-100); color: var(--band-clay); letter-spacing: var(--track); direction: ltr; unicode-bidi: isolate; }
+.tenet__n { font-family: var(--font-num); font-size: var(--fs-num-s); line-height: 1; color: var(--band-clay); direction: ltr; unicode-bidi: isolate; }
 .tenet h3 { font-size: var(--fs-500); margin-block: var(--sp-2) var(--sp-2); color: var(--band-ink); }
 .tenet p { color: var(--band-muted); font-size: var(--fs-300); }
 
@@ -825,8 +818,8 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 /* --- §06 Steps ----------------------------------------------------------- */
 .steps { display: grid; gap: 1px; background: var(--rule-hair); border-block: 1px solid var(--rule); }
 @media (min-width: 820px) { .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-.step { background: var(--ground); padding: var(--sp-5) var(--sp-4) var(--sp-6); }
-.step__n { font-family: var(--font-mono); font-size: var(--fs-100); color: var(--clay); letter-spacing: var(--track); direction: ltr; unicode-bidi: isolate; }
+.step { background: var(--paper); padding: var(--sp-5) var(--sp-4) var(--sp-6); }
+.step__n { font-family: var(--font-num); font-size: var(--fs-num-s); line-height: 1; color: var(--clay); direction: ltr; unicode-bidi: isolate; }
 .step h3 { font-size: var(--fs-500); margin-block: var(--sp-2); }
 .step p { color: var(--muted); font-size: var(--fs-300); }
 
@@ -853,7 +846,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
   min-block-size: 48px; padding: 12px 22px;
   font-family: var(--font-label); font-size: var(--fs-100); font-weight: 500;
   letter-spacing: var(--track); text-transform: var(--caps);
-  border: 1px solid currentColor; cursor: pointer; background: transparent; color: var(--ink);
+  border: 1px solid currentColor; border-radius: 999px; cursor: pointer; background: transparent; color: var(--ink);
   transition: background-color .2s, color .2s, border-color .2s;
 }
 :root[dir="rtl"] .btn { font-family: var(--arabic-body); font-size: var(--fs-300); letter-spacing: 0; text-transform: none; }
@@ -864,14 +857,15 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .chapter--band .btn--solid { background: var(--band-clay); border-color: var(--band-clay); color: var(--band); }
 /* Controls sitting on the inverted band must read against it, not against
    the page ground — in light mode the page ink is dark and the band is not. */
-.chapter--band .ctl, .colophon .ctl { color: var(--band-ink); border-color: var(--band-rule); }
-.chapter--band .ctl:hover, .colophon .ctl:hover,
-.chapter--band .ctl[aria-pressed="true"], .colophon .ctl[aria-pressed="true"] {
+.chapter--band .ctl { color: var(--band-ink); border-color: var(--band-rule); }
+.chapter--band .ctl:hover,
+.chapter--band .ctl[aria-pressed="true"] {
   background: var(--band-ink); color: var(--band); border-color: var(--band-ink);
 }
 .btn--block { inline-size: 100%; }
 
 .pill {
+  border-radius: 999px;
   display: inline-flex; align-items: center; gap: var(--sp-2);
   min-block-size: 34px; padding-inline: var(--sp-3);
   background: var(--wash); color: var(--ink);
@@ -907,7 +901,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .facets__done { display: none; }
 
 .toolbar { display: flex; flex-wrap: wrap; gap: var(--sp-3); align-items: center; padding-block: var(--sp-4); border-block-start: 1px solid var(--rule); }
-.search { flex: 1; min-inline-size: 220px; display: flex; align-items: center; border: 1px solid var(--rule); }
+.search { flex: 1; min-inline-size: 220px; display: flex; align-items: center; border: 1px solid var(--rule); border-radius: var(--radius-s); background: var(--paper); }
 .search input { inline-size: 100%; border: 0; background: transparent; padding: 12px 14px; font-family: var(--font-display); font-size: 1.125rem; }
 .search input:focus { outline: none; }
 .search:focus-within { box-shadow: inset 0 -2px 0 0 var(--clay); }
@@ -963,7 +957,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .fee-lockup__n { display: block; font-size: var(--fs-num-l); line-height: .95; direction: ltr; unicode-bidi: isolate; }
 .fee-lockup__sar { display: block; margin-block-start: var(--sp-2); color: var(--muted); font-size: var(--fs-300); }
 
-.enquiry { border: 1px solid var(--rule); padding: var(--sp-5); }
+.enquiry { border: 1px solid var(--rule-hair); border-radius: var(--radius); padding: var(--sp-5); background: var(--paper); }
 .enquiry h2 { font-size: var(--fs-600); }
 .enquiry p { color: var(--muted); font-size: var(--fs-300); margin-block-start: var(--sp-3); }
 .enquiry .btn { margin-block-start: var(--sp-3); }
@@ -994,7 +988,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 :root[dir="rtl"] .fld label { font-family: var(--arabic-body); font-size: var(--fs-150); letter-spacing: 0; text-transform: none; }
 .fld input, .fld select, .fld textarea {
   min-block-size: 48px; padding: 12px 14px;
-  border: 1px solid var(--rule); background: var(--paper); color: var(--ink);
+  border: 1px solid var(--rule); border-radius: var(--radius-s); background: var(--paper); color: var(--ink);
 }
 .fld textarea { min-block-size: 132px; resize: vertical; }
 .fld input:focus, .fld select:focus, .fld textarea:focus { outline: none; border-color: var(--clay); box-shadow: inset 0 -2px 0 0 var(--clay); }
@@ -1018,52 +1012,33 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .drawer__b { flex: 1; overflow-y: auto; padding-inline: var(--gutter); }
 .drawer__f { padding: var(--sp-4) var(--gutter); border-block-start: 1px solid var(--rule); display: grid; gap: var(--sp-2); }
 
-/* --- Colophon ------------------------------------------------------------ */
-.colophon { background: var(--band); color: var(--band-ink); border-block-start: 1px solid var(--band-rule); padding-block: var(--sp-8) var(--sp-5); }
-.colophon a:hover { color: var(--band-clay); }
-.colophon .lbl, .colophon p { color: var(--band-muted); }
+/* --- Colophon: the one dark surface -------------------------------------- */
+.colophon { background: var(--colo); color: var(--colo-ink); padding-block: var(--sp-8) var(--sp-5); }
+.colophon a:hover { color: var(--colo-clay); }
+.colophon .lbl, .colophon p { color: var(--colo-muted); }
+.colophon .wordmark__ar { color: var(--colo-clay); }
+.colophon .wordmark__bar { background: var(--colo-rule); }
 .colophon .record__r { grid-template-columns: minmax(0, 1fr) auto; gap: var(--sp-2) var(--sp-3); }
-.colophon .record__v { color: var(--band-ink); white-space: nowrap; }
-.colophon .record, .colophon .record__r, .colophon .record__note { border-block-color: var(--band-rule); }
+.colophon .record__v { color: var(--colo-ink); white-space: nowrap; }
+.colophon .record, .colophon .record__r, .colophon .record__note { border-block-color: var(--colo-rule); }
+.colophon .ctl { color: var(--colo-ink); border-color: var(--colo-rule); }
+.colophon .ctl:hover, .colophon .ctl[aria-pressed="true"] { background: var(--colo-ink); color: var(--colo); border-color: var(--colo-ink); }
 .colo-grid { display: grid; gap: var(--sp-6); }
 @media (min-width: 860px) { .colo-grid { grid-template-columns: 1.6fr repeat(3, minmax(0, 1fr)); gap: var(--sp-7); } }
-.colo-grid h3 { font-family: var(--font-label); font-size: var(--fs-100); font-weight: 500; letter-spacing: var(--track); text-transform: var(--caps); color: var(--band-muted); margin-block-end: var(--sp-4); }
+.colo-grid h3 { font-family: var(--font-label); font-size: var(--fs-100); font-weight: 600; letter-spacing: var(--track); text-transform: var(--caps); color: var(--colo-muted); margin-block-end: var(--sp-4); }
 :root[dir="rtl"] .colo-grid h3 { font-family: var(--arabic-body); font-size: var(--fs-150); }
 .colo-grid ul { list-style: none; padding: 0; display: grid; gap: var(--sp-2); font-size: var(--fs-300); }
-.colo-base { display: flex; flex-wrap: wrap; gap: var(--sp-3) var(--sp-5); justify-content: space-between; margin-block-start: var(--sp-7); padding-block-start: var(--sp-4); border-block-start: 1px solid var(--band-rule); font-size: var(--fs-200); color: var(--band-muted); }
+.colo-base { display: flex; flex-wrap: wrap; gap: var(--sp-3) var(--sp-5); justify-content: space-between; margin-block-start: var(--sp-7); padding-block-start: var(--sp-4); border-block-start: 1px solid var(--colo-rule); font-size: var(--fs-200); color: var(--colo-muted); }
 
-/* --- The one motion idea: the rules draw --------------------------------- */
-/* The data never animates. Every row is ruled at all times; the reveal draws
-   a heavier overlay on top of the static hairline. */
-[data-reveal] { position: relative; }
-[data-reveal]::before {
-  content: ""; position: absolute; inset-block-start: -1px; inset-inline: 0;
-  block-size: 1px; background: var(--rule);
-  transform: scaleX(0); transform-origin: var(--origin);
-  transition: transform .62s cubic-bezier(.22, .72, .2, 1);
-  transition-delay: calc(var(--i, 0) * 80ms);
+/* --- Motion: blocks rise softly into place --------------------------------- */
+/* Only a page the script has reached (.js on the root) ever hides a block,
+   and the observer is the only thing that shows it again. */
+.js [data-reveal] {
+  opacity: 0; transform: translateY(14px);
+  transition: opacity .7s cubic-bezier(.22, .72, .2, 1), transform .7s cubic-bezier(.22, .72, .2, 1);
+  transition-delay: calc(var(--i, 0) * 70ms);
 }
-[data-reveal].is-in::before { transform: scaleX(1); }
-/* Some blocks take part in the sequence without wanting a rule drawn above. */
-.reveal--bare::before { display: none; }
-
-/* The mask. A block enters from under its own rule: the container is masked,
-   never the text, and the mask wipes down with the same 80ms stagger. It is a
-   mask, not a clip — a clip would hide the block from its own observer and
-   from the pointer. Only a block the script has armed (.will-reveal) is ever
-   masked, so a block the script never reaches is simply visible; once the
-   wipe has run the mask is dropped and the settled page carries none. The
-   2px starting band keeps the rule itself visible from the first paint. */
-[data-reveal].will-reveal {
-  -webkit-mask-image: linear-gradient(#000, #000); mask-image: linear-gradient(#000, #000);
-  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
-  -webkit-mask-position: 0 0; mask-position: 0 0;
-  -webkit-mask-size: 100% 2px; mask-size: 100% 2px;
-  transition: -webkit-mask-size .7s cubic-bezier(.22, .72, .2, 1), mask-size .7s cubic-bezier(.22, .72, .2, 1);
-  transition-delay: calc(var(--i, 0) * 80ms);
-}
-[data-reveal].will-reveal.is-in { -webkit-mask-size: 100% 100%; mask-size: 100% 100%; }
-[data-reveal].is-settled { -webkit-mask-image: none; mask-image: none; }
+.js [data-reveal].is-in { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -1071,8 +1046,7 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
     animation-duration: .001ms !important;
     scroll-behavior: auto !important;
   }
-  [data-reveal]::before { transform: scaleX(1); }
-  [data-reveal] { -webkit-mask-image: none !important; mask-image: none !important; }
+  .js [data-reveal] { opacity: 1; transform: none; }
 }
 
 /* --- The Arabic backstop, last ------------------------------------------- */
@@ -6481,6 +6455,12 @@ window.MASAR_DATA = (function () {
 })();
 
 </script>
+<script>
+/* Generated by tools/build.py from assets/img/credits.json. */
+window.MASAR_CREDITS = {};
+
+window.__masarImg = {};
+</script>
 
 <script>
 /* ==========================================================================
@@ -6490,7 +6470,7 @@ window.MASAR_DATA = (function () {
 (function () {
   'use strict';
 
-  var BODIES = {"index.html": {"en": "\n\n    <section class=\"hero\">\n      <div class=\"sheet\">\n        <p class=\"dateline lbl\">\n          <span>An independent index · Riyadh<\/span>\n          <span class=\"dateline__sep\" aria-hidden=\"true\">/<\/span>\n          <span data-today>—<\/span>\n          <span class=\"dateline__sep\" aria-hidden=\"true\">/<\/span>\n          <span class=\"hijri\" lang=\"ar\" data-today-hijri>—<\/span>\n        <\/p>\n\n        <div class=\"hero__grid\">\n          <div>\n            <h1>\n              <span class=\"ln\" data-reveal style=\"--i:0\">The fee.<\/span>\n              <span class=\"ln\" data-reveal style=\"--i:1\">The city.<\/span>\n              <span class=\"ln\" data-reveal style=\"--i:2\">The dates.<\/span>\n            <\/h1>\n            <span class=\"hero__echo alt-run reveal--bare\" lang=\"ar\" data-reveal style=\"--i:3\">الرسوم. المدينة. التواريخ.<\/span>\n            <p class=\"hero__stand reveal--bare\" data-reveal style=\"--i:4\">Masar lists open-enrolment executive programmes from the\n              world's business schools — the fee each school publishes, the city it is taught in,\n              the dates it runs and the number of teaching days. Nothing is ranked. Nothing is sold.<\/p>\n            <div class=\"finder\" data-home-finder data-reveal style=\"--i:5\">\n              <label class=\"finder__f\">\n                <span class=\"lbl\">Field<\/span>\n                <select data-finder=\"subject\"><option value=\"\">Any field<\/option><\/select>\n              <\/label>\n              <label class=\"finder__f\">\n                <span class=\"lbl\">City<\/span>\n                <select data-finder=\"city\"><option value=\"\">Any city<\/option><\/select>\n              <\/label>\n              <label class=\"finder__f\">\n                <span class=\"lbl\">Month<\/span>\n                <select data-finder=\"month\"><option value=\"\">Any month<\/option><\/select>\n              <\/label>\n              <a class=\"btn btn--solid finder__go\" href=\"courses.html\" data-finder-go>Browse the index<\/a>\n            <\/div>\n            <p class=\"finder__aside reveal--bare\" data-reveal style=\"--i:6\">\n              <a href=\"contact.html#teams\">Enrolling a team?<\/a>\n            <\/p>\n          <\/div>\n\n          <div class=\"totals\">\n            <a class=\"totals__it\" href=\"courses.html\" data-reveal style=\"--i:1\">\n              <span class=\"totals__n num\" data-stat=\"programmes\">189<\/span>\n              <span class=\"totals__l lbl\">Programmes<\/span>\n            <\/a>\n            <a class=\"totals__it\" href=\"schools.html\" data-reveal style=\"--i:2\">\n              <span class=\"totals__n num\" data-stat=\"schools\">16<\/span>\n              <span class=\"totals__l lbl\">Business schools<\/span>\n            <\/a>\n            <a class=\"totals__it\" href=\"courses.html\" data-reveal style=\"--i:3\">\n              <span class=\"totals__n num\" data-stat=\"countries\">6<\/span>\n              <span class=\"totals__l lbl\">Countries of delivery<\/span>\n            <\/a>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§01<\/span>\n          <h2 class=\"chap-title\">Fields<span class=\"alt-run\">الحقول<\/span><\/h2>\n          <p class=\"chap-note\">Twelve fields run through the index. Choose one and the catalogue opens filtered to it.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"fields\" data-home-fields><\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§02<\/span>\n          <h2 class=\"chap-title\">The next intakes<span class=\"alt-run\">أقرب الدفعات<\/span><\/h2>\n          <p class=\"chap-note\">Grouped by start date, soonest first. Ten here; the rest are in the index.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"ledger\" data-home-ledger><\/div>\n          <div class=\"ledger-foot\">\n            <a class=\"btn btn--ghost\" href=\"courses.html\" data-all-programmes>See the whole index<\/a>\n            <span class=\"lbl\">— not recorded<\/span>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§03<\/span>\n          <h2 class=\"chap-title\">The schools<span class=\"alt-run\">الكليات<\/span><\/h2>\n          <p class=\"chap-note\">Every institution with programmes in the index, named — no logos, no rankings.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div data-home-schools><\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n\n    <section class=\"chapter chapter--band\" id=\"method\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§04<\/span>\n          <h2 class=\"chap-title\">Method<span class=\"alt-run\" lang=\"ar\">المنهج<\/span><\/h2>\n          <p class=\"chap-note\">How a programme gets into the index, and what we will not do to it.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <p class=\"creed\">We list. We do not sell.<\/p>\n\n          <div class=\"tenets\">\n            <div class=\"tenet\">\n              <span class=\"tenet__n\">01<\/span>\n              <h3>Source<\/h3>\n              <p>Every record is taken from the school's own published programme page. If a school\n                did not state it, this index does not state it either.<\/p>\n            <\/div>\n            <div class=\"tenet\">\n              <span class=\"tenet__n\">02<\/span>\n              <h3>Currency<\/h3>\n              <p>The fee is the school's own, in the school's own currency. We do not convert the\n                figure we publish.<\/p>\n            <\/div>\n            <div class=\"tenet\">\n              <span class=\"tenet__n\">03<\/span>\n              <h3>Silence<\/h3>\n              <p>An unrecorded field prints an em dash. An index that fills its own gaps is not\n                an index.<\/p>\n            <\/div>\n            <div class=\"tenet\">\n              <span class=\"tenet__n\">04<\/span>\n              <h3>Position<\/h3>\n              <p>No rankings, no ratings, no featured slots, no paid placement. Order is by date,\n                fee, teaching days or school — whichever you choose.<\/p>\n            <\/div>\n          <\/div>\n\n          <div class=\"plate\">\n            <p class=\"plate__codes\"><span>USD<\/span><span>CHF<\/span><span>CAD<\/span><span>SGD<\/span><span>AUD<\/span><span>DKK<\/span><span>EUR<\/span><\/p>\n            <div>\n              <p>Seven currencies appear in this index because seven currencies appear on the\n                schools' own pages. Converting them would be a guess printed as a fact.<\/p>\n              <p>Beside every fee we also print an indicative riyal figure and the date of the\n                rate we used. It is an indication for a budget line, not a quote.<\/p>\n            <\/div>\n          <\/div>\n\n          <div class=\"alt-block\">\n            <span class=\"alt-run\" lang=\"ar\">الرقم كما نشرته الكلية. لا تحويل، ولا تقدير.<\/span>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n    <section class=\"chapter\" id=\"teams\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§05<\/span>\n          <h2 class=\"chap-title\">Enrolling a team<span class=\"alt-run\">تسجيل فريق<\/span><\/h2>\n          <p class=\"chap-note\">Masar does not enrol on a school's behalf. It points you at the right intake and the right desk.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"steps\">\n            <div class=\"step\"><span class=\"step__n\">01<\/span><h3>Shortlist the intakes<\/h3><p>Filter the index by field, city, month, teaching days or fee, and keep what fits.<\/p><\/div>\n            <div class=\"step\"><span class=\"step__n\">02<\/span><h3>Send it on<\/h3><p>A filtered view is a link, and a shortlist copies as plain text — both forward to a sponsor intact.<\/p><\/div>\n            <div class=\"step\"><span class=\"step__n\">03<\/span><h3>Ask for a proposal<\/h3><p>Tell us the seats and the quarter. Group terms and closed cohorts are agreed with the school, not with us.<\/p><\/div>\n          <\/div>\n          <div class=\"ledger-foot\"><a class=\"btn btn--solid\" href=\"contact.html#teams\">Request a proposal<\/a><\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n  ", "ar": "\n\n    <section class=\"hero\">\n      <div class=\"sheet\">\n        <p class=\"dateline lbl\">\n          <span>فهرس مستقل · الرياض<\/span>\n          <span class=\"dateline__sep\" aria-hidden=\"true\">/<\/span>\n          <span data-today>—<\/span>\n          <span class=\"dateline__sep\" aria-hidden=\"true\">/<\/span>\n          <span class=\"hijri\" data-today-hijri>—<\/span>\n        <\/p>\n\n        <div class=\"hero__grid\">\n          <div>\n            <h1>\n              <span class=\"ln\" data-reveal style=\"--i:0\">الرسوم.<\/span>\n              <span class=\"ln\" data-reveal style=\"--i:1\">المدينة.<\/span>\n              <span class=\"ln\" data-reveal style=\"--i:2\">التواريخ.<\/span>\n            <\/h1>\n            <span class=\"hero__echo alt-run reveal--bare\" lang=\"en\" data-reveal style=\"--i:3\">The fee. The city. The dates.<\/span>\n            <p class=\"hero__stand reveal--bare\" data-reveal style=\"--i:4\">يفهرس «مسار» البرامج التنفيذية مفتوحة التسجيل من كليات الأعمال\n              حول العالم: الرسوم التي تنشرها كل كلية، والمدينة التي يُدرَّس فيها البرنامج، وتواريخه،\n              وعدد أيام التدريس. لا تصنيف، ولا بيع.<\/p>\n            <div class=\"finder\" data-home-finder data-reveal style=\"--i:5\">\n              <label class=\"finder__f\">\n                <span class=\"lbl\">الحقل<\/span>\n                <select data-finder=\"subject\"><option value=\"\">كل الحقول<\/option><\/select>\n              <\/label>\n              <label class=\"finder__f\">\n                <span class=\"lbl\">المدينة<\/span>\n                <select data-finder=\"city\"><option value=\"\">كل المدن<\/option><\/select>\n              <\/label>\n              <label class=\"finder__f\">\n                <span class=\"lbl\">الشهر<\/span>\n                <select data-finder=\"month\"><option value=\"\">كل الأشهر<\/option><\/select>\n              <\/label>\n              <a class=\"btn btn--solid finder__go\" href=\"courses.html\" data-finder-go>تصفَّح الفهرس<\/a>\n            <\/div>\n            <p class=\"finder__aside reveal--bare\" data-reveal style=\"--i:6\">\n              <a href=\"contact.html#teams\">تسجيل فريق؟<\/a>\n            <\/p>\n          <\/div>\n\n          <div class=\"totals\">\n            <a class=\"totals__it\" href=\"courses.html\" data-reveal style=\"--i:1\">\n              <span class=\"totals__n num\" data-stat=\"programmes\">189<\/span>\n              <span class=\"totals__l lbl\">برنامجًا<\/span>\n            <\/a>\n            <a class=\"totals__it\" href=\"schools.html\" data-reveal style=\"--i:2\">\n              <span class=\"totals__n num\" data-stat=\"schools\">16<\/span>\n              <span class=\"totals__l lbl\">كلية أعمال<\/span>\n            <\/a>\n            <a class=\"totals__it\" href=\"courses.html\" data-reveal style=\"--i:3\">\n              <span class=\"totals__n num\" data-stat=\"countries\">6<\/span>\n              <span class=\"totals__l lbl\">دولة تُقدَّم فيها<\/span>\n            <\/a>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§01<\/span>\n          <h2 class=\"chap-title\">الحقول<span class=\"alt-run\">Fields<\/span><\/h2>\n          <p class=\"chap-note\">اثنا عشر حقلًا تمرّ عبر الفهرس. اختر واحدًا ليُفتح الفهرس مصفّى عليه.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"fields\" data-home-fields><\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§02<\/span>\n          <h2 class=\"chap-title\">أقرب الدفعات<span class=\"alt-run\">The next intakes<\/span><\/h2>\n          <p class=\"chap-note\">مجمّعة حسب تاريخ البدء، الأقرب أولًا. عشرة هنا، وبقيتها في الفهرس.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"ledger\" data-home-ledger><\/div>\n          <div class=\"ledger-foot\">\n            <a class=\"btn btn--ghost\" href=\"courses.html\" data-all-programmes>اعرض الفهرس كاملًا<\/a>\n            <span class=\"lbl\">— غير مسجّل<\/span>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§03<\/span>\n          <h2 class=\"chap-title\">الكليات<span class=\"alt-run\">The schools<\/span><\/h2>\n          <p class=\"chap-note\">كل مؤسسة لها برامج في الفهرس، باسمها — بلا شعارات وبلا تصنيفات.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div data-home-schools><\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n\n    <section class=\"chapter chapter--band\" id=\"method\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§04<\/span>\n          <h2 class=\"chap-title\">المنهج<span class=\"alt-run\" lang=\"en\">Method<\/span><\/h2>\n          <p class=\"chap-note\">كيف يدخل البرنامج إلى الفهرس، وما الذي لن نفعله به.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <p class=\"creed\">نحن نفهرس، ولا نبيع.<\/p>\n\n          <div class=\"tenets\">\n            <div class=\"tenet\">\n              <span class=\"tenet__n\">٠١<\/span>\n              <h3>المصدر<\/h3>\n              <p>كل سجل مأخوذ من صفحة البرنامج التي تنشرها الكلية نفسها. وما لم تذكره الكلية\n                لا يذكره هذا الفهرس.<\/p>\n            <\/div>\n            <div class=\"tenet\">\n              <span class=\"tenet__n\">٠٢<\/span>\n              <h3>العملة<\/h3>\n              <p>الرسم رسم الكلية، وبعملتها. ولا نحوّل الرقم الذي ننشره.<\/p>\n            <\/div>\n            <div class=\"tenet\">\n              <span class=\"tenet__n\">٠٣<\/span>\n              <h3>الصمت<\/h3>\n              <p>الحقل غير المسجّل تُطبَع مكانه شَرطة. والفهرس الذي يملأ فجواته بنفسه ليس فهرسًا.<\/p>\n            <\/div>\n            <div class=\"tenet\">\n              <span class=\"tenet__n\">٠٤<\/span>\n              <h3>الترتيب<\/h3>\n              <p>لا تصنيفات ولا تقييمات ولا مواضع مميّزة ولا إدراج مدفوع. الترتيب بالتاريخ أو\n                الرسوم أو أيام التدريس أو الكلية — كما تختار أنت.<\/p>\n            <\/div>\n          <\/div>\n\n          <div class=\"plate\">\n            <p class=\"plate__codes\"><span>USD<\/span><span>CHF<\/span><span>CAD<\/span><span>SGD<\/span><span>AUD<\/span><span>DKK<\/span><span>EUR<\/span><\/p>\n            <div>\n              <p>تظهر سبع عملات في هذا الفهرس لأن سبع عملات تظهر في صفحات الكليات نفسها.\n                وتحويلها سيكون تخمينًا يُطبَع بوصفه واقعة.<\/p>\n              <p>وإلى جانب كل رسم نطبع أيضًا مبلغًا استرشاديًا بالريال وتاريخ سعر الصرف المستخدم.\n                هو إشارة لبند في الميزانية، لا عرض سعر.<\/p>\n            <\/div>\n          <\/div>\n\n          <div class=\"alt-block\">\n            <span class=\"alt-run\" lang=\"en\">The figure is the school's own. No conversion, no estimate.<\/span>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n    <section class=\"chapter\" id=\"teams\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§05<\/span>\n          <h2 class=\"chap-title\">تسجيل فريق<span class=\"alt-run\">Enrolling a team<\/span><\/h2>\n          <p class=\"chap-note\">لا يسجّل «مسار» نيابةً عن أي كلية. هو يدلّك على الدفعة الصحيحة وعلى الجهة الصحيحة.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"steps\">\n            <div class=\"step\"><span class=\"step__n\">٠١<\/span><h3>اختر الدفعات<\/h3><p>صفِّ الفهرس حسب الحقل أو المدينة أو الشهر أو أيام التدريس أو الرسوم، واحتفظ بما يناسبك.<\/p><\/div>\n            <div class=\"step\"><span class=\"step__n\">٠٢<\/span><h3>مرّرها<\/h3><p>أي نتيجة مصفّاة رابط، والقائمة المختارة تُنسَخ نصًّا — وكلاهما يصل إلى الجهة الداعمة كما هو.<\/p><\/div>\n            <div class=\"step\"><span class=\"step__n\">٠٣<\/span><h3>اطلب عرضًا<\/h3><p>أخبرنا بعدد المقاعد والرُّبع المطلوب. وتُتَّفق شروط المجموعات والدفعات المغلقة مع الكلية، لا معنا.<\/p><\/div>\n          <\/div>\n          <div class=\"ledger-foot\"><a class=\"btn btn--solid\" href=\"contact.html#teams\">اطلب عرضًا<\/a><\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n  "}, "courses.html": {"en": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§02<\/span>\n          <h2 class=\"chap-title\">The index<span class=\"alt-run\" lang=\"ar\">الفهرس<\/span><\/h2>\n          <p class=\"chap-note\">Sort by the axis you compare on: date, fee, teaching days or school.<\/p>\n        <\/div>\n\n        <div class=\"count-hero\">\n          <span class=\"count-hero__n num\" data-results-count>—<\/span>\n          <span class=\"count-hero__l\" data-results-label>programmes match.<\/span>\n        <\/div>\n\n        <div class=\"cat\">\n          <form class=\"facets\" data-facets aria-label=\"Filters\">\n            <div data-facet-body><\/div>\n            <button class=\"btn btn--solid facets__done\" type=\"button\" data-facets-close>Show results<\/button>\n          <\/form>\n\n          <div>\n            <div class=\"toolbar\">\n              <div class=\"search\">\n                <label class=\"sr-only\" for=\"q\">Search the index<\/label>\n                <input id=\"q\" type=\"search\" data-search placeholder=\"Programme, school or city\">\n              <\/div>\n              <div class=\"sortgrp\" data-sort role=\"group\" aria-label=\"Sort\"><\/div>\n            <\/div>\n            <div class=\"applied\" data-applied><\/div>\n            <div class=\"ledger\" data-results><\/div>\n            <div class=\"ledger-foot\">\n              <button class=\"btn btn--ghost\" type=\"button\" data-more hidden><\/button>\n              <span class=\"lbl\">— not recorded<\/span>\n            <\/div>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n\n    <div class=\"filters-bar\">\n      <button class=\"ctl\" type=\"button\" data-facets-open>Filters<\/button>\n      <span class=\"lbl\" data-bar-count role=\"status\"><\/span>\n    <\/div>\n  ", "ar": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§02<\/span>\n          <h2 class=\"chap-title\">الفهرس<span class=\"alt-run\" lang=\"en\">The index<\/span><\/h2>\n          <p class=\"chap-note\">رتّب حسب المحور الذي تقارن به: التاريخ أو الرسوم أو أيام التدريس أو الكلية.<\/p>\n        <\/div>\n\n        <div class=\"count-hero\">\n          <span class=\"count-hero__n num\" data-results-count>—<\/span>\n          <span class=\"count-hero__l\" data-results-label>برنامجًا مطابقًا.<\/span>\n        <\/div>\n\n        <div class=\"cat\">\n          <form class=\"facets\" data-facets aria-label=\"أدوات التصفية\">\n            <div data-facet-body><\/div>\n            <button class=\"btn btn--solid facets__done\" type=\"button\" data-facets-close>اعرض النتائج<\/button>\n          <\/form>\n\n          <div>\n            <div class=\"toolbar\">\n              <div class=\"search\">\n                <label class=\"sr-only\" for=\"q\">ابحث في الفهرس<\/label>\n                <input id=\"q\" type=\"search\" data-search placeholder=\"برنامج أو كلية أو مدينة\">\n              <\/div>\n              <div class=\"sortgrp\" data-sort role=\"group\" aria-label=\"الترتيب\"><\/div>\n            <\/div>\n            <div class=\"applied\" data-applied><\/div>\n            <div class=\"ledger\" data-results><\/div>\n            <div class=\"ledger-foot\">\n              <button class=\"btn btn--ghost\" type=\"button\" data-more hidden><\/button>\n              <span class=\"lbl\">— غير مسجّل<\/span>\n            <\/div>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n\n    <div class=\"filters-bar\">\n      <button class=\"ctl\" type=\"button\" data-facets-open>التصفية<\/button>\n      <span class=\"lbl\" data-bar-count role=\"status\"><\/span>\n    <\/div>\n  "}, "course.html": {"en": "\n\n    <div class=\"sheet\">\n      <nav class=\"crumb lbl\" aria-label=\"Index\">\n        <a href=\"courses.html\">Index<\/a>\n        <span aria-hidden=\"true\">/<\/span>\n        <span data-crumb-school>School<\/span>\n      <\/nav>\n    <\/div>\n    <div class=\"sheet\" data-record><\/div>\n  ", "ar": "\n\n    <div class=\"sheet\">\n      <nav class=\"crumb lbl\" aria-label=\"الفهرس\">\n        <a href=\"courses.html\">الفهرس<\/a>\n        <span aria-hidden=\"true\">/<\/span>\n        <span data-crumb-school>الكلية<\/span>\n      <\/nav>\n    <\/div>\n    <div class=\"sheet\" data-record><\/div>\n  "}, "schools.html": {"en": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§03<\/span>\n          <h2 class=\"chap-title\">The schools<span class=\"alt-run\" lang=\"ar\">الكليات<\/span><\/h2>\n          <p class=\"chap-note\">Sortable by name, country or number of programmes in the index.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"toolbar\"><div class=\"sortgrp\" data-school-sort role=\"group\" aria-label=\"Sort\"><\/div><\/div>\n          <div data-schools><\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n  ", "ar": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§03<\/span>\n          <h2 class=\"chap-title\">الكليات<span class=\"alt-run\" lang=\"en\">The schools<\/span><\/h2>\n          <p class=\"chap-note\">يمكن ترتيبها بالاسم أو الدولة أو عدد البرامج في الفهرس.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"toolbar\"><div class=\"sortgrp\" data-school-sort role=\"group\" aria-label=\"الترتيب\"><\/div><\/div>\n          <div data-schools><\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n  "}, "school.html": {"en": "\n\n    <div class=\"sheet\">\n      <nav class=\"crumb lbl\" aria-label=\"Index\">\n        <a href=\"schools.html\">Schools<\/a>\n        <span aria-hidden=\"true\">/<\/span>\n        <span data-crumb-school>—<\/span>\n      <\/nav>\n    <\/div>\n    <div class=\"sheet\" data-school-detail><\/div>\n  ", "ar": "\n\n    <div class=\"sheet\">\n      <nav class=\"crumb lbl\" aria-label=\"الفهرس\">\n        <a href=\"schools.html\">الكليات<\/a>\n        <span aria-hidden=\"true\">/<\/span>\n        <span data-crumb-school>—<\/span>\n      <\/nav>\n    <\/div>\n    <div class=\"sheet\" data-school-detail><\/div>\n  "}, "lists.html": {"en": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§04<\/span>\n          <h2 class=\"chap-title\">Sets<span class=\"alt-run\" lang=\"ar\">المجموعات<\/span><\/h2>\n          <p class=\"chap-note\">Editorial cuts of the index. Each states who selected it and on what basis — they are selections, not rankings.<\/p>\n        <\/div>\n        <div class=\"chap-body\"><div data-lists><\/div><\/div>\n      <\/div>\n    <\/section>\n  ", "ar": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§04<\/span>\n          <h2 class=\"chap-title\">المجموعات<span class=\"alt-run\" lang=\"en\">Sets<\/span><\/h2>\n          <p class=\"chap-note\">مقاطع تحريرية من الفهرس. تذكر كل مجموعة من اختارها وعلى أي أساس — فهي اختيارات لا تصنيفات.<\/p>\n        <\/div>\n        <div class=\"chap-body\"><div data-lists><\/div><\/div>\n      <\/div>\n    <\/section>\n  "}, "list.html": {"en": "\n\n    <div class=\"sheet\">\n      <nav class=\"crumb lbl\" aria-label=\"Index\">\n        <a href=\"lists.html\">Sets<\/a>\n        <span aria-hidden=\"true\">/<\/span>\n        <span data-crumb-list>—<\/span>\n      <\/nav>\n    <\/div>\n    <div class=\"sheet\" data-list-detail><\/div>\n  ", "ar": "\n\n    <div class=\"sheet\">\n      <nav class=\"crumb lbl\" aria-label=\"الفهرس\">\n        <a href=\"lists.html\">المجموعات<\/a>\n        <span aria-hidden=\"true\">/<\/span>\n        <span data-crumb-list>—<\/span>\n      <\/nav>\n    <\/div>\n    <div class=\"sheet\" data-list-detail><\/div>\n  "}, "about.html": {"en": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§05<\/span>\n          <h2 class=\"chap-title\">Method<span class=\"alt-run\" lang=\"ar\">المنهج<\/span><\/h2>\n          <p class=\"chap-note\">What this index is, where every figure comes from, and what it refuses to do.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <p class=\"creed\">An index that fills its own gaps is not an index.<\/p>\n\n          <div class=\"facts\" style=\"margin-block-start:var(--sp-7)\">\n            <div class=\"facts__r\"><span class=\"lbl\">What it is<\/span><div class=\"facts__v\">\n              An independent, bilingual index of open-enrolment executive programmes from the\n              world's business schools, built in Riyadh. It does not teach, it does not award\n              certificates, and it does not enrol on a school's behalf.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">Where the data comes from<\/span><div class=\"facts__v\">\n              From each school's own published programme pages. Titles, dates, teaching days,\n              format, language of instruction and fees are recorded as stated. Descriptions and\n              marketing copy are never reproduced.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">Fees<\/span><div class=\"facts__v\">\n              Printed in the school's own currency, exactly as published. An indicative riyal\n              figure is printed beside it with the date of the rate used. That line is an\n              indication for a budget, not a quote.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">What is missing<\/span><div class=\"facts__v\">\n              Ratings, reviews, \"what you will learn\" and \"who should attend\" are absent because\n              a factual record cannot supply them. They print as an em dash rather than as an\n              invention.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">Order<\/span><div class=\"facts__v\">\n              No rankings, no featured slots, no paid placement. Sets are editorial selections and\n              say so.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">Privacy<\/span><div class=\"facts__v\">\n              No tracking script and no analytics. A shortlist is held in your own browser and\n              never leaves the device.<\/div><\/div>\n          <\/div>\n\n          <div class=\"alt-block\">\n            <span class=\"alt-run\" lang=\"ar\">مسار فهرس مستقل: لا يُدرّس ولا يمنح شهادات.<\/span>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n  ", "ar": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§05<\/span>\n          <h2 class=\"chap-title\">المنهج<span class=\"alt-run\" lang=\"en\">Method<\/span><\/h2>\n          <p class=\"chap-note\">ما هذا الفهرس، ومن أين يأتي كل رقم فيه، وما الذي يرفض أن يفعله.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <p class=\"creed\">الفهرس الذي يملأ فجواته بنفسه ليس فهرسًا.<\/p>\n\n          <div class=\"facts\" style=\"margin-block-start:var(--sp-7)\">\n            <div class=\"facts__r\"><span class=\"lbl\">ما هو<\/span><div class=\"facts__v\">\n              فهرس مستقل ثنائي اللغة للبرامج التنفيذية مفتوحة التسجيل من كليات الأعمال حول العالم،\n              بُني في الرياض. لا يُدرّس، ولا يمنح شهادات، ولا يسجّل نيابةً عن أي كلية.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">من أين تأتي البيانات<\/span><div class=\"facts__v\">\n              من صفحات البرامج التي تنشرها كل كلية. تُسجَّل العناوين والتواريخ وأيام التدريس ونمط\n              الدراسة ولغة التدريس والرسوم كما وردت. ولا يُعاد إنتاج أي وصف أو نص تسويقي.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">الرسوم<\/span><div class=\"facts__v\">\n              تُطبَع بعملة الكلية كما نُشرت تمامًا، ويُطبَع إلى جانبها مبلغ استرشادي بالريال مع\n              تاريخ سعر الصرف المستخدم. هذا السطر إشارة لميزانية، لا عرض سعر.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">ما الذي ينقص<\/span><div class=\"facts__v\">\n              لا تقييمات ولا مراجعات ولا «ماذا ستتعلّم» ولا «لمن هذا البرنامج»، لأن السجل الواقعي\n              لا يوفّرها. وتُطبَع شَرطة مكانها بدل أن تُختلَق.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">الترتيب<\/span><div class=\"facts__v\">\n              لا تصنيفات ولا مواضع مميّزة ولا إدراج مدفوع. والمجموعات اختيارات تحريرية تقول ذلك صراحة.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">الخصوصية<\/span><div class=\"facts__v\">\n              لا برامج تتبّع ولا تحليلات. وتُحفَظ القائمة المختارة في متصفّحك ولا تغادر جهازك.<\/div><\/div>\n          <\/div>\n\n          <div class=\"alt-block\">\n            <span class=\"alt-run\" lang=\"en\">Masar is an independent index. It does not teach and it does not certify.<\/span>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n  "}, "contact.html": {"en": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§06<\/span>\n          <h2 class=\"chap-title\">Contact<span class=\"alt-run\" lang=\"ar\">التواصل<\/span><\/h2>\n          <p class=\"chap-note\">Three ways in. A channel we have not published yet prints as a dash, like every other unrecorded field in this index.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"contact-row\">\n            <h3>WhatsApp<\/h3>\n            <p>The fastest way to reach us. Ask about an intake, a fee or a group booking.<\/p>\n            <div><span class=\"dash\" aria-hidden=\"true\">—<\/span><\/div>\n          <\/div>\n          <div class=\"contact-row\">\n            <h3>Corporate desk<\/h3>\n            <p>Seats for a team, or a closed cohort built around your calendar.<\/p>\n            <div><a class=\"btn btn--ghost\" href=\"#teams-form\">Request a proposal<\/a><\/div>\n          <\/div>\n          <div class=\"contact-row\">\n            <h3>A correction<\/h3>\n            <p>A fee, a date or a name we have recorded wrongly. Corrections are made the same week.<\/p>\n            <div><span class=\"dash\" aria-hidden=\"true\">—<\/span><\/div>\n          <\/div>\n\n          <div id=\"teams\" class=\"chap-head\" style=\"padding-block-end:0\">\n            <span class=\"chap-num\">§06.1<\/span>\n            <h2 class=\"chap-title\" style=\"font-size:var(--fs-600)\">Enrolling a team<\/h2>\n            <p class=\"chap-note\">Masar does not enrol on a school's behalf; the contract, the classroom and the certificate stay with the school.<\/p>\n          <\/div>\n\n          <form id=\"teams-form\" class=\"form\" data-contact-form novalidate style=\"margin-block-start:var(--sp-5)\">\n            <div class=\"fld\"><label for=\"name\">Your name<\/label><input id=\"name\" name=\"name\" type=\"text\" autocomplete=\"name\" required><\/div>\n            <div class=\"fld\"><label for=\"org\">Organisation<\/label><input id=\"org\" name=\"organisation\" type=\"text\" autocomplete=\"organization\"><\/div>\n            <div class=\"fld\"><label for=\"phone\">Mobile<\/label><input id=\"phone\" name=\"phone\" type=\"tel\" autocomplete=\"tel\" dir=\"ltr\" placeholder=\"+966\"><\/div>\n            <div class=\"fld\"><label for=\"email\">Email<\/label><input id=\"email\" name=\"email\" type=\"email\" autocomplete=\"email\" required><\/div>\n            <div class=\"fld fld--wide\"><label for=\"course\">Programme<\/label><select id=\"course\" name=\"course\" data-course-select><\/select><\/div>\n            <div class=\"fld\"><label for=\"seats\">Seats<\/label><input id=\"seats\" name=\"seats\" type=\"number\" min=\"1\" step=\"1\" value=\"1\" dir=\"ltr\"><\/div>\n            <div class=\"fld\"><label for=\"reply\">Reply in<\/label><select id=\"reply\" name=\"reply_language\"><option value=\"en\">English<\/option><option value=\"ar\">العربية<\/option><\/select><\/div>\n            <div class=\"fld fld--wide\"><label for=\"message\">Your question<\/label><textarea id=\"message\" name=\"message\" required><\/textarea><\/div>\n            <div class=\"fld fld--wide\">\n              <button class=\"btn btn--solid\" type=\"submit\" style=\"justify-self:start\">Send enquiry<\/button>\n              <p class=\"note\" data-form-status tabindex=\"-1\" hidden><span><strong>This form is not connected yet.<\/strong> The record below shows every channel we have published so far.<\/span><\/p>\n              <p class=\"note\">Answered in Riyadh hours, Sunday to Thursday.<\/p>\n            <\/div>\n          <\/form>\n\n          <div class=\"chap-head\" style=\"padding-block-end:0;margin-block-start:var(--sp-7)\">\n            <span class=\"chap-num\">§06.2<\/span>\n            <h2 class=\"chap-title\" style=\"font-size:var(--fs-600)\">The record<\/h2>\n            <p class=\"chap-note\">Who is behind this index. Every line is printed whether or not we have filled it in.<\/p>\n          <\/div>\n      <div class=\"record\">\n        <div class=\"record__r\">\n          <span class=\"lbl\">Commercial registration<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">VAT number<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">Maroof<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">Address<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">Telephone<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">WhatsApp<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">Last refreshed<\/span>\n          <span class=\"record__v\"><span dir=\"ltr\">14 September 2026<\/span><\/span>\n        <\/div>\n        <p class=\"record__note\">Printed by the same rule as the rest of the index: an em dash means we have not recorded it yet, not that it does not exist.<\/p>\n      <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n  ", "ar": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <span class=\"chap-num\">§06<\/span>\n          <h2 class=\"chap-title\">التواصل<span class=\"alt-run\" lang=\"en\">Contact<\/span><\/h2>\n          <p class=\"chap-note\">ثلاث طرق للوصول. والقناة التي لم ننشرها بعد تُطبَع شَرطة، كأي حقل غير مسجّل في هذا الفهرس.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"contact-row\">\n            <h3>واتساب<\/h3>\n            <p>أسرع طريقة للوصول إلينا. اسأل عن دفعة أو رسوم أو حجز جماعي.<\/p>\n            <div><span class=\"dash\" aria-hidden=\"true\">—<\/span><\/div>\n          <\/div>\n          <div class=\"contact-row\">\n            <h3>مكتب المنشآت<\/h3>\n            <p>مقاعد لفريق، أو دفعة مغلقة تُبنى حول تقويم منشأتك.<\/p>\n            <div><a class=\"btn btn--ghost\" href=\"#teams-form\">اطلب عرضًا<\/a><\/div>\n          <\/div>\n          <div class=\"contact-row\">\n            <h3>تصحيح<\/h3>\n            <p>رسم أو تاريخ أو اسم سجّلناه خطأً. تُصحَّح الملاحظات في الأسبوع نفسه.<\/p>\n            <div><span class=\"dash\" aria-hidden=\"true\">—<\/span><\/div>\n          <\/div>\n\n          <div id=\"teams\" class=\"chap-head\" style=\"padding-block-end:0\">\n            <span class=\"chap-num\">§06.1<\/span>\n            <h2 class=\"chap-title\" style=\"font-size:var(--fs-600)\">تسجيل فريق<\/h2>\n            <p class=\"chap-note\">لا يسجّل «مسار» نيابةً عن أي كلية؛ فالعقد والقاعة والشهادة تبقى لدى الكلية.<\/p>\n          <\/div>\n\n          <form id=\"teams-form\" class=\"form\" data-contact-form novalidate style=\"margin-block-start:var(--sp-5)\">\n            <div class=\"fld\"><label for=\"name\">الاسم<\/label><input id=\"name\" name=\"name\" type=\"text\" autocomplete=\"name\" required><\/div>\n            <div class=\"fld\"><label for=\"org\">المنشأة<\/label><input id=\"org\" name=\"organisation\" type=\"text\" autocomplete=\"organization\"><\/div>\n            <div class=\"fld\"><label for=\"phone\">الجوال<\/label><input id=\"phone\" name=\"phone\" type=\"tel\" autocomplete=\"tel\" dir=\"ltr\" placeholder=\"+966\"><\/div>\n            <div class=\"fld\"><label for=\"email\">البريد الإلكتروني<\/label><input id=\"email\" name=\"email\" type=\"email\" autocomplete=\"email\" required><\/div>\n            <div class=\"fld fld--wide\"><label for=\"course\">البرنامج<\/label><select id=\"course\" name=\"course\" data-course-select><\/select><\/div>\n            <div class=\"fld\"><label for=\"seats\">عدد المقاعد<\/label><input id=\"seats\" name=\"seats\" type=\"number\" min=\"1\" step=\"1\" value=\"1\" dir=\"ltr\"><\/div>\n            <div class=\"fld\"><label for=\"reply\">لغة الردّ<\/label><select id=\"reply\" name=\"reply_language\"><option value=\"ar\">العربية<\/option><option value=\"en\">English<\/option><\/select><\/div>\n            <div class=\"fld fld--wide\"><label for=\"message\">سؤالك<\/label><textarea id=\"message\" name=\"message\" required><\/textarea><\/div>\n            <div class=\"fld fld--wide\">\n              <button class=\"btn btn--solid\" type=\"submit\" style=\"justify-self:start\">أرسل الاستفسار<\/button>\n              <p class=\"note\" data-form-status tabindex=\"-1\" hidden><span><strong>لم يُربط هذا النموذج بعد.<\/strong> يعرض السجل أدناه كل قناة نشرناها حتى الآن.<\/span><\/p>\n              <p class=\"note\">نردّ بتوقيت الرياض، من الأحد إلى الخميس.<\/p>\n            <\/div>\n          <\/form>\n\n          <div class=\"chap-head\" style=\"padding-block-end:0;margin-block-start:var(--sp-7)\">\n            <span class=\"chap-num\">§06.2<\/span>\n            <h2 class=\"chap-title\" style=\"font-size:var(--fs-600)\">السجل<\/h2>\n            <p class=\"chap-note\">من يقف خلف هذا الفهرس. كل سطر مطبوع، سواء ملأناه أم لم نملأه بعد.<\/p>\n          <\/div>\n      <div class=\"record\">\n        <div class=\"record__r\">\n          <span class=\"lbl\">السجل التجاري<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">الرقم الضريبي<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">معروف<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">العنوان<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">الهاتف<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">واتساب<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">آخر تحديث<\/span>\n          <span class=\"record__v\"><span dir=\"ltr\">١٤ سبتمبر ٢٠٢٦<\/span><\/span>\n        <\/div>\n        <p class=\"record__note\">يُطبَع بالقاعدة نفسها التي يُطبَع بها الفهرس: الشَّرطة تعني أننا لم نسجّله بعد، لا أنه غير موجود.<\/p>\n      <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n  "}};
+  var BODIES = {"index.html": {"en": "\n\n    <section class=\"hero hero--photo\">\n      <div class=\"hero__fig\" aria-hidden=\"true\"><\/div>\n      <div class=\"sheet hero__in\">\n        <p class=\"dateline lbl\">\n          <span>An independent index · Riyadh<\/span>\n          <span class=\"dateline__sep\" aria-hidden=\"true\">/<\/span>\n          <span data-today>—<\/span>\n          <span class=\"dateline__sep\" aria-hidden=\"true\">/<\/span>\n          <span class=\"hijri\" lang=\"ar\" data-today-hijri>—<\/span>\n        <\/p>\n        <h1 class=\"hero__t\" data-reveal style=\"--i:0\">Executive programmes,<br>listed plainly.<\/h1>\n        <p class=\"hero__stand\" data-reveal style=\"--i:1\">Open-enrolment programmes from the world's business schools —\n          the fee each school publishes, the city it is taught in, the dates and the teaching days.\n          Nothing is ranked. Nothing is sold.<\/p>\n      <\/div>\n      <div class=\"sheet\">\n        <div class=\"finder finder--panel\" data-home-finder data-reveal style=\"--i:2\">\n          <label class=\"finder__f\">\n            <span class=\"lbl\">Field<\/span>\n            <select data-finder=\"subject\"><option value=\"\">Any field<\/option><\/select>\n          <\/label>\n          <label class=\"finder__f\">\n            <span class=\"lbl\">City<\/span>\n            <select data-finder=\"city\"><option value=\"\">Any city<\/option><\/select>\n          <\/label>\n          <label class=\"finder__f\">\n            <span class=\"lbl\">Month<\/span>\n            <select data-finder=\"month\"><option value=\"\">Any month<\/option><\/select>\n          <\/label>\n          <a class=\"btn btn--solid finder__go\" href=\"courses.html\" data-finder-go>Browse the index<\/a>\n        <\/div>\n      <\/div>\n    <\/section>\n\n    <section class=\"totals-band\">\n      <div class=\"sheet totals\">\n        <a class=\"totals__it\" href=\"courses.html\" data-reveal style=\"--i:1\">\n          <span class=\"totals__n num\" data-stat=\"programmes\">189<\/span>\n          <span class=\"totals__l lbl\">Programmes<\/span>\n        <\/a>\n        <a class=\"totals__it\" href=\"schools.html\" data-reveal style=\"--i:2\">\n          <span class=\"totals__n num\" data-stat=\"schools\">16<\/span>\n          <span class=\"totals__l lbl\">Business schools<\/span>\n        <\/a>\n        <a class=\"totals__it\" href=\"courses.html\" data-reveal style=\"--i:3\">\n          <span class=\"totals__n num\" data-stat=\"countries\">6<\/span>\n          <span class=\"totals__l lbl\">Countries of delivery<\/span>\n        <\/a>\n        <a class=\"totals__it totals__it--link\" href=\"contact.html#teams\" data-reveal style=\"--i:4\">\n          <span class=\"totals__n\">Enrolling a team?<\/span>\n          <span class=\"totals__l lbl\">Ask for a proposal<\/span>\n        <\/a>\n      <\/div>\n    <\/section>\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">Fields<span class=\"alt-run\">الحقول<\/span><\/h2>\n          <p class=\"chap-note\">Twelve fields run through the index. Choose one and the catalogue opens filtered to it.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"fields\" data-home-fields><\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">The next intakes<span class=\"alt-run\">أقرب الدفعات<\/span><\/h2>\n          <p class=\"chap-note\">Grouped by start date, soonest first. Ten here; the rest are in the index.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"ledger\" data-home-ledger><\/div>\n          <div class=\"ledger-foot\">\n            <a class=\"btn btn--ghost\" href=\"courses.html\" data-all-programmes>See the whole index<\/a>\n            <span class=\"lbl\">— not recorded<\/span>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">The schools<span class=\"alt-run\">الكليات<\/span><\/h2>\n          <p class=\"chap-note\">Every institution with programmes in the index, named — no logos, no rankings.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div data-home-schools><\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n\n    <section class=\"chapter chapter--band\" id=\"method\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">Method<span class=\"alt-run\" lang=\"ar\">المنهج<\/span><\/h2>\n          <p class=\"chap-note\">How a programme gets into the index, and what we will not do to it.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <p class=\"creed\">We list. We do not sell.<\/p>\n\n          <div class=\"tenets\">\n            <div class=\"tenet\">\n              <span class=\"tenet__n\">01<\/span>\n              <h3>Source<\/h3>\n              <p>Every record is taken from the school's own published programme page. If a school\n                did not state it, this index does not state it either.<\/p>\n            <\/div>\n            <div class=\"tenet\">\n              <span class=\"tenet__n\">02<\/span>\n              <h3>Currency<\/h3>\n              <p>The fee is the school's own, in the school's own currency. We do not convert the\n                figure we publish.<\/p>\n            <\/div>\n            <div class=\"tenet\">\n              <span class=\"tenet__n\">03<\/span>\n              <h3>Silence<\/h3>\n              <p>An unrecorded field prints an em dash. An index that fills its own gaps is not\n                an index.<\/p>\n            <\/div>\n            <div class=\"tenet\">\n              <span class=\"tenet__n\">04<\/span>\n              <h3>Position<\/h3>\n              <p>No rankings, no ratings, no featured slots, no paid placement. Order is by date,\n                fee, teaching days or school — whichever you choose.<\/p>\n            <\/div>\n          <\/div>\n\n          <div class=\"plate\">\n            <p class=\"plate__codes\"><span>USD<\/span><span>CHF<\/span><span>CAD<\/span><span>SGD<\/span><span>AUD<\/span><span>DKK<\/span><span>EUR<\/span><\/p>\n            <div>\n              <p>Seven currencies appear in this index because seven currencies appear on the\n                schools' own pages. Converting them would be a guess printed as a fact.<\/p>\n              <p>Beside every fee we also print an indicative riyal figure and the date of the\n                rate we used. It is an indication for a budget line, not a quote.<\/p>\n            <\/div>\n          <\/div>\n\n          <div class=\"alt-block\">\n            <span class=\"alt-run\" lang=\"ar\">الرقم كما نشرته الكلية. لا تحويل، ولا تقدير.<\/span>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n    <section class=\"chapter\" id=\"teams\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">Enrolling a team<span class=\"alt-run\">تسجيل فريق<\/span><\/h2>\n          <p class=\"chap-note\">Masar does not enrol on a school's behalf. It points you at the right intake and the right desk.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"steps\">\n            <div class=\"step\"><span class=\"step__n\">01<\/span><h3>Shortlist the intakes<\/h3><p>Filter the index by field, city, month, teaching days or fee, and keep what fits.<\/p><\/div>\n            <div class=\"step\"><span class=\"step__n\">02<\/span><h3>Send it on<\/h3><p>A filtered view is a link, and a shortlist copies as plain text — both forward to a sponsor intact.<\/p><\/div>\n            <div class=\"step\"><span class=\"step__n\">03<\/span><h3>Ask for a proposal<\/h3><p>Tell us the seats and the quarter. Group terms and closed cohorts are agreed with the school, not with us.<\/p><\/div>\n          <\/div>\n          <div class=\"ledger-foot\"><a class=\"btn btn--solid\" href=\"contact.html#teams\">Request a proposal<\/a><\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n  ", "ar": "\n\n    <section class=\"hero hero--photo\">\n      <div class=\"hero__fig\" aria-hidden=\"true\"><\/div>\n      <div class=\"sheet hero__in\">\n        <p class=\"dateline lbl\">\n          <span>فهرس مستقل · الرياض<\/span>\n          <span class=\"dateline__sep\" aria-hidden=\"true\">/<\/span>\n          <span data-today>—<\/span>\n          <span class=\"dateline__sep\" aria-hidden=\"true\">/<\/span>\n          <span class=\"hijri\" lang=\"ar\" data-today-hijri>—<\/span>\n        <\/p>\n        <h1 class=\"hero__t\" data-reveal style=\"--i:0\">برامج تنفيذية،<br>مُدرجة بوضوح.<\/h1>\n        <p class=\"hero__stand\" data-reveal style=\"--i:1\">برامج مفتوحة التسجيل من كليات الأعمال حول العالم —\n          الرسوم كما تنشرها كل كلية، والمدينة التي يُدرَّس فيها البرنامج، والتواريخ وأيام التدريس.\n          لا شيء مصنَّف، ولا شيء يُباع.<\/p>\n      <\/div>\n      <div class=\"sheet\">\n        <div class=\"finder finder--panel\" data-home-finder data-reveal style=\"--i:2\">\n          <label class=\"finder__f\">\n            <span class=\"lbl\">الحقل<\/span>\n            <select data-finder=\"subject\"><option value=\"\">كل الحقول<\/option><\/select>\n          <\/label>\n          <label class=\"finder__f\">\n            <span class=\"lbl\">المدينة<\/span>\n            <select data-finder=\"city\"><option value=\"\">كل المدن<\/option><\/select>\n          <\/label>\n          <label class=\"finder__f\">\n            <span class=\"lbl\">الشهر<\/span>\n            <select data-finder=\"month\"><option value=\"\">كل الأشهر<\/option><\/select>\n          <\/label>\n          <a class=\"btn btn--solid finder__go\" href=\"courses.html\" data-finder-go>تصفّح الفهرس<\/a>\n        <\/div>\n      <\/div>\n    <\/section>\n\n    <section class=\"totals-band\">\n      <div class=\"sheet totals\">\n        <a class=\"totals__it\" href=\"courses.html\" data-reveal style=\"--i:1\">\n          <span class=\"totals__n num\" data-stat=\"programmes\">189<\/span>\n          <span class=\"totals__l lbl\">برنامجًا<\/span>\n        <\/a>\n        <a class=\"totals__it\" href=\"schools.html\" data-reveal style=\"--i:2\">\n          <span class=\"totals__n num\" data-stat=\"schools\">16<\/span>\n          <span class=\"totals__l lbl\">كلية أعمال<\/span>\n        <\/a>\n        <a class=\"totals__it\" href=\"courses.html\" data-reveal style=\"--i:3\">\n          <span class=\"totals__n num\" data-stat=\"countries\">6<\/span>\n          <span class=\"totals__l lbl\">دول تُدرَّس فيها<\/span>\n        <\/a>\n        <a class=\"totals__it totals__it--link\" href=\"contact.html#teams\" data-reveal style=\"--i:4\">\n          <span class=\"totals__n\">تسجّل فريقًا؟<\/span>\n          <span class=\"totals__l lbl\">اطلب عرضًا<\/span>\n        <\/a>\n      <\/div>\n    <\/section>\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">الحقول<span class=\"alt-run\">Fields<\/span><\/h2>\n          <p class=\"chap-note\">اثنا عشر حقلًا تمرّ عبر الفهرس. اختر واحدًا ليُفتح الفهرس مصفّى عليه.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"fields\" data-home-fields><\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">أقرب الدفعات<span class=\"alt-run\">The next intakes<\/span><\/h2>\n          <p class=\"chap-note\">مجمّعة حسب تاريخ البدء، الأقرب أولًا. عشرة هنا، وبقيتها في الفهرس.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"ledger\" data-home-ledger><\/div>\n          <div class=\"ledger-foot\">\n            <a class=\"btn btn--ghost\" href=\"courses.html\" data-all-programmes>اعرض الفهرس كاملًا<\/a>\n            <span class=\"lbl\">— غير مسجّل<\/span>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">الكليات<span class=\"alt-run\">The schools<\/span><\/h2>\n          <p class=\"chap-note\">كل مؤسسة لها برامج في الفهرس، باسمها — بلا شعارات وبلا تصنيفات.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div data-home-schools><\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n\n    <section class=\"chapter chapter--band\" id=\"method\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">المنهج<span class=\"alt-run\" lang=\"en\">Method<\/span><\/h2>\n          <p class=\"chap-note\">كيف يدخل البرنامج إلى الفهرس، وما الذي لن نفعله به.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <p class=\"creed\">نحن نفهرس، ولا نبيع.<\/p>\n\n          <div class=\"tenets\">\n            <div class=\"tenet\">\n              <span class=\"tenet__n\">٠١<\/span>\n              <h3>المصدر<\/h3>\n              <p>كل سجل مأخوذ من صفحة البرنامج التي تنشرها الكلية نفسها. وما لم تذكره الكلية\n                لا يذكره هذا الفهرس.<\/p>\n            <\/div>\n            <div class=\"tenet\">\n              <span class=\"tenet__n\">٠٢<\/span>\n              <h3>العملة<\/h3>\n              <p>الرسم رسم الكلية، وبعملتها. ولا نحوّل الرقم الذي ننشره.<\/p>\n            <\/div>\n            <div class=\"tenet\">\n              <span class=\"tenet__n\">٠٣<\/span>\n              <h3>الصمت<\/h3>\n              <p>الحقل غير المسجّل تُطبَع مكانه شَرطة. والفهرس الذي يملأ فجواته بنفسه ليس فهرسًا.<\/p>\n            <\/div>\n            <div class=\"tenet\">\n              <span class=\"tenet__n\">٠٤<\/span>\n              <h3>الترتيب<\/h3>\n              <p>لا تصنيفات ولا تقييمات ولا مواضع مميّزة ولا إدراج مدفوع. الترتيب بالتاريخ أو\n                الرسوم أو أيام التدريس أو الكلية — كما تختار أنت.<\/p>\n            <\/div>\n          <\/div>\n\n          <div class=\"plate\">\n            <p class=\"plate__codes\"><span>USD<\/span><span>CHF<\/span><span>CAD<\/span><span>SGD<\/span><span>AUD<\/span><span>DKK<\/span><span>EUR<\/span><\/p>\n            <div>\n              <p>تظهر سبع عملات في هذا الفهرس لأن سبع عملات تظهر في صفحات الكليات نفسها.\n                وتحويلها سيكون تخمينًا يُطبَع بوصفه واقعة.<\/p>\n              <p>وإلى جانب كل رسم نطبع أيضًا مبلغًا استرشاديًا بالريال وتاريخ سعر الصرف المستخدم.\n                هو إشارة لبند في الميزانية، لا عرض سعر.<\/p>\n            <\/div>\n          <\/div>\n\n          <div class=\"alt-block\">\n            <span class=\"alt-run\" lang=\"en\">The figure is the school's own. No conversion, no estimate.<\/span>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n    <section class=\"chapter\" id=\"teams\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">تسجيل فريق<span class=\"alt-run\">Enrolling a team<\/span><\/h2>\n          <p class=\"chap-note\">لا يسجّل «مسار» نيابةً عن أي كلية. هو يدلّك على الدفعة الصحيحة وعلى الجهة الصحيحة.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"steps\">\n            <div class=\"step\"><span class=\"step__n\">٠١<\/span><h3>اختر الدفعات<\/h3><p>صفِّ الفهرس حسب الحقل أو المدينة أو الشهر أو أيام التدريس أو الرسوم، واحتفظ بما يناسبك.<\/p><\/div>\n            <div class=\"step\"><span class=\"step__n\">٠٢<\/span><h3>مرّرها<\/h3><p>أي نتيجة مصفّاة رابط، والقائمة المختارة تُنسَخ نصًّا — وكلاهما يصل إلى الجهة الداعمة كما هو.<\/p><\/div>\n            <div class=\"step\"><span class=\"step__n\">٠٣<\/span><h3>اطلب عرضًا<\/h3><p>أخبرنا بعدد المقاعد والرُّبع المطلوب. وتُتَّفق شروط المجموعات والدفعات المغلقة مع الكلية، لا معنا.<\/p><\/div>\n          <\/div>\n          <div class=\"ledger-foot\"><a class=\"btn btn--solid\" href=\"contact.html#teams\">اطلب عرضًا<\/a><\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n  "}, "courses.html": {"en": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">The index<span class=\"alt-run\" lang=\"ar\">الفهرس<\/span><\/h2>\n          <p class=\"chap-note\">Sort by the axis you compare on: date, fee, teaching days or school.<\/p>\n        <\/div>\n\n        <div class=\"count-hero\">\n          <span class=\"count-hero__n num\" data-results-count>—<\/span>\n          <span class=\"count-hero__l\" data-results-label>programmes match.<\/span>\n        <\/div>\n\n        <div class=\"cat\">\n          <form class=\"facets\" data-facets aria-label=\"Filters\">\n            <div data-facet-body><\/div>\n            <button class=\"btn btn--solid facets__done\" type=\"button\" data-facets-close>Show results<\/button>\n          <\/form>\n\n          <div>\n            <div class=\"toolbar\">\n              <div class=\"search\">\n                <label class=\"sr-only\" for=\"q\">Search the index<\/label>\n                <input id=\"q\" type=\"search\" data-search placeholder=\"Programme, school or city\">\n              <\/div>\n              <div class=\"sortgrp\" data-sort role=\"group\" aria-label=\"Sort\"><\/div>\n            <\/div>\n            <div class=\"applied\" data-applied><\/div>\n            <div class=\"ledger\" data-results><\/div>\n            <div class=\"ledger-foot\">\n              <button class=\"btn btn--ghost\" type=\"button\" data-more hidden><\/button>\n              <span class=\"lbl\">— not recorded<\/span>\n            <\/div>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n\n    <div class=\"filters-bar\">\n      <button class=\"ctl\" type=\"button\" data-facets-open>Filters<\/button>\n      <span class=\"lbl\" data-bar-count role=\"status\"><\/span>\n    <\/div>\n  ", "ar": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">الفهرس<span class=\"alt-run\" lang=\"en\">The index<\/span><\/h2>\n          <p class=\"chap-note\">رتّب حسب المحور الذي تقارن به: التاريخ أو الرسوم أو أيام التدريس أو الكلية.<\/p>\n        <\/div>\n\n        <div class=\"count-hero\">\n          <span class=\"count-hero__n num\" data-results-count>—<\/span>\n          <span class=\"count-hero__l\" data-results-label>برنامجًا مطابقًا.<\/span>\n        <\/div>\n\n        <div class=\"cat\">\n          <form class=\"facets\" data-facets aria-label=\"أدوات التصفية\">\n            <div data-facet-body><\/div>\n            <button class=\"btn btn--solid facets__done\" type=\"button\" data-facets-close>اعرض النتائج<\/button>\n          <\/form>\n\n          <div>\n            <div class=\"toolbar\">\n              <div class=\"search\">\n                <label class=\"sr-only\" for=\"q\">ابحث في الفهرس<\/label>\n                <input id=\"q\" type=\"search\" data-search placeholder=\"برنامج أو كلية أو مدينة\">\n              <\/div>\n              <div class=\"sortgrp\" data-sort role=\"group\" aria-label=\"الترتيب\"><\/div>\n            <\/div>\n            <div class=\"applied\" data-applied><\/div>\n            <div class=\"ledger\" data-results><\/div>\n            <div class=\"ledger-foot\">\n              <button class=\"btn btn--ghost\" type=\"button\" data-more hidden><\/button>\n              <span class=\"lbl\">— غير مسجّل<\/span>\n            <\/div>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n\n    <div class=\"filters-bar\">\n      <button class=\"ctl\" type=\"button\" data-facets-open>التصفية<\/button>\n      <span class=\"lbl\" data-bar-count role=\"status\"><\/span>\n    <\/div>\n  "}, "course.html": {"en": "\n\n    <div class=\"sheet\">\n      <nav class=\"crumb lbl\" aria-label=\"Index\">\n        <a href=\"courses.html\">Index<\/a>\n        <span aria-hidden=\"true\">/<\/span>\n        <span data-crumb-school>School<\/span>\n      <\/nav>\n    <\/div>\n    <div class=\"sheet\" data-record><\/div>\n  ", "ar": "\n\n    <div class=\"sheet\">\n      <nav class=\"crumb lbl\" aria-label=\"الفهرس\">\n        <a href=\"courses.html\">الفهرس<\/a>\n        <span aria-hidden=\"true\">/<\/span>\n        <span data-crumb-school>الكلية<\/span>\n      <\/nav>\n    <\/div>\n    <div class=\"sheet\" data-record><\/div>\n  "}, "schools.html": {"en": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">The schools<span class=\"alt-run\" lang=\"ar\">الكليات<\/span><\/h2>\n          <p class=\"chap-note\">Sortable by name, country or number of programmes in the index.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"toolbar\"><div class=\"sortgrp\" data-school-sort role=\"group\" aria-label=\"Sort\"><\/div><\/div>\n          <div data-schools><\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n  ", "ar": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">الكليات<span class=\"alt-run\" lang=\"en\">The schools<\/span><\/h2>\n          <p class=\"chap-note\">يمكن ترتيبها بالاسم أو الدولة أو عدد البرامج في الفهرس.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"toolbar\"><div class=\"sortgrp\" data-school-sort role=\"group\" aria-label=\"الترتيب\"><\/div><\/div>\n          <div data-schools><\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n  "}, "school.html": {"en": "\n\n    <div class=\"sheet\">\n      <nav class=\"crumb lbl\" aria-label=\"Index\">\n        <a href=\"schools.html\">Schools<\/a>\n        <span aria-hidden=\"true\">/<\/span>\n        <span data-crumb-school>—<\/span>\n      <\/nav>\n    <\/div>\n    <div class=\"sheet\" data-school-detail><\/div>\n  ", "ar": "\n\n    <div class=\"sheet\">\n      <nav class=\"crumb lbl\" aria-label=\"الفهرس\">\n        <a href=\"schools.html\">الكليات<\/a>\n        <span aria-hidden=\"true\">/<\/span>\n        <span data-crumb-school>—<\/span>\n      <\/nav>\n    <\/div>\n    <div class=\"sheet\" data-school-detail><\/div>\n  "}, "lists.html": {"en": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">Sets<span class=\"alt-run\" lang=\"ar\">المجموعات<\/span><\/h2>\n          <p class=\"chap-note\">Editorial cuts of the index. Each states who selected it and on what basis — they are selections, not rankings.<\/p>\n        <\/div>\n        <div class=\"chap-body\"><div data-lists><\/div><\/div>\n      <\/div>\n    <\/section>\n  ", "ar": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">المجموعات<span class=\"alt-run\" lang=\"en\">Sets<\/span><\/h2>\n          <p class=\"chap-note\">مقاطع تحريرية من الفهرس. تذكر كل مجموعة من اختارها وعلى أي أساس — فهي اختيارات لا تصنيفات.<\/p>\n        <\/div>\n        <div class=\"chap-body\"><div data-lists><\/div><\/div>\n      <\/div>\n    <\/section>\n  "}, "list.html": {"en": "\n\n    <div class=\"sheet\">\n      <nav class=\"crumb lbl\" aria-label=\"Index\">\n        <a href=\"lists.html\">Sets<\/a>\n        <span aria-hidden=\"true\">/<\/span>\n        <span data-crumb-list>—<\/span>\n      <\/nav>\n    <\/div>\n    <div class=\"sheet\" data-list-detail><\/div>\n  ", "ar": "\n\n    <div class=\"sheet\">\n      <nav class=\"crumb lbl\" aria-label=\"الفهرس\">\n        <a href=\"lists.html\">المجموعات<\/a>\n        <span aria-hidden=\"true\">/<\/span>\n        <span data-crumb-list>—<\/span>\n      <\/nav>\n    <\/div>\n    <div class=\"sheet\" data-list-detail><\/div>\n  "}, "about.html": {"en": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">Method<span class=\"alt-run\" lang=\"ar\">المنهج<\/span><\/h2>\n          <p class=\"chap-note\">What this index is, where every figure comes from, and what it refuses to do.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <p class=\"creed\">An index that fills its own gaps is not an index.<\/p>\n\n          <div class=\"facts\" style=\"margin-block-start:var(--sp-7)\">\n            <div class=\"facts__r\"><span class=\"lbl\">What it is<\/span><div class=\"facts__v\">\n              An independent, bilingual index of open-enrolment executive programmes from the\n              world's business schools, built in Riyadh. It does not teach, it does not award\n              certificates, and it does not enrol on a school's behalf.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">Where the data comes from<\/span><div class=\"facts__v\">\n              From each school's own published programme pages. Titles, dates, teaching days,\n              format, language of instruction and fees are recorded as stated. Descriptions and\n              marketing copy are never reproduced.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">Fees<\/span><div class=\"facts__v\">\n              Printed in the school's own currency, exactly as published. An indicative riyal\n              figure is printed beside it with the date of the rate used. That line is an\n              indication for a budget, not a quote.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">What is missing<\/span><div class=\"facts__v\">\n              Ratings, reviews, \"what you will learn\" and \"who should attend\" are absent because\n              a factual record cannot supply them. They print as an em dash rather than as an\n              invention.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">Order<\/span><div class=\"facts__v\">\n              No rankings, no featured slots, no paid placement. Sets are editorial selections and\n              say so.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">Privacy<\/span><div class=\"facts__v\">\n              No tracking script and no analytics. A shortlist is held in your own browser and\n              never leaves the device.<\/div><\/div>\n          <\/div>\n\n\n          <div class=\"alt-block\">\n            <span class=\"alt-run\" lang=\"ar\">مسار فهرس مستقل: لا يُدرّس ولا يمنح شهادات.<\/span>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n  ", "ar": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">المنهج<span class=\"alt-run\" lang=\"en\">Method<\/span><\/h2>\n          <p class=\"chap-note\">ما هذا الفهرس، ومن أين يأتي كل رقم فيه، وما الذي يرفض أن يفعله.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <p class=\"creed\">الفهرس الذي يملأ فجواته بنفسه ليس فهرسًا.<\/p>\n\n          <div class=\"facts\" style=\"margin-block-start:var(--sp-7)\">\n            <div class=\"facts__r\"><span class=\"lbl\">ما هو<\/span><div class=\"facts__v\">\n              فهرس مستقل ثنائي اللغة للبرامج التنفيذية مفتوحة التسجيل من كليات الأعمال حول العالم،\n              بُني في الرياض. لا يُدرّس، ولا يمنح شهادات، ولا يسجّل نيابةً عن أي كلية.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">من أين تأتي البيانات<\/span><div class=\"facts__v\">\n              من صفحات البرامج التي تنشرها كل كلية. تُسجَّل العناوين والتواريخ وأيام التدريس ونمط\n              الدراسة ولغة التدريس والرسوم كما وردت. ولا يُعاد إنتاج أي وصف أو نص تسويقي.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">الرسوم<\/span><div class=\"facts__v\">\n              تُطبَع بعملة الكلية كما نُشرت تمامًا، ويُطبَع إلى جانبها مبلغ استرشادي بالريال مع\n              تاريخ سعر الصرف المستخدم. هذا السطر إشارة لميزانية، لا عرض سعر.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">ما الذي ينقص<\/span><div class=\"facts__v\">\n              لا تقييمات ولا مراجعات ولا «ماذا ستتعلّم» ولا «لمن هذا البرنامج»، لأن السجل الواقعي\n              لا يوفّرها. وتُطبَع شَرطة مكانها بدل أن تُختلَق.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">الترتيب<\/span><div class=\"facts__v\">\n              لا تصنيفات ولا مواضع مميّزة ولا إدراج مدفوع. والمجموعات اختيارات تحريرية تقول ذلك صراحة.<\/div><\/div>\n            <div class=\"facts__r\"><span class=\"lbl\">الخصوصية<\/span><div class=\"facts__v\">\n              لا برامج تتبّع ولا تحليلات. وتُحفَظ القائمة المختارة في متصفّحك ولا تغادر جهازك.<\/div><\/div>\n          <\/div>\n\n\n          <div class=\"alt-block\">\n            <span class=\"alt-run\" lang=\"en\">Masar is an independent index. It does not teach and it does not certify.<\/span>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n  "}, "contact.html": {"en": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">Contact<span class=\"alt-run\" lang=\"ar\">التواصل<\/span><\/h2>\n          <p class=\"chap-note\">Three ways in. A channel we have not published yet prints as a dash, like every other unrecorded field in this index.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"contact-row\">\n            <h3>WhatsApp<\/h3>\n            <p>The fastest way to reach us. Ask about an intake, a fee or a group booking.<\/p>\n            <div><span class=\"dash\" aria-hidden=\"true\">—<\/span><\/div>\n          <\/div>\n          <div class=\"contact-row\">\n            <h3>Corporate desk<\/h3>\n            <p>Seats for a team, or a closed cohort built around your calendar.<\/p>\n            <div><a class=\"btn btn--ghost\" href=\"#teams-form\">Request a proposal<\/a><\/div>\n          <\/div>\n          <div class=\"contact-row\">\n            <h3>A correction<\/h3>\n            <p>A fee, a date or a name we have recorded wrongly. Corrections are made the same week.<\/p>\n            <div><span class=\"dash\" aria-hidden=\"true\">—<\/span><\/div>\n          <\/div>\n\n          <div id=\"teams\" class=\"chap-head\" style=\"padding-block-end:0\">\n            <h2 class=\"chap-title\" style=\"font-size:var(--fs-600)\">Enrolling a team<\/h2>\n            <p class=\"chap-note\">Masar does not enrol on a school's behalf; the contract, the classroom and the certificate stay with the school.<\/p>\n          <\/div>\n\n          <form id=\"teams-form\" class=\"form\" data-contact-form novalidate style=\"margin-block-start:var(--sp-5)\">\n            <div class=\"fld\"><label for=\"name\">Your name<\/label><input id=\"name\" name=\"name\" type=\"text\" autocomplete=\"name\" required><\/div>\n            <div class=\"fld\"><label for=\"org\">Organisation<\/label><input id=\"org\" name=\"organisation\" type=\"text\" autocomplete=\"organization\"><\/div>\n            <div class=\"fld\"><label for=\"phone\">Mobile<\/label><input id=\"phone\" name=\"phone\" type=\"tel\" autocomplete=\"tel\" dir=\"ltr\" placeholder=\"+966\"><\/div>\n            <div class=\"fld\"><label for=\"email\">Email<\/label><input id=\"email\" name=\"email\" type=\"email\" autocomplete=\"email\" required><\/div>\n            <div class=\"fld fld--wide\"><label for=\"course\">Programme<\/label><select id=\"course\" name=\"course\" data-course-select><\/select><\/div>\n            <div class=\"fld\"><label for=\"seats\">Seats<\/label><input id=\"seats\" name=\"seats\" type=\"number\" min=\"1\" step=\"1\" value=\"1\" dir=\"ltr\"><\/div>\n            <div class=\"fld\"><label for=\"reply\">Reply in<\/label><select id=\"reply\" name=\"reply_language\"><option value=\"en\">English<\/option><option value=\"ar\">العربية<\/option><\/select><\/div>\n            <div class=\"fld fld--wide\"><label for=\"message\">Your question<\/label><textarea id=\"message\" name=\"message\" required><\/textarea><\/div>\n            <div class=\"fld fld--wide\">\n              <button class=\"btn btn--solid\" type=\"submit\" style=\"justify-self:start\">Send enquiry<\/button>\n              <p class=\"note\" data-form-status tabindex=\"-1\" hidden><span><strong>This form is not connected yet.<\/strong> The record below shows every channel we have published so far.<\/span><\/p>\n              <p class=\"note\">Answered in Riyadh hours, Sunday to Thursday.<\/p>\n            <\/div>\n          <\/form>\n\n          <div class=\"chap-head\" style=\"padding-block-end:0;margin-block-start:var(--sp-7)\">\n            <h2 class=\"chap-title\" style=\"font-size:var(--fs-600)\">The record<\/h2>\n            <p class=\"chap-note\">Who is behind this index. Every line is printed whether or not we have filled it in.<\/p>\n          <\/div>\n      <div class=\"record\">\n        <div class=\"record__r\">\n          <span class=\"lbl\">Commercial registration<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">VAT number<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">Maroof<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">Address<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">Telephone<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">WhatsApp<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">Last refreshed<\/span>\n          <span class=\"record__v\"><span dir=\"ltr\">14 September 2026<\/span><\/span>\n        <\/div>\n        <p class=\"record__note\">Printed by the same rule as the rest of the index: an em dash means we have not recorded it yet, not that it does not exist.<\/p>\n      <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n  ", "ar": "\n\n    <section class=\"chapter\">\n      <div class=\"sheet\">\n        <div class=\"chap-head\">\n          <h2 class=\"chap-title\">التواصل<span class=\"alt-run\" lang=\"en\">Contact<\/span><\/h2>\n          <p class=\"chap-note\">ثلاث طرق للوصول. والقناة التي لم ننشرها بعد تُطبَع شَرطة، كأي حقل غير مسجّل في هذا الفهرس.<\/p>\n        <\/div>\n        <div class=\"chap-body\">\n          <div class=\"contact-row\">\n            <h3>واتساب<\/h3>\n            <p>أسرع طريقة للوصول إلينا. اسأل عن دفعة أو رسوم أو حجز جماعي.<\/p>\n            <div><span class=\"dash\" aria-hidden=\"true\">—<\/span><\/div>\n          <\/div>\n          <div class=\"contact-row\">\n            <h3>مكتب المنشآت<\/h3>\n            <p>مقاعد لفريق، أو دفعة مغلقة تُبنى حول تقويم منشأتك.<\/p>\n            <div><a class=\"btn btn--ghost\" href=\"#teams-form\">اطلب عرضًا<\/a><\/div>\n          <\/div>\n          <div class=\"contact-row\">\n            <h3>تصحيح<\/h3>\n            <p>رسم أو تاريخ أو اسم سجّلناه خطأً. تُصحَّح الملاحظات في الأسبوع نفسه.<\/p>\n            <div><span class=\"dash\" aria-hidden=\"true\">—<\/span><\/div>\n          <\/div>\n\n          <div id=\"teams\" class=\"chap-head\" style=\"padding-block-end:0\">\n            <h2 class=\"chap-title\" style=\"font-size:var(--fs-600)\">تسجيل فريق<\/h2>\n            <p class=\"chap-note\">لا يسجّل «مسار» نيابةً عن أي كلية؛ فالعقد والقاعة والشهادة تبقى لدى الكلية.<\/p>\n          <\/div>\n\n          <form id=\"teams-form\" class=\"form\" data-contact-form novalidate style=\"margin-block-start:var(--sp-5)\">\n            <div class=\"fld\"><label for=\"name\">الاسم<\/label><input id=\"name\" name=\"name\" type=\"text\" autocomplete=\"name\" required><\/div>\n            <div class=\"fld\"><label for=\"org\">المنشأة<\/label><input id=\"org\" name=\"organisation\" type=\"text\" autocomplete=\"organization\"><\/div>\n            <div class=\"fld\"><label for=\"phone\">الجوال<\/label><input id=\"phone\" name=\"phone\" type=\"tel\" autocomplete=\"tel\" dir=\"ltr\" placeholder=\"+966\"><\/div>\n            <div class=\"fld\"><label for=\"email\">البريد الإلكتروني<\/label><input id=\"email\" name=\"email\" type=\"email\" autocomplete=\"email\" required><\/div>\n            <div class=\"fld fld--wide\"><label for=\"course\">البرنامج<\/label><select id=\"course\" name=\"course\" data-course-select><\/select><\/div>\n            <div class=\"fld\"><label for=\"seats\">عدد المقاعد<\/label><input id=\"seats\" name=\"seats\" type=\"number\" min=\"1\" step=\"1\" value=\"1\" dir=\"ltr\"><\/div>\n            <div class=\"fld\"><label for=\"reply\">لغة الردّ<\/label><select id=\"reply\" name=\"reply_language\"><option value=\"ar\">العربية<\/option><option value=\"en\">English<\/option><\/select><\/div>\n            <div class=\"fld fld--wide\"><label for=\"message\">سؤالك<\/label><textarea id=\"message\" name=\"message\" required><\/textarea><\/div>\n            <div class=\"fld fld--wide\">\n              <button class=\"btn btn--solid\" type=\"submit\" style=\"justify-self:start\">أرسل الاستفسار<\/button>\n              <p class=\"note\" data-form-status tabindex=\"-1\" hidden><span><strong>لم يُربط هذا النموذج بعد.<\/strong> يعرض السجل أدناه كل قناة نشرناها حتى الآن.<\/span><\/p>\n              <p class=\"note\">نردّ بتوقيت الرياض، من الأحد إلى الخميس.<\/p>\n            <\/div>\n          <\/form>\n\n          <div class=\"chap-head\" style=\"padding-block-end:0;margin-block-start:var(--sp-7)\">\n            <h2 class=\"chap-title\" style=\"font-size:var(--fs-600)\">السجل<\/h2>\n            <p class=\"chap-note\">من يقف خلف هذا الفهرس. كل سطر مطبوع، سواء ملأناه أم لم نملأه بعد.<\/p>\n          <\/div>\n      <div class=\"record\">\n        <div class=\"record__r\">\n          <span class=\"lbl\">السجل التجاري<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">الرقم الضريبي<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">معروف<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">العنوان<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">الهاتف<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">واتساب<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">آخر تحديث<\/span>\n          <span class=\"record__v\"><span dir=\"ltr\">١٤ سبتمبر ٢٠٢٦<\/span><\/span>\n        <\/div>\n        <p class=\"record__note\">يُطبَع بالقاعدة نفسها التي يُطبَع بها الفهرس: الشَّرطة تعني أننا لم نسجّله بعد، لا أنه غير موجود.<\/p>\n      <\/div>\n        <\/div>\n      <\/div>\n    <\/section>\n  "}};
   var TITLES = {"index.html": {"en": "Masar — an independent index of executive programmes", "ar": "مسار — فهرس مستقل للبرامج التنفيذية"}, "courses.html": {"en": "The index | Masar", "ar": "الفهرس | مسار"}, "course.html": {"en": "Programme | Masar", "ar": "البرنامج | مسار"}, "schools.html": {"en": "The schools | Masar", "ar": "الكليات | مسار"}, "school.html": {"en": "School | Masar", "ar": "الكلية | مسار"}, "lists.html": {"en": "Sets | Masar", "ar": "المجموعات | مسار"}, "list.html": {"en": "Set | Masar", "ar": "المجموعة | مسار"}, "about.html": {"en": "Method | Masar", "ar": "المنهج | مسار"}, "contact.html": {"en": "Contact | Masar", "ar": "التواصل | مسار"}};
   var CHROME = {"en": {"skip": "<a class=\"skip-link\" href=\"#main\">Skip to the index<\/a>", "header": "<header class=\"masthead\">\n    <div class=\"sheet masthead__in\">\n      <a class=\"wordmark\" href=\"index.html\" aria-label=\"Masar\"><svg class=\"wordmark__kufi\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><rect x=\"0\" y=\"1\" width=\"24\" height=\"3.4\"/><rect x=\"20.6\" y=\"1\" width=\"3.4\" height=\"11\"/><rect x=\"8\" y=\"8.6\" width=\"16\" height=\"3.4\"/><rect x=\"8\" y=\"8.6\" width=\"3.4\" height=\"11\"/><rect x=\"0\" y=\"16.2\" width=\"11.4\" height=\"3.4\"/><\/svg><span class=\"wordmark__la\">Masar<\/span><span class=\"wordmark__bar\" aria-hidden=\"true\"><\/span><span class=\"wordmark__ar\" lang=\"ar\">مسار<\/span><\/a>\n\n      <nav id=\"chapnav\" class=\"chapnav\" aria-label=\"Chapters\">\n        <ul>\n            <li><a href=\"index.html\" aria-current=\"page\"><span class=\"sr-only\">§01 <\/span>Fields<\/a><\/li>\n            <li><a href=\"courses.html\"><span class=\"sr-only\">§02 <\/span>The index<\/a><\/li>\n            <li><a href=\"schools.html\"><span class=\"sr-only\">§03 <\/span>Schools<\/a><\/li>\n            <li><a href=\"lists.html\"><span class=\"sr-only\">§04 <\/span>Sets<\/a><\/li>\n            <li><a href=\"about.html\"><span class=\"sr-only\">§05 <\/span>Method<\/a><\/li>\n            <li><a href=\"contact.html\"><span class=\"sr-only\">§06 <\/span>Contact<\/a><\/li>\n        <\/ul>\n      <\/nav>\n\n      <div class=\"tools\">\n        <button class=\"ctl\" type=\"button\" data-currency aria-pressed=\"false\">Fees as published<\/button>\n        <a class=\"ctl\" href=\"ar/index.html\" data-lang-switch data-lang-code=\"AR\" hreflang=\"ar\" lang=\"ar\" aria-label=\"اقرأ هذه الصفحة بالعربية\">العربية<\/a>\n        \n        <button class=\"ctl\" type=\"button\" data-drawer-open aria-label=\"Shortlist\"><span class=\"only-wide\">Shortlist<\/span><span data-shortlist-count>0<\/span><\/button>\n        <button class=\"ctl nav-toggle\" type=\"button\" data-nav-toggle aria-expanded=\"false\" aria-controls=\"chapnav\" aria-label=\"Chapters\">Chapters<\/button>\n      <\/div>\n    <\/div>\n  <\/header>", "footer": "<footer class=\"colophon\">\n    <div class=\"sheet\">\n      <div class=\"colo-grid\">\n        <div>\n          <span class=\"wordmark\"><svg class=\"wordmark__kufi\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><rect x=\"0\" y=\"1\" width=\"24\" height=\"3.4\"/><rect x=\"20.6\" y=\"1\" width=\"3.4\" height=\"11\"/><rect x=\"8\" y=\"8.6\" width=\"16\" height=\"3.4\"/><rect x=\"8\" y=\"8.6\" width=\"3.4\" height=\"11\"/><rect x=\"0\" y=\"16.2\" width=\"11.4\" height=\"3.4\"/><\/svg><span class=\"wordmark__la\">Masar<\/span><span class=\"wordmark__bar\" aria-hidden=\"true\"><\/span><span class=\"wordmark__ar\" lang=\"ar\">مسار<\/span><\/span>\n          <p style=\"margin-block-start:var(--sp-4);max-inline-size:38ch\">An independent index of open-enrolment executive programmes, built in Riyadh. We list. We do not sell.<\/p>\n        <\/div>\n        <div>\n          <h3>Chapters<\/h3>\n          <ul>\n            <li><a href=\"index.html\">Fields<\/a><\/li>\n            <li><a href=\"courses.html\">The index<\/a><\/li>\n            <li><a href=\"schools.html\">Schools<\/a><\/li>\n            <li><a href=\"lists.html\">Sets<\/a><\/li>\n            <li><a href=\"about.html\">Method<\/a><\/li>\n            <li><a href=\"contact.html\">Contact<\/a><\/li>\n          <\/ul>\n        <\/div>\n        <div>\n          <h3>Language<\/h3>\n          <ul>\n            <li><a href=\"ar/index.html\" data-lang-switch lang=\"ar\">العربية<\/a><\/li>\n            <li><button class=\"ctl\" type=\"button\" data-theme-toggle style=\"margin-block-start:var(--sp-2)\">Ground<\/button><\/li>\n          <\/ul>\n        <\/div>\n        <div>\n          <h3>The record<\/h3>\n      <div class=\"record\">\n        <div class=\"record__r\">\n          <span class=\"lbl\">Commercial registration<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">VAT number<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">Maroof<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">Address<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">Telephone<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">WhatsApp<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">Last refreshed<\/span>\n          <span class=\"record__v\"><span dir=\"ltr\">14 September 2026<\/span><\/span>\n        <\/div>\n        <p class=\"record__note\">Printed by the same rule as the rest of the index: an em dash means we have not recorded it yet, not that it does not exist.<\/p>\n      <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"colo-base\">\n        <span>© <span data-year>2026<\/span> Masar<\/span>\n        <span>— not recorded<\/span>\n        <span>Every fee is the school's own published figure, in the school's own currency.<\/span>\n      <\/div>\n    <\/div>\n  <\/footer>", "drawer": "<div class=\"drawer-back\" data-drawer-backdrop><\/div>\n  <aside class=\"drawer\" data-drawer role=\"dialog\" aria-modal=\"true\" aria-label=\"Shortlist\" aria-hidden=\"true\" inert>\n    <div class=\"drawer__h\">\n      <h2 style=\"font-size:var(--fs-500)\">Shortlist<\/h2>\n      <button class=\"ctl\" type=\"button\" data-drawer-close>Close<\/button>\n    <\/div>\n    <div class=\"drawer__b\" data-drawer-body><\/div>\n    <div class=\"drawer__f\">\n      <button class=\"btn btn--ghost btn--block\" type=\"button\" data-shortlist-copy><\/button>\n      <button class=\"btn btn--ghost btn--block\" type=\"button\" data-shortlist-clear><\/button>\n    <\/div>\n  <\/aside>"}, "ar": {"skip": "<a class=\"skip-link\" href=\"#main\">تخطَّ إلى الفهرس<\/a>", "header": "<header class=\"masthead\">\n    <div class=\"sheet masthead__in\">\n      <a class=\"wordmark\" href=\"index.html\" aria-label=\"Masar\"><svg class=\"wordmark__kufi\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><rect x=\"0\" y=\"1\" width=\"24\" height=\"3.4\"/><rect x=\"20.6\" y=\"1\" width=\"3.4\" height=\"11\"/><rect x=\"8\" y=\"8.6\" width=\"16\" height=\"3.4\"/><rect x=\"8\" y=\"8.6\" width=\"3.4\" height=\"11\"/><rect x=\"0\" y=\"16.2\" width=\"11.4\" height=\"3.4\"/><\/svg><span class=\"wordmark__ar\" lang=\"ar\">مسار<\/span><span class=\"wordmark__bar\" aria-hidden=\"true\"><\/span><span class=\"wordmark__la\">Masar<\/span><\/a>\n\n      <nav id=\"chapnav\" class=\"chapnav\" aria-label=\"الفصول\">\n        <ul>\n            <li><a href=\"index.html\" aria-current=\"page\"><span class=\"sr-only\">§01 <\/span>الحقول<\/a><\/li>\n            <li><a href=\"courses.html\"><span class=\"sr-only\">§02 <\/span>الفهرس<\/a><\/li>\n            <li><a href=\"schools.html\"><span class=\"sr-only\">§03 <\/span>الكليات<\/a><\/li>\n            <li><a href=\"lists.html\"><span class=\"sr-only\">§04 <\/span>المجموعات<\/a><\/li>\n            <li><a href=\"about.html\"><span class=\"sr-only\">§05 <\/span>المنهج<\/a><\/li>\n            <li><a href=\"contact.html\"><span class=\"sr-only\">§06 <\/span>التواصل<\/a><\/li>\n        <\/ul>\n      <\/nav>\n\n      <div class=\"tools\">\n        <button class=\"ctl\" type=\"button\" data-currency aria-pressed=\"false\">الرسوم كما نُشرت<\/button>\n        <a class=\"ctl\" href=\"../index.html\" data-lang-switch data-lang-code=\"EN\" hreflang=\"en\" lang=\"en\" aria-label=\"Read this page in English\">English<\/a>\n        \n        <button class=\"ctl\" type=\"button\" data-drawer-open aria-label=\"المختارة\"><span class=\"only-wide\">المختارة<\/span><span data-shortlist-count>0<\/span><\/button>\n        <button class=\"ctl nav-toggle\" type=\"button\" data-nav-toggle aria-expanded=\"false\" aria-controls=\"chapnav\" aria-label=\"الفصول\">الفصول<\/button>\n      <\/div>\n    <\/div>\n  <\/header>", "footer": "<footer class=\"colophon\">\n    <div class=\"sheet\">\n      <div class=\"colo-grid\">\n        <div>\n          <span class=\"wordmark\"><svg class=\"wordmark__kufi\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><rect x=\"0\" y=\"1\" width=\"24\" height=\"3.4\"/><rect x=\"20.6\" y=\"1\" width=\"3.4\" height=\"11\"/><rect x=\"8\" y=\"8.6\" width=\"16\" height=\"3.4\"/><rect x=\"8\" y=\"8.6\" width=\"3.4\" height=\"11\"/><rect x=\"0\" y=\"16.2\" width=\"11.4\" height=\"3.4\"/><\/svg><span class=\"wordmark__ar\" lang=\"ar\">مسار<\/span><span class=\"wordmark__bar\" aria-hidden=\"true\"><\/span><span class=\"wordmark__la\">Masar<\/span><\/span>\n          <p style=\"margin-block-start:var(--sp-4);max-inline-size:38ch\">فهرس مستقل للبرامج التنفيذية مفتوحة التسجيل، بُني في الرياض. نحن نفهرس، ولا نبيع.<\/p>\n        <\/div>\n        <div>\n          <h3>الفصول<\/h3>\n          <ul>\n            <li><a href=\"index.html\">الحقول<\/a><\/li>\n            <li><a href=\"courses.html\">الفهرس<\/a><\/li>\n            <li><a href=\"schools.html\">الكليات<\/a><\/li>\n            <li><a href=\"lists.html\">المجموعات<\/a><\/li>\n            <li><a href=\"about.html\">المنهج<\/a><\/li>\n            <li><a href=\"contact.html\">التواصل<\/a><\/li>\n          <\/ul>\n        <\/div>\n        <div>\n          <h3>اللغة<\/h3>\n          <ul>\n            <li><a href=\"../index.html\" data-lang-switch lang=\"en\">English<\/a><\/li>\n            <li><button class=\"ctl\" type=\"button\" data-theme-toggle style=\"margin-block-start:var(--sp-2)\">Ground<\/button><\/li>\n          <\/ul>\n        <\/div>\n        <div>\n          <h3>السجل<\/h3>\n      <div class=\"record\">\n        <div class=\"record__r\">\n          <span class=\"lbl\">السجل التجاري<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">الرقم الضريبي<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">معروف<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">العنوان<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">الهاتف<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">واتساب<\/span>\n          <span class=\"record__v\"><span class=\"dash\" aria-hidden=\"true\">—<\/span><span class=\"sr-only\">not recorded<\/span><\/span>\n        <\/div>\n        <div class=\"record__r\">\n          <span class=\"lbl\">آخر تحديث<\/span>\n          <span class=\"record__v\"><span dir=\"ltr\">١٤ سبتمبر ٢٠٢٦<\/span><\/span>\n        <\/div>\n        <p class=\"record__note\">يُطبَع بالقاعدة نفسها التي يُطبَع بها الفهرس: الشَّرطة تعني أننا لم نسجّله بعد، لا أنه غير موجود.<\/p>\n      <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"colo-base\">\n        <span>© <span data-year>2026<\/span> Masar<\/span>\n        <span>— غير مسجّل<\/span>\n        <span>كل رسم هو الرقم الذي نشرته الكلية نفسها، وبعملتها.<\/span>\n      <\/div>\n    <\/div>\n  <\/footer>", "drawer": "<div class=\"drawer-back\" data-drawer-backdrop><\/div>\n  <aside class=\"drawer\" data-drawer role=\"dialog\" aria-modal=\"true\" aria-label=\"المختارة\" aria-hidden=\"true\" inert>\n    <div class=\"drawer__h\">\n      <h2 style=\"font-size:var(--fs-500)\">المختارة<\/h2>\n      <button class=\"ctl\" type=\"button\" data-drawer-close>إغلاق<\/button>\n    <\/div>\n    <div class=\"drawer__b\" data-drawer-body><\/div>\n    <div class=\"drawer__f\">\n      <button class=\"btn btn--ghost btn--block\" type=\"button\" data-shortlist-copy><\/button>\n      <button class=\"btn btn--ghost btn--block\" type=\"button\" data-shortlist-clear><\/button>\n    <\/div>\n  <\/aside>"}};
   var LANG = document.documentElement.lang === 'ar' ? 'ar' : 'en';
@@ -6680,6 +6660,7 @@ window.MASAR_I18N = (function () {
       'hero.none': 'Nothing matches — widen it',
 
       'misc.online': 'Online',
+      'img.credit': 'Photograph:',
       'misc.and': 'and',
       'currency.orig': 'Fees as published',
       'currency.sar': 'Fees in riyals',
@@ -6768,6 +6749,7 @@ window.MASAR_I18N = (function () {
       'hero.none': 'لا شيء يطابق — وسّع البحث',
 
       'misc.online': 'عن بُعد',
+      'img.credit': 'الصورة:',
       'misc.and': 'و',
       'currency.orig': 'الرسوم كما نُشرت',
       'currency.sar': 'الرسوم بالريال',
@@ -6990,46 +6972,53 @@ window.MASAR_I18N = (function () {
   }
   const placeOf = (c) => (c.format === 'online' ? t('misc.online') : cityCountry(schoolOf(c)));
 
-  /* --- The school's mark and tone ----------------------------------------- */
-  /* A school prints as its short name on its own colour pair: the row's one
-     "image". The pair is assigned by position in the catalogue, so it never
-     changes between builds; the short name is the one the school itself uses,
-     with a plain initials rule for any school the table does not know. */
-  const MARKS = {
-    's-agsm-university-of-new-south-wales': 'AGSM',
-    's-cbs-executive-copenhagen-business-scho': 'CBS',
-    's-center-for-creative-leadership': 'CCL',
-    's-harvard-kennedy-school': 'HKS',
-    's-imd-business-school': 'IMD',
-    's-kellogg-school-of-management': 'Kellogg',
-    's-mit-sloan-school-of-management': 'MIT',
-    's-michigan-ross-executive-education': 'Ross',
-    's-nus-business-school': 'NUS',
-    's-nyu-stern-school-of-business': 'Stern',
-    's-smith-school-of-business-queen-s-unive': 'Smith',
-    's-stanford-graduate-school-of-business': 'GSB',
-    's-ubc-sauder-school-of-business': 'Sauder',
-    's-uc-berkeley-haas-school-of-business': 'Haas',
-    's-university-of-st-gallen-executive-scho': 'HSG'
+  /* --- The school's photograph -------------------------------------------- */
+  /* Each school is shown by an openly licensed photograph of its own campus,
+     fetched by tools/fetch-images.py and credited in assets/img/credits.json.
+     Paths resolve against the asset base the builder stamps on <html>; the
+     single-file bundle supplies the bytes as data URIs in window.__masarImg
+     instead. A school without a photograph simply shows none. */
+  const ASSETS = document.documentElement.getAttribute('data-assets') || 'assets/';
+  const IMG = {
+    's-agsm-university-of-new-south-wales': 'school-agsm',
+    's-cbs-executive-copenhagen-business-scho': 'school-cbs',
+    's-center-for-creative-leadership': 'school-ccl',
+    's-harvard-kennedy-school': 'school-hks',
+    's-imd-business-school': 'school-imd',
+    's-kellogg-school-of-management': 'school-kellogg',
+    's-mit-sloan-school-of-management': 'school-mit',
+    's-michigan-ross-executive-education': 'school-ross',
+    's-nus-business-school': 'school-nus',
+    's-nyu-stern-school-of-business': 'school-stern',
+    's-smith-school-of-business-queen-s-unive': 'school-smith',
+    's-stanford-graduate-school-of-business': 'school-stanford',
+    's-ubc-sauder-school-of-business': 'school-sauder',
+    's-uc-berkeley-haas-school-of-business': 'school-haas',
+    's-university-of-st-gallen-executive-scho': 'school-stgallen'
   };
-  const STOP = /^(of|the|and|for|at|in|school|business|executive|education|university|college|management|graduate|institute)$/i;
-  function schoolMark(s) {
-    if (!s || !s.id) return '';
-    if (s.mark) return String(s.mark);
-    if (MARKS[s.id]) return MARKS[s.id];
-    const name = (s.name && s.name.en) || '';
-    const words = name.replace(/[^A-Za-z0-9 ]/g, ' ').split(/\s+/).filter(Boolean);
-    const caps = words.filter((w) => /^[A-Z]{2,5}$/.test(w))[0];
-    if (caps) return caps;
-    const kept = words.filter((w) => !STOP.test(w));
-    return (kept.length ? kept : words).slice(0, 3).map((w) => w.charAt(0).toUpperCase()).join('') || '—';
+  const CREDITS = window.MASAR_CREDITS || {};
+  function imgSrc(key, small) {
+    if (!key) return '';
+    const name = key + (small ? '-s' : '') + '.jpg';
+    if (window.__masarImg) return window.__masarImg[name] || window.__masarImg[key + '-s.jpg'] || '';
+    return CREDITS[key] ? ASSETS + 'img/' + name : '';
   }
-  const TONES = 8;
-  const TONE_OF = {};
-  D.schools.forEach((s, i) => { TONE_OF[s.id] = (i % TONES) + 1; });
-  const toneOf = (s) => (s && TONE_OF[s.id]) || '';
-  const mark = (s, large) => '<span class="mark' + (large ? ' mark--l' : '') + '" lang="en" aria-hidden="true">' +
-    esc(schoolMark(s)) + '</span>';
+  function photo(s, opts) {
+    opts = opts || {};
+    const key = s && IMG[s.id];
+    const src = imgSrc(key, opts.small);
+    if (!src) return '';
+    const big = opts.small ? '' : imgSrc(key, true);
+    return '<span class="photo' + (opts.cls ? ' ' + opts.cls : '') + '">' +
+      '<img src="' + src + '"' + (big ? ' srcset="' + big + ' 900w, ' + src + ' 1800w" sizes="' + (opts.sizes || '100vw') + '"' : '') +
+      ' alt="" loading="' + (opts.eager ? 'eager' : 'lazy') + '" decoding="async"></span>';
+  }
+  function credit(s) {
+    const c = s && CREDITS[IMG[s.id]];
+    if (!c) return '';
+    return '<figcaption class="credit">' + esc(t('img.credit')) + ' ' + esc(c.author || '—') +
+      ' · <a href="' + esc(c.page) + '" rel="noopener">' + esc(c.licence) + '</a></figcaption>';
+  }
 
   const ARROW = '<svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
     'stroke-width="1.5" stroke-linecap="square" aria-hidden="true"><path d="M3 12h16M13 6l6 6-6 6"/></svg>';
@@ -7089,7 +7078,7 @@ window.MASAR_I18N = (function () {
     const altTitle = I.LANG === 'ar' ? (c.title && c.title.en) : (c.title && c.title.ar);
 
     return '' +
-      '<article class="row" data-reveal data-tone="' + toneOf(s) + '" style="--i:' + (opts.i || 0) + '">' +
+      '<article class="row" data-reveal style="--i:' + (opts.i || 0) + '">' +
         '<span class="row__idx lbl" aria-hidden="true">' + (opts.n != null ? String(opts.n).padStart(2, '0') : '') + '</span>' +
         '<span class="row__date">' +
           '<span class="row__d num">' + esc(I.dayNum(c.start)) + '</span>' +
@@ -7103,8 +7092,8 @@ window.MASAR_I18N = (function () {
               esc(altTitle) + '</span>'
             : '') +
         '</div>' +
+        (opts.thumb === false ? '' : photo(s, { small: true, cls: 'row__thumb' })) +
         '<div class="row__org" aria-hidden="true">' +
-          mark(s) +
           '<span class="row__orgtxt">' +
             '<span class="row__school">' + val(pick(s.name)) + '</span>' +
             '<span class="row__meta lbl">' +
@@ -7148,7 +7137,7 @@ window.MASAR_I18N = (function () {
         '<span class="grp-head__h" lang="ar">' + esc(I.hijri(g.key)) + '</span>' +
         '<span class="grp-head__c">' + esc(I.intakeCount(g.items.length)) + '</span>' +
         '</div>';
-      const body = g.items.map((c) => row(c, { i: Math.min(n, 6), n: ++n, alt: opts.alt })).join('');
+      const body = g.items.map((c) => row(c, { i: Math.min(n, 6), n: ++n, alt: opts.alt, thumb: opts.thumb })).join('');
       return head + body;
     }).join('');
   }
@@ -7338,7 +7327,7 @@ window.MASAR_I18N = (function () {
       const list = D.schools.map((s) => ({ s: s, n: D.courses.filter((c) => c.school === s.id).length }))
         .filter((x) => x.n > 0)
         .sort((a, b) => b.n - a.n || I.collator.compare(pick(a.s.name), pick(b.s.name)));
-      schools.innerHTML = list.map((x, i) => schoolRow(x.s, x.n, i + 1, Math.min(i, 6))).join('');
+      schools.innerHTML = '<div class="scards">' + list.map((x, i) => schoolCard(x.s, x.n, Math.min(i, 8))).join('') + '</div>';
     }
 
     document.querySelectorAll('[data-stat]').forEach(function (el) {
@@ -7413,14 +7402,17 @@ window.MASAR_I18N = (function () {
     paint();
   }
 
-  function schoolRow(s, n, lot, i) {
-    return '<article class="school-row" data-reveal data-tone="' + toneOf(s) + '" style="--i:' + i + '">' +
-      '<span class="school-row__n" aria-hidden="true">' + String(lot).padStart(2, '0') + '</span>' +
-      '<h3 class="school-row__name">' + mark(s, true) +
-        '<a href="school.html?id=' + s.id + '">' + esc(pick(s.name)) + '</a></h3>' +
-      '<span class="lbl">' + val(pick(s.city)) + '</span>' +
-      '<span class="lbl">' + val(pick(s.country)) + '</span>' +
-      '<span class="lbl">' + esc(I.programmeCount(n)) + '</span>' +
+  function schoolCard(s, n, i) {
+    const pic = photo(s, { small: true, cls: 'scard__photo', sizes: '(min-width: 1080px) 33vw, (min-width: 700px) 50vw, 100vw' }) ||
+      '<span class="photo scard__photo photo--empty" aria-hidden="true"></span>';
+    return '<article class="scard" data-reveal style="--i:' + i + '">' +
+      pic +
+      '<div class="scard__body">' +
+        '<h3 class="scard__name"><a href="school.html?id=' + s.id + '">' + esc(pick(s.name)) + '</a></h3>' +
+        '<span class="scard__meta">' + val(cityCountry(s)) + '</span>' +
+        '<span class="scard__count"><span class="num">' + esc(I.num(n)) + '</span> ' +
+          '<span class="lbl">' + esc(t('spec.programmes')) + '</span></span>' +
+      '</div>' +
       '</article>';
   }
 
@@ -7729,6 +7721,8 @@ window.MASAR_I18N = (function () {
         '</div>' +
 
         '<aside class="enquiry">' +
+          (function () { const pic = photo(s, { small: true, cls: 'enquiry__photo' });
+            return pic ? '<figure class="enquiry__fig">' + pic + credit(s) + '</figure>' : ''; })() +
           '<h2>' + esc(t('rec.enrol')) + '</h2>' +
           '<p>' + esc(t('rec.enrolBody')) + '</p>' +
           wa +
@@ -7791,7 +7785,7 @@ window.MASAR_I18N = (function () {
       rows.sort((a, b) => sort === 'name' ? I.collator.compare(pick(a.s.name), pick(b.s.name))
         : sort === 'country' ? I.collator.compare(pick(a.s.country), pick(b.s.country))
         : b.n - a.n);
-      mount.innerHTML = rows.map((x, i) => schoolRow(x.s, x.n, i + 1, Math.min(i, 6))).join('');
+      mount.innerHTML = '<div class="scards">' + rows.map((x, i) => schoolCard(x.s, x.n, Math.min(i, 8))).join('') + '</div>';
       if (box) box.querySelectorAll('[data-k]').forEach((b) =>
         b.setAttribute('aria-pressed', b.getAttribute('data-k') === sort ? 'true' : 'false'));
       settle(mount);
@@ -7813,13 +7807,15 @@ window.MASAR_I18N = (function () {
     if (crumb) crumb.textContent = pick(s.name);
 
     const courses = D.courses.filter((c) => c.school === s.id).sort((a, b) => a.start.localeCompare(b.start));
+    const pic = photo(s, { cls: 'hero-fig__photo', eager: true });
     mount.innerHTML =
+      (pic ? '<figure class="hero-fig">' + pic + credit(s) + '</figure>' : '') +
       '<div class="chap-head">' +
         '<span class="chap-num num">' + esc(I.num(courses.length)) + '</span>' +
         '<h1 class="chap-title">' + esc(pick(s.name)) + '</h1>' +
         '<p class="chap-note">' + val(cityCountry(s)) + '</p>' +
       '</div>' +
-      '<div class="ledger">' + ledger(courses) + '</div>';
+      '<div class="ledger">' + ledger(courses, { thumb: false }) + '</div>';
     Shortlist.sync();
     settle(mount);
   }
@@ -7899,20 +7895,15 @@ window.MASAR_I18N = (function () {
     });
   }
 
-  /* --- The one motion idea ------------------------------------------------ */
-  /* The rules draw. Nothing else moves, and nothing waits on the observer to
-     become visible: every row is ruled from first paint. */
+  /* --- Motion ------------------------------------------------------------- */
+  /* Blocks rise softly into place as they enter the viewport. A block the
+     script never reaches is never hidden: the opacity rule only applies once
+     the html root is marked .js, and the observer is the only thing that
+     removes it. */
   let booted = false;
   let io = null;
-  let listening = false;
 
-  /* A block is masked only once the observer holds it (.will-reveal), so a
-     block the script never reaches is never hidden. The mask is dropped once
-     its wipe has run, so the settled page carries no masks at all. */
-  function arm(el) {
-    el.classList.add('will-reveal');
-    io.observe(el);
-  }
+  function arm(el) { io.observe(el); }
 
   function initReveal() {
     const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -7925,17 +7916,7 @@ window.MASAR_I18N = (function () {
       entries.forEach(function (e) {
         if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.04 });
-
-    if (!listening) {
-      listening = true;
-      document.addEventListener('transitionend', function (e) {
-        if (e.propertyName !== 'mask-size' && e.propertyName !== '-webkit-mask-size') return;
-        const el = e.target;
-        if (el.nodeType === 1 && el.hasAttribute('data-reveal')) el.classList.add('is-settled');
-      });
-    }
-
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.02 });
     document.querySelectorAll('[data-reveal]:not(.is-in)').forEach(arm);
     setTimeout(function () { booted = true; }, 2800);
   }

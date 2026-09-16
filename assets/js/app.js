@@ -52,46 +52,53 @@
   }
   const placeOf = (c) => (c.format === 'online' ? t('misc.online') : cityCountry(schoolOf(c)));
 
-  /* --- The school's mark and tone ----------------------------------------- */
-  /* A school prints as its short name on its own colour pair: the row's one
-     "image". The pair is assigned by position in the catalogue, so it never
-     changes between builds; the short name is the one the school itself uses,
-     with a plain initials rule for any school the table does not know. */
-  const MARKS = {
-    's-agsm-university-of-new-south-wales': 'AGSM',
-    's-cbs-executive-copenhagen-business-scho': 'CBS',
-    's-center-for-creative-leadership': 'CCL',
-    's-harvard-kennedy-school': 'HKS',
-    's-imd-business-school': 'IMD',
-    's-kellogg-school-of-management': 'Kellogg',
-    's-mit-sloan-school-of-management': 'MIT',
-    's-michigan-ross-executive-education': 'Ross',
-    's-nus-business-school': 'NUS',
-    's-nyu-stern-school-of-business': 'Stern',
-    's-smith-school-of-business-queen-s-unive': 'Smith',
-    's-stanford-graduate-school-of-business': 'GSB',
-    's-ubc-sauder-school-of-business': 'Sauder',
-    's-uc-berkeley-haas-school-of-business': 'Haas',
-    's-university-of-st-gallen-executive-scho': 'HSG'
+  /* --- The school's photograph -------------------------------------------- */
+  /* Each school is shown by an openly licensed photograph of its own campus,
+     fetched by tools/fetch-images.py and credited in assets/img/credits.json.
+     Paths resolve against the asset base the builder stamps on <html>; the
+     single-file bundle supplies the bytes as data URIs in window.__masarImg
+     instead. A school without a photograph simply shows none. */
+  const ASSETS = document.documentElement.getAttribute('data-assets') || 'assets/';
+  const IMG = {
+    's-agsm-university-of-new-south-wales': 'school-agsm',
+    's-cbs-executive-copenhagen-business-scho': 'school-cbs',
+    's-center-for-creative-leadership': 'school-ccl',
+    's-harvard-kennedy-school': 'school-hks',
+    's-imd-business-school': 'school-imd',
+    's-kellogg-school-of-management': 'school-kellogg',
+    's-mit-sloan-school-of-management': 'school-mit',
+    's-michigan-ross-executive-education': 'school-ross',
+    's-nus-business-school': 'school-nus',
+    's-nyu-stern-school-of-business': 'school-stern',
+    's-smith-school-of-business-queen-s-unive': 'school-smith',
+    's-stanford-graduate-school-of-business': 'school-stanford',
+    's-ubc-sauder-school-of-business': 'school-sauder',
+    's-uc-berkeley-haas-school-of-business': 'school-haas',
+    's-university-of-st-gallen-executive-scho': 'school-stgallen'
   };
-  const STOP = /^(of|the|and|for|at|in|school|business|executive|education|university|college|management|graduate|institute)$/i;
-  function schoolMark(s) {
-    if (!s || !s.id) return '';
-    if (s.mark) return String(s.mark);
-    if (MARKS[s.id]) return MARKS[s.id];
-    const name = (s.name && s.name.en) || '';
-    const words = name.replace(/[^A-Za-z0-9 ]/g, ' ').split(/\s+/).filter(Boolean);
-    const caps = words.filter((w) => /^[A-Z]{2,5}$/.test(w))[0];
-    if (caps) return caps;
-    const kept = words.filter((w) => !STOP.test(w));
-    return (kept.length ? kept : words).slice(0, 3).map((w) => w.charAt(0).toUpperCase()).join('') || '—';
+  const CREDITS = window.MASAR_CREDITS || {};
+  function imgSrc(key, small) {
+    if (!key) return '';
+    const name = key + (small ? '-s' : '') + '.jpg';
+    if (window.__masarImg) return window.__masarImg[name] || window.__masarImg[key + '-s.jpg'] || '';
+    return CREDITS[key] ? ASSETS + 'img/' + name : '';
   }
-  const TONES = 8;
-  const TONE_OF = {};
-  D.schools.forEach((s, i) => { TONE_OF[s.id] = (i % TONES) + 1; });
-  const toneOf = (s) => (s && TONE_OF[s.id]) || '';
-  const mark = (s, large) => '<span class="mark' + (large ? ' mark--l' : '') + '" lang="en" aria-hidden="true">' +
-    esc(schoolMark(s)) + '</span>';
+  function photo(s, opts) {
+    opts = opts || {};
+    const key = s && IMG[s.id];
+    const src = imgSrc(key, opts.small);
+    if (!src) return '';
+    const big = opts.small ? '' : imgSrc(key, true);
+    return '<span class="photo' + (opts.cls ? ' ' + opts.cls : '') + '">' +
+      '<img src="' + src + '"' + (big ? ' srcset="' + big + ' 900w, ' + src + ' 1800w" sizes="' + (opts.sizes || '100vw') + '"' : '') +
+      ' alt="" loading="' + (opts.eager ? 'eager' : 'lazy') + '" decoding="async"></span>';
+  }
+  function credit(s) {
+    const c = s && CREDITS[IMG[s.id]];
+    if (!c) return '';
+    return '<figcaption class="credit">' + esc(t('img.credit')) + ' ' + esc(c.author || '—') +
+      ' · <a href="' + esc(c.page) + '" rel="noopener">' + esc(c.licence) + '</a></figcaption>';
+  }
 
   const ARROW = '<svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
     'stroke-width="1.5" stroke-linecap="square" aria-hidden="true"><path d="M3 12h16M13 6l6 6-6 6"/></svg>';
@@ -151,7 +158,7 @@
     const altTitle = I.LANG === 'ar' ? (c.title && c.title.en) : (c.title && c.title.ar);
 
     return '' +
-      '<article class="row" data-reveal data-tone="' + toneOf(s) + '" style="--i:' + (opts.i || 0) + '">' +
+      '<article class="row" data-reveal style="--i:' + (opts.i || 0) + '">' +
         '<span class="row__idx lbl" aria-hidden="true">' + (opts.n != null ? String(opts.n).padStart(2, '0') : '') + '</span>' +
         '<span class="row__date">' +
           '<span class="row__d num">' + esc(I.dayNum(c.start)) + '</span>' +
@@ -165,8 +172,8 @@
               esc(altTitle) + '</span>'
             : '') +
         '</div>' +
+        (opts.thumb === false ? '' : photo(s, { small: true, cls: 'row__thumb' })) +
         '<div class="row__org" aria-hidden="true">' +
-          mark(s) +
           '<span class="row__orgtxt">' +
             '<span class="row__school">' + val(pick(s.name)) + '</span>' +
             '<span class="row__meta lbl">' +
@@ -210,7 +217,7 @@
         '<span class="grp-head__h" lang="ar">' + esc(I.hijri(g.key)) + '</span>' +
         '<span class="grp-head__c">' + esc(I.intakeCount(g.items.length)) + '</span>' +
         '</div>';
-      const body = g.items.map((c) => row(c, { i: Math.min(n, 6), n: ++n, alt: opts.alt })).join('');
+      const body = g.items.map((c) => row(c, { i: Math.min(n, 6), n: ++n, alt: opts.alt, thumb: opts.thumb })).join('');
       return head + body;
     }).join('');
   }
@@ -400,7 +407,7 @@
       const list = D.schools.map((s) => ({ s: s, n: D.courses.filter((c) => c.school === s.id).length }))
         .filter((x) => x.n > 0)
         .sort((a, b) => b.n - a.n || I.collator.compare(pick(a.s.name), pick(b.s.name)));
-      schools.innerHTML = list.map((x, i) => schoolRow(x.s, x.n, i + 1, Math.min(i, 6))).join('');
+      schools.innerHTML = '<div class="scards">' + list.map((x, i) => schoolCard(x.s, x.n, Math.min(i, 8))).join('') + '</div>';
     }
 
     document.querySelectorAll('[data-stat]').forEach(function (el) {
@@ -475,14 +482,17 @@
     paint();
   }
 
-  function schoolRow(s, n, lot, i) {
-    return '<article class="school-row" data-reveal data-tone="' + toneOf(s) + '" style="--i:' + i + '">' +
-      '<span class="school-row__n" aria-hidden="true">' + String(lot).padStart(2, '0') + '</span>' +
-      '<h3 class="school-row__name">' + mark(s, true) +
-        '<a href="school.html?id=' + s.id + '">' + esc(pick(s.name)) + '</a></h3>' +
-      '<span class="lbl">' + val(pick(s.city)) + '</span>' +
-      '<span class="lbl">' + val(pick(s.country)) + '</span>' +
-      '<span class="lbl">' + esc(I.programmeCount(n)) + '</span>' +
+  function schoolCard(s, n, i) {
+    const pic = photo(s, { small: true, cls: 'scard__photo', sizes: '(min-width: 1080px) 33vw, (min-width: 700px) 50vw, 100vw' }) ||
+      '<span class="photo scard__photo photo--empty" aria-hidden="true"></span>';
+    return '<article class="scard" data-reveal style="--i:' + i + '">' +
+      pic +
+      '<div class="scard__body">' +
+        '<h3 class="scard__name"><a href="school.html?id=' + s.id + '">' + esc(pick(s.name)) + '</a></h3>' +
+        '<span class="scard__meta">' + val(cityCountry(s)) + '</span>' +
+        '<span class="scard__count"><span class="num">' + esc(I.num(n)) + '</span> ' +
+          '<span class="lbl">' + esc(t('spec.programmes')) + '</span></span>' +
+      '</div>' +
       '</article>';
   }
 
@@ -791,6 +801,8 @@
         '</div>' +
 
         '<aside class="enquiry">' +
+          (function () { const pic = photo(s, { small: true, cls: 'enquiry__photo' });
+            return pic ? '<figure class="enquiry__fig">' + pic + credit(s) + '</figure>' : ''; })() +
           '<h2>' + esc(t('rec.enrol')) + '</h2>' +
           '<p>' + esc(t('rec.enrolBody')) + '</p>' +
           wa +
@@ -853,7 +865,7 @@
       rows.sort((a, b) => sort === 'name' ? I.collator.compare(pick(a.s.name), pick(b.s.name))
         : sort === 'country' ? I.collator.compare(pick(a.s.country), pick(b.s.country))
         : b.n - a.n);
-      mount.innerHTML = rows.map((x, i) => schoolRow(x.s, x.n, i + 1, Math.min(i, 6))).join('');
+      mount.innerHTML = '<div class="scards">' + rows.map((x, i) => schoolCard(x.s, x.n, Math.min(i, 8))).join('') + '</div>';
       if (box) box.querySelectorAll('[data-k]').forEach((b) =>
         b.setAttribute('aria-pressed', b.getAttribute('data-k') === sort ? 'true' : 'false'));
       settle(mount);
@@ -875,13 +887,15 @@
     if (crumb) crumb.textContent = pick(s.name);
 
     const courses = D.courses.filter((c) => c.school === s.id).sort((a, b) => a.start.localeCompare(b.start));
+    const pic = photo(s, { cls: 'hero-fig__photo', eager: true });
     mount.innerHTML =
+      (pic ? '<figure class="hero-fig">' + pic + credit(s) + '</figure>' : '') +
       '<div class="chap-head">' +
         '<span class="chap-num num">' + esc(I.num(courses.length)) + '</span>' +
         '<h1 class="chap-title">' + esc(pick(s.name)) + '</h1>' +
         '<p class="chap-note">' + val(cityCountry(s)) + '</p>' +
       '</div>' +
-      '<div class="ledger">' + ledger(courses) + '</div>';
+      '<div class="ledger">' + ledger(courses, { thumb: false }) + '</div>';
     Shortlist.sync();
     settle(mount);
   }
@@ -961,20 +975,15 @@
     });
   }
 
-  /* --- The one motion idea ------------------------------------------------ */
-  /* The rules draw. Nothing else moves, and nothing waits on the observer to
-     become visible: every row is ruled from first paint. */
+  /* --- Motion ------------------------------------------------------------- */
+  /* Blocks rise softly into place as they enter the viewport. A block the
+     script never reaches is never hidden: the opacity rule only applies once
+     the html root is marked .js, and the observer is the only thing that
+     removes it. */
   let booted = false;
   let io = null;
-  let listening = false;
 
-  /* A block is masked only once the observer holds it (.will-reveal), so a
-     block the script never reaches is never hidden. The mask is dropped once
-     its wipe has run, so the settled page carries no masks at all. */
-  function arm(el) {
-    el.classList.add('will-reveal');
-    io.observe(el);
-  }
+  function arm(el) { io.observe(el); }
 
   function initReveal() {
     const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -987,17 +996,7 @@
       entries.forEach(function (e) {
         if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.04 });
-
-    if (!listening) {
-      listening = true;
-      document.addEventListener('transitionend', function (e) {
-        if (e.propertyName !== 'mask-size' && e.propertyName !== '-webkit-mask-size') return;
-        const el = e.target;
-        if (el.nodeType === 1 && el.hasAttribute('data-reveal')) el.classList.add('is-settled');
-      });
-    }
-
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.02 });
     document.querySelectorAll('[data-reveal]:not(.is-in)').forEach(arm);
     setTimeout(function () { booted = true; }, 2800);
   }

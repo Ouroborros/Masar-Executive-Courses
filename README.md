@@ -29,6 +29,18 @@ host.
 
 Each page exists twice: English at the root, Arabic under `ar/`.
 
+## Photographs
+
+Every photograph is an openly licensed image of the school's own campus
+from Wikimedia Commons, with the Riyadh skyline for the home hero. They are
+fetched by `.github/workflows/fetch-images.yml` running
+`tools/fetch-images.py`: a *candidates* pass saves small previews and
+licence metadata under `import/img-candidates/` for review, the picks go in
+`import/img-picks.json`, and the *final* pass writes `assets/img/*.jpg`
+(1800px and 900px) plus `assets/img/credits.json`. `tools/build.py` turns the
+credits into `assets/js/credits.js` and a credits table on the Method page.
+Only CC BY, CC BY-SA, CC0 and public-domain files pass the filter.
+
 ## How the bilingual part works
 
 Three rules keep the two languages from drifting apart:

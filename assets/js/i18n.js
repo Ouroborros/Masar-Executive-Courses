@@ -96,6 +96,7 @@ window.MASAR_I18N = (function () {
       'hero.none': 'Nothing matches — widen it',
 
       'misc.online': 'Online',
+      'img.credit': 'Photograph:',
       'misc.and': 'and',
       'currency.orig': 'Fees as published',
       'currency.sar': 'Fees in riyals',
@@ -184,6 +185,7 @@ window.MASAR_I18N = (function () {
       'hero.none': 'لا شيء يطابق — وسّع البحث',
 
       'misc.online': 'عن بُعد',
+      'img.credit': 'الصورة:',
       'misc.and': 'و',
       'currency.orig': 'الرسوم كما نُشرت',
       'currency.sar': 'الرسوم بالريال',

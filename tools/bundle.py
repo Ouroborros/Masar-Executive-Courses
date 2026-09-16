@@ -26,6 +26,7 @@ The output is a body fragment — no <html>/<head>/<body> of its own — because
 that is what the artifact host expects to wrap.
 """
 
+import base64
 import json
 import os
 import re
@@ -84,7 +85,37 @@ def main():
     site_css = read("assets", "css", "site.css")
     data_js = read("assets", "js", "data.js")
     i18n_js = read("assets", "js", "i18n.js")
+    credits_js = read("assets", "js", "credits.js")
     app_js = read("assets", "js", "app.js")
+
+    # --- photographs, as data URIs ----------------------------------------
+    # The demo is one file with no external requests, so the photographs the
+    # pages reference travel inside it. Only the 900px renditions are carried
+    # (app.js falls back to them where a page asks for the large one); the
+    # home hero keeps both of its renditions since it is the first screen.
+    images = {}
+    img_dir = os.path.join(HERE, "assets", "img")
+    hero_key = re.search(r'"hero_image":\s*"([^"]+)"', read("tools", "build.py"))
+    hero_key = hero_key.group(1) if hero_key else ""
+    if os.path.isdir(img_dir):
+        for name in sorted(os.listdir(img_dir)):
+            if not name.endswith(".jpg"):
+                continue
+            keep = name.endswith("-s.jpg") or name in (hero_key + ".jpg",)
+            if not keep:
+                continue
+            with open(os.path.join(img_dir, name), "rb") as fh:
+                images[name] = "data:image/jpeg;base64," + base64.b64encode(fh.read()).decode("ascii")
+
+    def inline_images(html):
+        def swap(m):
+            name = m.group(1)
+            return images.get(name, images.get(name.replace(".jpg", "-s.jpg"), m.group(0)))
+        return re.sub(r'(?:\.\./)?assets/img/([A-Za-z0-9_.-]+\.jpg)', swap, html)
+
+    for page in PAGES:
+        for lang in ("en", "ar"):
+            bodies[page][lang] = inline_images(bodies[page][lang])
 
     # app.js is an IIFE over the globals it needs; re-open it so the bundle can
     # hand it a location/history pair that speaks hash routes.
@@ -136,6 +167,10 @@ html {{ background: var(--ground); }}
 
 <script>
 {data_js}
+</script>
+<script>
+{credits_js}
+window.__masarImg = {images_js};
 </script>
 
 <script>
@@ -248,6 +283,8 @@ html {{ background: var(--ground); }}
         fonts=fonts,
         site_css=site_css,
         data_js=data_js,
+        credits_js=credits_js,
+        images_js=js(images),
         i18n_js=i18n_js,
         app_js=wrapped,
         bodies=js(bodies),

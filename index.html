@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" data-assets="assets/">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,8 +56,9 @@
 
   <main id="main">
 
-    <section class="hero">
-      <div class="sheet">
+    <section class="hero hero--photo">
+      <div class="hero__fig" aria-hidden="true"></div>
+      <div class="sheet hero__in">
         <p class="dateline lbl">
           <span>An independent index · Riyadh</span>
           <span class="dateline__sep" aria-hidden="true">/</span>
@@ -65,59 +66,53 @@
           <span class="dateline__sep" aria-hidden="true">/</span>
           <span class="hijri" lang="ar" data-today-hijri>—</span>
         </p>
-
-        <div class="hero__grid">
-          <div>
-            <h1>
-              <span class="ln" data-reveal style="--i:0">The fee.</span>
-              <span class="ln" data-reveal style="--i:1">The city.</span>
-              <span class="ln" data-reveal style="--i:2">The dates.</span>
-            </h1>
-            <span class="hero__echo alt-run reveal--bare" lang="ar" data-reveal style="--i:3">الرسوم. المدينة. التواريخ.</span>
-            <p class="hero__stand reveal--bare" data-reveal style="--i:4">Masar lists open-enrolment executive programmes from the
-              world's business schools — the fee each school publishes, the city it is taught in,
-              the dates it runs and the number of teaching days. Nothing is ranked. Nothing is sold.</p>
-            <div class="finder" data-home-finder data-reveal style="--i:5">
-              <label class="finder__f">
-                <span class="lbl">Field</span>
-                <select data-finder="subject"><option value="">Any field</option></select>
-              </label>
-              <label class="finder__f">
-                <span class="lbl">City</span>
-                <select data-finder="city"><option value="">Any city</option></select>
-              </label>
-              <label class="finder__f">
-                <span class="lbl">Month</span>
-                <select data-finder="month"><option value="">Any month</option></select>
-              </label>
-              <a class="btn btn--solid finder__go" href="courses.html" data-finder-go>Browse the index</a>
-            </div>
-            <p class="finder__aside reveal--bare" data-reveal style="--i:6">
-              <a href="contact.html#teams">Enrolling a team?</a>
-            </p>
-          </div>
-
-          <div class="totals">
-            <a class="totals__it" href="courses.html" data-reveal style="--i:1">
-              <span class="totals__n num" data-stat="programmes">189</span>
-              <span class="totals__l lbl">Programmes</span>
-            </a>
-            <a class="totals__it" href="schools.html" data-reveal style="--i:2">
-              <span class="totals__n num" data-stat="schools">16</span>
-              <span class="totals__l lbl">Business schools</span>
-            </a>
-            <a class="totals__it" href="courses.html" data-reveal style="--i:3">
-              <span class="totals__n num" data-stat="countries">6</span>
-              <span class="totals__l lbl">Countries of delivery</span>
-            </a>
-          </div>
+        <h1 class="hero__t" data-reveal style="--i:0">Executive programmes,<br>listed plainly.</h1>
+        <p class="hero__stand" data-reveal style="--i:1">Open-enrolment programmes from the world's business schools —
+          the fee each school publishes, the city it is taught in, the dates and the teaching days.
+          Nothing is ranked. Nothing is sold.</p>
+      </div>
+      <div class="sheet">
+        <div class="finder finder--panel" data-home-finder data-reveal style="--i:2">
+          <label class="finder__f">
+            <span class="lbl">Field</span>
+            <select data-finder="subject"><option value="">Any field</option></select>
+          </label>
+          <label class="finder__f">
+            <span class="lbl">City</span>
+            <select data-finder="city"><option value="">Any city</option></select>
+          </label>
+          <label class="finder__f">
+            <span class="lbl">Month</span>
+            <select data-finder="month"><option value="">Any month</option></select>
+          </label>
+          <a class="btn btn--solid finder__go" href="courses.html" data-finder-go>Browse the index</a>
         </div>
+      </div>
+    </section>
+
+    <section class="totals-band">
+      <div class="sheet totals">
+        <a class="totals__it" href="courses.html" data-reveal style="--i:1">
+          <span class="totals__n num" data-stat="programmes">189</span>
+          <span class="totals__l lbl">Programmes</span>
+        </a>
+        <a class="totals__it" href="schools.html" data-reveal style="--i:2">
+          <span class="totals__n num" data-stat="schools">16</span>
+          <span class="totals__l lbl">Business schools</span>
+        </a>
+        <a class="totals__it" href="courses.html" data-reveal style="--i:3">
+          <span class="totals__n num" data-stat="countries">6</span>
+          <span class="totals__l lbl">Countries of delivery</span>
+        </a>
+        <a class="totals__it totals__it--link" href="contact.html#teams" data-reveal style="--i:4">
+          <span class="totals__n">Enrolling a team?</span>
+          <span class="totals__l lbl">Ask for a proposal</span>
+        </a>
       </div>
     </section>
     <section class="chapter">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§01</span>
           <h2 class="chap-title">Fields<span class="alt-run">الحقول</span></h2>
           <p class="chap-note">Twelve fields run through the index. Choose one and the catalogue opens filtered to it.</p>
         </div>
@@ -129,7 +124,6 @@
     <section class="chapter">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§02</span>
           <h2 class="chap-title">The next intakes<span class="alt-run">أقرب الدفعات</span></h2>
           <p class="chap-note">Grouped by start date, soonest first. Ten here; the rest are in the index.</p>
         </div>
@@ -145,7 +139,6 @@
     <section class="chapter">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§03</span>
           <h2 class="chap-title">The schools<span class="alt-run">الكليات</span></h2>
           <p class="chap-note">Every institution with programmes in the index, named — no logos, no rankings.</p>
         </div>
@@ -158,7 +151,6 @@
     <section class="chapter chapter--band" id="method">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§04</span>
           <h2 class="chap-title">Method<span class="alt-run" lang="ar">المنهج</span></h2>
           <p class="chap-note">How a programme gets into the index, and what we will not do to it.</p>
         </div>
@@ -211,7 +203,6 @@
     <section class="chapter" id="teams">
       <div class="sheet">
         <div class="chap-head">
-          <span class="chap-num">§05</span>
           <h2 class="chap-title">Enrolling a team<span class="alt-run">تسجيل فريق</span></h2>
           <p class="chap-note">Masar does not enrol on a school's behalf. It points you at the right intake and the right desk.</p>
         </div>
@@ -310,6 +301,7 @@
 
   <script src="assets/js/data.js"></script>
   <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/credits.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
