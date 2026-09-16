@@ -61,17 +61,28 @@ TERMS = {
   "texture-sadu":    ["Al Sadu weaving", "Sadu weaving Bedouin textile"],
 }
 
+PAUSE = 1.5   # seconds between API calls: Commons answers 429 to a burst
+
 def api(params):
   params = dict(params, format="json")
   url = API + "?" + urllib.parse.urlencode(params)
   req = urllib.request.Request(url, headers={"User-Agent": UA})
-  for attempt in range(4):
+  for attempt in range(7):
     try:
       with urllib.request.urlopen(req, timeout=60) as r:
-        return json.loads(r.read().decode("utf-8"))
-    except Exception as e:  # noqa: BLE001
-      if attempt == 3: raise
-      time.sleep(2 * (attempt + 1))
+        data = json.loads(r.read().decode("utf-8"))
+      time.sleep(PAUSE)
+      return data
+    except urllib.error.HTTPError as e:
+      if e.code == 429 and attempt < 6:
+        wait = int(e.headers.get("Retry-After") or 0) or 15 * (attempt + 1)
+        print(f"  429 from Commons, waiting {wait}s", flush=True)
+        time.sleep(wait); continue
+      if attempt == 6: raise
+      time.sleep(3 * (attempt + 1))
+    except Exception:  # noqa: BLE001
+      if attempt == 6: raise
+      time.sleep(3 * (attempt + 1))
 
 def fetch(url):
   req = urllib.request.Request(url, headers={"User-Agent": UA})
@@ -83,7 +94,7 @@ def fetch(url):
       if attempt == 3: raise
       time.sleep(2 * (attempt + 1))
 
-def search(term, limit=12):
+def search(term, limit=10):
   q = api({"action": "query", "list": "search", "srsearch": term + " filetype:bitmap",
            "srnamespace": 6, "srlimit": limit})
   return [h["title"] for h in q.get("query", {}).get("search", [])]
@@ -121,18 +132,21 @@ def candidates(root, per=6):
   report = {}
   for key, terms in TERMS.items():
     picked = []
-    for term in terms:
-      titles = search(term)
-      if not titles: continue
-      picked = [c for c in info(titles) if usable(c)][:per]
-      if picked: break
+    try:
+      for term in terms:
+        titles = search(term)
+        if not titles: continue
+        picked = [c for c in info(titles) if usable(c)][:per]
+        if picked: break
+    except Exception as e:  # noqa: BLE001 — one key must not sink the run
+      print(f"{key}: failed ({e})", flush=True)
     d = os.path.join(root, key); os.makedirs(d, exist_ok=True)
     for n, c in enumerate(picked):
       try:
         open(os.path.join(d, f"{n}.jpg"), "wb").write(fetch(c["thumb"]))
       except Exception as e:  # noqa: BLE001
         c["thumb_error"] = str(e)
-      time.sleep(0.4)
+      time.sleep(0.8)
     report[key] = picked
     print(f"{key}: {len(picked)} candidates", flush=True)
   json.dump(report, open(os.path.join(root, "candidates.json"), "w"), indent=1, ensure_ascii=False)
