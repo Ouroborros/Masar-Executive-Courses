@@ -38,7 +38,7 @@ from datetime import date, datetime, timedelta
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-WINDOW = (date(2026, 9, 1), date(2027, 8, 31))
+WINDOW = (date(2026, 9, 1), date(2028, 8, 31))   # two intake seasons
 COLS = ["source_url", "school", "school_ar", "school_city", "school_city_ar",
         "school_country", "school_country_ar", "region", "title", "title_ar",
         "summary", "summary_ar", "subject", "format", "start", "end", "days",
@@ -257,8 +257,18 @@ def main():
             has_start = bool(re.match(r"^\d{4}-\d{2}-\d{2}$", r.get("start", "")))
             if r.get("start") and not has_start:
                 why.append("start '{}' unparseable".format(r["start"]))
-            elif has_start and not (WINDOW[0] <= d(r["start"]) <= WINDOW[1]):
-                why.append("start outside window")
+            elif has_start and d(r["start"]) < WINDOW[0]:
+                # A session that has already run is not a future intake, but
+                # the programme still exists on the school's page: keep it as
+                # an undated row and note the last printed date.
+                r["date_note"] = r.get("date_note") or "last printed intake {}".format(r["start"])
+                r["start"], r["end"], has_start = "", "", False
+            elif has_start and d(r["start"]) > WINDOW[1]:
+                why.append("start beyond window")
+            if not r.get("format"):
+                # A stub page that prints no format: campus programmes by default,
+                # recorded in the crawl status so the operator can check.
+                r["format"] = "in-person"
             has_price = bool(re.match(r"^\d+(\.\d+)?$", r.get("price", "")))
             cur = r.get("currency", "").upper()
             if has_price and cur in ("", "UNKNOWN"):

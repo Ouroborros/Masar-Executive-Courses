@@ -40,7 +40,7 @@ REGIONS = {"mena", "europe", "americas", "asia", "africa", "oceania"}
 SUBJECTS = {"leadership", "finance", "strategy", "digital", "data", "marketing",
             "operations", "people", "sustainability", "negotiation",
             "entrepreneurship", "healthcare"}
-WINDOW = (date(2026, 9, 1), date(2027, 8, 31))
+WINDOW = (date(2026, 9, 1), date(2028, 8, 31))
 
 COURSE_FIELDS = ["id", "school", "subject", "format", "start", "days", "price",
                  "langs", "title", "summary", "highlights", "audience"]
@@ -210,7 +210,7 @@ def check_course(c, known_course_ids, school_ids, errs, where, scraped=False):
         errs.append("{} [{}]: unknown currency '{}'".format(where, cid, currency))
     elif c["price"] is None:
         pass
-    elif not isinstance(c["price"], int) or not 200 <= usd <= 120000:
+    elif not isinstance(c["price"], int) or not 100 <= usd <= 120000:
         errs.append("{} [{}]: price out of range ({} {})".format(
             where, cid, c["price"], currency))
     elif c["days"] is None:
@@ -222,7 +222,7 @@ def check_course(c, known_course_ids, school_ids, errs, where, scraped=False):
         # Scraped reality outruns the editorial ceiling: Stanford's 2026
         # short programmes list at up to 2,950/day (29,500 over 10 days).
         per_day = usd / max(c["days"], 1)
-        if not 60 <= per_day <= (4000 if scraped else 2500):
+        if not 30 <= per_day <= (6000 if scraped else 2500):
             errs.append("{} [{}]: {:.0f} USD/day is implausible ({} {} over {} days)".format(
                 where, cid, per_day, c["price"], currency, c["days"]))
     if "rating" in c and (not isinstance(c["rating"], (int, float)) or not 3.5 <= c["rating"] <= 5.0):
@@ -328,11 +328,15 @@ def main():
     def norm(t):
         return re.sub(r"[^a-z0-9 ]", "", t.lower()).strip()
 
-    titles = {norm(t): "data.js" for t in re.findall(r"title: \{ en: '([^']+)'", src)}
+    # Two schools may each run a "Corporate Finance"; one school may not list
+    # the same title twice, so the key is (school, title).
+    titles = {}
+    for m in re.finditer(r"school: '([^']+)'.*?title: \{\s*\n?\s*en: '([^']+)'", src, re.S):
+        titles[(m.group(1), norm(m.group(2)))] = "data.js"
     for c in new_courses:
         if not is_pair(c.get("title", {})):
             continue
-        k = norm(c["title"]["en"])
+        k = (c["school"], norm(c["title"]["en"]))
         if k in titles:
             errs.append("duplicate title '{}' ({} and {})".format(c["title"]["en"], titles[k], c["id"]))
         titles[k] = c["id"]

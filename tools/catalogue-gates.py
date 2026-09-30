@@ -17,7 +17,8 @@ exclusion stays on record:
     (fx.py); a null fee is allowed and prints "not published"
   * later sessions of a course already kept (one course per title, at its
     next upcoming start; a dated session beats an undated one)
-  * titles already present in assets/js/data.js (near-duplicate rule)
+  * titles already present in assets/js/data.js for the same school (two
+    schools may each run a "Corporate Finance"; one school may not list it twice)
 """
 
 import csv
@@ -39,11 +40,12 @@ def norm(t):
 
 
 def existing_titles():
+    """(school id, normalised title) pairs already in data.js."""
     src = open(DATA, encoding="utf-8").read()
-    # pair() in merge-catalogue emits both single-line `title: { en: '...'`
-    # and a wrapped form with `en:` on its own line.
-    found = re.findall(r"title: \{\s*\n?\s*en: '([^']+)'", src)
-    return {norm(t) for t in found}
+    out = set()
+    for m in re.finditer(r"school: '([^']+)'.*?title: \{\s*\n?\s*en: '([^']+)'", src, re.S):
+        out.add((m.group(1), norm(m.group(2))))
+    return out
 
 
 def main():
@@ -56,14 +58,14 @@ def main():
     # earliest start wins for each title within the batch
     best = {}
     for c in batch:
-        k = norm(c["title"]["en"])
+        k = (c["school"], norm(c["title"]["en"]))
         cur = best.get(k)
         if cur is None or (c["start"] and (not cur["start"] or c["start"] < cur["start"])):
             best[k] = c
 
     keep, drop = [], []
     for c in batch:
-        k = norm(c["title"]["en"])
+        k = (c["school"], norm(c["title"]["en"]))
         why = []
         days = c.get("days")
         if days is not None and (not isinstance(days, int) or not 1 <= days <= 400):
@@ -73,11 +75,13 @@ def main():
         if price is not None and usd is None:
             why.append("price/currency unusable")
         elif usd is not None:
-            if not 200 <= usd <= 120000:
+            if not 100 <= usd <= 120000:
                 why.append("USD-equivalent price out of range ({:.0f})".format(usd))
             elif isinstance(days, int):
+                # IMD's two-day board programmes list at 6,600–8,600 CHF; a
+                # 20-day online programme at 920 USD is 46 a day. Both are real.
                 per_day = usd / max(days, 1)
-                if not 60 <= per_day <= 4000:
+                if not 30 <= per_day <= 6000:
                     why.append("{:.0f} USD/day implausible ({} {} over {} days)".format(
                         per_day, price, c.get("currency", "USD"), days))
         if best[k] is not c:

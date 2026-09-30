@@ -289,3 +289,76 @@ catalogue models a school's city, not a session's.
 
 Crawl inputs and datasets are on the Apify account under the run ids in the
 session transcript; the robots review lists the ones that matter.
+
+
+# The full catalogue — 2026-09-30
+The 14 September pass kept only short courses with a printed date, fee and
+day count (344). The operator asked for every executive-education programme
+the fifteen schools publish, so the catalogue model was widened (a record may
+carry a null start, fee or day count and the school's own duration line; see
+`docs/DESIGN.md`, "Data honesty") and every school was crawled again over its
+whole programme section.
+
+## What ran
+
+| Step | Detail |
+| --- | --- |
+| Crawl | One `apify/website-content-crawler` run per school, `respectRobotsTxtFile: true`, `htmlTransformer: none`, sitemaps on, one include-glob per school's programme path, one concurrent request on the four Crawl-delay hosts. Cheerio for thirteen hosts; a Firefox browser for CBS (client-side Danish pages) and IMD (finder). One follow-up browser run of 11 pages (six Ross pages that returned a login shell to the HTTP client, four empty NUS pages, one AGSM page). Robots review unchanged from `docs/research/school-robots-2026-09-14.md`. |
+| Extraction | One Sonnet agent per school under `EXTRACT-RULES v2` (facts only; every open-enrolment programme, dated or not; one row per intake; `duration` line when no day count; `date_note`/`price_note` for approximate or qualified facts). 823 session rows across 15 schools. |
+| Conversion | `tools/school-rows-to-csv.py`: 5 rows dropped (start beyond window ×5), later intakes folded to the earliest dated start, past-only programmes kept as undated with the last printed date noted, 818 courses written. Arabic titles and duration lines from `import/translations-school.json` (962 strings, agent-translated, patterned durations rendered deterministically). |
+| Gates + merge | reset → `catalogue-gates.py` (1 rejected: USD-equivalent price out of range (58)) → `merge-catalogue.py --scraped`: **15 schools, 817 courses, validation clean**. Duplicate-title rule now keyed by (school, title); per-day plausibility 30–6,000 USD, checked only when both fee and day count are printed. |
+| Build | `build.py`, `bundle.py`, browser sweep of nine page types × two locales × two widths: 817 / 15 / 6 on the front page, 817 in the index, 173 under "dates to be announced", no page errors, no horizontal scroll. |
+
+## By school
+
+| School | Courses | Undated | No fee | No day count | Source host | Run |
+| --- | --- | --- | --- | --- | --- | --- |
+| University of St. Gallen Executive School | 151 | 17 | 1 | 32 | es.unisg.ch | `fO5gAEaLcyu1WsRic` |
+| MIT Sloan School of Management | 91 | 15 | 6 | 46 | executive.mit.edu | `ghbBCmvHlrUB3GtIf` |
+| UBC Sauder School of Business | 91 | 22 | 1 | 52 | growth.sauder.ubc.ca | `vJhbACf8iZjYFDSe9` |
+| IMD Business School | 70 | 9 | 0 | 36 | www.imd.org | `iltw6ya4ajwbfHNoD` |
+| CBS Executive, Copenhagen Business School | 66 | 23 | 0 | 7 | cbs-executive.dk | `k2zztEHkG25IxOCOI` |
+| NUS Business School | 60 | 26 | 0 | 20 | executive-education.nus.edu.sg | `W02RDKmzbNcptb73V` |
+| Kellogg School of Management | 58 | 8 | 7 | 24 | www.kellogg.northwestern.edu | `0JInfLXrcLwYyMbfp` |
+| Harvard Kennedy School | 42 | 5 | 0 | 12 | www.hks.harvard.edu | `3BNUpS6Y7sghjPJex` |
+| Stanford Graduate School of Business | 40 | 13 | 2 | 19 | www.gsb.stanford.edu | `QBrxZtRi9dtRsOpeA` |
+| UC Berkeley Haas School of Business | 39 | 9 | 0 | 24 | executive.berkeley.edu | `bpIsJWugo5h8x3Kic` |
+| Smith School of Business, Queen's University | 32 | 1 | 1 | 1 | smith.queensu.ca | `kQHDsKgwwSyBvNFhH` |
+| AGSM, University of New South Wales | 28 | 7 | 0 | 8 | www.unsw.edu.au | `2CXntfZa1n0GjT3EH` |
+| NYU Stern School of Business | 21 | 15 | 0 | 2 | execed.stern.nyu.edu | `gq3YgfnUnTN52HAZO` |
+| Michigan Ross Executive Education | 18 | 1 | 0 | 11 | michiganross.umich.edu | `ys8K3NOnLEMgBfbRC` |
+| Center for Creative Leadership | 10 | 2 | 0 | 3 | www.ccl.org | `Zb1NaRLBw7bYk14Iz` |
+
+Follow-up run `cIZjfKSqViPHEr6zo` (11 pages). Totals: formats {'in-person': 484, 'online': 243, 'blended': 90}; languages {'en': 663, 'da': 44, 'de': 110}; currencies {'AUD': 28, 'DKK': 66, 'USD': 333, 'EUR': 6, 'CHF': 211, 'SGD': 51, 'GBP': 1, 'CAD': 121}.
+
+## Decisions worth knowing
+
+- The window is now two intake seasons (to 31 August 2028). A session printed
+  after that is dropped; a programme whose only printed session has already
+  run is kept as undated, so a school's stale "to be announced" pages still
+  appear, as the school shows them.
+- German-taught (St. Gallen) and Danish-taught (CBS) programmes keep the
+  title the school prints; the Arabic title is a translation of its meaning.
+- Seven Kellogg and St. Gallen stub pages print no format; they default to
+  in-person and are the only inferred fact in the set.
+- Agents' judgement calls (which fee tier, whether a date span counts as
+  teaching days, split-format rows) are recorded in their hand-back notes in
+  the session; the rows carry `price_note` / `date_note` where they apply.
+- Known gaps: CCL lists only the first eight sessions of two programmes on
+  its listing page (the earliest is kept, which is what the catalogue
+  shows); IMD's five online Sprint programmes were not in the finder crawl;
+  the Center for Creative Leadership still has no campus photograph.
+
+## Runbook
+
+    # per school: apify/website-content-crawler with the include-glob for its programme path
+    # per school: an extraction agent under scratchpad/full/EXTRACT-RULES.md -> extract/<school>.json
+    python3 tools/school-rows-to-csv.py <extract-dir> --out import/courses-school.csv \
+        --schools-existing <schools.json from data.js> --translations import/translations-school.json
+    # translate import/courses-school.csv.untranslated.json, merge into translations-school.json, rerun
+    python3 tools/spreadsheet-to-batch.py import/courses-school.csv --out import/batch-school.json
+    python3 tools/reset-catalogue.py --write
+    python3 tools/catalogue-gates.py import/batch-school.json
+    python3 tools/merge-catalogue.py import --scraped --write
+    python3 tools/curate-lists.py --write
+    python3 tools/build.py && python3 tools/bundle.py

@@ -171,12 +171,12 @@ window.MASAR_DATA = (function () {
      published figure · sourceUrl: internal provenance, never rendered */
   const courses = [
     {
-      id: 'c-strategic-adaptive-leadership', school: 's-agsm-university-of-new-south-wales', subject: 'leadership', format: 'in-person',
-      start: '2026-09-16', days: 3, price: 5150, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/strategic-adaptive-leadership',
-      title: { en: 'Strategic & Adaptive Leadership', ar: 'القيادة الاستراتيجية والتكيّفية' },
+      id: 'c-authentic-communicator-activating-pres', school: 's-agsm-university-of-new-south-wales', subject: 'leadership', format: 'in-person',
+      start: '2026-10-13', days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/the-authentic-communicator-activating-presence', end: '2026-10-14',
+      title: { en: 'Authentic Communicator: Activating Presence', ar: 'المتواصل الأصيل: تفعيل الحضور' },
       summary: {
-        en: 'A 3-day on-campus program from AGSM, University of New South Wales, running 16 September 2026 to 18 September 2026.',
-        ar: 'برنامج حضوري لمدة 3 أيام من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 16 سبتمبر 2026 إلى 18 سبتمبر 2026.'
+        en: 'A 2-day on-campus program from AGSM, University of New South Wales, running 13 October 2026 to 14 October 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 13 أكتوبر 2026 إلى 14 أكتوبر 2026.'
       },
       highlights: {
         en: [],
@@ -185,36 +185,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-emerging-leader-program', school: 's-agsm-university-of-new-south-wales', subject: 'leadership', format: 'in-person',
-      start: '2026-09-22', days: 4, price: 7150, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/emerging-leader-program',
-      title: { en: 'Emerging Leader Program', ar: 'برنامج القائد الصاعد' },
-      summary: {
-        en: 'A 4-day on-campus program from AGSM, University of New South Wales, running 22 September 2026 to 25 September 2026.',
-        ar: 'برنامج حضوري لمدة 4 أيام من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 22 سبتمبر 2026 إلى 25 سبتمبر 2026.'
-      },
-      highlights: {
-        en: [],
-        ar: []
-      },
-      audience: { en: '', ar: '' }
-    },
-    {
-      id: 'c-ai-for-board-directors', school: 's-agsm-university-of-new-south-wales', subject: 'leadership', format: 'in-person',
-      start: '2026-09-24', days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/ai-for-board-directors',
-      title: { en: 'AI for Board Directors', ar: 'الذكاء الاصطناعي لأعضاء مجالس الإدارة' },
-      summary: {
-        en: 'A 2-day on-campus program from AGSM, University of New South Wales, running 24 September 2026 to 25 September 2026.',
-        ar: 'برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 24 سبتمبر 2026 إلى 25 سبتمبر 2026.'
-      },
-      highlights: {
-        en: [],
-        ar: []
-      },
-      audience: { en: '', ar: '' }
-    },
-    {
-      id: 'c-design-thinking-experimentation', school: 's-agsm-university-of-new-south-wales', subject: 'entrepreneurship', format: 'in-person',
-      start: '2026-10-13', days: 3, price: 5150, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/design-thinking-experimentation',
+      id: 'c-design-thinking-experimentation', school: 's-agsm-university-of-new-south-wales', subject: 'strategy', format: 'in-person',
+      start: '2026-10-13', days: 3, price: 5150, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/design-thinking-experimentation', end: '2026-10-15',
       title: { en: 'Design Thinking & Experimentation', ar: 'التفكير التصميمي والتجريب' },
       summary: {
         en: 'A 3-day on-campus program from AGSM, University of New South Wales, running 13 October 2026 to 15 October 2026.',
@@ -227,22 +199,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-the-authentic-communicator-activating', school: 's-agsm-university-of-new-south-wales', subject: 'leadership', format: 'in-person',
-      start: '2026-10-13', days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/the-authentic-communicator-activating-presence',
-      title: { en: 'The Authentic Communicator: Activating Presence', ar: 'المتواصل الأصيل: تفعيل الحضور' },
-      summary: {
-        en: 'A 2-day on-campus program from AGSM, University of New South Wales, running 13 October 2026 to 14 October 2026.',
-        ar: 'برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 13 أكتوبر 2026 إلى 14 أكتوبر 2026.'
-      },
-      highlights: {
-        en: [],
-        ar: []
-      },
-      audience: { en: '', ar: '' }
-    },
-    {
       id: 'c-project-management-excellence', school: 's-agsm-university-of-new-south-wales', subject: 'operations', format: 'in-person',
-      start: '2026-10-19', days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/project-management-excellence',
+      start: '2026-10-19', days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/project-management-excellence', end: '2026-10-20',
       title: { en: 'Project Management Excellence', ar: 'التميّز في إدارة المشاريع' },
       summary: {
         en: 'A 2-day on-campus program from AGSM, University of New South Wales, running 19 October 2026 to 20 October 2026.',
@@ -255,8 +213,22 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-ai-for-organisational-innovation', school: 's-agsm-university-of-new-south-wales', subject: 'digital', format: 'online',
+      start: '2026-10-21', days: null, price: 2500, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/ai-for-organisational-innovation', end: '2026-11-10', duration: { en: '3 weeks', ar: '3 أسابيع' },
+      title: { en: 'AI for Organisational Innovation', ar: 'الذكاء الاصطناعي للابتكار المؤسسي' },
+      summary: {
+        en: 'An online program from AGSM, University of New South Wales, 3 weeks, running 21 October 2026 to 10 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، 3 أسابيع، من 21 أكتوبر 2026 إلى 10 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-tackling-complexity-through-leadership', school: 's-agsm-university-of-new-south-wales', subject: 'leadership', format: 'in-person',
-      start: '2026-10-21', days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/tackling-complexity-through-leadership',
+      start: '2026-10-21', days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/tackling-complexity-through-leadership', end: '2026-10-22',
       title: { en: 'Tackling Complexity through Leadership', ar: 'مواجهة التعقيد بالقيادة' },
       summary: {
         en: 'A 2-day on-campus program from AGSM, University of New South Wales, running 21 October 2026 to 22 October 2026.',
@@ -270,7 +242,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-general-manager-program', school: 's-agsm-university-of-new-south-wales', subject: 'leadership', format: 'in-person',
-      start: '2026-10-26', days: 5, price: 14990, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/general-manager-program',
+      start: '2026-10-26', days: 5, price: 14990, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/general-manager-program', end: '2026-10-30',
       title: { en: 'General Manager Program', ar: 'برنامج المدير العام' },
       summary: {
         en: 'A 5-day on-campus program from AGSM, University of New South Wales, running 26 October 2026 to 30 October 2026.',
@@ -283,8 +255,22 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-leading-with-emotional-intelligence', school: 's-agsm-university-of-new-south-wales', subject: 'leadership', format: 'in-person',
+      start: '2026-10-29', days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/leading-with-emotional-intelligence', end: '2026-10-30',
+      title: { en: 'Leading with Emotional Intelligence', ar: 'القيادة بالذكاء العاطفي' },
+      summary: {
+        en: 'A 2-day on-campus program from AGSM, University of New South Wales, running 29 October 2026 to 30 October 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 29 أكتوبر 2026 إلى 30 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-essentials-of-finance-for-non-finance', school: 's-agsm-university-of-new-south-wales', subject: 'finance', format: 'in-person',
-      start: '2026-11-04', days: 3, price: 5150, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/essentials-of-finance-for-non-finance-managers',
+      start: '2026-11-04', days: 3, price: 5150, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/essentials-of-finance-for-non-finance-managers', end: '2026-11-06',
       title: { en: 'Essentials of Finance for Non-Finance Managers', ar: 'أساسيات المالية للمديرين غير الماليين' },
       summary: {
         en: 'A 3-day on-campus program from AGSM, University of New South Wales, running 4 November 2026 to 6 November 2026.',
@@ -298,7 +284,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-executing-strategy-for-results', school: 's-agsm-university-of-new-south-wales', subject: 'strategy', format: 'in-person',
-      start: '2026-11-05', days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/executing-strategy-for-results',
+      start: '2026-11-05', days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/executing-strategy-for-results', end: '2026-11-06',
       title: { en: 'Executing Strategy for Results', ar: 'تنفيذ الاستراتيجية لتحقيق النتائج' },
       summary: {
         en: 'A 2-day on-campus program from AGSM, University of New South Wales, running 5 November 2026 to 6 November 2026.',
@@ -311,8 +297,22 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-data-driven-leadership', school: 's-agsm-university-of-new-south-wales', subject: 'data', format: 'in-person',
+      start: '2026-11-09', days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/data-driven-leadership', end: '2026-11-10',
+      title: { en: 'Data Driven Leadership', ar: 'القيادة المعتمدة على البيانات' },
+      summary: {
+        en: 'A 2-day on-campus program from AGSM, University of New South Wales, running 9 November 2026 to 10 November 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 9 نوفمبر 2026 إلى 10 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-data-governance-for-leaders', school: 's-agsm-university-of-new-south-wales', subject: 'data', format: 'in-person',
-      start: '2026-11-12', days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/data-governance-for-leaders',
+      start: '2026-11-12', days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/data-governance-for-leaders', end: '2026-11-13',
       title: { en: 'Data Governance for Leaders', ar: 'حوكمة البيانات للقادة' },
       summary: {
         en: 'A 2-day on-campus program from AGSM, University of New South Wales, running 12 November 2026 to 13 November 2026.',
@@ -326,7 +326,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-accelerated-leadership-program', school: 's-agsm-university-of-new-south-wales', subject: 'leadership', format: 'in-person',
-      start: '2026-11-16', days: 5, price: 8990, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/accelerated-leadership-program',
+      start: '2026-11-16', days: 5, price: 8990, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/accelerated-leadership-program', end: '2026-11-20',
       title: { en: 'Accelerated Leadership Program', ar: 'البرنامج المُعجّل للقيادة' },
       summary: {
         en: 'A 5-day on-campus program from AGSM, University of New South Wales, running 16 November 2026 to 20 November 2026.',
@@ -340,7 +340,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-shaping-strategy-to-create-value', school: 's-agsm-university-of-new-south-wales', subject: 'strategy', format: 'in-person',
-      start: '2026-11-16', days: 3, price: 5150, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/shaping-strategy-to-create-value',
+      start: '2026-11-16', days: 3, price: 5150, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/shaping-strategy-to-create-value', end: '2026-11-18',
       title: { en: 'Shaping Strategy to Create Value', ar: 'صياغة الاستراتيجية لخلق القيمة' },
       summary: {
         en: 'A 3-day on-campus program from AGSM, University of New South Wales, running 16 November 2026 to 18 November 2026.',
@@ -354,7 +354,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-building-an-ai-strategy', school: 's-agsm-university-of-new-south-wales', subject: 'digital', format: 'in-person',
-      start: '2026-11-17', days: 3, price: 5150, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/building-an-ai-strategy',
+      start: '2026-11-17', days: 3, price: 5150, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/building-an-ai-strategy', end: '2026-11-19',
       title: { en: 'Building an AI Strategy', ar: 'بناء استراتيجية للذكاء الاصطناعي' },
       summary: {
         en: 'A 3-day on-campus program from AGSM, University of New South Wales, running 17 November 2026 to 19 November 2026.',
@@ -367,8 +367,36 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-emerging-leader-program', school: 's-agsm-university-of-new-south-wales', subject: 'leadership', format: 'in-person',
+      start: '2026-11-17', days: 4, price: 7150, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/emerging-leader-program', end: '2026-11-20',
+      title: { en: 'Emerging Leader Program', ar: 'برنامج القائد الصاعد' },
+      summary: {
+        en: 'A 4-day on-campus program from AGSM, University of New South Wales, running 17 November 2026 to 20 November 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 17 نوفمبر 2026 إلى 20 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-contract-law-for-non-lawyers', school: 's-agsm-university-of-new-south-wales', subject: 'operations', format: 'online',
+      start: '2026-11-18', days: null, price: 1755, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/contract-law-for-non-lawyers', end: '2026-12-16', duration: { en: '20 hours', ar: '20 ساعة' },
+      title: { en: 'Contract Law for Non-Lawyers', ar: 'قانون العقود لغير المتخصصين في القانون' },
+      summary: {
+        en: 'An online program from AGSM, University of New South Wales, 20 hours, running 18 November 2026 to 16 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، 20 ساعة، من 18 نوفمبر 2026 إلى 16 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-adaptive-leadership-program', school: 's-agsm-university-of-new-south-wales', subject: 'leadership', format: 'in-person',
-      start: '2026-11-23', days: 4, price: 7950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/adaptive-leadership-program',
+      start: '2026-11-23', days: 4, price: 9150, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/adaptive-leadership-program', end: '2026-11-26',
       title: { en: 'Adaptive Leadership Program', ar: 'برنامج القيادة التكيفية' },
       summary: {
         en: 'A 4-day on-campus program from AGSM, University of New South Wales, running 23 November 2026 to 26 November 2026.',
@@ -381,9 +409,9 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-strategic-negotiation-influence', school: 's-agsm-university-of-new-south-wales', subject: 'negotiation', format: 'in-person',
-      start: '2026-11-23', days: 3, price: 5150, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/strategic-negotiation-and-influence',
-      title: { en: 'Strategic Negotiation & Influence', ar: 'التفاوض الاستراتيجي والتأثير' },
+      id: 'c-strategic-negotiation-and-influence', school: 's-agsm-university-of-new-south-wales', subject: 'negotiation', format: 'in-person',
+      start: '2026-11-23', days: 3, price: 5150, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/strategic-negotiation-and-influence', end: '2026-11-25',
+      title: { en: 'Strategic Negotiation and Influence', ar: 'التفاوض الاستراتيجي والتأثير' },
       summary: {
         en: 'A 3-day on-campus program from AGSM, University of New South Wales, running 23 November 2026 to 25 November 2026.',
         ar: 'برنامج حضوري لمدة 3 أيام من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 23 نوفمبر 2026 إلى 25 نوفمبر 2026.'
@@ -396,7 +424,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-project-governance-for-leaders', school: 's-agsm-university-of-new-south-wales', subject: 'operations', format: 'in-person',
-      start: '2026-11-26', days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/project-governance-for-leaders',
+      start: '2026-11-26', days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/project-governance-for-leaders', end: '2026-11-27',
       title: { en: 'Project Governance for Leaders', ar: 'حوكمة المشاريع للقادة' },
       summary: {
         en: 'A 2-day on-campus program from AGSM, University of New South Wales, running 26 November 2026 to 27 November 2026.',
@@ -409,7 +437,271 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-masterclass-business-innovation-in-lif', school: 's-cbs-executive-copenhagen-business-scho', subject: 'strategy', format: 'in-person',
+      id: 'c-strategic-adaptive-leadership', school: 's-agsm-university-of-new-south-wales', subject: 'leadership', format: 'in-person',
+      start: '2026-12-02', days: 3, price: 5150, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/strategic-adaptive-leadership', end: '2026-12-04',
+      title: { en: 'Strategic & Adaptive Leadership', ar: 'القيادة الاستراتيجية والتكيّفية' },
+      summary: {
+        en: 'A 3-day on-campus program from AGSM, University of New South Wales, running 2 December 2026 to 4 December 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 2 ديسمبر 2026 إلى 4 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-for-board-directors', school: 's-agsm-university-of-new-south-wales', subject: 'digital', format: 'in-person',
+      start: '2027-10-26', days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/ai-for-board-directors', end: '2027-10-27',
+      title: { en: 'AI for Board Directors', ar: 'الذكاء الاصطناعي لأعضاء مجالس الإدارة' },
+      summary: {
+        en: 'A 2-day on-campus program from AGSM, University of New South Wales, running 26 October 2027 to 27 October 2027.',
+        ar: 'برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، من 26 أكتوبر 2027 إلى 27 أكتوبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-unlocked', school: 's-agsm-university-of-new-south-wales', subject: 'digital', format: 'online',
+      start: null, days: null, price: 2300, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/ai-unlocked', duration: { en: '24 days', ar: '24 يومًا' },
+      title: { en: 'AI Unlocked', ar: 'إطلاق إمكانات الذكاء الاصطناعي' },
+      summary: {
+        en: 'An online program from AGSM, University of New South Wales, 24 days. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، 24 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-for-business-leaders', school: 's-agsm-university-of-new-south-wales', subject: 'digital', format: 'in-person',
+      start: null, days: null, price: 2300, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/ai-for-business-leaders', duration: { en: 'Virtual: 3 weeks; In-person: 2 day', ar: 'افتراضي: 3 أسابيع؛ حضوري: يومان' },
+      title: { en: 'AI for Business Leaders', ar: 'الذكاء الاصطناعي لقادة الأعمال' },
+      summary: {
+        en: 'An on-campus program from AGSM, University of New South Wales, Virtual: 3 weeks; In-person: 2 day. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، افتراضي: 3 أسابيع؛ حضوري: يومان. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-optimisation-with-data-analyt', school: 's-agsm-university-of-new-south-wales', subject: 'data', format: 'online',
+      start: null, days: null, price: 1755, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/business-optimisation-with-data-analytics', duration: { en: '3 weeks', ar: '3 أسابيع' },
+      title: { en: 'Business Optimisation with Data Analytics', ar: 'تحسين الأعمال بتحليلات البيانات' },
+      summary: {
+        en: 'An online program from AGSM, University of New South Wales, 3 weeks. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، 3 أسابيع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leadership-for-lawyers', school: 's-agsm-university-of-new-south-wales', subject: 'leadership', format: 'in-person',
+      start: null, days: 2, price: 3950, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/leadership-for-lawyers',
+      title: { en: 'Leadership for Lawyers', ar: 'القيادة للمحامين' },
+      summary: {
+        en: 'A 2-day on-campus program from AGSM, University of New South Wales. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة يومين من كلية الدراسات العليا الأسترالية للإدارة (AGSM). تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-managing-psychosocial-risk-at-work', school: 's-agsm-university-of-new-south-wales', subject: 'people', format: 'online',
+      start: null, days: null, price: 1755, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/managing-psychosocial-risk-at-work', duration: { en: '3 weeks', ar: '3 أسابيع' },
+      title: { en: 'Managing Psychosocial Risk at Work', ar: 'إدارة المخاطر النفسية والاجتماعية في العمل' },
+      summary: {
+        en: 'An online program from AGSM, University of New South Wales, 3 weeks. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، 3 أسابيع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-mastering-dynamic-negotiations', school: 's-agsm-university-of-new-south-wales', subject: 'negotiation', format: 'online',
+      start: null, days: null, price: 1755, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/mastering-dynamic-negotiations', duration: { en: '3 weeks', ar: '3 أسابيع' },
+      title: { en: 'Mastering Dynamic Negotiations', ar: 'إتقان التفاوض الديناميكي' },
+      summary: {
+        en: 'An online program from AGSM, University of New South Wales, 3 weeks. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، 3 أسابيع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-navigating-change-with-resilience', school: 's-agsm-university-of-new-south-wales', subject: 'leadership', format: 'online',
+      start: null, days: null, price: 1755, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.unsw.edu.au/study/professional-development/course/navigating-change-with-resilience', duration: { en: '3 weeks', ar: '3 أسابيع' },
+      title: { en: 'Navigating Change with Resilience', ar: 'إدارة التغيير بمرونة' },
+      summary: {
+        en: 'An online program from AGSM, University of New South Wales, 3 weeks. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية الدراسات العليا الأسترالية للإدارة (AGSM)، 3 أسابيع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-brsens-bestyrelsesuddannelse-september', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-09-02', days: 8, price: 69999, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/borsens-bestyrelsesuddannelse-september-2026', end: '2026-12-02',
+      title: { en: 'Børsens Bestyrelsesuddannelse September 2026', ar: 'برنامج Børsen لمجالس الإدارة – سبتمبر 2026' },
+      summary: {
+        en: 'A 8-day on-campus program from CBS Executive, Copenhagen Business School, running 2 September 2026 to 2 December 2026.',
+        ar: 'برنامج حضوري لمدة 8 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 2 سبتمبر 2026 إلى 2 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-blue-board-leadership-2026', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-09-07', days: 8, price: 78225, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/blue-board-leadership-2026-draft', end: '2026-11-12',
+      title: { en: 'Blue Board Leadership 2026', ar: 'برنامج Blue Board للقيادة 2026' },
+      summary: {
+        en: 'A 8-day on-campus program from CBS Executive, Copenhagen Business School, running 7 September 2026 to 12 November 2026.',
+        ar: 'برنامج حضوري لمدة 8 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 7 سبتمبر 2026 إلى 12 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-bestyrelsesarbejde-i-pension-forsikrin', school: 's-cbs-executive-copenhagen-business-scho', subject: 'finance', format: 'in-person',
+      start: '2026-09-23', days: 5, price: 41600, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/bestyrelsesarbejde-i-pension-forsikring-2026', end: '2026-12-03',
+      title: {
+        en: 'Bestyrelsesarbejde i Pension & Forsikring 2026',
+        ar: 'العمل في مجالس الإدارة في قطاعي التقاعد والتأمين 2026'
+      },
+      summary: {
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School, running 23 September 2026 to 3 December 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 23 سبتمبر 2026 إلى 3 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-bestyrelsesarbejde-i-bank-realkredit-2', school: 's-cbs-executive-copenhagen-business-scho', subject: 'finance', format: 'in-person',
+      start: '2026-10-28', days: 5, price: 41600, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/bestyrelsesarbejde-i-bank-realkredit-2026', end: '2026-12-10',
+      title: {
+        en: 'Bestyrelsesarbejde i Bank & Realkredit 2026',
+        ar: 'العمل في مجالس الإدارة في البنوك والتمويل العقاري 2026'
+      },
+      summary: {
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School, running 28 October 2026 to 10 December 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 28 أكتوبر 2026 إلى 10 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-bestyrelsesuddannelse-i-esg-bredygtigh', school: 's-cbs-executive-copenhagen-business-scho', subject: 'sustainability', format: 'in-person',
+      start: '2026-11-02', days: 3, price: 26800, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/bestyrelsesuddannelse-i-esg-baeredygtighed-2026', end: '2026-12-16',
+      title: {
+        en: 'Bestyrelsesuddannelse i ESG & Bæredygtighed 2026',
+        ar: 'برنامج مجالس الإدارة في ESG والاستدامة 2026'
+      },
+      summary: {
+        en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 2 November 2026 to 16 December 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 2 نوفمبر 2026 إلى 16 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leadership-for-the-future-2026', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-11-16', days: 9, price: 79950, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/leadership-for-the-future-2026', end: '2027-05-27',
+      title: { en: 'Leadership for the Future 2026', ar: 'القيادة للمستقبل 2026' },
+      summary: {
+        en: 'A 9-day on-campus program from CBS Executive, Copenhagen Business School, running 16 November 2026 to 27 May 2027.',
+        ar: 'برنامج حضوري لمدة 9 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 16 نوفمبر 2026 إلى 27 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-executive-presence-efterar-2026', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-11-18', days: 2, price: 22000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/executive-presence-efterar-2026',
+      title: { en: 'Executive Presence - efterår 2026', ar: 'الحضور القيادي - خريف 2026' },
+      summary: {
+        en: 'A 2-day on-campus program from CBS Executive, Copenhagen Business School, running 18 November 2026 to 19 November 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 18 نوفمبر 2026 إلى 19 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-masterclass-ledelse-mellem-generatione', school: 's-cbs-executive-copenhagen-business-scho', subject: 'people', format: 'in-person',
+      start: '2026-11-24', days: null, price: 4995, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/masterclass-ledelse-mellem-generationer', duration: { en: '9.00-16.30', ar: 'من 9:00 إلى 16:30' },
+      title: { en: 'Masterclass: Ledelse mellem Generationer', ar: 'ماستر كلاس: القيادة بين الأجيال' },
+      summary: {
+        en: 'An on-campus program from CBS Executive, Copenhagen Business School, 9.00-16.30, starting 24 November 2026.',
+        ar: 'برنامج حضوري من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 9:00 إلى 16:30، يبدأ في 24 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-grundlggende-bestyrelsesuddannelse-nov', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-11-26', days: 3, price: 26800, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/grundlaeggende-bestyrelsesuddannelse-november-2026', end: '2026-12-08',
+      title: {
+        en: 'Grundlæggende Bestyrelsesuddannelse November 2026',
+        ar: 'التأهيل الأساسي لأعضاء مجالس الإدارة – نوفمبر 2026'
+      },
+      summary: {
+        en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 26 November 2026 to 8 December 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 26 نوفمبر 2026 إلى 8 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-masterclass-business-innovation-in-lif', school: 's-cbs-executive-copenhagen-business-scho', subject: 'healthcare', format: 'in-person',
       start: '2026-12-01', days: 3, price: 20000, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/masterclass-business-innovation-in-life-science-2026',
       title: {
         en: 'Masterclass: Business Innovation in Life Science 2026',
@@ -427,11 +719,67 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-sustainability-transformation-accelera', school: 's-cbs-executive-copenhagen-business-scho', subject: 'sustainability', format: 'in-person',
-      start: '2026-12-08', days: 3, price: 22500, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/sustainability-transformation-accelerator',
+      start: '2026-12-08', days: 3, price: 22500, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/sustainability-transformation-accelerator', end: '2026-12-10',
       title: { en: 'Sustainability Transformation Accelerator', ar: 'مسرّع التحوّل نحو الاستدامة' },
       summary: {
         en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 8 December 2026 to 10 December 2026.',
         ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 8 ديسمبر 2026 إلى 10 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-data-strategy-leadership-winter', school: 's-cbs-executive-copenhagen-business-scho', subject: 'data', format: 'in-person',
+      start: '2027-01-04', days: 5, price: 29000, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/data-strategy-leadership-winter',
+      title: { en: 'Data Strategy & Leadership - Winter', ar: 'استراتيجية البيانات والقيادة - الشتاء' },
+      summary: {
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School, running 4 January 2027 to 8 January 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 4 يناير 2027 إلى 8 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-den-nysgerrige-leder', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-01-11', days: 4, price: 25000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/den-nysgerrige-leder', end: '2027-02-09',
+      title: { en: 'Den Nysgerrige Leder', ar: 'القائد الفضولي' },
+      summary: {
+        en: 'A 4-day on-campus program from CBS Executive, Copenhagen Business School, running 11 January 2027 to 9 February 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 11 يناير 2027 إلى 9 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-medledelse-i-praksis', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-01-11', days: 4, price: 25000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/medledelse-i-praksis', end: '2027-02-09',
+      title: { en: 'Medledelse i Praksis', ar: 'القيادة المشتركة في الممارسة' },
+      summary: {
+        en: 'A 4-day on-campus program from CBS Executive, Copenhagen Business School, running 11 January 2027 to 9 February 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 11 يناير 2027 إلى 9 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategisk-regnskabsforstaelse-vinter', school: 's-cbs-executive-copenhagen-business-scho', subject: 'finance', format: 'in-person',
+      start: '2027-01-13', days: 3, price: 19000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/strategisk-regnskabsforstaelse-vinter',
+      title: { en: 'Strategisk Regnskabsforståelse - Vinter', ar: 'الفهم الاستراتيجي للمحاسبة - الشتاء' },
+      summary: {
+        en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 13 January 2027 to 15 January 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 13 يناير 2027 إلى 15 يناير 2027.'
       },
       highlights: {
         en: [],
@@ -485,6 +833,54 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-ai-og-forretning-vinter', school: 's-cbs-executive-copenhagen-business-scho', subject: 'digital', format: 'in-person',
+      start: '2027-02-01', days: 5, price: 29000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/ai-og-forretning-vinter',
+      title: { en: 'AI og Forretning - Vinter', ar: 'الذكاء الاصطناعي والأعمال – الشتاء' },
+      summary: {
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School, running 1 February 2027 to 5 February 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 1 فبراير 2027 إلى 5 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cbs-executive-bestyrelsesuddannelsen-f', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-02-01', days: 16, price: 120000, currency: 'DKK', langs: ['da'], featured: true, popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/cbs-executive-bestyrelsesuddannelsen-februar-2027', end: '2027-06-05',
+      title: {
+        en: 'CBS Executive Bestyrelsesuddannelsen Februar 2027',
+        ar: 'CBS Executive برنامج تأهيل أعضاء مجلس الإدارة - فبراير 2027'
+      },
+      summary: {
+        en: 'A 16-day on-campus program from CBS Executive, Copenhagen Business School, running 1 February 2027 to 5 June 2027.',
+        ar: 'برنامج حضوري لمدة 16 يومًا من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 1 فبراير 2027 إلى 5 يونيو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-executive-special-lobbyistens-vej-til', school: 's-cbs-executive-copenhagen-business-scho', subject: 'strategy', format: 'in-person',
+      start: '2027-02-02', days: 2, price: 13500, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/executive-special-lobbyistens-vej-til-magten', end: '2027-02-12',
+      title: {
+        en: 'Executive Special: Lobbyistens vej til Magten',
+        ar: 'برنامج تنفيذي خاص: طريق جماعات الضغط إلى السلطة'
+      },
+      summary: {
+        en: 'A 2-day on-campus program from CBS Executive, Copenhagen Business School, running 2 February 2027 to 12 February 2027.',
+        ar: 'برنامج حضوري لمدة يومين من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 2 فبراير 2027 إلى 12 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-executive-special-advanced-negotiation', school: 's-cbs-executive-copenhagen-business-scho', subject: 'negotiation', format: 'in-person',
       start: '2027-02-03', days: 2, price: 14500, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/executive-special-advanced-negotiation-techniques',
       title: {
@@ -516,12 +912,15 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-brsens-bestyrelsesuddannelse-marts-202', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
-      start: '2027-03-03', days: 8, price: 69999, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/borsens-bestyrelsesuddannelse-marts-2027',
-      title: { en: 'Børsens Bestyrelsesuddannelse Marts 2027', ar: 'برنامج Børsen لعضوية مجالس الإدارة - مارس 2027' },
+      id: 'c-executive-special-geopolitics-business', school: 's-cbs-executive-copenhagen-business-scho', subject: 'strategy', format: 'in-person',
+      start: '2027-02-22', days: 3, price: 22000, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/executive-special-geopolitics-business-security-winter',
+      title: {
+        en: 'Executive Special: Geopolitics & Business Security - Winter',
+        ar: 'برنامج تنفيذي خاص: الجيوسياسة وأمن الأعمال – الشتاء'
+      },
       summary: {
-        en: 'A 8-day on-campus program from CBS Executive, Copenhagen Business School, running 3 March 2027 to 10 March 2027.',
-        ar: 'برنامج حضوري لمدة 8 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 3 مارس 2027 إلى 10 مارس 2027.'
+        en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 22 February 2027 to 24 February 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 22 فبراير 2027 إلى 24 فبراير 2027.'
       },
       highlights: {
         en: [],
@@ -530,12 +929,105 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leading-strategic-business-resilience', school: 's-cbs-executive-copenhagen-business-scho', subject: 'strategy', format: 'in-person',
-      start: '2027-03-17', days: 8, price: 95000, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/leading-strategic-business-resilience',
-      title: { en: 'Leading Strategic Business Resilience', ar: 'قيادة المرونة الاستراتيجية للأعمال' },
+      id: 'c-grundlggende-bestyrelsesuddannelse-feb', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-02-25', days: 3, price: 26800, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/grundlaeggende-bestyrelsesuddannelse-februar-2027', end: '2027-04-07',
+      title: {
+        en: 'Grundlæggende Bestyrelsesuddannelse Februar 2027',
+        ar: 'التأهيل الأساسي لأعضاء مجالس الإدارة – فبراير 2027'
+      },
       summary: {
-        en: 'A 8-day on-campus program from CBS Executive, Copenhagen Business School, running 17 March 2027 to 24 March 2027.',
-        ar: 'برنامج حضوري لمدة 8 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 17 مارس 2027 إلى 24 مارس 2027.'
+        en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 25 February 2027 to 7 April 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 25 فبراير 2027 إلى 7 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-masterclass-bredygtig-performance', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-03-02', days: null, price: 4995, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/masterclass-baeredygtig-performance', duration: { en: '9.00-16.30', ar: 'من 9:00 إلى 16:30' },
+      title: { en: 'Masterclass: Bæredygtig Performance', ar: 'ماستر كلاس: الأداء المستدام' },
+      summary: {
+        en: 'An on-campus program from CBS Executive, Copenhagen Business School, 9.00-16.30, starting 2 March 2027.',
+        ar: 'برنامج حضوري من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 9:00 إلى 16:30، يبدأ في 2 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-brsens-bestyrelsesuddannelse-marts-202', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-03-03', days: 8, price: 69999, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/borsens-bestyrelsesuddannelse-marts-2027', end: '2027-06-03',
+      title: { en: 'Børsens Bestyrelsesuddannelse Marts 2027', ar: 'برنامج Børsen لعضوية مجالس الإدارة - مارس 2027' },
+      summary: {
+        en: 'A 8-day on-campus program from CBS Executive, Copenhagen Business School, running 3 March 2027 to 3 June 2027.',
+        ar: 'برنامج حضوري لمدة 8 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 3 مارس 2027 إلى 3 يونيو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-service-excellence-leadership-academy', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'blended',
+      start: '2027-03-05', days: null, price: 109950, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/service-excellence-leadership-academy-2027', end: '2027-12-09', duration: { en: '23,5 dage', ar: '23.5 يومًا' },
+      title: { en: 'Service Excellence Leadership Academy 2027', ar: 'أكاديمية قيادة التميز في الخدمة 2027' },
+      summary: {
+        en: 'A blended program from CBS Executive, Copenhagen Business School, 23,5 dage, running 5 March 2027 to 9 December 2027.',
+        ar: 'برنامج مدمج من كلية كوبنهاغن للأعمال – التعليم التنفيذي، 23.5 يومًا، من 5 مارس 2027 إلى 9 ديسمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-bestyrelsesarbejde-i-startups-scaleups', school: 's-cbs-executive-copenhagen-business-scho', subject: 'entrepreneurship', format: 'in-person',
+      start: '2027-03-08', days: 3, price: 26000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/bestyrelsesarbejde-i-startups-scaleups-2027', end: '2027-04-14',
+      title: {
+        en: 'Bestyrelsesarbejde i Startups & Scaleups 2027',
+        ar: 'العمل في مجالس الإدارة في الشركات الناشئة والمتوسعة 2027'
+      },
+      summary: {
+        en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 8 March 2027 to 14 April 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 8 مارس 2027 إلى 14 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-research-management-course-forar-2027', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'blended',
+      start: '2027-03-10', days: 7, price: 39500, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/research-management-course-forar-2027', end: '2027-05-14',
+      title: { en: 'Research Management Course forår 2027', ar: 'برنامج إدارة البحوث – ربيع 2027' },
+      summary: {
+        en: 'A 7-day blended program from CBS Executive, Copenhagen Business School, running 10 March 2027 to 14 May 2027.',
+        ar: 'برنامج مدمج لمدة 7 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 10 مارس 2027 إلى 14 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-boardwork-leadership-for-life-science', school: 's-cbs-executive-copenhagen-business-scho', subject: 'healthcare', format: 'in-person',
+      start: '2027-04-08', days: 2, price: 16000, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/boardwork-leadership-for-life-science-startups-2027', end: '2027-04-09',
+      title: {
+        en: 'Boardwork & Leadership for Life Science Startups 2027',
+        ar: 'العمل في مجالس الإدارة والقيادة للشركات الناشئة في علوم الحياة 2027'
+      },
+      summary: {
+        en: 'A 2-day on-campus program from CBS Executive, Copenhagen Business School, running 8 April 2027 to 9 April 2027.',
+        ar: 'برنامج حضوري لمدة يومين من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 8 أبريل 2027 إلى 9 أبريل 2027.'
       },
       highlights: {
         en: [],
@@ -545,14 +1037,28 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-cbs-executive-bestyrelsesuddannelsen-a', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
-      start: '2027-04-15', days: 16, price: 120000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/cbs-executive-bestyrelsesuddannelsen-april-2027',
+      start: '2027-04-15', days: 16, price: 120000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/cbs-executive-bestyrelsesuddannelsen-april-2027', end: '2027-10-02',
       title: {
         en: 'CBS Executive Bestyrelsesuddannelsen April 2027',
         ar: 'برنامج CBS Executive لعضوية مجالس الإدارة - أبريل 2027'
       },
       summary: {
-        en: 'A 16-day on-campus program from CBS Executive, Copenhagen Business School, running 15 April 2027 to 30 April 2027.',
-        ar: 'برنامج حضوري لمدة 16 يومًا من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 15 أبريل 2027 إلى 30 أبريل 2027.'
+        en: 'A 16-day on-campus program from CBS Executive, Copenhagen Business School, running 15 April 2027 to 2 October 2027.',
+        ar: 'برنامج حضوري لمدة 16 يومًا من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 15 أبريل 2027 إلى 2 أكتوبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-kundeorienteret-lederskab', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-04-21', days: 9, price: 49950, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/kundeorienteret-lederskab', end: '2027-11-25',
+      title: { en: 'Kundeorienteret Lederskab', ar: 'القيادة الموجهة نحو العميل' },
+      summary: {
+        en: 'A 9-day on-campus program from CBS Executive, Copenhagen Business School, running 21 April 2027 to 25 November 2027.',
+        ar: 'برنامج حضوري لمدة 9 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 21 أبريل 2027 إلى 25 نوفمبر 2027.'
       },
       highlights: {
         en: [],
@@ -562,14 +1068,59 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-grundlggende-bestyrelsesuddannelse-apr', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
-      start: '2027-04-26', days: 3, price: 26800, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/grundlaeggende-bestyrelsesuddannelse-april-2027',
+      start: '2027-04-26', days: 3, price: 26800, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/grundlaeggende-bestyrelsesuddannelse-april-2027', end: '2027-05-26',
       title: {
         en: 'Grundlæggende Bestyrelsesuddannelse April 2027',
         ar: 'البرنامج التأسيسي لعضوية مجالس الإدارة - أبريل 2027'
       },
       summary: {
-        en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 26 April 2027 to 28 April 2027.',
-        ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 26 أبريل 2027 إلى 28 أبريل 2027.'
+        en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 26 April 2027 to 26 May 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 26 أبريل 2027 إلى 26 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-bestyrelsesarbejde-i-erhvervsfonde-202', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-05-10', days: 2, price: 20000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/bestyrelsesarbejde-i-erhvervsfonde-2027', end: '2027-05-11',
+      title: {
+        en: 'Bestyrelsesarbejde i Erhvervsfonde 2027',
+        ar: 'العمل في مجالس الإدارة في المؤسسات الوقفية للأعمال 2027'
+      },
+      summary: {
+        en: 'A 2-day on-campus program from CBS Executive, Copenhagen Business School, running 10 May 2027 to 11 May 2027.',
+        ar: 'برنامج حضوري لمدة يومين من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 10 مايو 2027 إلى 11 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-blue-board-leadership-2027', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-06-21', days: 8, price: 78225, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/blue-board-leadership-2027', end: '2027-09-30',
+      title: { en: 'Blue Board Leadership 2027', ar: 'برنامج Blue Board للقيادة 2027' },
+      summary: {
+        en: 'A 8-day on-campus program from CBS Executive, Copenhagen Business School, running 21 June 2027 to 30 September 2027.',
+        ar: 'برنامج حضوري لمدة 8 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 21 يونيو 2027 إلى 30 سبتمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-og-forretning', school: 's-cbs-executive-copenhagen-business-scho', subject: 'digital', format: 'in-person',
+      start: '2027-08-23', days: 5, price: 29000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/ai-og-forretning',
+      title: { en: 'AI og Forretning', ar: 'الذكاء الاصطناعي والأعمال' },
+      summary: {
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School, running 23 August 2027 to 27 August 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 23 أغسطس 2027 إلى 27 أغسطس 2027.'
       },
       highlights: {
         en: [],
@@ -579,14 +1130,14 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-grundlggende-bestyrelsesuddannelse-aug', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
-      start: '2027-08-23', days: 3, price: 26800, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/grundlaeggende-bestyrelsesuddannelse-august-2027',
+      start: '2027-08-23', days: 3, price: 26800, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/grundlaeggende-bestyrelsesuddannelse-august-2027', end: '2027-09-30',
       title: {
         en: 'Grundlæggende Bestyrelsesuddannelse August 2027',
         ar: 'البرنامج التأسيسي لعضوية مجالس الإدارة - أغسطس 2027'
       },
       summary: {
-        en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 23 August 2027 to 25 August 2027.',
-        ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 23 أغسطس 2027 إلى 25 أغسطس 2027.'
+        en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School, running 23 August 2027 to 30 September 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 23 أغسطس 2027 إلى 30 سبتمبر 2027.'
       },
       highlights: {
         en: [],
@@ -595,12 +1146,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-lead-4-success', school: 's-center-for-creative-leadership', subject: 'leadership', format: 'online',
-      start: '2026-10-05', days: 5, price: 1850, langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/fundamental-leadership-skills-training/',
-      title: { en: 'Lead 4 Success®', ar: 'القيادة نحو النجاح (Lead 4 Success®)' },
+      id: 'c-strategi-og-forretningsudvikling', school: 's-cbs-executive-copenhagen-business-scho', subject: 'strategy', format: 'in-person',
+      start: '2027-08-23', days: 5, price: 29000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/strategi-og-forretningsudvikling',
+      title: { en: 'Strategi og Forretningsudvikling', ar: 'الاستراتيجية وتطوير الأعمال' },
       summary: {
-        en: 'A 5-day online program from Center for Creative Leadership, running 5 October 2026 to 9 October 2026.',
-        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من Center for Creative Leadership، من 5 أكتوبر 2026 إلى 9 أكتوبر 2026.'
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School, running 23 August 2027 to 27 August 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 23 أغسطس 2027 إلى 27 أغسطس 2027.'
       },
       highlights: {
         en: [],
@@ -609,12 +1160,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-maximizing-your-leadership-potential', school: 's-center-for-creative-leadership', subject: 'leadership', format: 'in-person',
-      start: '2026-10-07', days: 3, price: 4400, langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/maximizing-leadership-potential-new-manager-training/',
-      title: { en: 'Maximizing Your Leadership Potential', ar: 'تعظيم إمكاناتك القيادية' },
+      id: 'c-brsens-bestyrelsesuddannelse-septe-2', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-09-02', days: 8, price: 69999, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/borsens-bestyrelsesuddannelse-september-2027', end: '2027-12-09',
+      title: { en: 'Børsens Bestyrelsesuddannelse September 2027', ar: 'برنامج Børsen لمجالس الإدارة – سبتمبر 2027' },
       summary: {
-        en: 'A 3-day on-campus program from Center for Creative Leadership, running 7 October 2026 to 9 October 2026.',
-        ar: 'برنامج حضوري لمدة 3 أيام من Center for Creative Leadership، من 7 أكتوبر 2026 إلى 9 أكتوبر 2026.'
+        en: 'A 8-day on-campus program from CBS Executive, Copenhagen Business School, running 2 September 2027 to 9 December 2027.',
+        ar: 'برنامج حضوري لمدة 8 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 2 سبتمبر 2027 إلى 9 ديسمبر 2027.'
       },
       highlights: {
         en: [],
@@ -623,12 +1174,15 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leadership-development-program-ldp', school: 's-center-for-creative-leadership', subject: 'leadership', format: 'in-person',
-      start: '2026-10-12', days: 5, price: 8250, langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/leadership-development-program/',
-      title: { en: 'Leadership Development Program (LDP)®', ar: 'برنامج تطوير القيادات (LDP®)' },
+      id: 'c-cbs-executive-bestyrelsesuddannelsen-s', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-09-06', days: 16, price: 120000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/cbs-executive-bestyrelsesuddannelsen-september-2027', end: '2028-01-22',
+      title: {
+        en: 'CBS Executive Bestyrelsesuddannelsen September 2027',
+        ar: 'CBS Executive برنامج تأهيل أعضاء مجلس الإدارة - سبتمبر 2027'
+      },
       summary: {
-        en: 'A 5-day on-campus program from Center for Creative Leadership, running 12 October 2026 to 16 October 2026.',
-        ar: 'برنامج حضوري لمدة 5 أيام من Center for Creative Leadership، من 12 أكتوبر 2026 إلى 16 أكتوبر 2026.'
+        en: 'A 16-day on-campus program from CBS Executive, Copenhagen Business School, running 6 September 2027 to 22 January 2028.',
+        ar: 'برنامج حضوري لمدة 16 يومًا من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 6 سبتمبر 2027 إلى 22 يناير 2028.'
       },
       highlights: {
         en: [],
@@ -637,9 +1191,394 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-better-conversations-every-daytm', school: 's-center-for-creative-leadership', subject: 'people', format: 'online',
-      start: '2026-10-14', days: 3, price: 1350, langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/better-conversations-every-day-coaching-culture/',
-      title: { en: 'Better Conversations Every Day™', ar: 'محادثات أفضل كل يوم (Better Conversations Every Day™)' },
+      id: 'c-bestyrelsesarbejde-i-pension-forsi-2', school: 's-cbs-executive-copenhagen-business-scho', subject: 'finance', format: 'in-person',
+      start: '2027-09-23', days: 5, price: 41600, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/bestyrelsesarbejde-i-pension-forsikring-2027', end: '2027-12-06',
+      title: {
+        en: 'Bestyrelsesarbejde i Pension & Forsikring 2027',
+        ar: 'العمل في مجالس الإدارة في قطاعي التقاعد والتأمين 2027'
+      },
+      summary: {
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School, running 23 September 2027 to 6 December 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 23 سبتمبر 2027 إلى 6 ديسمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-bestyrelsesarbejde-i-bank-realkred-2', school: 's-cbs-executive-copenhagen-business-scho', subject: 'finance', format: 'in-person',
+      start: '2027-09-27', days: 5, price: 41600, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/bestyrelsesarbejde-i-bank-realkredit-2027', end: '2027-12-07',
+      title: {
+        en: 'Bestyrelsesarbejde i Bank & Realkredit 2027',
+        ar: 'العمل في مجالس الإدارة في البنوك والتمويل العقاري 2027'
+      },
+      summary: {
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School, running 27 September 2027 to 7 December 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 27 سبتمبر 2027 إلى 7 ديسمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-authenticity-in-action-female-leadersh', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: null, days: 3, price: 25000, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/authenticity-in-action-female-leadership-and-power-draft',
+      title: {
+        en: 'Authenticity in Action - Female Leadership and Power',
+        ar: 'الأصالة في الممارسة: القيادة النسائية والتأثير'
+      },
+      summary: {
+        en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-bii-summer-school-2025', school: 's-cbs-executive-copenhagen-business-scho', subject: 'healthcare', format: 'in-person',
+      start: null, days: 5, price: 10000, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/bii-summer-school-2025-draft',
+      title: { en: 'BII Summer School 2025', ar: 'المدرسة الصيفية BII 2025' },
+      summary: {
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cbs-executive-bestyrelsesuddannels-2', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: null, days: 16, price: 120000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/cbs-executive-bestyrelsesuddannelsen-april-2026-draft',
+      title: {
+        en: 'CBS Executive Bestyrelsesuddannelsen April 2026',
+        ar: 'CBS Executive برنامج تأهيل أعضاء مجلس الإدارة - أبريل 2026'
+      },
+      summary: {
+        en: 'A 16-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 16 يومًا من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-coaching-kierkegaard-og-personligt-led', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: null, days: 5, price: 29000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/coaching-kierkegaard-og-personligt-lederskab',
+      title: {
+        en: 'Coaching, Kierkegaard og Personligt Lederskab',
+        ar: 'التدريب المهني (Coaching) وفلسفة Kierkegaard والقيادة الشخصية'
+      },
+      summary: {
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-det-relationelle-lederskab-og-virksomh', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: null, days: 5, price: 29000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/det-relationelle-lederskab-og-virksomhedens-organisering',
+      title: {
+        en: 'Det Relationelle Lederskab og Virksomhedens Organisering',
+        ar: 'القيادة العلائقية والتنظيم المؤسسي'
+      },
+      summary: {
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-exploring-ai-for-organizational-societ', school: 's-cbs-executive-copenhagen-business-scho', subject: 'digital', format: 'in-person',
+      start: null, days: 3, price: 18000, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/exploring-ai-for-organizational-societal-innovation',
+      title: {
+        en: 'Exploring AI for Organizational & Societal Innovation',
+        ar: 'استكشاف الذكاء الاصطناعي للابتكار المؤسسي والمجتمعي'
+      },
+      summary: {
+        en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-forhandlingsteknik', school: 's-cbs-executive-copenhagen-business-scho', subject: 'negotiation', format: 'in-person',
+      start: null, days: 4, price: 25000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/forhandlingsteknik',
+      title: { en: 'Forhandlingsteknik', ar: 'تقنيات التفاوض' },
+      summary: {
+        en: 'A 4-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-forretningsdrevet-esg-og-operationel-r', school: 's-cbs-executive-copenhagen-business-scho', subject: 'sustainability', format: 'in-person',
+      start: null, days: 4, price: 24000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/forretningsdrevet-esg-og-operationel-resiliens',
+      title: { en: 'Forretningsdrevet ESG og Operationel Resiliens', ar: 'ESG المدفوع بالأعمال والمرونة التشغيلية' },
+      summary: {
+        en: 'A 4-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-fremtidens-organisering', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: null, days: 5, price: 29000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/fremtidens-organisering',
+      title: { en: 'Fremtidens Organisering', ar: 'تنظيم المؤسسات في المستقبل' },
+      summary: {
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-internationalization-from-idea-to-succ', school: 's-cbs-executive-copenhagen-business-scho', subject: 'strategy', format: 'in-person',
+      start: null, days: 3, price: 18000, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/internationalization-from-idea-to-success-draft',
+      title: { en: 'Internationalization: From Idea to Success', ar: 'التدويل: من الفكرة إلى النجاح' },
+      summary: {
+        en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-strategic-transformation', school: 's-cbs-executive-copenhagen-business-scho', subject: 'strategy', format: 'in-person',
+      start: null, days: 5, price: 29000, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/leading-strategic-transformation',
+      title: { en: 'Leading Strategic Transformation', ar: 'قيادة التحول الاستراتيجي' },
+      summary: {
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-across-differences', school: 's-cbs-executive-copenhagen-business-scho', subject: 'people', format: 'in-person',
+      start: null, days: 5, price: 29000, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/leading-across-differences',
+      title: { en: 'Leading across Differences', ar: 'القيادة في ظل الاختلافات' },
+      summary: {
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-in-a-complex-world', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: null, days: 4, price: 24000, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/leading-in-a-complex-world-draft',
+      title: { en: 'Leading in a Complex World', ar: 'القيادة في عالم معقّد' },
+      summary: {
+        en: 'A 4-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ledelse-med-overskud', school: 's-cbs-executive-copenhagen-business-scho', subject: 'people', format: 'in-person',
+      start: null, days: 5, price: 28000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/ledelse-med-overskud-draft',
+      title: { en: 'Ledelse med Overskud', ar: 'القيادة بطاقة وحيوية' },
+      summary: {
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-magt-interessevaretagelse-og-lobbyisme', school: 's-cbs-executive-copenhagen-business-scho', subject: 'strategy', format: 'in-person',
+      start: null, days: 3, price: 18000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/magt-interessevaretagelse-og-lobbyisme',
+      title: { en: 'Magt, Interessevaretagelse og Lobbyisme', ar: 'السلطة وتمثيل المصالح وجماعات الضغط' },
+      summary: {
+        en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-masterclass-relational-coordination', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: null, days: null, price: 975, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/masterclass-relational-coordination-draft', duration: { en: '4 hours', ar: '4 ساعات' },
+      title: { en: 'Masterclass Relational Coordination', ar: 'ماستر كلاس: التنسيق العلائقي' },
+      summary: {
+        en: 'An on-campus program from CBS Executive, Copenhagen Business School, 4 hours. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية كوبنهاغن للأعمال – التعليم التنفيذي، 4 ساعات. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-masterclass-generationsledelse', school: 's-cbs-executive-copenhagen-business-scho', subject: 'people', format: 'in-person',
+      start: null, days: null, price: 4500, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/masterclass-generationsledelse-draft', duration: { en: '9.00-16.00', ar: 'من 9:00 إلى 16:00' },
+      title: { en: 'Masterclass: Generationsledelse', ar: 'ماستر كلاس: قيادة الأجيال' },
+      summary: {
+        en: 'An on-campus program from CBS Executive, Copenhagen Business School, 9.00-16.00. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 9:00 إلى 16:00. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-masterclass-relationer-som-strategisk', school: 's-cbs-executive-copenhagen-business-scho', subject: 'people', format: 'in-person',
+      start: null, days: null, price: 4995, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/masterclass-relationer-som-strategisk-kompetence-draft', duration: { en: '9.00-16.30', ar: 'من 9:00 إلى 16:30' },
+      title: { en: 'Masterclass: Relationer som Strategisk Kompetence', ar: 'ماستر كلاس: العلاقات كمهارة استراتيجية' },
+      summary: {
+        en: 'An on-campus program from CBS Executive, Copenhagen Business School, 9.00-16.30. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية كوبنهاغن للأعمال – التعليم التنفيذي، من 9:00 إلى 16:30. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-psychology-and-behavioral-economics', school: 's-cbs-executive-copenhagen-business-scho', subject: 'people', format: 'in-person',
+      start: null, days: 3, price: 19000, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/psychology-and-behavioral-economics-draft',
+      title: { en: 'Psychology and Behavioral Economics', ar: 'علم النفس والاقتصاد السلوكي' },
+      summary: {
+        en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-public-affairs-i-eu', school: 's-cbs-executive-copenhagen-business-scho', subject: 'strategy', format: 'in-person',
+      start: null, days: 3, price: 19995, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/public-affairs-i-eu-draft',
+      title: { en: 'Public Affairs i EU', ar: 'الشؤون العامة في الاتحاد الأوروبي' },
+      summary: {
+        en: 'A 3-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-retorisk-lederskab', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
+      start: null, days: 5, price: 29000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/retorisk-lederskab',
+      title: { en: 'Retorisk Lederskab', ar: 'القيادة والخطابة' },
+      summary: {
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-service-excellence-leadership-acad-2', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'blended',
+      start: null, days: null, price: 109950, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/service-excellence-leadership-academy-draft-1', duration: { en: '23,5 dage', ar: '23.5 يومًا' },
+      title: { en: 'Service Excellence Leadership Academy', ar: 'أكاديمية القيادة للتميز في الخدمة' },
+      summary: {
+        en: 'A blended program from CBS Executive, Copenhagen Business School, 23,5 dage. Dates to be announced by the school.',
+        ar: 'برنامج مدمج من كلية كوبنهاغن للأعمال – التعليم التنفيذي، 23.5 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategic-business-partnering', school: 's-cbs-executive-copenhagen-business-scho', subject: 'strategy', format: 'in-person',
+      start: null, days: 5, price: 29000, currency: 'DKK', langs: ['en'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/en/program/strategic-business-partnering',
+      title: { en: 'Strategic Business Partnering', ar: 'الشراكة الاستراتيجية مع الأعمال' },
+      summary: {
+        en: 'A 5-day on-campus program from CBS Executive, Copenhagen Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كوبنهاغن للأعمال – التعليم التنفيذي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-frontline-leader-impact', school: 's-center-for-creative-leadership', subject: 'leadership', format: 'online',
+      start: '2026-10-12', days: null, price: 1500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/frontline-leadership-impact/', end: '2026-11-22', duration: { en: '18 hours, self-paced, over 6 weeks', ar: '18 ساعة بوتيرة ذاتية على مدى 6 أسابيع' },
+      title: { en: 'Frontline Leader Impact', ar: 'أثر القائد في الخطوط الأمامية' },
+      summary: {
+        en: 'An online program from Center for Creative Leadership, 18 hours, self-paced, over 6 weeks, running 12 October 2026 to 22 November 2026.',
+        ar: 'برنامج عبر الإنترنت من Center for Creative Leadership، 18 ساعة بوتيرة ذاتية على مدى 6 أسابيع، من 12 أكتوبر 2026 إلى 22 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-better-conversations-every-day', school: 's-center-for-creative-leadership', subject: 'people', format: 'online',
+      start: '2026-10-14', days: 3, price: 1350, langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/better-conversations-every-day-coaching-culture/', end: '2026-10-16',
+      title: { en: 'Better Conversations Every Day', ar: 'محادثات أفضل كل يوم (Better Conversations Every Day™)' },
       summary: {
         en: 'A 3-day online program from Center for Creative Leadership, running 14 October 2026 to 16 October 2026.',
         ar: 'برنامج عبر الإنترنت لمدة 3 أيام من Center for Creative Leadership، من 14 أكتوبر 2026 إلى 16 أكتوبر 2026.'
@@ -651,12 +1590,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leadership-at-the-peak', school: 's-center-for-creative-leadership', subject: 'leadership', format: 'in-person',
-      start: '2026-10-26', days: 5, price: 18250, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/leadership-at-the-peak-training-for-senior-executives/',
-      title: { en: 'Leadership at the Peak', ar: 'القيادة في القمة' },
+      id: 'c-maximizing-your-leadership-potential', school: 's-center-for-creative-leadership', subject: 'leadership', format: 'in-person',
+      start: '2026-10-20', days: 3, price: 4400, langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/maximizing-leadership-potential-new-manager-training/', end: '2026-10-22',
+      title: { en: 'Maximizing Your Leadership Potential', ar: 'تعظيم إمكاناتك القيادية' },
       summary: {
-        en: 'A 5-day on-campus program from Center for Creative Leadership, running 26 October 2026 to 30 October 2026.',
-        ar: 'برنامج حضوري لمدة 5 أيام من Center for Creative Leadership، من 26 أكتوبر 2026 إلى 30 أكتوبر 2026.'
+        en: 'A 3-day on-campus program from Center for Creative Leadership, running 20 October 2026 to 22 October 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من Center for Creative Leadership، من 20 أكتوبر 2026 إلى 22 أكتوبر 2026.'
       },
       highlights: {
         en: [],
@@ -665,12 +1604,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leading-for-organizational-impact', school: 's-center-for-creative-leadership', subject: 'leadership', format: 'in-person',
-      start: '2026-10-26', days: 5, price: 10950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/leading-organizational-impact-executive-training/',
-      title: { en: 'Leading for Organizational Impact', ar: 'القيادة من أجل الأثر المؤسسي' },
+      id: 'c-lead-4-success', school: 's-center-for-creative-leadership', subject: 'leadership', format: 'online',
+      start: '2026-10-26', days: 5, price: 1850, langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/fundamental-leadership-skills-training/', end: '2026-10-30',
+      title: { en: 'Lead 4 Success', ar: 'القيادة نحو النجاح (Lead 4 Success®)' },
       summary: {
-        en: 'A 5-day on-campus program from Center for Creative Leadership, running 26 October 2026 to 30 October 2026.',
-        ar: 'برنامج حضوري لمدة 5 أيام من Center for Creative Leadership، من 26 أكتوبر 2026 إلى 30 أكتوبر 2026.'
+        en: 'A 5-day online program from Center for Creative Leadership, running 26 October 2026 to 30 October 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من Center for Creative Leadership، من 26 أكتوبر 2026 إلى 30 أكتوبر 2026.'
       },
       highlights: {
         en: [],
@@ -679,8 +1618,22 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-strategic-leader-program', school: 's-center-for-creative-leadership', subject: 'strategy', format: 'in-person',
-      start: '2026-11-09', days: 5, price: 10500, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/strategic-leader/',
+      id: 'c-leadership-development-program-ldp', school: 's-center-for-creative-leadership', subject: 'leadership', format: 'in-person',
+      start: '2026-11-02', days: 5, price: 8250, langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/leadership-development-program/', end: '2026-11-06',
+      title: { en: 'Leadership Development Program (LDP)', ar: 'برنامج تطوير القيادات (LDP®)' },
+      summary: {
+        en: 'A 5-day on-campus program from Center for Creative Leadership, running 2 November 2026 to 6 November 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من Center for Creative Leadership، من 2 نوفمبر 2026 إلى 6 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategic-leader-program', school: 's-center-for-creative-leadership', subject: 'leadership', format: 'in-person',
+      start: '2026-11-09', days: 5, price: 10500, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/strategic-leader/', end: '2026-11-13',
       title: { en: 'Strategic Leader Program', ar: 'برنامج القائد الاستراتيجي' },
       summary: {
         en: 'A 5-day on-campus program from Center for Creative Leadership, running 9 November 2026 to 13 November 2026.',
@@ -693,8 +1646,22 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-leadership-at-the-peak', school: 's-center-for-creative-leadership', subject: 'leadership', format: 'in-person',
+      start: '2026-12-07', days: 5, price: 12950, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/leadership-at-the-peak-training-for-senior-executives/', end: '2026-12-11',
+      title: { en: 'Leadership at the Peak', ar: 'القيادة في القمة' },
+      summary: {
+        en: 'A 5-day on-campus program from Center for Creative Leadership, running 7 December 2026 to 11 December 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من Center for Creative Leadership، من 7 ديسمبر 2026 إلى 11 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-succession-reimagined', school: 's-center-for-creative-leadership', subject: 'leadership', format: 'in-person',
-      start: '2027-01-26', days: 3, price: 5950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/succession-planning-training/',
+      start: '2027-01-26', days: 3, price: 5950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/succession-planning-training/', end: '2027-01-28', duration: { en: '2.5-day working session', ar: 'ورشة عمل لمدة 2.5 يوم' },
       title: { en: 'Succession Reimagined', ar: 'إعادة تصوّر التعاقب الوظيفي' },
       summary: {
         en: 'A 3-day on-campus program from Center for Creative Leadership, running 26 January 2027 to 28 January 2027.',
@@ -707,15 +1674,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-strategic-management-of-regulatory-and', school: 's-harvard-kennedy-school', subject: 'operations', format: 'in-person',
-      start: '2026-09-20', days: 6, price: 11300, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/strategic-management-regulatory-and-enforcement-agencies',
-      title: {
-        en: 'Strategic Management of Regulatory and Enforcement Agencies',
-        ar: 'الإدارة الاستراتيجية للجهات التنظيمية والرقابية'
-      },
+      id: 'c-360-assessment-certification', school: 's-center-for-creative-leadership', subject: 'people', format: 'online',
+      start: null, days: null, price: 2500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/360-assessment-certification/', duration: { en: '10 hours, self-paced', ar: '10 ساعات بوتيرة ذاتية' },
+      title: { en: '360 Assessment Certification', ar: 'اعتماد التقييم 360' },
       summary: {
-        en: 'A 6-day on-campus program from Harvard Kennedy School, running 20 September 2026 to 25 September 2026.',
-        ar: 'برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 20 سبتمبر 2026 إلى 25 سبتمبر 2026.'
+        en: 'An online program from Center for Creative Leadership, 10 hours, self-paced. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من Center for Creative Leadership، 10 ساعات بوتيرة ذاتية. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -724,12 +1688,26 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leadership-decision-making', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
-      start: '2026-09-27', days: 6, price: 11300, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leadership-decision-making',
-      title: { en: 'Leadership Decision Making', ar: 'صنع القرار القيادي' },
+      id: 'c-amplify-heighten-your-impact', school: 's-center-for-creative-leadership', subject: 'leadership', format: 'online',
+      start: null, days: null, price: 250, langs: ['en'], popularity: 50, sourceUrl: 'https://www.ccl.org/leadership-programs/amplify-nonprofit-leadership-program/', duration: { en: '1.5–2 hours / week, over 6 weeks', ar: '1.5–2 ساعة في الأسبوع على مدى 6 أسابيع' },
+      title: { en: 'Amplify: Heighten Your Impact', ar: 'Amplify: ارتقِ بمستوى تأثيرك' },
       summary: {
-        en: 'A 6-day on-campus program from Harvard Kennedy School, running 27 September 2026 to 2 October 2026.',
-        ar: 'برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 27 سبتمبر 2026 إلى 2 أكتوبر 2026.'
+        en: 'An online program from Center for Creative Leadership, 1.5–2 hours / week, over 6 weeks. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من Center for Creative Leadership، 1.5–2 ساعة في الأسبوع على مدى 6 أسابيع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-collaborating-for-public-value', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'online',
+      start: '2026-10-13', days: null, price: 2495, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/collaborating-public-value', end: '2026-11-12', duration: { en: '5 weeks, 4-6 hours per week', ar: '5 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Collaborating for Public Value', ar: 'التعاون لتحقيق القيمة العامة' },
+      summary: {
+        en: 'An online program from Harvard Kennedy School, 5 weeks, 4-6 hours per week, running 13 October 2026 to 12 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية كينيدي بجامعة هارفارد، 5 أسابيع، 4–6 ساعات في الأسبوع، من 13 أكتوبر 2026 إلى 12 نوفمبر 2026.'
       },
       highlights: {
         en: [],
@@ -739,7 +1717,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-executive-leaders-and-government', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
-      start: '2026-10-18', days: 13, price: 18900, langs: ['en'], featured: true, popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/executive-leaders-government',
+      start: '2026-10-18', days: 13, price: 18900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/executive-leaders-government', end: '2026-10-30',
       title: { en: 'Executive Leaders and Government', ar: 'القادة التنفيذيون والحكومة' },
       summary: {
         en: 'A 13-day on-campus program from Harvard Kennedy School, running 18 October 2026 to 30 October 2026.',
@@ -752,8 +1730,36 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-nonprofit-financial-stewardship', school: 's-harvard-kennedy-school', subject: 'finance', format: 'online',
+      start: '2026-10-19', days: null, price: 4100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/nonprofit-financial-stewardship', end: '2026-11-22', duration: { en: '5 weeks', ar: '5 أسابيع' },
+      title: { en: 'Nonprofit Financial Stewardship', ar: 'الإشراف المالي للمنظمات غير الربحية' },
+      summary: {
+        en: 'An online program from Harvard Kennedy School, 5 weeks, running 19 October 2026 to 22 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية كينيدي بجامعة هارفارد، 5 أسابيع، من 19 أكتوبر 2026 إلى 22 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-senior-executive-fellows', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
+      start: '2026-10-19', days: null, price: 26600, langs: ['en'], featured: true, popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/senior-executive-fellows', end: '2026-11-13', duration: { en: '4 weeks', ar: '4 أسابيع' },
+      title: { en: 'Senior Executive Fellows', ar: 'زمالة كبار التنفيذيين' },
+      summary: {
+        en: 'An on-campus program from Harvard Kennedy School, 4 weeks, running 19 October 2026 to 13 November 2026.',
+        ar: 'برنامج حضوري من كلية كينيدي بجامعة هارفارد، 4 أسابيع، من 19 أكتوبر 2026 إلى 13 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-ai-in-action-organizational-strategy-f', school: 's-harvard-kennedy-school', subject: 'digital', format: 'online',
-      start: '2026-10-26', days: 12, price: 2495, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/ai-action',
+      start: '2026-10-26', days: 12, price: 2495, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/ai-action', end: '2026-11-06',
       title: {
         en: 'AI in Action: Organizational Strategy for the Responsible Adoption of AI',
         ar: 'الذكاء الاصطناعي في الممارسة: استراتيجية تنظيمية للتبني المسؤول للذكاء الاصطناعي'
@@ -770,7 +1776,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-strategic-leadership-enhancing-your-pe', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'online',
-      start: '2026-11-02', days: 5, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/strategic-leadership-enhancing-your-personal-effectiveness',
+      start: '2026-11-02', days: 5, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/strategic-leadership-enhancing-your-personal-effectiveness', end: '2026-11-06',
       title: {
         en: 'Strategic Leadership: Enhancing Your Personal Effectiveness',
         ar: 'القيادة الاستراتيجية: تعزيز فاعليتك الشخصية'
@@ -787,7 +1793,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-investment-decisions-and-behavioral-fi', school: 's-harvard-kennedy-school', subject: 'finance', format: 'in-person',
-      start: '2026-11-04', days: 3, price: 6100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/investment-decisions-and-behavioral-finance',
+      start: '2026-11-04', days: 3, price: 6100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/investment-decisions-and-behavioral-finance', end: '2026-11-06',
       title: { en: 'Investment Decisions and Behavioral Finance', ar: 'قرارات الاستثمار والتمويل السلوكي' },
       summary: {
         en: 'A 3-day on-campus program from Harvard Kennedy School, running 4 November 2026 to 6 November 2026.',
@@ -800,8 +1806,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-senior-executives-in-national-and-inte', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
-      start: '2026-11-30', days: 6, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/senior-executives-national-and-international-security',
+      id: 'c-senior-executives-in-national-and-inte', school: 's-harvard-kennedy-school', subject: 'strategy', format: 'in-person',
+      start: '2026-11-30', days: 6, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/senior-executives-national-and-international-security', end: '2026-12-05',
       title: {
         en: 'Senior Executives in National and International Security',
         ar: 'كبار التنفيذيين في الأمن الوطني والدولي'
@@ -818,7 +1824,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-emerging-leaders', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
-      start: '2026-12-06', days: 6, price: 11300, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/emerging-leaders',
+      start: '2026-12-06', days: 6, price: 11300, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/emerging-leaders', end: '2026-12-11',
       title: { en: 'Emerging Leaders', ar: 'القادة الصاعدون' },
       summary: {
         en: 'A 6-day on-campus program from Harvard Kennedy School, running 6 December 2026 to 11 December 2026.',
@@ -831,8 +1837,39 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-generative-ai-how-to-use-it-and-why-it', school: 's-harvard-kennedy-school', subject: 'digital', format: 'online',
+      start: '2027-01-11', days: null, price: 1995, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/generative-ai-how-use-it-and-why-it-matters', end: '2027-02-19', duration: { en: '6 weeks, 4-5 hours per week', ar: '6 أسابيع، 4–5 ساعات في الأسبوع' },
+      title: {
+        en: 'Generative AI: How to Use It and Why It Matters',
+        ar: 'الذكاء الاصطناعي التوليدي: كيف نستخدمه ولماذا يهم'
+      },
+      summary: {
+        en: 'An online program from Harvard Kennedy School, 6 weeks, 4-5 hours per week, running 11 January 2027 to 19 February 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية كينيدي بجامعة هارفارد، 6 أسابيع، 4–5 ساعات في الأسبوع، من 11 يناير 2027 إلى 19 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leadership-decision-making', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'online',
+      start: '2027-01-11', days: 12, price: 6600, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leadership-decision-making', end: '2027-01-22',
+      title: { en: 'Leadership Decision Making', ar: 'صنع القرار القيادي' },
+      summary: {
+        en: 'A 12-day online program from Harvard Kennedy School, running 11 January 2027 to 22 January 2027.',
+        ar: 'برنامج عبر الإنترنت لمدة 12 يومًا من كلية كينيدي بجامعة هارفارد، من 11 يناير 2027 إلى 22 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-leadership-for-the-21st-century', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
-      start: '2027-01-24', days: 6, price: 12900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leadership-21st-century',
+      start: '2027-01-24', days: 6, price: 12900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leadership-21st-century', end: '2027-01-29',
       title: { en: 'Leadership for the 21st Century', ar: 'القيادة في القرن الحادي والعشرين' },
       summary: {
         en: 'A 6-day on-campus program from Harvard Kennedy School, running 24 January 2027 to 29 January 2027.',
@@ -845,8 +1882,36 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-leading-people-building-teams', school: 's-harvard-kennedy-school', subject: 'people', format: 'online',
+      start: '2027-01-25', days: null, price: 1995, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leading-people-building-teams', end: '2027-02-16', duration: { en: '3 weeks, 5-7 hours per week', ar: '3 أسابيع، 5–7 ساعات في الأسبوع' },
+      title: { en: 'Leading People, Building Teams', ar: 'قيادة الأفراد وبناء الفرق' },
+      summary: {
+        en: 'An online program from Harvard Kennedy School, 3 weeks, 5-7 hours per week, running 25 January 2027 to 16 February 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية كينيدي بجامعة هارفارد، 3 أسابيع، 5–7 ساعات في الأسبوع، من 25 يناير 2027 إلى 16 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leadership-organizing-and-action-leadi', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'online',
+      start: '2027-02-01', days: null, price: 3000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leadership-organizing-and-action', end: '2027-05-28', duration: { en: '15 weeks, about 12 hours per week', ar: '15 أسبوعًا، نحو 12 ساعة في الأسبوع' },
+      title: { en: 'Leadership, Organizing and Action: Leading Change', ar: 'القيادة والتنظيم والعمل: قيادة التغيير' },
+      summary: {
+        en: 'An online program from Harvard Kennedy School, 15 weeks, about 12 hours per week, running 1 February 2027 to 28 May 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية كينيدي بجامعة هارفارد، 15 أسبوعًا، نحو 12 ساعة في الأسبوع، من 1 فبراير 2027 إلى 28 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-message-media-and-leadership-in-the-ag', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'online',
-      start: '2027-02-01', days: 12, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/message-media-leadership-ai',
+      start: '2027-02-01', days: 12, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/message-media-leadership-ai', end: '2027-02-12',
       title: {
         en: 'Message, Media and Leadership in the Age of AI',
         ar: 'الرسالة والإعلام والقيادة في عصر الذكاء الاصطناعي'
@@ -863,7 +1928,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-crisis-leadership-in-higher-education', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
-      start: '2027-02-09', days: 4, price: 6100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/crisis-leadership-higher-education',
+      start: '2027-02-09', days: 4, price: 6100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/crisis-leadership-higher-education', end: '2027-02-12',
       title: { en: 'Crisis Leadership in Higher Education', ar: 'القيادة في الأزمات بمؤسسات التعليم العالي' },
       summary: {
         en: 'A 4-day on-campus program from Harvard Kennedy School, running 9 February 2027 to 12 February 2027.',
@@ -877,7 +1942,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-behavioral-insights-and-public-policy', school: 's-harvard-kennedy-school', subject: 'strategy', format: 'online',
-      start: '2027-02-22', days: 18, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/behavioral-insights-and-public-policy',
+      start: '2027-02-22', days: 18, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/behavioral-insights-and-public-policy', end: '2027-03-11',
       title: { en: 'Behavioral Insights and Public Policy', ar: 'الرؤى السلوكية والسياسات العامة' },
       summary: {
         en: 'A 18-day online program from Harvard Kennedy School, running 22 February 2027 to 11 March 2027.',
@@ -890,8 +1955,42 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-leading-successful-programs-using-evid', school: 's-harvard-kennedy-school', subject: 'operations', format: 'online',
+      start: '2027-02-22', days: 5, price: 5400, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leading-successful-programs', end: '2027-02-26',
+      title: {
+        en: 'Leading Successful Programs: Using Evidence to Assess Effectiveness',
+        ar: 'قيادة البرامج الناجحة: توظيف الأدلة لتقييم الفعالية'
+      },
+      summary: {
+        en: 'A 5-day online program from Harvard Kennedy School, running 22 February 2027 to 26 February 2027.',
+        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من كلية كينيدي بجامعة هارفارد، من 22 فبراير 2027 إلى 26 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategic-management-of-regulatory-and', school: 's-harvard-kennedy-school', subject: 'operations', format: 'online',
+      start: '2027-02-22', days: 5, price: 5100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/strategic-management-regulatory-and-enforcement-agencies', end: '2027-02-26',
+      title: {
+        en: 'Strategic Management of Regulatory and Enforcement Agencies',
+        ar: 'الإدارة الاستراتيجية للجهات التنظيمية والرقابية'
+      },
+      summary: {
+        en: 'A 5-day online program from Harvard Kennedy School, running 22 February 2027 to 26 February 2027.',
+        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من كلية كينيدي بجامعة هارفارد، من 22 فبراير 2027 إلى 26 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-leadership-for-social-impact', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
-      start: '2027-03-15', days: 4, price: 7100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leadership-social-impact',
+      start: '2027-03-15', days: 4, price: 7100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leadership-social-impact', end: '2027-03-18',
       title: { en: 'Leadership for Social Impact', ar: 'القيادة من أجل الأثر الاجتماعي' },
       summary: {
         en: 'A 4-day on-campus program from Harvard Kennedy School, running 15 March 2027 to 18 March 2027.',
@@ -905,7 +2004,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-negotiation-strategies-building-agreem', school: 's-harvard-kennedy-school', subject: 'negotiation', format: 'online',
-      start: '2027-03-22', days: 5, price: 5100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/negotiation-strategies',
+      start: '2027-03-22', days: 5, price: 5100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/negotiation-strategies', end: '2027-03-26',
       title: {
         en: 'Negotiation Strategies: Building Agreement Across Boundaries',
         ar: 'استراتيجيات التفاوض: بناء الاتفاق عبر الحدود'
@@ -922,7 +2021,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-leadership-in-crises', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
-      start: '2027-04-04', days: 6, price: 10900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leadership-crises',
+      start: '2027-04-04', days: 6, price: 10900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leadership-crises', end: '2027-04-09',
       title: { en: 'Leadership in Crises', ar: 'القيادة في الأزمات' },
       summary: {
         en: 'A 6-day on-campus program from Harvard Kennedy School, running 4 April 2027 to 9 April 2027.',
@@ -936,7 +2035,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-women-and-power', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
-      start: '2027-04-11', days: 6, price: 10900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/women-and-power',
+      start: '2027-04-11', days: 6, price: 10900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/women-and-power', end: '2027-04-16',
       title: { en: 'Women and Power', ar: 'المرأة والسلطة' },
       summary: {
         en: 'A 6-day on-campus program from Harvard Kennedy School, running 11 April 2027 to 16 April 2027.',
@@ -949,8 +2048,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-driving-nonprofit-performance-and-inno', school: 's-harvard-kennedy-school', subject: 'operations', format: 'online',
-      start: '2027-04-15', days: 9, price: 4400, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/driving-nonprofit-performance-and-innovation',
+      id: 'c-driving-nonprofit-performance-and-inno', school: 's-harvard-kennedy-school', subject: 'strategy', format: 'online',
+      start: '2027-04-15', days: 9, price: 4400, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/driving-nonprofit-performance-and-innovation', end: '2027-04-23',
       title: { en: 'Driving Nonprofit Performance and Innovation', ar: 'تعزيز الأداء والابتكار في القطاع غير الربحي' },
       summary: {
         en: 'A 9-day online program from Harvard Kennedy School, running 15 April 2027 to 23 April 2027.',
@@ -964,7 +2063,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-strategies-for-inclusive-growth', school: 's-harvard-kennedy-school', subject: 'strategy', format: 'in-person',
-      start: '2027-04-25', days: 6, price: 10600, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/strategies-inclusive-growth',
+      start: '2027-04-25', days: 6, price: 10600, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/strategies-inclusive-growth', end: '2027-04-30',
       title: { en: 'Strategies for Inclusive Growth', ar: 'استراتيجيات النمو الشامل' },
       summary: {
         en: 'A 6-day on-campus program from Harvard Kennedy School, running 25 April 2027 to 30 April 2027.',
@@ -978,7 +2077,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-infrastructure-financing-regulation-an', school: 's-harvard-kennedy-school', subject: 'finance', format: 'in-person',
-      start: '2027-05-02', days: 6, price: 10600, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/infrastructure-financing-regulation-and-management',
+      start: '2027-05-02', days: 6, price: 10600, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/infrastructure-financing-regulation-and-management', end: '2027-05-07',
       title: {
         en: 'Infrastructure Financing, Regulation, and Management',
         ar: 'تمويل البنية التحتية وتنظيمها وإدارتها'
@@ -995,7 +2094,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-leadership-in-emerging-technology-secu', school: 's-harvard-kennedy-school', subject: 'digital', format: 'in-person',
-      start: '2027-05-02', days: 6, price: 11200, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leadership-emerging-technology-security-strategy-risk',
+      start: '2027-05-02', days: 6, price: 11200, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/program-finder/leadership-emerging-technology-security', end: '2027-05-07',
       title: {
         en: 'Leadership in Emerging Technology: Security, Strategy & Risk',
         ar: 'القيادة في التقنيات الناشئة: الأمن والاستراتيجية والمخاطر'
@@ -1012,7 +2111,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-major-events-navigating-opportunities', school: 's-harvard-kennedy-school', subject: 'operations', format: 'in-person',
-      start: '2027-05-10', days: 4, price: 7100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/major-events-navigating-opportunities-and-challenges',
+      start: '2027-05-10', days: 4, price: 7100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/major-events-navigating-opportunities-and-challenges', end: '2027-05-13',
       title: {
         en: 'Major Events: Navigating Opportunities and Challenges',
         ar: 'الفعاليات الكبرى: استثمار الفرص ومواجهة التحديات'
@@ -1029,7 +2128,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-persuasive-communication-narrative-evi', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'online',
-      start: '2027-05-10', days: 12, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/persuasive-communication-narrative-evidence-and-impact',
+      start: '2027-05-10', days: 12, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/persuasive-communication-narrative-evidence-and-impact', end: '2027-05-21',
       title: {
         en: 'Persuasive Communication: Narrative, Evidence, and Impact',
         ar: 'التواصل الإقناعي: السرد والبراهين والأثر'
@@ -1046,7 +2145,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-leading-green-growth-economic-strategi', school: 's-harvard-kennedy-school', subject: 'sustainability', format: 'in-person',
-      start: '2027-05-16', days: 6, price: 10600, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leading-green-growth-economic-strategies-low-carbon-world',
+      start: '2027-05-16', days: 6, price: 10600, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leading-green-growth-economic-strategies-low-carbon-world', end: '2027-05-21',
       title: {
         en: 'Leading Green Growth: Economic Strategies for a Low-Carbon World',
         ar: 'قيادة النمو الأخضر: استراتيجيات اقتصادية لعالم منخفض الكربون'
@@ -1062,12 +2161,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-art-and-practice-of-leadership-develop', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
-      start: '2027-06-06', days: 6, price: 11300, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/art-and-practice-leadership-development',
+      id: 'c-art-and-practice-of-leadership-develop', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'blended',
+      start: '2027-06-06', days: 6, price: 11300, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/art-and-practice-leadership-development', end: '2027-06-11',
       title: { en: 'Art and Practice of Leadership Development', ar: 'فن وممارسة تطوير القيادة' },
       summary: {
-        en: 'A 6-day on-campus program from Harvard Kennedy School, running 6 June 2027 to 11 June 2027.',
-        ar: 'برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 6 يونيو 2027 إلى 11 يونيو 2027.'
+        en: 'A 6-day blended program from Harvard Kennedy School, running 6 June 2027 to 11 June 2027.',
+        ar: 'برنامج مدمج لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 6 يونيو 2027 إلى 11 يونيو 2027.'
       },
       highlights: {
         en: [],
@@ -1077,7 +2176,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-senior-executives-in-state-and-local-g', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
-      start: '2027-06-07', days: 19, price: 17900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/senior-executives-state-and-local-government',
+      start: '2027-06-07', days: 19, price: 17900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/senior-executives-state-and-local-government', end: '2027-06-25',
       title: {
         en: 'Senior Executives in State and Local Government',
         ar: 'كبار التنفيذيين في الحكومات الإقليمية والمحلية'
@@ -1093,8 +2192,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-how-to-empower-black-leaders-strategie', school: 's-harvard-kennedy-school', subject: 'people', format: 'in-person',
-      start: '2027-06-22', days: 4, price: 7100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/empowering-black-leaders',
+      id: 'c-how-to-empower-black-leaders-strategie', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'in-person',
+      start: '2027-06-22', days: 4, price: 7100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/empowering-black-leaders', end: '2027-06-25',
       title: {
         en: 'How to Empower Black Leaders: Strategies for Personal and Professional Success',
         ar: 'تمكين القادة السود: استراتيجيات للنجاح الشخصي والمهني'
@@ -1110,8 +2209,22 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-leadership-and-character-in-uncertain', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'online',
+      start: '2027-07-06', days: null, price: 4300, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leadership-and-character-uncertain-times', end: '2027-08-06', duration: { en: '5 weeks, 6-8 hours per week', ar: '5 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: { en: 'Leadership and Character in Uncertain Times', ar: 'القيادة والشخصية في أوقات عدم اليقين' },
+      summary: {
+        en: 'An online program from Harvard Kennedy School, 5 weeks, 6-8 hours per week, running 6 July 2027 to 6 August 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية كينيدي بجامعة هارفارد، 5 أسابيع، 6–8 ساعات في الأسبوع، من 6 يوليو 2027 إلى 6 أغسطس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-leading-in-artificial-intelligence-exp', school: 's-harvard-kennedy-school', subject: 'digital', format: 'in-person',
-      start: '2027-07-11', days: 6, price: 11700, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leading-artificial-intelligence',
+      start: '2027-07-11', days: 6, price: 11700, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leading-artificial-intelligence', end: '2027-07-16',
       title: {
         en: 'Leading in Artificial Intelligence: Exploring Technology and Policy',
         ar: 'القيادة في الذكاء الاصطناعي: استكشاف التقنية والسياسات'
@@ -1127,25 +2240,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leading-successful-programs-using-evid', school: 's-harvard-kennedy-school', subject: 'operations', format: 'in-person',
-      start: '2027-07-18', days: 6, price: 10900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leading-successful-programs',
-      title: {
-        en: 'Leading Successful Programs: Using Evidence to Assess Effectiveness',
-        ar: 'قيادة البرامج الناجحة: توظيف الأدلة لتقييم الفعالية'
-      },
-      summary: {
-        en: 'A 6-day on-campus program from Harvard Kennedy School, running 18 July 2027 to 23 July 2027.',
-        ar: 'برنامج حضوري لمدة 6 أيام من كلية كينيدي بجامعة هارفارد، من 18 يوليو 2027 إلى 23 يوليو 2027.'
-      },
-      highlights: {
-        en: [],
-        ar: []
-      },
-      audience: { en: '', ar: '' }
-    },
-    {
       id: 'c-cybersecurity-the-intersection-of-poli', school: 's-harvard-kennedy-school', subject: 'digital', format: 'in-person',
-      start: '2027-07-25', days: 6, price: 11300, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/cybersecurity',
+      start: '2027-07-25', days: 6, price: 11300, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/cybersecurity', end: '2027-07-30',
       title: {
         en: 'Cybersecurity: The Intersection of Policy and Technology',
         ar: 'الأمن السيبراني: تقاطع السياسات والتقنية'
@@ -1162,7 +2258,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-comparative-tax-policy-and-administrat', school: 's-harvard-kennedy-school', subject: 'finance', format: 'in-person',
-      start: '2027-08-16', days: 12, price: 13900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/comparative-tax-policy-and-administration',
+      start: '2027-08-16', days: 12, price: 13900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/comparative-tax-policy-and-administration', end: '2027-08-27',
       title: { en: 'Comparative Tax Policy and Administration', ar: 'السياسات الضريبية المقارنة وإدارتها' },
       summary: {
         en: 'A 12-day on-campus program from Harvard Kennedy School, running 16 August 2027 to 27 August 2027.',
@@ -1175,12 +2271,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-ai-strategy-and-implementation', school: 's-imd-business-school', subject: 'digital', format: 'in-person',
-      start: '2026-09-14', days: 5, price: 10900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/digital-transformation/aisi/ai-strategy-and-implementation/',
-      title: { en: 'AI Strategy and Implementation', ar: 'استراتيجية الذكاء الاصطناعي وتطبيقها' },
+      id: 'c-climate-change-policy-economics-and-po', school: 's-harvard-kennedy-school', subject: 'sustainability', format: 'online',
+      start: null, days: null, price: 5100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/climate-change-policy-economics-and-politics',
+      title: { en: 'Climate Change Policy: Economics and Politics', ar: 'سياسات تغير المناخ: الاقتصاد والسياسة' },
       summary: {
-        en: 'A 5-day on-campus program from IMD Business School, running 14 September 2026 to 18 September 2026.',
-        ar: 'برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 14 سبتمبر 2026 إلى 18 سبتمبر 2026.'
+        en: 'An online program from Harvard Kennedy School. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية كينيدي بجامعة هارفارد. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -1189,12 +2285,15 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leading-digital-and-ai-transformation', school: 's-imd-business-school', subject: 'digital', format: 'in-person',
-      start: '2026-09-28', days: 5, price: 10900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/digital-transformation/ldait/leading-digital-ai-transformation/',
-      title: { en: 'Leading Digital and AI Transformation', ar: 'قيادة التحول الرقمي والذكاء الاصطناعي' },
+      id: 'c-implementing-public-policy', school: 's-harvard-kennedy-school', subject: 'operations', format: 'blended',
+      start: null, days: null, price: 12900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/implementing-public-policy', duration: {
+        en: '5 months: 10 online live sessions and 1 week on campus',
+        ar: '5 أشهر: 10 جلسات مباشرة عبر الإنترنت وأسبوع في الحرم الجامعي'
+      },
+      title: { en: 'Implementing Public Policy', ar: 'تنفيذ السياسات العامة' },
       summary: {
-        en: 'A 5-day on-campus program from IMD Business School, running 28 September 2026 to 2 October 2026.',
-        ar: 'برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 28 سبتمبر 2026 إلى 2 أكتوبر 2026.'
+        en: 'A blended program from Harvard Kennedy School, 5 months: 10 online live sessions and 1 week on campus. Dates to be announced by the school.',
+        ar: 'برنامج مدمج من كلية كينيدي بجامعة هارفارد، 5 أشهر: 10 جلسات مباشرة عبر الإنترنت وأسبوع في الحرم الجامعي. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -1203,12 +2302,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leading-teams-in-the-ai-era-sprint', school: 's-imd-business-school', subject: 'leadership', format: 'online',
-      start: '2026-09-28', days: 5, price: 950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/sprint/leadership-ai/',
-      title: { en: 'Leading Teams in the AI Era Sprint', ar: 'قيادة الفرق في عصر الذكاء الاصطناعي: برنامج مكثف' },
+      id: 'c-leading-economic-growth', school: 's-harvard-kennedy-school', subject: 'strategy', format: 'online',
+      start: null, days: null, price: 6600, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/leading-economic-growth', duration: { en: '10 weeks', ar: '10 أسابيع' },
+      title: { en: 'Leading Economic Growth', ar: 'قيادة النمو الاقتصادي' },
       summary: {
-        en: 'A 5-day online program from IMD Business School, starting 28 September 2026.',
-        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من كلية IMD للأعمال، يبدأ في 28 سبتمبر 2026.'
+        en: 'An online program from Harvard Kennedy School, 10 weeks. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية كينيدي بجامعة هارفارد، 10 أسابيع. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -1217,12 +2316,88 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-transition-to-business-leadership', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
-      start: '2026-09-28', days: 20, price: 32500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/management/tbl/business-leadership-training/',
-      title: { en: 'Transition to Business Leadership', ar: 'الانتقال إلى قيادة الأعمال' },
+      id: 'c-nonprofit-management-and-leadership-st', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'online',
+      start: null, days: null, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/nonprofit-management-and-leadership-online',
+      title: {
+        en: 'Nonprofit Management and Leadership: Strategies for Organizational Success',
+        ar: 'إدارة المنظمات غير الربحية وقيادتها: استراتيجيات للنجاح المؤسسي'
+      },
       summary: {
-        en: 'A 20-day on-campus program from IMD Business School, running 28 September 2026 to 27 November 2026.',
-        ar: 'برنامج حضوري لمدة 20 يومًا من كلية IMD للأعمال، من 28 سبتمبر 2026 إلى 27 نوفمبر 2026.'
+        en: 'An online program from Harvard Kennedy School. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية كينيدي بجامعة هارفارد. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-public-narrative-leadership-storytelli', school: 's-harvard-kennedy-school', subject: 'leadership', format: 'online',
+      start: null, days: null, price: 3000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.hks.harvard.edu/educational-programs/executive-education/public-narrative-leadership-storytelling-and-action-2',
+      title: { en: 'Public Narrative: Leadership, Storytelling, and Action', ar: 'السرد العام: القيادة والقصة والعمل' },
+      summary: {
+        en: 'An online program from Harvard Kennedy School. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية كينيدي بجامعة هارفارد. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-boards-and-risks', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
+      start: '2026-09-30', days: 2, price: 6600, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/governance/br/risks-for-board-members/', end: '2026-10-01',
+      title: { en: 'Boards and Risks', ar: 'مجالس الإدارة والمخاطر' },
+      summary: {
+        en: 'A 2-day on-campus program from IMD Business School, running 30 September 2026 to 1 October 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية IMD للأعمال، من 30 سبتمبر 2026 إلى 1 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-creating-value-in-the-circular-economy', school: 's-imd-business-school', subject: 'sustainability', format: 'blended',
+      start: '2026-10-02', days: null, price: 5900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/sustainability/cvce/creating-value-circular-economy/', end: '2026-11-27', duration: {
+        en: '2.5 days on campus (Lausanne) + 15 hours online',
+        ar: '2.5 يوم في الحرم الجامعي (لوزان) + 15 ساعة عبر الإنترنت'
+      },
+      title: { en: 'Creating Value in the Circular Economy', ar: 'خلق القيمة في الاقتصاد الدائري' },
+      summary: {
+        en: 'A blended program from IMD Business School, 2.5 days on campus (Lausanne) + 15 hours online, running 2 October 2026 to 27 November 2026.',
+        ar: 'برنامج مدمج من كلية IMD للأعمال، 2.5 يوم في الحرم الجامعي (لوزان) + 15 ساعة عبر الإنترنت، من 2 أكتوبر 2026 إلى 27 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-digital-and-ai-transformation-for-boar', school: 's-imd-business-school', subject: 'digital', format: 'in-person',
+      start: '2026-10-02', days: 2, price: 6600, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/governance/dtb/digital-transformation-for-boards/', end: '2026-10-03',
+      title: { en: 'Digital and AI Transformation for Boards', ar: 'التحول الرقمي والذكاء الاصطناعي لمجالس الإدارة' },
+      summary: {
+        en: 'A 2-day on-campus program from IMD Business School, running 2 October 2026 to 3 October 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية IMD للأعمال، من 2 أكتوبر 2026 إلى 3 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-driving-strategic-innovation', school: 's-imd-business-school', subject: 'strategy', format: 'in-person',
+      start: '2026-10-04', days: 6, price: 12900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/innovation/dsi/driving-strategic-innovation/',
+      title: { en: 'Driving Strategic Innovation', ar: 'قيادة الابتكار الاستراتيجي' },
+      summary: {
+        en: 'A 6-day on-campus program from IMD Business School, running 4 October 2026 to 9 October 2026.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية IMD للأعمال، من 4 أكتوبر 2026 إلى 9 أكتوبر 2026.'
       },
       highlights: {
         en: [],
@@ -1232,7 +2407,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-high-performance-leadership', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
-      start: '2026-10-04', days: 6, price: 14900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/hpl/leadership-training/',
+      start: '2026-10-04', days: 6, price: 14900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/hpl/leadership-training/', end: '2026-10-09',
       title: { en: 'High Performance Leadership', ar: 'القيادة عالية الأداء' },
       summary: {
         en: 'A 6-day on-campus program from IMD Business School, running 4 October 2026 to 9 October 2026.',
@@ -1245,12 +2420,133 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-advanced-management-program', school: 's-imd-business-school', subject: 'strategy', format: 'blended',
+      start: '2026-10-05', days: null, price: 32500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/management/amp/advanced-management-program/', end: '2026-11-25', duration: {
+        en: '4 half-days virtual over 1 week + 15 days on campus',
+        ar: '4 أنصاف أيام افتراضية على مدى أسبوع + 15 يومًا في الحرم الجامعي'
+      },
+      title: { en: 'Advanced Management Program', ar: 'برنامج الإدارة المتقدمة' },
+      summary: {
+        en: 'A blended program from IMD Business School, 4 half-days virtual over 1 week + 15 days on campus, running 5 October 2026 to 25 November 2026.',
+        ar: 'برنامج مدمج من كلية IMD للأعمال، 4 أنصاف أيام افتراضية على مدى أسبوع + 15 يومًا في الحرم الجامعي، من 5 أكتوبر 2026 إلى 25 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-analytics-for-leaders', school: 's-imd-business-school', subject: 'data', format: 'online',
+      start: '2026-10-05', days: null, price: 2950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/digital-transformation/bal/business-analytics-course/', end: '2026-11-29', duration: { en: '8 weeks, 4-6 hours per week', ar: '8 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Business Analytics for Leaders', ar: 'تحليلات الأعمال للقادة' },
+      summary: {
+        en: 'An online program from IMD Business School, 8 weeks, 4-6 hours per week, running 5 October 2026 to 29 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 8 أسابيع، 4–6 ساعات في الأسبوع، من 5 أكتوبر 2026 إلى 29 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-high-performance-boards', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
+      start: '2026-10-05', days: 3, price: 12500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/governance/hpb/board-governance/', end: '2026-10-08',
+      title: { en: 'High Performance Boards', ar: 'مجالس الإدارة عالية الأداء' },
+      summary: {
+        en: 'A 3-day on-campus program from IMD Business School, running 5 October 2026 to 8 October 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية IMD للأعمال، من 5 أكتوبر 2026 إلى 8 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-innovate-with-ai-and-tech', school: 's-imd-business-school', subject: 'digital', format: 'in-person',
+      start: '2026-10-05', days: 5, price: 10900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/digital-transformation/iait/innovate-ai-technologies/', end: '2026-10-09',
+      title: { en: 'Innovate with AI and Tech', ar: 'الابتكار بالذكاء الاصطناعي والتقنية' },
+      summary: {
+        en: 'A 5-day on-campus program from IMD Business School, running 5 October 2026 to 9 October 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 5 أكتوبر 2026 إلى 9 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-behavioral-change', school: 's-imd-business-school', subject: 'people', format: 'online',
+      start: '2026-10-05', days: null, price: 2950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/lbc/leading-behavioral-change-online-course/', end: '2026-11-29', duration: { en: '8 weeks, 4-6 hours per week', ar: '8 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Leading Behavioral Change', ar: 'قيادة التغيير السلوكي' },
+      summary: {
+        en: 'An online program from IMD Business School, 8 weeks, 4-6 hours per week, running 5 October 2026 to 29 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 8 أسابيع، 4–6 ساعات في الأسبوع، من 5 أكتوبر 2026 إلى 29 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-leading-sustainable-business-transform', school: 's-imd-business-school', subject: 'sustainability', format: 'blended',
-      start: '2026-10-05', days: 6, price: 9900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/sustainability/lsbt/leading-sustainable-business-transformation/',
+      start: '2026-10-05', days: null, price: 9900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/sustainability/lsbt/leading-sustainable-business-transformation/', end: '2026-11-18', duration: {
+        en: '3 days liVe virtual, 5 weeks online, 3 days on campus (Lausanne)',
+        ar: '3 أيام افتراضية مباشرة، و5 أسابيع عبر الإنترنت، و3 أيام في الحرم الجامعي (لوزان)'
+      },
       title: { en: 'Leading Sustainable Business Transformation', ar: 'قيادة التحول المستدام في الأعمال' },
       summary: {
-        en: 'A 6-day blended program from IMD Business School, running 5 October 2026 to 18 November 2026.',
-        ar: 'برنامج مدمج لمدة 6 أيام من كلية IMD للأعمال، من 5 أكتوبر 2026 إلى 18 نوفمبر 2026.'
+        en: 'A blended program from IMD Business School, 3 days liVe virtual, 5 weeks online, 3 days on campus (Lausanne), running 5 October 2026 to 18 November 2026.',
+        ar: 'برنامج مدمج من كلية IMD للأعمال، 3 أيام افتراضية مباشرة، و5 أسابيع عبر الإنترنت، و3 أيام في الحرم الجامعي (لوزان)، من 5 أكتوبر 2026 إلى 18 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategy-execution', school: 's-imd-business-school', subject: 'strategy', format: 'online',
+      start: '2026-10-05', days: null, price: 2950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/strategy/se/strategy-execution-course/', end: '2026-11-29', duration: { en: '8 weeks, 4-6 hours per week', ar: '8 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Strategy Execution', ar: 'تنفيذ الاستراتيجية' },
+      summary: {
+        en: 'An online program from IMD Business School, 8 weeks, 4-6 hours per week, running 5 October 2026 to 29 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 8 أسابيع، 4–6 ساعات في الأسبوع، من 5 أكتوبر 2026 إلى 29 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-strategy-and-implementation', school: 's-imd-business-school', subject: 'digital', format: 'in-person',
+      start: '2026-10-12', days: 5, price: 10900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/digital-transformation/aisi/ai-strategy-and-implementation/', end: '2026-10-16',
+      title: { en: 'AI Strategy and Implementation', ar: 'استراتيجية الذكاء الاصطناعي وتطبيقها' },
+      summary: {
+        en: 'A 5-day on-campus program from IMD Business School, running 12 October 2026 to 16 October 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 12 أكتوبر 2026 إلى 16 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leadership-skills-for-sustainable-chan', school: 's-imd-business-school', subject: 'sustainability', format: 'blended',
+      start: '2026-10-12', days: null, price: 5900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/sustainability/lsc/leading-sustainable-change/', end: '2026-12-17', duration: {
+        en: '2.5 days on campus (Lausanne) + 15 hours online',
+        ar: '2.5 يوم في الحرم الجامعي (لوزان) + 15 ساعة عبر الإنترنت'
+      },
+      title: { en: 'Leadership Skills for Sustainable Change', ar: 'مهارات القيادة للتغيير المستدام' },
+      summary: {
+        en: 'A blended program from IMD Business School, 2.5 days on campus (Lausanne) + 15 hours online, running 12 October 2026 to 17 December 2026.',
+        ar: 'برنامج مدمج من كلية IMD للأعمال، 2.5 يوم في الحرم الجامعي (لوزان) + 15 ساعة عبر الإنترنت، من 12 أكتوبر 2026 إلى 17 ديسمبر 2026.'
       },
       highlights: {
         en: [],
@@ -1260,7 +2556,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-mobilizing-people', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
-      start: '2026-10-15', days: 9, price: 23000, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/mp/team-leadership-program/',
+      start: '2026-10-15', days: 9, price: 23000, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/mp/team-leadership-program/', end: '2026-10-23',
       title: { en: 'Mobilizing People', ar: 'تعبئة الطاقات البشرية' },
       summary: {
         en: 'A 9-day on-campus program from IMD Business School, running 15 October 2026 to 23 October 2026.',
@@ -1274,7 +2570,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-advanced-high-performance-leadership', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
-      start: '2026-10-19', days: 5, price: 9500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/ahpl/advanced-leadership-training/',
+      start: '2026-10-19', days: 5, price: 9500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/ahpl/advanced-leadership-training/', end: '2026-10-23',
       title: { en: 'Advanced High Performance Leadership', ar: 'القيادة عالية الأداء المتقدمة' },
       summary: {
         en: 'A 5-day on-campus program from IMD Business School, running 19 October 2026 to 23 October 2026.',
@@ -1287,8 +2583,22 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-inspirational-leadership', school: 's-imd-business-school', subject: 'leadership', format: 'online',
+      start: '2026-10-19', days: null, price: 2950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/il/inspirational-leadership-course/', end: '2026-12-13', duration: { en: '8 weeks, 4-6 hours per week', ar: '8 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Inspirational Leadership', ar: 'القيادة الملهمة' },
+      summary: {
+        en: 'An online program from IMD Business School, 8 weeks, 4-6 hours per week, running 19 October 2026 to 13 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 8 أسابيع، 4–6 ساعات في الأسبوع، من 19 أكتوبر 2026 إلى 13 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-orchestrating-winning-performance', school: 's-imd-business-school', subject: 'strategy', format: 'in-person',
-      start: '2026-10-19', days: 5, price: 16900, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/owp/sessions/singapore-2026/',
+      start: '2026-10-19', days: 5, price: 16900, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/owp/sessions/singapore-2026/', end: '2026-10-23',
       title: { en: 'Orchestrating Winning Performance', ar: 'تنسيق الأداء الرابح (Orchestrating Winning Performance)' },
       summary: {
         en: 'A 5-day on-campus program from IMD Business School, running 19 October 2026 to 23 October 2026.',
@@ -1301,8 +2611,168 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-strategic-thinking', school: 's-imd-business-school', subject: 'strategy', format: 'online',
+      start: '2026-10-19', days: null, price: 2950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/strategy/st/online-course-strategy/', end: '2026-12-13', duration: { en: '8 weeks, 4-6 hours per week', ar: '8 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Strategic Thinking', ar: 'التفكير الاستراتيجي' },
+      summary: {
+        en: 'An online program from IMD Business School, 8 weeks, 4-6 hours per week, running 19 October 2026 to 13 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 8 أسابيع، 4–6 ساعات في الأسبوع، من 19 أكتوبر 2026 إلى 13 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-negotiating-for-value-creation', school: 's-imd-business-school', subject: 'negotiation', format: 'in-person',
+      start: '2026-10-20', days: 3, price: 6900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/negotiation/nvc/negotiation-course/', end: '2026-10-22',
+      title: { en: 'Negotiating for Value Creation', ar: 'التفاوض لخلق القيمة' },
+      summary: {
+        en: 'A 3-day on-campus program from IMD Business School, running 20 October 2026 to 22 October 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية IMD للأعمال، من 20 أكتوبر 2026 إلى 22 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-managing-and-measuring-sustainability', school: 's-imd-business-school', subject: 'sustainability', format: 'blended',
+      start: '2026-10-22', days: null, price: 5900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/sustainability/mmsi/measuring-and-managing-sustainability-impact/', end: '2026-11-20', duration: {
+        en: '2.5 days on campus (Lausanne) + 12 hours online',
+        ar: '2.5 يوم في الحرم الجامعي (لوزان) + 12 ساعة عبر الإنترنت'
+      },
+      title: { en: 'Managing and Measuring Sustainability Impact', ar: 'إدارة أثر الاستدامة وقياسه' },
+      summary: {
+        en: 'A blended program from IMD Business School, 2.5 days on campus (Lausanne) + 12 hours online, running 22 October 2026 to 20 November 2026.',
+        ar: 'برنامج مدمج من كلية IMD للأعمال، 2.5 يوم في الحرم الجامعي (لوزان) + 12 ساعة عبر الإنترنت، من 22 أكتوبر 2026 إلى 20 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-digital-transformation-in-practice', school: 's-imd-business-school', subject: 'digital', format: 'online',
+      start: '2026-10-26', days: null, price: 1950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/digital-transformation/dtip/digital-transformation-in-practice/', end: '2026-11-29', duration: { en: '5 weeks, 4-6 hours per week', ar: '5 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Digital Transformation in Practice', ar: 'التحول الرقمي في الممارسة العملية' },
+      summary: {
+        en: 'An online program from IMD Business School, 5 weeks, 4-6 hours per week, running 26 October 2026 to 29 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 5 أسابيع، 4–6 ساعات في الأسبوع، من 26 أكتوبر 2026 إلى 29 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-disruptive-innovation', school: 's-imd-business-school', subject: 'entrepreneurship', format: 'online',
+      start: '2026-10-26', days: null, price: 1950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/innovation/di/disruptive-innovation-course/', end: '2026-11-29', duration: { en: '5 weeks, 4-6 hours per week', ar: '5 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Disruptive Innovation', ar: 'الابتكار التخريبي' },
+      summary: {
+        en: 'An online program from IMD Business School, 5 weeks, 4-6 hours per week, running 26 October 2026 to 29 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 5 أسابيع، 4–6 ساعات في الأسبوع، من 26 أكتوبر 2026 إلى 29 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-mastering-board-governance', school: 's-imd-business-school', subject: 'leadership', format: 'online',
+      start: '2026-10-26', days: null, price: 2950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/governance/mbg/mastering-board-governance/', end: '2026-11-29', duration: { en: '5 weeks, 6-8 hours per week', ar: '5 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: { en: 'Mastering Board Governance', ar: 'إتقان حوكمة مجالس الإدارة' },
+      summary: {
+        en: 'An online program from IMD Business School, 5 weeks, 6-8 hours per week, running 26 October 2026 to 29 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 5 أسابيع، 6–8 ساعات في الأسبوع، من 26 أكتوبر 2026 إلى 29 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-strategies-from-analytics-to-agents', school: 's-imd-business-school', subject: 'digital', format: 'online',
+      start: '2026-11-02', days: null, price: 1950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/digital-transformation/aiso/ai-strategies-online-course/', end: '2026-12-06', duration: { en: '5 weeks, 4-6 hours per week', ar: '5 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: {
+        en: 'AI Strategies: From Analytics to Agents',
+        ar: 'استراتيجيات الذكاء الاصطناعي: من التحليلات إلى الوكلاء الأذكياء'
+      },
+      summary: {
+        en: 'An online program from IMD Business School, 5 weeks, 4-6 hours per week, running 2 November 2026 to 6 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 5 أسابيع، 4–6 ساعات في الأسبوع، من 2 نوفمبر 2026 إلى 6 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-advanced-leadership', school: 's-imd-business-school', subject: 'leadership', format: 'online',
+      start: '2026-11-02', days: null, price: 1950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/al/advanced-leadership-program/', end: '2026-12-06', duration: { en: '5 weeks, 4-6 hours per week', ar: '5 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Advanced Leadership', ar: 'القيادة المتقدمة' },
+      summary: {
+        en: 'An online program from IMD Business School, 5 weeks, 4-6 hours per week, running 2 November 2026 to 6 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 5 أسابيع، 4–6 ساعات في الأسبوع، من 2 نوفمبر 2026 إلى 6 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-change-management', school: 's-imd-business-school', subject: 'leadership', format: 'online',
+      start: '2026-11-02', days: null, price: 1950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/chm/change-management-program/', end: '2026-12-06', duration: { en: '5 weeks, 4-6 hours per week', ar: '5 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Change Management', ar: 'إدارة التغيير' },
+      summary: {
+        en: 'An online program from IMD Business School, 5 weeks, 4-6 hours per week, running 2 November 2026 to 6 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 5 أسابيع، 4–6 ساعات في الأسبوع، من 2 نوفمبر 2026 إلى 6 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-complex-problem-solving', school: 's-imd-business-school', subject: 'strategy', format: 'online',
+      start: '2026-11-02', days: null, price: 1950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/strategy/cps/complex-problem-solving-online-course/', end: '2026-12-06', duration: { en: '5 weeks, 4-6 hours per week', ar: '5 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Complex Problem Solving', ar: 'حل المشكلات المعقدة' },
+      summary: {
+        en: 'An online program from IMD Business School, 5 weeks, 4-6 hours per week, running 2 November 2026 to 6 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 5 أسابيع، 4–6 ساعات في الأسبوع، من 2 نوفمبر 2026 إلى 6 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leadership-essentials', school: 's-imd-business-school', subject: 'leadership', format: 'online',
+      start: '2026-11-02', days: null, price: 1950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/le/leadership-essentials-course/', end: '2026-12-06', duration: { en: '5 weeks, 4-6 hours per week', ar: '5 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Leadership Essentials', ar: 'أساسيات القيادة' },
+      summary: {
+        en: 'An online program from IMD Business School, 5 weeks, 4-6 hours per week, running 2 November 2026 to 6 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 5 أسابيع، 4–6 ساعات في الأسبوع، من 2 نوفمبر 2026 إلى 6 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-leading-for-high-impact', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
-      start: '2026-11-02', days: 5, price: 17900, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/lhi/leading-for-high-impact/',
+      start: '2026-11-02', days: 5, price: 17900, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/lhi/leading-for-high-impact/', end: '2026-11-06', duration: { en: '4.5 days', ar: '4.5 أيام' },
       title: { en: 'Leading for High Impact', ar: 'القيادة لتحقيق أثر عالٍ' },
       summary: {
         en: 'A 5-day on-campus program from IMD Business School, running 2 November 2026 to 6 November 2026.',
@@ -1316,11 +2786,14 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-organizational-learning-in-action', school: 's-imd-business-school', subject: 'people', format: 'blended',
-      start: '2026-11-02', days: 4, price: 9000, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/human-resources/ola/organizational-learning/',
+      start: '2026-11-02', days: null, price: 9000, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/human-resources/ola/organizational-learning/', end: '2026-12-04', duration: {
+        en: '4 days on campus & 3 live virtual sessions',
+        ar: '4 أيام في الحرم الجامعي و3 جلسات افتراضية مباشرة'
+      },
       title: { en: 'Organizational Learning in Action', ar: 'التعلّم المؤسسي موضع التطبيق' },
       summary: {
-        en: 'A 4-day blended program from IMD Business School, running 2 November 2026 to 4 December 2026.',
-        ar: 'برنامج مدمج لمدة 4 أيام من كلية IMD للأعمال، من 2 نوفمبر 2026 إلى 4 ديسمبر 2026.'
+        en: 'A blended program from IMD Business School, 4 days on campus & 3 live virtual sessions, running 2 November 2026 to 4 December 2026.',
+        ar: 'برنامج مدمج من كلية IMD للأعمال، 4 أيام في الحرم الجامعي و3 جلسات افتراضية مباشرة، من 2 نوفمبر 2026 إلى 4 ديسمبر 2026.'
       },
       highlights: {
         en: [],
@@ -1329,12 +2802,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-future-leaders', school: 's-imd-business-school', subject: 'leadership', format: 'blended',
-      start: '2026-11-03', days: 12, price: 19900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/management/fl/future-leaders-program/',
-      title: { en: 'Future Leaders', ar: 'قادة المستقبل' },
+      id: 'c-winning-sustainability-strategies', school: 's-imd-business-school', subject: 'sustainability', format: 'online',
+      start: '2026-11-02', days: null, price: 1950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/sustainability/wss/sustainability-strategy-course/', end: '2026-12-06', duration: { en: '5 weeks, 4-6 hours per week', ar: '5 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Winning Sustainability Strategies', ar: 'استراتيجيات الاستدامة الرابحة' },
       summary: {
-        en: 'A 12-day blended program from IMD Business School, running 3 November 2026 to 4 March 2027.',
-        ar: 'برنامج مدمج لمدة 12 يومًا من كلية IMD للأعمال، من 3 نوفمبر 2026 إلى 4 مارس 2027.'
+        en: 'An online program from IMD Business School, 5 weeks, 4-6 hours per week, running 2 November 2026 to 6 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 5 أسابيع، 4–6 ساعات في الأسبوع، من 2 نوفمبر 2026 إلى 6 ديسمبر 2026.'
       },
       highlights: {
         en: [],
@@ -1344,7 +2817,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-leading-high-performance-teams', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
-      start: '2026-11-03', days: 4, price: 7900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/lhpt/leading-high-performance-teams/',
+      start: '2026-11-03', days: 4, price: 7900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/lhpt/leading-high-performance-teams/', end: '2026-11-06', duration: { en: '3.5 days', ar: '3.5 أيام' },
       title: { en: 'Leading High-Performance Teams', ar: 'قيادة الفرق عالية الأداء' },
       summary: {
         en: 'A 4-day on-campus program from IMD Business School, running 3 November 2026 to 6 November 2026.',
@@ -1357,12 +2830,208 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-strategic-forum-for-senior-executives', school: 's-imd-business-school', subject: 'strategy', format: 'in-person',
-      start: '2026-11-09', days: 3, price: 6900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/management/sfse/executive-leadership-forum/',
-      title: { en: 'Strategic Forum for Senior Executives', ar: 'المنتدى الاستراتيجي لكبار التنفيذيين' },
+      id: 'c-geopolitics-for-boards', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
+      start: '2026-11-04', days: 2, price: 6600, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/governance/gpb/geopolitics-for-boards', end: '2026-11-05',
+      title: { en: 'Geopolitics for Boards', ar: 'الجيوسياسة لأعضاء مجالس الإدارة' },
       summary: {
-        en: 'A 3-day on-campus program from IMD Business School, running 9 November 2026 to 11 November 2026.',
-        ar: 'برنامج حضوري لمدة 3 أيام من كلية IMD للأعمال، من 9 نوفمبر 2026 إلى 11 نوفمبر 2026.'
+        en: 'A 2-day on-campus program from IMD Business School, running 4 November 2026 to 5 November 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية IMD للأعمال، من 4 نوفمبر 2026 إلى 5 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-reinventing-luxury-lab', school: 's-imd-business-school', subject: 'strategy', format: 'in-person',
+      start: '2026-11-05', days: 2, price: 3500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/luxury/rll/luxury-lab/', end: '2026-11-06',
+      title: { en: 'Reinventing Luxury Lab', ar: 'مختبر إعادة ابتكار الرفاهية' },
+      summary: {
+        en: 'A 2-day on-campus program from IMD Business School, running 5 November 2026 to 6 November 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية IMD للأعمال، من 5 نوفمبر 2026 إلى 6 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-finance-for-boards', school: 's-imd-business-school', subject: 'finance', format: 'in-person',
+      start: '2026-11-06', days: 2, price: 6600, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/governance/ffb/finance-for-board-members/', end: '2026-11-07',
+      title: { en: 'Finance for Boards', ar: 'المالية لأعضاء مجالس الإدارة' },
+      summary: {
+        en: 'A 2-day on-campus program from IMD Business School, running 6 November 2026 to 7 November 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية IMD للأعمال، من 6 نوفمبر 2026 إلى 7 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-foundations-for-business-leadership', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
+      start: '2026-11-09', days: 19, price: 25000, currency: 'CHF', langs: ['en'], featured: true, popularity: 50, sourceUrl: 'https://www.imd.org/management/fbl/foundation-business-leadership/', end: '2026-11-27',
+      title: { en: 'Foundations for Business Leadership', ar: 'أسس القيادة في الأعمال' },
+      summary: {
+        en: 'A 19-day on-campus program from IMD Business School, running 9 November 2026 to 27 November 2026.',
+        ar: 'برنامج حضوري لمدة 19 يومًا من كلية IMD للأعمال، من 9 نوفمبر 2026 إلى 27 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-supply-chain-for-the-ai-era', school: 's-imd-business-school', subject: 'operations', format: 'in-person',
+      start: '2026-11-09', days: 5, price: 10900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/supply-chain/sscl/strategic-supply-chain-leadership/', end: '2026-11-13',
+      title: { en: 'Supply Chain for the AI Era', ar: 'سلاسل الإمداد في عصر الذكاء الاصطناعي' },
+      summary: {
+        en: 'A 5-day on-campus program from IMD Business School, running 9 November 2026 to 13 November 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 9 نوفمبر 2026 إلى 13 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-driving-sustainability-from-the-boardr', school: 's-imd-business-school', subject: 'sustainability', format: 'in-person',
+      start: '2026-11-10', days: 2, price: 7500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/governance/dsb/esg-board-training/', end: '2026-11-11',
+      title: { en: 'Driving Sustainability from the Boardroom', ar: 'قيادة الاستدامة من مجلس الإدارة' },
+      summary: {
+        en: 'A 2-day on-campus program from IMD Business School, running 10 November 2026 to 11 November 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية IMD للأعمال، من 10 نوفمبر 2026 إلى 11 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-role-of-the-chair', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
+      start: '2026-11-12', days: 2, price: 8600, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/governance/roc/chairperson-board-training/', end: '2026-11-13',
+      title: { en: 'Role of the Chair', ar: 'دور رئيس مجلس الإدارة' },
+      summary: {
+        en: 'A 2-day on-campus program from IMD Business School, running 12 November 2026 to 13 November 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية IMD للأعمال، من 12 نوفمبر 2026 إلى 13 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-digital-and-ai-accelerator', school: 's-imd-business-school', subject: 'digital', format: 'in-person',
+      start: '2026-11-16', days: 5, price: 13900, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/digital-transformation/dac/digital-accelerator/', end: '2026-11-20',
+      title: { en: 'Digital and AI Accelerator', ar: 'مسرّع التحول الرقمي والذكاء الاصطناعي' },
+      summary: {
+        en: 'A 5-day on-campus program from IMD Business School, running 16 November 2026 to 20 November 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 16 نوفمبر 2026 إلى 20 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-stakeholder-management-for-boards', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
+      start: '2026-11-16', days: 2, price: 6600, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/governance/smb/stakeholder-management-board-training/', end: '2026-11-17',
+      title: { en: 'Stakeholder Management for Boards', ar: 'إدارة أصحاب المصلحة لمجالس الإدارة' },
+      summary: {
+        en: 'A 2-day on-campus program from IMD Business School, running 16 November 2026 to 17 November 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية IMD للأعمال، من 16 نوفمبر 2026 إلى 17 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategy-governance-for-boards', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
+      start: '2026-11-18', days: 2, price: 6600, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/governance/sgb/strategy-governance-for-boards/', end: '2026-11-19',
+      title: { en: 'Strategy Governance for Boards', ar: 'حوكمة الاستراتيجية لمجالس الإدارة' },
+      summary: {
+        en: 'A 2-day on-campus program from IMD Business School, running 18 November 2026 to 19 November 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية IMD للأعمال، من 18 نوفمبر 2026 إلى 19 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-team-dynamics-for-boards', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
+      start: '2026-11-18', days: 2, price: 6600, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/governance/tdb/team-dynamics-for-board-members/', end: '2026-11-19',
+      title: { en: 'Team Dynamics for Boards', ar: 'ديناميكيات الفريق لمجالس الإدارة' },
+      summary: {
+        en: 'A 2-day on-campus program from IMD Business School, running 18 November 2026 to 19 November 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية IMD للأعمال، من 18 نوفمبر 2026 إلى 19 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-building-digital-ecosystems', school: 's-imd-business-school', subject: 'digital', format: 'in-person',
+      start: '2026-11-23', days: 5, price: 10900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/digital-transformation/bde/building-digital-ecosystems/', end: '2026-11-27',
+      title: { en: 'Building Digital Ecosystems', ar: 'بناء المنظومات الرقمية' },
+      summary: {
+        en: 'A 5-day on-campus program from IMD Business School, running 23 November 2026 to 27 November 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 23 نوفمبر 2026 إلى 27 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-imd-executive-coaching-certificate', school: 's-imd-business-school', subject: 'leadership', format: 'blended',
+      start: '2026-11-24', days: null, price: 26500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/iecc/executive-coaching-certificate/', end: '2027-09-15', duration: { en: '10 months - 4 modules', ar: '10 أشهر – 4 وحدات' },
+      title: { en: 'IMD Executive Coaching Certificate', ar: 'شهادة IMD في التدريب التنفيذي' },
+      summary: {
+        en: 'A blended program from IMD Business School, 10 months - 4 modules, running 24 November 2026 to 15 September 2027.',
+        ar: 'برنامج مدمج من كلية IMD للأعمال، 10 أشهر – 4 وحدات، من 24 نوفمبر 2026 إلى 15 سبتمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-digital-and-ai-transformation', school: 's-imd-business-school', subject: 'digital', format: 'in-person',
+      start: '2026-11-30', days: 5, price: 10900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/digital-transformation/ldait/leading-digital-ai-transformation/', end: '2026-12-04',
+      title: { en: 'Leading Digital and AI Transformation', ar: 'قيادة التحول الرقمي والذكاء الاصطناعي' },
+      summary: {
+        en: 'A 5-day on-campus program from IMD Business School, running 30 November 2026 to 4 December 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 30 نوفمبر 2026 إلى 4 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategy-for-future-readiness', school: 's-imd-business-school', subject: 'strategy', format: 'in-person',
+      start: '2026-12-01', days: 4, price: 5950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/strategy/sfr/strategy-for-future-readiness-program/', end: '2026-12-04', duration: { en: '3.5 days', ar: '3.5 أيام' },
+      title: { en: 'Strategy for Future Readiness', ar: 'استراتيجية الجاهزية للمستقبل' },
+      summary: {
+        en: 'A 4-day on-campus program from IMD Business School, running 1 December 2026 to 4 December 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية IMD للأعمال، من 1 ديسمبر 2026 إلى 4 ديسمبر 2026.'
       },
       highlights: {
         en: [],
@@ -1372,8 +3041,8 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-the-first-90-days', school: 's-imd-business-school', subject: 'leadership', format: 'online',
-      start: '2026-12-08', days: 3, price: 3900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/f90d/the-first-90-days/',
-      title: { en: 'The First 90 Days®', ar: 'الأيام التسعون الأولى®' },
+      start: '2026-12-08', days: 3, price: 3900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/f90d/the-first-90-days/', end: '2026-12-10', duration: { en: '3 half days, plus individual coaching', ar: '3 أنصاف أيام، إضافة إلى كوتشينغ فردي' },
+      title: { en: 'The First 90 Days', ar: 'الأيام التسعون الأولى®' },
       summary: {
         en: 'A 3-day online program from IMD Business School, running 8 December 2026 to 10 December 2026.',
         ar: 'برنامج عبر الإنترنت لمدة 3 أيام من كلية IMD للأعمال، من 8 ديسمبر 2026 إلى 10 ديسمبر 2026.'
@@ -1385,12 +3054,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-competitive-strategy', school: 's-kellogg-school-of-management', subject: 'strategy', format: 'in-person',
-      start: '2026-09-14', days: 5, price: 9950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/compete.aspx',
-      title: { en: 'Competitive Strategy', ar: 'الاستراتيجية التنافسية' },
+      id: 'c-crisis-management', school: 's-imd-business-school', subject: 'leadership', format: 'online',
+      start: '2027-02-22', days: null, price: 1950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/cm/crisis-management-online-course/', end: '2027-03-28', duration: { en: '5 weeks, 4-6 hours per week', ar: '5 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Crisis Management', ar: 'إدارة الأزمات' },
       summary: {
-        en: 'A 5-day on-campus program from Kellogg School of Management, running 14 September 2026 to 18 September 2026.',
-        ar: 'برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة، من 14 سبتمبر 2026 إلى 18 سبتمبر 2026.'
+        en: 'An online program from IMD Business School, 5 weeks, 4-6 hours per week, running 22 February 2027 to 28 March 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 5 أسابيع، 4–6 ساعات في الأسبوع، من 22 فبراير 2027 إلى 28 مارس 2027.'
       },
       highlights: {
         en: [],
@@ -1399,12 +3068,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leading-with-ai', school: 's-kellogg-school-of-management', subject: 'data', format: 'in-person',
-      start: '2026-09-14', days: 4, price: 12500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/leadai.aspx',
-      title: { en: 'Leading with AI', ar: 'القيادة بالذكاء الاصطناعي' },
+      id: 'c-organizational-leadership', school: 's-imd-business-school', subject: 'leadership', format: 'online',
+      start: '2027-02-22', days: null, price: 1950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/human-resources/ogl/organizational-leadership-course/', end: '2027-03-28', duration: { en: '5 weeks, 4-6 hours per week', ar: '5 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Organizational Leadership', ar: 'القيادة المؤسسية' },
       summary: {
-        en: 'A 4-day on-campus program from Kellogg School of Management, running 14 September 2026 to 17 September 2026.',
-        ar: 'برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 14 سبتمبر 2026 إلى 17 سبتمبر 2026.'
+        en: 'An online program from IMD Business School, 5 weeks, 4-6 hours per week, running 22 February 2027 to 28 March 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 5 أسابيع، 4–6 ساعات في الأسبوع، من 22 فبراير 2027 إلى 28 مارس 2027.'
       },
       highlights: {
         en: [],
@@ -1413,12 +3082,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-operations-strategy', school: 's-kellogg-school-of-management', subject: 'operations', format: 'in-person',
-      start: '2026-09-14', days: 3, price: 8950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/opstrat.aspx',
-      title: { en: 'Operations Strategy', ar: 'استراتيجية العمليات' },
+      id: 'c-certificate-in-board-governance-cas', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
+      start: '2027-03-19', days: null, price: 28500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/programs-solutions/certification/board-governance-certificate/', end: '2027-10-17', duration: { en: '5 x 3-day face-to-face modules (Fri-Sun)', ar: '5 وحدات حضورية، مدة كل منها 3 أيام (الجمعة–الأحد)' },
+      title: { en: 'Certificate in Board Governance (CAS)', ar: 'شهادة الحوكمة في مجالس الإدارة (CAS)' },
       summary: {
-        en: 'A 3-day on-campus program from Kellogg School of Management, running 14 September 2026 to 16 September 2026.',
-        ar: 'برنامج حضوري لمدة 3 أيام من كلية كيلوغ للإدارة، من 14 سبتمبر 2026 إلى 16 سبتمبر 2026.'
+        en: 'An on-campus program from IMD Business School, 5 x 3-day face-to-face modules (Fri-Sun), running 19 March 2027 to 17 October 2027.',
+        ar: 'برنامج حضوري من كلية IMD للأعمال، 5 وحدات حضورية، مدة كل منها 3 أيام (الجمعة–الأحد)، من 19 مارس 2027 إلى 17 أكتوبر 2027.'
       },
       highlights: {
         en: [],
@@ -1427,12 +3096,15 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-the-leader-within', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2026-09-21', days: 5, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/lsphere.aspx',
-      title: { en: 'The Leader Within', ar: 'القائد الكامن بداخلك' },
+      id: 'c-transition-to-business-leadership', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
+      start: '2027-04-05', days: null, price: 32500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/management/tbl/business-leadership-training/', end: '2027-06-04', duration: {
+        en: '2 x 2-week modules on campus spread over 2 months, plus virtual coaching sessions',
+        ar: 'وحدتان مدة كل منهما أسبوعان في الحرم الجامعي موزعتان على شهرين، إضافة إلى جلسات كوتشينغ افتراضية'
+      },
+      title: { en: 'Transition to Business Leadership', ar: 'الانتقال إلى قيادة الأعمال' },
       summary: {
-        en: 'A 5-day on-campus program from Kellogg School of Management, running 21 September 2026 to 25 September 2026.',
-        ar: 'برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة، من 21 سبتمبر 2026 إلى 25 سبتمبر 2026.'
+        en: 'An on-campus program from IMD Business School, 2 x 2-week modules on campus spread over 2 months, plus virtual coaching sessions, running 5 April 2027 to 4 June 2027.',
+        ar: 'برنامج حضوري من كلية IMD للأعمال، وحدتان مدة كل منهما أسبوعان في الحرم الجامعي موزعتان على شهرين، إضافة إلى جلسات كوتشينغ افتراضية، من 5 أبريل 2027 إلى 4 يونيو 2027.'
       },
       highlights: {
         en: [],
@@ -1441,12 +3113,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-building-strong-brands', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'in-person',
-      start: '2026-09-28', days: 5, price: 9450, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/brand.aspx',
-      title: { en: 'Building Strong Brands', ar: 'بناء العلامات التجارية القوية' },
+      id: 'c-leading-digital-execution', school: 's-imd-business-school', subject: 'digital', format: 'in-person',
+      start: '2027-04-12', days: 5, price: 10900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/digital-transformation/lde/leading-digital-execution/', end: '2027-04-16',
+      title: { en: 'Leading Digital Execution', ar: 'قيادة التنفيذ الرقمي' },
       summary: {
-        en: 'A 5-day on-campus program from Kellogg School of Management, running 28 September 2026 to 2 October 2026.',
-        ar: 'برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة، من 28 سبتمبر 2026 إلى 2 أكتوبر 2026.'
+        en: 'A 5-day on-campus program from IMD Business School, running 12 April 2027 to 16 April 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية IMD للأعمال، من 12 أبريل 2027 إلى 16 أبريل 2027.'
       },
       highlights: {
         en: [],
@@ -1455,12 +3127,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-creating-and-managing-strategic-allian', school: 's-kellogg-school-of-management', subject: 'strategy', format: 'online',
-      start: '2026-09-28', days: 5, price: 4950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/cmsa.aspx',
-      title: { en: 'Creating and Managing Strategic Alliances', ar: 'بناء التحالفات الاستراتيجية وإدارتها' },
+      id: 'c-marketing-strategy-in-the-digital-age', school: 's-imd-business-school', subject: 'marketing', format: 'online',
+      start: '2027-04-19', days: null, price: 2950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/marketing/msda/marketing-strategy-digital-age/', end: '2027-06-13', duration: { en: '8 weeks, 4-6 hours per week', ar: '8 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Marketing Strategy in the Digital Age', ar: 'استراتيجية التسويق في العصر الرقمي' },
       summary: {
-        en: 'A 5-day online program from Kellogg School of Management, running 28 September 2026 to 2 October 2026.',
-        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من كلية كيلوغ للإدارة، من 28 سبتمبر 2026 إلى 2 أكتوبر 2026.'
+        en: 'An online program from IMD Business School, 8 weeks, 4-6 hours per week, running 19 April 2027 to 13 June 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 8 أسابيع، 4–6 ساعات في الأسبوع، من 19 أبريل 2027 إلى 13 يونيو 2027.'
       },
       highlights: {
         en: [],
@@ -1469,12 +3141,15 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-governing-family-enterprises', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'blended',
-      start: '2026-09-29', days: 11, price: 12000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/family.aspx',
-      title: { en: 'Governing Family Enterprises', ar: 'حوكمة المنشآت العائلية' },
+      id: 'c-integrating-sustainability-into-strate', school: 's-imd-business-school', subject: 'sustainability', format: 'blended',
+      start: '2027-04-22', days: null, price: 5900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/sustainability/iss/integrating-sustainability-strategy/', end: '2027-06-17', duration: {
+        en: '2.5 days on campus (Lausanne) + 15 hours online',
+        ar: '2.5 يوم في الحرم الجامعي (لوزان) + 15 ساعة عبر الإنترنت'
+      },
+      title: { en: 'Integrating Sustainability into Strategy', ar: 'دمج الاستدامة في الاستراتيجية' },
       summary: {
-        en: 'A 11-day blended program from Kellogg School of Management, running 29 September 2026 to 9 October 2026.',
-        ar: 'برنامج مدمج لمدة 11 يومًا من كلية كيلوغ للإدارة، من 29 سبتمبر 2026 إلى 9 أكتوبر 2026.'
+        en: 'A blended program from IMD Business School, 2.5 days on campus (Lausanne) + 15 hours online, running 22 April 2027 to 17 June 2027.',
+        ar: 'برنامج مدمج من كلية IMD للأعمال، 2.5 يوم في الحرم الجامعي (لوزان) + 15 ساعة عبر الإنترنت، من 22 أبريل 2027 إلى 17 يونيو 2027.'
       },
       highlights: {
         en: [],
@@ -1483,12 +3158,15 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-the-customer-focused-organization', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2026-09-29', days: 4, price: 9950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/focus.aspx',
-      title: { en: 'The Customer-Focused Organization', ar: 'المؤسسة المرتكزة على العميل' },
+      id: 'c-transformational-leader', school: 's-imd-business-school', subject: 'leadership', format: 'blended',
+      start: '2027-04-23', days: null, price: 15900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/tl/transformational-leader/', end: '2027-07-02', duration: {
+        en: '12 weeks (4 days on campus + live virtual)',
+        ar: '12 أسبوعًا (4 أيام في الحرم الجامعي + جلسات افتراضية مباشرة)'
+      },
+      title: { en: 'Transformational Leader', ar: 'القائد التحويلي' },
       summary: {
-        en: 'A 4-day on-campus program from Kellogg School of Management, running 29 September 2026 to 2 October 2026.',
-        ar: 'برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 29 سبتمبر 2026 إلى 2 أكتوبر 2026.'
+        en: 'A blended program from IMD Business School, 12 weeks (4 days on campus + live virtual), running 23 April 2027 to 2 July 2027.',
+        ar: 'برنامج مدمج من كلية IMD للأعمال، 12 أسبوعًا (4 أيام في الحرم الجامعي + جلسات افتراضية مباشرة)، من 23 أبريل 2027 إلى 2 يوليو 2027.'
       },
       highlights: {
         en: [],
@@ -1497,8 +3175,236 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-innovation-to-drive-growth', school: 's-kellogg-school-of-management', subject: 'entrepreneurship', format: 'in-person',
-      start: '2026-10-05', days: 4, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/innovate.aspx',
+      id: 'c-business-finance', school: 's-imd-business-school', subject: 'finance', format: 'online',
+      start: '2027-04-26', days: null, price: 1950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/finance/bf/online-finance-course/', end: '2027-05-30', duration: { en: '5 weeks, 4-6 hours per week', ar: '5 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Business Finance', ar: 'التمويل في الأعمال' },
+      summary: {
+        en: 'An online program from IMD Business School, 5 weeks, 4-6 hours per week, running 26 April 2027 to 30 May 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، 5 أسابيع، 4–6 ساعات في الأسبوع، من 26 أبريل 2027 إلى 30 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-women-on-boards', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
+      start: '2027-05-13', days: 2, price: 6600, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/governance/wob/women-on-boards/', end: '2027-05-14',
+      title: { en: 'Women on Boards', ar: 'المرأة في مجالس الإدارة' },
+      summary: {
+        en: 'A 2-day on-campus program from IMD Business School, running 13 May 2027 to 14 May 2027.',
+        ar: 'برنامج حضوري لمدة يومين من كلية IMD للأعمال، من 13 مايو 2027 إلى 14 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-venture-capital-asset-management', school: 's-imd-business-school', subject: 'finance', format: 'in-person',
+      start: '2027-05-20', days: 4, price: 7900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/finance/vam/venture-capital-asset-management/', end: '2027-05-23',
+      title: { en: 'Venture Capital Asset Management', ar: 'إدارة أصول رأس المال الجريء' },
+      summary: {
+        en: 'A 4-day on-campus program from IMD Business School, running 20 May 2027 to 23 May 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية IMD للأعمال، من 20 مايو 2027 إلى 23 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategies-for-leadership', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
+      start: '2027-06-08', days: 4, price: 10900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/leadership/sl/women-leadership-program/', end: '2027-06-11',
+      title: { en: 'Strategies for Leadership', ar: 'استراتيجيات القيادة' },
+      summary: {
+        en: 'A 4-day on-campus program from IMD Business School, running 8 June 2027 to 11 June 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية IMD للأعمال، من 8 يونيو 2027 إلى 11 يونيو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-executive-certificate-in-ai-and-digita', school: 's-imd-business-school', subject: 'digital', format: 'blended',
+      start: null, days: null, price: 29000, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/programs-solutions/certification/digital-business-excellence/', duration: { en: 'Up to 24 months to complete all programs', ar: 'حتى 24 شهرًا لإتمام جميع البرامج' },
+      title: {
+        en: 'Executive Certificate in AI and Digital Business Excellence',
+        ar: 'الشهادة التنفيذية في الذكاء الاصطناعي والتميز في الأعمال الرقمية'
+      },
+      summary: {
+        en: 'A blended program from IMD Business School, Up to 24 months to complete all programs. Dates to be announced by the school.',
+        ar: 'برنامج مدمج من كلية IMD للأعمال، حتى 24 شهرًا لإتمام جميع البرامج. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-executive-certificate-in-sustainable-b', school: 's-imd-business-school', subject: 'sustainability', format: 'blended',
+      start: null, days: null, price: 25000, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/programs-solutions/certification/sustainable-business/', duration: { en: 'Up to 24 months to complete all programs', ar: 'حتى 24 شهرًا لإتمام جميع البرامج' },
+      title: { en: 'Executive Certificate in Sustainable Business', ar: 'الشهادة التنفيذية في الأعمال المستدامة' },
+      summary: {
+        en: 'A blended program from IMD Business School, Up to 24 months to complete all programs. Dates to be announced by the school.',
+        ar: 'برنامج مدمج من كلية IMD للأعمال، حتى 24 شهرًا لإتمام جميع البرامج. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-imd-board-director-diploma', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
+      start: null, days: 9, price: 32000, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/programs-solutions/certification/board-director-diploma/',
+      title: { en: 'IMD Board Director Diploma', ar: 'دبلوم IMD لأعضاء مجالس الإدارة' },
+      summary: {
+        en: 'A 9-day on-campus program from IMD Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 9 أيام من كلية IMD للأعمال. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-imd-board-readiness-diploma', school: 's-imd-business-school', subject: 'leadership', format: 'blended',
+      start: null, days: null, price: 22500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/programs-solutions/certification/board-readiness-diploma/', duration: {
+        en: '5 weeks online & 6 days on campus with flexible timetable',
+        ar: '5 أسابيع عبر الإنترنت و6 أيام في الحرم الجامعي بجدول مرن'
+      },
+      title: { en: 'IMD Board Readiness Diploma', ar: 'دبلوم IMD للجاهزية لعضوية مجالس الإدارة' },
+      summary: {
+        en: 'A blended program from IMD Business School, 5 weeks online & 6 days on campus with flexible timetable. Dates to be announced by the school.',
+        ar: 'برنامج مدمج من كلية IMD للأعمال، 5 أسابيع عبر الإنترنت و6 أيام في الحرم الجامعي بجدول مرن. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-innovation-in-action', school: 's-imd-business-school', subject: 'entrepreneurship', format: 'blended',
+      start: null, days: 5, price: 10900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/innovation/ia/innovation-course/', duration: {
+        en: '5 days on campus, 3 live virtual sessions',
+        ar: '5 أيام في الحرم الجامعي، و3 جلسات افتراضية مباشرة'
+      },
+      title: { en: 'Innovation in Action', ar: 'الابتكار في التطبيق' },
+      summary: {
+        en: 'A 5-day blended program from IMD Business School. Dates to be announced by the school.',
+        ar: 'برنامج مدمج لمدة 5 أيام من كلية IMD للأعمال. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-online-executive-certificate-in-digita', school: 's-imd-business-school', subject: 'digital', format: 'online',
+      start: null, days: null, price: 8900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/programs-solutions/certification/online-executive-certificate-digital-acceleration/', duration: { en: 'Up to 24 months to complete all programs', ar: 'حتى 24 شهرًا لإتمام جميع البرامج' },
+      title: {
+        en: 'Online Executive Certificate in Digital Acceleration',
+        ar: 'الشهادة التنفيذية عبر الإنترنت في التسريع الرقمي'
+      },
+      summary: {
+        en: 'An online program from IMD Business School, Up to 24 months to complete all programs. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، حتى 24 شهرًا لإتمام جميع البرامج. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-online-executive-certificate-in-leader', school: 's-imd-business-school', subject: 'leadership', format: 'online',
+      start: null, days: null, price: 8900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/programs-solutions/certification/online-executive-certificate-leadership/', duration: { en: 'Up to 24 months to complete all programs', ar: 'حتى 24 شهرًا لإتمام جميع البرامج' },
+      title: { en: 'Online Executive Certificate in Leadership', ar: 'الشهادة التنفيذية عبر الإنترنت في القيادة' },
+      summary: {
+        en: 'An online program from IMD Business School, Up to 24 months to complete all programs. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، حتى 24 شهرًا لإتمام جميع البرامج. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-online-executive-certificate-in-strate', school: 's-imd-business-school', subject: 'strategy', format: 'online',
+      start: null, days: null, price: 8900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/programs-solutions/certification/online-executive-certificate-strategy/', duration: { en: 'Up to 24 months to complete all programs', ar: 'حتى 24 شهرًا لإتمام جميع البرامج' },
+      title: { en: 'Online Executive Certificate in Strategy', ar: 'الشهادة التنفيذية عبر الإنترنت في الاستراتيجية' },
+      summary: {
+        en: 'An online program from IMD Business School, Up to 24 months to complete all programs. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية IMD للأعمال، حتى 24 شهرًا لإتمام جميع البرامج. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-program-for-executive-development', school: 's-imd-business-school', subject: 'leadership', format: 'in-person',
+      start: null, days: null, price: 54250, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://www.imd.org/management/ped/general-management-course/', duration: { en: '7 weeks in 2 flexible stages', ar: '7 أسابيع على مرحلتين مرنتين' },
+      title: { en: 'Program for Executive Development', ar: 'برنامج التطوير التنفيذي' },
+      summary: {
+        en: 'An on-campus program from IMD Business School, 7 weeks in 2 flexible stages. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية IMD للأعمال، 7 أسابيع على مرحلتين مرنتين. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-professional-certificate-in-digital-ma', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'online',
+      start: '2026-09-30', days: null, price: 7025, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/pcdigmark/', end: '2027-03-17', duration: {
+        en: '20 modules over 6 months; 15-20 hours per week',
+        ar: '20 وحدة على مدى 6 أشهر؛ 15–20 ساعة في الأسبوع'
+      },
+      title: { en: 'Professional Certificate in Digital Marketing', ar: 'الشهادة المهنية في التسويق الرقمي' },
+      summary: {
+        en: 'An online program from Kellogg School of Management, 20 modules over 6 months; 15-20 hours per week, running 30 September 2026 to 17 March 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية كيلوغ للإدارة، 20 وحدة على مدى 6 أشهر؛ 15–20 ساعة في الأسبوع، من 30 سبتمبر 2026 إلى 17 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-chief-marketing-officer-program', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'blended',
+      start: '2026-10-02', days: null, price: 30000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/cmo.aspx', end: '2027-10-01', duration: {
+        en: '12 months; 16-week core program, electives and 3-day in-person networking event',
+        ar: '12 شهرًا؛ برنامج أساسي لمدة 16 أسبوعًا، ومواد اختيارية، وفعالية تواصل حضورية لمدة 3 أيام'
+      },
+      title: { en: 'Chief Marketing Officer Program', ar: 'برنامج الرئيس التنفيذي للتسويق' },
+      summary: {
+        en: 'A blended program from Kellogg School of Management, 12 months; 16-week core program, electives and 3-day in-person networking event, running 2 October 2026 to 1 October 2027.',
+        ar: 'برنامج مدمج من كلية كيلوغ للإدارة، 12 شهرًا؛ برنامج أساسي لمدة 16 أسبوعًا، ومواد اختيارية، وفعالية تواصل حضورية لمدة 3 أيام، من 2 أكتوبر 2026 إلى 1 أكتوبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-innovation-to-drive-growth', school: 's-kellogg-school-of-management', subject: 'strategy', format: 'in-person',
+      start: '2026-10-05', days: 4, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/innovate/', end: '2026-10-08',
       title: { en: 'Innovation to Drive Growth', ar: 'الابتكار محركاً للنمو' },
       summary: {
         en: 'A 4-day on-campus program from Kellogg School of Management, running 5 October 2026 to 8 October 2026.',
@@ -1511,12 +3417,40 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-executive-development-program', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'blended',
-      start: '2026-10-11', days: 20, price: 39500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/edp.aspx',
+      id: 'c-mastering-the-human-ai-partnership', school: 's-kellogg-school-of-management', subject: 'digital', format: 'in-person',
+      start: '2026-10-07', days: 3, price: 8950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/hmi/', end: '2026-10-09',
+      title: { en: 'Mastering the Human-AI Partnership', ar: 'إتقان الشراكة بين الإنسان والذكاء الاصطناعي' },
+      summary: {
+        en: 'A 3-day on-campus program from Kellogg School of Management, running 7 October 2026 to 9 October 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كيلوغ للإدارة، من 7 أكتوبر 2026 إلى 9 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-advertising-and-marketing-communicatio', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'online',
+      start: '2026-10-08', days: null, price: 2000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/hpmc.aspx', end: '2026-12-03', duration: { en: '7 modules over 8 weeks; 4-6 hours per week', ar: '7 وحدات على مدى 8 أسابيع؛ 4–6 ساعات في الأسبوع' },
+      title: { en: 'Advertising and Marketing Communication Strategy', ar: 'استراتيجية الإعلان والاتصال التسويقي' },
+      summary: {
+        en: 'An online program from Kellogg School of Management, 7 modules over 8 weeks; 4-6 hours per week, running 8 October 2026 to 3 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية كيلوغ للإدارة، 7 وحدات على مدى 8 أسابيع؛ 4–6 ساعات في الأسبوع، من 8 أكتوبر 2026 إلى 3 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-executive-development-program', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'in-person',
+      start: '2026-10-11', days: 20, price: 39500, langs: ['en'], featured: true, popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/edp/', end: '2026-10-30',
       title: { en: 'Executive Development Program', ar: 'البرنامج التنفيذي للتطوير القيادي' },
       summary: {
-        en: 'A 20-day blended program from Kellogg School of Management, running 11 October 2026 to 30 October 2026.',
-        ar: 'برنامج مدمج لمدة 20 يومًا من كلية كيلوغ للإدارة، من 11 أكتوبر 2026 إلى 30 أكتوبر 2026.'
+        en: 'A 20-day on-campus program from Kellogg School of Management, running 11 October 2026 to 30 October 2026.',
+        ar: 'برنامج حضوري لمدة 20 يومًا من كلية كيلوغ للإدارة، من 11 أكتوبر 2026 إلى 30 أكتوبر 2026.'
       },
       highlights: {
         en: [],
@@ -1526,7 +3460,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-mergers-acquisitions', school: 's-kellogg-school-of-management', subject: 'finance', format: 'in-person',
-      start: '2026-10-11', days: 6, price: 13100, langs: ['en'], featured: true, popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/mw.aspx',
+      start: '2026-10-11', days: 6, price: 13100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/mw/', end: '2026-10-16',
       title: { en: 'Mergers + Acquisitions', ar: 'الاندماج والاستحواذ' },
       summary: {
         en: 'A 6-day on-campus program from Kellogg School of Management, running 11 October 2026 to 16 October 2026.',
@@ -1539,8 +3473,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-constructive-collaboration', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'online',
-      start: '2026-10-12', days: 5, price: 6500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/collaborate.aspx',
+      id: 'c-constructive-collaboration', school: 's-kellogg-school-of-management', subject: 'people', format: 'online',
+      start: '2026-10-12', days: 5, price: 6500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/collaborate/', end: '2026-10-16',
       title: { en: 'Constructive Collaboration', ar: 'التعاون البنّاء' },
       summary: {
         en: 'A 5-day online program from Kellogg School of Management, running 12 October 2026 to 16 October 2026.',
@@ -1553,12 +3487,89 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-business-marketing-strategy', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'in-person',
-      start: '2026-10-19', days: 4, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/btob.aspx',
-      title: { en: 'Business Marketing Strategy', ar: 'استراتيجية التسويق للأعمال' },
+      id: 'c-family-enterprise-leaders-forum-2026-a', school: 's-kellogg-school-of-management', subject: 'entrepreneurship', format: 'in-person',
+      start: '2026-10-13', days: 3, price: 8450, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/famelf/', end: '2026-10-15',
+      title: {
+        en: 'Family Enterprise Leaders Forum 2026: AI Transformation in Family Enterprises',
+        ar: 'منتدى قادة الشركات العائلية 2026: التحول بالذكاء الاصطناعي في الشركات العائلية'
+      },
       summary: {
-        en: 'A 4-day on-campus program from Kellogg School of Management, running 19 October 2026 to 22 October 2026.',
-        ar: 'برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 19 أكتوبر 2026 إلى 22 أكتوبر 2026.'
+        en: 'A 3-day on-campus program from Kellogg School of Management, running 13 October 2026 to 15 October 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كيلوغ للإدارة، من 13 أكتوبر 2026 إلى 15 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-reinventing-work-and-organizations-for', school: 's-kellogg-school-of-management', subject: 'digital', format: 'online',
+      start: '2026-10-20', days: 3, price: 3950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/future/', end: '2026-10-22',
+      title: {
+        en: 'Reinventing Work and Organizations for AI and the Intelligent Age',
+        ar: 'إعادة ابتكار العمل والمؤسسات للذكاء الاصطناعي والعصر الذكي'
+      },
+      summary: {
+        en: 'A 3-day online program from Kellogg School of Management, running 20 October 2026 to 22 October 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة 3 أيام من كلية كيلوغ للإدارة، من 20 أكتوبر 2026 إلى 22 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-kellogg-accelerated-marketing-leadersh', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'online',
+      start: '2026-10-22', days: null, price: 7550, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/kaml.aspx', end: '2027-05-06', duration: {
+        en: '23 modules over 24 weeks; 4-6 hours per week',
+        ar: '23 وحدة على مدى 24 أسبوعًا؛ 4–6 ساعات في الأسبوع'
+      },
+      title: {
+        en: 'Kellogg Accelerated Marketing Leadership Program',
+        ar: 'برنامج كيلوغ المكثف للقيادة التسويقية (Kellogg Accelerated Marketing Leadership Program)'
+      },
+      summary: {
+        en: 'An online program from Kellogg School of Management, 23 modules over 24 weeks; 4-6 hours per week, running 22 October 2026 to 6 May 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية كيلوغ للإدارة، 23 وحدة على مدى 24 أسبوعًا؛ 4–6 ساعات في الأسبوع، من 22 أكتوبر 2026 إلى 6 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-mastering-sales-the-digital-and-ai-too', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'online',
+      start: '2026-10-22', days: null, price: 2825, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/sm/', end: '2027-01-14', duration: { en: '10 weeks', ar: '10 أسابيع' },
+      title: {
+        en: 'Mastering Sales: The Digital and AI Toolkit for Success',
+        ar: 'احتراف المبيعات: أدوات النجاح الرقمية والذكاء الاصطناعي'
+      },
+      summary: {
+        en: 'An online program from Kellogg School of Management, 10 weeks, running 22 October 2026 to 14 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية كيلوغ للإدارة، 10 أسابيع، من 22 أكتوبر 2026 إلى 14 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-senior-management-program-in-ai-and-di', school: 's-kellogg-school-of-management', subject: 'digital', format: 'blended',
+      start: '2026-10-23', days: null, price: 28000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/cdaio/', end: '2027-05-21', duration: {
+        en: '7 months; 20-week core program plus 5-day in-person immersion',
+        ar: '7 أشهر؛ برنامج أساسي لمدة 20 أسبوعًا + 5 أيام حضورية مكثفة'
+      },
+      title: {
+        en: 'Senior Management Program in AI and Digital Transformation',
+        ar: 'البرنامج التنفيذي للإدارة العليا في الذكاء الاصطناعي والتحول الرقمي'
+      },
+      summary: {
+        en: 'A blended program from Kellogg School of Management, 7 months; 20-week core program plus 5-day in-person immersion, running 23 October 2026 to 21 May 2027.',
+        ar: 'برنامج مدمج من كلية كيلوغ للإدارة، 7 أشهر؛ برنامج أساسي لمدة 20 أسبوعًا + 5 أيام حضورية مكثفة، من 23 أكتوبر 2026 إلى 21 مايو 2027.'
       },
       highlights: {
         en: [],
@@ -1568,7 +3579,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-b2b-sales-force-strategy-effectiveness', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'in-person',
-      start: '2026-10-26', days: 5, price: 9950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/sales.aspx',
+      start: '2026-10-26', days: 5, price: 9950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/sales/', end: '2026-10-30',
       title: {
         en: 'B2B Sales Force Strategy & Effectiveness in the Digital Age',
         ar: 'استراتيجية وفعالية فرق المبيعات بين الشركات (B2B) في العصر الرقمي'
@@ -1584,22 +3595,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-building-leading-effective-teams', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'online',
-      start: '2026-10-26', days: 5, price: 6500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/team.aspx',
-      title: { en: 'Building & Leading Effective Teams', ar: 'بناء الفرق الفعالة وقيادتها' },
-      summary: {
-        en: 'A 5-day online program from Kellogg School of Management, running 26 October 2026 to 30 October 2026.',
-        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من كلية كيلوغ للإدارة، من 26 أكتوبر 2026 إلى 30 أكتوبر 2026.'
-      },
-      highlights: {
-        en: [],
-        ar: []
-      },
-      audience: { en: '', ar: '' }
-    },
-    {
-      id: 'c-delivering-business-growth', school: 's-kellogg-school-of-management', subject: 'entrepreneurship', format: 'in-person',
-      start: '2026-10-26', days: 4, price: 9950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/bizgrowth.aspx',
+      id: 'c-delivering-business-growth', school: 's-kellogg-school-of-management', subject: 'strategy', format: 'in-person',
+      start: '2026-10-26', days: 4, price: 9950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/bizgrowth/', end: '2026-10-29',
       title: { en: 'Delivering Business Growth', ar: 'تحقيق نمو الأعمال' },
       summary: {
         en: 'A 4-day on-campus program from Kellogg School of Management, running 26 October 2026 to 29 October 2026.',
@@ -1612,8 +3609,39 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-family-enterprise-boards', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'blended',
-      start: '2026-10-27', days: 11, price: 12000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/famboard.aspx',
+      id: 'c-leading-high-impact-teams', school: 's-kellogg-school-of-management', subject: 'people', format: 'online',
+      start: '2026-10-26', days: 5, price: 6500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/team/', end: '2026-10-30',
+      title: { en: 'Leading High-Impact Teams', ar: 'قيادة الفرق عالية التأثير' },
+      summary: {
+        en: 'A 5-day online program from Kellogg School of Management, running 26 October 2026 to 30 October 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من كلية كيلوغ للإدارة، من 26 أكتوبر 2026 إلى 30 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategic-business-leadership-program', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'blended',
+      start: '2026-10-26', days: null, price: 28000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/gmp.aspx', end: '2027-04-22', duration: {
+        en: 'six-month blended program; two four-day on-campus sessions',
+        ar: 'برنامج مدته 6 أشهر بنظام مدمج؛ جلستان حضوريتان في الحرم الجامعي، مدة كل منهما 4 أيام'
+      },
+      title: { en: 'Strategic Business Leadership Program', ar: 'برنامج القيادة الاستراتيجية للأعمال' },
+      summary: {
+        en: 'A blended program from Kellogg School of Management, six-month blended program; two four-day on-campus sessions, running 26 October 2026 to 22 April 2027.',
+        ar: 'برنامج مدمج من كلية كيلوغ للإدارة، برنامج مدته 6 أشهر بنظام مدمج؛ جلستان حضوريتان في الحرم الجامعي، مدة كل منهما 4 أيام، من 26 أكتوبر 2026 إلى 22 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-family-enterprise-boards', school: 's-kellogg-school-of-management', subject: 'entrepreneurship', format: 'blended',
+      start: '2026-10-27', days: 11, price: 12000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/famboard/', end: '2026-11-06',
       title: { en: 'Family Enterprise Boards', ar: 'مجالس إدارة المنشآت العائلية' },
       summary: {
         en: 'A 11-day blended program from Kellogg School of Management, running 27 October 2026 to 6 November 2026.',
@@ -1627,7 +3655,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-finance-for-executives', school: 's-kellogg-school-of-management', subject: 'finance', format: 'in-person',
-      start: '2026-11-01', days: 6, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/finexec.aspx',
+      start: '2026-11-01', days: 6, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/finexec/', end: '2026-11-06',
       title: { en: 'Finance for Executives', ar: 'المالية للتنفيذيين' },
       summary: {
         en: 'A 6-day on-campus program from Kellogg School of Management, running 1 November 2026 to 6 November 2026.',
@@ -1641,7 +3669,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-corporate-governance', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2026-11-02', days: 4, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/director.aspx',
+      start: '2026-11-02', days: 4, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/director/', end: '2026-11-05',
       title: { en: 'Corporate Governance', ar: 'حوكمة الشركات' },
       summary: {
         en: 'A 4-day on-campus program from Kellogg School of Management, running 2 November 2026 to 5 November 2026.',
@@ -1654,8 +3682,39 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-strategic-communication-for-leaders-pr', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'online',
+      start: '2026-11-04', days: null, price: 2650, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/prco.aspx', end: '2026-12-22', duration: { en: '6 modules over 7 weeks; 4-6 hours per week', ar: '6 وحدات على مدى 7 أسابيع؛ 4–6 ساعات في الأسبوع' },
+      title: {
+        en: 'Strategic Communication for Leaders: Presence, Influence, Impact',
+        ar: 'التواصل الاستراتيجي للقادة: الحضور والتأثير والأثر'
+      },
+      summary: {
+        en: 'An online program from Kellogg School of Management, 6 modules over 7 weeks; 4-6 hours per week, running 4 November 2026 to 22 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية كيلوغ للإدارة، 6 وحدات على مدى 7 أسابيع؛ 4–6 ساعات في الأسبوع، من 4 نوفمبر 2026 إلى 22 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-first-marketing-strategy', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'online',
+      start: '2026-11-05', days: null, price: 2800, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/aimk/', end: '2026-12-31', duration: { en: '8 modules over 9 weeks; 4-6 hours per week', ar: '8 وحدات على مدى 9 أسابيع؛ 4–6 ساعات في الأسبوع' },
+      title: { en: 'AI-First Marketing Strategy', ar: 'استراتيجية التسويق القائمة على الذكاء الاصطناعي أولًا' },
+      summary: {
+        en: 'An online program from Kellogg School of Management, 8 modules over 9 weeks; 4-6 hours per week, running 5 November 2026 to 31 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية كيلوغ للإدارة، 8 وحدات على مدى 9 أسابيع؛ 4–6 ساعات في الأسبوع، من 5 نوفمبر 2026 إلى 31 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-energizing-people-for-performance', school: 's-kellogg-school-of-management', subject: 'people', format: 'in-person',
-      start: '2026-11-09', days: 4, price: 9950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/people.aspx',
+      start: '2026-11-09', days: 4, price: 9950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/people/', end: '2026-11-12',
       title: { en: 'Energizing People for Performance', ar: 'تنشيط طاقات الأفراد لرفع الأداء' },
       summary: {
         en: 'A 4-day on-campus program from Kellogg School of Management, running 9 November 2026 to 12 November 2026.',
@@ -1669,7 +3728,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-lean-operations', school: 's-kellogg-school-of-management', subject: 'operations', format: 'in-person',
-      start: '2026-11-09', days: 3, price: 8950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/lean.aspx',
+      start: '2026-11-09', days: 3, price: 8950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/lean/', end: '2026-11-11',
       title: { en: 'Lean Operations', ar: 'العمليات وفق منهجية لين (Lean)' },
       summary: {
         en: 'A 3-day on-campus program from Kellogg School of Management, running 9 November 2026 to 11 November 2026.',
@@ -1683,7 +3742,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-the-strategy-of-leadership', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2026-11-09', days: 3, price: 10450, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/newscience.aspx',
+      start: '2026-11-09', days: 3, price: 10450, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/newscience/', end: '2026-11-11',
       title: { en: 'The Strategy of Leadership', ar: 'استراتيجية القيادة' },
       summary: {
         en: 'A 3-day on-campus program from Kellogg School of Management, running 9 November 2026 to 11 November 2026.',
@@ -1696,8 +3755,59 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-ai-strategies-for-business-transformat', school: 's-kellogg-school-of-management', subject: 'digital', format: 'online',
+      start: '2026-11-12', days: null, price: 3300, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/ais/', end: '2027-01-28', duration: { en: '8 modules over 9 weeks; 4-6 hours per week', ar: '8 وحدات على مدى 9 أسابيع؛ 4–6 ساعات في الأسبوع' },
+      title: {
+        en: 'AI Strategies for Business Transformation: Generative and Agentic Intelligence',
+        ar: 'استراتيجيات الذكاء الاصطناعي لتحول الأعمال: الذكاء التوليدي والذكاء الوكيلي'
+      },
+      summary: {
+        en: 'An online program from Kellogg School of Management, 8 modules over 9 weeks; 4-6 hours per week, running 12 November 2026 to 28 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية كيلوغ للإدارة، 8 وحدات على مدى 9 أسابيع؛ 4–6 ساعات في الأسبوع، من 12 نوفمبر 2026 إلى 28 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-driven-product-strategy', school: 's-kellogg-school-of-management', subject: 'digital', format: 'online',
+      start: '2026-11-12', days: null, price: 3100, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/psai/', end: '2027-01-21', duration: { en: '8 modules over 9 weeks; 4-6 hours per week', ar: '8 وحدات على مدى 9 أسابيع؛ 4–6 ساعات في الأسبوع' },
+      title: { en: 'AI-Driven Product Strategy', ar: 'استراتيجية المنتجات المدفوعة بالذكاء الاصطناعي' },
+      summary: {
+        en: 'An online program from Kellogg School of Management, 8 modules over 9 weeks; 4-6 hours per week, running 12 November 2026 to 21 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية كيلوغ للإدارة، 8 وحدات على مدى 9 أسابيع؛ 4–6 ساعات في الأسبوع، من 12 نوفمبر 2026 إلى 21 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-professional-certificate-in-ai-enabled', school: 's-kellogg-school-of-management', subject: 'digital', format: 'online',
+      start: '2026-11-12', days: null, price: 7025, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/pcpm/', end: '2027-04-22', duration: {
+        en: '20 modules over five months; 15-20 hours per week',
+        ar: '20 وحدة على مدى 5 أشهر؛ 15–20 ساعة في الأسبوع'
+      },
+      title: {
+        en: 'Professional Certificate in AI-Enabled Product Management',
+        ar: 'الشهادة المهنية في إدارة المنتجات المدعومة بالذكاء الاصطناعي'
+      },
+      summary: {
+        en: 'An online program from Kellogg School of Management, 20 modules over five months; 15-20 hours per week, running 12 November 2026 to 22 April 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية كيلوغ للإدارة، 20 وحدة على مدى 5 أشهر؛ 15–20 ساعة في الأسبوع، من 12 نوفمبر 2026 إلى 22 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-advanced-marketing-management', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'in-person',
-      start: '2026-11-16', days: 5, price: 9950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/admark.aspx',
+      start: '2026-11-16', days: 5, price: 9950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/admark/', end: '2026-11-20',
       title: { en: 'Advanced Marketing Management', ar: 'الإدارة التسويقية المتقدمة' },
       summary: {
         en: 'A 5-day on-campus program from Kellogg School of Management, running 16 November 2026 to 20 November 2026.',
@@ -1711,7 +3821,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-driving-organizational-change', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2026-11-16', days: 4, price: 8950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/orgchange.aspx',
+      start: '2026-11-16', days: 4, price: 8950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/orgchange/', end: '2026-11-19',
       title: { en: 'Driving Organizational Change', ar: 'قيادة التغيير المؤسسي' },
       summary: {
         en: 'A 4-day on-campus program from Kellogg School of Management, running 16 November 2026 to 19 November 2026.',
@@ -1724,8 +3834,39 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-digital-marketing-strategies-data-auto', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'online',
+      start: '2026-11-19', days: null, price: 2850, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/ol-emdigmark/', end: '2027-01-21', duration: { en: '8 modules over 9 weeks', ar: '8 وحدات على مدى 9 أسابيع' },
+      title: {
+        en: 'Digital Marketing Strategies: Data, Automation, AI & Analytics',
+        ar: 'استراتيجيات التسويق الرقمي: البيانات والأتمتة والذكاء الاصطناعي والتحليلات'
+      },
+      summary: {
+        en: 'An online program from Kellogg School of Management, 8 modules over 9 weeks, running 19 November 2026 to 21 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية كيلوغ للإدارة، 8 وحدات على مدى 9 أسابيع، من 19 نوفمبر 2026 إلى 21 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategies-that-build-winning-brands', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'online',
+      start: '2026-11-19', days: null, price: 2650, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/bstrat.aspx', end: '2027-01-14', duration: { en: '6 modules over 6 weeks; 4-6 hours per week', ar: '6 وحدات على مدى 6 أسابيع؛ 4–6 ساعات في الأسبوع' },
+      title: { en: 'Strategies that Build Winning Brands', ar: 'استراتيجيات بناء العلامات التجارية الرابحة' },
+      summary: {
+        en: 'An online program from Kellogg School of Management, 6 modules over 6 weeks; 4-6 hours per week, running 19 November 2026 to 14 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية كيلوغ للإدارة، 6 وحدات على مدى 6 أسابيع؛ 4–6 ساعات في الأسبوع، من 19 نوفمبر 2026 إلى 14 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-negotiation-master-class', school: 's-kellogg-school-of-management', subject: 'negotiation', format: 'online',
-      start: '2026-11-30', days: 12, price: 6900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/mneg.aspx',
+      start: '2026-11-30', days: 12, price: 6900, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/mneg/', end: '2026-12-11',
       title: { en: 'Negotiation Master Class', ar: 'برنامج متقدم في التفاوض' },
       summary: {
         en: 'A 12-day online program from Kellogg School of Management, running 30 November 2026 to 11 December 2026.',
@@ -1738,8 +3879,118 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-governing-for-generational-growth', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'blended',
-      start: '2027-02-16', days: 11, price: 12000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/fameg.aspx',
+      id: 'c-the-leader-within', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'in-person',
+      start: '2026-11-30', days: 5, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/lsphere/', end: '2026-12-04',
+      title: { en: 'The Leader Within', ar: 'القائد الكامن بداخلك' },
+      summary: {
+        en: 'A 5-day on-campus program from Kellogg School of Management, running 30 November 2026 to 4 December 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة، من 30 نوفمبر 2026 إلى 4 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-b2b-marketing-growth-strategies-for-yo', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'online',
+      start: '2026-12-03', days: null, price: 2850, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/bmkt.aspx', end: '2027-02-11', duration: { en: '8 modules over 9 weeks; 4-6 hours per week', ar: '8 وحدات على مدى 9 أسابيع؛ 4–6 ساعات في الأسبوع' },
+      title: {
+        en: 'B2B Marketing: Growth Strategies for Your Organization',
+        ar: 'التسويق بين الشركات (B2B): استراتيجيات النمو لمؤسستك'
+      },
+      summary: {
+        en: 'An online program from Kellogg School of Management, 8 modules over 9 weeks; 4-6 hours per week, running 3 December 2026 to 11 February 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية كيلوغ للإدارة، 8 وحدات على مدى 9 أسابيع؛ 4–6 ساعات في الأسبوع، من 3 ديسمبر 2026 إلى 11 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-digital-marketing-accelerator', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'in-person',
+      start: '2026-12-05', days: 2, price: 1950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/dmark/', end: '2026-12-06',
+      title: { en: 'Digital Marketing Accelerator', ar: 'مسرّع التسويق الرقمي' },
+      summary: {
+        en: 'A 2-day on-campus program from Kellogg School of Management, running 5 December 2026 to 6 December 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية كيلوغ للإدارة، من 5 ديسمبر 2026 إلى 6 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-growth-marketing', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'in-person',
+      start: '2026-12-07', days: 4, price: 8950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/growth/', end: '2026-12-10',
+      title: { en: 'Growth Marketing', ar: 'التسويق للنمو' },
+      summary: {
+        en: 'A 4-day on-campus program from Kellogg School of Management, running 7 December 2026 to 10 December 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 7 ديسمبر 2026 إلى 10 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-strategies-for-growth-fewer-b', school: 's-kellogg-school-of-management', subject: 'strategy', format: 'online',
+      start: '2027-01-14', days: null, price: 2650, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/grst.aspx', end: '2027-03-04', duration: { en: '6 modules over 7 weeks; 4-6 hours per week', ar: '6 وحدات على مدى 7 أسابيع؛ 4–6 ساعات في الأسبوع' },
+      title: {
+        en: 'Business Strategies for Growth: Fewer, Bigger, Bolder',
+        ar: 'استراتيجيات النمو: أقل عددًا وأكبر أثرًا وأكثر جرأة'
+      },
+      summary: {
+        en: 'An online program from Kellogg School of Management, 6 modules over 7 weeks; 4-6 hours per week, running 14 January 2027 to 4 March 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية كيلوغ للإدارة، 6 وحدات على مدى 7 أسابيع؛ 4–6 ساعات في الأسبوع، من 14 يناير 2027 إلى 4 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-essentials-of-marketing', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'online',
+      start: '2027-01-18', days: null, price: 2750, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/eomr/', end: '2027-04-25', duration: {
+        en: '10 modules over 12 weeks; 3-4 hours per week',
+        ar: '10 وحدات على مدى 12 أسبوعًا؛ 3–4 ساعات في الأسبوع'
+      },
+      title: { en: 'Essentials of Marketing', ar: 'أساسيات التسويق' },
+      summary: {
+        en: 'An online program from Kellogg School of Management, 10 modules over 12 weeks; 3-4 hours per week, running 18 January 2027 to 25 April 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية كيلوغ للإدارة، 10 وحدات على مدى 12 أسبوعًا؛ 3–4 ساعات في الأسبوع، من 18 يناير 2027 إلى 25 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-analytics-decision-making-wit', school: 's-kellogg-school-of-management', subject: 'data', format: 'online',
+      start: '2027-02-04', days: null, price: 2700, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/busan/', end: '2027-04-08', duration: { en: '8 modules over 9 weeks; 4-6 hours per week', ar: '8 وحدات على مدى 9 أسابيع؛ 4–6 ساعات في الأسبوع' },
+      title: {
+        en: 'Business Analytics: Decision Making with Data',
+        ar: 'تحليلات الأعمال: اتخاذ القرار بالاعتماد على البيانات'
+      },
+      summary: {
+        en: 'An online program from Kellogg School of Management, 8 modules over 9 weeks; 4-6 hours per week, running 4 February 2027 to 8 April 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية كيلوغ للإدارة، 8 وحدات على مدى 9 أسابيع؛ 4–6 ساعات في الأسبوع، من 4 فبراير 2027 إلى 8 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-governing-for-generational-growth', school: 's-kellogg-school-of-management', subject: 'entrepreneurship', format: 'blended',
+      start: '2027-02-16', days: 11, price: 12000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/fameg/', end: '2027-02-26',
       title: { en: 'Governing for Generational Growth', ar: 'الحوكمة من أجل النمو عبر الأجيال' },
       summary: {
         en: 'A 11-day blended program from Kellogg School of Management, running 16 February 2027 to 26 February 2027.',
@@ -1752,8 +4003,126 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-the-single-family-office', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2027-06-08', days: 3, price: 7000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/famoff.aspx',
+      id: 'c-building-strong-brands', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'in-person',
+      start: '2027-03-01', days: 5, price: 9450, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/brand/', end: '2027-03-05',
+      title: { en: 'Building Strong Brands', ar: 'بناء العلامات التجارية القوية' },
+      summary: {
+        en: 'A 5-day on-campus program from Kellogg School of Management, running 1 March 2027 to 5 March 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة، من 1 مارس 2027 إلى 5 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-governing-family-enterprises', school: 's-kellogg-school-of-management', subject: 'entrepreneurship', format: 'blended',
+      start: '2027-03-09', days: 11, price: 12000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/family/', end: '2027-03-19',
+      title: { en: 'Governing Family Enterprises', ar: 'حوكمة المنشآت العائلية' },
+      summary: {
+        en: 'A 11-day blended program from Kellogg School of Management, running 9 March 2027 to 19 March 2027.',
+        ar: 'برنامج مدمج لمدة 11 يومًا من كلية كيلوغ للإدارة، من 9 مارس 2027 إلى 19 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-the-next-renaissance-teams-net', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'in-person',
+      start: '2027-04-11', days: 6, price: 15500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/renlead/', end: '2027-04-16',
+      title: {
+        en: 'Leading the Next Renaissance: Teams, Networks and AI',
+        ar: 'قيادة النهضة القادمة: الفرق والشبكات والذكاء الاصطناعي'
+      },
+      summary: {
+        en: 'A 6-day on-campus program from Kellogg School of Management, running 11 April 2027 to 16 April 2027.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية كيلوغ للإدارة، من 11 أبريل 2027 إلى 16 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-with-ai', school: 's-kellogg-school-of-management', subject: 'digital', format: 'in-person',
+      start: '2027-04-12', days: 4, price: 12500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/leadai/', end: '2027-04-15',
+      title: { en: 'Leading with AI', ar: 'القيادة بالذكاء الاصطناعي' },
+      summary: {
+        en: 'A 4-day on-campus program from Kellogg School of Management, running 12 April 2027 to 15 April 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 12 أبريل 2027 إلى 15 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-with-advanced-analytics', school: 's-kellogg-school-of-management', subject: 'data', format: 'in-person',
+      start: '2027-04-12', days: 4, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/bigdata-2027-april12.aspx', end: '2027-04-15',
+      title: { en: 'Leading with Advanced Analytics', ar: 'القيادة بالتحليلات المتقدمة' },
+      summary: {
+        en: 'A 4-day on-campus program from Kellogg School of Management, running 12 April 2027 to 15 April 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 12 أبريل 2027 إلى 15 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-digital-assets-and-tokenized-finance-p', school: 's-kellogg-school-of-management', subject: 'finance', format: 'in-person',
+      start: '2027-04-13', days: 3, price: 8950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/das/', end: '2027-04-15',
+      title: {
+        en: 'Digital Assets and Tokenized Finance: Practical Frameworks for Leaders',
+        ar: 'الأصول الرقمية والتمويل المرمّز: أطر عملية للقادة'
+      },
+      summary: {
+        en: 'A 3-day on-campus program from Kellogg School of Management, running 13 April 2027 to 15 April 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية كيلوغ للإدارة، من 13 أبريل 2027 إلى 15 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-marketing-strategy', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'in-person',
+      start: '2027-04-26', days: 4, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/btob/', end: '2027-04-29',
+      title: { en: 'Business Marketing Strategy', ar: 'استراتيجية التسويق للأعمال' },
+      summary: {
+        en: 'A 4-day on-campus program from Kellogg School of Management, running 26 April 2027 to 29 April 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية كيلوغ للإدارة، من 26 أبريل 2027 إلى 29 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-competitive-strategy', school: 's-kellogg-school-of-management', subject: 'strategy', format: 'in-person',
+      start: '2027-05-10', days: 5, price: 9950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/compete/', end: '2027-05-14',
+      title: { en: 'Competitive Strategy', ar: 'الاستراتيجية التنافسية' },
+      summary: {
+        en: 'A 5-day on-campus program from Kellogg School of Management, running 10 May 2027 to 14 May 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة، من 10 مايو 2027 إلى 14 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-the-single-family-office', school: 's-kellogg-school-of-management', subject: 'entrepreneurship', format: 'in-person',
+      start: '2027-06-08', days: 3, price: 7000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/famoff.aspx', end: '2027-06-10',
       title: { en: 'The Single Family Office', ar: 'مكتب العائلة الواحدة' },
       summary: {
         en: 'A 3-day on-campus program from Kellogg School of Management, running 8 June 2027 to 10 June 2027.',
@@ -1766,12 +4135,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-frontiers-of-generative-ai-in-business', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'in-person',
-      start: '2026-09-22', days: 2, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/frontiers-of-generative-ai-in-business/a05U1000002xz4jIAA.html',
-      title: { en: 'Frontiers of Generative AI in Business', ar: 'آفاق الذكاء الاصطناعي التوليدي في قطاع الأعمال' },
+      id: 'c-corporate-finance', school: 's-kellogg-school-of-management', subject: 'finance', format: 'in-person',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/corpfin/',
+      title: { en: 'Corporate Finance', ar: 'التمويل المؤسسي' },
       summary: {
-        en: 'A 2-day on-campus program from MIT Sloan School of Management, running 22 September 2026 to 23 September 2026.',
-        ar: 'برنامج حضوري لمدة يومين من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 22 سبتمبر 2026 إلى 23 سبتمبر 2026.'
+        en: 'An on-campus program from Kellogg School of Management. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية كيلوغ للإدارة. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -1780,15 +4149,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-ai-essentials-accelerating-impactful-a', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'in-person',
-      start: '2026-09-24', days: 2, price: 5700, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/ai-essentials/a05U1000009xGLJIA2.html',
-      title: {
-        en: 'AI Essentials: Accelerating Impactful Adoption',
-        ar: 'أساسيات الذكاء الاصطناعي: تسريع التبني الفعّال'
-      },
+      id: 'c-creating-and-managing-strategic-allian', school: 's-kellogg-school-of-management', subject: 'strategy', format: 'in-person',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/cmsa/',
+      title: { en: 'Creating and Managing Strategic Alliances', ar: 'بناء التحالفات الاستراتيجية وإدارتها' },
       summary: {
-        en: 'A 2-day on-campus program from MIT Sloan School of Management, running 24 September 2026 to 25 September 2026.',
-        ar: 'برنامج حضوري لمدة يومين من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 24 سبتمبر 2026 إلى 25 سبتمبر 2026.'
+        en: 'An on-campus program from Kellogg School of Management. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية كيلوغ للإدارة. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -1797,8 +4163,92 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-artificial-intelligence-for-financial', school: 's-mit-sloan-school-of-management', subject: 'finance', format: 'in-person',
-      start: '2026-10-01', days: 2, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/artificial-intelligence-for-financial-services/a05U100000BIm1RIAT.html',
+      id: 'c-emerging-c-suite-leaders-program', school: 's-kellogg-school-of-management', subject: 'leadership', format: 'blended',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/emcs/', duration: { en: 'seven-month program', ar: 'برنامج مدته 7 أشهر' },
+      title: { en: 'Emerging C-Suite Leaders Program', ar: 'برنامج قادة الإدارة التنفيذية العليا الصاعدون' },
+      summary: {
+        en: 'A blended program from Kellogg School of Management, seven-month program. Dates to be announced by the school.',
+        ar: 'برنامج مدمج من كلية كيلوغ للإدارة، برنامج مدته 7 أشهر. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-harvest-lisbon-alentejo-2026', school: 's-kellogg-school-of-management', subject: 'strategy', format: 'in-person',
+      start: null, days: 5, price: 7450, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/harvest-lisbon-alentejo/',
+      title: { en: 'Harvest Lisbon + Alentejo 2026', ar: 'Harvest: لشبونة وألنتيجو 2026' },
+      summary: {
+        en: 'A 5-day on-campus program from Kellogg School of Management. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-harvest-porto-douro-valley-2026', school: 's-kellogg-school-of-management', subject: 'strategy', format: 'in-person',
+      start: null, days: 5, price: 8375, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/harvest-porto-douro/',
+      title: { en: 'Harvest Porto + Douro Valley 2026', ar: 'Harvest: بورتو ووادي دورو 2026' },
+      summary: {
+        en: 'A 5-day on-campus program from Kellogg School of Management. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية كيلوغ للإدارة. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-operations-strategy', school: 's-kellogg-school-of-management', subject: 'operations', format: 'in-person',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/opstrat/',
+      title: { en: 'Operations Strategy', ar: 'استراتيجية العمليات' },
+      summary: {
+        en: 'An on-campus program from Kellogg School of Management. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية كيلوغ للإدارة. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-supply-chain-management', school: 's-kellogg-school-of-management', subject: 'operations', format: 'in-person',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/supply/',
+      title: { en: 'Supply Chain Management', ar: 'إدارة سلاسل الإمداد' },
+      summary: {
+        en: 'An on-campus program from Kellogg School of Management. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية كيلوغ للإدارة. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-the-customer-focused-organization', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'in-person',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/focus/',
+      title: { en: 'The Customer-Focused Organization', ar: 'المؤسسة المرتكزة على العميل' },
+      summary: {
+        en: 'An on-campus program from Kellogg School of Management. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية كيلوغ للإدارة. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-artificial-intelligence-for-financial', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'in-person',
+      start: '2026-10-01', days: 2, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/artificial-intelligence-for-financial-services/a05U100000BIm1RIAT.html', end: '2026-10-02',
       title: {
         en: 'Artificial Intelligence for Financial Services: Tools, Opportunities, and Challenges',
         ar: 'الذكاء الاصطناعي في الخدمات المالية: الأدوات والفرص والتحديات'
@@ -1815,7 +4265,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-driving-strategic-innovation-achieving', school: 's-mit-sloan-school-of-management', subject: 'strategy', format: 'in-person',
-      start: '2026-10-04', days: 6, price: 12900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/driving-strategic-innovation/a056g00000URaMqAAL.html',
+      start: '2026-10-04', days: 6, price: 12900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/driving-strategic-innovation/a056g00000URaMqAAL.html', end: '2026-10-09',
       title: {
         en: 'Driving Strategic Innovation: Achieving High Performance Throughout the Value Chain',
         ar: 'قيادة الابتكار الاستراتيجي: تحقيق الأداء المتفوق عبر سلسلة القيمة'
@@ -1832,9 +4282,9 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-visual-management-for-competitive-adva', school: 's-mit-sloan-school-of-management', subject: 'operations', format: 'in-person',
-      start: '2026-10-06', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/visual-management-for-competitive-advantage/a056g00000URaMuAAL.html',
+      start: '2026-10-06', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/visual-management-for-competitive-advantage/a056g00000URaMuAAL.html', end: '2026-10-07',
       title: {
-        en: "Visual Management for Competitive Advantage: MIT's Approach to Efficient and Agile Work",
+        en: 'Visual Management for Competitive Advantage: MIT’s Approach to Efficient and Agile Work',
         ar: 'الإدارة البصرية لتحقيق الميزة التنافسية: منهج معهد MIT للعمل الكفؤ والرشيق'
       },
       summary: {
@@ -1848,8 +4298,93 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-ai-adoption-driving-business-value-and', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
+      start: '2026-10-07', days: null, price: 3850, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/ai-adoption/a05U100000CQuPRIA1.html', end: '2026-11-24', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: {
+        en: 'AI Adoption: Driving Business Value and Impact',
+        ar: 'تبنّي الذكاء الاصطناعي: تحقيق القيمة والأثر للأعمال'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 7 October 2026 to 24 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 7 أكتوبر 2026 إلى 24 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-artificial-intelligence-implications-f', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
+      start: '2026-10-07', days: null, price: 3850, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html', end: '2026-11-24', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: {
+        en: 'Artificial Intelligence: Implications for Business Strategy',
+        ar: 'الذكاء الاصطناعي: انعكاساته على استراتيجية الأعمال'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 7 October 2026 to 24 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 7 أكتوبر 2026 إلى 24 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-process-design-for-strategic', school: 's-mit-sloan-school-of-management', subject: 'operations', format: 'online',
+      start: '2026-10-07', days: null, price: 3250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/business-process-design-for-strategic-management/a056g00000URaa1AAD.html', end: '2026-11-24', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: {
+        en: 'Business Process Design for Strategic Management',
+        ar: 'تصميم العمليات التشغيلية للإدارة الاستراتيجية'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 7 October 2026 to 24 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 7 أكتوبر 2026 إلى 24 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-corporate-innovation-strategies-for-le', school: 's-mit-sloan-school-of-management', subject: 'strategy', format: 'online',
+      start: '2026-10-07', days: null, price: 3250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/corporate-innovation/a056g00000URaaDAAT.html', end: '2026-11-24', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: {
+        en: 'Corporate Innovation: Strategies for Leveraging Ecosystems',
+        ar: 'الابتكار المؤسسي: استراتيجيات الاستفادة من المنظومات'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 7 October 2026 to 24 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 7 أكتوبر 2026 إلى 24 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-digital-business-strategy-harnessing-o', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
+      start: '2026-10-07', days: null, price: 3250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/digital-business-strategy/a056g00000URaa6AAD.html', end: '2026-11-24', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: {
+        en: 'Digital Business Strategy: Harnessing Our Digital Future',
+        ar: 'استراتيجية الأعمال الرقمية: استثمار مستقبلنا الرقمي'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 7 October 2026 to 24 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 7 أكتوبر 2026 إلى 24 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-ai-risk-and-readiness-from-governance', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'in-person',
-      start: '2026-10-08', days: 2, price: 5700, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/ai-risk-and-readiness/a05U100000E3vJRIAZ.html',
+      start: '2026-10-08', days: 2, price: 5700, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/ai-risk-and-readiness/a05U100000E3vJRIAZ.html', end: '2026-10-09',
       title: {
         en: 'AI Risk and Readiness: From Governance to Growth',
         ar: 'مخاطر الذكاء الاصطناعي والتأهب لها: من الحوكمة إلى النمو'
@@ -1866,14 +4401,14 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-implementing-agentic-ai-building-your', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
-      start: '2026-10-12', days: 15, price: 1900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/implementing-agentic-ai/a05U100000CvoPOIAZ.html',
+      start: '2026-10-12', days: null, price: 1900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/implementing-agentic-ai/a05U100000CvoPOIAZ.html', end: '2026-11-03', duration: { en: '3 weeks, 4–5 hours/week', ar: '3 أسابيع، 4–5 ساعات في الأسبوع' },
       title: {
         en: 'Implementing Agentic AI: Building Your Organizational Playbook',
         ar: 'تطبيق الذكاء الاصطناعي الوكيل: بناء دليل عمل مؤسستكم'
       },
       summary: {
-        en: 'A 15-day online program from MIT Sloan School of Management, running 12 October 2026 to 3 November 2026.',
-        ar: 'برنامج عبر الإنترنت لمدة 15 يومًا من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 12 أكتوبر 2026 إلى 3 نوفمبر 2026.'
+        en: 'An online program from MIT Sloan School of Management, 3 weeks, 4–5 hours/week, running 12 October 2026 to 3 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 3 أسابيع، 4–5 ساعات في الأسبوع، من 12 أكتوبر 2026 إلى 3 نوفمبر 2026.'
       },
       highlights: {
         en: [],
@@ -1883,7 +4418,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-developing-a-leading-edge-operations-s', school: 's-mit-sloan-school-of-management', subject: 'operations', format: 'in-person',
-      start: '2026-10-13', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/developing-a-leading-edge-operations-strategy/a056g00000URaMoAAL.html',
+      start: '2026-10-13', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/developing-a-leading-edge-operations-strategy/a056g00000URaMoAAL.html', end: '2026-10-14',
       title: { en: 'Developing a Leading Edge Operations Strategy', ar: 'بناء استراتيجية تشغيلية ريادية' },
       summary: {
         en: 'A 2-day on-campus program from MIT Sloan School of Management, running 13 October 2026 to 14 October 2026.',
@@ -1897,7 +4432,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-leading-technical-professionals-and-te', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2026-10-13', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/leading-technical-professionals-and-teams/a05U1000006sQeoIAE.html',
+      start: '2026-10-13', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/leading-technical-professionals-and-teams/a05U1000006sQeoIAE.html', end: '2026-10-14',
       title: { en: 'Leading Technical Professionals and Teams', ar: 'قيادة المختصين التقنيين وفرقهم' },
       summary: {
         en: 'A 2-day on-campus program from MIT Sloan School of Management, running 13 October 2026 to 14 October 2026.',
@@ -1910,8 +4445,50 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-inquiry-driven-leadership', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'online',
+      start: '2026-10-14', days: null, price: 3250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/inquiry-driven-leadership/a056g00000URaaSAAT.html', end: '2026-12-01', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: { en: 'Inquiry-Driven Leadership', ar: 'القيادة القائمة على الاستقصاء' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 14 October 2026 to 1 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 14 أكتوبر 2026 إلى 1 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leadership-in-an-exponentially-changin', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'online',
+      start: '2026-10-14', days: null, price: 3250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/leadership-in-an-exponentially-changing-world/a056g00000URaaOAAT.html', end: '2026-12-01', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: { en: 'Leadership in an Exponentially Changing World', ar: 'القيادة في عالم يتغير بوتيرة متسارعة' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 14 October 2026 to 1 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 14 أكتوبر 2026 إلى 1 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-neuroscience-for-business', school: 's-mit-sloan-school-of-management', subject: 'people', format: 'online',
+      start: '2026-10-14', days: null, price: 3250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/neuroscience-for-business/a056g00000URaaZAAT.html', end: '2026-12-01', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: { en: 'Neuroscience for Business', ar: 'علم الأعصاب للأعمال' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 14 October 2026 to 1 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 14 أكتوبر 2026 إلى 1 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-leading-through-storytelling-the-human', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2026-10-15', days: 2, price: 5300, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/leading-through-storytelling/a05U100000FS8urIAD.html',
+      start: '2026-10-15', days: 2, price: 5300, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/leading-through-storytelling/a05U100000FS8urIAD.html', end: '2026-10-16',
       title: {
         en: 'Leading Through Storytelling: The Human Advantage in the Age of AI',
         ar: 'القيادة عبر السرد القصصي: الميزة الإنسانية في عصر الذكاء الاصطناعي'
@@ -1928,7 +4505,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-supply-chain-strategy-and-management', school: 's-mit-sloan-school-of-management', subject: 'operations', format: 'in-person',
-      start: '2026-10-15', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/supply-chain-strategy-and-management/a056g00000URaN6AAL.html',
+      start: '2026-10-15', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/supply-chain-strategy-and-management/a056g00000URaN6AAL.html', end: '2026-10-16',
       title: { en: 'Supply Chain Strategy and Management', ar: 'استراتيجية سلسلة الإمداد وإدارتها' },
       summary: {
         en: 'A 2-day on-campus program from MIT Sloan School of Management, running 15 October 2026 to 16 October 2026.',
@@ -1941,8 +4518,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-understanding-and-solving-complex-busi', school: 's-mit-sloan-school-of-management', subject: 'strategy', format: 'in-person',
-      start: '2026-10-15', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/understanding-and-solving-complex-business-problems/a056g00000URaNBAA1.html',
+      id: 'c-understanding-and-solving-complex-busi', school: 's-mit-sloan-school-of-management', subject: 'operations', format: 'in-person',
+      start: '2026-10-15', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/understanding-and-solving-complex-business-problems/a056g00000URaNBAA1.html', end: '2026-10-16',
       title: { en: 'Understanding and Solving Complex Business Problems', ar: 'فهم المشكلات التجارية المعقدة وحلها' },
       summary: {
         en: 'A 2-day on-campus program from MIT Sloan School of Management, running 15 October 2026 to 16 October 2026.',
@@ -1956,7 +4533,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-future-family-enterprise-sustaining-mu', school: 's-mit-sloan-school-of-management', subject: 'entrepreneurship', format: 'in-person',
-      start: '2026-10-18', days: 6, price: 13900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/future-family-enterprise/a056g00000URaa8AAD.html',
+      start: '2026-10-18', days: 6, price: 13900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/future-family-enterprise/a056g00000URaa8AAD.html', end: '2026-10-23',
       title: {
         en: 'Future Family Enterprise: Sustaining Multigenerational Success',
         ar: 'مستقبل المنشأة العائلية: استدامة النجاح عبر الأجيال'
@@ -1972,8 +4549,25 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-managing-ai-and-people-a-new-operating', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
+      start: '2026-10-19', days: null, price: 1900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/managing-ai-and-people/a05U100000FpmLJIAZ.html', end: '2026-11-10', duration: { en: '3 weeks, 5–7 Hours/week', ar: '3 أسابيع، 5–7 ساعات في الأسبوع' },
+      title: {
+        en: 'Managing AI and People: A New Operating Model for Human + Agent Teams',
+        ar: 'إدارة الذكاء الاصطناعي والأفراد: نموذج تشغيلي جديد لفرق الإنسان والوكلاء الذكيين'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 3 weeks, 5–7 Hours/week, running 19 October 2026 to 10 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 3 أسابيع، 5–7 ساعات في الأسبوع، من 19 أكتوبر 2026 إلى 10 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-questions-are-the-answer-a-creative-ap', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2026-10-20', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/questions-are-the-answer/a056g00000URaaHAAT.html',
+      start: '2026-10-20', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/questions-are-the-answer/a056g00000URaaHAAT.html', end: '2026-10-21',
       title: {
         en: 'Questions Are the Answer: A Creative Approach to AI-Enhanced Inquiry, Insight, and Impact',
         ar: 'الأسئلة هي الإجابة: منهج إبداعي للاستقصاء والبصيرة والأثر المعزَّز بالذكاء الاصطناعي'
@@ -1989,8 +4583,98 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-navigating-transitions-during-ai-drive', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2026-10-22', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/navigating-transitions-during-ai-driven-change/a056g00000URaaWAAT.html',
+      id: 'c-artificial-intelligence-in-pharma-and', school: 's-mit-sloan-school-of-management', subject: 'healthcare', format: 'online',
+      start: '2026-10-21', days: null, price: 3250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/artificial-intelligence-in-pharma-and-biotech/a054v00000qmr6hAAA.html', end: '2026-12-08', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: {
+        en: 'Artificial Intelligence in Pharma and Biotech',
+        ar: 'الذكاء الاصطناعي في الصناعات الدوائية والتقنية الحيوية'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 21 October 2026 to 8 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 21 أكتوبر 2026 إلى 8 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-communicating-data-through-storytellin', school: 's-mit-sloan-school-of-management', subject: 'data', format: 'online',
+      start: '2026-10-21', days: null, price: 3250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/communicating-data-through-storytelling/a054v00000jk27LAAQ.html', end: '2026-12-08', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: { en: 'Communicating Data Through Storytelling', ar: 'توصيل البيانات من خلال السرد القصصي' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 21 October 2026 to 8 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 21 أكتوبر 2026 إلى 8 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-enterprise-ai-strategy-implementation', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
+      start: '2026-10-21', days: null, price: 8250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/enterprise-ai/a05U100000FDXf3IAH.html', end: '2027-03-16', duration: { en: '17 weeks', ar: '17 أسبوعًا' },
+      title: {
+        en: 'Enterprise AI: Strategy, Implementation, and Integration',
+        ar: 'الذكاء الاصطناعي المؤسسي: الاستراتيجية والتنفيذ والتكامل'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 17 weeks, running 21 October 2026 to 16 March 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 17 أسبوعًا، من 21 أكتوبر 2026 إلى 16 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-organizational-design-for-digital-tran', school: 's-mit-sloan-school-of-management', subject: 'people', format: 'online',
+      start: '2026-10-21', days: null, price: 3250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/organizational-design-for-digital-transformation/a056g00000URaaNAAT.html', end: '2026-12-08', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: { en: 'Organizational Design for Digital Transformation', ar: 'التصميم التنظيمي للتحول الرقمي' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 21 October 2026 to 8 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 21 أكتوبر 2026 إلى 8 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-applied-business-analytics', school: 's-mit-sloan-school-of-management', subject: 'data', format: 'online',
+      start: '2026-10-22', days: null, price: 2950, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/applied-business-analytics/a056g00000URaaVAAT.html', end: '2026-12-10', duration: { en: '6 weeks, 4–6 hours/week', ar: '6 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Applied Business Analytics', ar: 'تحليلات الأعمال التطبيقية' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 4–6 hours/week, running 22 October 2026 to 10 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 4–6 ساعات في الأسبوع، من 22 أكتوبر 2026 إلى 10 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-mastering-design-thinking', school: 's-mit-sloan-school-of-management', subject: 'strategy', format: 'online',
+      start: '2026-10-22', days: null, price: 3300, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/mastering-design-thinking/a056g00000URaa4AAD.html', end: '2027-01-21', duration: { en: '3 months, 6–8 hours/week', ar: '3 أشهر، 6–8 ساعات في الأسبوع' },
+      title: { en: 'Mastering Design Thinking', ar: 'إتقان التفكير التصميمي' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 3 months, 6–8 hours/week, running 22 October 2026 to 21 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 3 أشهر، 6–8 ساعات في الأسبوع، من 22 أكتوبر 2026 إلى 21 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-navigating-transitions-during-ai-drive', school: 's-mit-sloan-school-of-management', subject: 'people', format: 'in-person',
+      start: '2026-10-22', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/navigating-transitions-during-ai-driven-change/a056g00000URaaWAAT.html', end: '2026-10-23',
       title: {
         en: 'Navigating Transitions During AI-Driven Change',
         ar: 'إدارة مراحل الانتقال في ظل التغيير المدفوع بالذكاء الاصطناعي'
@@ -2006,8 +4690,22 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-global-ceo-program', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
+      start: '2026-10-26', days: null, price: 56000, langs: ['en'], featured: true, popularity: 50, sourceUrl: 'https://executive.mit.edu/course/global-ceo-program/a054v00000rfyukAAA.html', end: '2027-05-07', duration: { en: '7 months, 3 one-week modules', ar: '7 أشهر، 3 وحدات مدة كل منها أسبوع' },
+      title: { en: 'Global CEO Program', ar: 'برنامج CEO العالمي' },
+      summary: {
+        en: 'An on-campus program from MIT Sloan School of Management, 7 months, 3 one-week modules, running 26 October 2026 to 7 May 2027.',
+        ar: 'برنامج حضوري من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 7 أشهر، 3 وحدات مدة كل منها أسبوع، من 26 أكتوبر 2026 إلى 7 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-agentic-ai-business-implications-and-a', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'in-person',
-      start: '2026-11-02', days: 3, price: 7900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/agentic-ai/a05U100000D0sLtIAJ.html',
+      start: '2026-11-02', days: 3, price: 7900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/agentic-ai/a05U100000D0sLtIAJ.html', end: '2026-11-04',
       title: {
         en: 'Agentic AI: Business Implications and Applications',
         ar: 'الذكاء الاصطناعي الوكيل: تطبيقاته وانعكاساته على الأعمال'
@@ -2023,8 +4721,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-understanding-global-markets-macroecon', school: 's-mit-sloan-school-of-management', subject: 'finance', format: 'in-person',
-      start: '2026-11-02', days: 3, price: 5500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/understanding-global-markets/a056g00000URaZRAA1.html',
+      id: 'c-understanding-global-markets-macroecon', school: 's-mit-sloan-school-of-management', subject: 'strategy', format: 'in-person',
+      start: '2026-11-02', days: 3, price: 5500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/understanding-global-markets/a056g00000URaZRAA1.html', end: '2026-11-04',
       title: {
         en: 'Understanding Global Markets: Macroeconomics for Executives',
         ar: 'فهم الأسواق العالمية: الاقتصاد الكلي للتنفيذيين'
@@ -2041,7 +4739,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-evolving-as-a-leader-in-turbulent-time', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2026-11-03', days: 2, price: 5300, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/evolving-as-a-leader-in-turbulent-times/a056g00000URaNAAA1.html',
+      start: '2026-11-03', days: 2, price: 5300, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/evolving-as-a-leader-in-turbulent-times/a056g00000URaNAAA1.html', end: '2026-11-04', duration: { en: '2 days + coaching', ar: 'يومان + كوتشينغ' },
       title: { en: 'Evolving as a Leader in Turbulent Times', ar: 'التطور القيادي في أوقات الاضطراب' },
       summary: {
         en: 'A 2-day on-campus program from MIT Sloan School of Management, running 3 November 2026 to 4 November 2026.',
@@ -2054,8 +4752,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-building-organizational-resilience-a-s', school: 's-mit-sloan-school-of-management', subject: 'operations', format: 'in-person',
-      start: '2026-11-05', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/building-organizational-resilience/a056g00000URaadAAD.html',
+      id: 'c-building-organizational-resilience-a-s', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
+      start: '2026-11-05', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/building-organizational-resilience/a056g00000URaadAAD.html', end: '2026-11-06',
       title: {
         en: 'Building Organizational Resilience: A System Approach to Mitigating Risk and Uncertainty',
         ar: 'بناء المرونة المؤسسية: نهج منظومي للحد من المخاطر وعدم اليقين'
@@ -2071,8 +4769,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-creative-transformation-amid-rapid-cha', school: 's-mit-sloan-school-of-management', subject: 'strategy', format: 'in-person',
-      start: '2026-11-05', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/creative-transformation-amid-rapid-change/a054v00000rgRvwAAE.html',
+      id: 'c-creative-transformation-amid-rapid-cha', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
+      start: '2026-11-05', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/creative-transformation-amid-rapid-change/a054v00000rgRvwAAE.html', end: '2026-11-06',
       title: {
         en: 'Creative Transformation Amid Rapid Change: Embracing the Unexpected',
         ar: 'التحول الإبداعي في خضم التغيير المتسارع: استيعاب المفاجآت'
@@ -2089,7 +4787,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-unlocking-the-power-of-perspectives-pr', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2026-11-05', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/unlocking-the-power-of-perspectives/a056g00000URqsrAAD.html',
+      start: '2026-11-05', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/unlocking-the-power-of-perspectives/a056g00000URqsrAAD.html', end: '2026-11-06',
       title: {
         en: 'Unlocking the Power of Perspectives: Problem Solving with Clarity, Creativity, and Collaboration',
         ar: 'إطلاق قوة وجهات النظر: حل المشكلات بوضوح وإبداع وتعاون'
@@ -2105,8 +4803,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-shaping-the-future-of-real-estate-huma', school: 's-mit-sloan-school-of-management', subject: 'strategy', format: 'in-person',
-      start: '2026-11-08', days: 6, price: 12500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/shaping-the-future-of-real-estate/a05U1000008AVXOIA4.html',
+      id: 'c-shaping-the-future-of-real-estate-huma', school: 's-mit-sloan-school-of-management', subject: 'finance', format: 'in-person',
+      start: '2026-11-08', days: 6, price: 12500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/shaping-the-future-of-real-estate/a05U1000008AVXOIA4.html', end: '2026-11-13',
       title: {
         en: 'Shaping the Future of Real Estate: Human, Digital, and Physical Innovation Strategy',
         ar: 'صياغة مستقبل القطاع العقاري: استراتيجية الابتكار البشري والرقمي والمادي'
@@ -2122,8 +4820,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leading-the-ai-driven-organization', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2026-11-09', days: 5, price: 12900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/leading-the-ai-driven-organization/a054v00000r9U5cAAE.html',
+      id: 'c-leading-the-ai-driven-organization', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'in-person',
+      start: '2026-11-09', days: 5, price: 12900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/leading-the-ai-driven-organization/a054v00000r9U5cAAE.html', end: '2026-11-13',
       title: { en: 'Leading the AI-Driven Organization', ar: 'قيادة المؤسسة القائمة على الذكاء الاصطناعي' },
       summary: {
         en: 'A 5-day on-campus program from MIT Sloan School of Management, running 9 November 2026 to 13 November 2026.',
@@ -2137,7 +4835,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-systematic-innovation-of-products-proc', school: 's-mit-sloan-school-of-management', subject: 'operations', format: 'in-person',
-      start: '2026-11-09', days: 5, price: 11100, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/systematic-innovation-of-products--processes--and-services/a056g00000URaN2AAL.html',
+      start: '2026-11-09', days: 5, price: 11100, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/systematic-innovation-of-products--processes--and-services/a056g00000URaN2AAL.html', end: '2026-11-13',
       title: {
         en: 'Systematic Innovation of Products, Processes, and Services',
         ar: 'الابتكار المنهجي للمنتجات والعمليات والخدمات'
@@ -2154,7 +4852,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-developing-and-managing-a-successful-t', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'in-person',
-      start: '2026-11-10', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/developing-and-managing-a-successful-technology-strategy/a056g00000URaMpAAL.html',
+      start: '2026-11-10', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/developing-and-managing-a-successful-technology-strategy/a056g00000URaMpAAL.html', end: '2026-11-11',
       title: {
         en: 'Developing and Managing a Successful Technology Strategy',
         ar: 'صياغة استراتيجية تقنية ناجحة وإدارتها'
@@ -2171,7 +4869,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-fundamentals-of-finance-for-the-techni', school: 's-mit-sloan-school-of-management', subject: 'finance', format: 'in-person',
-      start: '2026-11-10', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/fundamentals-of-finance-for-the-technical-executive/a056g00000URaMtAAL.html',
+      start: '2026-11-10', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/fundamentals-of-finance-for-the-technical-executive/a056g00000URaMtAAL.html', end: '2026-11-11',
       title: { en: 'Fundamentals of Finance for the Technical Executive', ar: 'أساسيات المالية للتنفيذي التقني' },
       summary: {
         en: 'A 2-day on-campus program from MIT Sloan School of Management, running 10 November 2026 to 11 November 2026.',
@@ -2184,8 +4882,53 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-artificial-intelligence-in-health-care', school: 's-mit-sloan-school-of-management', subject: 'healthcare', format: 'online',
+      start: '2026-11-11', days: null, price: 3250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/artificial-intelligence-in-health-care/a056g00000URaaTAAT.html', end: '2027-01-26', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: { en: 'Artificial Intelligence in Health Care', ar: 'الذكاء الاصطناعي في الرعاية الصحية' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 11 November 2026 to 26 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 11 نوفمبر 2026 إلى 26 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-machine-learning-in-business', school: 's-mit-sloan-school-of-management', subject: 'data', format: 'online',
+      start: '2026-11-11', days: null, price: 3850, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/machine-learning-in-business/a056g00000URaaGAAT.html', end: '2027-01-19', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: { en: 'Machine Learning in Business', ar: 'التعلّم الآلي في الأعمال' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 11 November 2026 to 19 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 11 نوفمبر 2026 إلى 19 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-unsupervised-machine-learning-unlockin', school: 's-mit-sloan-school-of-management', subject: 'data', format: 'online',
+      start: '2026-11-11', days: null, price: 3250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/unsupervised-machine-learning--unlocking-the-potential-of-data/a054v00000qmi8sAAA.html', end: '2027-01-26', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: {
+        en: 'Unsupervised Machine Learning: Unlocking the Potential of Data',
+        ar: 'التعلّم الآلي غير الموجَّه: إطلاق إمكانات البيانات'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 11 November 2026 to 26 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 11 نوفمبر 2026 إلى 26 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-persuading-with-data', school: 's-mit-sloan-school-of-management', subject: 'data', format: 'in-person',
-      start: '2026-11-12', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/persuading-with-data/a056g00000YHYWsAAP.html',
+      start: '2026-11-12', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/persuading-with-data/a056g00000YHYWsAAP.html', end: '2026-11-13',
       title: { en: 'Persuading with Data', ar: 'الإقناع بالبيانات' },
       summary: {
         en: 'A 2-day on-campus program from MIT Sloan School of Management, running 12 November 2026 to 13 November 2026.',
@@ -2199,7 +4942,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-business-model-innovation-for-organiza', school: 's-mit-sloan-school-of-management', subject: 'strategy', format: 'in-person',
-      start: '2026-11-17', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/business-model-innovation-for-organizational-transformation/a056g00000URaabAAD.html',
+      start: '2026-11-17', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/business-model-innovation-for-organizational-transformation/a056g00000URaabAAD.html', end: '2026-11-18',
       title: {
         en: 'Business Model Innovation for Organizational Transformation',
         ar: 'ابتكار نماذج الأعمال لتحقيق التحول المؤسسي'
@@ -2216,7 +4959,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-crisis-leadership-strategies-for-high', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2026-11-17', days: 2, price: 5500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/crisis-leadership/a05U100000F9TN8IAN.html',
+      start: '2026-11-17', days: 2, price: 5500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/crisis-leadership/a05U100000F9TN8IAN.html', end: '2026-11-18',
       title: {
         en: 'Crisis Leadership: Strategies for High-Stakes Decision-Making',
         ar: 'القيادة في الأزمات: استراتيجيات اتخاذ القرار في المواقف الحرجة'
@@ -2233,7 +4976,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-negotiation-for-executives', school: 's-mit-sloan-school-of-management', subject: 'negotiation', format: 'in-person',
-      start: '2026-11-17', days: 2, price: 5300, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/negotiation-for-executives/a056g00000URaZHAA1.html',
+      start: '2026-11-17', days: 2, price: 5300, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/negotiation-for-executives/a056g00000URaZHAA1.html', end: '2026-11-18',
       title: { en: 'Negotiation for Executives', ar: 'التفاوض للتنفيذيين' },
       summary: {
         en: 'A 2-day on-campus program from MIT Sloan School of Management, running 17 November 2026 to 18 November 2026.',
@@ -2246,8 +4989,42 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leadership-by-design-innovation-proces', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2026-11-19', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/leadership-by-design/a056g00000URaZqAAL.html',
+      id: 'c-data-monetization-strategy-creating-va', school: 's-mit-sloan-school-of-management', subject: 'data', format: 'online',
+      start: '2026-11-18', days: null, price: 3250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/data-monetization-strategy/a056g00000dOT5MAAW.html', end: '2027-02-02', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: {
+        en: 'Data Monetization Strategy: Creating Value Through Data',
+        ar: 'استراتيجية تحقيق الدخل من البيانات: خلق القيمة عبر البيانات'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 18 November 2026 to 2 February 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 18 نوفمبر 2026 إلى 2 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-making-ai-work-machine-intelligence-fo', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
+      start: '2026-11-18', days: null, price: 3250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/making-ai-work--machine-intelligence-for-business-and-society/a054v00000jjjNNAAY.html', end: '2027-02-02', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: {
+        en: 'Making AI Work: Machine Intelligence for Business and Society',
+        ar: 'توظيف الذكاء الاصطناعي: الذكاء الآلي للأعمال والمجتمع'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 18 November 2026 to 2 February 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 18 نوفمبر 2026 إلى 2 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leadership-by-design-innovation-proces', school: 's-mit-sloan-school-of-management', subject: 'strategy', format: 'in-person',
+      start: '2026-11-19', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/leadership-by-design/a056g00000URaZqAAL.html', end: '2026-11-20',
       title: {
         en: 'Leadership by Design: Innovation Process and Culture',
         ar: 'القيادة بالتصميم: عملية الابتكار وثقافته'
@@ -2263,8 +5040,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-personal-productivity-in-an-ai-enabled', school: 's-mit-sloan-school-of-management', subject: 'people', format: 'in-person',
-      start: '2026-11-19', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/personal-productivity-in-an-ai-enabled-workplace/a056g00000URaZTAA1.html',
+      id: 'c-personal-productivity-in-an-ai-enabled', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'in-person',
+      start: '2026-11-19', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/personal-productivity-in-an-ai-enabled-workplace/a056g00000URaZTAA1.html', end: '2026-11-20',
       title: {
         en: 'Personal Productivity in an AI-Enabled Workplace',
         ar: 'الإنتاجية الشخصية في بيئة عمل مدعومة بالذكاء الاصطناعي'
@@ -2281,7 +5058,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-breakthrough-customer-experience-cx-st', school: 's-mit-sloan-school-of-management', subject: 'marketing', format: 'online',
-      start: '2026-11-30', days: 3, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/breakthrough-customer-experience-cx-strategy/a056g00000URaahAAD.html',
+      start: '2026-11-30', days: 3, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/breakthrough-customer-experience-cx-strategy/a056g00000URaahAAD.html', end: '2026-12-02',
       title: { en: 'Breakthrough Customer Experience (CX) Strategy', ar: 'استراتيجية نوعية لتجربة العميل (CX)' },
       summary: {
         en: 'A 3-day online program from MIT Sloan School of Management, running 30 November 2026 to 2 December 2026.',
@@ -2295,7 +5072,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-managing-product-platforms-delivering', school: 's-mit-sloan-school-of-management', subject: 'operations', format: 'online',
-      start: '2026-11-30', days: 4, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/managing-product-platforms/a056g00000URaZcAAL.html',
+      start: '2026-11-30', days: 4, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/managing-product-platforms/a056g00000URaZcAAL.html', end: '2026-12-03',
       title: {
         en: 'Managing Product Platforms: Delivering Variety and Realizing Synergies',
         ar: 'إدارة منصات المنتجات: تحقيق التنوع واستثمار أوجه التكامل'
@@ -2312,7 +5089,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-innovation-in-the-age-of-ai', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'in-person',
-      start: '2026-12-01', days: 4, price: 9800, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/innovation-in-the-age-of-ai/a05U100000Fkn57IAB.html',
+      start: '2026-12-01', days: 4, price: 9800, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/innovation-in-the-age-of-ai/a05U100000Fkn57IAB.html', end: '2026-12-04',
       title: { en: 'Innovation in the Age of AI', ar: 'الابتكار في عصر الذكاء الاصطناعي' },
       summary: {
         en: 'A 4-day on-campus program from MIT Sloan School of Management, running 1 December 2026 to 4 December 2026.',
@@ -2326,7 +5103,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-managing-complex-technical-projects', school: 's-mit-sloan-school-of-management', subject: 'operations', format: 'online',
-      start: '2026-12-02', days: 3, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/managing-complex-technical-projects/a056g00000URaMzAAL.html',
+      start: '2026-12-02', days: 3, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/managing-complex-technical-projects/a056g00000URaMzAAL.html', end: '2026-12-04',
       title: { en: 'Managing Complex Technical Projects', ar: 'إدارة المشاريع التقنية المعقدة' },
       summary: {
         en: 'A 3-day online program from MIT Sloan School of Management, running 2 December 2026 to 4 December 2026.',
@@ -2339,8 +5116,22 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-communication-and-persuasion-in-the-di', school: 's-mit-sloan-school-of-management', subject: 'marketing', format: 'online',
-      start: '2026-12-08', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/communication-and-persuasion-in-the-digital-age/a056g00000URaZWAA1.html',
+      id: 'c-cybersecurity-for-managers-a-playbook', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
+      start: '2026-12-03', days: null, price: 2950, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/cybersecurity-for-managers/a056g00000URaaIAAT.html', end: '2027-01-21', duration: { en: '6 weeks, 4–6 hours/week', ar: '6 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Cybersecurity for Managers: A Playbook', ar: 'الأمن السيبراني للمديرين: دليل عملي' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 4–6 hours/week, running 3 December 2026 to 21 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 4–6 ساعات في الأسبوع، من 3 ديسمبر 2026 إلى 21 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-communication-and-persuasion-in-the-di', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
+      start: '2026-12-08', days: 2, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/communication-and-persuasion-in-the-digital-age/a056g00000URaZWAA1.html', end: '2026-12-09',
       title: { en: 'Communication and Persuasion in the Digital Age', ar: 'التواصل والإقناع في العصر الرقمي' },
       summary: {
         en: 'A 2-day online program from MIT Sloan School of Management, running 8 December 2026 to 9 December 2026.',
@@ -2354,7 +5145,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-disciplined-entrepreneurship-a-systema', school: 's-mit-sloan-school-of-management', subject: 'entrepreneurship', format: 'online',
-      start: '2026-12-08', days: 4, price: 5300, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/disciplined-entrepreneurship/a056g00000URaagAAD.html',
+      start: '2026-12-08', days: 4, price: 5300, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/disciplined-entrepreneurship/a056g00000URaagAAD.html', end: '2026-12-11',
       title: {
         en: 'Disciplined Entrepreneurship: A Systematic Approach for Building Innovative Products and Ventures',
         ar: 'ريادة الأعمال المنضبطة: منهج منهجي لبناء منتجات ومشاريع ابتكارية'
@@ -2370,8 +5161,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-platform-strategy-designing-for-humans', school: 's-mit-sloan-school-of-management', subject: 'strategy', format: 'online',
-      start: '2026-12-08', days: 4, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/platform-strategy/a056g00000URaZVAA1.html',
+      id: 'c-platform-strategy-designing-for-humans', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
+      start: '2026-12-08', days: 4, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/platform-strategy/a056g00000URaZVAA1.html', end: '2026-12-11',
       title: {
         en: 'Platform Strategy: Designing for Humans and AI Agents',
         ar: 'استراتيجية المنصات: التصميم للبشر والوكلاء الأذكياء'
@@ -2387,8 +5178,81 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-executive-program-in-general-managemen', school: 's-mit-sloan-school-of-management', subject: 'strategy', format: 'blended',
+      start: '2026-12-09', days: null, price: 42000, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/executive-program-in-general-management/a056g00000URaZZAA1.html', end: '2027-08-06', duration: { en: '7 months, 5–8 hours/week', ar: '7 أشهر، 5–8 ساعات في الأسبوع' },
+      title: { en: 'Executive Program in General Management', ar: 'البرنامج التنفيذي في الإدارة العامة' },
+      summary: {
+        en: 'A blended program from MIT Sloan School of Management, 7 months, 5–8 hours/week, running 9 December 2026 to 6 August 2027.',
+        ar: 'برنامج مدمج من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 7 أشهر، 5–8 ساعات في الأسبوع، من 9 ديسمبر 2026 إلى 6 أغسطس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-frontiers-of-generative-ai-in-business', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
+      start: '2026-12-09', days: 3, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/frontiers-of-generative-ai-in-business/a05U1000002xz4jIAA.html', end: '2026-12-11',
+      title: { en: 'Frontiers of Generative AI in Business', ar: 'آفاق الذكاء الاصطناعي التوليدي في قطاع الأعمال' },
+      summary: {
+        en: 'A 3-day online program from MIT Sloan School of Management, running 9 December 2026 to 11 December 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة 3 أيام من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 9 ديسمبر 2026 إلى 11 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-organizations-for-high-velocit', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'online',
+      start: '2026-12-10', days: null, price: 2950, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/leading-organizations-for-high-velocity-performance/a054v00000rHYr9AAG.html', end: '2027-01-28', duration: { en: '6 weeks, 4–6 hours/week', ar: '6 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Leading Organizations for High Velocity Performance', ar: 'قيادة المؤسسات لتحقيق أداء عالي السرعة' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 4–6 hours/week, running 10 December 2026 to 28 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 4–6 ساعات في الأسبوع، من 10 ديسمبر 2026 إلى 28 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-essentials-accelerating-impactful-a', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
+      start: '2026-12-14', days: 3, price: 5700, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/ai-essentials/a05U1000009xGLJIA2.html', end: '2026-12-16',
+      title: {
+        en: 'AI Essentials: Accelerating Impactful Adoption',
+        ar: 'أساسيات الذكاء الاصطناعي: تسريع التبني الفعّال'
+      },
+      summary: {
+        en: 'A 3-day online program from MIT Sloan School of Management, running 14 December 2026 to 16 December 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة 3 أيام من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، من 14 ديسمبر 2026 إلى 16 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-unlocking-your-leadership-signature', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'online',
+      start: '2027-01-14', days: null, price: 2900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/unlocking-your-leadership-signature/a054v00000rHGIfAAO.html', end: '2027-03-04', duration: { en: '6 weeks, 4–6 hours/week', ar: '6 أسابيع، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Unlocking Your Leadership Signature', ar: 'اكتشاف بصمتك القيادية' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 4–6 hours/week, running 14 January 2027 to 4 March 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 4–6 ساعات في الأسبوع، من 14 يناير 2027 إلى 4 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-entrepreneurship-development-program', school: 's-mit-sloan-school-of-management', subject: 'entrepreneurship', format: 'in-person',
-      start: '2027-01-17', days: 6, price: 13300, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/entrepreneurship-development-program/a056g00000URaMsAAL.html',
+      start: '2027-01-17', days: 6, price: 13300, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/entrepreneurship-development-program/a056g00000URaMsAAL.html', end: '2027-01-22',
       title: { en: 'Entrepreneurship Development Program', ar: 'برنامج تطوير ريادة الأعمال' },
       summary: {
         en: 'A 6-day on-campus program from MIT Sloan School of Management, running 17 January 2027 to 22 January 2027.',
@@ -2402,7 +5266,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-ai-executive-academy', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'in-person',
-      start: '2027-01-18', days: 10, price: 24500, langs: ['en'], featured: true, popularity: 50, sourceUrl: 'https://executive.mit.edu/course/ai-executive-academy/a05U1000002o7uoIAA.html',
+      start: '2027-01-18', days: 10, price: 24500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/ai-executive-academy/a05U1000002o7uoIAA.html', end: '2027-01-29',
       title: { en: 'AI Executive Academy', ar: 'أكاديمية الذكاء الاصطناعي التنفيذية' },
       summary: {
         en: 'A 10-day on-campus program from MIT Sloan School of Management, running 18 January 2027 to 29 January 2027.',
@@ -2415,8 +5279,104 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leading-strategic-change-how-to-really', school: 's-mit-sloan-school-of-management', subject: 'strategy', format: 'in-person',
-      start: '2027-06-14', days: 5, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/leading-strategic-change/a054v00000rfYrsAAE.html',
+      id: 'c-blockchain-technologies-business-innov', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
+      start: '2027-01-20', days: null, price: 3850, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/blockchain-technologies/a056g00000URaa7AAD.html', end: '2027-03-09', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: {
+        en: 'Blockchain Technologies: Business Innovation and Application',
+        ar: 'تقنيات البلوكشين: الابتكار في الأعمال وتطبيقاته'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 20 January 2027 to 9 March 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 20 يناير 2027 إلى 9 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-pricing-using-data-to-improve-pricing', school: 's-mit-sloan-school-of-management', subject: 'marketing', format: 'online',
+      start: '2027-01-27', days: null, price: 3250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/pricing/a056g00000URaaPAAT.html', end: '2027-03-16', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: {
+        en: 'Pricing: Using Data to Improve Pricing Performance',
+        ar: 'التسعير: توظيف البيانات لتحسين أداء التسعير'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 27 January 2027 to 16 March 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 27 يناير 2027 إلى 16 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-blockchain-and-crypto-applications-fro', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
+      start: '2027-03-03', days: null, price: 3850, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/blockchain-and-crypto-applications--from-decentralized-finance-to-web-3/a054v00000rHFLVAA4.html', end: '2027-05-04', duration: { en: '8 weeks, 6–8 hours/week', ar: '8 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: {
+        en: 'Blockchain and Crypto Applications: From Decentralized Finance to Web 3',
+        ar: 'تطبيقات البلوكشين والعملات المشفرة: من التمويل اللامركزي إلى Web 3'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 8 weeks, 6–8 hours/week, running 3 March 2027 to 4 May 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 8 أسابيع، 6–8 ساعات في الأسبوع، من 3 مارس 2027 إلى 4 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-sustainability-strategy', school: 's-mit-sloan-school-of-management', subject: 'sustainability', format: 'online',
+      start: '2027-03-03', days: null, price: 3250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/business-sustainability-strategy/a056g00000dOT5gAAG.html', end: '2027-04-20', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: { en: 'Business Sustainability Strategy', ar: 'استراتيجية استدامة الأعمال' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 3 March 2027 to 20 April 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 3 مارس 2027 إلى 20 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-interpersonal-communication-strategies', school: 's-mit-sloan-school-of-management', subject: 'people', format: 'online',
+      start: '2027-03-03', days: null, price: 3250, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/interpersonal-communication/a056g00000URaaUAAT.html', end: '2027-04-20', duration: { en: '6 weeks, 6–8 hours/week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: {
+        en: 'Interpersonal Communication: Strategies for Executives',
+        ar: 'التواصل الشخصي: استراتيجيات للتنفيذيين'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours/week, running 3 March 2027 to 20 April 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع، من 3 مارس 2027 إلى 20 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-advanced-management-program-2', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
+      start: '2027-06-01', days: null, price: 75000, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/advanced-management-program/a056g00000URaZGAA1.html', end: '2027-07-01', duration: { en: '5 weeks', ar: '5 أسابيع' },
+      title: { en: 'Advanced Management Program', ar: 'برنامج الإدارة المتقدمة' },
+      summary: {
+        en: 'An on-campus program from MIT Sloan School of Management, 5 weeks, running 1 June 2027 to 1 July 2027.',
+        ar: 'برنامج حضوري من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 5 أسابيع، من 1 يونيو 2027 إلى 1 يوليو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-strategic-change-how-to-really', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
+      start: '2027-06-14', days: 5, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/leading-strategic-change/a054v00000rfYrsAAE.html', end: '2027-06-18',
       title: {
         en: 'Leading Strategic Change: How to Really Deliver the Shift Your Organization Needs',
         ar: 'قيادة التغيير الاستراتيجي: كيف تحقق فعليًا التحول الذي تحتاجه مؤسستك'
@@ -2432,8 +5392,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-business-dynamics-mit-s-approach-to-di', school: 's-mit-sloan-school-of-management', subject: 'strategy', format: 'in-person',
-      start: '2027-06-21', days: 5, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/business-dynamics/a056g00000URaMkAAL.html',
+      id: 'c-business-dynamics-mit-s-approach-to-di', school: 's-mit-sloan-school-of-management', subject: 'operations', format: 'in-person',
+      start: '2027-06-21', days: 5, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/business-dynamics/a056g00000URaMkAAL.html', end: '2027-06-25',
       title: {
         en: "Business Dynamics: MIT's Approach to Diagnosing and Solving Complex Business Problems",
         ar: 'ديناميكيات الأعمال: منهج معهد MIT في تشخيص المشكلات التجارية المعقدة وحلها'
@@ -2449,8 +5409,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-women-s-leadership-program', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2027-06-21', days: 4, price: 9300, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/women-s-leadership-program/a054v00000rfdVZAAY.html',
+      id: 'c-women-s-leadership-program', school: 's-mit-sloan-school-of-management', subject: 'people', format: 'in-person',
+      start: '2027-06-21', days: 4, price: 9300, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/women-s-leadership-program/a054v00000rfdVZAAY.html', end: '2027-06-24',
       title: { en: "Women's Leadership Program", ar: 'برنامج القيادة النسائية' },
       summary: {
         en: 'A 4-day on-campus program from MIT Sloan School of Management, running 21 June 2027 to 24 June 2027.',
@@ -2464,7 +5424,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-global-executive-academy', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
-      start: '2027-07-13', days: 8, price: 21000, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/global-executive-academy/a056g00000URaZQAA1.html',
+      start: '2027-07-13', days: 8, price: 21000, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/global-executive-academy/a056g00000URaZQAA1.html', end: '2027-07-22',
       title: { en: 'Global Executive Academy', ar: 'الأكاديمية التنفيذية العالمية' },
       summary: {
         en: 'A 8-day on-campus program from MIT Sloan School of Management, running 13 July 2027 to 22 July 2027.',
@@ -2477,12 +5437,249 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leading-high-performing-teams', school: 's-michigan-ross-executive-education', subject: 'leadership', format: 'in-person',
-      start: '2026-09-15', days: 4, price: 8900, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/leading-high-performing-teams-0?event=13907',
-      title: { en: 'Leading High-Performing Teams', ar: 'قيادة الفرق عالية الأداء' },
+      id: 'c-accelerating-digital-transformation-wi', school: 's-mit-sloan-school-of-management', subject: 'data', format: 'online',
+      start: null, days: null, price: 2900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/accelerating-digital-transformation-with-algorithmic-business-thinking/a056g00000URaaQAAT.html', duration: {
+        en: '6 weeks (excluding orientation), 4–6 hours/week',
+        ar: '6 أسابيع (باستثناء التوجيه)، 4–6 ساعات في الأسبوع'
+      },
+      title: {
+        en: 'Accelerating Digital Transformation with Algorithmic Business Thinking',
+        ar: 'تسريع التحول الرقمي بالتفكير الخوارزمي في الأعمال'
+      },
       summary: {
-        en: 'A 4-day on-campus program from Michigan Ross Executive Education, running 15 September 2026 to 18 September 2026.',
-        ar: 'برنامج حضوري لمدة 4 أيام من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 15 سبتمبر 2026 إلى 18 سبتمبر 2026.'
+        en: 'An online program from MIT Sloan School of Management, 6 weeks (excluding orientation), 4–6 hours/week. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع (باستثناء التوجيه)، 4–6 ساعات في الأسبوع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-accelerating-innovation-through-ecosys', school: 's-mit-sloan-school-of-management', subject: 'strategy', format: 'online',
+      start: null, days: null, price: 1750, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/accelerating-innovation-through-ecosystems-sprint/a05U1000004jDLNIA2.html', duration: { en: '30 days', ar: '30 يومًا' },
+      title: { en: 'Accelerating Innovation through Ecosystems Sprint', ar: 'جلسة مكثفة: تسريع الابتكار عبر المنظومات' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 30 days. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 30 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-algorithmic-business-thinking-sprint', school: 's-mit-sloan-school-of-management', subject: 'data', format: 'online',
+      start: null, days: null, price: 1450, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/algorithmic-business-thinking-sprint/a054v00000rgCvtAAE.html', duration: { en: '30 days', ar: '30 يومًا' },
+      title: { en: 'Algorithmic Business Thinking Sprint', ar: 'جلسة مكثفة: التفكير الخوارزمي في الأعمال' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 30 days. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 30 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-building-game-changing-organizations-a', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/building-game-changing-organizations/a056g00000URaZSAA1.html',
+      title: {
+        en: 'Building Game-Changing Organizations: Aligning Purpose, Performance, and People',
+        ar: 'بناء مؤسسات تغيّر قواعد اللعبة: مواءمة الرسالة والأداء والكفاءات البشرية'
+      },
+      summary: {
+        en: 'An on-campus program from MIT Sloan School of Management. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-economics-for-business', school: 's-mit-sloan-school-of-management', subject: 'strategy', format: 'online',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/economics-for-business/a056g00000URaaEAAT.html', duration: { en: '8 weeks, 6–8 hours per week', ar: '8 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: { en: 'Economics for Business', ar: 'الاقتصاد للأعمال' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 8 weeks, 6–8 hours per week. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 8 أسابيع، 6–8 ساعات في الأسبوع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-future-ready-enterprise-academy', school: 's-mit-sloan-school-of-management', subject: 'leadership', format: 'in-person',
+      start: null, days: null, price: 23500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/future-ready-enterprise-academy/a05U10000088vvmIAA.html', duration: { en: 'one week at IMD and a second week at MIT', ar: 'أسبوع في IMD وأسبوع ثانٍ في MIT' },
+      title: { en: 'Future-Ready Enterprise Academy', ar: 'أكاديمية المؤسسات الجاهزة للمستقبل' },
+      summary: {
+        en: 'An on-campus program from MIT Sloan School of Management, one week at IMD and a second week at MIT. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، أسبوع في IMD وأسبوع ثانٍ في MIT. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-generative-ai-business-sprint', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
+      start: null, days: null, price: 1750, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/generative-ai-business-sprint/a054v00000r9S4fAAE.html', duration: { en: '30 days', ar: '30 يومًا' },
+      title: { en: 'Generative AI Business Sprint', ar: 'ورشة مكثفة في الذكاء الاصطناعي التوليدي للأعمال' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 30 days. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 30 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-geopolitics-for-executives-from-global', school: 's-mit-sloan-school-of-management', subject: 'strategy', format: 'in-person',
+      start: null, days: 2, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/geopolitics-for-executives/a05U100000EfSMrIAN.html',
+      title: {
+        en: 'Geopolitics for Executives: From Global Risk to Strategic Advantage',
+        ar: 'الجيوسياسة للتنفيذيين: من المخاطر العالمية إلى الميزة الاستراتيجية'
+      },
+      summary: {
+        en: 'A 2-day on-campus program from MIT Sloan School of Management. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة يومين من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-the-future-of-work', school: 's-mit-sloan-school-of-management', subject: 'people', format: 'online',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/leading-the-future-of-work/a056g00000URaaeAAD.html', duration: { en: '6 weeks, 6–8 hours per week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: { en: 'Leading the Future of Work', ar: 'قيادة مستقبل العمل' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours per week. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-management-analytics-decision-making-l', school: 's-mit-sloan-school-of-management', subject: 'data', format: 'online',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/management-analytics/a056g00000URaaKAAT.html', duration: { en: '6 weeks, 6–8 hours per week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: {
+        en: 'Management Analytics: Decision-Making Lessons from the Sports Industry',
+        ar: 'تحليلات الإدارة: دروس في اتخاذ القرار من قطاع الرياضة'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours per week. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-managing-the-human-side-of-digital-dis', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'online',
+      start: null, days: null, price: 2800, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/managing-the-human-side-of-digital-disruption/a054v00000jjXkVAAU.html', duration: { en: '6 weeks, 6–8 hours per week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: { en: 'Managing the Human Side of Digital Disruption', ar: 'إدارة الجانب الإنساني للاضطراب الرقمي' },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours per week. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-negotiation-essentials-sprint-ai-accel', school: 's-mit-sloan-school-of-management', subject: 'negotiation', format: 'online',
+      start: null, days: null, price: 1750, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/negotiation-essentials-sprint--ai-accelerated-learning/a054v00000r9v41AAA.html', duration: { en: '30 days', ar: '30 يومًا' },
+      title: {
+        en: 'Negotiation Essentials Sprint: AI-Accelerated Learning',
+        ar: 'التفاوض الأساسي المكثّف: تعلّم مدعوم بالذكاء الاصطناعي'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 30 days. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 30 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-negotiation-strategy-sprint-ai-acceler', school: 's-mit-sloan-school-of-management', subject: 'negotiation', format: 'online',
+      start: null, days: null, price: 1750, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/negotiation-strategy-sprint--ai-accelerated-learning/a054v00000r9v7AAAQ.html', duration: { en: '30 days', ar: '30 يومًا' },
+      title: {
+        en: 'Negotiation Strategy Sprint: AI-Accelerated Learning',
+        ar: 'استراتيجية التفاوض المكثّفة: تعلّم مدعوم بالذكاء الاصطناعي'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 30 days. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 30 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-social-media-strategy-creating-engagem', school: 's-mit-sloan-school-of-management', subject: 'marketing', format: 'online',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/social-media-strategy/a056g00000URaaYAAT.html', duration: { en: '6 weeks, 6–8 hours per week', ar: '6 أسابيع، 6–8 ساعات في الأسبوع' },
+      title: {
+        en: 'Social Media Strategy: Creating Engagement, Insight, and Action',
+        ar: 'استراتيجية وسائل التواصل الاجتماعي: بناء التفاعل والرؤى والإجراءات'
+      },
+      summary: {
+        en: 'An online program from MIT Sloan School of Management, 6 weeks, 6–8 hours per week. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا، 6 أسابيع، 6–8 ساعات في الأسبوع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategy-survival-and-success-in-the-a', school: 's-mit-sloan-school-of-management', subject: 'digital', format: 'in-person',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.mit.edu/course/strategy--survival--and-success-in-the-age-of-industrial-ai/a056g00000URaZvAAL.html',
+      title: {
+        en: 'Strategy, Survival, and Success in the Age of Industrial AI',
+        ar: 'الاستراتيجية والبقاء والنجاح في عصر الذكاء الاصطناعي الصناعي'
+      },
+      summary: {
+        en: 'An on-campus program from MIT Sloan School of Management. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية سلون للإدارة بمعهد ماساتشوستس للتكنولوجيا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-creating-and-delivering-value-for-your', school: 's-michigan-ross-executive-education', subject: 'operations', format: 'online',
+      start: '2026-10-26', days: null, price: 2500, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/creating-and-delivering-value-your-organization', end: '2026-12-04',
+      title: { en: 'Creating and Delivering Value for Your Organization', ar: 'صناعة القيمة وتقديمها لمؤسستك' },
+      summary: {
+        en: 'An online program from Michigan Ross Executive Education, running 26 October 2026 to 4 December 2026.',
+        ar: 'برنامج عبر الإنترنت من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 26 أكتوبر 2026 إلى 4 ديسمبر 2026.'
       },
       highlights: {
         en: [],
@@ -2492,7 +5689,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-executive-presence-through-strategic-c', school: 's-michigan-ross-executive-education', subject: 'leadership', format: 'in-person',
-      start: '2026-10-27', days: 3, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/executive-presence-through-strategic-communication?event=13980',
+      start: '2026-10-27', days: 3, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/executive-presence-through-strategic-communication', end: '2026-10-29',
       title: { en: 'Executive Presence Through Strategic Communication', ar: 'الحضور التنفيذي عبر التواصل الاستراتيجي' },
       summary: {
         en: 'A 3-day on-campus program from Michigan Ross Executive Education, running 27 October 2026 to 29 October 2026.',
@@ -2505,12 +5702,161 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-ai-enabled-management-and-decision-mak', school: 's-michigan-ross-executive-education', subject: 'data', format: 'blended',
-      start: '2026-11-04', days: 10, price: 7000, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/ai-enabled-management-and-decision-making?event=13981',
+      id: 'c-ai-enabled-management-and-decision-mak', school: 's-michigan-ross-executive-education', subject: 'digital', format: 'blended',
+      start: '2026-11-04', days: 15, price: 7000, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/ai-enabled-management-and-decision-making', end: '2026-11-18', duration: { en: '19 hours over 2 weeks', ar: '19 ساعة على مدى أسبوعين' },
       title: { en: 'AI-Enabled Management and Decision-Making', ar: 'الإدارة واتخاذ القرار بدعم الذكاء الاصطناعي' },
       summary: {
-        en: 'A 10-day blended program from Michigan Ross Executive Education, running 4 November 2026 to 18 November 2026.',
-        ar: 'برنامج مدمج لمدة 10 أيام من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 4 نوفمبر 2026 إلى 18 نوفمبر 2026.'
+        en: 'A 15-day blended program from Michigan Ross Executive Education, running 4 November 2026 to 18 November 2026.',
+        ar: 'برنامج مدمج لمدة 15 يومًا من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 4 نوفمبر 2026 إلى 18 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-board-director-program', school: 's-michigan-ross-executive-education', subject: 'leadership', format: 'blended',
+      start: '2026-11-12', days: null, price: 15000, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/board-director-program', end: '2027-03-19', duration: { en: 'five-month program', ar: 'برنامج مدته 5 أشهر' },
+      title: { en: 'Board Director Program', ar: 'برنامج أعضاء مجالس الإدارة' },
+      summary: {
+        en: 'A blended program from Michigan Ross Executive Education, five-month program, running 12 November 2026 to 19 March 2027.',
+        ar: 'برنامج مدمج من التعليم التنفيذي في كلية روس بجامعة ميشيغان، برنامج مدته 5 أشهر، من 12 نوفمبر 2026 إلى 19 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-chief-data-and-ai-officer-program', school: 's-michigan-ross-executive-education', subject: 'data', format: 'blended',
+      start: '2026-11-17', days: null, price: 16000, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/chief-data-and-ai-officer-program', end: '2027-03-12', duration: { en: 'five-month program', ar: 'برنامج مدته 5 أشهر' },
+      title: { en: 'Chief Data and AI Officer Program', ar: 'برنامج الرئيس التنفيذي للبيانات والذكاء الاصطناعي' },
+      summary: {
+        en: 'A blended program from Michigan Ross Executive Education, five-month program, running 17 November 2026 to 12 March 2027.',
+        ar: 'برنامج مدمج من التعليم التنفيذي في كلية روس بجامعة ميشيغان، برنامج مدته 5 أشهر، من 17 نوفمبر 2026 إلى 12 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategy-and-competitive-advantage', school: 's-michigan-ross-executive-education', subject: 'strategy', format: 'online',
+      start: '2026-11-30', days: null, price: 2500, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/strategy-and-competitive-advantage', end: '2027-01-15',
+      title: { en: 'Strategy and Competitive Advantage', ar: 'الاستراتيجية والميزة التنافسية' },
+      summary: {
+        en: 'An online program from Michigan Ross Executive Education, running 30 November 2026 to 15 January 2027.',
+        ar: 'برنامج عبر الإنترنت من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 30 نوفمبر 2026 إلى 15 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cxo-leadership-program', school: 's-michigan-ross-executive-education', subject: 'leadership', format: 'blended',
+      start: '2026-12-12', days: null, price: 6400, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/cxo-leadership-program', end: '2027-05-29', duration: { en: '48+ hours over 6 months', ar: 'أكثر من 48 ساعة على مدى 6 أشهر' },
+      title: { en: 'CXO Leadership Program', ar: 'برنامج قيادات الإدارة التنفيذية العليا (CXO)' },
+      summary: {
+        en: 'A blended program from Michigan Ross Executive Education, 48+ hours over 6 months, running 12 December 2026 to 29 May 2027.',
+        ar: 'برنامج مدمج من التعليم التنفيذي في كلية روس بجامعة ميشيغان، أكثر من 48 ساعة على مدى 6 أشهر، من 12 ديسمبر 2026 إلى 29 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-with-impact-culture-teams-and', school: 's-michigan-ross-executive-education', subject: 'leadership', format: 'online',
+      start: '2027-01-25', days: null, price: 2500, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/leading-impact-culture-teams-and-organizational-performance', end: '2027-02-28',
+      title: {
+        en: 'Leading with Impact: Culture, Teams, and Organizational Performance',
+        ar: 'القيادة المؤثرة: الثقافة والفرق والأداء المؤسسي'
+      },
+      summary: {
+        en: 'An online program from Michigan Ross Executive Education, running 25 January 2027 to 28 February 2027.',
+        ar: 'برنامج عبر الإنترنت من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 25 يناير 2027 إلى 28 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-digital-transformation-and-innovation', school: 's-michigan-ross-executive-education', subject: 'digital', format: 'online',
+      start: '2027-03-01', days: null, price: 2500, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/digital-transformation-and-innovation', end: '2027-04-03',
+      title: { en: 'Digital Transformation and Innovation', ar: 'التحول الرقمي والابتكار' },
+      summary: {
+        en: 'An online program from Michigan Ross Executive Education, running 1 March 2027 to 3 April 2027.',
+        ar: 'برنامج عبر الإنترنت من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 1 مارس 2027 إلى 3 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-the-power-of-persuasion-strategies-for', school: 's-michigan-ross-executive-education', subject: 'negotiation', format: 'online',
+      start: '2027-03-01', days: null, price: 2000, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/power-persuasion-strategies-professional-impact', end: '2027-03-29',
+      title: {
+        en: 'The Power of Persuasion: Strategies for Professional Impact',
+        ar: 'قوة الإقناع: استراتيجيات للتأثير المهني'
+      },
+      summary: {
+        en: 'An online program from Michigan Ross Executive Education, running 1 March 2027 to 29 March 2027.',
+        ar: 'برنامج عبر الإنترنت من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 1 مارس 2027 إلى 29 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-accounting-and-financial-decision-maki', school: 's-michigan-ross-executive-education', subject: 'finance', format: 'online',
+      start: '2027-03-15', days: null, price: 2500, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/accounting-and-financial-decision-making', end: '2027-04-09',
+      title: { en: 'Accounting and Financial Decision-Making', ar: 'المحاسبة واتخاذ القرارات المالية' },
+      summary: {
+        en: 'An online program from Michigan Ross Executive Education, running 15 March 2027 to 9 April 2027.',
+        ar: 'برنامج عبر الإنترنت من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 15 مارس 2027 إلى 9 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-high-performing-teams', school: 's-michigan-ross-executive-education', subject: 'leadership', format: 'in-person',
+      start: '2027-03-22', days: 4, price: 8900, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/leading-high-performing-teams-0', end: '2027-03-25',
+      title: { en: 'Leading High-Performing Teams', ar: 'قيادة الفرق عالية الأداء' },
+      summary: {
+        en: 'A 4-day on-campus program from Michigan Ross Executive Education, running 22 March 2027 to 25 March 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 22 مارس 2027 إلى 25 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-advanced-human-resource-executive-prog', school: 's-michigan-ross-executive-education', subject: 'people', format: 'blended',
+      start: '2027-04-05', days: 12, price: 25800, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/advanced-human-resource-executive-program-blended', end: '2027-04-16', duration: { en: '70+ hours over 6 weeks', ar: 'أكثر من 70 ساعة على مدى 6 أسابيع' },
+      title: {
+        en: 'Advanced Human Resource Executive Program (Blended)',
+        ar: 'البرنامج التنفيذي المتقدم للموارد البشرية (مدمج)'
+      },
+      summary: {
+        en: 'A 12-day blended program from Michigan Ross Executive Education, running 5 April 2027 to 16 April 2027.',
+        ar: 'برنامج مدمج لمدة 12 يومًا من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 5 أبريل 2027 إلى 16 أبريل 2027.'
       },
       highlights: {
         en: [],
@@ -2520,7 +5866,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-emerging-leaders-program-becoming-a-tr', school: 's-michigan-ross-executive-education', subject: 'leadership', format: 'in-person',
-      start: '2027-04-26', days: 5, price: 10700, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/emerging-leaders-program-becoming-transformational-leader?event=14173',
+      start: '2027-04-26', days: 5, price: 10700, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/emerging-leaders-program-becoming-transformational-leader', end: '2027-04-30',
       title: {
         en: 'Emerging Leaders Program: Becoming a Transformational Leader',
         ar: 'برنامج القادة الصاعدين: نحو قيادة تحويلية'
@@ -2537,7 +5883,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-strategic-leaders-program-vision-strat', school: 's-michigan-ross-executive-education', subject: 'leadership', format: 'in-person',
-      start: '2027-05-24', days: 5, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/strategic-leaders-program-vision-strategy-and-managing-organization?event=14167',
+      start: '2027-05-24', days: 5, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/strategic-leaders-program-vision-strategy-and-managing-organization', end: '2027-05-28',
       title: {
         en: 'Strategic Leaders Program: Vision, Strategy, and Managing the Organization to Drive Results',
         ar: 'برنامج القادة الاستراتيجيين: الرؤية والاستراتيجية وإدارة المؤسسة لتحقيق النتائج'
@@ -2554,11 +5900,11 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-advanced-human-resource-executive--2', school: 's-michigan-ross-executive-education', subject: 'people', format: 'in-person',
-      start: '2027-07-12', days: 10, price: 25800, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/advanced-human-resource-executive-program?event=14354',
+      start: '2027-07-12', days: 12, price: 25800, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/advanced-human-resource-executive-program', end: '2027-07-23',
       title: { en: 'Advanced Human Resource Executive Program', ar: 'البرنامج التنفيذي المتقدم للموارد البشرية' },
       summary: {
-        en: 'A 10-day on-campus program from Michigan Ross Executive Education, running 12 July 2027 to 23 July 2027.',
-        ar: 'برنامج حضوري لمدة 10 أيام من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 12 يوليو 2027 إلى 23 يوليو 2027.'
+        en: 'A 12-day on-campus program from Michigan Ross Executive Education, running 12 July 2027 to 23 July 2027.',
+        ar: 'برنامج حضوري لمدة 12 يومًا من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 12 يوليو 2027 إلى 23 يوليو 2027.'
       },
       highlights: {
         en: [],
@@ -2567,12 +5913,15 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leadership-development-programme', school: 's-nus-business-school', subject: 'leadership', format: 'in-person',
-      start: '2026-09-21', days: 5, price: 8990, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/leadership-development-programme/',
-      title: { en: 'Leadership Development Programme', ar: 'برنامج تطوير القيادات' },
+      id: 'c-accelerated-management-development-cer', school: 's-michigan-ross-executive-education', subject: 'leadership', format: 'online',
+      start: '2027-09-13', days: null, price: 10500, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/accelerated-management-development-certificate-program-16', end: '2028-04-01',
+      title: {
+        en: 'Accelerated Management Development Certificate Program',
+        ar: 'برنامج الشهادة المسرّع في التطوير الإداري'
+      },
       summary: {
-        en: 'A 5-day on-campus program from NUS Business School, running 21 September 2026 to 25 September 2026.',
-        ar: 'برنامج حضوري لمدة 5 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 21 سبتمبر 2026 إلى 25 سبتمبر 2026.'
+        en: 'An online program from Michigan Ross Executive Education, running 13 September 2027 to 1 April 2028.',
+        ar: 'برنامج عبر الإنترنت من التعليم التنفيذي في كلية روس بجامعة ميشيغان، من 13 سبتمبر 2027 إلى 1 أبريل 2028.'
       },
       highlights: {
         en: [],
@@ -2581,12 +5930,15 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-general-management-programme', school: 's-nus-business-school', subject: 'leadership', format: 'in-person',
-      start: '2026-09-22', days: 8, price: 13290, currency: 'SGD', langs: ['en'], featured: true, popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/general-management-programme/',
-      title: { en: 'General Management Programme', ar: 'برنامج الإدارة العامة' },
+      id: 'c-leadership-accelerator-building-high-i', school: 's-michigan-ross-executive-education', subject: 'leadership', format: 'online',
+      start: null, days: null, price: 750, langs: ['en'], popularity: 50, sourceUrl: 'https://michiganross.umich.edu/programs/executive-education/leadership-accelerator-building-high-impact-practices', duration: { en: '100-day online learning journey', ar: 'رحلة تعلّم عبر الإنترنت لمدة 100 يوم' },
+      title: {
+        en: 'Leadership Accelerator: Building High-Impact Practices',
+        ar: 'مسرّع القيادة: بناء ممارسات عالية التأثير'
+      },
       summary: {
-        en: 'A 8-day on-campus program from NUS Business School, running 22 September 2026 to 1 October 2026.',
-        ar: 'برنامج حضوري لمدة 8 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 22 سبتمبر 2026 إلى 1 أكتوبر 2026.'
+        en: 'An online program from Michigan Ross Executive Education, 100-day online learning journey. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من التعليم التنفيذي في كلية روس بجامعة ميشيغان، رحلة تعلّم عبر الإنترنت لمدة 100 يوم. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -2595,54 +5947,15 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-marketing-strategy-in-a-digital-world', school: 's-nus-business-school', subject: 'marketing', format: 'in-person',
-      start: '2026-09-28', days: 5, price: 5722, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/marketing-strategy-in-a-digital-world/',
-      title: { en: 'Marketing Strategy in a Digital World', ar: 'الاستراتيجية التسويقية في عالم رقمي' },
+      id: 'c-digital-business-transformation-classr', school: 's-nus-business-school', subject: 'digital', format: 'blended',
+      start: '2026-10-05', days: 11, price: 5886, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/digital-business-transformation/', end: '2026-10-15',
+      title: {
+        en: 'Digital Business Transformation (classroom & Synchronous E-Learning)',
+        ar: 'التحول الرقمي للأعمال (حضوري وتعلّم إلكتروني متزامن)'
+      },
       summary: {
-        en: 'A 5-day on-campus program from NUS Business School, running 28 September 2026 to 2 October 2026.',
-        ar: 'برنامج حضوري لمدة 5 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 28 سبتمبر 2026 إلى 2 أكتوبر 2026.'
-      },
-      highlights: {
-        en: [],
-        ar: []
-      },
-      audience: { en: '', ar: '' }
-    },
-    {
-      id: 'c-singapore-corporate-income-tax', school: 's-nus-business-school', subject: 'finance', format: 'blended',
-      start: '2026-09-28', days: 12, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/singapore-corporate-income-tax-frc/',
-      title: { en: 'Singapore Corporate Income Tax', ar: 'ضريبة الدخل على الشركات في سنغافورة' },
-      summary: {
-        en: 'A 12-day blended program from NUS Business School, running 28 September 2026 to 9 October 2026.',
-        ar: 'برنامج مدمج لمدة 12 يومًا من كلية الأعمال بجامعة سنغافورة الوطنية، من 28 سبتمبر 2026 إلى 9 أكتوبر 2026.'
-      },
-      highlights: {
-        en: [],
-        ar: []
-      },
-      audience: { en: '', ar: '' }
-    },
-    {
-      id: 'c-digital-business-transformation', school: 's-nus-business-school', subject: 'digital', format: 'blended',
-      start: '2026-10-05', days: 10, price: 5886, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/digital-business-transformation/',
-      title: { en: 'Digital Business Transformation', ar: 'التحول الرقمي للأعمال' },
-      summary: {
-        en: 'A 10-day blended program from NUS Business School, running 5 October 2026 to 15 October 2026.',
-        ar: 'برنامج مدمج لمدة 10 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 5 أكتوبر 2026 إلى 15 أكتوبر 2026.'
-      },
-      highlights: {
-        en: [],
-        ar: []
-      },
-      audience: { en: '', ar: '' }
-    },
-    {
-      id: 'c-labour-and-employment-law', school: 's-nus-business-school', subject: 'people', format: 'blended',
-      start: '2026-10-05', days: 10, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/labour-and-employment-law/',
-      title: { en: 'Labour and Employment Law', ar: 'قانون العمل والتوظيف' },
-      summary: {
-        en: 'A 10-day blended program from NUS Business School, running 5 October 2026 to 12 October 2026.',
-        ar: 'برنامج مدمج لمدة 10 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 5 أكتوبر 2026 إلى 12 أكتوبر 2026.'
+        en: 'A 11-day blended program from NUS Business School, running 5 October 2026 to 15 October 2026.',
+        ar: 'برنامج مدمج لمدة 11 يومًا من كلية الأعمال بجامعة سنغافورة الوطنية، من 5 أكتوبر 2026 إلى 15 أكتوبر 2026.'
       },
       highlights: {
         en: [],
@@ -2652,8 +5965,11 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-leading-and-motivating-difficult-emplo', school: 's-nus-business-school', subject: 'people', format: 'blended',
-      start: '2026-10-12', days: 5, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/leading-and-motivating-difficult-employees-frc/',
-      title: { en: 'Leading and Motivating Difficult Employees', ar: 'قيادة الموظفين صعبي التعامل وتحفيزهم' },
+      start: '2026-10-12', days: 5, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/leading-and-motivating-difficult-employees-frc/', end: '2026-10-16',
+      title: {
+        en: 'Leading and Motivating Difficult Employees (classroom & Synchronous E-Learning)',
+        ar: 'قيادة الموظفين الصعبين وتحفيزهم (حضوري وتعلّم إلكتروني متزامن)'
+      },
       summary: {
         en: 'A 5-day blended program from NUS Business School, running 12 October 2026 to 16 October 2026.',
         ar: 'برنامج مدمج لمدة 5 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 12 أكتوبر 2026 إلى 16 أكتوبر 2026.'
@@ -2665,8 +5981,42 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-sctp-nus-bionic-digital-marketer-enhan', school: 's-nus-business-school', subject: 'marketing', format: 'in-person',
+      start: '2026-10-13', days: null, price: 13080, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/sctp-nus-bionic-digital-marketer-enhanced-with-ai/', end: '2026-11-30', duration: { en: '88.5 hours (over 9 modules)', ar: '88.5 ساعة (على مدى 9 وحدات)' },
+      title: {
+        en: '(SCTP) NUS Bionic Digital Marketer: Enhanced with AI',
+        ar: '(SCTP) NUS المسوّق الرقمي المعزَّز بالذكاء الاصطناعي'
+      },
+      summary: {
+        en: 'An on-campus program from NUS Business School, 88.5 hours (over 9 modules), running 13 October 2026 to 30 November 2026.',
+        ar: 'برنامج حضوري من كلية الأعمال بجامعة سنغافورة الوطنية، 88.5 ساعة (على مدى 9 وحدات)، من 13 أكتوبر 2026 إلى 30 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-financial-analysis-and-business-decisi', school: 's-nus-business-school', subject: 'finance', format: 'online',
+      start: '2026-10-19', days: null, price: 2316, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/financial-analysis-and-business-decisions-for-non-finance-managers-2/', end: '2026-11-11', duration: { en: '3.5 weeks', ar: '3.5 أسابيع' },
+      title: {
+        en: 'Financial Analysis and Business Decisions for Non-Finance Managers',
+        ar: 'التحليل المالي وقرارات الأعمال للمديرين من غير المختصين بالمالية'
+      },
+      summary: {
+        en: 'An online program from NUS Business School, 3.5 weeks, running 19 October 2026 to 11 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية الأعمال بجامعة سنغافورة الوطنية، 3.5 أسابيع، من 19 أكتوبر 2026 إلى 11 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-leading-transformational-change-for-ag', school: 's-nus-business-school', subject: 'leadership', format: 'in-person',
-      start: '2026-10-19', days: 5, price: 5722, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/leading-transformational-change-for-agility-and-sustainability/',
+      start: '2026-10-19', days: 5, price: 5722, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/leading-transformational-change-for-agility-and-sustainability/', end: '2026-10-23',
       title: {
         en: 'Leading Transformational Change for Agility and Sustainability',
         ar: 'قيادة التغيير التحويلي لتحقيق المرونة والاستدامة'
@@ -2682,22 +6032,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-marketing-in-the-digital-age', school: 's-nus-business-school', subject: 'marketing', format: 'blended',
-      start: '2026-10-19', days: 10, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/marketing-in-the-digital-age/',
-      title: { en: 'Marketing in the Digital AGE', ar: 'التسويق في العصر الرقمي' },
-      summary: {
-        en: 'A 10-day blended program from NUS Business School, running 19 October 2026 to 30 October 2026.',
-        ar: 'برنامج مدمج لمدة 10 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 19 أكتوبر 2026 إلى 30 أكتوبر 2026.'
-      },
-      highlights: {
-        en: [],
-        ar: []
-      },
-      audience: { en: '', ar: '' }
-    },
-    {
       id: 'c-carbon-management-for-corporate-sustai', school: 's-nus-business-school', subject: 'sustainability', format: 'in-person',
-      start: '2026-10-28', days: 3, price: 3434, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/carbon-management-for-corporate-sustainability-key-skill-for-leaders/',
+      start: '2026-10-28', days: 3, price: 3434, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/carbon-management-for-corporate-sustainability-key-skill-for-leaders/', end: '2026-10-30',
       title: {
         en: 'Carbon Management for Corporate Sustainability : the Key Skill for Leaders',
         ar: 'إدارة الكربون من أجل الاستدامة المؤسسية: المهارة الأساسية للقادة'
@@ -2714,7 +6050,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-emerging-leaders-programme', school: 's-nus-business-school', subject: 'leadership', format: 'in-person',
-      start: '2026-11-11', days: 5, price: 5722, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/emerging-leaders-programme/',
+      start: '2026-11-11', days: 5, price: 5722, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/emerging-leaders-programme/', end: '2026-11-17',
       title: { en: 'Emerging Leaders Programme', ar: 'برنامج القادة الصاعدين' },
       summary: {
         en: 'A 5-day on-campus program from NUS Business School, running 11 November 2026 to 17 November 2026.',
@@ -2727,9 +6063,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-negotiations-and-conflict-management', school: 's-nus-business-school', subject: 'negotiation', format: 'blended',
-      start: '2026-11-12', days: 8, price: 5886, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/negotiations-and-conflict-management/',
-      title: { en: 'Negotiations and Conflict Management', ar: 'التفاوض وإدارة النزاعات' },
+      id: 'c-negotiations-and-conflict-management-c', school: 's-nus-business-school', subject: 'negotiation', format: 'blended',
+      start: '2026-11-12', days: 8, price: 5886, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/negotiations-and-conflict-management/', end: '2026-11-19',
+      title: {
+        en: 'Negotiations and Conflict Management (classroom & Synchronous E-Learning)',
+        ar: 'التفاوض وإدارة النزاعات (حضوري وتعلّم إلكتروني متزامن)'
+      },
       summary: {
         en: 'A 8-day blended program from NUS Business School, running 12 November 2026 to 19 November 2026.',
         ar: 'برنامج مدمج لمدة 8 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 12 نوفمبر 2026 إلى 19 نوفمبر 2026.'
@@ -2742,7 +6081,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-accounting-finance-for-non-financial-m', school: 's-nus-business-school', subject: 'finance', format: 'in-person',
-      start: '2026-11-16', days: 5, price: 5722, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/accounting-finance-for-non-financial-managers/',
+      start: '2026-11-16', days: 5, price: 5722, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/accounting-finance-for-non-financial-managers/', end: '2026-11-20',
       title: { en: 'Accounting & Finance for Non-Financial Managers', ar: 'المحاسبة والتمويل للمديرين غير الماليين' },
       summary: {
         en: 'A 5-day on-campus program from NUS Business School, running 16 November 2026 to 20 November 2026.',
@@ -2756,7 +6095,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-driving-strategic-innovation-2', school: 's-nus-business-school', subject: 'strategy', format: 'in-person',
-      start: '2026-11-16', days: 5, price: 7074, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/driving-strategic-innovation/',
+      start: '2026-11-16', days: 5, price: 6490, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/driving-strategic-innovation/', end: '2026-11-20',
       title: { en: 'Driving Strategic Innovation', ar: 'قيادة الابتكار الاستراتيجي' },
       summary: {
         en: 'A 5-day on-campus program from NUS Business School, running 16 November 2026 to 20 November 2026.',
@@ -2770,7 +6109,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-python-for-business-analytics', school: 's-nus-business-school', subject: 'data', format: 'in-person',
-      start: '2026-11-16', days: 3, price: 3270, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/python-for-business-analytics/',
+      start: '2026-11-16', days: 3, price: 3270, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/python-for-business-analytics/', end: '2026-11-18',
       title: { en: 'Python for Business Analytics', ar: 'بايثون لتحليلات الأعمال' },
       summary: {
         en: 'A 3-day on-campus program from NUS Business School, running 16 November 2026 to 18 November 2026.',
@@ -2783,8 +6122,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-ai-for-leaders-leveraging-data-analyti', school: 's-nus-business-school', subject: 'data', format: 'in-person',
-      start: '2026-11-23', days: 5, price: 6529, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/ai-for-leaders-leveraging-data-analytics-for-business/',
+      id: 'c-ai-for-leaders-leveraging-data-analyti', school: 's-nus-business-school', subject: 'digital', format: 'in-person',
+      start: '2026-11-23', days: 5, price: 6529, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/ai-for-leaders-leveraging-data-analytics-for-business/', end: '2026-11-27',
       title: {
         en: 'AI for Leaders: Leveraging Data Analytics for Business',
         ar: 'الذكاء الاصطناعي للقادة: توظيف تحليلات البيانات في الأعمال'
@@ -2801,7 +6140,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-strategic-management-in-disruptive-tim', school: 's-nus-business-school', subject: 'strategy', format: 'in-person',
-      start: '2026-11-23', days: 5, price: 7590, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/strategic-management-in-disruptive-times/',
+      start: '2026-11-23', days: 5, price: 7590, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/strategic-management-in-disruptive-times/', end: '2026-11-27',
       title: { en: 'Strategic Management in Disruptive Times', ar: 'الإدارة الاستراتيجية في أوقات التحوّلات الجذرية' },
       summary: {
         en: 'A 5-day on-campus program from NUS Business School, running 23 November 2026 to 27 November 2026.',
@@ -2814,8 +6153,36 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-enterprise-leadership-for-transformati', school: 's-nus-business-school', subject: 'leadership', format: 'in-person',
+      start: '2026-11-28', days: null, price: 21789, currency: 'SGD', langs: ['en'], featured: true, popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/enterprise-leadership-for-transformation/', end: '2027-06-27', duration: { en: '7 months', ar: '7 أشهر' },
+      title: { en: 'Enterprise Leadership for Transformation', ar: 'القيادة المؤسسية للتحول' },
+      summary: {
+        en: 'An on-campus program from NUS Business School, 7 months, running 28 November 2026 to 27 June 2027.',
+        ar: 'برنامج حضوري من كلية الأعمال بجامعة سنغافورة الوطنية، 7 أشهر، من 28 نوفمبر 2026 إلى 27 يونيو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-marketing-strategy-in-a-digital-world', school: 's-nus-business-school', subject: 'marketing', format: 'in-person',
+      start: '2026-11-30', days: 4, price: 5722, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/marketing-strategy-in-a-digital-world/', end: '2026-12-04',
+      title: { en: 'Marketing Strategy in a Digital World', ar: 'الاستراتيجية التسويقية في عالم رقمي' },
+      summary: {
+        en: 'A 4-day on-campus program from NUS Business School, running 30 November 2026 to 4 December 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 30 نوفمبر 2026 إلى 4 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-ai-for-finance-leaders-strategy-perfor', school: 's-nus-business-school', subject: 'finance', format: 'in-person',
-      start: '2026-12-01', days: 4, price: 4578, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/ai-agent-for-finance/',
+      start: '2026-12-01', days: 4, price: 4578, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/ai-agent-for-finance/', end: '2026-12-04',
       title: {
         en: 'AI for Finance Leaders – Strategy, Performance, and Control',
         ar: 'الذكاء الاصطناعي لقادة التمويل: الاستراتيجية والأداء والرقابة'
@@ -2831,8 +6198,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-social-and-sustainable-investing', school: 's-nus-business-school', subject: 'sustainability', format: 'in-person',
-      start: '2026-12-02', days: 2, price: 2180, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/social-and-sustainable-investing/',
+      id: 'c-social-and-sustainable-investing', school: 's-nus-business-school', subject: 'finance', format: 'in-person',
+      start: '2026-12-02', days: 2, price: 2180, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/social-and-sustainable-investing/', end: '2026-12-03',
       title: { en: 'Social and Sustainable Investing', ar: 'الاستثمار الاجتماعي والمستدام' },
       summary: {
         en: 'A 2-day on-campus program from NUS Business School, running 2 December 2026 to 3 December 2026.',
@@ -2846,7 +6213,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-agentic-enterprises-leveraging-ai-agen', school: 's-nus-business-school', subject: 'digital', format: 'in-person',
-      start: '2026-12-07', days: 5, price: 5722, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/agentic-enterprises-leveraging-ai-agents-for-business/',
+      start: '2026-12-07', days: 5, price: 5722, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/agentic-enterprises-leveraging-ai-agents-for-business/', end: '2026-12-11',
       title: {
         en: 'Agentic Enterprises – Leveraging AI Agents for Business',
         ar: 'المؤسسات المعتمدة على الوكلاء الاصطناعيين: توظيف وكلاء الذكاء الاصطناعي في الأعمال'
@@ -2862,8 +6229,22 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-leadership-development-programme', school: 's-nus-business-school', subject: 'leadership', format: 'in-person',
+      start: '2026-12-07', days: 4, price: 8990, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/leadership-development-programme/', end: '2026-12-11',
+      title: { en: 'Leadership Development Programme', ar: 'برنامج تطوير القيادات' },
+      summary: {
+        en: 'A 4-day on-campus program from NUS Business School, running 7 December 2026 to 11 December 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 7 ديسمبر 2026 إلى 11 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-strategic-human-resource-management', school: 's-nus-business-school', subject: 'people', format: 'in-person',
-      start: '2026-12-07', days: 5, price: 5722, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/strategic-human-resource-management/',
+      start: '2026-12-07', days: 5, price: 5722, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/strategic-human-resource-management/', end: '2026-12-11',
       title: { en: 'Strategic Human Resource Management', ar: 'الإدارة الاستراتيجية للموارد البشرية' },
       summary: {
         en: 'A 5-day on-campus program from NUS Business School, running 7 December 2026 to 11 December 2026.',
@@ -2877,7 +6258,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-enhancing-banking-finance-with-ai-tool', school: 's-nus-business-school', subject: 'finance', format: 'in-person',
-      start: '2026-12-14', days: 3, price: 3106, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/enhancing-banking-finance-with-ai-tools-risk-management-for-executives/',
+      start: '2026-12-14', days: 3, price: 3106, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/enhancing-banking-finance-with-ai-tools-risk-management-for-executives/', end: '2026-12-16',
       title: {
         en: 'Enhancing Banking & Finance with AI : Tools & Risk Management for Executives',
         ar: 'تعزيز الخدمات المصرفية والمالية بالذكاء الاصطناعي: الأدوات وإدارة المخاطر للتنفيذيين'
@@ -2894,7 +6275,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-human-resource-law', school: 's-nus-business-school', subject: 'people', format: 'in-person',
-      start: '2027-01-07', days: 2, price: 2180, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/human-resource-law/',
+      start: '2027-01-07', days: 2, price: 2180, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/human-resource-law/', end: '2027-01-08',
       title: { en: 'Human Resource Law', ar: 'قانون الموارد البشرية' },
       summary: {
         en: 'A 2-day on-campus program from NUS Business School, running 7 January 2027 to 8 January 2027.',
@@ -2908,8 +6289,11 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-sustainability-reporting-and-analysis', school: 's-nus-business-school', subject: 'sustainability', format: 'blended',
-      start: '2027-01-07', days: 10, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/sustainability-reporting-and-analysis/',
-      title: { en: 'Sustainability Reporting and Analysis', ar: 'إعداد تقارير الاستدامة وتحليلها' },
+      start: '2027-01-07', days: 10, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/sustainability-reporting-and-analysis/', end: '2027-01-16',
+      title: {
+        en: 'Sustainability Reporting and Analysis (classroom & Synchronous E-Learning)',
+        ar: 'تقارير الاستدامة وتحليلها (حضوري وتعلّم إلكتروني متزامن)'
+      },
       summary: {
         en: 'A 10-day blended program from NUS Business School, running 7 January 2027 to 16 January 2027.',
         ar: 'برنامج مدمج لمدة 10 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 7 يناير 2027 إلى 16 يناير 2027.'
@@ -2921,12 +6305,15 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-analytics-for-leaders', school: 's-nus-business-school', subject: 'data', format: 'blended',
-      start: '2027-01-08', days: 10, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/analytics-for-leaders-classroom-synchronous-e-learning/',
-      title: { en: 'Analytics for Leaders', ar: 'تحليل البيانات للقادة' },
+      id: 'c-analytics-for-leaders-classroom-synchr', school: 's-nus-business-school', subject: 'data', format: 'blended',
+      start: '2027-01-08', days: 15, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/analytics-for-leaders-classroom-synchronous-e-learning/', end: '2027-01-22',
+      title: {
+        en: 'Analytics for Leaders (classroom & Synchronous E-Learning)',
+        ar: 'التحليلات للقادة (حضوري وتعلّم إلكتروني متزامن)'
+      },
       summary: {
-        en: 'A 10-day blended program from NUS Business School, running 8 January 2027 to 22 January 2027.',
-        ar: 'برنامج مدمج لمدة 10 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 8 يناير 2027 إلى 22 يناير 2027.'
+        en: 'A 15-day blended program from NUS Business School, running 8 January 2027 to 22 January 2027.',
+        ar: 'برنامج مدمج لمدة 15 يومًا من كلية الأعمال بجامعة سنغافورة الوطنية، من 8 يناير 2027 إلى 22 يناير 2027.'
       },
       highlights: {
         en: [],
@@ -2936,14 +6323,14 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-leadership-in-supply-chain-operations', school: 's-nus-business-school', subject: 'operations', format: 'blended',
-      start: '2027-01-11', days: 15, price: 5886, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/leadership-in-supply-chain-operations-sustainability/',
+      start: '2027-01-11', days: null, price: 5886, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/leadership-in-supply-chain-operations-sustainability/', end: '2027-02-02', duration: { en: '7 sessions (over 3 weeks)', ar: '7 جلسات (على مدى 3 أسابيع)' },
       title: {
-        en: 'Leadership in Supply Chain , Operations & Sustainability',
-        ar: 'القيادة في سلسلة الإمداد والعمليات والاستدامة'
+        en: 'Leadership in Supply Chain , Operations & Sustainability (classroom & Synchronous E-Learning)',
+        ar: 'القيادة في سلاسل الإمداد والعمليات والاستدامة (حضوري وتعلّم إلكتروني متزامن)'
       },
       summary: {
-        en: 'A 15-day blended program from NUS Business School, running 11 January 2027 to 2 February 2027.',
-        ar: 'برنامج مدمج لمدة 15 يومًا من كلية الأعمال بجامعة سنغافورة الوطنية، من 11 يناير 2027 إلى 2 فبراير 2027.'
+        en: 'A blended program from NUS Business School, 7 sessions (over 3 weeks), running 11 January 2027 to 2 February 2027.',
+        ar: 'برنامج مدمج من كلية الأعمال بجامعة سنغافورة الوطنية، 7 جلسات (على مدى 3 أسابيع)، من 11 يناير 2027 إلى 2 فبراير 2027.'
       },
       highlights: {
         en: [],
@@ -2953,7 +6340,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-artificial-intelligence-for-leaders-hr', school: 's-nus-business-school', subject: 'people', format: 'in-person',
-      start: '2027-01-13', days: 3, price: 3434, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/ailhr/',
+      start: '2027-01-13', days: 3, price: 3434, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/ailhr/', end: '2027-01-15',
       title: {
         en: 'Artificial Intelligence for Leaders: HR Transformation with Generative AI',
         ar: 'الذكاء الاصطناعي للقادة: تحويل الموارد البشرية بالذكاء الاصطناعي التوليدي'
@@ -2969,12 +6356,15 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-managing-change', school: 's-nus-business-school', subject: 'leadership', format: 'blended',
-      start: '2027-01-19', days: 10, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/managing-change-synchronous-e-learning/',
-      title: { en: 'Managing Change', ar: 'إدارة التغيير' },
+      id: 'c-singapore-corporate-income-tax-classro', school: 's-nus-business-school', subject: 'finance', format: 'blended',
+      start: '2027-01-15', days: 14, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/singapore-corporate-income-tax-frc/', end: '2027-01-29',
+      title: {
+        en: 'Singapore Corporate Income Tax (classroom & Synchronous E-Learning)',
+        ar: 'ضريبة دخل الشركات في سنغافورة (حضوري وتعلّم إلكتروني متزامن)'
+      },
       summary: {
-        en: 'A 10-day blended program from NUS Business School, running 19 January 2027 to 27 January 2027.',
-        ar: 'برنامج مدمج لمدة 10 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 19 يناير 2027 إلى 27 يناير 2027.'
+        en: 'A 14-day blended program from NUS Business School, running 15 January 2027 to 29 January 2027.',
+        ar: 'برنامج مدمج لمدة 14 يومًا من كلية الأعمال بجامعة سنغافورة الوطنية، من 15 يناير 2027 إلى 29 يناير 2027.'
       },
       highlights: {
         en: [],
@@ -2983,12 +6373,15 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-business-contracts', school: 's-nus-business-school', subject: 'negotiation', format: 'blended',
-      start: '2027-03-01', days: 10, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/business-contracts-classroom/',
-      title: { en: 'Business Contracts', ar: 'العقود التجارية' },
+      id: 'c-managing-change-classroom-synchronous', school: 's-nus-business-school', subject: 'leadership', format: 'blended',
+      start: '2027-01-19', days: 9, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/managing-change-synchronous-e-learning/', end: '2027-01-27',
+      title: {
+        en: 'Managing Change (classroom & Synchronous E-Learning)',
+        ar: 'إدارة التغيير (حضوري وتعلّم إلكتروني متزامن)'
+      },
       summary: {
-        en: 'A 10-day blended program from NUS Business School, running 1 March 2027 to 8 March 2027.',
-        ar: 'برنامج مدمج لمدة 10 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 1 مارس 2027 إلى 8 مارس 2027.'
+        en: 'A 9-day blended program from NUS Business School, running 19 January 2027 to 27 January 2027.',
+        ar: 'برنامج مدمج لمدة 9 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 19 يناير 2027 إلى 27 يناير 2027.'
       },
       highlights: {
         en: [],
@@ -2997,12 +6390,503 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-managing-people-with-data', school: 's-nus-business-school', subject: 'data', format: 'blended',
-      start: '2027-05-05', days: 10, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/managing-people-with-data/',
-      title: { en: 'Managing People with Data', ar: 'إدارة الأفراد بالاستناد إلى البيانات' },
+      id: 'c-accelerated-management-program-amp', school: 's-nus-business-school', subject: 'leadership', format: 'online',
+      start: '2027-01-21', days: null, price: 6000, langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/accelerated-management-program-amp/', end: '2027-09-25', duration: { en: '9 months', ar: '9 أشهر' },
+      title: { en: 'Accelerated Management Program (AMP)', ar: 'برنامج الإدارة المعجَّل (AMP)' },
       summary: {
-        en: 'A 10-day blended program from NUS Business School, running 5 May 2027 to 12 May 2027.',
-        ar: 'برنامج مدمج لمدة 10 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 5 مايو 2027 إلى 12 مايو 2027.'
+        en: 'An online program from NUS Business School, 9 months, running 21 January 2027 to 25 September 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية الأعمال بجامعة سنغافورة الوطنية، 9 أشهر، من 21 يناير 2027 إلى 25 سبتمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-contracts-classroom-synchrono', school: 's-nus-business-school', subject: 'negotiation', format: 'blended',
+      start: '2027-03-01', days: 8, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/business-contracts-classroom/', end: '2027-03-08',
+      title: {
+        en: 'Business Contracts (classroom & Synchronous E-Learning)',
+        ar: 'عقود الأعمال (حضوري وتعلّم إلكتروني متزامن)'
+      },
+      summary: {
+        en: 'A 8-day blended program from NUS Business School, running 1 March 2027 to 8 March 2027.',
+        ar: 'برنامج مدمج لمدة 8 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 1 مارس 2027 إلى 8 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-marketing-in-the-digital-age-classroom', school: 's-nus-business-school', subject: 'marketing', format: 'blended',
+      start: '2027-03-15', days: 10, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/marketing-in-the-digital-age/', end: '2027-03-24',
+      title: {
+        en: 'Marketing in the Digital AGE (classroom & Synchronous E-Learning)',
+        ar: 'التسويق في العصر الرقمي (حضوري وتعلّم إلكتروني متزامن)'
+      },
+      summary: {
+        en: 'A 10-day blended program from NUS Business School, running 15 March 2027 to 24 March 2027.',
+        ar: 'برنامج مدمج لمدة 10 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 15 مارس 2027 إلى 24 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-labour-and-employment-law-classroom-sy', school: 's-nus-business-school', subject: 'people', format: 'blended',
+      start: '2027-04-09', days: 8, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/labour-and-employment-law/', end: '2027-04-16',
+      title: {
+        en: 'Labour and Employment Law (classroom & Synchronous E-Learning)',
+        ar: 'قانون العمل والتوظيف (حضوري وتعلّم إلكتروني متزامن)'
+      },
+      summary: {
+        en: 'A 8-day blended program from NUS Business School, running 9 April 2027 to 16 April 2027.',
+        ar: 'برنامج مدمج لمدة 8 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 9 أبريل 2027 إلى 16 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-managing-people-with-data-classroom-sy', school: 's-nus-business-school', subject: 'people', format: 'blended',
+      start: '2027-05-05', days: 8, price: 2943, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/managing-people-with-data/', end: '2027-05-12',
+      title: {
+        en: 'Managing People with Data (classroom & Synchronous E-Learning)',
+        ar: 'إدارة الأفراد بالبيانات (حضوري وتعلّم إلكتروني متزامن)'
+      },
+      summary: {
+        en: 'A 8-day blended program from NUS Business School, running 5 May 2027 to 12 May 2027.',
+        ar: 'برنامج مدمج لمدة 8 أيام من كلية الأعمال بجامعة سنغافورة الوطنية، من 5 مايو 2027 إلى 12 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-for-talent-management-and-organizat', school: 's-nus-business-school', subject: 'people', format: 'blended',
+      start: '2027-06-28', days: null, price: 5886, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/ai-for-talent-management-and-organizational-design-classroom-synchronous-e-learning/', end: '2027-07-20', duration: { en: '6 sessions (over 4 weeks)', ar: '6 جلسات (على مدى 4 أسابيع)' },
+      title: {
+        en: 'AI for Talent Management and Organizational Design (classroom & Synchronous E-Learning)',
+        ar: 'الذكاء الاصطناعي لإدارة المواهب والتصميم المؤسسي (حضوري وتعلّم إلكتروني متزامن)'
+      },
+      summary: {
+        en: 'A blended program from NUS Business School, 6 sessions (over 4 weeks), running 28 June 2027 to 20 July 2027.',
+        ar: 'برنامج مدمج من كلية الأعمال بجامعة سنغافورة الوطنية، 6 جلسات (على مدى 4 أسابيع)، من 28 يونيو 2027 إلى 20 يوليو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-sctp-nus-startup-founder-launch-and-ma', school: 's-nus-business-school', subject: 'entrepreneurship', format: 'in-person',
+      start: null, days: null, price: 13050, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/sctp-nus-startup-founder-launch-and-manage-a-business-successfully/', duration: { en: '96.5 hours (over 12 modules)', ar: '96.5 ساعة (على مدى 12 وحدة)' },
+      title: {
+        en: '(SCTP) NUS Startup Founder: Launch and Manage a Business Successfully',
+        ar: '(SCTP) NUS مؤسس الشركات الناشئة: إطلاق الأعمال وإدارتها بنجاح'
+      },
+      summary: {
+        en: 'An on-campus program from NUS Business School, 96.5 hours (over 12 modules). Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية الأعمال بجامعة سنغافورة الوطنية، 96.5 ساعة (على مدى 12 وحدة). تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-for-senior-executives', school: 's-nus-business-school', subject: 'digital', format: 'online',
+      start: null, days: null, price: 6500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/ai-for-senior-executives/', duration: { en: '5 months', ar: '5 أشهر' },
+      title: { en: 'AI for Senior Executives', ar: 'الذكاء الاصطناعي لكبار التنفيذيين' },
+      summary: {
+        en: 'An online program from NUS Business School, 5 months. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية الأعمال بجامعة سنغافورة الوطنية، 5 أشهر. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-driven-supply-chain-and-operations', school: 's-nus-business-school', subject: 'operations', format: 'online',
+      start: null, days: null, price: 2400, langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/ai-driven-supply-chain-and-operations-management/', duration: { en: '5 months', ar: '5 أشهر' },
+      title: {
+        en: 'Ai-Driven Supply Chain and Operations Management',
+        ar: 'إدارة سلاسل الإمداد والعمليات المدعومة بالذكاء الاصطناعي'
+      },
+      summary: {
+        en: 'An online program from NUS Business School, 5 months. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية الأعمال بجامعة سنغافورة الوطنية، 5 أشهر. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-big-data-in-marketing-classroom-synchr', school: 's-nus-business-school', subject: 'marketing', format: 'blended',
+      start: null, days: null, price: 5886, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/big-data-in-marketing/', duration: { en: '8 sessions (over 3 weeks)', ar: '8 جلسات (على مدى 3 أسابيع)' },
+      title: {
+        en: 'Big Data in Marketing (classroom & Synchronous E-Learning)',
+        ar: 'البيانات الضخمة في التسويق (حضوري وتعلّم إلكتروني متزامن)'
+      },
+      summary: {
+        en: 'A blended program from NUS Business School, 8 sessions (over 3 weeks). Dates to be announced by the school.',
+        ar: 'برنامج مدمج من كلية الأعمال بجامعة سنغافورة الوطنية، 8 جلسات (على مدى 3 أسابيع). تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-analytics-decision-making-thr', school: 's-nus-business-school', subject: 'data', format: 'online',
+      start: null, days: null, price: 3106, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/business-analytics-decision-making-through-excel/', duration: { en: '8 evenings (over 4 weeks)', ar: '8 أمسيات (على مدى 4 أسابيع)' },
+      title: {
+        en: 'Business Analytics: Decision Making Through Excel',
+        ar: 'تحليلات الأعمال: اتخاذ القرار باستخدام Excel'
+      },
+      summary: {
+        en: 'An online program from NUS Business School, 8 evenings (over 4 weeks). Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية الأعمال بجامعة سنغافورة الوطنية، 8 أمسيات (على مدى 4 أسابيع). تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cambridge-and-nus-global-leadership-pr', school: 's-nus-business-school', subject: 'leadership', format: 'blended',
+      start: null, days: null, price: 16000, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/cambridge-nus-global-leadership-programme-navigating-future-trends/', duration: { en: '3 modules (over 3 months)', ar: '3 وحدات (على مدى 3 أشهر)' },
+      title: {
+        en: 'Cambridge and NUS Global Leadership Programme: Navigating Future Trends',
+        ar: 'برنامج Cambridge وNUS للقيادة العالمية: استشراف اتجاهات المستقبل'
+      },
+      summary: {
+        en: 'A blended program from NUS Business School, 3 modules (over 3 months). Dates to be announced by the school.',
+        ar: 'برنامج مدمج من كلية الأعمال بجامعة سنغافورة الوطنية، 3 وحدات (على مدى 3 أشهر). تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-climate-change-and-sustainability-leve', school: 's-nus-business-school', subject: 'sustainability', format: 'in-person',
+      start: null, days: 3, price: 4350, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/climate-change-and-sustainability-leveraging-carbon-market-initiatives-for-business/',
+      title: {
+        en: 'Climate Change and Sustainability: Leveraging Carbon Market Initiatives for Business',
+        ar: 'تغير المناخ والاستدامة: توظيف مبادرات أسواق الكربون في الأعمال'
+      },
+      summary: {
+        en: 'A 3-day on-campus program from NUS Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية الأعمال بجامعة سنغافورة الوطنية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-digital-marketing-strategies-models-an', school: 's-nus-business-school', subject: 'marketing', format: 'online',
+      start: null, days: null, price: 2000, langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/digital-marketing-strategies-models-and-frameworks/', duration: { en: '4 - 6 hours/week, for 3 months', ar: '4–6 ساعات في الأسبوع لمدة 3 أشهر' },
+      title: {
+        en: 'Digital Marketing: Strategies, Models and Frameworks',
+        ar: 'التسويق الرقمي: الاستراتيجيات والنماذج والأطر'
+      },
+      summary: {
+        en: 'An online program from NUS Business School, 4 - 6 hours/week, for 3 months. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية الأعمال بجامعة سنغافورة الوطنية، 4–6 ساعات في الأسبوع لمدة 3 أشهر. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ecref-real-estate-finance-securitisati', school: 's-nus-business-school', subject: 'finance', format: 'in-person',
+      start: null, days: 4, price: 4990, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/ecref-real-estate-finance-securitisation/',
+      title: { en: 'ECREF – Real Estate Finance & Securitisation', ar: 'ECREF – تمويل العقارات والتوريق' },
+      summary: {
+        en: 'A 4-day on-campus program from NUS Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية الأعمال بجامعة سنغافورة الوطنية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ecref-real-estate-investment-asset-man', school: 's-nus-business-school', subject: 'finance', format: 'in-person',
+      start: null, days: 4, price: 4990, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/ecref-real-estate-investment-asset-management/',
+      title: { en: 'ECREF – Real Estate Investment & Asset Management', ar: 'ECREF – الاستثمار العقاري وإدارة الأصول' },
+      summary: {
+        en: 'A 4-day on-campus program from NUS Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية الأعمال بجامعة سنغافورة الوطنية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ecref-real-estate-portfolio-risk-manag', school: 's-nus-business-school', subject: 'finance', format: 'in-person',
+      start: null, days: 4, price: 4990, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/ecref-real-estate-portfolio-risk-management/',
+      title: { en: 'ECREF – Real Estate Portfolio & Risk Management', ar: 'ECREF – إدارة المحافظ العقارية والمخاطر' },
+      summary: {
+        en: 'A 4-day on-campus program from NUS Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية الأعمال بجامعة سنغافورة الوطنية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-enhancing-banking-finance-with-ai-busi', school: 's-nus-business-school', subject: 'finance', format: 'in-person',
+      start: null, days: 3, price: 3106, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/enhancing-banking-finance-with-ai-business-analytics-for-executives/',
+      title: {
+        en: 'Enhancing Banking & Finance with AI : Business Analytics for Executives',
+        ar: 'تعزيز القطاع المصرفي والمالي بالذكاء الاصطناعي: تحليلات الأعمال للقيادات التنفيذية'
+      },
+      summary: {
+        en: 'A 3-day on-campus program from NUS Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية الأعمال بجامعة سنغافورة الوطنية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-financial-statement-analysis-classroom', school: 's-nus-business-school', subject: 'finance', format: 'blended',
+      start: null, days: null, price: 5886, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/financial-statement-analysis-classroom-synchronous-e-learning/', duration: { en: '8 sessions (over 3 weeks)', ar: '8 جلسات (على مدى 3 أسابيع)' },
+      title: {
+        en: 'Financial Statement Analysis (classroom & Synchronous E-Learning)',
+        ar: 'تحليل القوائم المالية (حضوري وتعلّم إلكتروني متزامن)'
+      },
+      summary: {
+        en: 'A blended program from NUS Business School, 8 sessions (over 3 weeks). Dates to be announced by the school.',
+        ar: 'برنامج مدمج من كلية الأعمال بجامعة سنغافورة الوطنية، 8 جلسات (على مدى 3 أسابيع). تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-general-management-programme', school: 's-nus-business-school', subject: 'leadership', format: 'in-person',
+      start: null, days: 8, price: 13290, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/general-management-programme/',
+      title: { en: 'General Management Programme', ar: 'برنامج الإدارة العامة' },
+      summary: {
+        en: 'A 8-day on-campus program from NUS Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 8 أيام من كلية الأعمال بجامعة سنغافورة الوطنية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-global-chief-strategy-officer', school: 's-nus-business-school', subject: 'strategy', format: 'online',
+      start: null, days: null, price: 14000, langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/chief-strategy-officer/', duration: { en: '3-5 hours/week, for 8 months', ar: '3–5 ساعات في الأسبوع على مدى 8 أشهر' },
+      title: { en: 'Global Chief Strategy Officer', ar: 'رئيس الاستراتيجية العالمي' },
+      summary: {
+        en: 'An online program from NUS Business School, 3-5 hours/week, for 8 months. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية الأعمال بجامعة سنغافورة الوطنية، 3–5 ساعات في الأسبوع على مدى 8 أشهر. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-global-hr-leaders-program-hrlp', school: 's-nus-business-school', subject: 'people', format: 'online',
+      start: null, days: null, price: 5000, langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/global-hr-leaders-program-hrlp/', duration: { en: '6 months', ar: '6 أشهر' },
+      title: { en: 'Global HR Leaders Program (hrlp)', ar: 'برنامج قادة الموارد البشرية العالمي (hrlp)' },
+      summary: {
+        en: 'An online program from NUS Business School, 6 months. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية الأعمال بجامعة سنغافورة الوطنية، 6 أشهر. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-human-resource-management-with-ai', school: 's-nus-business-school', subject: 'people', format: 'online',
+      start: null, days: null, price: 2400, langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/human-resource-management-with-ai/', duration: { en: '18 weeks', ar: '18 أسبوعًا' },
+      title: { en: 'Human Resource Management with AI', ar: 'إدارة الموارد البشرية بالذكاء الاصطناعي' },
+      summary: {
+        en: 'An online program from NUS Business School, 18 weeks. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية الأعمال بجامعة سنغافورة الوطنية، 18 أسبوعًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-isb-nus-global-advanced-management-pro', school: 's-nus-business-school', subject: 'leadership', format: 'in-person',
+      start: null, days: 15, price: 14850, langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/isb-nus-global-advanced-management-programme-2-2/',
+      title: { en: 'ISB – NUS Global Advanced Management Programme', ar: 'برنامج ISB – NUS العالمي للإدارة المتقدمة' },
+      summary: {
+        en: 'A 15-day on-campus program from NUS Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 15 يومًا من كلية الأعمال بجامعة سنغافورة الوطنية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-interpreting-contracts', school: 's-nus-business-school', subject: 'negotiation', format: 'in-person',
+      start: null, days: 2, price: 2071, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/interpreting-contracts/',
+      title: { en: 'Interpreting Contracts', ar: 'تفسير العقود' },
+      summary: {
+        en: 'A 2-day on-campus program from NUS Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة يومين من كلية الأعمال بجامعة سنغافورة الوطنية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-transformational-change-fo-2', school: 's-nus-business-school', subject: 'leadership', format: 'blended',
+      start: null, days: null, price: 5886, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/leading-transformational-change-for-agility-and-sustainability-2/', duration: { en: '6 sessions (over 4 weeks)', ar: '6 جلسات (على مدى 4 أسابيع)' },
+      title: {
+        en: 'Leading Transformational Change for Agility and Sustainability (classroom & Synchronous E-Learning)',
+        ar: 'قيادة التغيير التحويلي لتحقيق المرونة والاستدامة (حضوري وتعلّم إلكتروني متزامن)'
+      },
+      summary: {
+        en: 'A blended program from NUS Business School, 6 sessions (over 4 weeks). Dates to be announced by the school.',
+        ar: 'برنامج مدمج من كلية الأعمال بجامعة سنغافورة الوطنية، 6 جلسات (على مدى 4 أسابيع). تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-python-for-analytics', school: 's-nus-business-school', subject: 'data', format: 'online',
+      start: null, days: null, price: 1800, langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/python-for-analytics/', duration: { en: '8 - 10 hours/week, for 3 months', ar: '8–10 ساعات في الأسبوع لمدة 3 أشهر' },
+      title: { en: 'Python for Analytics', ar: 'Python للتحليلات' },
+      summary: {
+        en: 'An online program from NUS Business School, 8 - 10 hours/week, for 3 months. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية الأعمال بجامعة سنغافورة الوطنية، 8–10 ساعات في الأسبوع لمدة 3 أشهر. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-sourcing-procurement-and-supply-chain', school: 's-nus-business-school', subject: 'operations', format: 'in-person',
+      start: null, days: 4, price: 4990, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/sourcing-procurement-and-supply-chain/',
+      title: {
+        en: 'Sourcing, Procurement and Supply Chain in a Vuca World',
+        ar: 'التوريد والمشتريات وسلاسل الإمداد في عالم VUCA'
+      },
+      summary: {
+        en: 'A 4-day on-campus program from NUS Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية الأعمال بجامعة سنغافورة الوطنية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-stanford-nus-executive-programme-in-in', school: 's-nus-business-school', subject: 'leadership', format: 'in-person',
+      start: null, days: 13, price: 24900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/stanford-nus-executive-programme-in-international-management/',
+      title: {
+        en: 'Stanford – NUS Executive Programme in International Management',
+        ar: 'البرنامج التنفيذي في الإدارة الدولية من Stanford – NUS'
+      },
+      summary: {
+        en: 'A 13-day on-campus program from NUS Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 13 يومًا من كلية الأعمال بجامعة سنغافورة الوطنية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategic-management-strategic-acumen', school: 's-nus-business-school', subject: 'strategy', format: 'in-person',
+      start: null, days: 2, price: 2071, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/strategic-management-strategic-acumen-competitive-strategy/',
+      title: {
+        en: 'Strategic Management: Strategic Acumen, Competitive Strategy',
+        ar: 'الإدارة الاستراتيجية: الفطنة الاستراتيجية والاستراتيجية التنافسية'
+      },
+      summary: {
+        en: 'A 2-day on-campus program from NUS Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة يومين من كلية الأعمال بجامعة سنغافورة الوطنية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-sustainability-the-next-challenge', school: 's-nus-business-school', subject: 'sustainability', format: 'in-person',
+      start: null, days: 3, price: 3106, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/sustainability-the-next-challenge/',
+      title: { en: 'Sustainability : the Next Challenge', ar: 'الاستدامة: التحدي القادم' },
+      summary: {
+        en: 'A 3-day on-campus program from NUS Business School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية الأعمال بجامعة سنغافورة الوطنية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-transforming-customer-experience-strat', school: 's-nus-business-school', subject: 'marketing', format: 'online',
+      start: null, days: null, price: 1400, langs: ['en'], popularity: 50, sourceUrl: 'https://executive-education.nus.edu.sg/programmes/transforming-customer-experience-strategies-for-service-industry/', duration: { en: '4 - 6 hours/week, for 2 months', ar: '4–6 ساعات في الأسبوع لمدة شهرين' },
+      title: {
+        en: 'Transforming Customer Experience: Strategies for Service Industry',
+        ar: 'تحويل تجربة العملاء: استراتيجيات لقطاع الخدمات'
+      },
+      summary: {
+        en: 'An online program from NUS Business School, 4 - 6 hours/week, for 2 months. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية الأعمال بجامعة سنغافورة الوطنية، 4–6 ساعات في الأسبوع لمدة شهرين. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -3012,7 +6896,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-entrepreneurship-through-acquisition-a', school: 's-nyu-stern-school-of-business', subject: 'entrepreneurship', format: 'in-person',
-      start: '2026-10-16', days: 2, price: 3500, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/entrepreneurship-through-acquisition-a-proven-path-to-ownership',
+      start: '2026-10-16', days: 2, price: 3500, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/entrepreneurship-through-acquisition-a-proven-path-to-ownership', end: '2026-10-17',
       title: {
         en: 'Entrepreneurship Through Acquisition: A Proven Path to Ownership',
         ar: 'ريادة الأعمال عبر الاستحواذ: مسار مثبت نحو الملكية'
@@ -3029,7 +6913,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-driving-roi-with-ai-powered-marketing', school: 's-nyu-stern-school-of-business', subject: 'marketing', format: 'in-person',
-      start: '2026-11-04', days: 3, price: 4752, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/roi-ai-marketing',
+      start: '2026-11-04', days: 3, price: 5400, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/roi-ai-marketing', end: '2026-11-06',
       title: {
         en: 'Driving ROI with AI-Powered Marketing',
         ar: 'تعزيز العائد على الاستثمار عبر التسويق المدعوم بالذكاء الاصطناعي'
@@ -3046,7 +6930,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-bundle-leading-business-transformation', school: 's-nyu-stern-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-11-09', days: 4, price: 6460, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/bundle-leading-business-transformation-leading-in-the-age-of-ai',
+      start: '2026-11-09', days: 4, price: 6460, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/bundle-leading-business-transformation-leading-in-the-age-of-ai', end: '2026-11-12',
       title: {
         en: 'BUNDLE: Leading Business Transformation & Leading in the Age of AI',
         ar: 'حزمة برامج: قيادة التحول المؤسسي وقيادة عصر الذكاء الاصطناعي'
@@ -3063,7 +6947,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-leading-in-the-age-of-ai', school: 's-nyu-stern-school-of-business', subject: 'digital', format: 'in-person',
-      start: '2026-11-09', days: 2, price: 3344, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/leading-in-the-age-of-ai',
+      start: '2026-11-09', days: 2, price: 3800, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/leading-in-the-age-of-ai', end: '2026-11-10',
       title: { en: 'Leading in the Age of AI', ar: 'القيادة في عصر الذكاء الاصطناعي' },
       summary: {
         en: 'A 2-day on-campus program from NYU Stern School of Business, running 9 November 2026 to 10 November 2026.',
@@ -3077,7 +6961,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-leadership-training-for-high-potential', school: 's-nyu-stern-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-11-10', days: 2, price: 3344, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/leadership-training-for-high-potentials',
+      start: '2026-11-10', days: 2, price: 3800, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/leadership-training-for-high-potentials', end: '2026-11-11',
       title: { en: 'Leadership Training for High Potentials', ar: 'التأهيل القيادي للكفاءات الواعدة' },
       summary: {
         en: 'A 2-day on-campus program from NYU Stern School of Business, running 10 November 2026 to 11 November 2026.',
@@ -3090,8 +6974,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leading-business-transformation', school: 's-nyu-stern-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-11-11', days: 2, price: 3344, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/leading-business-transformation',
+      id: 'c-leading-business-transformation', school: 's-nyu-stern-school-of-business', subject: 'strategy', format: 'in-person',
+      start: '2026-11-11', days: 2, price: 3800, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/leading-business-transformation', end: '2026-11-12',
       title: { en: 'Leading Business Transformation', ar: 'قيادة التحول المؤسسي' },
       summary: {
         en: 'A 2-day on-campus program from NYU Stern School of Business, running 11 November 2026 to 12 November 2026.',
@@ -3104,43 +6988,238 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-developing-your-leadership-presence-vi', school: 's-smith-school-of-business-queen-s-unive', subject: 'leadership', format: 'online',
-      start: '2026-09-22', days: 9, price: 3300, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/leadership_presence-virtual.php',
-      title: { en: 'Developing Your Leadership Presence - Virtual', ar: 'تطوير حضورك القيادي (عن بُعد)' },
-      summary: {
-        en: "A 9-day online program from Smith School of Business, Queen's University, running 22 September 2026 to 30 September 2026.",
-        ar: 'برنامج عبر الإنترنت لمدة 9 أيام من كلية سميث للأعمال بجامعة كوينز، من 22 سبتمبر 2026 إلى 30 سبتمبر 2026.'
-      },
-      highlights: {
-        en: [],
-        ar: []
-      },
-      audience: { en: '', ar: '' }
-    },
-    {
-      id: 'c-learning-to-lead-virtual', school: 's-smith-school-of-business-queen-s-unive', subject: 'leadership', format: 'online',
-      start: '2026-09-24', days: 9, price: 2000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/learning-to-lead-virtual.php',
-      title: { en: 'Learning to Lead - Virtual', ar: 'تعلّم القيادة (عن بُعد)' },
-      summary: {
-        en: "A 9-day online program from Smith School of Business, Queen's University, running 24 September 2026 to 2 October 2026.",
-        ar: 'برنامج عبر الإنترنت لمدة 9 أيام من كلية سميث للأعمال بجامعة كوينز، من 24 سبتمبر 2026 إلى 2 أكتوبر 2026.'
-      },
-      highlights: {
-        en: [],
-        ar: []
-      },
-      audience: { en: '', ar: '' }
-    },
-    {
-      id: 'c-leading-an-ai-ready-organization-found', school: 's-smith-school-of-business-queen-s-unive', subject: 'digital', format: 'in-person',
-      start: '2026-09-29', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/intro-to-ai.php',
+      id: 'c-ai-and-the-future-of-work-navigating-w', school: 's-nyu-stern-school-of-business', subject: 'digital', format: 'in-person',
+      start: null, days: 1, price: 2750, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/future-of-work',
       title: {
-        en: 'Leading an AI-Ready Organization: Foundations for Business Leaders',
-        ar: 'قيادة مؤسسة جاهزة للذكاء الاصطناعي: أساسيات لقادة الأعمال'
+        en: 'AI and the Future of Work: Navigating What Comes Next',
+        ar: 'الذكاء الاصطناعي ومستقبل العمل: استشراف المرحلة القادمة'
       },
       summary: {
-        en: "A 2-day on-campus program from Smith School of Business, Queen's University, running 29 September 2026 to 30 September 2026.",
-        ar: 'برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 29 سبتمبر 2026 إلى 30 سبتمبر 2026.'
+        en: 'A 1-day on-campus program from NYU Stern School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة يوم واحد من كلية شتيرن للأعمال بجامعة نيويورك. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-advanced-valuation-with-aswath-damodar', school: 's-nyu-stern-school-of-business', subject: 'finance', format: 'online',
+      start: null, days: null, price: 2200, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/advanced-valuation-with-aswath-damodaran', duration: { en: '16 weeks, 10 to 15 hours per week', ar: '16 أسبوعًا، من 10 إلى 15 ساعة في الأسبوع' },
+      title: { en: 'Advanced Valuation with Aswath Damodaran', ar: 'التقييم المتقدم مع Aswath Damodaran' },
+      summary: {
+        en: 'An online program from NYU Stern School of Business, 16 weeks, 10 to 15 hours per week. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية شتيرن للأعمال بجامعة نيويورك، 16 أسبوعًا، من 10 إلى 15 ساعة في الأسبوع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-bundle-achieving-your-leadership-visio', school: 's-nyu-stern-school-of-business', subject: 'leadership', format: 'in-person',
+      start: null, days: 4, price: 7463, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/bundle-achieving-your-leadership-vision',
+      title: { en: 'BUNDLE: Achieving Your Leadership Vision', ar: 'حزمة برامج: تحقيق رؤيتك القيادية' },
+      summary: {
+        en: 'A 4-day on-campus program from NYU Stern School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية شتيرن للأعمال بجامعة نيويورك. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-bundle-leading-through-influence', school: 's-nyu-stern-school-of-business', subject: 'leadership', format: 'in-person',
+      start: null, days: 5, price: 7820, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/bundle-leading-through-influence-week',
+      title: { en: 'BUNDLE: Leading Through Influence', ar: 'حزمة برامج: القيادة بالتأثير' },
+      summary: {
+        en: 'A 5-day on-campus program from NYU Stern School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية شتيرن للأعمال بجامعة نيويورك. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-bundle-steering-the-machine-strategy-r', school: 's-nyu-stern-school-of-business', subject: 'digital', format: 'in-person',
+      start: null, days: 3, price: 4900, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/bundle-steering-the-machine-strategy-risk-and-real-world-ai-for-executives',
+      title: {
+        en: 'BUNDLE: Steering the Machine - Strategy, Risk, and Real World AI for Executives',
+        ar: 'حزمة برامج: توجيه الآلة – الاستراتيجية والمخاطر وتطبيقات الذكاء الاصطناعي الواقعية للتنفيذيين'
+      },
+      summary: {
+        en: 'A 3-day on-campus program from NYU Stern School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية شتيرن للأعمال بجامعة نيويورك. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-communication-strategies-developing-le', school: 's-nyu-stern-school-of-business', subject: 'leadership', format: 'in-person',
+      start: null, days: 2, price: 4980, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/communication-strategies-developing-leadership-presence',
+      title: {
+        en: 'Communication Strategies: Developing Leadership Presence',
+        ar: 'استراتيجيات التواصل: بناء الحضور القيادي'
+      },
+      summary: {
+        en: 'A 2-day on-campus program from NYU Stern School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة يومين من كلية شتيرن للأعمال بجامعة نيويورك. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-corporate-finance-with-aswath-damodara', school: 's-nyu-stern-school-of-business', subject: 'finance', format: 'online',
+      start: null, days: null, price: 2200, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/corporate-finance-with-aswath-damodaran', duration: { en: '15 weeks, 10 to 12 hours per week', ar: '15 أسبوعًا، من 10 إلى 12 ساعة في الأسبوع' },
+      title: { en: 'Corporate Finance with Aswath Damodaran', ar: 'التمويل المؤسسي مع Aswath Damodaran' },
+      summary: {
+        en: 'An online program from NYU Stern School of Business, 15 weeks, 10 to 12 hours per week. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية شتيرن للأعمال بجامعة نيويورك، 15 أسبوعًا، من 10 إلى 12 ساعة في الأسبوع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-data-driven-decision-making-and-modeli', school: 's-nyu-stern-school-of-business', subject: 'data', format: 'in-person',
+      start: null, days: 2, price: 3800, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/data-driven-decision-making-and-modeling-with-gen-ai',
+      title: {
+        en: 'Data-Driven Decision Making and Modeling with GenAI',
+        ar: 'اتخاذ القرار المعتمد على البيانات والنمذجة باستخدام الذكاء الاصطناعي التوليدي'
+      },
+      summary: {
+        en: 'A 2-day on-campus program from NYU Stern School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة يومين من كلية شتيرن للأعمال بجامعة نيويورك. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-entrepreneurs-built-by-sport', school: 's-nyu-stern-school-of-business', subject: 'entrepreneurship', format: 'in-person',
+      start: null, days: 4, price: 7500, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/entrepreneurs-built-by-sport',
+      title: { en: 'Entrepreneurs Built By Sport', ar: 'رواد أعمال صنعتهم الرياضة' },
+      summary: {
+        en: 'A 4-day on-campus program from NYU Stern School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية شتيرن للأعمال بجامعة نيويورك. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-finance-and-accounting-for-non-finance', school: 's-nyu-stern-school-of-business', subject: 'finance', format: 'in-person',
+      start: null, days: 4, price: 7200, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/finance-and-accounting-for-non-finance-executives',
+      title: {
+        en: 'Finance and Accounting for Non-Finance Executives',
+        ar: 'المالية والمحاسبة للتنفيذيين من غير المختصين بالمالية'
+      },
+      summary: {
+        en: 'A 4-day on-campus program from NYU Stern School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية شتيرن للأعمال بجامعة نيويورك. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-great-leadership-series-developing-pra', school: 's-nyu-stern-school-of-business', subject: 'leadership', format: 'in-person',
+      start: null, days: 2, price: 3800, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/great-leadership-developing-practical-leadership-skills',
+      title: {
+        en: 'Great Leadership Series: Developing Practical Leadership Skills',
+        ar: 'سلسلة القيادة المتميزة: تنمية مهارات القيادة العملية'
+      },
+      summary: {
+        en: 'A 2-day on-campus program from NYU Stern School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة يومين من كلية شتيرن للأعمال بجامعة نيويورك. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-great-leadership-series-executing-your', school: 's-nyu-stern-school-of-business', subject: 'strategy', format: 'in-person',
+      start: null, days: 2, price: 3800, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/great-leadership-series-executing-your-strategic-vision',
+      title: {
+        en: 'Great Leadership Series: Executing Your Strategic Vision',
+        ar: 'سلسلة القيادة المتميزة: تنفيذ رؤيتك الاستراتيجية'
+      },
+      summary: {
+        en: 'A 2-day on-campus program from NYU Stern School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة يومين من كلية شتيرن للأعمال بجامعة نيويورك. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-great-leadership-series-power-and-prof', school: 's-nyu-stern-school-of-business', subject: 'leadership', format: 'in-person',
+      start: null, days: 2, price: 3800, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/great-leadership-power-and-professional-influence',
+      title: {
+        en: 'Great Leadership Series: Power and Professional Influence',
+        ar: 'سلسلة القيادة المتميزة: القوة والتأثير المهني'
+      },
+      summary: {
+        en: 'A 2-day on-campus program from NYU Stern School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة يومين من كلية شتيرن للأعمال بجامعة نيويورك. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-negotiation-strategies-optimizing-outc', school: 's-nyu-stern-school-of-business', subject: 'negotiation', format: 'in-person',
+      start: null, days: 3, price: 5400, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/negotiation-strategies-optimizing-outcomes-through-collaboration-and-conflict-resolution',
+      title: {
+        en: 'Negotiation Strategies: Optimizing Outcomes through Collaboration and Conflict Resolution',
+        ar: 'استراتيجيات التفاوض: تحسين النتائج عبر التعاون وحل النزاعات'
+      },
+      summary: {
+        en: 'A 3-day on-campus program from NYU Stern School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية شتيرن للأعمال بجامعة نيويورك. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-transform-sustainability-into-financia', school: 's-nyu-stern-school-of-business', subject: 'sustainability', format: 'online',
+      start: null, days: 4, price: 3800, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.stern.nyu.edu/products/transform-sustainability-into-financial-value',
+      title: {
+        en: 'Transform Sustainability into Financial Value - A Live-Online Program',
+        ar: 'تحويل الاستدامة إلى قيمة مالية - برنامج مباشر عبر الإنترنت'
+      },
+      summary: {
+        en: 'A 4-day online program from NYU Stern School of Business. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت لمدة 4 أيام من كلية شتيرن للأعمال بجامعة نيويورك. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -3150,7 +7229,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-developing-your-leadership-presence', school: 's-smith-school-of-business-queen-s-unive', subject: 'leadership', format: 'in-person',
-      start: '2026-10-01', days: 2, price: 3900, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/leadership_presence.php',
+      start: '2026-10-01', days: 2, price: 3900, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/leadership_presence.php', end: '2026-10-02',
       title: { en: 'Developing Your Leadership Presence', ar: 'تطوير حضورك القيادي' },
       summary: {
         en: "A 2-day on-campus program from Smith School of Business, Queen's University, running 1 October 2026 to 2 October 2026.",
@@ -3164,7 +7243,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-accounting-and-finance-fundamentals', school: 's-smith-school-of-business-queen-s-unive', subject: 'finance', format: 'in-person',
-      start: '2026-10-05', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/principles_accounting.php',
+      start: '2026-10-05', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/principles_accounting.php', end: '2026-10-06',
       title: { en: 'Accounting and Finance Fundamentals', ar: 'أساسيات المحاسبة والتمويل' },
       summary: {
         en: "A 2-day on-campus program from Smith School of Business, Queen's University, running 5 October 2026 to 6 October 2026.",
@@ -3177,12 +7256,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-closing-the-strategy-execution-gap', school: 's-smith-school-of-business-queen-s-unive', subject: 'strategy', format: 'online',
-      start: '2026-10-08', days: 9, price: 3000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/execution-gap-virtual.php',
-      title: { en: 'Closing the Strategy-Execution Gap', ar: 'سد الفجوة بين الاستراتيجية والتنفيذ' },
+      id: 'c-inside-leaders-mental-health-virtual', school: 's-smith-school-of-business-queen-s-unive', subject: 'people', format: 'online',
+      start: '2026-10-07', days: 1, price: 725, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/leaders-mental-health.php', end: '2026-10-07', duration: { en: '3.5-hour Program', ar: 'برنامج مدته 3.5 ساعات' },
+      title: { en: "Inside Leaders' Mental Health - Virtual", ar: 'داخل الصحة النفسية للقادة – افتراضي' },
       summary: {
-        en: "A 9-day online program from Smith School of Business, Queen's University, running 8 October 2026 to 16 October 2026.",
-        ar: 'برنامج عبر الإنترنت لمدة 9 أيام من كلية سميث للأعمال بجامعة كوينز، من 8 أكتوبر 2026 إلى 16 أكتوبر 2026.'
+        en: "A 1-day online program from Smith School of Business, Queen's University, running 7 October 2026 to 7 October 2026.",
+        ar: 'برنامج عبر الإنترنت لمدة يوم واحد من كلية سميث للأعمال بجامعة كوينز، من 7 أكتوبر 2026 إلى 7 أكتوبر 2026.'
       },
       highlights: {
         en: [],
@@ -3192,7 +7271,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-strategic-thinking-turning-complexity', school: 's-smith-school-of-business-queen-s-unive', subject: 'strategy', format: 'in-person',
-      start: '2026-10-08', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/competitive-strategy.php',
+      start: '2026-10-08', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/competitive-strategy.php', end: '2026-10-09',
       title: {
         en: 'Strategic Thinking: Turning Complexity into Clarity',
         ar: 'التفكير الاستراتيجي: تحويل التعقيد إلى وضوح'
@@ -3208,8 +7287,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-coaching-for-high-performance', school: 's-smith-school-of-business-queen-s-unive', subject: 'leadership', format: 'in-person',
-      start: '2026-10-14', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/coaching-high-performance.php',
+      id: 'c-coaching-for-high-performance', school: 's-smith-school-of-business-queen-s-unive', subject: 'people', format: 'in-person',
+      start: '2026-10-14', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/coaching-high-performance.php', end: '2026-10-15',
       title: { en: 'Coaching for High Performance', ar: 'التدريب لتحقيق الأداء العالي' },
       summary: {
         en: "A 2-day on-campus program from Smith School of Business, Queen's University, running 14 October 2026 to 15 October 2026.",
@@ -3223,7 +7302,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-public-executive-program', school: 's-smith-school-of-business-queen-s-unive', subject: 'leadership', format: 'in-person',
-      start: '2026-10-19', days: 5, price: 11000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/public_policy.php',
+      start: '2026-10-19', days: 5, price: 11000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/public_policy.php', end: '2026-10-23', duration: { en: '4.5-Day Program', ar: 'برنامج مدته 4.5 أيام' },
       title: { en: 'Public Executive Program', ar: 'البرنامج التنفيذي للقطاع العام' },
       summary: {
         en: "A 5-day on-campus program from Smith School of Business, Queen's University, running 19 October 2026 to 23 October 2026.",
@@ -3237,7 +7316,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-communicating-with-impact-virtual', school: 's-smith-school-of-business-queen-s-unive', subject: 'leadership', format: 'online',
-      start: '2026-10-22', days: 9, price: 3000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/communicating-with-impact-virtual.php',
+      start: '2026-10-22', days: 9, price: 3000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/communicating-with-impact-virtual.php', end: '2026-10-30', duration: { en: '14 Instructional Hours', ar: '14 ساعة تدريسية' },
       title: { en: 'Communicating With Impact - Virtual', ar: 'التواصل المؤثر (عن بُعد)' },
       summary: {
         en: "A 9-day online program from Smith School of Business, Queen's University, running 22 October 2026 to 30 October 2026.",
@@ -3251,7 +7330,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-strategic-planning-and-leading-change', school: 's-smith-school-of-business-queen-s-unive', subject: 'strategy', format: 'in-person',
-      start: '2026-10-22', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/organizational_change.php',
+      start: '2026-10-22', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/organizational_change.php', end: '2026-10-23',
       title: { en: 'Strategic Planning and Leading Change', ar: 'التخطيط الاستراتيجي وقيادة التغيير' },
       summary: {
         en: "A 2-day on-campus program from Smith School of Business, Queen's University, running 22 October 2026 to 23 October 2026.",
@@ -3265,7 +7344,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-ai-for-leaders', school: 's-smith-school-of-business-queen-s-unive', subject: 'digital', format: 'in-person',
-      start: '2026-10-26', days: 5, price: 11000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/ai-for-leaders.php',
+      start: '2026-10-26', days: 5, price: 11000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/ai-for-leaders.php', end: '2026-10-30', duration: { en: '4.5-Day Program', ar: 'برنامج مدته 4.5 أيام' },
       title: { en: 'AI for Leaders', ar: 'الذكاء الاصطناعي للقادة' },
       summary: {
         en: "A 5-day on-campus program from Smith School of Business, Queen's University, running 26 October 2026 to 30 October 2026.",
@@ -3279,7 +7358,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-learning-to-lead', school: 's-smith-school-of-business-queen-s-unive', subject: 'leadership', format: 'in-person',
-      start: '2026-11-02', days: 2, price: 2700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/learning-to-lead.php',
+      start: '2026-11-02', days: 2, price: 2700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/learning-to-lead.php', end: '2026-11-03',
       title: { en: 'Learning to Lead', ar: 'تعلّم القيادة' },
       summary: {
         en: "A 2-day on-campus program from Smith School of Business, Queen's University, running 2 November 2026 to 3 November 2026.",
@@ -3293,7 +7372,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-strategic-execution', school: 's-smith-school-of-business-queen-s-unive', subject: 'strategy', format: 'in-person',
-      start: '2026-11-02', days: 5, price: 11000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/strategic-execution.php',
+      start: '2026-11-02', days: 5, price: 11000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/strategic-execution.php', end: '2026-11-06', duration: { en: '4.5-Day Program', ar: 'برنامج مدته 4.5 أيام' },
       title: { en: 'Strategic Execution', ar: 'التنفيذ الاستراتيجي' },
       summary: {
         en: "A 5-day on-campus program from Smith School of Business, Queen's University, running 2 November 2026 to 6 November 2026.",
@@ -3307,7 +7386,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-leadership', school: 's-smith-school-of-business-queen-s-unive', subject: 'leadership', format: 'in-person',
-      start: '2026-11-09', days: 5, price: 11000, currency: 'CAD', langs: ['en'], featured: true, popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/leadership.php',
+      start: '2026-11-09', days: 5, price: 11000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/leadership.php', end: '2026-11-13', duration: { en: '4.5-Day Program', ar: 'برنامج مدته 4.5 أيام' },
       title: { en: 'Leadership', ar: 'القيادة' },
       summary: {
         en: "A 5-day on-campus program from Smith School of Business, Queen's University, running 9 November 2026 to 13 November 2026.",
@@ -3321,7 +7400,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-project-leadership', school: 's-smith-school-of-business-queen-s-unive', subject: 'operations', format: 'in-person',
-      start: '2026-11-09', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/project_leadership.php',
+      start: '2026-11-09', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/project_leadership.php', end: '2026-11-10',
       title: { en: 'Project Leadership', ar: 'قيادة المشاريع' },
       summary: {
         en: "A 2-day on-campus program from Smith School of Business, Queen's University, running 9 November 2026 to 10 November 2026.",
@@ -3335,7 +7414,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-negotiating-and-consensus-building', school: 's-smith-school-of-business-queen-s-unive', subject: 'negotiation', format: 'in-person',
-      start: '2026-11-11', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/negotiating.php',
+      start: '2026-11-11', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/negotiating.php', end: '2026-11-12',
       title: { en: 'Negotiating and Consensus Building', ar: 'التفاوض وبناء التوافق' },
       summary: {
         en: "A 2-day on-campus program from Smith School of Business, Queen's University, running 11 November 2026 to 12 November 2026.",
@@ -3348,8 +7427,25 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-strategic-planning-and-leading-cha-2', school: 's-smith-school-of-business-queen-s-unive', subject: 'strategy', format: 'online',
+      start: '2026-11-12', days: 9, price: 3000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/organizational_change-virtual.php', end: '2026-11-20', duration: { en: '14 Instructional Hours', ar: '14 ساعة تدريسية' },
+      title: {
+        en: 'Strategic Planning and Leading Change - Virtual',
+        ar: 'التخطيط الاستراتيجي وقيادة التغيير - افتراضي'
+      },
+      summary: {
+        en: "A 9-day online program from Smith School of Business, Queen's University, running 12 November 2026 to 20 November 2026.",
+        ar: 'برنامج عبر الإنترنت لمدة 9 أيام من كلية سميث للأعمال بجامعة كوينز، من 12 نوفمبر 2026 إلى 20 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-accounting-and-finance-fundamentals-vi', school: 's-smith-school-of-business-queen-s-unive', subject: 'finance', format: 'online',
-      start: '2026-11-16', days: 9, price: 3000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/principles_accounting-virtual.php',
+      start: '2026-11-16', days: 9, price: 3000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/principles_accounting-virtual.php', end: '2026-11-24', duration: { en: '14 Instructional Hours', ar: '14 ساعة تدريسية' },
       title: { en: 'Accounting and Finance Fundamentals - Virtual', ar: 'أساسيات المحاسبة والتمويل (عن بُعد)' },
       summary: {
         en: "A 9-day online program from Smith School of Business, Queen's University, running 16 November 2026 to 24 November 2026.",
@@ -3363,7 +7459,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-empowering-women-to-succeed-in-negotia', school: 's-smith-school-of-business-queen-s-unive', subject: 'negotiation', format: 'in-person',
-      start: '2026-11-16', days: 3, price: 6600, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/empowering-women.php',
+      start: '2026-11-16', days: 3, price: 6600, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/empowering-women.php', end: '2026-11-18',
       title: { en: 'Empowering Women to Succeed in Negotiations', ar: 'تمكين المرأة للتفوق في التفاوض' },
       summary: {
         en: "A 3-day on-campus program from Smith School of Business, Queen's University, running 16 November 2026 to 18 November 2026.",
@@ -3377,7 +7473,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-organizational-structure-and-culture', school: 's-smith-school-of-business-queen-s-unive', subject: 'people', format: 'in-person',
-      start: '2026-11-16', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/organizational-structure.php',
+      start: '2026-11-16', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/organizational-structure.php', end: '2026-11-17',
       title: { en: 'Organizational Structure and Culture', ar: 'الهيكل التنظيمي والثقافة المؤسسية' },
       summary: {
         en: "A 2-day on-campus program from Smith School of Business, Queen's University, running 16 November 2026 to 17 November 2026.",
@@ -3390,8 +7486,39 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-closing-the-strategy-execution-gap', school: 's-smith-school-of-business-queen-s-unive', subject: 'strategy', format: 'in-person',
+      start: '2026-11-18', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/execution-gap.php', end: '2026-11-19',
+      title: { en: 'Closing the Strategy-Execution Gap', ar: 'سد الفجوة بين الاستراتيجية والتنفيذ' },
+      summary: {
+        en: "A 2-day on-campus program from Smith School of Business, Queen's University, running 18 November 2026 to 19 November 2026.",
+        ar: 'برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 18 نوفمبر 2026 إلى 19 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-coaching-for-high-performance-virtual', school: 's-smith-school-of-business-queen-s-unive', subject: 'people', format: 'online',
+      start: '2026-11-18', days: 15, price: 3000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/coaching-high-performance-virtual.php', end: '2026-12-02', duration: { en: '10 Instructional Hours', ar: '10 ساعات تدريسية' },
+      title: {
+        en: 'Coaching for High Performance - Virtual',
+        ar: 'التدريب المهني (Coaching) لتحقيق الأداء العالي - افتراضي'
+      },
+      summary: {
+        en: "A 15-day online program from Smith School of Business, Queen's University, running 18 November 2026 to 2 December 2026.",
+        ar: 'برنامج عبر الإنترنت لمدة 15 يومًا من كلية سميث للأعمال بجامعة كوينز، من 18 نوفمبر 2026 إلى 2 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-communicating-with-impact', school: 's-smith-school-of-business-queen-s-unive', subject: 'leadership', format: 'in-person',
-      start: '2026-11-23', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/communicating-with-impact.php',
+      start: '2026-11-23', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/communicating-with-impact.php', end: '2026-11-24',
       title: { en: 'Communicating With Impact', ar: 'التواصل المؤثر' },
       summary: {
         en: "A 2-day on-campus program from Smith School of Business, Queen's University, running 23 November 2026 to 24 November 2026.",
@@ -3404,8 +7531,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-conflict-management', school: 's-smith-school-of-business-queen-s-unive', subject: 'negotiation', format: 'in-person',
-      start: '2026-11-25', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/conflict-management.php',
+      id: 'c-conflict-management', school: 's-smith-school-of-business-queen-s-unive', subject: 'people', format: 'in-person',
+      start: '2026-11-25', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/conflict-management.php', end: '2026-11-26',
       title: { en: 'Conflict Management', ar: 'إدارة النزاعات' },
       summary: {
         en: "A 2-day on-campus program from Smith School of Business, Queen's University, running 25 November 2026 to 26 November 2026.",
@@ -3419,7 +7546,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-leading-digital-transformation', school: 's-smith-school-of-business-queen-s-unive', subject: 'digital', format: 'in-person',
-      start: '2026-11-30', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/leading-digital-transformation.php',
+      start: '2026-11-30', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/leading-digital-transformation.php', end: '2026-12-01',
       title: { en: 'Leading Digital Transformation', ar: 'قيادة التحول الرقمي' },
       summary: {
         en: "A 2-day on-campus program from Smith School of Business, Queen's University, running 30 November 2026 to 1 December 2026.",
@@ -3432,8 +7559,25 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-strategic-thinking-turning-complex-2', school: 's-smith-school-of-business-queen-s-unive', subject: 'strategy', format: 'online',
+      start: '2026-11-30', days: 9, price: 3000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/competitive-strategy-virtual.php', end: '2026-12-08', duration: { en: '14 Instructional Hours', ar: '14 ساعة تدريسية' },
+      title: {
+        en: 'Strategic Thinking: Turning Complexity into Clarity - Virtual',
+        ar: 'التفكير الاستراتيجي: تحويل التعقيد إلى وضوح - افتراضي'
+      },
+      summary: {
+        en: "A 9-day online program from Smith School of Business, Queen's University, running 30 November 2026 to 8 December 2026.",
+        ar: 'برنامج عبر الإنترنت لمدة 9 أيام من كلية سميث للأعمال بجامعة كوينز، من 30 نوفمبر 2026 إلى 8 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-building-an-ai-powered-organization-st', school: 's-smith-school-of-business-queen-s-unive', subject: 'digital', format: 'in-person',
-      start: '2026-12-09', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/ai-powered-organization.php',
+      start: '2026-12-09', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/ai-powered-organization.php', end: '2026-12-10',
       title: {
         en: 'Building an AI-Powered Organization: Strategy, Governance, and Transformation',
         ar: 'بناء مؤسسة مدعومة بالذكاء الاصطناعي: الاستراتيجية والحوكمة والتحول'
@@ -3450,7 +7594,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-emotional-intelligence-for-leaders', school: 's-smith-school-of-business-queen-s-unive', subject: 'leadership', format: 'in-person',
-      start: '2026-12-10', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/emotional-intelligence.php',
+      start: '2026-12-10', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/emotional-intelligence.php', end: '2026-12-11',
       title: { en: 'Emotional Intelligence for Leaders', ar: 'الذكاء العاطفي للقادة' },
       summary: {
         en: "A 2-day on-campus program from Smith School of Business, Queen's University, running 10 December 2026 to 11 December 2026.",
@@ -3464,7 +7608,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-building-your-productivity-edge-with-a', school: 's-smith-school-of-business-queen-s-unive', subject: 'digital', format: 'in-person',
-      start: '2026-12-14', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/building-productivity-ai.php',
+      start: '2026-12-14', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/building-productivity-ai.php', end: '2026-12-15',
       title: { en: 'Building Your Productivity Edge with AI', ar: 'تعزيز إنتاجيتك بالذكاء الاصطناعي' },
       summary: {
         en: "A 2-day on-campus program from Smith School of Business, Queen's University, running 14 December 2026 to 15 December 2026.",
@@ -3478,7 +7622,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-project-leadership-virtual', school: 's-smith-school-of-business-queen-s-unive', subject: 'operations', format: 'online',
-      start: '2027-02-03', days: 9, price: 3000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/project_leadership-virtual.php',
+      start: '2027-02-03', days: 9, price: 3000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/project_leadership-virtual.php', end: '2027-02-11', duration: { en: '14 Instructional Hours', ar: '14 ساعة تدريسية' },
       title: { en: 'Project Leadership - Virtual', ar: 'قيادة المشاريع (عن بُعد)' },
       summary: {
         en: "A 9-day online program from Smith School of Business, Queen's University, running 3 February 2027 to 11 February 2027.",
@@ -3491,12 +7635,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-directors-consortium', school: 's-stanford-graduate-school-of-business', subject: 'finance', format: 'in-person',
-      start: '2026-10-19', days: 5, price: 17000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/directors-consortium',
-      title: { en: "Directors' Consortium", ar: 'ملتقى أعضاء مجالس الإدارة' },
+      id: 'c-developing-your-leadership-presence-vi', school: 's-smith-school-of-business-queen-s-unive', subject: 'leadership', format: 'online',
+      start: '2027-02-17', days: 9, price: 3300, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/leadership_presence-virtual.php', end: '2027-02-25', duration: { en: '16 Instructional Hours', ar: '16 ساعة تدريسية' },
+      title: { en: 'Developing Your Leadership Presence - Virtual', ar: 'تطوير حضورك القيادي (عن بُعد)' },
       summary: {
-        en: 'A 5-day on-campus program from Stanford Graduate School of Business, running 19 October 2026 to 23 October 2026.',
-        ar: 'برنامج حضوري لمدة 5 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 19 أكتوبر 2026 إلى 23 أكتوبر 2026.'
+        en: "A 9-day online program from Smith School of Business, Queen's University, running 17 February 2027 to 25 February 2027.",
+        ar: 'برنامج عبر الإنترنت لمدة 9 أيام من كلية سميث للأعمال بجامعة كوينز، من 17 فبراير 2027 إلى 25 فبراير 2027.'
       },
       highlights: {
         en: [],
@@ -3505,15 +7649,43 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-harnessing-ai-for-breakthrough-innovat', school: 's-stanford-graduate-school-of-business', subject: 'digital', format: 'in-person',
-      start: '2026-11-08', days: 6, price: 18500, langs: ['en'], featured: true, popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/harnessing-ai-breakthrough-innovation-strategic-impact',
+      id: 'c-closing-the-strategy-execution-gap-vir', school: 's-smith-school-of-business-queen-s-unive', subject: 'strategy', format: 'online',
+      start: '2027-02-22', days: 9, price: 3000, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/execution-gap-virtual.php', end: '2027-03-02', duration: { en: '14 Instructional Hours', ar: '14 ساعة تدريسية' },
+      title: { en: 'Closing the Strategy-Execution Gap - Virtual', ar: 'سد فجوة التنفيذ الاستراتيجي - افتراضي' },
+      summary: {
+        en: "A 9-day online program from Smith School of Business, Queen's University, running 22 February 2027 to 2 March 2027.",
+        ar: 'برنامج عبر الإنترنت لمدة 9 أيام من كلية سميث للأعمال بجامعة كوينز، من 22 فبراير 2027 إلى 2 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-an-ai-ready-organization-found', school: 's-smith-school-of-business-queen-s-unive', subject: 'digital', format: 'in-person',
+      start: '2027-04-12', days: 2, price: 3700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/intro-to-ai.php', end: '2027-04-13',
       title: {
-        en: 'Harnessing AI for Breakthrough Innovation and Strategic Impact',
-        ar: 'توظيف الذكاء الاصطناعي لتحقيق ابتكار نوعي وأثر استراتيجي'
+        en: 'Leading an AI-Ready Organization: Foundations for Business Leaders',
+        ar: 'قيادة مؤسسة جاهزة للذكاء الاصطناعي: أساسيات لقادة الأعمال'
       },
       summary: {
-        en: 'A 6-day on-campus program from Stanford Graduate School of Business, running 8 November 2026 to 13 November 2026.',
-        ar: 'برنامج حضوري لمدة 6 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 8 نوفمبر 2026 إلى 13 نوفمبر 2026.'
+        en: "A 2-day on-campus program from Smith School of Business, Queen's University, running 12 April 2027 to 13 April 2027.",
+        ar: 'برنامج حضوري لمدة يومين من كلية سميث للأعمال بجامعة كوينز، من 12 أبريل 2027 إلى 13 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-learning-to-lead-virtual', school: 's-smith-school-of-business-queen-s-unive', subject: 'leadership', format: 'online',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/learning-to-lead-virtual.php', duration: { en: '14 Instructional Hours', ar: '14 ساعة تدريسية' },
+      title: { en: 'Learning to Lead - Virtual', ar: 'تعلّم القيادة (عن بُعد)' },
+      summary: {
+        en: "An online program from Smith School of Business, Queen's University, 14 Instructional Hours. Dates to be announced by the school.",
+        ar: 'برنامج عبر الإنترنت من كلية سميث للأعمال بجامعة كوينز، 14 ساعة تدريسية. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -3523,7 +7695,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-executive-program-in-leadership-the-ef', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-11-15', days: 6, price: 17000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/executive-program-leadership',
+      start: '2026-11-15', days: 6, price: 17000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/executive-program-leadership', end: '2026-11-20',
       title: {
         en: 'Executive Program in Leadership: The Effective Use of Power',
         ar: 'البرنامج التنفيذي في القيادة: الاستخدام الفعال للسلطة'
@@ -3539,8 +7711,22 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-stanford-ignite-part-time', school: 's-stanford-graduate-school-of-business', subject: 'entrepreneurship', format: 'in-person',
+      start: '2027-01-10', days: null, price: 19500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/stanford-ignite-part-time', end: '2027-03-04', duration: { en: 'eight-week, part-time', ar: '8 أسابيع بدوام جزئي' },
+      title: { en: 'Stanford Ignite – Part-Time', ar: 'برنامج ستانفورد إيغنايت (Stanford Ignite) – بدوام جزئي' },
+      summary: {
+        en: 'An on-campus program from Stanford Graduate School of Business, eight-week, part-time, running 10 January 2027 to 4 March 2027.',
+        ar: 'برنامج حضوري من كلية ستانفورد للدراسات العليا في الأعمال، 8 أسابيع بدوام جزئي، من 10 يناير 2027 إلى 4 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-finance-and-accounting-for-the-nonfina', school: 's-stanford-graduate-school-of-business', subject: 'finance', format: 'in-person',
-      start: '2027-01-24', days: 6, price: 16000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/finance-accounting-nonfinancial-executive',
+      start: '2027-01-24', days: 6, price: 16000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/finance-accounting-nonfinancial-executive', end: '2027-01-29',
       title: {
         en: 'Finance and Accounting for the Nonfinancial Executive',
         ar: 'المالية والمحاسبة للتنفيذي غير المالي'
@@ -3556,8 +7742,25 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-the-emerging-coo-driving-innovation-an', school: 's-stanford-graduate-school-of-business', subject: 'operations', format: 'blended',
+      start: '2027-01-25', days: null, price: 19000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/emerging-coo', end: '2027-05-07',
+      title: {
+        en: 'The Emerging COO: Driving Innovation and Operational Excellence',
+        ar: 'COO الصاعد: قيادة الابتكار والتميز التشغيلي'
+      },
+      summary: {
+        en: 'A blended program from Stanford Graduate School of Business, running 25 January 2027 to 7 May 2027.',
+        ar: 'برنامج مدمج من كلية ستانفورد للدراسات العليا في الأعمال، من 25 يناير 2027 إلى 7 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-digital-transformation-leading-organiz', school: 's-stanford-graduate-school-of-business', subject: 'digital', format: 'in-person',
-      start: '2027-02-14', days: 6, price: 18000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/digital-transformation',
+      start: '2027-02-14', days: 6, price: 18000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/digital-transformation', end: '2027-02-19',
       title: {
         en: 'Digital Transformation: Leading Organizational Change in the Age of AI',
         ar: 'التحول الرقمي: قيادة التغيير المؤسسي في عصر الذكاء الاصطناعي'
@@ -3573,8 +7776,67 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-executive-program-for-nonprofit-leader', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2027-02-21', days: 6, price: 5000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/executive-program-nonprofit-leaders', end: '2027-02-26',
+      title: { en: 'Executive Program for Nonprofit Leaders', ar: 'برنامج تنفيذي لقادة القطاع غير الربحي' },
+      summary: {
+        en: 'A 6-day on-campus program from Stanford Graduate School of Business, running 21 February 2027 to 26 February 2027.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 21 فبراير 2027 إلى 26 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-the-emerging-cfo-strategic-financial-l', school: 's-stanford-graduate-school-of-business', subject: 'finance', format: 'in-person',
+      start: '2027-02-21', days: null, price: 29500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/emerging-cfo', end: '2027-04-16',
+      title: {
+        en: 'The Emerging CFO: Strategic Financial Leadership Program',
+        ar: 'برنامج CFO الصاعد: القيادة المالية الاستراتيجية'
+      },
+      summary: {
+        en: 'An on-campus program from Stanford Graduate School of Business, running 21 February 2027 to 16 April 2027.',
+        ar: 'برنامج حضوري من كلية ستانفورد للدراسات العليا في الأعمال، من 21 فبراير 2027 إلى 16 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-stanford-business-essentials', school: 's-stanford-graduate-school-of-business', subject: 'strategy', format: 'online',
+      start: '2027-03-03', days: null, price: 2950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/stanford-business-essentials', end: '2027-08-10',
+      title: { en: 'Stanford Business Essentials', ar: 'أساسيات الأعمال من Stanford' },
+      summary: {
+        en: 'An online program from Stanford Graduate School of Business, running 3 March 2027 to 10 August 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية ستانفورد للدراسات العليا في الأعمال، من 3 مارس 2027 إلى 10 أغسطس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-stanford-lead-online-business-program', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'online',
+      start: '2027-03-17', days: null, price: 19200, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/stanford-lead-online-business-program', end: '2028-03-16',
+      title: { en: 'Stanford LEAD Online Business Program', ar: 'برنامج Stanford LEAD للأعمال عبر الإنترنت' },
+      summary: {
+        en: 'An online program from Stanford Graduate School of Business, running 17 March 2027 to 16 March 2028.',
+        ar: 'برنامج عبر الإنترنت من كلية ستانفورد للدراسات العليا في الأعمال، من 17 مارس 2027 إلى 16 مارس 2028.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-the-ai-powered-organization', school: 's-stanford-graduate-school-of-business', subject: 'digital', format: 'in-person',
-      start: '2027-03-21', days: 6, price: 18500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/ai-powered-organization',
+      start: '2027-03-21', days: 6, price: 18500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/ai-powered-organization', end: '2027-03-26',
       title: { en: 'The AI-Powered Organization', ar: 'المؤسسة المدعومة بالذكاء الاصطناعي' },
       summary: {
         en: 'A 6-day on-campus program from Stanford Graduate School of Business, running 21 March 2027 to 26 March 2027.',
@@ -3587,8 +7849,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-design-thinking-bootcamp-make-impact-a', school: 's-stanford-graduate-school-of-business', subject: 'marketing', format: 'in-person',
-      start: '2027-03-23', days: 4, price: 14000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/design-thinking-bootcamp',
+      id: 'c-design-thinking-bootcamp-make-impact-a', school: 's-stanford-graduate-school-of-business', subject: 'strategy', format: 'in-person',
+      start: '2027-03-23', days: 4, price: 14000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/design-thinking-bootcamp', end: '2027-03-26',
       title: {
         en: 'Design Thinking Bootcamp: Make Impact and Drive Growth in Your Organization',
         ar: 'معسكر التفكير التصميمي: تحقيق الأثر ودفع النمو في مؤسستك'
@@ -3605,7 +7867,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-executive-leadership-development', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2027-03-28', days: 6, price: 18000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/executive-leadership-development',
+      start: '2027-03-28', days: 6, price: 18000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/executive-leadership-development', end: '2027-04-02',
       title: { en: 'Executive Leadership Development', ar: 'تطوير القيادة التنفيذية' },
       summary: {
         en: 'A 6-day on-campus program from Stanford Graduate School of Business, running 28 March 2027 to 2 April 2027.',
@@ -3618,8 +7880,25 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-driving-innovation-and-new-ventures-in', school: 's-stanford-graduate-school-of-business', subject: 'entrepreneurship', format: 'in-person',
-      start: '2027-04-11', days: 6, price: 16000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/driving-innovation-new-ventures-established-organizations',
+      id: 'c-harnessing-ai-for-breakthrough-innovat', school: 's-stanford-graduate-school-of-business', subject: 'digital', format: 'in-person',
+      start: '2027-04-04', days: 6, price: 18500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/harnessing-ai-breakthrough-innovation-strategic-impact', end: '2027-04-09',
+      title: {
+        en: 'Harnessing AI for Breakthrough Innovation and Strategic Impact',
+        ar: 'توظيف الذكاء الاصطناعي لتحقيق ابتكار نوعي وأثر استراتيجي'
+      },
+      summary: {
+        en: 'A 6-day on-campus program from Stanford Graduate School of Business, running 4 April 2027 to 9 April 2027.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 4 أبريل 2027 إلى 9 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-driving-innovation-and-new-ventures-in', school: 's-stanford-graduate-school-of-business', subject: 'strategy', format: 'in-person',
+      start: '2027-04-11', days: 6, price: 16000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/driving-innovation-new-ventures-established-organizations', end: '2027-04-16',
       title: {
         en: 'Driving Innovation and New Ventures in Established Organizations',
         ar: 'قيادة الابتكار والمشاريع الجديدة في المؤسسات الراسخة'
@@ -3635,8 +7914,22 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-stanford-executive-program', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2027-06-18', days: null, price: 95000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/stanford-executive-program', end: '2027-07-31',
+      title: { en: 'Stanford Executive Program', ar: 'برنامج Stanford التنفيذي' },
+      summary: {
+        en: 'An on-campus program from Stanford Graduate School of Business, running 18 June 2027 to 31 July 2027.',
+        ar: 'برنامج حضوري من كلية ستانفورد للدراسات العليا في الأعمال، من 18 يونيو 2027 إلى 31 يوليو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-interpersonal-dynamics-for-high-perfor', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2027-06-20', days: 6, price: 17500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/interpersonal-dynamics-high-performance-executives',
+      start: '2027-06-20', days: 6, price: 17500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/interpersonal-dynamics-high-performance-executives', end: '2027-06-25',
       title: {
         en: 'Interpersonal Dynamics for High-Performance Executives',
         ar: 'ديناميكيات العلاقات الشخصية للتنفيذيين عالي الأداء'
@@ -3653,11 +7946,11 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-stanford-ignite-full-time', school: 's-stanford-graduate-school-of-business', subject: 'entrepreneurship', format: 'in-person',
-      start: '2027-06-20', days: 20, price: 19500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/stanford-ignite-full-time',
+      start: '2027-06-20', days: null, price: 19500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/stanford-ignite-full-time', end: '2027-07-14', duration: { en: 'four-week, full-time', ar: '4 أسابيع بدوام كامل' },
       title: { en: 'Stanford Ignite – Full-Time', ar: 'برنامج ستانفورد إيغنايت (Stanford Ignite) – بدوام كامل' },
       summary: {
-        en: 'A 20-day on-campus program from Stanford Graduate School of Business, running 20 June 2027 to 14 July 2027.',
-        ar: 'برنامج حضوري لمدة 20 يومًا من كلية ستانفورد للدراسات العليا في الأعمال، من 20 يونيو 2027 إلى 14 يوليو 2027.'
+        en: 'An on-campus program from Stanford Graduate School of Business, four-week, full-time, running 20 June 2027 to 14 July 2027.',
+        ar: 'برنامج حضوري من كلية ستانفورد للدراسات العليا في الأعمال، 4 أسابيع بدوام كامل، من 20 يونيو 2027 إلى 14 يوليو 2027.'
       },
       highlights: {
         en: [],
@@ -3667,7 +7960,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-mergers-and-acquisitions', school: 's-stanford-graduate-school-of-business', subject: 'finance', format: 'in-person',
-      start: '2027-07-11', days: 6, price: 17500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/mergers-acquisitions',
+      start: '2027-07-11', days: 6, price: 17500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/mergers-acquisitions', end: '2027-07-16',
       title: { en: 'Mergers and Acquisitions', ar: 'الاندماج والاستحواذ' },
       summary: {
         en: 'A 6-day on-campus program from Stanford Graduate School of Business, running 11 July 2027 to 16 July 2027.',
@@ -3681,7 +7974,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-executive-program-for-growing-companie', school: 's-stanford-graduate-school-of-business', subject: 'entrepreneurship', format: 'in-person',
-      start: '2027-08-01', days: 13, price: 29500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/executive-program-growing-companies',
+      start: '2027-08-01', days: 13, price: 29500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/executive-program-growing-companies', end: '2027-08-13',
       title: { en: 'Executive Program for Growing Companies', ar: 'البرنامج التنفيذي للشركات النامية' },
       summary: {
         en: 'A 13-day on-campus program from Stanford Graduate School of Business, running 1 August 2027 to 13 August 2027.',
@@ -3694,8 +7987,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-culture-as-a-competitive-advantage', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2027-08-08', days: 6, price: 10000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/culture-competitive-advantage',
+      id: 'c-culture-as-a-competitive-advantage', school: 's-stanford-graduate-school-of-business', subject: 'people', format: 'in-person',
+      start: '2027-08-08', days: 6, price: 10000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/culture-competitive-advantage', end: '2027-08-13',
       title: { en: 'Culture as a Competitive Advantage', ar: 'الثقافة المؤسسية كميزة تنافسية' },
       summary: {
         en: 'A 6-day on-campus program from Stanford Graduate School of Business, running 8 August 2027 to 13 August 2027.',
@@ -3709,7 +8002,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-executive-program-in-strategy-and-orga', school: 's-stanford-graduate-school-of-business', subject: 'strategy', format: 'in-person',
-      start: '2027-08-08', days: 13, price: 29500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/executive-program-strategy-organization',
+      start: '2027-08-08', days: 13, price: 29500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/executive-program-strategy-organization', end: '2027-08-20',
       title: { en: 'Executive Program in Strategy and Organization', ar: 'البرنامج التنفيذي في الاستراتيجية والتنظيم' },
       summary: {
         en: 'A 13-day on-campus program from Stanford Graduate School of Business, running 8 August 2027 to 20 August 2027.',
@@ -3723,14 +8016,14 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-stanford-nus-executive-program-in-inte', school: 's-stanford-graduate-school-of-business', subject: 'strategy', format: 'in-person',
-      start: '2027-08-14', days: 10, price: 26150, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/stanford-nus-executive-program',
+      start: '2027-08-14', days: 15, price: 26150, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/stanford-nus-executive-program', end: '2027-08-28',
       title: {
         en: 'Stanford-NUS Executive Program in International Management',
         ar: 'البرنامج التنفيذي المشترك بين جامعة ستانفورد وجامعة سنغافورة الوطنية في الإدارة الدولية'
       },
       summary: {
-        en: 'A 10-day on-campus program from Stanford Graduate School of Business, running 14 August 2027 to 28 August 2027.',
-        ar: 'برنامج حضوري لمدة 10 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 14 أغسطس 2027 إلى 28 أغسطس 2027.'
+        en: 'A 15-day on-campus program from Stanford Graduate School of Business, running 14 August 2027 to 28 August 2027.',
+        ar: 'برنامج حضوري لمدة 15 يومًا من كلية ستانفورد للدراسات العليا في الأعمال، من 14 أغسطس 2027 إلى 28 أغسطس 2027.'
       },
       highlights: {
         en: [],
@@ -3740,7 +8033,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-the-emerging-cmo-strategic-marketing-l', school: 's-stanford-graduate-school-of-business', subject: 'marketing', format: 'in-person',
-      start: '2027-08-15', days: 6, price: 17500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/emerging-cmo',
+      start: '2027-08-15', days: 6, price: 17500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/emerging-cmo', end: '2027-08-20',
       title: {
         en: 'The Emerging CMO: Strategic Marketing Leadership',
         ar: 'المدير التسويقي الصاعد: القيادة التسويقية الاستراتيجية'
@@ -3756,8 +8049,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-innovative-product-leadership-the-emer', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2027-08-22', days: 6, price: 17500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/innovative-product-leadership',
+      id: 'c-innovative-product-leadership-the-emer', school: 's-stanford-graduate-school-of-business', subject: 'operations', format: 'in-person',
+      start: '2027-08-22', days: 6, price: 17500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/innovative-product-leadership', end: '2027-08-27',
       title: {
         en: 'Innovative Product Leadership: The Emerging Chief Product Officer',
         ar: 'القيادة الابتكارية للمنتجات: نحو مدير منتجات تنفيذي (Chief Product Officer)'
@@ -3773,12 +8066,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-project-management-for-administrative', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'in-person',
-      start: '2026-09-15', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/project-management-administrative-professionals',
-      title: { en: 'Project Management for Administrative Professionals', ar: 'إدارة المشاريع للمتخصصين الإداريين' },
+      id: 'c-leading-change-and-organizational-rene', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2027-09-12', days: 6, price: 17500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/leading-change-organizational-renewal', end: '2027-09-17',
+      title: { en: 'Leading Change and Organizational Renewal', ar: 'قيادة التغيير والتجديد المؤسسي' },
       summary: {
-        en: 'A 2-day on-campus program from UBC Sauder School of Business, running 15 September 2026 to 16 September 2026.',
-        ar: 'برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 15 سبتمبر 2026 إلى 16 سبتمبر 2026.'
+        en: 'A 6-day on-campus program from Stanford Graduate School of Business, running 12 September 2027 to 17 September 2027.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 12 سبتمبر 2027 إلى 17 سبتمبر 2027.'
       },
       highlights: {
         en: [],
@@ -3787,12 +8080,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-conflict-management-strategies', school: 's-ubc-sauder-school-of-business', subject: 'negotiation', format: 'in-person',
-      start: '2026-09-16', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/conflict-management-strategies',
-      title: { en: 'Conflict Management Strategies', ar: 'استراتيجيات إدارة النزاعات' },
+      id: 'c-influence-and-negotiation-strategies-p', school: 's-stanford-graduate-school-of-business', subject: 'negotiation', format: 'in-person',
+      start: '2027-09-26', days: 6, price: 16000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/influence-negotiation-strategies-program', end: '2027-10-01',
+      title: { en: 'Influence and Negotiation Strategies Program', ar: 'برنامج استراتيجيات التأثير والتفاوض' },
       summary: {
-        en: 'A 2-day on-campus program from UBC Sauder School of Business, running 16 September 2026 to 17 September 2026.',
-        ar: 'برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 16 سبتمبر 2026 إلى 17 سبتمبر 2026.'
+        en: 'A 6-day on-campus program from Stanford Graduate School of Business, running 26 September 2027 to 1 October 2027.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 26 سبتمبر 2027 إلى 1 أكتوبر 2027.'
       },
       highlights: {
         en: [],
@@ -3801,12 +8094,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-business-analysis-3-course-pack-1', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
-      start: '2026-09-21', days: 12, price: 3495, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/business-analysis-3-course-pack-1',
-      title: { en: 'Business Analysis 3 Course Pack - 1', ar: 'حزمة تحليل الأعمال المكونة من 3 مقررات - 1' },
+      id: 'c-directors-consortium', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2027-10-18', days: 5, price: 17000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/directors-consortium', end: '2027-10-22',
+      title: { en: 'Directors’ Consortium', ar: 'ملتقى أعضاء مجالس الإدارة' },
       summary: {
-        en: 'A 12-day online program from UBC Sauder School of Business, running 21 September 2026 to 13 December 2026.',
-        ar: 'برنامج عبر الإنترنت لمدة 12 يومًا من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 21 سبتمبر 2026 إلى 13 ديسمبر 2026.'
+        en: 'A 5-day on-campus program from Stanford Graduate School of Business, running 18 October 2027 to 22 October 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية ستانفورد للدراسات العليا في الأعمال، من 18 أكتوبر 2027 إلى 22 أكتوبر 2027.'
       },
       highlights: {
         en: [],
@@ -3815,29 +8108,15 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-business-analysis-3-course-pack-2', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
-      start: '2026-09-21', days: 12, price: 3495, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/business-analysis-3-course-pack-2',
-      title: { en: 'Business Analysis 3 Course Pack - 2', ar: 'حزمة تحليل الأعمال المكونة من 3 مقررات - 2' },
-      summary: {
-        en: 'A 12-day online program from UBC Sauder School of Business, running 21 September 2026 to 13 December 2026.',
-        ar: 'برنامج عبر الإنترنت لمدة 12 يومًا من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 21 سبتمبر 2026 إلى 13 ديسمبر 2026.'
-      },
-      highlights: {
-        en: [],
-        ar: []
-      },
-      audience: { en: '', ar: '' }
-    },
-    {
-      id: 'c-business-analysis-strategic-analysis-a', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
-      start: '2026-09-21', days: 4, price: 1250, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/business-analysis-strategic-analysis-and-elicitation',
+      id: 'c-agile-leadership-building-adaptability', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'online',
+      start: null, days: null, price: 1500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/agile-leadership', duration: { en: 'self-paced', ar: 'بوتيرة ذاتية' },
       title: {
-        en: 'Business Analysis Strategic Analysis and Elicitation',
-        ar: 'التحليل الاستراتيجي واستخلاص المتطلبات في تحليل الأعمال'
+        en: 'Agile Leadership: Building Adaptability and Embracing Creativity',
+        ar: 'القيادة المرنة: بناء القدرة على التكيّف وتبنّي الإبداع'
       },
       summary: {
-        en: 'A 4-day online program from UBC Sauder School of Business, running 21 September 2026 to 18 October 2026.',
-        ar: 'برنامج عبر الإنترنت لمدة 4 أيام من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 21 سبتمبر 2026 إلى 18 أكتوبر 2026.'
+        en: 'An online program from Stanford Graduate School of Business, self-paced. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية ستانفورد للدراسات العليا في الأعمال، بوتيرة ذاتية. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -3846,15 +8125,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-digital-asset-rights-risk-management-f', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
-      start: '2026-09-21', days: 4, price: 995, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/digital-asset-rights-risk-management-fundamentals',
-      title: {
-        en: 'Digital Asset, Rights & Risk Management Fundamentals',
-        ar: 'أساسيات إدارة الأصول الرقمية والحقوق والمخاطر'
-      },
+      id: 'c-amplify-your-persuasive-impact', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'online',
+      start: null, days: null, price: 1500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/amplify-your-persuasive-impact', duration: { en: 'self-paced', ar: 'بوتيرة ذاتية' },
+      title: { en: 'Amplify Your Persuasive Impact', ar: 'عزّز أثرك في الإقناع' },
       summary: {
-        en: 'A 4-day online program from UBC Sauder School of Business, running 21 September 2026 to 18 October 2026.',
-        ar: 'برنامج عبر الإنترنت لمدة 4 أيام من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 21 سبتمبر 2026 إلى 18 أكتوبر 2026.'
+        en: 'An online program from Stanford Graduate School of Business, self-paced. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية ستانفورد للدراسات العليا في الأعمال، بوتيرة ذاتية. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -3863,15 +8139,169 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-financial-statement-analysis-for-non-f', school: 's-ubc-sauder-school-of-business', subject: 'finance', format: 'in-person',
-      start: '2026-09-24', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/financial-statement-analysis-non-financial-managers',
+      id: 'c-coaching-skills-for-effective-leadersh', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'online',
+      start: null, days: null, price: 1500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/coaching-skills-effective-leadership', duration: { en: 'self-paced', ar: 'بوتيرة ذاتية' },
+      title: { en: 'Coaching Skills for Effective Leadership', ar: 'مهارات التدريب المهني (Coaching) للقيادة الفعالة' },
+      summary: {
+        en: 'An online program from Stanford Graduate School of Business, self-paced. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية ستانفورد للدراسات العليا في الأعمال، بوتيرة ذاتية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-create-a-happy-and-meaningful-life', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'online',
+      start: null, days: null, price: 1500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/create-happy-meaningful-life', duration: { en: 'self-paced', ar: 'بوتيرة ذاتية' },
+      title: { en: 'Create a Happy and Meaningful Life', ar: 'صناعة حياة سعيدة وذات معنى' },
+      summary: {
+        en: 'An online program from Stanford Graduate School of Business, self-paced. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية ستانفورد للدراسات العليا في الأعمال، بوتيرة ذاتية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-demystify-decision-making', school: 's-stanford-graduate-school-of-business', subject: 'strategy', format: 'online',
+      start: null, days: null, price: 1500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/demystify-decision-making', duration: { en: 'self-paced', ar: 'بوتيرة ذاتية' },
+      title: { en: 'Demystify Decision Making', ar: 'تبسيط عملية اتخاذ القرار' },
+      summary: {
+        en: 'An online program from Stanford Graduate School of Business, self-paced. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية ستانفورد للدراسات العليا في الأعمال، بوتيرة ذاتية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-digital-transformation-and-ai-playbook', school: 's-stanford-graduate-school-of-business', subject: 'digital', format: 'online',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/digital-transformation-playbook', duration: { en: '6 weeks, online; 4-6 hours per week', ar: '6 أسابيع عبر الإنترنت؛ 4–6 ساعات في الأسبوع' },
+      title: { en: 'Digital Transformation and AI Playbook', ar: 'دليل التحول الرقمي والذكاء الاصطناعي' },
+      summary: {
+        en: 'An online program from Stanford Graduate School of Business, 6 weeks, online; 4-6 hours per week. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية ستانفورد للدراسات العليا في الأعمال، 6 أسابيع عبر الإنترنت؛ 4–6 ساعات في الأسبوع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-discover-the-paths-to-power', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'online',
+      start: null, days: null, price: 1500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/discover-paths-power', duration: { en: 'self-paced', ar: 'بوتيرة ذاتية' },
+      title: { en: 'Discover the Paths to Power', ar: 'اكتشاف مسارات النفوذ' },
+      summary: {
+        en: 'An online program from Stanford Graduate School of Business, self-paced. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية ستانفورد للدراسات العليا في الأعمال، بوتيرة ذاتية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-disrupt-your-business', school: 's-stanford-graduate-school-of-business', subject: 'strategy', format: 'online',
+      start: null, days: null, price: 1500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/disrupt-your-business', duration: { en: 'self-paced', ar: 'بوتيرة ذاتية' },
+      title: { en: 'Disrupt Your Business', ar: 'أعد ابتكار أعمالك' },
+      summary: {
+        en: 'An online program from Stanford Graduate School of Business, self-paced. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية ستانفورد للدراسات العليا في الأعمال، بوتيرة ذاتية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-launching-a-startup', school: 's-stanford-graduate-school-of-business', subject: 'entrepreneurship', format: 'online',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/launching-startup', duration: { en: '6 weeks, online; 4-6 hours per week', ar: '6 أسابيع عبر الإنترنت؛ 4–6 ساعات في الأسبوع' },
+      title: { en: 'Launching a Startup', ar: 'إطلاق شركة ناشئة' },
+      summary: {
+        en: 'An online program from Stanford Graduate School of Business, 6 weeks, online; 4-6 hours per week. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية ستانفورد للدراسات العليا في الأعمال، 6 أسابيع عبر الإنترنت؛ 4–6 ساعات في الأسبوع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-managing-teams-for-innovation-and-succ', school: 's-stanford-graduate-school-of-business', subject: 'people', format: 'in-person',
+      start: null, days: 6, price: 15000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/managing-teams-innovation-success',
+      title: { en: 'Managing Teams for Innovation and Success', ar: 'إدارة الفرق لتحقيق الابتكار والنجاح' },
+      summary: {
+        en: 'A 6-day on-campus program from Stanford Graduate School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية ستانفورد للدراسات العليا في الأعمال. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-master-storytelling-for-authentic-lead', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'online',
+      start: null, days: null, price: 1500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/master-storytelling-authentic-leadership', duration: { en: 'self-paced', ar: 'بوتيرة ذاتية' },
+      title: { en: 'Master Storytelling for Authentic Leadership', ar: 'إتقان السرد القصصي للقيادة الأصيلة' },
+      summary: {
+        en: 'An online program from Stanford Graduate School of Business, self-paced. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية ستانفورد للدراسات العليا في الأعمال، بوتيرة ذاتية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-sharpen-your-communication-skills', school: 's-stanford-graduate-school-of-business', subject: 'leadership', format: 'online',
+      start: null, days: null, price: 1500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/sharpen-your-communication-skills', duration: { en: 'self-paced', ar: 'بوتيرة ذاتية' },
+      title: { en: 'Sharpen Your Communication Skills', ar: 'تعزيز مهاراتك في التواصل' },
+      summary: {
+        en: 'An online program from Stanford Graduate School of Business, self-paced. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية ستانفورد للدراسات العليا في الأعمال، بوتيرة ذاتية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-stanford-ignite-post-9-11-veterans', school: 's-stanford-graduate-school-of-business', subject: 'entrepreneurship', format: 'online',
+      start: null, days: null, price: 2500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.gsb.stanford.edu/exec-ed/programs/stanford-ignite-veterans',
       title: {
-        en: 'Financial Statement Analysis for Non-Financial Managers',
-        ar: 'تحليل القوائم المالية للمديرين غير الماليين'
+        en: 'Stanford Ignite – Post-9/11 Veterans',
+        ar: 'Stanford Ignite – برنامج لقدامى المحاربين بعد أحداث 11 سبتمبر'
       },
       summary: {
-        en: 'A 2-day on-campus program from UBC Sauder School of Business, running 24 September 2026 to 25 September 2026.',
-        ar: 'برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 24 سبتمبر 2026 إلى 25 سبتمبر 2026.'
+        en: 'An online program from Stanford Graduate School of Business. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية ستانفورد للدراسات العليا في الأعمال. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-change-management-bootcamp', school: 's-ubc-sauder-school-of-business', subject: 'people', format: 'online',
+      start: '2026-09-29', days: null, price: 4380, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/change-management-bootcamp', end: '2026-12-08', duration: { en: '10 weeks', ar: '10 أسابيع' },
+      title: { en: 'Change Management Bootcamp', ar: 'معسكر إدارة التغيير' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 10 weeks, running 29 September 2026 to 8 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 10 أسابيع، من 29 سبتمبر 2026 إلى 8 ديسمبر 2026.'
       },
       highlights: {
         en: [],
@@ -3881,7 +8311,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-strategic-decision-making', school: 's-ubc-sauder-school-of-business', subject: 'strategy', format: 'in-person',
-      start: '2026-10-01', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/strategic-decision-making',
+      start: '2026-10-01', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/strategic-decision-making', end: '2026-10-02',
       title: { en: 'Strategic Decision Making', ar: 'صنع القرار الاستراتيجي' },
       summary: {
         en: 'A 2-day on-campus program from UBC Sauder School of Business, running 1 October 2026 to 2 October 2026.',
@@ -3894,22 +8324,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-transform-your-innovation-game', school: 's-ubc-sauder-school-of-business', subject: 'strategy', format: 'online',
-      start: '2026-10-05', days: 7, price: 3685, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/transform-your-innovation-game',
-      title: { en: 'Transform Your Innovation Game', ar: 'حوّل نهجك في الابتكار' },
-      summary: {
-        en: 'A 7-day online program from UBC Sauder School of Business, running 5 October 2026 to 30 October 2026.',
-        ar: 'برنامج عبر الإنترنت لمدة 7 أيام من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 5 أكتوبر 2026 إلى 30 أكتوبر 2026.'
-      },
-      highlights: {
-        en: [],
-        ar: []
-      },
-      audience: { en: '', ar: '' }
-    },
-    {
       id: 'c-lean-six-sigma-yellow-belt', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'in-person',
-      start: '2026-10-06', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/lean-six-sigma-yellow-belt',
+      start: '2026-10-06', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/lean-six-sigma-yellow-belt', end: '2026-10-07',
       title: { en: 'Lean Six Sigma Yellow Belt', ar: 'الحزام الأصفر في لين ستة سيغما (Lean Six Sigma)' },
       summary: {
         en: 'A 2-day on-campus program from UBC Sauder School of Business, running 6 October 2026 to 7 October 2026.',
@@ -3922,8 +8338,25 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-thinking-on-your-feet-communicating-in', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2026-10-06', days: 1, price: 1390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/thinking-your-feet-communicating-dynamic-environment', end: '2026-10-06',
+      title: {
+        en: 'Thinking on Your Feet: Communicating in a Dynamic Environment',
+        ar: 'سرعة البديهة: التواصل في بيئة متغيّرة'
+      },
+      summary: {
+        en: 'A 1-day on-campus program from UBC Sauder School of Business, running 6 October 2026 to 6 October 2026.',
+        ar: 'برنامج حضوري لمدة يوم واحد من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 6 أكتوبر 2026 إلى 6 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-next-level-leadership', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-10-07', days: 3, price: 2990, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/next-level-leadership',
+      start: '2026-10-07', days: 3, price: 2990, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/next-level-leadership', end: '2026-10-09',
       title: { en: 'Next Level Leadership', ar: 'القيادة إلى المستوى التالي' },
       summary: {
         en: 'A 3-day on-campus program from UBC Sauder School of Business, running 7 October 2026 to 9 October 2026.',
@@ -3936,8 +8369,64 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-coaching-and-mentoring', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-10-14', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/coaching-and-mentoring',
+      id: 'c-structured-project-management', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2026-10-07', days: null, price: 1250, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/structured-project-management', end: '2026-11-10', duration: { en: '5 weeks', ar: '5 أسابيع' },
+      title: { en: 'Structured Project Management', ar: 'إدارة المشاريع المنهجية' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 5 weeks, running 7 October 2026 to 10 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 5 أسابيع، من 7 أكتوبر 2026 إلى 10 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-agile-product-ownership', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2026-10-09', days: 17, price: 1095, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/agile-product-ownership', end: '2026-10-25', duration: { en: '3 weeks', ar: '3 أسابيع' },
+      title: { en: 'Agile Product Ownership', ar: 'ملكية المنتج في منهجية أجايل' },
+      summary: {
+        en: 'A 17-day online program from UBC Sauder School of Business, running 9 October 2026 to 25 October 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة 17 يومًا من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 9 أكتوبر 2026 إلى 25 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-agile-project-management', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2026-10-14', days: null, price: 1250, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/agile-project-management', end: '2026-11-19', duration: { en: '5 weeks', ar: '5 أسابيع' },
+      title: { en: 'Agile Project Management', ar: 'إدارة المشاريع بمنهجية أجايل' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 5 weeks, running 14 October 2026 to 19 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 5 أسابيع، من 14 أكتوبر 2026 إلى 19 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-applied-project-management', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2026-10-14', days: null, price: 1995, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/applied-project-management', end: '2026-11-24', duration: { en: '6 weeks', ar: '6 أسابيع' },
+      title: { en: 'Applied Project Management', ar: 'إدارة المشاريع التطبيقية' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 6 weeks, running 14 October 2026 to 24 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 6 أسابيع، من 14 أكتوبر 2026 إلى 24 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-coaching-and-mentoring', school: 's-ubc-sauder-school-of-business', subject: 'people', format: 'in-person',
+      start: '2026-10-14', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/coaching-and-mentoring', end: '2026-10-15',
       title: { en: 'Coaching and Mentoring', ar: 'التدريب والإرشاد' },
       summary: {
         en: 'A 2-day on-campus program from UBC Sauder School of Business, running 14 October 2026 to 15 October 2026.',
@@ -3950,8 +8439,36 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-high-performance-people-skills', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-10-15', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/high-performance-people-skills',
+      id: 'c-principles-of-authentic-leadership', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2026-10-14', days: 1, price: 1390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/principles-authentic-leadership-0', end: '2026-10-14',
+      title: { en: 'Principles of Authentic Leadership', ar: 'مبادئ القيادة الأصيلة' },
+      summary: {
+        en: 'A 1-day on-campus program from UBC Sauder School of Business, running 14 October 2026 to 14 October 2026.',
+        ar: 'برنامج حضوري لمدة يوم واحد من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 14 أكتوبر 2026 إلى 14 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-project-management-fundamentals', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2026-10-14', days: null, price: 1250, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/project-management-fundamentals', end: '2026-11-10', duration: { en: '4 weeks', ar: '4 أسابيع' },
+      title: { en: 'Project Management Fundamentals', ar: 'أسس إدارة المشاريع' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 4 weeks, running 14 October 2026 to 10 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 4 أسابيع، من 14 أكتوبر 2026 إلى 10 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-high-performance-people-skills', school: 's-ubc-sauder-school-of-business', subject: 'people', format: 'in-person',
+      start: '2026-10-15', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/high-performance-people-skills', end: '2026-10-16',
       title: { en: 'High-Performance People Skills', ar: 'مهارات التعامل مع الأفراد لتحقيق الأداء المتميز' },
       summary: {
         en: 'A 2-day on-campus program from UBC Sauder School of Business, running 15 October 2026 to 16 October 2026.',
@@ -3964,8 +8481,56 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-agile-delivery-methods', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2026-10-19', days: null, price: 1095, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/agile-delivery-methods', end: '2026-11-15', duration: { en: '3 weeks', ar: '3 أسابيع' },
+      title: { en: 'Agile Delivery Methods', ar: 'أساليب التسليم في منهجية أجايل' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 3 weeks, running 19 October 2026 to 15 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 3 أسابيع، من 19 أكتوبر 2026 إلى 15 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-analysis-planning-risk-manage', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2026-10-19', days: null, price: 1250, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/business-analysis-planning-risk-management-and-performance-improvement', end: '2026-11-15', duration: { en: '4 weeks', ar: '4 أسابيع' },
+      title: {
+        en: 'Business Analysis Planning, Risk Management and Performance Improvement',
+        ar: 'التخطيط وإدارة المخاطر وتحسين الأداء في تحليل الأعمال'
+      },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 4 weeks, running 19 October 2026 to 15 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 4 أسابيع، من 19 أكتوبر 2026 إلى 15 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-analysis-requirements-analysi', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2026-10-19', days: null, price: 1250, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/business-analysis-requirements-analysis-and-management', end: '2026-11-15', duration: { en: '4 weeks', ar: '4 أسابيع' },
+      title: {
+        en: 'Business Analysis Requirements Analysis and Management',
+        ar: 'تحليل المتطلبات وإدارتها في تحليل الأعمال'
+      },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 4 weeks, running 19 October 2026 to 15 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 4 أسابيع، من 19 أكتوبر 2026 إلى 15 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-lean-green-belt', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'in-person',
-      start: '2026-10-19', days: 5, price: 3995, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/lean-green-belt',
+      start: '2026-10-19', days: 5, price: 3995, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/lean-green-belt', end: '2026-10-23',
       title: { en: 'Lean Green Belt', ar: 'الحزام الأخضر في منهجية لين (Lean)' },
       summary: {
         en: 'A 5-day on-campus program from UBC Sauder School of Business, running 19 October 2026 to 23 October 2026.',
@@ -3978,12 +8543,26 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-product-management-essentials', school: 's-ubc-sauder-school-of-business', subject: 'strategy', format: 'online',
-      start: '2026-10-19', days: 3, price: 995, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/product-management-essentials',
+      id: 'c-product-management-essentials', school: 's-ubc-sauder-school-of-business', subject: 'digital', format: 'online',
+      start: '2026-10-19', days: null, price: 995, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/product-management-essentials', end: '2026-11-08', duration: { en: '3 Weeks', ar: '3 أسابيع' },
       title: { en: 'Product Management Essentials', ar: 'أساسيات إدارة المنتجات' },
       summary: {
-        en: 'A 3-day online program from UBC Sauder School of Business, running 19 October 2026 to 8 November 2026.',
-        ar: 'برنامج عبر الإنترنت لمدة 3 أيام من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 19 أكتوبر 2026 إلى 8 نوفمبر 2026.'
+        en: 'An online program from UBC Sauder School of Business, 3 Weeks, running 19 October 2026 to 8 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 3 أسابيع، من 19 أكتوبر 2026 إلى 8 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-change-management-implementing-and-eva', school: 's-ubc-sauder-school-of-business', subject: 'people', format: 'online',
+      start: '2026-10-23', days: null, price: 1095, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/change-management-implementing-and-evaluating', end: '2026-11-19', duration: { en: '4 weeks', ar: '4 أسابيع' },
+      title: { en: 'Change Management Implementing and Evaluating', ar: 'إدارة التغيير: التنفيذ والتقييم' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 4 weeks, running 23 October 2026 to 19 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 4 أسابيع، من 23 أكتوبر 2026 إلى 19 نوفمبر 2026.'
       },
       highlights: {
         en: [],
@@ -3993,7 +8572,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-advanced-leadership-program', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-10-26', days: 5, price: 5650, currency: 'CAD', langs: ['en'], featured: true, popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/advanced-leadership-program',
+      start: '2026-10-26', days: 5, price: 5650, currency: 'CAD', langs: ['en'], featured: true, popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/advanced-leadership-program', end: '2026-10-30',
       title: { en: 'Advanced Leadership Program', ar: 'برنامج القيادة المتقدم' },
       summary: {
         en: 'A 5-day on-campus program from UBC Sauder School of Business, running 26 October 2026 to 30 October 2026.',
@@ -4007,7 +8586,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-employment-law-essentials', school: 's-ubc-sauder-school-of-business', subject: 'people', format: 'in-person',
-      start: '2026-10-28', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/employment-law-essentials',
+      start: '2026-10-28', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/employment-law-essentials', end: '2026-10-29',
       title: { en: 'Employment Law Essentials', ar: 'أساسيات قانون العمل' },
       summary: {
         en: 'A 2-day on-campus program from UBC Sauder School of Business, running 28 October 2026 to 29 October 2026.',
@@ -4020,8 +8599,36 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-business-analysis-fundamentals', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2026-11-02', days: null, price: 1095, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/business-analysis-fundamentals', end: '2026-11-29', duration: { en: '4 weeks', ar: '4 أسابيع' },
+      title: { en: 'Business Analysis Fundamentals', ar: 'أساسيات تحليل الأعمال' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 4 weeks, running 2 November 2026 to 29 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 4 أسابيع، من 2 نوفمبر 2026 إلى 29 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-managing-agile-delivery', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2026-11-02', days: 14, price: 1250, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/managing-agile-delivery', end: '2026-11-15', duration: { en: '3 weeks', ar: '3 أسابيع' },
+      title: { en: 'Managing Agile Delivery', ar: 'إدارة التسليم الرشيق (Agile)' },
+      summary: {
+        en: 'A 14-day online program from UBC Sauder School of Business, running 2 November 2026 to 15 November 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة 14 يومًا من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 2 نوفمبر 2026 إلى 15 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-risk-management-for-business-leaders', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'in-person',
-      start: '2026-11-04', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/risk-management-business-leaders',
+      start: '2026-11-04', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/risk-management-business-leaders', end: '2026-11-05',
       title: { en: 'Risk Management for Business Leaders', ar: 'إدارة المخاطر لقادة الأعمال' },
       summary: {
         en: 'A 2-day on-campus program from UBC Sauder School of Business, running 4 November 2026 to 5 November 2026.',
@@ -4035,7 +8642,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-fundamentals-of-accounting-for-non-fin', school: 's-ubc-sauder-school-of-business', subject: 'finance', format: 'in-person',
-      start: '2026-11-05', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/fundamentals-accounting-non-financial-managers',
+      start: '2026-11-05', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/fundamentals-accounting-non-financial-managers', end: '2026-11-06',
       title: {
         en: 'Fundamentals of Accounting for Non-Financial Managers',
         ar: 'أساسيات المحاسبة للمديرين غير الماليين'
@@ -4052,7 +8659,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-leading-people-through-change', school: 's-ubc-sauder-school-of-business', subject: 'people', format: 'in-person',
-      start: '2026-11-09', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/leading-people-through-change',
+      start: '2026-11-09', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/leading-people-through-change', end: '2026-11-10',
       title: { en: 'Leading People Through Change', ar: 'قيادة الأفراد خلال التغيير' },
       summary: {
         en: 'A 2-day on-campus program from UBC Sauder School of Business, running 9 November 2026 to 10 November 2026.',
@@ -4065,8 +8672,67 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-project-management-for-administrative', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'in-person',
+      start: '2026-11-09', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/project-management-administrative-professionals', end: '2026-11-10',
+      title: { en: 'Project Management for Administrative Professionals', ar: 'إدارة المشاريع للمتخصصين الإداريين' },
+      summary: {
+        en: 'A 2-day on-campus program from UBC Sauder School of Business, running 9 November 2026 to 10 November 2026.',
+        ar: 'برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 9 نوفمبر 2026 إلى 10 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-from-the-middle', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2026-11-10', days: null, price: 1250, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/leading-middle', end: '2026-12-15', duration: { en: '5 weeks', ar: '5 أسابيع' },
+      title: { en: 'Leading from the Middle', ar: 'القيادة من الوسط' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 5 weeks, running 10 November 2026 to 15 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 5 أسابيع، من 10 نوفمبر 2026 إلى 15 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-organizational-decision-systems', school: 's-ubc-sauder-school-of-business', subject: 'strategy', format: 'online',
+      start: '2026-11-13', days: 1, price: 395, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/organizational-decision-systems', end: '2026-11-13', duration: { en: '1/2 day', ar: 'نصف يوم' },
+      title: { en: 'Organizational Decision Systems', ar: 'أنظمة القرار المؤسسي' },
+      summary: {
+        en: 'A 1-day online program from UBC Sauder School of Business, running 13 November 2026 to 13 November 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة يوم واحد من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 13 نوفمبر 2026 إلى 13 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategic-thinking-for-project-leaders', school: 's-ubc-sauder-school-of-business', subject: 'strategy', format: 'in-person',
+      start: '2026-11-13', days: 1, price: 1390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/strategic-thinking-project-leaders-and-managers', end: '2026-11-13',
+      title: {
+        en: 'Strategic Thinking for Project Leaders and Managers',
+        ar: 'التفكير الاستراتيجي لقادة المشاريع ومديريها'
+      },
+      summary: {
+        en: 'A 1-day on-campus program from UBC Sauder School of Business, running 13 November 2026 to 13 November 2026.',
+        ar: 'برنامج حضوري لمدة يوم واحد من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 13 نوفمبر 2026 إلى 13 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-ai-advantage-ai-strategies-for-busines', school: 's-ubc-sauder-school-of-business', subject: 'digital', format: 'in-person',
-      start: '2026-11-16', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/ai-advantage-ai-strategies-business-leaders',
+      start: '2026-11-16', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/ai-advantage-ai-strategies-business-leaders', end: '2026-11-17',
       title: {
         en: 'AI Advantage - AI Strategies for Business Leaders',
         ar: 'ميزة الذكاء الاصطناعي: استراتيجيات الذكاء الاصطناعي لقادة الأعمال'
@@ -4082,8 +8748,78 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-strategies-and-skills-of-effective-neg', school: 's-ubc-sauder-school-of-business', subject: 'negotiation', format: 'in-person',
-      start: '2026-11-17', days: 3, price: 2990, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/strategies-and-skills-effective-negotiation',
+      id: 'c-ai-product-management-bootcamp', school: 's-ubc-sauder-school-of-business', subject: 'digital', format: 'online',
+      start: '2026-11-16', days: null, price: 2495, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/ai-product-management-bootcamp', end: '2026-12-19', duration: { en: '5 weeks', ar: '5 أسابيع' },
+      title: { en: 'AI Product Management Bootcamp', ar: 'معسكر إدارة المنتجات القائمة على الذكاء الاصطناعي' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 5 weeks, running 16 November 2026 to 19 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 5 أسابيع، من 16 نوفمبر 2026 إلى 19 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-agile-business-analysis', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2026-11-16', days: null, price: 1095, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/agile-business-analysis', end: '2026-12-13', duration: { en: '4 weeks', ar: '4 أسابيع' },
+      title: { en: 'Agile Business Analysis', ar: 'تحليل الأعمال في منهجية أجايل' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 4 weeks, running 16 November 2026 to 13 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 4 أسابيع، من 16 نوفمبر 2026 إلى 13 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-analysis-leadership-and-colla', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2026-11-16', days: null, price: 1250, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/business-analysis-leadership-and-collaboration', end: '2026-12-13', duration: { en: '4 weeks', ar: '4 أسابيع' },
+      title: { en: 'Business Analysis Leadership and Collaboration', ar: 'القيادة والتعاون في تحليل الأعمال' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 4 weeks, running 16 November 2026 to 13 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 4 أسابيع، من 16 نوفمبر 2026 إلى 13 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-fundamentals-of-behavioural-insights', school: 's-ubc-sauder-school-of-business', subject: 'people', format: 'online',
+      start: '2026-11-16', days: null, price: 995, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/fundamentals-behavioural-insights', end: '2026-12-06', duration: { en: '3 weeks', ar: '3 أسابيع' },
+      title: { en: 'Fundamentals of Behavioural Insights', ar: 'أساسيات الرؤى السلوكية' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 3 weeks, running 16 November 2026 to 6 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 3 أسابيع، من 16 نوفمبر 2026 إلى 6 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-in-an-agile-organization', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'online',
+      start: '2026-11-16', days: null, price: 1250, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/leading-agile-organization', end: '2026-12-06', duration: { en: '3 weeks', ar: '3 أسابيع' },
+      title: { en: 'Leading in an Agile Organization', ar: 'القيادة في المؤسسات المرنة' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 3 weeks, running 16 November 2026 to 6 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 3 أسابيع، من 16 نوفمبر 2026 إلى 6 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategies-and-skills-of-effective-neg', school: 's-ubc-sauder-school-of-business', subject: 'strategy', format: 'in-person',
+      start: '2026-11-17', days: 3, price: 2990, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/strategies-and-skills-effective-negotiation', end: '2026-11-19',
       title: { en: 'Strategies and Skills of Effective Negotiation', ar: 'استراتيجيات ومهارات التفاوض الفعّال' },
       summary: {
         en: 'A 3-day on-campus program from UBC Sauder School of Business, running 17 November 2026 to 19 November 2026.',
@@ -4096,8 +8832,50 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-business-intelligence-with-power-bi', school: 's-ubc-sauder-school-of-business', subject: 'data', format: 'online',
+      start: '2026-11-18', days: null, price: 1095, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/business-intelligence-power-bi', end: '2026-12-09', duration: { en: '3 weeks', ar: '3 أسابيع' },
+      title: { en: 'Business Intelligence with Power BI', ar: 'ذكاء الأعمال باستخدام Power BI' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 3 weeks, running 18 November 2026 to 9 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 3 أسابيع، من 18 نوفمبر 2026 إلى 9 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-lead-and-thrive-under-pressure', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'online',
+      start: '2026-11-18', days: 8, price: 1390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/lead-and-thrive-under-pressure-0', end: '2026-11-25', duration: { en: '2 half days', ar: 'نصفا يوم' },
+      title: { en: 'Lead and Thrive Under Pressure', ar: 'القيادة والتفوق تحت الضغط' },
+      summary: {
+        en: 'A 8-day online program from UBC Sauder School of Business, running 18 November 2026 to 25 November 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة 8 أيام من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 18 نوفمبر 2026 إلى 25 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-change-management-fostering-culture-an', school: 's-ubc-sauder-school-of-business', subject: 'people', format: 'online',
+      start: '2026-11-20', days: null, price: 1095, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/change-management-fostering-culture-and-capability', end: '2026-12-17', duration: { en: '4 weeks', ar: '4 أسابيع' },
+      title: { en: 'Change Management: Fostering Culture and Capability', ar: 'إدارة التغيير: بناء الثقافة والقدرات' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 4 weeks, running 20 November 2026 to 17 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 4 أسابيع، من 20 نوفمبر 2026 إلى 17 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-persuasion-and-influence', school: 's-ubc-sauder-school-of-business', subject: 'negotiation', format: 'in-person',
-      start: '2026-11-23', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/persuasion-and-influence',
+      start: '2026-11-23', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/persuasion-and-influence', end: '2026-11-24',
       title: { en: 'Persuasion and Influence', ar: 'الإقناع والتأثير' },
       summary: {
         en: 'A 2-day on-campus program from UBC Sauder School of Business, running 23 November 2026 to 24 November 2026.',
@@ -4111,7 +8889,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-essentials-in-supervisory-skills', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-11-26', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/essentials-supervisory-skills',
+      start: '2026-11-26', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/essentials-supervisory-skills', end: '2026-11-27',
       title: { en: 'Essentials in Supervisory Skills', ar: 'أساسيات المهارات الإشرافية' },
       summary: {
         en: 'A 2-day on-campus program from UBC Sauder School of Business, running 26 November 2026 to 27 November 2026.',
@@ -4124,8 +8902,22 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-speak-to-lead', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2026-12-01', days: 1, price: 1390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/speak-lead', end: '2026-12-01',
+      title: { en: 'Speak to Lead', ar: 'تحدّث لتقود' },
+      summary: {
+        en: 'A 1-day on-campus program from UBC Sauder School of Business, running 1 December 2026 to 1 December 2026.',
+        ar: 'برنامج حضوري لمدة يوم واحد من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 1 ديسمبر 2026 إلى 1 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-influence-without-authority', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-12-02', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/influence-without-authority',
+      start: '2026-12-02', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/influence-without-authority', end: '2026-12-03',
       title: { en: 'Influence Without Authority', ar: 'التأثير بلا سلطة رسمية' },
       summary: {
         en: 'A 2-day on-campus program from UBC Sauder School of Business, running 2 December 2026 to 3 December 2026.',
@@ -4138,8 +8930,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-communication-strategies-for-english-a', school: 's-ubc-sauder-school-of-business', subject: 'people', format: 'in-person',
-      start: '2026-12-03', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/communication-strategies-english-additional-language-professionals',
+      id: 'c-communication-strategies-for-english-a', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2026-12-03', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/communication-strategies-english-additional-language-professionals', end: '2026-12-04',
       title: {
         en: 'Communication Strategies for English as Additional Language Professionals',
         ar: 'استراتيجيات التواصل للمهنيين الناطقين بالإنجليزية كلغة إضافية'
@@ -4156,7 +8948,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-strategy-implementation-that-works', school: 's-ubc-sauder-school-of-business', subject: 'strategy', format: 'in-person',
-      start: '2026-12-03', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/strategy-implementation-works',
+      start: '2026-12-03', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/strategy-implementation-works', end: '2026-12-04',
       title: { en: 'Strategy Implementation that Works', ar: 'تنفيذ الاستراتيجية بفاعلية' },
       summary: {
         en: 'A 2-day on-campus program from UBC Sauder School of Business, running 3 December 2026 to 4 December 2026.',
@@ -4170,7 +8962,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-essential-management-skills', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-12-07', days: 5, price: 4390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/essential-management-skills',
+      start: '2026-12-07', days: 5, price: 4390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/essential-management-skills', end: '2026-12-11',
       title: { en: 'Essential Management Skills', ar: 'المهارات الإدارية الأساسية' },
       summary: {
         en: 'A 5-day on-campus program from UBC Sauder School of Business, running 7 December 2026 to 11 December 2026.',
@@ -4184,7 +8976,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-leadership-excellence-for-administrati', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-12-07', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/leadership-excellence-administrative-professionals',
+      start: '2026-12-07', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/leadership-excellence-administrative-professionals', end: '2026-12-08',
       title: {
         en: 'Leadership Excellence for Administrative Professionals',
         ar: 'التميز القيادي للعاملين في الشؤون الإدارية'
@@ -4200,8 +8992,98 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-digital-asset-rights-risk-management-f', school: 's-ubc-sauder-school-of-business', subject: 'digital', format: 'online',
+      start: '2027-01-11', days: null, price: 995, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/digital-asset-rights-risk-management-fundamentals', end: '2027-02-07', duration: { en: '4 weeks', ar: '4 أسابيع' },
+      title: {
+        en: 'Digital Asset, Rights & Risk Management Fundamentals',
+        ar: 'أساسيات إدارة الأصول الرقمية والحقوق والمخاطر'
+      },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 4 weeks, running 11 January 2027 to 7 February 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 4 أسابيع، من 11 يناير 2027 إلى 7 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-an-introduction-to-labour-relations', school: 's-ubc-sauder-school-of-business', subject: 'people', format: 'in-person',
+      start: '2027-01-13', days: 1, price: 1390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/introduction-labour-relations', end: '2027-01-13',
+      title: { en: 'An Introduction to Labour Relations', ar: 'مقدمة في علاقات العمل' },
+      summary: {
+        en: 'A 1-day on-campus program from UBC Sauder School of Business, running 13 January 2027 to 13 January 2027.',
+        ar: 'برنامج حضوري لمدة يوم واحد من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 13 يناير 2027 إلى 13 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-change-management-fundamentals', school: 's-ubc-sauder-school-of-business', subject: 'people', format: 'online',
+      start: '2027-01-15', days: null, price: 1095, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/change-management-fundamentals', end: '2027-02-12', duration: { en: '4 weeks', ar: '4 أسابيع' },
+      title: { en: 'Change Management Fundamentals', ar: 'أساسيات إدارة التغيير' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 4 weeks, running 15 January 2027 to 12 February 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 4 أسابيع، من 15 يناير 2027 إلى 12 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-analysis-3-course-pack-1', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2027-01-18', days: null, price: 3495, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/business-analysis-3-course-pack-1', end: '2027-04-11', duration: { en: '12 weeks', ar: '12 أسبوعًا' },
+      title: { en: 'Business Analysis 3 Course Pack - 1', ar: 'حزمة تحليل الأعمال المكونة من 3 مقررات - 1' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 12 weeks, running 18 January 2027 to 11 April 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 12 أسبوعًا، من 18 يناير 2027 إلى 11 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-analysis-3-course-pack-2', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2027-01-18', days: null, price: 3495, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/business-analysis-3-course-pack-2', end: '2027-04-11', duration: { en: '12 weeks', ar: '12 أسبوعًا' },
+      title: { en: 'Business Analysis 3 Course Pack - 2', ar: 'حزمة تحليل الأعمال المكونة من 3 مقررات - 2' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 12 weeks, running 18 January 2027 to 11 April 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 12 أسبوعًا، من 18 يناير 2027 إلى 11 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-analysis-strategic-analysis-a', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2027-01-18', days: null, price: 1250, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/business-analysis-strategic-analysis-and-elicitation', end: '2027-02-14', duration: { en: '4 weeks', ar: '4 أسابيع' },
+      title: {
+        en: 'Business Analysis Strategic Analysis and Elicitation',
+        ar: 'التحليل الاستراتيجي واستخلاص المتطلبات في تحليل الأعمال'
+      },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 4 weeks, running 18 January 2027 to 14 February 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 4 أسابيع، من 18 يناير 2027 إلى 14 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-applying-behavioural-science-for-organ', school: 's-ubc-sauder-school-of-business', subject: 'people', format: 'in-person',
-      start: '2027-01-19', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/applying-behavioural-science-organizational-and-social-impact',
+      start: '2027-01-19', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/applying-behavioural-science-organizational-and-social-impact', end: '2027-01-20',
       title: {
         en: 'Applying Behavioural Science for Organizational and Social Impact',
         ar: 'توظيف علم السلوك لتحقيق الأثر التنظيمي والمجتمعي'
@@ -4217,8 +9099,25 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-quiet-strength-communication-strategie', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2027-01-22', days: 1, price: 1390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/quiet-strength-communication-strategies-introverts', end: '2027-01-22',
+      title: {
+        en: 'Quiet Strength: Communication Strategies for Introverts',
+        ar: 'القوة الهادئة: استراتيجيات التواصل للانطوائيين'
+      },
+      summary: {
+        en: 'A 1-day on-campus program from UBC Sauder School of Business, running 22 January 2027 to 22 January 2027.',
+        ar: 'برنامج حضوري لمدة يوم واحد من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 22 يناير 2027 إلى 22 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-building-an-effective-strategy', school: 's-ubc-sauder-school-of-business', subject: 'strategy', format: 'in-person',
-      start: '2027-01-28', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/building-effective-strategy',
+      start: '2027-01-28', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/building-effective-strategy', end: '2027-01-29',
       title: { en: 'Building an Effective Strategy', ar: 'بناء استراتيجية فعالة' },
       summary: {
         en: 'A 2-day on-campus program from UBC Sauder School of Business, running 28 January 2027 to 29 January 2027.',
@@ -4232,11 +9131,11 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-smartsheet-for-project-managers', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
-      start: '2027-02-03', days: 2, price: 995, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/smartsheet-project-managers',
+      start: '2027-02-03', days: null, price: 995, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/smartsheet-project-managers', end: '2027-02-24', duration: { en: '3 weeks', ar: '3 أسابيع' },
       title: { en: 'Smartsheet for Project Managers', ar: 'Smartsheet لمديري المشاريع' },
       summary: {
-        en: 'A 2-day online program from UBC Sauder School of Business, running 3 February 2027 to 24 February 2027.',
-        ar: 'برنامج عبر الإنترنت لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 3 فبراير 2027 إلى 24 فبراير 2027.'
+        en: 'An online program from UBC Sauder School of Business, 3 weeks, running 3 February 2027 to 24 February 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 3 أسابيع، من 3 فبراير 2027 إلى 24 فبراير 2027.'
       },
       highlights: {
         en: [],
@@ -4246,7 +9145,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-strategic-planning-for-non-profit-lead', school: 's-ubc-sauder-school-of-business', subject: 'strategy', format: 'in-person',
-      start: '2027-02-03', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/strategic-planning-non-profit-leaders',
+      start: '2027-02-03', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/strategic-planning-non-profit-leaders', end: '2027-02-04',
       title: { en: 'Strategic Planning for Non-Profit Leaders', ar: 'التخطيط الاستراتيجي لقادة القطاع غير الربحي' },
       summary: {
         en: 'A 2-day on-campus program from UBC Sauder School of Business, running 3 February 2027 to 4 February 2027.',
@@ -4259,8 +9158,22 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-strategic-stakeholder-engagement', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2027-02-08', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/strategic-stakeholder-engagement',
+      id: 'c-business-analysis-bootcamp', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: '2027-02-08', days: null, price: 6990, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/business-analysis-bootcamp-0', end: '2027-05-30', duration: { en: '15 weeks', ar: '15 أسبوعًا' },
+      title: { en: 'Business Analysis Bootcamp', ar: 'معسكر تحليل الأعمال' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 15 weeks, running 8 February 2027 to 30 May 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 15 أسبوعًا، من 8 فبراير 2027 إلى 30 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategic-stakeholder-engagement', school: 's-ubc-sauder-school-of-business', subject: 'strategy', format: 'in-person',
+      start: '2027-02-08', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/strategic-stakeholder-engagement', end: '2027-02-09',
       title: { en: 'Strategic Stakeholder Engagement', ar: 'التواصل الاستراتيجي مع أصحاب المصلحة' },
       summary: {
         en: 'A 2-day on-campus program from UBC Sauder School of Business, running 8 February 2027 to 9 February 2027.',
@@ -4274,14 +9187,14 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-digital-asset-rights-risk-management-b', school: 's-ubc-sauder-school-of-business', subject: 'digital', format: 'online',
-      start: '2027-02-15', days: 9, price: 3495, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/digital-asset-rights-risk-management-bootcamp',
+      start: '2027-02-15', days: null, price: 3495, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/digital-asset-rights-risk-management-bootcamp', end: '2027-04-18', duration: { en: '9 weeks', ar: '9 أسابيع' },
       title: {
         en: 'Digital Asset, Rights & Risk Management Bootcamp',
         ar: 'إدارة الأصول الرقمية والحقوق والمخاطر: برنامج مكثف'
       },
       summary: {
-        en: 'A 9-day online program from UBC Sauder School of Business, running 15 February 2027 to 18 April 2027.',
-        ar: 'برنامج عبر الإنترنت لمدة 9 أيام من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 15 فبراير 2027 إلى 18 أبريل 2027.'
+        en: 'An online program from UBC Sauder School of Business, 9 weeks, running 15 February 2027 to 18 April 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 9 أسابيع، من 15 فبراير 2027 إلى 18 أبريل 2027.'
       },
       highlights: {
         en: [],
@@ -4290,15 +9203,57 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-mini-mba-essential-business-skills', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'online',
-      start: '2027-02-16', days: 11, price: 5650, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/mini-mba-essential-business-skills',
+      id: 'c-product-management-bootcamp', school: 's-ubc-sauder-school-of-business', subject: 'digital', format: 'blended',
+      start: '2027-02-15', days: null, price: 3495, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/product-management-bootcamp', end: '2027-04-25', duration: { en: '2 months', ar: 'شهران' },
+      title: { en: 'Product Management Bootcamp', ar: 'معسكر تدريبي في إدارة المنتجات' },
+      summary: {
+        en: 'A blended program from UBC Sauder School of Business, 2 months, running 15 February 2027 to 25 April 2027.',
+        ar: 'برنامج مدمج من كلية سودر للأعمال بجامعة كولومبيا البريطانية، شهران، من 15 فبراير 2027 إلى 25 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-mini-mba-essential-business-skills', school: 's-ubc-sauder-school-of-business', subject: 'strategy', format: 'online',
+      start: '2027-02-16', days: null, price: 5650, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/mini-mba-essential-business-skills', end: '2027-03-12', duration: { en: '5 weeks', ar: '5 أسابيع' },
       title: {
         en: 'Mini-MBA: Essential Business Skills',
         ar: 'برنامج الماجستير المصغّر في إدارة الأعمال: المهارات الأساسية'
       },
       summary: {
-        en: 'A 11-day online program from UBC Sauder School of Business, running 16 February 2027 to 12 March 2027.',
-        ar: 'برنامج عبر الإنترنت لمدة 11 يومًا من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 16 فبراير 2027 إلى 12 مارس 2027.'
+        en: 'An online program from UBC Sauder School of Business, 5 weeks, running 16 February 2027 to 12 March 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 5 أسابيع، من 16 فبراير 2027 إلى 12 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-change-management-assessing-and-planni', school: 's-ubc-sauder-school-of-business', subject: 'people', format: 'online',
+      start: '2027-02-19', days: null, price: 1095, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/change-management-assessing-and-planning', end: '2027-03-19', duration: { en: '4 weeks', ar: '4 أسابيع' },
+      title: { en: 'Change Management Assessing and Planning', ar: 'إدارة التغيير: التقييم والتخطيط' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 4 weeks, running 19 February 2027 to 19 March 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، 4 أسابيع، من 19 فبراير 2027 إلى 19 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-conflict-management-strategies', school: 's-ubc-sauder-school-of-business', subject: 'negotiation', format: 'in-person',
+      start: '2027-03-02', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/conflict-management-strategies', end: '2027-03-03',
+      title: { en: 'Conflict Management Strategies', ar: 'استراتيجيات إدارة النزاعات' },
+      summary: {
+        en: 'A 2-day on-campus program from UBC Sauder School of Business, running 2 March 2027 to 3 March 2027.',
+        ar: 'برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 2 مارس 2027 إلى 3 مارس 2027.'
       },
       highlights: {
         en: [],
@@ -4308,7 +9263,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-project-management-essentials', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'in-person',
-      start: '2027-03-08', days: 3, price: 2990, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/project-management-essentials',
+      start: '2027-03-08', days: 3, price: 2990, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/project-management-essentials', end: '2027-03-10',
       title: { en: 'Project Management Essentials', ar: 'أساسيات إدارة المشاريع' },
       summary: {
         en: 'A 3-day on-campus program from UBC Sauder School of Business, running 8 March 2027 to 10 March 2027.',
@@ -4321,12 +9276,15 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-women-s-executive-leadership-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-09-22', days: 4, price: 6900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/womens-executive-leadership-program',
-      title: { en: "Women's Executive Leadership Program", ar: 'البرنامج التنفيذي للقيادة النسائية' },
+      id: 'c-financial-statement-analysis-for-non-f', school: 's-ubc-sauder-school-of-business', subject: 'finance', format: 'in-person',
+      start: '2027-06-10', days: 2, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/financial-statement-analysis-non-financial-managers', end: '2027-06-11',
+      title: {
+        en: 'Financial Statement Analysis for Non-Financial Managers',
+        ar: 'تحليل القوائم المالية للمديرين غير الماليين'
+      },
       summary: {
-        en: 'A 4-day on-campus program from UC Berkeley Haas School of Business, running 22 September 2026 to 25 September 2026.',
-        ar: 'برنامج حضوري لمدة 4 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 22 سبتمبر 2026 إلى 25 سبتمبر 2026.'
+        en: 'A 2-day on-campus program from UBC Sauder School of Business, running 10 June 2027 to 11 June 2027.',
+        ar: 'برنامج حضوري لمدة يومين من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 10 يونيو 2027 إلى 11 يونيو 2027.'
       },
       highlights: {
         en: [],
@@ -4335,12 +9293,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-product-management-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'operations', format: 'in-person',
-      start: '2026-09-28', days: 5, price: 7900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/product-management-program',
-      title: { en: 'Product Management Program', ar: 'برنامج إدارة المنتجات' },
+      id: 'c-transform-your-innovation-game', school: 's-ubc-sauder-school-of-business', subject: 'strategy', format: 'in-person',
+      start: '2027-06-15', days: 3, price: 3685, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/transform-your-innovation-game', end: '2027-06-17',
+      title: { en: 'Transform Your Innovation Game', ar: 'حوّل نهجك في الابتكار' },
       summary: {
-        en: 'A 5-day on-campus program from UC Berkeley Haas School of Business, running 28 September 2026 to 2 October 2026.',
-        ar: 'برنامج حضوري لمدة 5 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 28 سبتمبر 2026 إلى 2 أكتوبر 2026.'
+        en: 'A 3-day on-campus program from UBC Sauder School of Business, running 15 June 2027 to 17 June 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية سودر للأعمال بجامعة كولومبيا البريطانية، من 15 يونيو 2027 إلى 17 يونيو 2027.'
       },
       highlights: {
         en: [],
@@ -4349,12 +9307,343 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-advanced-executive-presence-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-09-30', days: 3, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/advanced-executive-presence-program',
-      title: { en: 'Advanced Executive Presence Program', ar: 'البرنامج المتقدم للحضور القيادي' },
+      id: 'c-ai-fundamentals-for-business-transform', school: 's-ubc-sauder-school-of-business', subject: 'digital', format: 'online',
+      start: null, days: null, price: 395, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/ai-fundamentals-business-transformation', duration: { en: '90 days of unlimited access', ar: 'وصول غير محدود لمدة 90 يومًا' },
+      title: { en: 'AI Fundamentals for Business Transformation', ar: 'أساسيات الذكاء الاصطناعي لتحول الأعمال' },
       summary: {
-        en: 'A 3-day on-campus program from UC Berkeley Haas School of Business, running 30 September 2026 to 2 October 2026.',
-        ar: 'برنامج حضوري لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 30 سبتمبر 2026 إلى 2 أكتوبر 2026.'
+        en: 'An online program from UBC Sauder School of Business, 90 days of unlimited access. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، وصول غير محدود لمدة 90 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-for-administrative-professionals', school: 's-ubc-sauder-school-of-business', subject: 'digital', format: 'online',
+      start: null, days: null, price: 395, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/ai-administrative-professionals', duration: { en: '90 days of unlimited access', ar: 'وصول غير محدود لمدة 90 يومًا' },
+      title: { en: 'AI for Administrative Professionals', ar: 'الذكاء الاصطناعي للمهنيين الإداريين' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 90 days of unlimited access. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، وصول غير محدود لمدة 90 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-for-agile-leadership', school: 's-ubc-sauder-school-of-business', subject: 'digital', format: 'online',
+      start: null, days: null, price: 395, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/ai-agile-leadership', duration: { en: '90 days of unlimited access', ar: 'وصول غير محدود لمدة 90 يومًا' },
+      title: { en: 'AI for Agile Leadership', ar: 'الذكاء الاصطناعي للقيادة المرنة' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 90 days of unlimited access. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، وصول غير محدود لمدة 90 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-for-business-analysis', school: 's-ubc-sauder-school-of-business', subject: 'digital', format: 'online',
+      start: null, days: null, price: 395, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/ai-business-analysis', duration: { en: '90 days of unlimited access', ar: 'وصول غير محدود لمدة 90 يومًا' },
+      title: { en: 'AI for Business Analysis', ar: 'الذكاء الاصطناعي لتحليل الأعمال' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 90 days of unlimited access. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، وصول غير محدود لمدة 90 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-for-change-management', school: 's-ubc-sauder-school-of-business', subject: 'digital', format: 'online',
+      start: null, days: null, price: 395, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/ai-change-management', duration: { en: '90 days of unlimited access', ar: 'وصول غير محدود لمدة 90 يومًا' },
+      title: { en: 'AI for Change Management', ar: 'الذكاء الاصطناعي لإدارة التغيير' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 90 days of unlimited access. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، وصول غير محدود لمدة 90 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-for-data-marketing-analytics', school: 's-ubc-sauder-school-of-business', subject: 'digital', format: 'online',
+      start: null, days: null, price: 395, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/ai-data-marketing-analytics', duration: { en: '90 days of unlimited access', ar: 'وصول غير محدود لمدة 90 يومًا' },
+      title: { en: 'AI for Data & Marketing Analytics', ar: 'الذكاء الاصطناعي لتحليلات البيانات والتسويق' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 90 days of unlimited access. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، وصول غير محدود لمدة 90 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-for-everyone', school: 's-ubc-sauder-school-of-business', subject: 'digital', format: 'online',
+      start: null, days: null, price: 395, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/ai-everyone', duration: { en: '90 days of unlimited access', ar: 'وصول غير محدود لمدة 90 يومًا' },
+      title: { en: 'AI for Everyone', ar: 'الذكاء الاصطناعي للجميع' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 90 days of unlimited access. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، وصول غير محدود لمدة 90 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-for-product-management', school: 's-ubc-sauder-school-of-business', subject: 'digital', format: 'online',
+      start: null, days: null, price: 395, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/ai-product-management', duration: { en: '90 days of unlimited access', ar: 'وصول غير محدود لمدة 90 يومًا' },
+      title: { en: 'AI for Product Management', ar: 'الذكاء الاصطناعي لإدارة المنتجات' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 90 days of unlimited access. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، وصول غير محدود لمدة 90 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-for-project-management', school: 's-ubc-sauder-school-of-business', subject: 'digital', format: 'online',
+      start: null, days: null, price: 395, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/ai-project-management', duration: { en: '90 days of unlimited access', ar: 'وصول غير محدود لمدة 90 يومًا' },
+      title: { en: 'AI for Project Management', ar: 'الذكاء الاصطناعي لإدارة المشاريع' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 90 days of unlimited access. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، وصول غير محدود لمدة 90 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-communicating-with-impact-2', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
+      start: null, days: null, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/communicating-impact',
+      title: { en: 'Communicating With Impact', ar: 'التواصل المؤثر' },
+      summary: {
+        en: 'An on-campus program from UBC Sauder School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية سودر للأعمال بجامعة كولومبيا البريطانية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-communication-and-emotional-intelligen', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
+      start: null, days: null, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/communication-and-emotional-intelligence-managers',
+      title: { en: 'Communication and Emotional Intelligence for Managers', ar: 'التواصل والذكاء العاطفي للمديرين' },
+      summary: {
+        en: 'An on-campus program from UBC Sauder School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية سودر للأعمال بجامعة كولومبيا البريطانية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-data-marketing-analytics-bootcamp', school: 's-ubc-sauder-school-of-business', subject: 'marketing', format: 'online',
+      start: null, days: null, price: 4380, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/data-marketing-analytics-bootcamp',
+      title: { en: 'Data & Marketing Analytics Bootcamp', ar: 'معسكر تحليلات البيانات والتسويق' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-digital-transformation', school: 's-ubc-sauder-school-of-business', subject: 'digital', format: 'online',
+      start: null, days: null, price: 1390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/digital-transformation',
+      title: { en: 'Digital Transformation', ar: 'التحول الرقمي' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-elevate-women-at-work', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'in-person',
+      start: null, days: null, price: 2990, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/elevate-women-work',
+      title: { en: 'Elevate: Women at Work', ar: 'Elevate: المرأة في بيئة العمل' },
+      summary: {
+        en: 'An on-campus program from UBC Sauder School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية سودر للأعمال بجامعة كولومبيا البريطانية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-gmat-test-prep', school: 's-ubc-sauder-school-of-business', subject: 'finance', format: 'online',
+      start: null, days: null, price: 1125, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/gmat-test-prep',
+      title: { en: 'GMAT Test Prep', ar: 'التحضير لاختبار GMAT' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-gre-test-prep', school: 's-ubc-sauder-school-of-business', subject: 'finance', format: 'online',
+      start: null, days: null, price: 960, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/gre-test-prep',
+      title: { en: 'GRE Test Prep', ar: 'التحضير لاختبار GRE' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-lean-six-sigma-white-belt', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: null, days: null, price: 195, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/lean-six-sigma-white-belt', duration: { en: '90 days of unlimited access', ar: 'وصول غير محدود لمدة 90 يومًا' },
+      title: { en: 'Lean Six Sigma White Belt', ar: 'الحزام الأبيض في Lean Six Sigma' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 90 days of unlimited access. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، وصول غير محدود لمدة 90 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-perform-be-better-be-smarter-be-strong', school: 's-ubc-sauder-school-of-business', subject: 'people', format: 'online',
+      start: null, days: null, price: 900, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/perform-be-better-be-smarter-be-stronger', duration: { en: '90 days of unlimited access', ar: 'وصول غير محدود لمدة 90 يومًا' },
+      title: { en: 'Perform: Be Better. Be Smarter. Be Stronger', ar: 'الأداء: كن أفضل وأذكى وأقوى' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 90 days of unlimited access. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، وصول غير محدود لمدة 90 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-positive-political-skills-in-the-workp', school: 's-ubc-sauder-school-of-business', subject: 'leadership', format: 'online',
+      start: null, days: null, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/positive-political-skills-workplace',
+      title: { en: 'Positive Political Skills in the Workplace', ar: 'المهارات السياسية الإيجابية في بيئة العمل' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-project-management-3-course-package', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/project-management-3-course-package',
+      title: { en: 'Project Management 3-course Package', ar: 'حزمة إدارة المشاريع من 3 دورات' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-project-management-bootcamp', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
+      start: null, days: null, price: 6995, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/project-management-bootcamp',
+      title: { en: 'Project Management Bootcamp', ar: 'معسكر تدريبي في إدارة المشاريع' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategic-foresight-leading-in-uncerta', school: 's-ubc-sauder-school-of-business', subject: 'strategy', format: 'online',
+      start: null, days: null, price: 2390, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/strategic-foresight-leading-uncertain-times',
+      title: {
+        en: 'Strategic Foresight: Leading in Uncertain Times',
+        ar: 'الاستشراف الاستراتيجي: القيادة في أوقات عدم اليقين'
+      },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-analytics-and-ai-from-data-to', school: 's-uc-berkeley-haas-school-of-business', subject: 'data', format: 'online',
+      start: '2026-09-30', days: null, price: 2825, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/business-analytics-and-ai-data-decisions', end: '2026-12-09', duration: { en: '2 months, 4-6 hours per week', ar: 'شهران، 4–6 ساعات في الأسبوع' },
+      title: {
+        en: 'Business Analytics and AI: From Data to Decisions',
+        ar: 'تحليلات الأعمال والذكاء الاصطناعي: من البيانات إلى القرارات'
+      },
+      summary: {
+        en: 'An online program from UC Berkeley Haas School of Business, 2 months, 4-6 hours per week, running 30 September 2026 to 9 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، شهران، 4–6 ساعات في الأسبوع، من 30 سبتمبر 2026 إلى 9 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-berkeley-executive-program-in-ai-and-d', school: 's-uc-berkeley-haas-school-of-business', subject: 'digital', format: 'blended',
+      start: '2026-10-01', days: null, price: 28000, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/berkeley-executive-program-ai-and-digital-strategy', end: '2027-06-21', duration: { en: '8 months', ar: '8 أشهر' },
+      title: {
+        en: 'Berkeley Executive Program in AI and Digital Strategy',
+        ar: 'برنامج Berkeley التنفيذي في الذكاء الاصطناعي والاستراتيجية الرقمية'
+      },
+      summary: {
+        en: 'A blended program from UC Berkeley Haas School of Business, 8 months, running 1 October 2026 to 21 June 2027.',
+        ar: 'برنامج مدمج من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، 8 أشهر، من 1 أكتوبر 2026 إلى 21 يونيو 2027.'
       },
       highlights: {
         en: [],
@@ -4364,7 +9653,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-financial-data-analysis-for-leaders-pr', school: 's-uc-berkeley-haas-school-of-business', subject: 'finance', format: 'online',
-      start: '2026-10-05', days: 5, price: 5800, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/financial-data-analysis-leaders-program',
+      start: '2026-10-05', days: 5, price: 5800, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/financial-data-analysis-leaders-program', end: '2026-10-09',
       title: { en: 'Financial Data Analysis for Leaders Program', ar: 'برنامج تحليل البيانات المالية للقادة' },
       summary: {
         en: 'A 5-day online program from UC Berkeley Haas School of Business, running 5 October 2026 to 9 October 2026.',
@@ -4377,8 +9666,36 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-product-management-studio-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'digital', format: 'online',
+      start: '2026-10-05', days: null, price: 3700, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/product-management-studio-program', end: '2026-12-17', duration: { en: '8 weeks, 40 hours total', ar: '8 أسابيع، 40 ساعة إجمالًا' },
+      title: { en: 'Product Management Studio Program', ar: 'برنامج استوديو إدارة المنتجات' },
+      summary: {
+        en: 'An online program from UC Berkeley Haas School of Business, 8 weeks, 40 hours total, running 5 October 2026 to 17 December 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، 8 أسابيع، 40 ساعة إجمالًا، من 5 أكتوبر 2026 إلى 17 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-leadership-sprints', school: 's-uc-berkeley-haas-school-of-business', subject: 'digital', format: 'online',
+      start: '2026-10-14', days: null, price: 1400, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/ai-leadership-sprints', end: '2026-11-11', duration: { en: '4 sessions, 2 hours/session', ar: '4 جلسات، ساعتان لكل جلسة' },
+      title: { en: 'AI Leadership Sprints', ar: 'جلسات مكثفة في قيادة الذكاء الاصطناعي' },
+      summary: {
+        en: 'An online program from UC Berkeley Haas School of Business, 4 sessions, 2 hours/session, running 14 October 2026 to 11 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، 4 جلسات، ساعتان لكل جلسة، من 14 أكتوبر 2026 إلى 11 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-leadership-communications-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-10-14', days: 3, price: 5600, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/leadership-communications-program',
+      start: '2026-10-14', days: 3, price: 5600, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/leadership-communications-program', end: '2026-10-16',
       title: { en: 'Leadership Communications Program', ar: 'برنامج التواصل القيادي' },
       summary: {
         en: 'A 3-day on-campus program from UC Berkeley Haas School of Business, running 14 October 2026 to 16 October 2026.',
@@ -4391,8 +9708,50 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-chief-operating-officer-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'operations', format: 'blended',
+      start: '2026-10-16', days: null, price: 20150, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/chief-operating-officer-program', end: '2027-06-04', duration: { en: '7 months', ar: '7 أشهر' },
+      title: { en: 'Chief Operating Officer Program', ar: 'برنامج الرئيس التنفيذي للعمليات' },
+      summary: {
+        en: 'A blended program from UC Berkeley Haas School of Business, 7 months, running 16 October 2026 to 4 June 2027.',
+        ar: 'برنامج مدمج من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، 7 أشهر، من 16 أكتوبر 2026 إلى 4 يونيو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-chief-strategy-officer-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'strategy', format: 'blended',
+      start: '2026-10-21', days: null, price: 20150, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/chief-strategy-officer-program', end: '2027-06-16', duration: { en: '7 months', ar: '7 أشهر' },
+      title: { en: 'Chief Strategy Officer Program', ar: 'برنامج الرئيس التنفيذي للاستراتيجية' },
+      summary: {
+        en: 'A blended program from UC Berkeley Haas School of Business, 7 months, running 21 October 2026 to 16 June 2027.',
+        ar: 'برنامج مدمج من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، 7 أشهر، من 21 أكتوبر 2026 إلى 16 يونيو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-technology-and-ai-leadership', school: 's-uc-berkeley-haas-school-of-business', subject: 'digital', format: 'online',
+      start: '2026-10-22', days: null, price: 7600, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/technology-and-ai-leadership', end: '2027-04-08', duration: { en: '6 months, 4-6 hours per week', ar: '6 أشهر، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Technology and AI Leadership', ar: 'قيادة التقنية والذكاء الاصطناعي' },
+      summary: {
+        en: 'An online program from UC Berkeley Haas School of Business, 6 months, 4-6 hours per week, running 22 October 2026 to 8 April 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، 6 أشهر، 4–6 ساعات في الأسبوع، من 22 أكتوبر 2026 إلى 8 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-the-berkeley-executive-leadership-prog', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-10-26', days: 5, price: 9900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/berkeley-executive-leadership-program',
+      start: '2026-10-26', days: 5, price: 9900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/berkeley-executive-leadership-program', end: '2026-10-30',
       title: { en: 'The Berkeley Executive Leadership Program', ar: 'البرنامج التنفيذي للقيادة في بيركلي' },
       summary: {
         en: 'A 5-day on-campus program from UC Berkeley Haas School of Business, running 26 October 2026 to 30 October 2026.',
@@ -4405,8 +9764,22 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-chief-financial-officer-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'finance', format: 'blended',
+      start: '2026-10-29', days: null, price: 20150, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/chief-financial-officer-program', end: '2027-05-13', duration: { en: '7 months', ar: '7 أشهر' },
+      title: { en: 'Chief Financial Officer Program', ar: 'برنامج الرئيس التنفيذي للشؤون المالية' },
+      summary: {
+        en: 'A blended program from UC Berkeley Haas School of Business, 7 months, running 29 October 2026 to 13 May 2027.',
+        ar: 'برنامج مدمج من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، 7 أشهر، من 29 أكتوبر 2026 إلى 13 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-venture-capital-executive-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'finance', format: 'in-person',
-      start: '2026-11-02', days: 5, price: 8700, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/venture-capital-executive-program',
+      start: '2026-11-02', days: 5, price: 8700, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/venture-capital-executive-program', end: '2026-11-06',
       title: { en: 'Venture Capital Executive Program', ar: 'البرنامج التنفيذي في رأس المال الجريء' },
       summary: {
         en: 'A 5-day on-campus program from UC Berkeley Haas School of Business, running 2 November 2026 to 6 November 2026.',
@@ -4420,7 +9793,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-high-impact-leadership-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-11-04', days: 3, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/high-impact-leadership-program',
+      start: '2026-11-04', days: 3, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/high-impact-leadership-program', end: '2026-11-06',
       title: { en: 'High-Impact Leadership Program', ar: 'برنامج القيادة عالية الأثر' },
       summary: {
         en: 'A 3-day on-campus program from UC Berkeley Haas School of Business, running 4 November 2026 to 6 November 2026.',
@@ -4434,7 +9807,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-leading-strategy-execution-through-cul', school: 's-uc-berkeley-haas-school-of-business', subject: 'strategy', format: 'online',
-      start: '2026-11-04', days: 3, price: 3400, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/leading-strategy-execution-through-culture-program',
+      start: '2026-11-04', days: 3, price: 3400, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/leading-strategy-execution-through-culture-program', end: '2026-11-06',
       title: {
         en: 'Leading Strategy Execution through Culture Program',
         ar: 'برنامج قيادة تنفيذ الاستراتيجية عبر الثقافة المؤسسية'
@@ -4450,8 +9823,8 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-new-manager-boot-camp', school: 's-uc-berkeley-haas-school-of-business', subject: 'people', format: 'in-person',
-      start: '2026-11-04', days: 3, price: 5400, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/new-manager-boot-camp',
+      id: 'c-new-manager-boot-camp', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2026-11-04', days: 3, price: 5400, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/new-manager-boot-camp', end: '2026-11-06',
       title: { en: 'New Manager Boot Camp', ar: 'برنامج تأهيل المدراء الجدد المكثّف' },
       summary: {
         en: 'A 3-day on-campus program from UC Berkeley Haas School of Business, running 4 November 2026 to 6 November 2026.',
@@ -4464,8 +9837,76 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-data-strategy-for-ai-value-creation-go', school: 's-uc-berkeley-haas-school-of-business', subject: 'data', format: 'online',
+      start: '2026-11-05', days: null, price: 2950, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/data-strategy-enabling-ai-driven-competitive-advantage', end: '2027-01-14', duration: { en: '2 months, 4-6 hours per week', ar: 'شهران، 4–6 ساعات في الأسبوع' },
+      title: {
+        en: 'Data Strategy for AI: Value Creation, Governance, and Impact',
+        ar: 'استراتيجية البيانات للذكاء الاصطناعي: خلق القيمة والحوكمة والأثر'
+      },
+      summary: {
+        en: 'An online program from UC Berkeley Haas School of Business, 2 months, 4-6 hours per week, running 5 November 2026 to 14 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، شهران، 4–6 ساعات في الأسبوع، من 5 نوفمبر 2026 إلى 14 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-artificial-intelligence-business-strat', school: 's-uc-berkeley-haas-school-of-business', subject: 'digital', format: 'online',
+      start: '2026-11-12', days: null, price: 3050, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/artificial-intelligence-business-strategies-and-applications', end: '2027-01-28', duration: { en: '2 months, 4-6 hours per week', ar: 'شهران، 4–6 ساعات في الأسبوع' },
+      title: {
+        en: 'Artificial Intelligence: Business Strategies and Applications',
+        ar: 'الذكاء الاصطناعي: استراتيجيات الأعمال وتطبيقاتها'
+      },
+      summary: {
+        en: 'An online program from UC Berkeley Haas School of Business, 2 months, 4-6 hours per week, running 12 November 2026 to 28 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، شهران، 4–6 ساعات في الأسبوع، من 12 نوفمبر 2026 إلى 28 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-digital-transformation-leading-people', school: 's-uc-berkeley-haas-school-of-business', subject: 'digital', format: 'online',
+      start: '2026-11-12', days: null, price: 2850, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/digital-transformation-leading-people-data-technology', end: '2027-01-28', duration: { en: '2 months, 4-6 hours per week', ar: 'شهران، 4–6 ساعات في الأسبوع' },
+      title: {
+        en: 'Digital Transformation: Leading People, Data & Technology',
+        ar: 'التحول الرقمي: قيادة الأفراد والبيانات والتقنية'
+      },
+      summary: {
+        en: 'An online program from UC Berkeley Haas School of Business, 2 months, 4-6 hours per week, running 12 November 2026 to 28 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، شهران، 4–6 ساعات في الأسبوع، من 12 نوفمبر 2026 إلى 28 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-professional-certificate-in-machine-le', school: 's-uc-berkeley-haas-school-of-business', subject: 'data', format: 'online',
+      start: '2026-11-12', days: null, price: 7975, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/professional-certificate-machine-learning-and-artificial-intelligence', end: '2027-06-10', duration: { en: '6 months, 15–20 hours per week', ar: '6 أشهر، 15–20 ساعات في الأسبوع' },
+      title: {
+        en: 'Professional Certificate in Machine Learning and Artificial Intelligence',
+        ar: 'الشهادة المهنية في التعلّم الآلي والذكاء الاصطناعي'
+      },
+      summary: {
+        en: 'An online program from UC Berkeley Haas School of Business, 6 months, 15–20 hours per week, running 12 November 2026 to 10 June 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، 6 أشهر، 15–20 ساعات في الأسبوع، من 12 نوفمبر 2026 إلى 10 يونيو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-negotiation-and-influence-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'negotiation', format: 'in-person',
-      start: '2026-11-18', days: 3, price: 5100, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/negotiation-and-influence-program',
+      start: '2026-11-18', days: 3, price: 5100, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/negotiation-and-influence-program', end: '2026-11-20',
       title: { en: 'Negotiation and Influence Program', ar: 'برنامج التفاوض والتأثير' },
       summary: {
         en: 'A 3-day on-campus program from UC Berkeley Haas School of Business, running 18 November 2026 to 20 November 2026.',
@@ -4479,7 +9920,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-the-berkeley-changemaker-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
-      start: '2026-12-09', days: 3, price: 4500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/berkeley-changemaker-program',
+      start: '2026-12-09', days: 3, price: 4500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/berkeley-changemaker-program', end: '2026-12-11',
       title: { en: 'The Berkeley Changemaker Program', ar: 'برنامج بيركلي لصنّاع التغيير' },
       summary: {
         en: 'A 3-day on-campus program from UC Berkeley Haas School of Business, running 9 December 2026 to 11 December 2026.',
@@ -4492,8 +9933,70 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-leading-complex-projects-strategy-exec', school: 's-uc-berkeley-haas-school-of-business', subject: 'operations', format: 'online',
+      start: '2027-02-04', days: null, price: 2750, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/leading-complex-projects-strategy-execution-and-ai-enabled-impact', end: '2027-04-15', duration: { en: '2 months, 4-6 hours per week', ar: 'شهران، 4–6 ساعات في الأسبوع' },
+      title: {
+        en: 'Leading Complex Projects: Strategy, Execution, and AI-Enabled Impact',
+        ar: 'قيادة المشاريع المعقدة: الاستراتيجية والتنفيذ والأثر المدعوم بالذكاء الاصطناعي'
+      },
+      summary: {
+        en: 'An online program from UC Berkeley Haas School of Business, 2 months, 4-6 hours per week, running 4 February 2027 to 15 April 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، شهران، 4–6 ساعات في الأسبوع، من 4 فبراير 2027 إلى 15 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-chief-technology-officer-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'digital', format: 'blended',
+      start: '2027-03-10', days: null, price: 29000, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/chief-technology-officer-program', end: '2028-03-08', duration: { en: '12 months', ar: '12 شهرًا' },
+      title: { en: 'Chief Technology Officer Program', ar: 'برنامج الرئيس التنفيذي للتقنية' },
+      summary: {
+        en: 'A blended program from UC Berkeley Haas School of Business, 12 months, running 10 March 2027 to 8 March 2028.',
+        ar: 'برنامج مدمج من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، 12 شهرًا، من 10 مارس 2027 إلى 8 مارس 2028.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-product-management-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'digital', format: 'in-person',
+      start: '2027-03-15', days: 5, price: 7900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/product-management-program', end: '2027-03-19',
+      title: { en: 'Product Management Program', ar: 'برنامج إدارة المنتجات' },
+      summary: {
+        en: 'A 5-day on-campus program from UC Berkeley Haas School of Business, running 15 March 2027 to 19 March 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 15 مارس 2027 إلى 19 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-the-berkeley-transformative-chro-leade', school: 's-uc-berkeley-haas-school-of-business', subject: 'people', format: 'blended',
+      start: '2027-03-23', days: null, price: 21700, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/berkeley-transformative-chro-leadership-program-laszlo-bock', end: '2027-05-06', duration: { en: '3 modules over 3 months', ar: '3 وحدات على مدى 3 أشهر' },
+      title: {
+        en: 'The Berkeley Transformative CHRO Leadership Program co-led by Laszlo Bock',
+        ar: 'برنامج Berkeley للقيادة التحويلية لرؤساء الموارد البشرية (CHRO) بقيادة مشتركة مع Laszlo Bock'
+      },
+      summary: {
+        en: 'A blended program from UC Berkeley Haas School of Business, 3 modules over 3 months, running 23 March 2027 to 6 May 2027.',
+        ar: 'برنامج مدمج من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، 3 وحدات على مدى 3 أشهر، من 23 مارس 2027 إلى 6 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-ai-for-executives-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'digital', format: 'in-person',
-      start: '2027-03-29', days: 3, price: 6500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/ai-executives-program',
+      start: '2027-03-29', days: 3, price: 6500, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/ai-executives-program', end: '2027-03-31',
       title: { en: 'AI for Executives Program', ar: 'برنامج الذكاء الاصطناعي للتنفيذيين' },
       summary: {
         en: 'A 3-day on-campus program from UC Berkeley Haas School of Business, running 29 March 2027 to 31 March 2027.',
@@ -4506,12 +10009,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-data-protection-officer-dpo-hsg', school: 's-university-of-st-gallen-executive-scho', subject: 'data', format: 'blended',
-      start: '2026-09-14', days: 15, price: 13500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/data-protection-officer-dpo-hsg/',
-      title: { en: 'Data Protection Officer (DPO HSG)', ar: 'مسؤول حماية البيانات (DPO HSG)' },
+      id: 'c-storytelling-for-business-leaders-prog', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2027-04-07', days: 3, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/storytelling-business-leaders-program', end: '2027-04-09',
+      title: { en: 'Storytelling for Business Leaders Program', ar: 'برنامج فن السرد القصصي لقادة الأعمال' },
       summary: {
-        en: 'A 15-day blended program from University of St. Gallen Executive School, starting 14 September 2026.',
-        ar: 'برنامج مدمج لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 14 سبتمبر 2026.'
+        en: 'A 3-day on-campus program from UC Berkeley Haas School of Business, running 7 April 2027 to 9 April 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 7 أبريل 2027 إلى 9 أبريل 2027.'
       },
       highlights: {
         en: [],
@@ -4520,15 +10023,57 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-hsg-intensivstudium-fur-kommunikation', school: 's-university-of-st-gallen-executive-scho', subject: 'marketing', format: 'in-person',
-      start: '2026-09-14', days: 20, price: 18750, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/hsg-intensivstudium-fuer-kommunikation-und-management-cas/',
+      id: 'c-advanced-executive-presence-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
+      start: '2027-04-28', days: 3, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/advanced-executive-presence-program', end: '2027-04-30',
+      title: { en: 'Advanced Executive Presence Program', ar: 'البرنامج المتقدم للحضور القيادي' },
+      summary: {
+        en: 'A 3-day on-campus program from UC Berkeley Haas School of Business, running 28 April 2027 to 30 April 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، من 28 أبريل 2027 إلى 30 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-catalyst-the-leadership-accelerator-pr', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'online',
+      start: '2027-05-10', days: null, price: 12900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/catalyst-leadership-accelerator-program', end: '2027-12-03', duration: { en: '5 modules over 6 months', ar: '5 وحدات على مدى 6 أشهر' },
+      title: { en: 'Catalyst: The Leadership Accelerator Program', ar: 'Catalyst: برنامج تسريع القيادة' },
+      summary: {
+        en: 'An online program from UC Berkeley Haas School of Business, 5 modules over 6 months, running 10 May 2027 to 3 December 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، 5 وحدات على مدى 6 أشهر، من 10 مايو 2027 إلى 3 ديسمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-chief-executive-officer-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'blended',
+      start: '2027-06-30', days: null, price: 38000, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/chief-executive-officer-program', end: '2028-06-30', duration: { en: '12 months', ar: '12 شهرًا' },
+      title: { en: 'Chief Executive Officer Program', ar: 'برنامج الرئيس التنفيذي' },
+      summary: {
+        en: 'A blended program from UC Berkeley Haas School of Business, 12 months, running 30 June 2027 to 30 June 2028.',
+        ar: 'برنامج مدمج من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، 12 شهرًا، من 30 يونيو 2027 إلى 30 يونيو 2028.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-agentic-ai-strategy-applications-and-o', school: 's-uc-berkeley-haas-school-of-business', subject: 'digital', format: 'online',
+      start: null, days: null, price: 3550, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/agentic-ai-strategy-applications-and-organizational-impact', duration: { en: '5 weeks, 4-5 hours per week', ar: '5 أسابيع، 4–5 ساعات في الأسبوع' },
       title: {
-        en: 'HSG-Intensivstudium für Kommunikation und Management (CAS)',
-        ar: 'CAS HSG دراسة مكثفة في الاتصال والإدارة'
+        en: 'Agentic AI: Strategy, Applications, and Organizational Impact',
+        ar: 'الذكاء الاصطناعي الوكيلي: الاستراتيجية والتطبيقات والأثر التنظيمي'
       },
       summary: {
-        en: 'A 20-day on-campus program from University of St. Gallen Executive School, running 14 September 2026 to 3 October 2026.',
-        ar: 'برنامج حضوري لمدة 20 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 14 سبتمبر 2026 إلى 3 أكتوبر 2026.'
+        en: 'An online program from UC Berkeley Haas School of Business, 5 weeks, 4-5 hours per week. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، 5 أسابيع، 4–5 ساعات في الأسبوع. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -4537,15 +10082,15 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-mindset-matters-selbstmanagement-fur-n', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
-      start: '2026-09-15', days: 3, price: 3450, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/mindset-matters-selbstmanagement-fuer-nachhaltigen-erfolg/',
+      id: 'c-bay-area-executive-leadership-accelera', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'blended',
+      start: null, days: null, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/bay-area-executive-leadership-accelerator', duration: { en: '3 months (11 weeks), 2 hours/week', ar: '3 أشهر (11 أسبوعًا)، ساعتان في الأسبوع' },
       title: {
-        en: 'Mindset Matters – Selbstmanagement für nachhaltigen Erfolg',
-        ar: 'العقلية أساس النجاح – إدارة الذات لتحقيق نجاح مستدام'
+        en: 'Bay Area Executive Leadership Accelerator',
+        ar: 'مسرّعة القيادة التنفيذية في منطقة الخليج (Bay Area)'
       },
       summary: {
-        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 15 September 2026 to 17 September 2026.',
-        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 15 سبتمبر 2026 إلى 17 سبتمبر 2026.'
+        en: 'A blended program from UC Berkeley Haas School of Business, 3 months (11 weeks), 2 hours/week. Dates to be announced by the school.',
+        ar: 'برنامج مدمج من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، 3 أشهر (11 أسبوعًا)، ساعتان في الأسبوع. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -4554,15 +10099,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-st-galler-seminar-fur-familienunterneh', school: 's-university-of-st-gallen-executive-scho', subject: 'entrepreneurship', format: 'in-person',
-      start: '2026-09-15', days: 4, price: 3800, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-galler-seminar-fuer-familienunternehmen-kmu/',
-      title: {
-        en: 'St.Galler Seminar für Familienunternehmen und inhabergeführte Unternehmen',
-        ar: 'برنامج سانت غالن للشركات العائلية والشركات التي يديرها ملاكها'
-      },
+      id: 'c-high-impact-leadership-for-salesforce', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
+      start: null, days: null, price: 3800, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/high-impact-leadership-salesforce-leaders', duration: { en: '8 hours/day', ar: '8 ساعات في اليوم' },
+      title: { en: 'High-Impact Leadership for Salesforce Leaders', ar: 'القيادة عالية التأثير لقادة Salesforce' },
       summary: {
-        en: 'A 4-day on-campus program from University of St. Gallen Executive School, running 15 September 2026 to 18 September 2026.',
-        ar: 'برنامج حضوري لمدة 4 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 15 سبتمبر 2026 إلى 18 سبتمبر 2026.'
+        en: 'An on-campus program from UC Berkeley Haas School of Business, 8 hours/day. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، 8 ساعات في اليوم. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -4571,12 +10113,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-transformation-erfolgreich-gestalten', school: 's-university-of-st-gallen-executive-scho', subject: 'strategy', format: 'in-person',
-      start: '2026-09-16', days: 4, price: 4700, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/transformation-erfolgreich-gestalten/',
-      title: { en: 'Transformation erfolgreich gestalten', ar: 'تحقيق التحول بنجاح' },
+      id: 'c-leadership-academy-for-womens-sports', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
+      start: null, days: 3, price: 5900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/leadership-academy-womens-sports',
+      title: { en: 'Leadership Academy for Women’s Sports', ar: 'أكاديمية القيادة للرياضة النسائية' },
       summary: {
-        en: 'A 4-day on-campus program from University of St. Gallen Executive School, running 16 September 2026 to 19 September 2026.',
-        ar: 'برنامج حضوري لمدة 4 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 16 سبتمبر 2026 إلى 19 سبتمبر 2026.'
+        en: 'A 3-day on-campus program from UC Berkeley Haas School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 3 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -4585,12 +10127,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-financial-performance-management', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
-      start: '2026-09-17', days: 2, price: 2250, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/financial-performance-management/',
-      title: { en: 'Financial Performance Management', ar: 'إدارة الأداء المالي' },
+      id: 'c-mfe-math-foundations-for-financial-eng', school: 's-uc-berkeley-haas-school-of-business', subject: 'finance', format: 'blended',
+      start: null, days: null, price: 1995, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/mfe-math-foundations-financial-engineers',
+      title: { en: 'MFE - Math Foundations for Financial Engineers', ar: 'MFE – الأسس الرياضية للمهندسين الماليين' },
       summary: {
-        en: 'A 2-day on-campus program from University of St. Gallen Executive School, running 17 September 2026 to 18 September 2026.',
-        ar: 'برنامج حضوري لمدة يومين من المدرسة التنفيذية بجامعة سانت غالن، من 17 سبتمبر 2026 إلى 18 سبتمبر 2026.'
+        en: 'A blended program from UC Berkeley Haas School of Business. Dates to be announced by the school.',
+        ar: 'برنامج مدمج من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -4599,12 +10141,82 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-risk-management-online-seminar', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'online',
-      start: '2026-09-18', days: 5, price: 1900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/risk-management-online-seminar/',
+      id: 'c-mfe-python-for-financial-engineers-cou', school: 's-uc-berkeley-haas-school-of-business', subject: 'finance', format: 'blended',
+      start: null, days: null, price: 1995, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/mfe-python-financial-engineers-course',
+      title: { en: 'MFE - Python for Financial Engineers Course', ar: 'MFE – برنامج Python للمهندسين الماليين' },
+      summary: {
+        en: 'A blended program from UC Berkeley Haas School of Business. Dates to be announced by the school.',
+        ar: 'برنامج مدمج من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-mfe-statistics-for-financial-engineers', school: 's-uc-berkeley-haas-school-of-business', subject: 'finance', format: 'blended',
+      start: null, days: null, price: 1995, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/mfe-statistics-financial-engineers',
+      title: { en: 'MFE - Statistics for Financial Engineers', ar: 'MFE – الإحصاء للمهندسين الماليين' },
+      summary: {
+        en: 'A blended program from UC Berkeley Haas School of Business. Dates to be announced by the school.',
+        ar: 'برنامج مدمج من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-marketing-analytics-and-ai', school: 's-uc-berkeley-haas-school-of-business', subject: 'marketing', format: 'online',
+      start: null, days: null, price: 2650, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/marketing-analytics-and-ai', duration: { en: '2 months, 4-6 hours per week', ar: 'شهران، 4–6 ساعات في الأسبوع' },
+      title: { en: 'Marketing Analytics and AI', ar: 'تحليلات التسويق والذكاء الاصطناعي' },
+      summary: {
+        en: 'An online program from UC Berkeley Haas School of Business, 2 months, 4-6 hours per week. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي، شهران، 4–6 ساعات في الأسبوع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-women-s-executive-leadership-program', school: 's-uc-berkeley-haas-school-of-business', subject: 'leadership', format: 'in-person',
+      start: null, days: 4, price: 6900, langs: ['en'], popularity: 50, sourceUrl: 'https://executive.berkeley.edu/programs/womens-executive-leadership-program',
+      title: { en: "Women's Executive Leadership Program", ar: 'البرنامج التنفيذي للقيادة النسائية' },
+      summary: {
+        en: 'A 4-day on-campus program from UC Berkeley Haas School of Business. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 4 أيام من كلية هاس للأعمال بجامعة كاليفورنيا في بيركلي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-meet-the-experts', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'blended',
+      start: '2026-09-01', days: null, price: 5900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/meet-the-experts/', duration: { en: '10 Months', ar: '10 أشهر' },
+      title: { en: 'Meet the Experts', ar: 'لقاء الخبراء' },
+      summary: {
+        en: 'A blended program from University of St. Gallen Executive School, 10 Months, starting 1 September 2026.',
+        ar: 'برنامج مدمج من المدرسة التنفيذية بجامعة سانت غالن، 10 أشهر، يبدأ في 1 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-risk-management-online-seminar', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'online',
+      start: '2026-09-18', days: 5, price: 1900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/risk-management-online-seminar/', end: '2026-10-02',
       title: { en: 'Risk Management Online Seminar', ar: 'إدارة المخاطر – برنامج عبر الإنترنت' },
       summary: {
-        en: 'A 5-day online program from University of St. Gallen Executive School, starting 18 September 2026.',
-        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 18 سبتمبر 2026.'
+        en: 'A 5-day online program from University of St. Gallen Executive School, running 18 September 2026 to 2 October 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 18 سبتمبر 2026 إلى 2 أكتوبر 2026.'
       },
       highlights: {
         en: [],
@@ -4613,12 +10225,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-cas-leading-sustainable-business-innov', school: 's-university-of-st-gallen-executive-scho', subject: 'sustainability', format: 'in-person',
-      start: '2026-09-21', days: 15, price: 13800, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-leading-sustainable-business-innovation/',
-      title: { en: 'CAS Leading Sustainable Business Innovation', ar: 'CAS قيادة الابتكار المستدام في الأعمال' },
+      id: 'c-recyclingmanager-cas-hsg', school: 's-university-of-st-gallen-executive-scho', subject: 'sustainability', format: 'blended',
+      start: '2026-09-23', days: 19, price: 13000, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/recyclingmanager-cas-hsg/',
+      title: { en: 'Recyclingmanager CAS-HSG', ar: 'مدير إعادة التدوير CAS-HSG' },
       summary: {
-        en: 'A 15-day on-campus program from University of St. Gallen Executive School, running 21 September 2026 to 5 October 2026.',
-        ar: 'برنامج حضوري لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 21 سبتمبر 2026 إلى 5 أكتوبر 2026.'
+        en: 'A 19-day blended program from University of St. Gallen Executive School, starting 23 September 2026.',
+        ar: 'برنامج مدمج لمدة 19 يومًا من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 23 سبتمبر 2026.'
       },
       highlights: {
         en: [],
@@ -4627,12 +10239,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-sustainable-business-model-innovation', school: 's-university-of-st-gallen-executive-scho', subject: 'sustainability', format: 'in-person',
-      start: '2026-09-21', days: 5, price: 4500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-leading-sustainable-business-innovation-m3/',
-      title: { en: 'Sustainable Business Model Innovation', ar: 'ابتكار نماذج الأعمال المستدامة' },
+      id: 'c-politische-zusammenarbeit', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-10-01', days: 5, price: 4100, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/politische-zusammenarbeit/',
+      title: { en: 'Politische Zusammenarbeit', ar: 'التعاون السياسي' },
       summary: {
-        en: 'A 5-day on-campus program from University of St. Gallen Executive School, running 21 September 2026 to 25 September 2026.',
-        ar: 'برنامج حضوري لمدة 5 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 21 سبتمبر 2026 إلى 25 سبتمبر 2026.'
+        en: 'A 5-day on-campus program from University of St. Gallen Executive School, running 1 October 2026 to 5 October 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 1 أكتوبر 2026 إلى 5 أكتوبر 2026.'
       },
       highlights: {
         en: [],
@@ -4641,24 +10253,7 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-strategische-organisationsentwicklung', school: 's-university-of-st-gallen-executive-scho', subject: 'strategy', format: 'in-person',
-      start: '2026-09-28', days: 4, price: 4900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/strategische-organisationsentwicklung-und-restrukturierung/',
-      title: {
-        en: 'Strategische Organisationsentwicklung und Restrukturierung',
-        ar: 'التطوير التنظيمي الاستراتيجي وإعادة الهيكلة'
-      },
-      summary: {
-        en: 'A 4-day on-campus program from University of St. Gallen Executive School, running 28 September 2026 to 1 October 2026.',
-        ar: 'برنامج حضوري لمدة 4 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 28 سبتمبر 2026 إلى 1 أكتوبر 2026.'
-      },
-      highlights: {
-        en: [],
-        ar: []
-      },
-      audience: { en: '', ar: '' }
-    },
-    {
-      id: 'c-weiterbildung-fur-politik-cas-kommunik', school: 's-university-of-st-gallen-executive-scho', subject: 'negotiation', format: 'in-person',
+      id: 'c-weiterbildung-fur-politik-cas-kommunik', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
       start: '2026-10-01', days: 17, price: 11500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/weiterbildung-fuer-politik-cas-kommunikation-und-verhandlung-in-der-politik-public-affairs/',
       title: {
         en: 'Weiterbildung für Politik – CAS Kommunikation und Politik',
@@ -4675,12 +10270,85 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-weiterbildung-fur-politik-st-galler-di', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-10-01', days: 35, price: 33500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/weiterbildung-fuer-politik-st-galler-diplom-fuer-politik-das/',
+      title: {
+        en: 'Weiterbildung für Politik – St.Galler Diplom für Politik (DAS)',
+        ar: 'التعليم المستمر للسياسة – دبلوم St.Gallen في السياسة (DAS)'
+      },
+      summary: {
+        en: 'A 35-day on-campus program from University of St. Gallen Executive School, running 1 October 2026 to 4 November 2026.',
+        ar: 'برنامج حضوري لمدة 35 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 1 أكتوبر 2026 إلى 4 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-basisseminar-fit-for-insurance', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
+      start: '2026-10-05', days: 3, price: 2600, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/basisseminar-fit-for-insurance/',
+      title: { en: 'Basisseminar Fit for Insurance', ar: 'الندوة التأسيسية Fit for Insurance' },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 5 October 2026 to 7 October 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 5 أكتوبر 2026 إلى 7 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ki-und-management-intensivseminar', school: 's-university-of-st-gallen-executive-scho', subject: 'digital', format: 'in-person',
+      start: '2026-10-06', days: 3, price: 3900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/ki-und-management-intensivseminar/',
+      title: { en: 'KI und Management Intensivseminar', ar: 'ندوة مكثفة في الذكاء الاصطناعي والإدارة' },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 6 October 2026 to 8 October 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 6 أكتوبر 2026 إلى 8 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-your-path-to-a-board-seat', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'online',
-      start: '2026-10-06', days: 2, price: 595, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/your-path-to-a-board-seat/',
+      start: '2026-10-06', days: null, price: 595, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/your-path-to-a-board-seat/', duration: { en: '2 sessions, 17.00-19.30 (CEST)', ar: 'جلستان، 17:00–19:30 (بتوقيت وسط أوروبا الصيفي CEST)' },
       title: { en: 'Your Path to a Board Seat', ar: 'طريقك إلى مقعد في مجلس الإدارة' },
       summary: {
-        en: 'A 2-day online program from University of St. Gallen Executive School, starting 6 October 2026.',
-        ar: 'برنامج عبر الإنترنت لمدة يومين من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 6 أكتوبر 2026.'
+        en: 'An online program from University of St. Gallen Executive School, 2 sessions, 17.00-19.30 (CEST), starting 6 October 2026.',
+        ar: 'برنامج عبر الإنترنت من المدرسة التنفيذية بجامعة سانت غالن، جلستان، 17:00–19:30 (بتوقيت وسط أوروبا الصيفي CEST)، يبدأ في 6 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-fuhrungskompetenz-kmu', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-10-08', days: 6, price: 4500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/fuehrungskompetenz-kmu/',
+      title: { en: 'Führungskompetenz KMU', ar: 'الكفاءة القيادية للمنشآت الصغيرة والمتوسطة' },
+      summary: {
+        en: 'A 6-day on-campus program from University of St. Gallen Executive School, running 8 October 2026 to 13 October 2026.',
+        ar: 'برنامج حضوري لمدة 6 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 8 أكتوبر 2026 إلى 13 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-st-gallen-ai-bootcamp', school: 's-university-of-st-gallen-executive-scho', subject: 'digital', format: 'online',
+      start: '2026-10-08', days: null, price: 1950, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-gallen-ai-bootcamp/', duration: { en: '2 Wochen (4 Live-Sessions à 90 min.)', ar: 'أسبوعان (4 جلسات مباشرة، مدة كل منها 90 دقيقة)' },
+      title: { en: 'St.Gallen AI Bootcamp', ar: 'معسكر St.Gallen للذكاء الاصطناعي' },
+      summary: {
+        en: 'An online program from University of St. Gallen Executive School, 2 Wochen (4 Live-Sessions à 90 min.), starting 8 October 2026.',
+        ar: 'برنامج عبر الإنترنت من المدرسة التنفيذية بجامعة سانت غالن، أسبوعان (4 جلسات مباشرة، مدة كل منها 90 دقيقة)، يبدأ في 8 أكتوبر 2026.'
       },
       highlights: {
         en: [],
@@ -4704,7 +10372,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-change-the-real-estate-industry', school: 's-university-of-st-gallen-executive-scho', subject: 'strategy', format: 'in-person',
-      start: '2026-10-14', days: 3, price: 3960, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/change-the-real-estate-industry/',
+      start: '2026-10-14', days: 3, price: 3960, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/change-the-real-estate-industry/', end: '2026-10-16',
       title: { en: 'Change the Real Estate Industry', ar: 'إعادة تشكيل صناعة العقار' },
       summary: {
         en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 14 October 2026 to 16 October 2026.',
@@ -4717,8 +10385,39 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-executive-diploma-hsg-it-business-mana', school: 's-university-of-st-gallen-executive-scho', subject: 'digital', format: 'in-person',
+      start: '2026-10-14', days: 36, price: 30515, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/executive-diploma-hsg-it-business-management/',
+      title: {
+        en: 'Executive Diploma HSG IT Business Management',
+        ar: 'الدبلوم التنفيذي HSG في إدارة أعمال تقنية المعلومات'
+      },
+      summary: {
+        en: 'A 36-day on-campus program from University of St. Gallen Executive School, running 14 October 2026 to 18 November 2026.',
+        ar: 'برنامج حضوري لمدة 36 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 14 أكتوبر 2026 إلى 18 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leadership-kmu', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-10-14', days: 8, price: 8500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/leadership-kmu/',
+      title: { en: 'Leadership KMU', ar: 'القيادة في المنشآت الصغيرة والمتوسطة' },
+      summary: {
+        en: 'A 8-day on-campus program from University of St. Gallen Executive School, running 14 October 2026 to 21 October 2026.',
+        ar: 'برنامج حضوري لمدة 8 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 14 أكتوبر 2026 إلى 21 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-senior-management-programm-cas-hsg', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
-      start: '2026-10-20', days: 16, price: 20200, currency: 'CHF', langs: ['de'], featured: true, popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/senior-management-programm-cas-hsg/',
+      start: '2026-10-20', days: 16, price: 20200, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/senior-management-programm-cas-hsg/',
       title: { en: 'Senior Management Programm CAS HSG', ar: 'برنامج الإدارة العليا CAS HSG' },
       summary: {
         en: 'A 16-day on-campus program from University of St. Gallen Executive School, running 20 October 2026 to 4 November 2026.',
@@ -4731,12 +10430,133 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-board-essentials', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      id: 'c-ai-agent-security', school: 's-university-of-st-gallen-executive-scho', subject: 'digital', format: 'online',
+      start: '2026-10-21', days: null, price: 2490, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/ai-agent-security/', duration: { en: '18 hours over 6 weeks', ar: '18 ساعة على مدى 6 أسابيع' },
+      title: { en: 'AI Agent Security', ar: 'أمن وكلاء الذكاء الاصطناعي' },
+      summary: {
+        en: 'An online program from University of St. Gallen Executive School, 18 hours over 6 weeks, starting 21 October 2026.',
+        ar: 'برنامج عبر الإنترنت من المدرسة التنفيذية بجامعة سانت غالن، 18 ساعة على مدى 6 أسابيع، يبدأ في 21 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-aiming-higher-womens-leadership-progra', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'online',
+      start: '2026-10-22', days: null, price: 5500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/aiming-higher-womens-leadership-programme/', duration: {
+        en: '7 half-day modules and 6-month mentoring programme',
+        ar: '7 وحدات مدة كل منها نصف يوم، وبرنامج إرشاد لمدة 6 أشهر'
+      },
+      title: { en: 'Aiming Higher Women’s Leadership Programme', ar: 'برنامج Aiming Higher للقيادة النسائية' },
+      summary: {
+        en: 'An online program from University of St. Gallen Executive School, 7 half-day modules and 6-month mentoring programme, starting 22 October 2026.',
+        ar: 'برنامج عبر الإنترنت من المدرسة التنفيذية بجامعة سانت غالن، 7 وحدات مدة كل منها نصف يوم، وبرنامج إرشاد لمدة 6 أشهر، يبدأ في 22 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cas-performance-management-intensiv', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
+      start: '2026-10-22', days: null, price: 18900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-performance-management-intensiv/', duration: { en: '9 x 2 Tage', ar: '9 وحدات، مدة كل منها يومان' },
+      title: { en: 'CAS Performance Management intensiv', ar: 'CAS إدارة الأداء المكثفة' },
+      summary: {
+        en: 'An on-campus program from University of St. Gallen Executive School, 9 x 2 Tage, starting 22 October 2026.',
+        ar: 'برنامج حضوري من المدرسة التنفيذية بجامعة سانت غالن، 9 وحدات، مدة كل منها يومان، يبدأ في 22 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-interessenvertretung-lobbying-und-komm', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-10-22', days: 5, price: 4600, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/kommunikationstraining/',
+      title: {
+        en: 'Interessenvertretung | Lobbying und Kommunikationstraining',
+        ar: 'تمثيل المصالح | كسب التأييد والتدريب على مهارات التواصل'
+      },
+      summary: {
+        en: 'A 5-day on-campus program from University of St. Gallen Executive School, running 22 October 2026 to 26 October 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 22 أكتوبر 2026 إلى 26 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-weiterbildung-fur-politik-cas-wirtscha', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-10-22', days: 17, price: 11500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-weiterbildung-fuer-politik-wirtschaft-und-politik/',
+      title: {
+        en: 'Weiterbildung für Politik – CAS Wirtschaft und Politik',
+        ar: 'التعليم المستمر للسياسة – CAS الاقتصاد والسياسة'
+      },
+      summary: {
+        en: 'A 17-day on-campus program from University of St. Gallen Executive School, running 22 October 2026 to 7 November 2026.',
+        ar: 'برنامج حضوري لمدة 17 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 22 أكتوبر 2026 إلى 7 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-board-essentials', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'blended',
       start: '2026-10-23', days: 8, price: 12500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/board-essentials/',
       title: { en: 'Board Essentials', ar: 'أساسيات مجالس الإدارة' },
       summary: {
-        en: 'A 8-day on-campus program from University of St. Gallen Executive School, running 23 October 2026 to 30 October 2026.',
-        ar: 'برنامج حضوري لمدة 8 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 23 أكتوبر 2026 إلى 30 أكتوبر 2026.'
+        en: 'A 8-day blended program from University of St. Gallen Executive School, starting 23 October 2026.',
+        ar: 'برنامج مدمج لمدة 8 أيام من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 23 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cas-leadership-development-program', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-10-26', days: null, price: 22800, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-leadership-development-program/', duration: { en: '18-24 Tage', ar: '18–24 يومًا' },
+      title: { en: 'CAS Leadership Development Program', ar: 'CAS برنامج تطوير القيادات' },
+      summary: {
+        en: 'An on-campus program from University of St. Gallen Executive School, 18-24 Tage, starting 26 October 2026.',
+        ar: 'برنامج حضوري من المدرسة التنفيذية بجامعة سانت غالن، 18–24 يومًا، يبدأ في 26 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-management-for-the-legal-profession-ca', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'in-person',
+      start: '2026-10-26', days: 15, price: 13500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/management-for-the-legal-profession-cas/',
+      title: { en: 'Management for the Legal Profession CAS-HSG', ar: 'الإدارة للمهن القانونية CAS-HSG' },
+      summary: {
+        en: 'A 15-day on-campus program from University of St. Gallen Executive School, running 26 October 2026 to 9 November 2026.',
+        ar: 'برنامج حضوري لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 26 أكتوبر 2026 إلى 9 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-management-for-the-legal-profession-da', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'in-person',
+      start: '2026-10-26', days: 45, price: 39000, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/management-for-the-legal-profession-das/',
+      title: { en: 'Management for the Legal Profession DAS-HSG', ar: 'الإدارة للمهن القانونية DAS-HSG' },
+      summary: {
+        en: 'A 45-day on-campus program from University of St. Gallen Executive School, running 26 October 2026 to 9 December 2026.',
+        ar: 'برنامج حضوري لمدة 45 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 26 أكتوبر 2026 إلى 9 ديسمبر 2026.'
       },
       highlights: {
         en: [],
@@ -4759,12 +10579,82 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-das-law-management-programm-cas-hsg', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'in-person',
+      start: '2026-10-28', days: 15, price: 13500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/das-law-management-programm-cas/',
+      title: { en: 'Das Law & Management Programm CAS-HSG', ar: 'CAS-HSG برنامج القانون والإدارة' },
+      summary: {
+        en: 'A 15-day on-campus program from University of St. Gallen Executive School, running 28 October 2026 to 11 November 2026.',
+        ar: 'برنامج حضوري لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 28 أكتوبر 2026 إلى 11 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-das-law-management-programm-das-hsg', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'in-person',
+      start: '2026-10-28', days: 45, price: 39000, currency: 'CHF', langs: ['de'], featured: true, popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/das-law-management-programm-das/',
+      title: { en: 'Das Law & Management Programm DAS-HSG', ar: 'DAS-HSG برنامج القانون والإدارة' },
+      summary: {
+        en: 'A 45-day on-campus program from University of St. Gallen Executive School, running 28 October 2026 to 11 December 2026.',
+        ar: 'برنامج حضوري لمدة 45 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 28 أكتوبر 2026 إلى 11 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-development', school: 's-university-of-st-gallen-executive-scho', subject: 'strategy', format: 'in-person',
+      start: '2026-11-02', days: 3, price: 3900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/business-development/',
+      title: { en: 'Business Development', ar: 'تطوير الأعمال' },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 2 November 2026 to 4 November 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 2 نوفمبر 2026 إلى 4 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cas-leading-sustainable-business-innov', school: 's-university-of-st-gallen-executive-scho', subject: 'sustainability', format: 'blended',
+      start: '2026-11-02', days: 15, price: 13800, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-leading-sustainable-business-innovation/',
+      title: { en: 'CAS Leading Sustainable Business Innovation', ar: 'CAS قيادة الابتكار المستدام في الأعمال' },
+      summary: {
+        en: 'A 15-day blended program from University of St. Gallen Executive School, starting 2 November 2026.',
+        ar: 'برنامج مدمج لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 2 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-erfolgreich-verhandeln-cas-hsg', school: 's-university-of-st-gallen-executive-scho', subject: 'negotiation', format: 'in-person',
       start: '2026-11-02', days: 20, price: 19500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/erfolgreich-verhandeln-cas/',
       title: { en: 'Erfolgreich verhandeln CAS HSG', ar: 'CAS HSG التفاوض الناجح' },
       summary: {
         en: 'A 20-day on-campus program from University of St. Gallen Executive School, running 2 November 2026 to 21 November 2026.',
         ar: 'برنامج حضوري لمدة 20 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 2 نوفمبر 2026 إلى 21 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-existenzielles-leadership-kurs', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-11-02', days: 10, price: 7400, currency: 'EUR', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/existenzielles-leadership-10-tage/',
+      title: { en: 'Existenzielles Leadership – Kurs', ar: 'القيادة الوجودية – دورة' },
+      summary: {
+        en: 'A 10-day on-campus program from University of St. Gallen Executive School, running 2 November 2026 to 11 November 2026.',
+        ar: 'برنامج حضوري لمدة 10 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 2 نوفمبر 2026 إلى 11 نوفمبر 2026.'
       },
       highlights: {
         en: [],
@@ -4801,6 +10691,197 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-ai-and-data-for-insurance-leaders', school: 's-university-of-st-gallen-executive-scho', subject: 'data', format: 'online',
+      start: '2026-11-03', days: null, price: 1900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/ai-and-data-for-insurance-executives/', duration: { en: '4 weeks (15 hours)', ar: '4 أسابيع (15 ساعة)' },
+      title: { en: 'AI and Data for Insurance Leaders', ar: 'الذكاء الاصطناعي والبيانات لقادة قطاع التأمين' },
+      summary: {
+        en: 'An online program from University of St. Gallen Executive School, 4 weeks (15 hours), starting 3 November 2026.',
+        ar: 'برنامج عبر الإنترنت من المدرسة التنفيذية بجامعة سانت غالن، 4 أسابيع (15 ساعة)، يبدأ في 3 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-finanzielle-fuhrung-fur-executives', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
+      start: '2026-11-05', days: null, price: 7500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/finanzielle-fuehrung-fuer-executives/', duration: { en: '3 -4 x 2 Tage', ar: '3–4 وحدات، مدة كل منها يومان' },
+      title: { en: 'Finanzielle Führung für Executives', ar: 'القيادة المالية للتنفيذيين' },
+      summary: {
+        en: 'An on-campus program from University of St. Gallen Executive School, 3 -4 x 2 Tage, starting 5 November 2026.',
+        ar: 'برنامج حضوري من المدرسة التنفيذية بجامعة سانت غالن، 3–4 وحدات، مدة كل منها يومان، يبدأ في 5 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-advanced-management-program-cas', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-11-09', days: 28, price: 28800, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-advanced-management-program/',
+      title: { en: 'Advanced Management Program (CAS)', ar: 'برنامج الإدارة المتقدمة (CAS)' },
+      summary: {
+        en: 'A 28-day on-campus program from University of St. Gallen Executive School, running 9 November 2026 to 6 December 2026.',
+        ar: 'برنامج حضوري لمدة 28 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 9 نوفمبر 2026 إلى 6 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-das-leadership-development-program', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-11-09', days: 41, price: 38000, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/das-leadership-development-program/',
+      title: { en: 'DAS Leadership Development Program', ar: 'DAS برنامج تطوير القيادات' },
+      summary: {
+        en: 'A 41-day on-campus program from University of St. Gallen Executive School, running 9 November 2026 to 19 December 2026.',
+        ar: 'برنامج حضوري لمدة 41 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 9 نوفمبر 2026 إلى 19 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-st-galler-leadership-and-transformatio', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-11-09', days: 15, price: 19800, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-galler-leadership-transformation-zertifikat/',
+      title: {
+        en: 'St. Galler Leadership and Transformation Zertifikat CAS HSG',
+        ar: 'شهادة St.Gallen في القيادة والتحول (CAS HSG)'
+      },
+      summary: {
+        en: 'A 15-day on-campus program from University of St. Gallen Executive School, running 9 November 2026 to 23 November 2026.',
+        ar: 'برنامج حضوري لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 9 نوفمبر 2026 إلى 23 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-hsg-intensivseminar-b2b-marketing-und', school: 's-university-of-st-gallen-executive-scho', subject: 'marketing', format: 'in-person',
+      start: '2026-11-10', days: 3, price: 3900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/hsg-intensivseminar-b2b-marketing/',
+      title: {
+        en: 'HSG-Intensivseminar B2B Marketing und Sales',
+        ar: 'ندوة HSG المكثفة في التسويق والمبيعات بين الشركات (B2B)'
+      },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 10 November 2026 to 12 November 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 10 نوفمبر 2026 إلى 12 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-st-galler-eherechtstagung', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'blended',
+      start: '2026-11-12', days: 1, price: 590, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-galler-eherechtstagung/',
+      title: { en: 'St.Galler Eherechtstagung', ar: 'مؤتمر St.Gallen لقانون الزواج' },
+      summary: {
+        en: 'A 1-day blended program from University of St. Gallen Executive School, starting 12 November 2026.',
+        ar: 'برنامج مدمج لمدة يوم واحد من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 12 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-st-galler-management-seminar-fur-kmu-c', school: 's-university-of-st-gallen-executive-scho', subject: 'entrepreneurship', format: 'in-person',
+      start: '2026-11-12', days: 20, price: 14900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-galler-management-seminar-fuer-kmu-cas/', duration: { en: 'over 8 to 9 months in 8 blocks', ar: 'على مدى 8 إلى 9 أشهر في 8 وحدات' },
+      title: {
+        en: 'St.Galler Management Seminar für KMU (CAS)',
+        ar: 'ندوة St.Gallen للإدارة للمنشآت الصغيرة والمتوسطة (CAS)'
+      },
+      summary: {
+        en: 'A 20-day on-campus program from University of St. Gallen Executive School, running 12 November 2026 to 1 December 2026.',
+        ar: 'برنامج حضوري لمدة 20 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 12 نوفمبر 2026 إلى 1 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategy-powered-through-ai', school: 's-university-of-st-gallen-executive-scho', subject: 'strategy', format: 'in-person',
+      start: '2026-11-12', days: null, price: 2900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/strategy-powered-through-ai/', duration: { en: 'On-Campus: 2 days | Self-Study: 3 – 5h', ar: 'في الحرم الجامعي: يومان | دراسة ذاتية: 3–5 ساعات' },
+      title: { en: 'Strategy, Powered Through AI', ar: 'الاستراتيجية بقوة الذكاء الاصطناعي' },
+      summary: {
+        en: 'An on-campus program from University of St. Gallen Executive School, On-Campus: 2 days | Self-Study: 3 – 5h, starting 12 November 2026.',
+        ar: 'برنامج حضوري من المدرسة التنفيذية بجامعة سانت غالن، في الحرم الجامعي: يومان | دراسة ذاتية: 3–5 ساعات، يبدأ في 12 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-st-gallen-board-conference', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-11-13', days: 1, price: 1950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-gallen-board-conference/',
+      title: { en: 'St.Gallen Board Conference', ar: 'مؤتمر مجالس الإدارة في سانت غالن' },
+      summary: {
+        en: 'A 1-day on-campus program from University of St. Gallen Executive School, running 13 November 2026 to 13 November 2026.',
+        ar: 'برنامج حضوري لمدة يوم واحد من المدرسة التنفيذية بجامعة سانت غالن، من 13 نوفمبر 2026 إلى 13 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-compliance-management-cas-hsg', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'in-person',
+      start: '2026-11-16', days: 15, price: 13500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/compliance-management-cas/',
+      title: { en: 'Compliance Management CAS-HSG', ar: 'CAS-HSG إدارة الامتثال' },
+      summary: {
+        en: 'A 15-day on-campus program from University of St. Gallen Executive School, running 16 November 2026 to 30 November 2026.',
+        ar: 'برنامج حضوري لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 16 نوفمبر 2026 إلى 30 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-grundlagen-in-general-management-cas-h', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-11-16', days: null, price: 17500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/grundlagen-in-general-management-cas-hsg/', duration: { en: '17 oder 18 Tage', ar: '17 أو 18 يومًا' },
+      title: { en: 'Grundlagen in General Management CAS HSG', ar: 'أسس الإدارة العامة CAS HSG' },
+      summary: {
+        en: 'An on-campus program from University of St. Gallen Executive School, 17 oder 18 Tage, starting 16 November 2026.',
+        ar: 'برنامج حضوري من المدرسة التنفيذية بجامعة سانت غالن، 17 أو 18 يومًا، يبدأ في 16 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-gesprachsfuhrung-und-verhandlungstechn', school: 's-university-of-st-gallen-executive-scho', subject: 'negotiation', format: 'in-person',
+      start: '2026-11-17', days: 3, price: 3900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/gespraechsfuehrung-und-verhandlungstechnik/',
+      title: { en: 'Gesprächsführung und Verhandlungstechnik', ar: 'إدارة الحوار وتقنيات التفاوض' },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 17 November 2026 to 19 November 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 17 نوفمبر 2026 إلى 19 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-management-von-nachhaltigkeit-und-esg', school: 's-university-of-st-gallen-executive-scho', subject: 'sustainability', format: 'in-person',
       start: '2026-11-17', days: 4, price: 3900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/nachhaltigkeitsmanagement/',
       title: {
@@ -4818,12 +10899,119 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-st-galler-tagung-zur-finanzmarktreguli', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
+      start: '2026-11-17', days: null, price: 580, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-galler-tagung-zur-finanzmarktregulierung-2/', duration: { en: '8.30–16.00 Uhr', ar: 'من 8:30 إلى 16:00' },
+      title: { en: 'St.Galler Tagung zur Finanzmarktregulierung', ar: 'مؤتمر St.Gallen حول تنظيم الأسواق المالية' },
+      summary: {
+        en: 'An on-campus program from University of St. Gallen Executive School, 8.30–16.00 Uhr, starting 17 November 2026.',
+        ar: 'برنامج حضوري من المدرسة التنفيذية بجامعة سانت غالن، من 8:30 إلى 16:00، يبدأ في 17 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-aktuelle-rechtsfragen-im-bau-planungs', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'blended',
+      start: '2026-11-18', days: 1, price: 530, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/aktuelle-rechtsfragen-im-bau-planungs-und-umweltrecht/',
+      title: {
+        en: 'Aktuelle Rechtsfragen im Bau-, Planungs- und Umweltrecht',
+        ar: 'المستجدات القانونية في قانون البناء والتخطيط والبيئة'
+      },
+      summary: {
+        en: 'A 1-day blended program from University of St. Gallen Executive School, starting 18 November 2026.',
+        ar: 'برنامج مدمج لمدة يوم واحد من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 18 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-management-operational-and-it-aspects', school: 's-university-of-st-gallen-executive-scho', subject: 'digital', format: 'in-person',
+      start: '2026-11-18', days: null, price: 17900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-management-operational-and-it-aspects-of-digital-communication/', duration: { en: '5 modules of 4 days over ca. 12 months', ar: '5 وحدات مدة كل منها 4 أيام، على مدى نحو 12 شهرًا' },
+      title: {
+        en: 'Management, Operational and IT Aspects of Digital Communication (CAS HSG)',
+        ar: 'الجوانب الإدارية والتشغيلية والتقنية للاتصال الرقمي (CAS HSG)'
+      },
+      summary: {
+        en: 'An on-campus program from University of St. Gallen Executive School, 5 modules of 4 days over ca. 12 months, starting 18 November 2026.',
+        ar: 'برنامج حضوري من المدرسة التنفيذية بجامعة سانت غالن، 5 وحدات مدة كل منها 4 أيام، على مدى نحو 12 شهرًا، يبدأ في 18 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-st-galler-erbrechtstagung', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'blended',
+      start: '2026-11-19', days: 1, price: 590, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-galler-fachtagung-zum-familienrecht-2019/',
+      title: { en: 'St.Galler Erbrechtstagung', ar: 'مؤتمر St.Gallen لقانون الميراث' },
+      summary: {
+        en: 'A 1-day blended program from University of St. Gallen Executive School, starting 19 November 2026.',
+        ar: 'برنامج مدمج لمدة يوم واحد من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 19 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-beyond-leadership', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2026-11-23', days: 2, price: 1500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/beyond-leadership/',
+      title: { en: 'Beyond Leadership', ar: 'ما بعد القيادة' },
+      summary: {
+        en: 'A 2-day on-campus program from University of St. Gallen Executive School, running 23 November 2026 to 24 November 2026.',
+        ar: 'برنامج حضوري لمدة يومين من المدرسة التنفيذية بجامعة سانت غالن، من 23 نوفمبر 2026 إلى 24 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-die-kunst-der-selbstentwicklung', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
       start: '2026-11-24', days: 3, price: 2900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/die-kunst-der-selbstentwicklung/',
       title: { en: 'Die Kunst der Selbstentwicklung', ar: 'فن تطوير الذات' },
       summary: {
         en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 24 November 2026 to 26 November 2026.',
         ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 24 نوفمبر 2026 إلى 26 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-future-automotive-retail-far-hsg', school: 's-university-of-st-gallen-executive-scho', subject: 'marketing', format: 'in-person',
+      start: '2026-11-24', days: 9, price: 12450, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/future-automotive-retail-far/',
+      title: { en: 'Future Automotive Retail (FAR-HSG)', ar: 'مستقبل تجارة التجزئة للسيارات (FAR-HSG)' },
+      summary: {
+        en: 'A 9-day on-campus program from University of St. Gallen Executive School, running 24 November 2026 to 2 December 2026.',
+        ar: 'برنامج حضوري لمدة 9 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 24 نوفمبر 2026 إلى 2 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-asset-management-fur-lebensversicherer', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
+      start: '2026-11-25', days: 3, price: 3900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/asset-management-fuer-lebensversicherer-pensionskassen/',
+      title: {
+        en: 'Asset Management für Lebensversicherer & Pensionskassen',
+        ar: 'إدارة الأصول لشركات التأمين على الحياة وصناديق التقاعد'
+      },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 25 November 2026 to 27 November 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 25 نوفمبر 2026 إلى 27 نوفمبر 2026.'
       },
       highlights: {
         en: [],
@@ -4849,6 +11037,93 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-mergers-acquisitions-and-corporate-str', school: 's-university-of-st-gallen-executive-scho', subject: 'strategy', format: 'in-person',
+      start: '2026-11-25', days: 3, price: 3900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/mergers-acquisitions-and-corporate-strategy/',
+      title: { en: 'Mergers & Acquisitions and Corporate Strategy', ar: 'الاندماج والاستحواذ واستراتيجية الشركات' },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 25 November 2026 to 27 November 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 25 نوفمبر 2026 إلى 27 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-entwicklungen-im-recht-der-kollektiven', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'blended',
+      start: '2026-12-01', days: 1, price: 760, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/entwicklungen-im-recht-der-kollektiven-kapitalanlagen/',
+      title: {
+        en: 'Entwicklungen im Recht der kollektiven Kapitalanlagen',
+        ar: 'مستجدات قانون الاستثمار الجماعي في رأس المال'
+      },
+      summary: {
+        en: 'A 1-day blended program from University of St. Gallen Executive School, starting 1 December 2026.',
+        ar: 'برنامج مدمج لمدة يوم واحد من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 1 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-tagung-zum-offentlichen-personalrecht', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'blended',
+      start: '2026-12-03', days: 1, price: 550, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/2-st-galler-tagung-zum-life-science-recht-2020/',
+      title: { en: 'Tagung zum öffentlichen Personalrecht', ar: 'مؤتمر قانون الموظفين العموميين' },
+      summary: {
+        en: 'A 1-day blended program from University of St. Gallen Executive School, starting 3 December 2026.',
+        ar: 'برنامج مدمج لمدة يوم واحد من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 3 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-st-galler-mietrechtstagung', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'blended',
+      start: '2026-12-11', days: 1, price: 590, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-galler-mietrechtstagung/',
+      title: { en: 'St.Galler Mietrechtstagung', ar: 'مؤتمر St.Gallen لقانون الإيجار' },
+      summary: {
+        en: 'A 1-day blended program from University of St. Gallen Executive School, starting 11 December 2026.',
+        ar: 'برنامج مدمج لمدة يوم واحد من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 11 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-fit-for-insurance-online-course', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'online',
+      start: '2027-01-11', days: null, price: 1900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/fit-for-insurance/', duration: { en: '4 weeks (5 sessions with 3.5-4 hours per session)', ar: '4 أسابيع (5 جلسات، 3.5–4 ساعات لكل جلسة)' },
+      title: { en: 'Fit for Insurance Online Course', ar: 'دورة إلكترونية: جاهزية قطاع التأمين' },
+      summary: {
+        en: 'An online program from University of St. Gallen Executive School, 4 weeks (5 sessions with 3.5-4 hours per session), starting 11 January 2027.',
+        ar: 'برنامج عبر الإنترنت من المدرسة التنفيذية بجامعة سانت غالن، 4 أسابيع (5 جلسات، 3.5–4 ساعات لكل جلسة)، يبدأ في 11 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-intensivseminar-einkauf-strategisch-au', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'in-person',
+      start: '2027-01-12', days: 3, price: 3900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/intensivseminar-einkauf-strategisch-ausrichten/',
+      title: { en: 'Intensivseminar Einkauf strategisch ausrichten', ar: 'ندوة مكثفة: توجيه المشتريات استراتيجياً' },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 12 January 2027 to 14 January 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 12 يناير 2027 إلى 14 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-seminar-responsible-leadership-hsg', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
       start: '2027-01-14', days: 6, price: 7500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/responsible-leadership-2/',
       title: { en: 'Seminar RESPONSIBLE LEADERSHIP – HSG', ar: 'القيادة المسؤولة – HSG' },
@@ -4863,12 +11138,116 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-hsg-intensivstudium-marketing-manageme', school: 's-university-of-st-gallen-executive-scho', subject: 'marketing', format: 'in-person',
+      id: 'c-executive-master-in-insurance-and-fina', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'blended',
+      start: '2027-01-15', days: 60, price: 59700, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/executive-master-hsg-insurance-and-financial-services/',
+      title: {
+        en: 'Executive Master in Insurance and Financial Services',
+        ar: 'الماجستير التنفيذي في التأمين والخدمات المالية'
+      },
+      summary: {
+        en: 'A 60-day blended program from University of St. Gallen Executive School, starting 15 January 2027.',
+        ar: 'برنامج مدمج لمدة 60 يومًا من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 15 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cas-executive-leadership-coaching', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'blended',
+      start: '2027-01-21', days: null, price: 18500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-coaching/', duration: { en: '7 Module', ar: '7 وحدات' },
+      title: { en: 'CAS Executive & Leadership Coaching', ar: 'CAS في التدريب التنفيذي والقيادي' },
+      summary: {
+        en: 'A blended program from University of St. Gallen Executive School, 7 Module, starting 21 January 2027.',
+        ar: 'برنامج مدمج من المدرسة التنفيذية بجامعة سانت غالن، 7 وحدات، يبدأ في 21 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-unternehmerseminar-fur-arztinnen-und-a', school: 's-university-of-st-gallen-executive-scho', subject: 'entrepreneurship', format: 'in-person',
+      start: '2027-01-22', days: 5, price: 4990, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/unternehmerseminar-fuer-aerztinnen-und-aerzte/',
+      title: { en: 'Unternehmerseminar für Ärztinnen und Ärzte', ar: 'ندوة ريادة الأعمال للأطباء' },
+      summary: {
+        en: 'A 5-day on-campus program from University of St. Gallen Executive School, running 22 January 2027 to 26 January 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 22 يناير 2027 إلى 26 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-unternehmerseminar-fur-zahnarztinnen-u', school: 's-university-of-st-gallen-executive-scho', subject: 'entrepreneurship', format: 'in-person',
+      start: '2027-01-23', days: 5, price: 4990, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/unternehmerseminar-fuer-zahnaerztinnen-und-zahnaerzte/',
+      title: { en: 'Unternehmerseminar für Zahnärztinnen und Zahnärzte', ar: 'ندوة ريادة الأعمال لأطباء الأسنان' },
+      summary: {
+        en: 'A 5-day on-campus program from University of St. Gallen Executive School, running 23 January 2027 to 27 January 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 23 يناير 2027 إلى 27 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-data-protection-officer-dpo-hsg', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'in-person',
+      start: '2027-01-25', days: 15, price: 13500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/data-protection-officer-dpo-hsg/',
+      title: { en: 'Data Protection Officer (DPO HSG)', ar: 'مسؤول حماية البيانات (DPO HSG)' },
+      summary: {
+        en: 'A 15-day on-campus program from University of St. Gallen Executive School, running 25 January 2027 to 8 February 2027.',
+        ar: 'برنامج حضوري لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 25 يناير 2027 إلى 8 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-diplom-sales-executive-hsg-das', school: 's-university-of-st-gallen-executive-scho', subject: 'marketing', format: 'in-person',
+      start: '2027-01-26', days: 36, price: 29500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/diplom-sales-executive-hsg-das/',
+      title: { en: 'Diplom Sales Executive HSG (DAS)', ar: 'دبلوم المدير التنفيذي للمبيعات HSG (DAS)' },
+      summary: {
+        en: 'A 36-day on-campus program from University of St. Gallen Executive School, running 26 January 2027 to 2 March 2027.',
+        ar: 'برنامج حضوري لمدة 36 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 26 يناير 2027 إلى 2 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-weiterbildung-hsg-intensivstudium-mark', school: 's-university-of-st-gallen-executive-scho', subject: 'marketing', format: 'in-person',
       start: '2027-01-26', days: 18, price: 18750, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/hsg-intensivstudium-marketing-management-cas/',
-      title: { en: 'HSG-Intensivstudium Marketing Management (CAS)', ar: 'CAS HSG دراسة مكثفة في إدارة التسويق' },
+      title: {
+        en: 'Weiterbildung – HSG-Intensivstudium Marketing Management (CAS)',
+        ar: 'التعليم المستمر – الدراسة المكثفة في إدارة التسويق من HSG (CAS)'
+      },
       summary: {
         en: 'A 18-day on-campus program from University of St. Gallen Executive School, running 26 January 2027 to 12 February 2027.',
         ar: 'برنامج حضوري لمدة 18 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 26 يناير 2027 إلى 12 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-deep-dive-workshop-leadership-in-disru', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-01-27', days: 3, price: 3000, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/leadership-in-disruptive-times/',
+      title: { en: 'Deep-Dive Workshop: Leadership in Disruptive Times', ar: 'ورشة متعمقة: القيادة في أوقات الاضطراب' },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 27 January 2027 to 29 January 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 27 يناير 2027 إلى 29 يناير 2027.'
       },
       highlights: {
         en: [],
@@ -4891,7 +11270,21 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-intensivseminar-systemisches-change-ma', school: 's-university-of-st-gallen-executive-scho', subject: 'healthcare', format: 'in-person',
+      id: 'c-digital-marketing-academy', school: 's-university-of-st-gallen-executive-scho', subject: 'marketing', format: 'in-person',
+      start: '2027-02-02', days: 4, price: 4950, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/digital-marketing-academy/',
+      title: { en: 'Digital Marketing Academy', ar: 'أكاديمية التسويق الرقمي' },
+      summary: {
+        en: 'A 4-day on-campus program from University of St. Gallen Executive School, running 2 February 2027 to 5 February 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 2 فبراير 2027 إلى 5 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-intensivseminar-systemisches-change-ma', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
       start: '2027-02-03', days: 3, price: 2600, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/intensivseminar-systemisches-change-management/',
       title: { en: 'Intensivseminar Systemisches Change Management', ar: 'برنامج مكثف في إدارة التغيير المنهجي' },
       summary: {
@@ -4905,7 +11298,7 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leading-enterprise-risk-management', school: 's-university-of-st-gallen-executive-scho', subject: 'strategy', format: 'in-person',
+      id: 'c-leading-enterprise-risk-management', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'in-person',
       start: '2027-02-03', days: 3, price: 3000, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/leading-enterprise-risk-management/',
       title: { en: 'Leading Enterprise Risk Management', ar: 'قيادة إدارة المخاطر المؤسسية' },
       summary: {
@@ -4919,9 +11312,43 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-finanzielle-unternehmensfuhrung', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
+      id: 'c-strategische-organisationsentwicklung', school: 's-university-of-st-gallen-executive-scho', subject: 'strategy', format: 'in-person',
+      start: '2027-02-09', days: 4, price: 4900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/strategische-organisationsentwicklung-und-restrukturierung/',
+      title: {
+        en: 'Strategische Organisationsentwicklung und Restrukturierung',
+        ar: 'التطوير التنظيمي الاستراتيجي وإعادة الهيكلة'
+      },
+      summary: {
+        en: 'A 4-day on-campus program from University of St. Gallen Executive School, running 9 February 2027 to 12 February 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 9 فبراير 2027 إلى 12 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cas-hsg-digital-innovation-and-busines', school: 's-university-of-st-gallen-executive-scho', subject: 'digital', format: 'in-person',
+      start: '2027-02-10', days: 18, price: 19800, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-hsg-digital-innovation-and-business-transformation/',
+      title: {
+        en: 'CAS HSG Digital Innovation and Business Transformation',
+        ar: 'CAS HSG في الابتكار الرقمي وتحول الأعمال'
+      },
+      summary: {
+        en: 'A 18-day on-campus program from University of St. Gallen Executive School, running 10 February 2027 to 27 February 2027.',
+        ar: 'برنامج حضوري لمدة 18 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 10 فبراير 2027 إلى 27 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-finanzielle-unternehmensfuhrung-zurich', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
       start: '2027-02-15', days: 5, price: 4900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/finanzielle-unternehmensfuehrung-zuerich/',
-      title: { en: 'Finanzielle Unternehmensführung', ar: 'الإدارة المالية للمؤسسات' },
+      title: { en: 'Finanzielle Unternehmensführung | Zürich', ar: 'الإدارة المالية للمؤسسات | زيورخ' },
       summary: {
         en: 'A 5-day on-campus program from University of St. Gallen Executive School, running 15 February 2027 to 19 February 2027.',
         ar: 'برنامج حضوري لمدة 5 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 15 فبراير 2027 إلى 19 فبراير 2027.'
@@ -4947,7 +11374,21 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-cas-change-innovation-management', school: 's-university-of-st-gallen-executive-scho', subject: 'strategy', format: 'in-person',
+      id: 'c-okonomische-zusammenhange-verstehen', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
+      start: '2027-02-18', days: 6, price: 4100, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/oekonomische-zusammenhaenge-verstehen/',
+      title: { en: 'Ökonomische Zusammenhänge verstehen', ar: 'فهم الترابطات الاقتصادية' },
+      summary: {
+        en: 'A 6-day on-campus program from University of St. Gallen Executive School, running 18 February 2027 to 23 February 2027.',
+        ar: 'برنامج حضوري لمدة 6 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 18 فبراير 2027 إلى 23 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cas-change-innovation-management', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
       start: '2027-02-22', days: 17, price: 14950, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-change-innovation-management/',
       title: { en: 'CAS Change & Innovation Management', ar: 'CAS إدارة التغيير والابتكار' },
       summary: {
@@ -4961,12 +11402,26 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-strategien-nachhaltig-verwirklichen', school: 's-university-of-st-gallen-executive-scho', subject: 'strategy', format: 'in-person',
-      start: '2027-02-24', days: 3, price: 3900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/strategien-nachhaltig-verwirklichen/',
-      title: { en: 'Strategien nachhaltig verwirklichen', ar: 'تحقيق الاستراتيجيات بشكل مستدام' },
+      id: 'c-cyber-security-fur-fuhrungskrafte', school: 's-university-of-st-gallen-executive-scho', subject: 'digital', format: 'in-person',
+      start: '2027-02-22', days: 15, price: 13500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cyber-security-fuer-fuehrungskraefte/',
+      title: { en: 'Cyber Security für Führungskräfte', ar: 'الأمن السيبراني للقيادات التنفيذية' },
       summary: {
-        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 24 February 2027 to 26 February 2027.',
-        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 24 فبراير 2027 إلى 26 فبراير 2027.'
+        en: 'A 15-day on-campus program from University of St. Gallen Executive School, running 22 February 2027 to 8 March 2027.',
+        ar: 'برنامج حضوري لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 22 فبراير 2027 إلى 8 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-hsg-intensivseminar-marketing-intellig', school: 's-university-of-st-gallen-executive-scho', subject: 'marketing', format: 'in-person',
+      start: '2027-02-23', days: 3, price: 3900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/hsg-intensivseminar-marketing-intelligence/',
+      title: { en: 'HSG-Intensivseminar Marketing Intelligence', ar: 'ندوة HSG المكثفة في ذكاء التسويق' },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 23 February 2027 to 25 February 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 23 فبراير 2027 إلى 25 فبراير 2027.'
       },
       highlights: {
         en: [],
@@ -4989,12 +11444,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-st-galler-leadership-zertifikat', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
-      start: '2027-03-02', days: 15, price: 19800, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-galler-leadership-zertifikat/',
-      title: { en: 'St.Galler Leadership-Zertifikat', ar: 'شهادة القيادة من سانت غالن' },
+      id: 'c-st-gallen-board-certificate-cas-hsg', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'blended',
+      start: '2027-03-05', days: 15, price: 24500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-gallen-board-certificate-cas-hsg/',
+      title: { en: 'St.Gallen Board Certificate CAS HSG', ar: 'شهادة مجالس الإدارة من سانت غالن CAS HSG' },
       summary: {
-        en: 'A 15-day on-campus program from University of St. Gallen Executive School, running 2 March 2027 to 16 March 2027.',
-        ar: 'برنامج حضوري لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 2 مارس 2027 إلى 16 مارس 2027.'
+        en: 'A 15-day blended program from University of St. Gallen Executive School, starting 5 March 2027.',
+        ar: 'برنامج مدمج لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 5 مارس 2027.'
       },
       highlights: {
         en: [],
@@ -5003,12 +11458,18 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-st-gallen-board-certificate-cas-hsg', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
-      start: '2027-03-05', days: 15, price: 24500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-gallen-board-certificate-cas-hsg/',
-      title: { en: 'St.Gallen Board Certificate CAS HSG', ar: 'شهادة مجالس الإدارة من سانت غالن CAS HSG' },
+      id: 'c-aiming-higher-karriereentwicklung-fur', school: 's-university-of-st-gallen-executive-scho', subject: 'healthcare', format: 'blended',
+      start: '2027-03-06', days: null, price: 5000, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/aiming-higher-karriereentwicklung-fuer-assistenzaerztinnen/', duration: {
+        en: '5+ Tage (verteilt über ca. 9 Monate, tw. im Selbststudium)',
+        ar: 'أكثر من 5 أيام (موزعة على نحو 9 أشهر، جزء منها بالتعلم الذاتي)'
+      },
+      title: {
+        en: 'Aiming Higher – Karriereentwicklung für Assistenzärztinnen',
+        ar: 'Aiming Higher: التطوير المهني للطبيبات المقيمات'
+      },
       summary: {
-        en: 'A 15-day on-campus program from University of St. Gallen Executive School, running 5 March 2027 to 19 March 2027.',
-        ar: 'برنامج حضوري لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 5 مارس 2027 إلى 19 مارس 2027.'
+        en: 'A blended program from University of St. Gallen Executive School, 5+ Tage (verteilt über ca. 9 Monate, tw. im Selbststudium), starting 6 March 2027.',
+        ar: 'برنامج مدمج من المدرسة التنفيذية بجامعة سانت غالن، أكثر من 5 أيام (موزعة على نحو 9 أشهر، جزء منها بالتعلم الذاتي)، يبدأ في 6 مارس 2027.'
       },
       highlights: {
         en: [],
@@ -5018,11 +11479,14 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-leading-change-with-confidence', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'blended',
-      start: '2027-03-08', days: 3, price: 3500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/leading-change-with-confidence/',
+      start: '2027-03-08', days: null, price: 3500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/leading-change-with-confidence/', duration: {
+        en: '0.5 days Virtual Kick-Off + 2 Days On Campus + 0.5 days Virtual Follow-up',
+        ar: 'انطلاقة افتراضية لنصف يوم + يومان في الحرم الجامعي + متابعة افتراضية لنصف يوم'
+      },
       title: { en: 'Leading Change with Confidence', ar: 'قيادة التغيير بثقة' },
       summary: {
-        en: 'A 3-day blended program from University of St. Gallen Executive School, starting 8 March 2027.',
-        ar: 'برنامج مدمج لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 8 مارس 2027.'
+        en: 'A blended program from University of St. Gallen Executive School, 0.5 days Virtual Kick-Off + 2 Days On Campus + 0.5 days Virtual Follow-up, starting 8 March 2027.',
+        ar: 'برنامج مدمج من المدرسة التنفيذية بجامعة سانت غالن، انطلاقة افتراضية لنصف يوم + يومان في الحرم الجامعي + متابعة افتراضية لنصف يوم، يبدأ في 8 مارس 2027.'
       },
       highlights: {
         en: [],
@@ -5031,12 +11495,96 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-essentials-in-general-management-cas-h', school: 's-university-of-st-gallen-executive-scho', subject: 'strategy', format: 'in-person',
+      id: 'c-essentials-in-general-management-cas-h', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
       start: '2027-03-09', days: 14, price: 16900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/essentials-in-general-management-cas-hsg/',
       title: { en: 'Essentials in General Management CAS HSG', ar: 'CAS HSG أساسيات الإدارة العامة' },
       summary: {
         en: 'A 14-day on-campus program from University of St. Gallen Executive School, running 9 March 2027 to 22 March 2027.',
         ar: 'برنامج حضوري لمدة 14 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 9 مارس 2027 إلى 22 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-hsg-diplomprogramm-insurance-managemen', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
+      start: '2027-03-14', days: 36, price: 35900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/hsg-diplomprogramm-insurance-management/', duration: { en: 'over 15 months', ar: 'على مدى 15 شهرًا' },
+      title: { en: 'HSG-Diplomprogramm Insurance Management', ar: 'برنامج دبلوم HSG في إدارة التأمين' },
+      summary: {
+        en: 'A 36-day on-campus program from University of St. Gallen Executive School, running 14 March 2027 to 18 April 2027.',
+        ar: 'برنامج حضوري لمدة 36 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 14 مارس 2027 إلى 18 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cas-renewable-energy-management-rem-hs', school: 's-university-of-st-gallen-executive-scho', subject: 'sustainability', format: 'in-person',
+      start: '2027-03-15', days: 15, price: 12500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/renewable-energy-management-rem-hsg/',
+      title: { en: 'CAS Renewable Energy Management (REM-HSG)', ar: 'CAS إدارة الطاقة المتجددة (REM-HSG)' },
+      summary: {
+        en: 'A 15-day on-campus program from University of St. Gallen Executive School, running 15 March 2027 to 29 March 2027.',
+        ar: 'برنامج حضوري لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 15 مارس 2027 إلى 29 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-intensivstudium-kmu', school: 's-university-of-st-gallen-executive-scho', subject: 'entrepreneurship', format: 'in-person',
+      start: '2027-03-15', days: 50, price: 37000, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/intensivstudium-kmu/',
+      title: { en: 'Intensivstudium KMU', ar: 'برنامج مكثف للمنشآت الصغيرة والمتوسطة' },
+      summary: {
+        en: 'A 50-day on-campus program from University of St. Gallen Executive School, running 15 March 2027 to 3 May 2027.',
+        ar: 'برنامج حضوري لمدة 50 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 15 مارس 2027 إلى 3 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-wirtschaftsrecht-fur-manager-cas-hsg', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'in-person',
+      start: '2027-03-15', days: 15, price: 13500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/wirtschaftsrecht-fuer-manager-cas/',
+      title: { en: 'Wirtschaftsrecht für Manager CAS-HSG', ar: 'القانون التجاري للمديرين CAS-HSG' },
+      summary: {
+        en: 'A 15-day on-campus program from University of St. Gallen Executive School, running 15 March 2027 to 29 March 2027.',
+        ar: 'برنامج حضوري لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 15 مارس 2027 إلى 29 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-wirtschaftsrecht-fur-manager-das-hsg', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'in-person',
+      start: '2027-03-15', days: 45, price: 39000, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/wirtschaftsrecht-fuer-manager-das/',
+      title: { en: 'Wirtschaftsrecht für Manager DAS-HSG', ar: 'القانون التجاري للمديرين DAS-HSG' },
+      summary: {
+        en: 'A 45-day on-campus program from University of St. Gallen Executive School, running 15 March 2027 to 28 April 2027.',
+        ar: 'برنامج حضوري لمدة 45 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 15 مارس 2027 إلى 28 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-intensivseminar-fuhrung-von-marken', school: 's-university-of-st-gallen-executive-scho', subject: 'marketing', format: 'in-person',
+      start: '2027-03-16', days: 4, price: 4950, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/intensivseminar-fuehrung-von-marken/',
+      title: { en: 'Intensivseminar Führung von Marken', ar: 'ندوة مكثفة: قيادة العلامات التجارية' },
+      summary: {
+        en: 'A 4-day on-campus program from University of St. Gallen Executive School, running 16 March 2027 to 19 March 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 16 مارس 2027 إلى 19 مارس 2027.'
       },
       highlights: {
         en: [],
@@ -5073,15 +11621,29 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-digital-insurance-ai-transformation-ca', school: 's-university-of-st-gallen-executive-scho', subject: 'digital', format: 'in-person',
+      id: 'c-digital-insurance-ai-transformation-ca', school: 's-university-of-st-gallen-executive-scho', subject: 'digital', format: 'blended',
       start: '2027-04-06', days: 18, price: 15900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-digital-insurance-transformation/',
       title: {
         en: 'Digital Insurance & AI Transformation (CAS HSG)',
         ar: 'CAS HSG التحول الرقمي والذكاء الاصطناعي في التأمين'
       },
       summary: {
-        en: 'A 18-day on-campus program from University of St. Gallen Executive School, running 6 April 2027 to 23 April 2027.',
-        ar: 'برنامج حضوري لمدة 18 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 6 أبريل 2027 إلى 23 أبريل 2027.'
+        en: 'A 18-day blended program from University of St. Gallen Executive School, starting 6 April 2027.',
+        ar: 'برنامج مدمج لمدة 18 يومًا من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 6 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-international-advanced-management-prog', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'blended',
+      start: '2027-04-10', days: null, price: 35000, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/international-advanced-management-programme-cas-hsg/', duration: { en: 'Six months (19 days on-site, 3 days online)', ar: '6 أشهر (19 يومًا حضوريًا و3 أيام عبر الإنترنت)' },
+      title: { en: 'International Advanced Management Programme CAS-HSG', ar: 'برنامج الإدارة المتقدمة الدولي CAS-HSG' },
+      summary: {
+        en: 'A blended program from University of St. Gallen Executive School, Six months (19 days on-site, 3 days online), starting 10 April 2027.',
+        ar: 'برنامج مدمج من المدرسة التنفيذية بجامعة سانت غالن، 6 أشهر (19 يومًا حضوريًا و3 أيام عبر الإنترنت)، يبدأ في 10 أبريل 2027.'
       },
       highlights: {
         en: [],
@@ -5121,12 +11683,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-insurance-business-for-future-leaders', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
+      id: 'c-insurance-business-for-future-leaders', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'blended',
       start: '2027-04-26', days: 15, price: 14500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/insurance-business-for-future-leaders-cas-hsg/',
       title: { en: 'Insurance Business for Future Leaders (CAS HSG)', ar: 'CAS HSG أعمال التأمين لقادة المستقبل' },
       summary: {
-        en: 'A 15-day on-campus program from University of St. Gallen Executive School, running 26 April 2027 to 10 May 2027.',
-        ar: 'برنامج حضوري لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 26 أبريل 2027 إلى 10 مايو 2027.'
+        en: 'A 15-day blended program from University of St. Gallen Executive School, starting 26 April 2027.',
+        ar: 'برنامج مدمج لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 26 أبريل 2027.'
       },
       highlights: {
         en: [],
@@ -5135,7 +11697,7 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-selbstkompetenz-und-unternehmenskultur', school: 's-university-of-st-gallen-executive-scho', subject: 'people', format: 'in-person',
+      id: 'c-selbstkompetenz-und-unternehmenskultur', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
       start: '2027-04-26', days: 3, price: 3000, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/selbstkompetenz-und-unternehmenskultur/',
       title: { en: 'Selbstkompetenz und Unternehmenskultur', ar: 'الكفاءة الذاتية وثقافة المؤسسة' },
       summary: {
@@ -5149,12 +11711,26 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-fuhrung-mit-energie-und-fokus', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
-      start: '2027-04-27', days: 4, price: 4850, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/fuehrung-mit-energie-und-fokus/',
-      title: { en: 'Führung mit Energie und Fokus', ar: 'القيادة بطاقة وتركيز' },
+      id: 'c-finanzen-und-controlling-cas-hsg', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
+      start: '2027-05-11', days: 16, price: 17500, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/finanzen-und-controlling-cas-hsg/',
+      title: { en: 'Finanzen und Controlling CAS HSG', ar: 'المالية والرقابة المالية CAS HSG' },
       summary: {
-        en: 'A 4-day on-campus program from University of St. Gallen Executive School, running 27 April 2027 to 30 April 2027.',
-        ar: 'برنامج حضوري لمدة 4 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 27 أبريل 2027 إلى 30 أبريل 2027.'
+        en: 'A 16-day on-campus program from University of St. Gallen Executive School, running 11 May 2027 to 26 May 2027.',
+        ar: 'برنامج حضوري لمدة 16 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 11 مايو 2027 إلى 26 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategisches-change-management', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-05-18', days: 4, price: 4900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/strategisches-change-management/',
+      title: { en: 'Strategisches Change Management', ar: 'إدارة التغيير الاستراتيجي' },
+      summary: {
+        en: 'A 4-day on-campus program from University of St. Gallen Executive School, running 18 May 2027 to 21 May 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 18 مايو 2027 إلى 21 مايو 2027.'
       },
       highlights: {
         en: [],
@@ -5177,15 +11753,12 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-performance-turning-regulation-stakeho', school: 's-university-of-st-gallen-executive-scho', subject: 'strategy', format: 'online',
-      start: '2027-06-01', days: 2, price: 1900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-leading-sustainable-business-innovation-m2/',
-      title: {
-        en: 'Performance: Turning Regulation & Stakeholder Expectations into Profitable Growth',
-        ar: 'الأداء: تحويل المتطلبات التنظيمية وتوقعات أصحاب المصلحة إلى نمو مربح'
-      },
+      id: 'c-finanzbewusst-managen', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
+      start: '2027-05-25', days: 4, price: 4900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/finanzbewusst-managen/',
+      title: { en: 'Finanzbewusst managen', ar: 'الإدارة بوعي مالي' },
       summary: {
-        en: 'A 2-day online program from University of St. Gallen Executive School, starting 1 June 2027.',
-        ar: 'برنامج عبر الإنترنت لمدة يومين من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 1 يونيو 2027.'
+        en: 'A 4-day on-campus program from University of St. Gallen Executive School, running 25 May 2027 to 28 May 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 25 مايو 2027 إلى 28 مايو 2027.'
       },
       highlights: {
         en: [],
@@ -5194,12 +11767,26 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-risikomanagement-online-seminar', school: 's-university-of-st-gallen-executive-scho', subject: 'strategy', format: 'online',
-      start: '2027-06-02', days: 5, price: 1900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/risikomanagement-online-seminar/',
+      id: 'c-fit-for-artificial-intelligence-in-fin', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'blended',
+      start: '2027-05-25', days: null, price: 1950, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/ai-finance/', duration: { en: '5 weekly sessions (4 h)', ar: '5 جلسات أسبوعية (4 ساعات)' },
+      title: { en: 'Fit for Artificial Intelligence in Finance', ar: 'جاهزية الذكاء الاصطناعي في القطاع المالي' },
+      summary: {
+        en: 'A blended program from University of St. Gallen Executive School, 5 weekly sessions (4 h), starting 25 May 2027.',
+        ar: 'برنامج مدمج من المدرسة التنفيذية بجامعة سانت غالن، 5 جلسات أسبوعية (4 ساعات)، يبدأ في 25 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-risikomanagement-online-seminar', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'online',
+      start: '2027-06-02', days: null, price: 1900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/risikomanagement-online-seminar/', duration: { en: '5 Tage zu je 3,5 Stunden', ar: '5 أيام، 3.5 ساعات لكل يوم' },
       title: { en: 'Risikomanagement Online-Seminar', ar: 'إدارة المخاطر – برنامج عبر الإنترنت' },
       summary: {
-        en: 'A 5-day online program from University of St. Gallen Executive School, starting 2 June 2027.',
-        ar: 'برنامج عبر الإنترنت لمدة 5 أيام من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 2 يونيو 2027.'
+        en: 'An online program from University of St. Gallen Executive School, 5 Tage zu je 3,5 Stunden, starting 2 June 2027.',
+        ar: 'برنامج عبر الإنترنت من المدرسة التنفيذية بجامعة سانت غالن، 5 أيام، 3.5 ساعات لكل يوم، يبدأ في 2 يونيو 2027.'
       },
       highlights: {
         en: [],
@@ -5208,15 +11795,15 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-customer-distribution-management-in-in', school: 's-university-of-st-gallen-executive-scho', subject: 'marketing', format: 'in-person',
+      id: 'c-customer-distribution-management-in-in', school: 's-university-of-st-gallen-executive-scho', subject: 'marketing', format: 'blended',
       start: '2027-06-14', days: 18, price: 15900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-customer-and-distribution-management/',
       title: {
         en: 'Customer & Distribution Management in Insurance (CAS HSG)',
         ar: 'CAS HSG إدارة العملاء والتوزيع في قطاع التأمين'
       },
       summary: {
-        en: 'A 18-day on-campus program from University of St. Gallen Executive School, running 14 June 2027 to 1 July 2027.',
-        ar: 'برنامج حضوري لمدة 18 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 14 يونيو 2027 إلى 1 يوليو 2027.'
+        en: 'A 18-day blended program from University of St. Gallen Executive School, starting 14 June 2027.',
+        ar: 'برنامج مدمج لمدة 18 يومًا من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 14 يونيو 2027.'
       },
       highlights: {
         en: [],
@@ -5225,12 +11812,40 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-cas-prozessfuhrung-civil-litigation', school: 's-university-of-st-gallen-executive-scho', subject: 'negotiation', format: 'in-person',
+      id: 'c-st-galler-leadership-tag-mit-nacht', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-06-16', days: null, price: 1450, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-galler-leadership-tag-mit-nacht-2/', duration: { en: '24 Stunden', ar: '24 ساعة' },
+      title: { en: 'St.Galler Leadership-Tag mit Nacht', ar: 'يوم St.Gallen للقيادة مع مبيت' },
+      summary: {
+        en: 'An on-campus program from University of St. Gallen Executive School, 24 Stunden, starting 16 June 2027.',
+        ar: 'برنامج حضوري من المدرسة التنفيذية بجامعة سانت غالن، 24 ساعة، يبدأ في 16 يونيو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cas-prozessfuhrung-civil-litigation', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'in-person',
       start: '2027-06-17', days: 15, price: 13200, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-prozessfuehrung-civil-litigation/',
       title: { en: 'CAS Prozessführung – Civil Litigation', ar: 'CAS إدارة التقاضي – الدعاوى المدنية' },
       summary: {
         en: 'A 15-day on-campus program from University of St. Gallen Executive School, running 17 June 2027 to 1 July 2027.',
         ar: 'برنامج حضوري لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 17 يونيو 2027 إلى 1 يوليو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-st-gallen-board-retreat', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-06-18', days: 3, price: 12900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-gallen-board-retreat/',
+      title: { en: 'St.Gallen Board Retreat', ar: 'ملتقى مجالس الإدارة في سانت غالن' },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 18 June 2027 to 20 June 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 18 يونيو 2027 إلى 20 يونيو 2027.'
       },
       highlights: {
         en: [],
@@ -5267,12 +11882,526 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-sich-selbst-und-andere-fuhren', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-06-30', days: 3, price: 3000, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/sich-selbst-und-andere-fuehren/',
+      title: { en: 'Sich selbst und andere führen', ar: 'قيادة الذات وقيادة الآخرين' },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 30 June 2027 to 2 July 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 30 يونيو 2027 إلى 2 يوليو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-international-board-programme', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-07-08', days: null, price: 8000, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/international-board-program/', duration: { en: '8 & 9 Jul. / 23 & 24 Sept 2027', ar: '8 و9 يوليو / 23 و24 سبتمبر 2027' },
+      title: { en: 'International Board Programme', ar: 'برنامج مجالس الإدارة الدولي' },
+      summary: {
+        en: 'An on-campus program from University of St. Gallen Executive School, 8 & 9 Jul. / 23 & 24 Sept 2027, starting 8 July 2027.',
+        ar: 'برنامج حضوري من المدرسة التنفيذية بجامعة سانت غالن، 8 و9 يوليو / 23 و24 سبتمبر 2027، يبدأ في 8 يوليو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-hsg-intensivstudium-sales-management-c', school: 's-university-of-st-gallen-executive-scho', subject: 'marketing', format: 'in-person',
+      start: '2027-08-17', days: 18, price: 18750, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/hsg-intensivstudium-sales-management-cas/',
+      title: { en: 'HSG-Intensivstudium Sales Management (CAS)', ar: 'برنامج HSG المكثف في إدارة المبيعات (CAS)' },
+      summary: {
+        en: 'A 18-day on-campus program from University of St. Gallen Executive School, running 17 August 2027 to 3 September 2027.',
+        ar: 'برنامج حضوري لمدة 18 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 17 أغسطس 2027 إلى 3 سبتمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-politische-verhandlungsfuhrung', school: 's-university-of-st-gallen-executive-scho', subject: 'negotiation', format: 'in-person',
       start: '2027-08-26', days: 6, price: 4600, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/politische-verhandlungsfuehrung/',
       title: { en: 'Politische Verhandlungsführung', ar: 'التفاوض السياسي' },
       summary: {
         en: 'A 6-day on-campus program from University of St. Gallen Executive School, running 26 August 2027 to 31 August 2027.',
         ar: 'برنامج حضوري لمدة 6 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 26 أغسطس 2027 إلى 31 أغسطس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-intensivseminar-zu-rechnungswesen-und', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'blended',
+      start: '2027-08-31', days: null, price: 3800, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/79908/', duration: { en: '7 Termine (3 vor Ort + 4 Online)', ar: '7 لقاءات (3 حضورية + 4 عبر الإنترنت)' },
+      title: {
+        en: 'Intensivseminar zu Rechnungswesen und Financial Management',
+        ar: 'ندوة مكثفة في المحاسبة والإدارة المالية'
+      },
+      summary: {
+        en: 'A blended program from University of St. Gallen Executive School, 7 Termine (3 vor Ort + 4 Online), starting 31 August 2027.',
+        ar: 'برنامج مدمج من المدرسة التنفيذية بجامعة سانت غالن، 7 لقاءات (3 حضورية + 4 عبر الإنترنت)، يبدأ في 31 أغسطس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cas-compliance-in-financial-services', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
+      start: '2027-09-01', days: 19, price: 14900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-compliance-in-financial-services/',
+      title: { en: 'CAS Compliance in Financial Services', ar: 'CAS في الامتثال في الخدمات المالية' },
+      summary: {
+        en: 'A 19-day on-campus program from University of St. Gallen Executive School, running 1 September 2027 to 19 September 2027.',
+        ar: 'برنامج حضوري لمدة 19 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 1 سبتمبر 2027 إلى 19 سبتمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-with-energy-and-focus', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-09-01', days: 3, price: 4850, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/leading-with-energy-and-focus/', end: '2027-09-03',
+      title: { en: 'Leading with Energy and Focus', ar: 'القيادة بالطاقة والتركيز' },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 1 September 2027 to 3 September 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 1 سبتمبر 2027 إلى 3 سبتمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-impact-investing-from-insight-to-impac', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
+      start: '2027-09-06', days: 3, price: 2900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/impact-investing/',
+      title: { en: 'Impact Investing: From Insight to Impact', ar: 'الاستثمار المؤثر: من الرؤية إلى الأثر' },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 6 September 2027 to 8 September 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 6 سبتمبر 2027 إلى 8 سبتمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-existenzielles-leadership', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-09-07', days: 3, price: 3000, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/existenzielles-leadership/',
+      title: { en: 'Existenzielles Leadership', ar: 'القيادة الوجودية' },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 7 September 2027 to 9 September 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 7 سبتمبر 2027 إلى 9 سبتمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-hsg-highlights', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-09-07', days: 3, price: 4600, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/hsg-highlights/',
+      title: { en: 'HSG Highlights', ar: 'أبرز برامج HSG' },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School, running 7 September 2027 to 9 September 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 7 سبتمبر 2027 إلى 9 سبتمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-st-galler-seminar-fur-familienunterneh', school: 's-university-of-st-gallen-executive-scho', subject: 'entrepreneurship', format: 'in-person',
+      start: '2027-09-07', days: 4, price: 3800, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-galler-seminar-fuer-familienunternehmen-kmu/',
+      title: {
+        en: 'St.Galler Seminar für Familienunternehmen und inhabergeführte Unternehmen',
+        ar: 'برنامج سانت غالن للشركات العائلية والشركات التي يديرها ملاكها'
+      },
+      summary: {
+        en: 'A 4-day on-campus program from University of St. Gallen Executive School, running 7 September 2027 to 10 September 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 7 سبتمبر 2027 إلى 10 سبتمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cas-haftpflicht-und-versicherungsrecht', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
+      start: '2027-09-08', days: 16, price: 13900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-haftpflicht-und-versicherungsrecht/',
+      title: { en: 'CAS Haftpflicht- und Versicherungsrecht', ar: 'CAS المسؤولية المدنية وقانون التأمين' },
+      summary: {
+        en: 'A 16-day on-campus program from University of St. Gallen Executive School, running 8 September 2027 to 23 September 2027.',
+        ar: 'برنامج حضوري لمدة 16 يومًا من المدرسة التنفيذية بجامعة سانت غالن، من 8 سبتمبر 2027 إلى 23 سبتمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-st-gallen-verwaltungsrat-cas-hsg', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-09-10', days: null, price: 19900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-gallen-verwaltungsrat-cas-hsg/', duration: { en: '8 × 2 Tage', ar: '8 وحدات، مدة كل منها يومان' },
+      title: { en: 'St.Gallen Verwaltungsrat CAS HSG', ar: 'مجلس الإدارة من St.Gallen (CAS HSG)' },
+      summary: {
+        en: 'An on-campus program from University of St. Gallen Executive School, 8 × 2 Tage, starting 10 September 2027.',
+        ar: 'برنامج حضوري من المدرسة التنفيذية بجامعة سانت غالن، 8 وحدات، مدة كل منها يومان، يبدأ في 10 سبتمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-st-gallen-board-academy', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-09-17', days: null, price: 12900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-gallen-board-academy/', duration: { en: '3.5 days (0.5 days virtual)', ar: '3.5 أيام (منها نصف يوم افتراضي)' },
+      title: { en: 'St.Gallen Board Academy', ar: 'أكاديمية St.Gallen لمجالس الإدارة' },
+      summary: {
+        en: 'An on-campus program from University of St. Gallen Executive School, 3.5 days (0.5 days virtual), starting 17 September 2027.',
+        ar: 'برنامج حضوري من المدرسة التنفيذية بجامعة سانت غالن، 3.5 أيام (منها نصف يوم افتراضي)، يبدأ في 17 سبتمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-transformation-erfolgreich-gestalten-h', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'in-person',
+      start: '2027-09-22', days: 4, price: 4700, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/transformation-erfolgreich-gestalten/',
+      title: { en: 'Transformation Erfolgreich Gestalten – HSG', ar: 'قيادة التحول بنجاح – HSG' },
+      summary: {
+        en: 'A 4-day on-campus program from University of St. Gallen Executive School, running 22 September 2027 to 25 September 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 22 سبتمبر 2027 إلى 25 سبتمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-kreativitats-tools-und-storytelling', school: 's-university-of-st-gallen-executive-scho', subject: 'leadership', format: 'blended',
+      start: '2027-09-27', days: 3, price: 3900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/kreativitaets-tools-und-storytelling/',
+      title: { en: 'Kreativitäts-Tools und Storytelling', ar: 'أدوات الإبداع وسرد القصص' },
+      summary: {
+        en: 'A 3-day blended program from University of St. Gallen Executive School, starting 27 September 2027.',
+        ar: 'برنامج مدمج لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن، يبدأ في 27 سبتمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-teams-verstehen-und-wirksam-fuhren', school: 's-university-of-st-gallen-executive-scho', subject: 'people', format: 'in-person',
+      start: '2027-09-27', days: 5, price: 4700, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/teams-verstehen-und-wirksam-fuehren/',
+      title: { en: 'Teams verstehen und wirksam führen', ar: 'فهم الفرق وقيادتها بفاعلية' },
+      summary: {
+        en: 'A 5-day on-campus program from University of St. Gallen Executive School, running 27 September 2027 to 1 October 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 27 سبتمبر 2027 إلى 1 أكتوبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-vom-cfo-zum-digital-cfo', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'in-person',
+      start: '2027-10-19', days: 4, price: 4900, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/vom-cfo-zum-digital-cfo/',
+      title: { en: 'Vom CFO zum Digital CFO', ar: 'من CFO إلى CFO الرقمي' },
+      summary: {
+        en: 'A 4-day on-campus program from University of St. Gallen Executive School, running 19 October 2027 to 22 October 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من المدرسة التنفيذية بجامعة سانت غالن، من 19 أكتوبر 2027 إلى 22 أكتوبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-st-galler-tagung-zur-verwaltungsrechts', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'in-person',
+      start: '2028-06-07', days: 1, price: 570, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-galler-tagung-zur-verwaltungsrechtspflege/',
+      title: { en: 'St.Galler Tagung zur Verwaltungsrechtspflege', ar: 'مؤتمر St.Gallen حول القضاء الإداري' },
+      summary: {
+        en: 'A 1-day on-campus program from University of St. Gallen Executive School, running 7 June 2028 to 7 June 2028.',
+        ar: 'برنامج حضوري لمدة يوم واحد من المدرسة التنفيذية بجامعة سانت غالن، من 7 يونيو 2028 إلى 7 يونيو 2028.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cas-eth-uzh-hsg-in-digital-health-ther', school: 's-university-of-st-gallen-executive-scho', subject: 'healthcare', format: 'blended',
+      start: null, days: null, price: 13900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-eth-uzh-hsg-in-digital-health-therapeutics/', duration: {
+        en: '12 months part-time, designed for working professionals',
+        ar: '12 شهرًا بدوام جزئي، مصمم للمهنيين العاملين'
+      },
+      title: { en: 'CAS ETH UZH HSG in Digital Health: Therapeutics', ar: 'CAS ETH UZH HSG في الصحة الرقمية: العلاجات' },
+      summary: {
+        en: 'A blended program from University of St. Gallen Executive School, 12 months part-time, designed for working professionals. Dates to be announced by the school.',
+        ar: 'برنامج مدمج من المدرسة التنفيذية بجامعة سانت غالن، 12 شهرًا بدوام جزئي، مصمم للمهنيين العاملين. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cas-hsg-in-learning-and-teaching-in-hi', school: 's-university-of-st-gallen-executive-scho', subject: 'people', format: 'in-person',
+      start: null, days: null, price: 9200, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-hsg-in-hochschuldidaktik-teaching-an-learning-in-higher-education/',
+      title: {
+        en: 'CAS HSG in Learning and Teaching in Higher Education',
+        ar: 'CAS HSG في التعلّم والتعليم في التعليم العالي'
+      },
+      summary: {
+        en: 'An on-campus program from University of St. Gallen Executive School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من المدرسة التنفيذية بجامعة سانت غالن. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-cas-strafprozessrecht', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'in-person',
+      start: null, days: 15, price: 13200, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-strafprozessrecht/',
+      title: { en: 'CAS Strafprozessrecht', ar: 'CAS قانون الإجراءات الجزائية' },
+      summary: {
+        en: 'A 15-day on-campus program from University of St. Gallen Executive School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 15 يومًا من المدرسة التنفيذية بجامعة سانت غالن. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-corporate-data-management-cdq-academy', school: 's-university-of-st-gallen-executive-scho', subject: 'data', format: 'in-person',
+      start: null, days: null, price: 2150, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/corporate-data-management-cdq-academy/', duration: { en: '3 modules à 2 days', ar: '3 وحدات، مدة كل منها يومان' },
+      title: { en: 'Corporate Data Management (CDQ Academy)', ar: 'إدارة بيانات المؤسسات (CDQ Academy)' },
+      summary: {
+        en: 'An on-campus program from University of St. Gallen Executive School, 3 modules à 2 days. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من المدرسة التنفيذية بجامعة سانت غالن، 3 وحدات، مدة كل منها يومان. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-customer-experience-masterclass', school: 's-university-of-st-gallen-executive-scho', subject: 'marketing', format: 'online',
+      start: null, days: null, price: 3500, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/customer-experience-masterclass/', duration: { en: '24h in total', ar: '24 ساعة في المجموع' },
+      title: { en: 'Customer Experience Masterclass', ar: 'ماستر كلاس تجربة العملاء' },
+      summary: {
+        en: 'An online program from University of St. Gallen Executive School, 24h in total. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من المدرسة التنفيذية بجامعة سانت غالن، 24 ساعة في المجموع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-deep-dive-workshop-applied-ai-for-exec', school: 's-university-of-st-gallen-executive-scho', subject: 'digital', format: 'in-person',
+      start: null, days: 3, price: 3000, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/deep-dive-workshop-applied-ai-for-executives/',
+      title: {
+        en: 'Deep-Dive Workshop: Applied AI for Executives',
+        ar: 'ورشة متعمقة: الذكاء الاصطناعي التطبيقي للقيادات التنفيذية'
+      },
+      summary: {
+        en: 'A 3-day on-campus program from University of St. Gallen Executive School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 3 أيام من المدرسة التنفيذية بجامعة سانت غالن. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-fit-for-ai-in-real-estate', school: 's-university-of-st-gallen-executive-scho', subject: 'digital', format: 'in-person',
+      start: null, days: 4, price: 3350, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/fit-for-ai-in-real-estate/',
+      title: { en: 'Fit for AI in Real Estate', ar: 'جاهزية الذكاء الاصطناعي في القطاع العقاري' },
+      summary: {
+        en: 'A 4-day on-campus program from University of St. Gallen Executive School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 4 أيام من المدرسة التنفيذية بجامعة سانت غالن. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-global-air-transport-management-das', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'in-person',
+      start: null, days: null, price: 22900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/global-air-transport-management-das/', duration: { en: '31-33 days (depending on IATA electives)', ar: '31–33 يومًا (بحسب المواد الاختيارية لـ IATA)' },
+      title: { en: 'Global Air Transport Management (DAS)', ar: 'إدارة النقل الجوي العالمي (DAS)' },
+      summary: {
+        en: 'An on-campus program from University of St. Gallen Executive School, 31-33 days (depending on IATA electives). Dates to be announced by the school.',
+        ar: 'برنامج حضوري من المدرسة التنفيذية بجامعة سانت غالن، 31–33 يومًا (بحسب المواد الاختيارية لـ IATA). تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-hsg-intensivseminar-wertorientierte-st', school: 's-university-of-st-gallen-executive-scho', subject: 'marketing', format: 'in-person',
+      start: null, days: null, price: null, langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/hsg-intensivseminar-management-von-vertriebsprozessen-2/',
+      title: {
+        en: 'HSG-Intensivseminar Wertorientierte Steuerung und Key-Account-Management im Vertrieb',
+        ar: 'ندوة HSG المكثفة في التوجيه القائم على القيمة وإدارة كبار العملاء في المبيعات'
+      },
+      summary: {
+        en: 'An on-campus program from University of St. Gallen Executive School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من المدرسة التنفيذية بجامعة سانت غالن. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-innovation-in-finance', school: 's-university-of-st-gallen-executive-scho', subject: 'finance', format: 'blended',
+      start: null, days: 11, price: 2390, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/innovation-in-finance-3/',
+      title: { en: 'Innovation in Finance', ar: 'الابتكار في القطاع المالي' },
+      summary: {
+        en: 'A 11-day blended program from University of St. Gallen Executive School. Dates to be announced by the school.',
+        ar: 'برنامج مدمج لمدة 11 يومًا من المدرسة التنفيذية بجامعة سانت غالن. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-lehrgang-internal-auditing-cas', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'blended',
+      start: null, days: 17, price: 15000, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/lehrgang-internal-auditing-cas/',
+      title: { en: 'Lehrgang Internal Auditing – CAS', ar: 'برنامج التدقيق الداخلي – CAS' },
+      summary: {
+        en: 'A 17-day blended program from University of St. Gallen Executive School. Dates to be announced by the school.',
+        ar: 'برنامج مدمج لمدة 17 يومًا من المدرسة التنفيذية بجامعة سانت غالن. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-space-for-business', school: 's-university-of-st-gallen-executive-scho', subject: 'entrepreneurship', format: 'blended',
+      start: null, days: null, price: 15000, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/space-for-business/', duration: { en: '6 Months', ar: '6 أشهر' },
+      title: { en: 'Space for Business', ar: 'الفضاء للأعمال' },
+      summary: {
+        en: 'A blended program from University of St. Gallen Executive School, 6 Months. Dates to be announced by the school.',
+        ar: 'برنامج مدمج من المدرسة التنفيذية بجامعة سانت غالن، 6 أشهر. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-st-galler-arbeitsrechtstagung', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'blended',
+      start: null, days: 1, price: 590, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/datenschutz-im-arbeitsrecht/',
+      title: { en: 'St.Galler Arbeitsrechtstagung', ar: 'مؤتمر St.Gallen لقانون العمل' },
+      summary: {
+        en: 'A 1-day blended program from University of St. Gallen Executive School. Dates to be announced by the school.',
+        ar: 'برنامج مدمج لمدة يوم واحد من المدرسة التنفيذية بجامعة سانت غالن. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-st-galler-intensivseminar-strategische', school: 's-university-of-st-gallen-executive-scho', subject: 'healthcare', format: 'in-person',
+      start: null, days: 2, price: 2750, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/st-galler-intensivseminar-strategisches-marketing-fuer-krankenhaeuser-spitaeler/',
+      title: {
+        en: 'St.Galler Intensivseminar «Strategisches Marketing für Krankenhäuser & Spitäler»',
+        ar: 'ندوة St.Gallen المكثفة «التسويق الاستراتيجي للمستشفيات»'
+      },
+      summary: {
+        en: 'A 2-day on-campus program from University of St. Gallen Executive School. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة يومين من المدرسة التنفيذية بجامعة سانت غالن. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-st-galler-schkg-tagung', school: 's-university-of-st-gallen-executive-scho', subject: 'operations', format: 'blended',
+      start: null, days: 1, price: 590, currency: 'CHF', langs: ['de'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/https-irphsg-ch-weiterbildung-tagungen-aktuelle-veranstaltungen-schkg-tagung/',
+      title: { en: 'St.Galler SchKG-Tagung', ar: 'مؤتمر St.Gallen لقانون التنفيذ والإفلاس (SchKG)' },
+      summary: {
+        en: 'A 1-day blended program from University of St. Gallen Executive School. Dates to be announced by the school.',
+        ar: 'برنامج مدمج لمدة يوم واحد من المدرسة التنفيذية بجامعة سانت غالن. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategy-sustainable-business-as-a-str', school: 's-university-of-st-gallen-executive-scho', subject: 'sustainability', format: 'blended',
+      start: null, days: 4, price: 3900, currency: 'CHF', langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/cas-leading-sustainable-business-innovation-m1/',
+      title: {
+        en: 'Strategy: Sustainable Business as a Strategic Success Factor',
+        ar: 'الاستراتيجية: الأعمال المستدامة كعامل نجاح استراتيجي'
+      },
+      summary: {
+        en: 'A 4-day blended program from University of St. Gallen Executive School. Dates to be announced by the school.',
+        ar: 'برنامج مدمج لمدة 4 أيام من المدرسة التنفيذية بجامعة سانت غالن. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-sustainable-aviation-management-cas', school: 's-university-of-st-gallen-executive-scho', subject: 'sustainability', format: 'online',
+      start: null, days: 12, price: 11900, langs: ['en'], popularity: 50, sourceUrl: 'https://es.unisg.ch/en/executive-programme/sustainable-aviation-management-cas/',
+      title: { en: 'Sustainable Aviation Management CAS', ar: 'إدارة الطيران المستدام (CAS)' },
+      summary: {
+        en: 'A 12-day online program from University of St. Gallen Executive School. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت لمدة 12 يومًا من المدرسة التنفيذية بجامعة سانت غالن. تُعلن الكلية المواعيد لاحقًا.'
       },
       highlights: {
         en: [],
@@ -5292,7 +12421,7 @@ window.MASAR_DATA = (function () {
         en: 'Programmes that treat AI as an operating decision rather than a technology demo.',
         ar: 'برامج تتعامل مع الذكاء الاصطناعي كقرار تشغيلي لا كعرض تقني.'
       },
-      courses: ['c-ai-strategy-and-implementation', 'c-leading-with-ai', 'c-frontiers-of-generative-ai-in-business', 'c-ai-essentials-accelerating-impactful-a', 'c-ai-for-board-directors', 'c-leading-digital-and-ai-transformation', 'c-leading-an-ai-ready-organization-found', 'c-digital-business-transformation']
+      courses: ['c-business-analytics-and-ai-from-data-to', 'c-artificial-intelligence-for-financial', 'c-berkeley-executive-program-in-ai-and-d', 'c-digital-and-ai-transformation-for-boar', 'c-digital-business-transformation-classr', 'c-innovate-with-ai-and-tech', 'c-ki-und-management-intensivseminar', 'c-ai-adoption-driving-business-value-and']
     },
 {
       id: 'l-week',
@@ -5301,7 +12430,7 @@ window.MASAR_DATA = (function () {
         en: 'Five days or fewer, for people who cannot disappear for a month.',
         ar: 'خمسة أيام أو أقل، لمن لا يستطيع الغياب شهرًا كاملًا.'
       },
-      courses: ['c-ai-strategy-and-implementation', 'c-competitive-strategy', 'c-leading-with-ai', 'c-leading-high-performing-teams', 'c-mindset-matters-selbstmanagement-fur-n', 'c-project-management-for-administrative', 'c-st-galler-seminar-fur-familienunterneh', 'c-conflict-management-strategies']
+      courses: ['c-bestyrelsesarbejde-i-pension-forsikrin', 'c-boards-and-risks', 'c-artificial-intelligence-for-financial', 'c-developing-your-leadership-presence', 'c-politische-zusammenarbeit', 'c-strategic-decision-making', 'c-digital-and-ai-transformation-for-boar', 'c-accounting-and-finance-fundamentals']
     },
 {
       id: 'l-firsttime',
@@ -5310,7 +12439,7 @@ window.MASAR_DATA = (function () {
         en: 'The transition into managing people, taught by people who remember it.',
         ar: 'الانتقال إلى إدارة الأشخاص، على يد من يتذكّرون صعوبة هذا الانتقال.'
       },
-      courses: ['c-emerging-leader-program', 'c-new-manager-boot-camp', 'c-emerging-leaders-programme', 'c-emerging-leaders', 'c-driving-innovation-and-new-ventures-in', 'c-emerging-leaders-program-becoming-a-tr', 'c-leadership-in-emerging-technology-secu', 'c-the-emerging-cmo-strategic-marketing-l']
+      courses: ['c-frontline-leader-impact', 'c-managing-ai-and-people-a-new-operating', 'c-new-manager-boot-camp', 'c-emerging-leaders-programme', 'c-emerging-leader-program', 'c-emerging-leaders', 'c-the-emerging-coo-driving-innovation-an', 'c-the-emerging-cfo-strategic-financial-l']
     },
 {
       id: 'l-online',
@@ -5319,7 +12448,7 @@ window.MASAR_DATA = (function () {
         en: 'Live cohorts and real feedback, not a video library with a certificate at the end.',
         ar: 'دفعات مباشرة وتغذية راجعة حقيقية، لا مكتبة فيديو تنتهي بشهادة.'
       },
-      courses: ['c-risk-management-online-seminar', 'c-business-analysis-3-course-pack-1', 'c-business-analysis-3-course-pack-2', 'c-developing-your-leadership-presence-vi', 'c-learning-to-lead-virtual', 'c-creating-and-managing-strategic-allian', 'c-leading-teams-in-the-ai-era-sprint', 'c-financial-data-analysis-for-leaders-pr']
+      courses: ['c-risk-management-online-seminar', 'c-change-management-bootcamp', 'c-business-analytics-and-ai-from-data-to', 'c-professional-certificate-in-digital-ma', 'c-business-analytics-for-leaders', 'c-financial-data-analysis-for-leaders-pr', 'c-leading-behavioral-change', 'c-your-path-to-a-board-seat']
     },
 {
       id: 'l-finance',
@@ -5328,7 +12457,7 @@ window.MASAR_DATA = (function () {
         en: 'Enough finance to challenge the numbers you are handed.',
         ar: 'قدر من المعرفة المالية يكفي لمساءلة الأرقام التي تُقدَّم إليك.'
       },
-      courses: ['c-financial-performance-management', 'c-risk-management-online-seminar', 'c-financial-statement-analysis-for-non-f', 'c-singapore-corporate-income-tax', 'c-artificial-intelligence-for-financial', 'c-accounting-and-finance-fundamentals', 'c-financial-data-analysis-for-leaders-pr', 'c-mergers-acquisitions']
+      courses: ['c-bestyrelsesarbejde-i-pension-forsikrin', 'c-accounting-and-finance-fundamentals', 'c-basisseminar-fit-for-insurance', 'c-financial-data-analysis-for-leaders-pr', 'c-mergers-acquisitions', 'c-financial-analysis-and-business-decisi', 'c-nonprofit-financial-stewardship', 'c-cas-performance-management-intensiv']
     },
 {
       id: 'l-negotiation',
@@ -5337,7 +12466,7 @@ window.MASAR_DATA = (function () {
         en: 'Programmes where you negotiate for most of the week, rather than hear about negotiating.',
         ar: 'برامج تتفاوض فيها معظم الوقت، بدل أن تستمع إلى محاضرات عن التفاوض.'
       },
-      courses: ['c-conflict-management-strategies', 'c-weiterbildung-fur-politik-cas-kommunik', 'c-erfolgreich-verhandeln-cas-hsg', 'c-negotiating-and-consensus-building', 'c-negotiations-and-conflict-management', 'c-empowering-women-to-succeed-in-negotia', 'c-negotiation-for-executives', 'c-strategies-and-skills-of-effective-neg']
+      courses: ['c-negotiating-for-value-creation', 'c-erfolgreich-verhandeln-cas-hsg', 'c-negotiating-and-consensus-building', 'c-negotiations-and-conflict-management-c', 'c-empowering-women-to-succeed-in-negotia', 'c-gesprachsfuhrung-und-verhandlungstechn', 'c-negotiation-for-executives', 'c-strategies-and-skills-of-effective-neg']
     }
   ];
 

@@ -29,6 +29,15 @@ host.
 
 Each page exists twice: English at the root, Arabic under `ar/`.
 
+## What a record may leave blank
+
+A programme is listed even when the school prints no date, no fee or no
+teaching-day count. The record then carries `start: null` ("dates to be
+announced"), `price: null` ("fee not published by the school") or
+`days: null` with the school's own `duration` line in both languages. The
+converters, gates and merge validator all accept these blanks; a filled
+cell that does not parse is still an error. See `docs/DESIGN.md`.
+
 ## Photographs
 
 Every photograph is an openly licensed image of the school's own campus

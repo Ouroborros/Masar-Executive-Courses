@@ -33,7 +33,7 @@ SITE = {
     "maroof": "",
     "address": {"en": "", "ar": ""},
     "form_endpoint": "",
-    "refreshed": {"en": "14 September 2026", "ar": "١٤ سبتمبر ٢٠٢٦"},
+    "refreshed": {"en": "30 September 2026", "ar": "٣٠ سبتمبر ٢٠٢٦"},
     "hero_image": "city-riyadh",   # a key from tools/fetch-images.py TERMS
     "fx_date": {"en": "13 September 2026", "ar": "١٣ سبتمبر ٢٠٢٦"},
 }

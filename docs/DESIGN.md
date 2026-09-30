@@ -36,7 +36,11 @@ What is kept from the ledger, because it is the point of the site:
 2. **One component carries the catalogue.** `.row` renders a programme at
    every scale. It now carries a small photograph of the school beside the
    title, but it is still a ruled row, not a card.
-3. **Silence is a value.** A field we have not recorded prints an em dash.
+3. **Silence is a value.** A field the school has not published prints its
+   absence: an undated programme says "dates to be announced" and gathers
+   under one head at the end of every ledger; an unpriced one says "fee not
+   published by the school"; a programme with no teaching-day count carries
+   the school's own duration line ("6 weeks, 4–6 hours per week") instead.
    No placeholder ratings, no invented "from" prices, no "most popular".
 
 What changes:
@@ -192,8 +196,16 @@ trip" became «يستحق عناء السفر», not «يستحق الرحلة»
   always labelled indicative and dated.
 - `sourceUrl` is provenance held in the data and **never rendered**. Since
   2026-09-14 every record's source is the school's own programme page; see
-  `docs/research/school-robots-2026-09-14.md` and the re-source section of
+  `docs/research/school-robots-2026-09-14.md` and the re-source sections of
   `apify-actor/CRAWL-STATUS.md`. Nothing derives from an aggregator.
+- A record may carry `start: null`, `price: null` or `days: null`. Each is a
+  fact the school did not print, and the site says so in words rather than
+  hiding the row or guessing. `duration` (an en/ar pair) is the school's own
+  length line and is shown only when `days` is null; `end` is optional.
+- The window is two intake seasons, 1 September 2026 to 31 August 2028. A
+  programme whose only printed session has already run is kept as undated,
+  with the last printed date noted in the import CSV, because the school
+  still lists it.
 - A school with no programmes does not appear in the schools chapter.
 
 ## Not built yet, worth building next
