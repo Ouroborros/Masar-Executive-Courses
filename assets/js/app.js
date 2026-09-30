@@ -35,6 +35,8 @@
 
   const SEP = I.LANG === 'ar' ? '، ' : ', ';
   const schoolOf = (c) => SCHOOL[c.school] || {};
+  /* Sort by start date; a programme with no date sorts after every dated one. */
+  const byStart = (a, b) => (a.start || '9999-99-99').localeCompare(b.start || '9999-99-99');
   const subjectLabel = (id) => pick(SUBJECT[id]);
   const formatLabel = (id) => pick(FORMAT[id]);
   const langLabel = (id) => pick(LANGUAGE[id]);
@@ -153,17 +155,24 @@
     const meta = [placeOf(c), formatLabel(c.format), subjectLabel(c.subject)].filter(Boolean);
     const label = t('card.rowA11y', {
       title: pick(c.title), school: pick(s.name), city: placeOf(c),
-      date: I.longDate(c.start), days: I.dayCount(c.days), fee: f.code + ' ' + f.amount
+      date: c.start ? I.longDate(c.start) : t('date.tba'),
+      days: c.days != null ? I.dayCount(c.days) : (c.duration ? pick(c.duration) : '—'),
+      fee: f.code ? f.code + ' ' + f.amount : t('fee.notPublished')
     });
     const altTitle = I.LANG === 'ar' ? (c.title && c.title.en) : (c.title && c.title.ar);
 
     return '' +
       '<article class="row" data-reveal style="--i:' + (opts.i || 0) + '">' +
         '<span class="row__idx lbl" aria-hidden="true">' + (opts.n != null ? String(opts.n).padStart(2, '0') : '') + '</span>' +
-        '<span class="row__date">' +
-          '<span class="row__d num">' + esc(I.dayNum(c.start)) + '</span>' +
-          '<span class="row__m lbl">' + esc(I.monthAbbr(c.start)) + '</span>' +
-        '</span>' +
+        (c.start
+          ? '<span class="row__date">' +
+              '<span class="row__d num">' + esc(I.dayNum(c.start)) + '</span>' +
+              '<span class="row__m lbl">' + esc(I.monthAbbr(c.start)) + '</span>' +
+            '</span>'
+          : '<span class="row__date row__date--tba">' +
+              '<span class="row__d num dash" aria-hidden="true">—</span>' +
+              '<span class="row__m lbl">' + esc(t('date.tbaShort')) + '</span>' +
+            '</span>') +
         '<div class="row__main">' +
           '<h3 class="row__t"><a href="course.html?id=' + c.id + '" aria-label="' + esc(label) + '">' +
             esc(pick(c.title)) + '</a></h3>' +
@@ -187,15 +196,26 @@
            but the save button is focusable and must stay out of that, or it
            would be a tab stop with no accessible name. */
         '<div class="row__foot">' +
-          '<div class="row__days" aria-hidden="true">' +
-            '<span class="lbl">' + esc(t('spec.days')) + '</span>' +
-            '<span class="row__n num">' + esc(I.num(c.days)) + '</span>' +
-          '</div>' +
-          '<div class="row__fee" aria-hidden="true">' +
-            '<span class="lbl">' + esc(t('spec.fee')) + ' · ' + esc(f.code) + '</span>' +
-            '<span class="row__fee-n num">' + esc(f.amount) + '</span>' +
-            '<span class="row__sar">' + esc(f.sub) + '</span>' +
-          '</div>' +
+          (c.days != null
+            ? '<div class="row__days" aria-hidden="true">' +
+                '<span class="lbl">' + esc(t('spec.days')) + '</span>' +
+                '<span class="row__n num">' + esc(I.num(c.days)) + '</span>' +
+              '</div>'
+            : '<div class="row__days row__days--text" aria-hidden="true">' +
+                '<span class="lbl">' + esc(t('spec.duration')) + '</span>' +
+                '<span class="row__dur">' + (c.duration ? esc(pick(c.duration)) : '<span class="dash">—</span>') + '</span>' +
+              '</div>') +
+          (c.price != null
+            ? '<div class="row__fee" aria-hidden="true">' +
+                '<span class="lbl">' + esc(t('spec.fee')) + ' · ' + esc(f.code) + '</span>' +
+                '<span class="row__fee-n num">' + esc(f.amount) + '</span>' +
+                '<span class="row__sar">' + esc(f.sub) + '</span>' +
+              '</div>'
+            : '<div class="row__fee row__fee--none" aria-hidden="true">' +
+                '<span class="lbl">' + esc(t('spec.fee')) + '</span>' +
+                '<span class="row__fee-n num dash">—</span>' +
+                '<span class="row__sar">' + esc(t('fee.notPublished')) + '</span>' +
+              '</div>') +
           '<span class="row__go">' + saveButton(c) + ARROW + '</span>' +
         '</div>' +
       '</article>';
@@ -206,16 +226,18 @@
     opts = opts || {};
     const groups = [];
     courses.forEach((c) => {
+      const key = c.start || 'tba';
       const last = groups[groups.length - 1];
-      if (last && last.key === c.start) last.items.push(c);
-      else groups.push({ key: c.start, items: [c] });
+      if (last && last.key === key) last.items.push(c);
+      else groups.push({ key: key, items: [c] });
     });
     let n = 0;
     return groups.map((g) => {
+      const tba = g.key === 'tba';
       const head = '<div class="grp-head">' +
-        '<span class="grp-head__g">' + esc(I.longDate(g.key)) + '</span>' +
-        '<span class="grp-head__h" lang="ar">' + esc(I.hijri(g.key)) + '</span>' +
-        '<span class="grp-head__c">' + esc(I.intakeCount(g.items.length)) + '</span>' +
+        '<span class="grp-head__g">' + esc(tba ? t('date.tba') : I.longDate(g.key)) + '</span>' +
+        (tba ? '' : '<span class="grp-head__h" lang="ar">' + esc(I.hijri(g.key)) + '</span>') +
+        '<span class="grp-head__c">' + esc(tba ? I.programmeCount(g.items.length) : I.intakeCount(g.items.length)) + '</span>' +
         '</div>';
       const body = g.items.map((c) => row(c, { i: Math.min(n, 6), n: ++n, alt: opts.alt, thumb: opts.thumb })).join('');
       return head + body;
@@ -332,8 +354,9 @@
       copy.addEventListener('click', function () {
         const text = Shortlist.read().map((id) => COURSE[id]).filter(Boolean).map((c) => {
           const f = I.fee(c.price, c.currency);
-          return [pick(c.title), pick(schoolOf(c).name), I.longDate(c.start),
-                  I.dayCount(c.days), f.code + ' ' + f.amount].join(' · ');
+          return [pick(c.title), pick(schoolOf(c).name), c.start ? I.longDate(c.start) : t('date.tba'),
+                  c.days != null ? I.dayCount(c.days) : (c.duration ? pick(c.duration) : '—'),
+                  f.code ? f.code + ' ' + f.amount : t('fee.notPublished')].join(' · ');
         }).join('\n');
         if (navigator.clipboard && text) {
           navigator.clipboard.writeText(text).then(() => {
@@ -358,8 +381,9 @@
       return '<div class="school-row school-row--saved">' +
         '<div><a class="school-row__name" href="course.html?id=' + c.id + '">' +
           esc(pick(c.title)) + '</a>' +
-        '<span class="row__meta lbl">' + esc(pick(schoolOf(c).name)) + ' / ' + esc(I.shortDate(c.start)) +
-        ' / ' + esc(f.code + ' ' + f.amount) + '</span></div>' +
+        '<span class="row__meta lbl">' + esc(pick(schoolOf(c).name)) + ' / ' +
+        esc(c.start ? I.shortDate(c.start) : t('date.tba')) +
+        ' / ' + esc(f.code ? f.code + ' ' + f.amount : t('fee.notPublished')) + '</span></div>' +
         '<button class="ctl" type="button" data-remove="' + c.id + '">' + esc(t('shortlist.remove')) + '</button>' +
         '</div>';
     }).join('');
@@ -392,8 +416,8 @@
 
     if (led) {
       const today = I.todayISO();
-      const next = D.courses.filter((c) => c.start >= today)
-        .sort((a, b) => a.start.localeCompare(b.start)).slice(0, 10);
+      const next = D.courses.filter((c) => c.start && c.start >= today)
+        .sort(byStart).slice(0, 10);
       led.innerHTML = ledger(next, { alt: true });
     }
 
@@ -435,9 +459,10 @@
     if (!sel.subject || !sel.city || !sel.month || !go) return;
 
     const cityOf = (c) => pick(schoolOf(c).city) || '';
-    const monthOf = (c) => c.start.slice(0, 7);
+    const monthOf = (c) => (c.start ? c.start.slice(0, 7) : 'tba');
     const months = [];
-    D.courses.map(monthOf).sort().forEach((m) => { if (months.indexOf(m) === -1) months.push(m); });
+    D.courses.map(monthOf).filter((m) => m !== 'tba').sort().forEach((m) => { if (months.indexOf(m) === -1) months.push(m); });
+    if (D.courses.some((c) => !c.start)) months.push('tba');
     const cities = [];
     D.courses.map(cityOf).filter(Boolean).forEach((x) => { if (cities.indexOf(x) === -1) cities.push(x); });
     cities.sort(I.collator.compare);
@@ -448,7 +473,7 @@
       city:    { of: cityOf, any: 'hero.anyCity',
                  opts: cities.map((x) => ({ id: x, name: x })) },
       month:   { of: monthOf, any: 'hero.anyMonth',
-                 opts: months.map((m) => ({ id: m, name: I.monthLabel(m + '-01') })) }
+                 opts: months.map((m) => ({ id: m, name: m === 'tba' ? t('date.tba') : I.monthLabel(m + '-01') })) }
     };
     const KEYS = Object.keys(DIM);
     const state = { subject: '', city: '', month: '' };
@@ -525,7 +550,8 @@
 
     /* Facet vocabulary, built from the data so it can never drift. */
     const months = [];
-    D.courses.map((c) => c.start.slice(0, 7)).sort().forEach((m) => { if (months.indexOf(m) === -1) months.push(m); });
+    D.courses.filter((c) => c.start).map((c) => c.start.slice(0, 7)).sort().forEach((m) => { if (months.indexOf(m) === -1) months.push(m); });
+    const anyTba = D.courses.some((c) => !c.start);
 
     const FACETS = [
       { key: 'subject', label: 'facet.subject',
@@ -541,14 +567,18 @@
         opts: () => uniq(D.courses.map((c) => pick(schoolOf(c).country)).filter(Boolean)).map((x) => ({ id: x, name: x })),
         of: (c) => [pick(schoolOf(c).country)].filter(Boolean) },
       { key: 'month', label: 'facet.month',
-        opts: () => months.map((m) => ({ id: m, name: I.monthLabel(m + '-01') })),
-        of: (c) => [c.start.slice(0, 7)] },
+        opts: () => months.map((m) => ({ id: m, name: I.monthLabel(m + '-01') }))
+          .concat(anyTba ? [{ id: 'tba', name: t('date.tba') }] : []),
+        of: (c) => [c.start ? c.start.slice(0, 7) : 'tba'] },
       { key: 'days', label: 'facet.days',
-        opts: () => DAY_BANDS.map((b) => ({ id: b.id, name: t('days.' + b.id) })),
-        of: (c) => DAY_BANDS.filter((b) => c.days >= b.lo && c.days <= b.hi).map((b) => b.id) },
+        opts: () => DAY_BANDS.map((b) => ({ id: b.id, name: t('days.' + b.id) }))
+          .concat(D.courses.some((c) => c.days == null) ? [{ id: '0', name: t('days.0') }] : []),
+        of: (c) => c.days == null ? ['0'] : DAY_BANDS.filter((b) => c.days >= b.lo && c.days <= b.hi).map((b) => b.id) },
       { key: 'fee', label: 'facet.fee',
-        opts: () => FEE_BANDS.map((b) => ({ id: b.id, name: feeBandName(b) })),
+        opts: () => FEE_BANDS.map((b) => ({ id: b.id, name: feeBandName(b) }))
+          .concat(D.courses.some((c) => c.price == null) ? [{ id: '0', name: t('fee.0') }] : []),
         of: (c) => {
+          if (c.price == null) return ['0'];
           const u = I.toUsd(c.price, c.currency);
           return FEE_BANDS.filter((b) => (b.min == null || u >= b.min) && (b.max == null || u < b.max)).map((b) => b.id);
         } },
@@ -597,12 +627,14 @@
       return true;
     }
 
+    const num = (v) => (v == null ? Infinity : v);
     const SORTERS = {
-      date:  (a, b) => a.start.localeCompare(b.start),
-      fee:   (a, b) => I.toUsd(a.price, a.currency) - I.toUsd(b.price, b.currency),
-      days:  (a, b) => a.days - b.days,
+      date:  byStart,
+      fee:   (a, b) => (num(a.price == null ? null : I.toUsd(a.price, a.currency)) -
+                        num(b.price == null ? null : I.toUsd(b.price, b.currency))) || 0,
+      days:  (a, b) => (num(a.days) - num(b.days)) || 0,
       school: (a, b) => I.collator.compare(pick(schoolOf(a).name), pick(schoolOf(b).name)) ||
-                        a.start.localeCompare(b.start)
+                        byStart(a, b)
     };
 
     const sortBox = document.querySelector('[data-sort]');
@@ -772,7 +804,7 @@
       '<div class="facts__v">' + v + (sub ? '<span class="hijri" lang="ar">' + esc(sub) + '</span>' : '') + '</div></div>';
 
     const wa = SITE_WA ? '<a class="btn btn--solid btn--block" rel="noopener" href="https://wa.me/' + SITE_WA +
-      '?text=' + encodeURIComponent(pick(c.title) + ' — ' + I.longDate(c.start)) + '">WhatsApp</a>' : '';
+      '?text=' + encodeURIComponent(pick(c.title) + (c.start ? ' — ' + I.longDate(c.start) : '')) + '">WhatsApp</a>' : '';
 
     mount.innerHTML = '' +
       '<div class="rec-head">' +
@@ -788,14 +820,19 @@
             fact(t('spec.city'), val(placeOf(c))) +
             fact(t('spec.format'), esc(formatLabel(c.format))) +
             fact(t('spec.language'), esc((c.langs || []).map(langLabel).join(' / '))) +
-            fact(t('spec.starts'), esc(I.longDate(c.start)), I.hijri(c.start)) +
-            fact(t('spec.days'), esc(I.dayCount(c.days))) +
+            (c.start
+              ? fact(t('spec.starts'), esc(I.longDate(c.start)), I.hijri(c.start))
+              : fact(t('spec.starts'), '<span class="dash">' + esc(t('date.tba')) + '</span>')) +
+            (c.end ? fact(t('spec.ends'), esc(I.longDate(c.end)), I.hijri(c.end)) : '') +
+            (c.days != null
+              ? fact(t('spec.days'), esc(I.dayCount(c.days)))
+              : fact(t('spec.duration'), c.duration ? esc(pick(c.duration)) : DASH)) +
             fact(t('spec.subject'), esc(subjectLabel(c.subject))) +
           '</div>' +
 
           '<div class="fee-lockup">' +
-            '<span class="fee-lockup__cur">' + esc(t('spec.fee')) + ' · ' + esc(f.code) + '</span>' +
-            '<span class="fee-lockup__n num">' + esc(f.amount) + '</span>' +
+            '<span class="fee-lockup__cur">' + esc(t('spec.fee')) + (f.code ? ' · ' + esc(f.code) : '') + '</span>' +
+            '<span class="fee-lockup__n num' + (c.price == null ? ' dash' : '') + '">' + esc(f.amount) + '</span>' +
             '<span class="fee-lockup__sar">' + esc(f.sub) + '</span>' +
           '</div>' +
         '</div>' +
@@ -815,9 +852,9 @@
       '</div>';
 
     const others = D.courses.filter((x) => x.id !== c.id && x.school === c.school)
-      .sort((a, b) => a.start.localeCompare(b.start)).slice(0, 4);
+      .sort(byStart).slice(0, 4);
     const similar = D.courses.filter((x) => x.id !== c.id && x.school !== c.school && x.subject === c.subject)
-      .sort((a, b) => a.start.localeCompare(b.start)).slice(0, 4);
+      .sort(byStart).slice(0, 4);
     let tail = '';
     if (others.length) tail += '<div class="mini"><h2>' + esc(t('rec.other')) + '</h2>' +
       others.map((x, i) => row(x, { i: Math.min(i, 6), n: i + 1 })).join('') + '</div>';
@@ -828,7 +865,7 @@
     /* The mobile action bar repeats the fee and the primary action. */
     const bar = document.createElement('div');
     bar.className = 'rec-bar';
-    bar.innerHTML = '<span class="rec-bar__fee num">' + esc(f.code + ' ' + f.amount) + '</span>' +
+    bar.innerHTML = '<span class="rec-bar__fee num">' + esc(f.code ? f.code + ' ' + f.amount : f.amount) + '</span>' +
       (SITE_WA
         ? '<a class="btn btn--solid" rel="noopener" href="https://wa.me/' + SITE_WA + '">WhatsApp</a>'
         : '<a class="btn btn--solid" href="contact.html?course=' + c.id + '#teams-form">' + esc(t('rec.proposal')) + '</a>');
@@ -886,7 +923,7 @@
     const crumb = document.querySelector('[data-crumb-school]');
     if (crumb) crumb.textContent = pick(s.name);
 
-    const courses = D.courses.filter((c) => c.school === s.id).sort((a, b) => a.start.localeCompare(b.start));
+    const courses = D.courses.filter((c) => c.school === s.id).sort(byStart);
     const pic = photo(s, { cls: 'hero-fig__photo', eager: true });
     mount.innerHTML =
       (pic ? '<figure class="hero-fig">' + pic + credit(s) + '</figure>' : '') +
@@ -931,7 +968,7 @@
     const crumb = document.querySelector('[data-crumb-list]');
     if (crumb) crumb.textContent = pick(l.title);
     const courses = l.courses.map((id) => COURSE[id]).filter(Boolean)
-      .sort((a, b) => a.start.localeCompare(b.start));
+      .sort(byStart);
     mount.innerHTML =
       '<div class="chap-head">' +
         '<span class="chap-num num">' + esc(I.num(courses.length)) + '</span>' +

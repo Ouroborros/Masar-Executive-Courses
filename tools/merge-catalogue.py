@@ -47,7 +47,7 @@ COURSE_FIELDS = ["id", "school", "subject", "format", "start", "days", "price",
 # Editorial metrics. Optional: a real imported listing has no rating and gets
 # none — the site renders those cards without a review line rather than
 # inventing one. popularity defaults to 50 (middle of the sort) when absent.
-OPTIONAL_FIELDS = ["rating", "reviews", "popularity"]
+OPTIONAL_FIELDS = ["rating", "reviews", "popularity", "duration", "end"]
 SCHOOL_FIELDS = ["id", "name", "city", "country", "region", "founded",
                  "accreditation", "about"]
 
@@ -83,6 +83,10 @@ def course_js(c):
     metrics.append("popularity: {}".format(c.get("popularity", 50)))
     if c.get("source_url"):
         metrics.append("sourceUrl: {}".format(q(c["source_url"])))
+    if c.get("end"):
+        metrics.append("end: {}".format(q(c["end"])))
+    if is_pair(c.get("duration") or {}):
+        metrics.append("duration: {}".format(pair(c["duration"], 6)))
     return (
         "    {{\n"
         "      id: {id}, school: {school}, subject: {subject}, format: {format},\n"
@@ -95,7 +99,9 @@ def course_js(c):
         "    }}"
     ).format(
         id=q(c["id"]), school=q(c["school"]), subject=q(c["subject"]), format=q(c["format"]),
-        start=q(c["start"]), days=c["days"], price=c["price"],
+        start=q(c["start"]) if c["start"] is not None else "null",
+        days=c["days"] if c["days"] is not None else "null",
+        price=c["price"] if c["price"] is not None else "null",
         currency=(" currency: {},".format(q(c["currency"]))
                   if c.get("currency", "USD") != "USD" else ""),
         langs=", ".join(q(l) for l in c["langs"]),
@@ -177,25 +183,38 @@ def check_course(c, known_course_ids, school_ids, errs, where, scraped=False):
         errs.append("{} [{}]: unknown subject '{}'".format(where, cid, c["subject"]))
     if c["format"] not in FORMATS:
         errs.append("{} [{}]: unknown format '{}'".format(where, cid, c["format"]))
-    try:
-        d = date(*[int(x) for x in c["start"].split("-")])
-        if not WINDOW[0] <= d <= WINDOW[1]:
-            errs.append("{} [{}]: start {} outside the window".format(where, cid, c["start"]))
-    except Exception:
-        errs.append("{} [{}]: unparseable start '{}'".format(where, cid, c["start"]))
+    # start may be null: the school prints no date and the site says so.
+    if c["start"] is not None:
+        try:
+            d = date(*[int(x) for x in c["start"].split("-")])
+            if not WINDOW[0] <= d <= WINDOW[1]:
+                errs.append("{} [{}]: start {} outside the window".format(where, cid, c["start"]))
+        except Exception:
+            errs.append("{} [{}]: unparseable start '{}'".format(where, cid, c["start"]))
     if not isinstance(c["langs"], list) or not c["langs"] or set(c["langs"]) - LANGS:
         errs.append("{} [{}]: bad langs {}".format(where, cid, c["langs"]))
-    if not isinstance(c["days"], int) or not 2 <= c["days"] <= 20:
+    # days may be null when the school publishes a duration line instead;
+    # a printed count is bounded loosely (a year-long programme is ~200 days).
+    if c["days"] is not None and (not isinstance(c["days"], int) or not 1 <= c["days"] <= 400):
         errs.append("{} [{}]: days out of range ({})".format(where, cid, c["days"]))
+    if c["days"] is None and not is_pair(c.get("duration") or {}) and scraped is False:
+        errs.append("{} [{}]: no days and no duration line".format(where, cid))
+    if "duration" in c and not is_pair(c["duration"]):
+        errs.append("{} [{}]: duration is not a filled en/ar pair".format(where, cid))
     # Fees are stored in the currency the source printed (absent = USD);
     # the sanity bounds below are checked on the USD equivalent via tools/fx.py.
+    # A null fee means the school did not publish one.
     currency = c.get("currency", "USD")
     usd = fx.to_usd(c["price"], currency) if isinstance(c["price"], int) else None
     if currency not in fx.USD_PER:
         errs.append("{} [{}]: unknown currency '{}'".format(where, cid, currency))
-    elif not isinstance(c["price"], int) or not 300 <= usd <= 60000:
+    elif c["price"] is None:
+        pass
+    elif not isinstance(c["price"], int) or not 200 <= usd <= 120000:
         errs.append("{} [{}]: price out of range ({} {})".format(
             where, cid, c["price"], currency))
+    elif c["days"] is None:
+        pass
     else:
         # Board-level short programmes really do cost this much: the existing
         # catalogue runs 2,042/day (c-agp) and 2,360/day (c-board-fin), so the
@@ -203,7 +222,7 @@ def check_course(c, known_course_ids, school_ids, errs, where, scraped=False):
         # Scraped reality outruns the editorial ceiling: Stanford's 2026
         # short programmes list at up to 2,950/day (29,500 over 10 days).
         per_day = usd / max(c["days"], 1)
-        if not 120 <= per_day <= (3500 if scraped else 2500):
+        if not 60 <= per_day <= (4000 if scraped else 2500):
             errs.append("{} [{}]: {:.0f} USD/day is implausible ({} {} over {} days)".format(
                 where, cid, per_day, c["price"], currency, c["days"]))
     if "rating" in c and (not isinstance(c["rating"], (int, float)) or not 3.5 <= c["rating"] <= 5.0):

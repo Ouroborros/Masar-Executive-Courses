@@ -52,6 +52,12 @@ window.MASAR_I18N = (function () {
       'days.2': '4–6 days',
       'days.3': '1–3 weeks',
       'days.4': '4 weeks or more',
+      'days.0': 'Not stated as days',
+      'fee.0': 'Not published',
+      'date.tba': 'Dates to be announced',
+      'date.tbaShort': 'TBA',
+      'fee.notPublished': 'Fee not published by the school',
+      'spec.duration': 'Duration',
 
       'results.match': 'programmes match.',
       'results.none': 'Nothing here matches that.',
@@ -141,6 +147,12 @@ window.MASAR_I18N = (function () {
       'days.2': '٤–٦ أيام',
       'days.3': 'أسبوع إلى ٣ أسابيع',
       'days.4': '٤ أسابيع فأكثر',
+      'days.0': 'غير محدّدة بالأيام',
+      'fee.0': 'غير منشورة',
+      'date.tba': 'المواعيد تُعلَن لاحقًا',
+      'date.tbaShort': 'لاحقًا',
+      'fee.notPublished': 'لم تنشر الكلية الرسوم',
+      'spec.duration': 'المدة',
 
       'results.match': 'مطابقة للبحث.',
       'results.none': 'لا شيء هنا يطابق ذلك.',
@@ -234,7 +246,7 @@ window.MASAR_I18N = (function () {
     en1: 'intake', en: 'intakes',
     zero: 'لا دفعات', one: 'دفعة واحدة', two: 'دفعتان', few: 'دفعات', many: 'دفعةً'
   });
-  const dayCount = (n) => agree(n, {
+  const dayCount = (n) => n == null ? '—' : agree(n, {
     en1: 'day', en: 'days',
     zero: 'لا أيام', one: 'يوم واحد', two: 'يومان', few: 'أيام', many: 'يومًا'
   });
@@ -244,6 +256,7 @@ window.MASAR_I18N = (function () {
   const at = (iso) => new Date(iso + 'T12:00:00Z');
 
   function fmt(iso, opts, locale) {
+    if (!iso) return '—';
     try { return new Intl.DateTimeFormat(locale || numLocale, opts).format(at(iso)); }
     catch (e) { return iso; }
   }
@@ -257,6 +270,7 @@ window.MASAR_I18N = (function () {
   /* The Hijri date is rendered in Arabic script with هـ in BOTH locales — a
      Latin transliteration of an Umm al-Qura month is nobody's convention. */
   function hijri(iso) {
+    if (!iso) return '';
     try {
       return new Intl.DateTimeFormat('ar-SA-u-ca-islamic-umalqura-nu-latn',
         { day: 'numeric', month: 'long', year: 'numeric' }).format(at(iso)) + 'هـ';
@@ -299,6 +313,9 @@ window.MASAR_I18N = (function () {
      Default keeps the school's own currency; the toggle promotes the riyal. */
   function fee(price, currency) {
     const code = currency || 'USD';
+    if (price == null) {
+      return { code: '', amount: '—', sub: t('fee.notPublished') };
+    }
     const sar = toSar(price, code);
     if (getCurrency() === 'sar') {
       return { code: 'SAR', amount: amount(sar),
@@ -322,7 +339,7 @@ window.MASAR_I18N = (function () {
   /* A compact one-line fee, for the drawer and the mobile bar. */
   const feeLine = (price, currency) => {
     const f = fee(price, currency);
-    return f.code + ' ' + f.amount;
+    return f.code ? f.code + ' ' + f.amount : f.amount;
   };
 
   /* --- Text --------------------------------------------------------------- */

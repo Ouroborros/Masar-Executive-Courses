@@ -170,17 +170,23 @@ def main():
         if not fmt:
             problems.append("format '{}' unrecognised".format(get("format") or "(blank)"))
 
+        # A blank start, days or price is a fact the school did not publish:
+        # the record carries null and the site prints "to be announced" /
+        # "not published". A filled cell that does not parse is still an error.
         start = parse_date(r.get("start"))
-        if not start:
-            problems.append("start date '{}' unparseable".format(get("start") or "(blank)"))
+        if get("start") and not start:
+            problems.append("start date '{}' unparseable".format(get("start")))
 
         days = parse_days(r.get("days"))
-        if not days:
-            problems.append("duration '{}' unparseable".format(get("days") or "(blank)"))
+        if get("days") and not days:
+            problems.append("duration '{}' unparseable".format(get("days")))
+        duration = (get("duration"), get("duration_ar"))
+        if duration[0] and not duration[1]:
+            problems.append("duration line '{}' has no Arabic".format(duration[0]))
 
         price = parse_price(r.get("price"))
-        if price is None:
-            problems.append("price '{}' unparseable".format(get("price") or "(blank)"))
+        if get("price") and price is None:
+            problems.append("price '{}' unparseable".format(get("price")))
         # Fees stay in the currency the source printed them in; the
         # catalogue converts only for display (SAR option) and for the
         # USD-equivalent plausibility checks below. A row whose currency is
@@ -241,6 +247,10 @@ def main():
             "audience": {"en": get("audience"), "ar": get("audience_ar")},
             "source_url": get("source_url"),
         }
+        if duration[0]:
+            course["duration"] = {"en": duration[0], "ar": duration[1]}
+        if get("end") and parse_date(r.get("end")):
+            course["end"] = parse_date(r.get("end"))
         rating, reviews = get("rating"), get("reviews")
         if rating:
             try:

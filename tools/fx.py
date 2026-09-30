@@ -31,4 +31,4 @@ USD_PER = {
 def to_usd(amount, currency):
     """USD equivalent of an amount, or None for an unknown currency."""
     rate = USD_PER.get((currency or "").upper())
-    return None if rate is None else amount * rate
+    return None if rate is None or amount is None else amount * rate

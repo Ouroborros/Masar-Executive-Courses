@@ -39,7 +39,7 @@ DATA = os.path.join(HERE, "assets", "js", "data.js")
 RULES = {
     "l-ai": lambda c: c["subject"] == "digital" or re.search(
         r"\b(ai|artificial intelligence|generative|machine learning|agentic)\b", c["title"]["en"], re.I),
-    "l-week": lambda c: c["days"] <= 5 and c["format"] == "in-person",
+    "l-week": lambda c: c.get("days") is not None and c["days"] <= 5 and c["format"] == "in-person",
     "l-firsttime": lambda c: re.search(
         r"\b(new|emerging|first[- ]time|new manager|frontline|fundamental)\b", c["title"]["en"], re.I),
     "l-online": lambda c: c["format"] == "online",
@@ -58,7 +58,7 @@ def load():
 
 def pick(courses, rule, cap=8, per_school=2):
     got, per = [], {}
-    for c in sorted(courses, key=lambda c: (c["start"], c["title"]["en"])):
+    for c in sorted(courses, key=lambda c: (c.get("start") or "9999", c["title"]["en"])):
         if not rule(c):
             continue
         if per.get(c["school"], 0) >= per_school:
@@ -91,9 +91,10 @@ def main():
     top = sorted(by_school, key=lambda s: -len(by_school[s]))[:8]
     featured = []
     for s in top:
-        pool = [c for c in by_school[s] if c["format"] == "in-person" and c["start"] <= "2027-02-28"]
-        pool = pool or [c for c in by_school[s] if c["format"] == "in-person"] or by_school[s]
-        best = max(pool, key=lambda c: (fx.to_usd(c["price"], c.get("currency", "USD")), c["start"]))
+        priced = [c for c in by_school[s] if c.get("price") is not None and c.get("start")]
+        pool = [c for c in priced if c["format"] == "in-person" and c["start"] <= "2027-02-28"]
+        pool = pool or [c for c in priced if c["format"] == "in-person"] or priced or by_school[s]
+        best = max(pool, key=lambda c: (fx.to_usd(c["price"] or 0, c.get("currency", "USD")), c.get("start") or ""))
         featured.append(best["id"])
     print("featured: {}".format(", ".join(featured)))
 

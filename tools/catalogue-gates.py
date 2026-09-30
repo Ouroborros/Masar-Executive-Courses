@@ -11,10 +11,12 @@ same factual gates merge-catalogue enforces and moves the violations to the
 batch's .rejected.csv with reasons, so the merge runs clean and every
 exclusion stays on record:
 
-  * days outside 2-20 (the catalogue is scoped to short courses)
-  * price implausible per day / out of range on the USD equivalent (fx.py)
+  * a printed day count outside 1-400 (a null count is allowed: the record
+    carries the school's own duration line instead)
+  * a printed fee implausible per day / out of range on the USD equivalent
+    (fx.py); a null fee is allowed and prints "not published"
   * later sessions of a course already kept (one course per title, at its
-    next upcoming start)
+    next upcoming start; a dated session beats an undated one)
   * titles already present in assets/js/data.js (near-duplicate rule)
 """
 
@@ -55,7 +57,8 @@ def main():
     best = {}
     for c in batch:
         k = norm(c["title"]["en"])
-        if k not in best or c["start"] < best[k]["start"]:
+        cur = best.get(k)
+        if cur is None or (c["start"] and (not cur["start"] or c["start"] < cur["start"])):
             best[k] = c
 
     keep, drop = [], []
@@ -63,19 +66,20 @@ def main():
         k = norm(c["title"]["en"])
         why = []
         days = c.get("days")
-        if not isinstance(days, int) or not 2 <= days <= 20:
+        if days is not None and (not isinstance(days, int) or not 1 <= days <= 400):
             why.append("days outside catalogue range ({})".format(days))
-        usd = fx.to_usd(c["price"], c.get("currency", "USD")) \
-            if isinstance(c.get("price"), int) else None
-        if usd is None:
+        price = c.get("price")
+        usd = fx.to_usd(price, c.get("currency", "USD")) if isinstance(price, int) else None
+        if price is not None and usd is None:
             why.append("price/currency unusable")
-        else:
-            per_day = usd / max(days if isinstance(days, int) else 1, 1)
-            if not 300 <= usd <= 60000:
+        elif usd is not None:
+            if not 200 <= usd <= 120000:
                 why.append("USD-equivalent price out of range ({:.0f})".format(usd))
-            elif not 120 <= per_day <= 3500:
-                why.append("{:.0f} USD/day implausible ({} {} over {} days)".format(
-                    per_day, c["price"], c.get("currency", "USD"), days))
+            elif isinstance(days, int):
+                per_day = usd / max(days, 1)
+                if not 60 <= per_day <= 4000:
+                    why.append("{:.0f} USD/day implausible ({} {} over {} days)".format(
+                        per_day, price, c.get("currency", "USD"), days))
         if best[k] is not c:
             why.append("later session ({}) of a kept course".format(c["start"]))
         elif k in taken:

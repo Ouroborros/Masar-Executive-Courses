@@ -575,6 +575,12 @@ select.ctl { appearance: none; padding-inline-end: 28px; }
 .row__sar { display: block; font-size: var(--fs-100); line-height: 1.35; color: var(--muted); margin-block-start: var(--sp-1); direction: ltr; unicode-bidi: isolate; }
 :root[dir="rtl"] .row__sar { font-size: var(--fs-150); }
 .row__fee .lbl, .row__days .lbl { display: block; }
+/* A programme the school has not dated, priced or counted in days prints the
+   fact's absence, never a guess: a dash where the figure would be, and the
+   school's own duration line where the day count would be. */
+.row__date--tba .row__d { color: var(--muted); }
+.row__dur { display: block; margin-block-start: 4px; font-family: var(--font-display); font-size: var(--fs-400); line-height: var(--lh-title); }
+.row__fee--none .row__fee-n, .fee-lockup__n.dash { color: var(--muted); }
 
 @media (min-width: 900px) {
   .row {
