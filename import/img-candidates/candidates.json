@@ -1741,7 +1741,47 @@
    "page": "https://commons.wikimedia.org/wiki/File%3AR%C3%A2ul_Sadu_2009_%282%29.jpg"
   }
  ],
- "school-insead": [],
+ "school-insead": [
+  {
+   "title": "File:Harjeet at Insead.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Harjeet_at_Insead.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Harjeet_at_Insead.jpg/960px-Harjeet_at_Insead.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "width": 3775,
+   "height": 2100,
+   "mime": "image/jpeg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Simppi20",
+   "credit": "Own work",
+   "page": "https://commons.wikimedia.org/wiki/File%3AHarjeet_at_Insead.jpg"
+  },
+  {
+   "title": "File:INS Tarmugli (T91) near Visakhapatnam port.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/INS_Tarmugli_%28T91%29_near_Visakhapatnam_port.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/INS_Tarmugli_%28T91%29_near_Visakhapatnam_port.jpg/960px-INS_Tarmugli_%28T91%29_near_Visakhapatnam_port.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "width": 6000,
+   "height": 4000,
+   "mime": "image/jpeg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "iMahesh",
+   "credit": "Own work",
+   "page": "https://commons.wikimedia.org/wiki/File%3AINS_Tarmugli_%28T91%29_near_Visakhapatnam_port.jpg"
+  },
+  {
+   "title": "File:Insead Hans Ippisch.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Insead_Hans_Ippisch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Insead_Hans_Ippisch.jpg/960px-Insead_Hans_Ippisch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "width": 3264,
+   "height": 2448,
+   "mime": "image/jpeg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Hans Ippisch",
+   "credit": "Own work",
+   "page": "https://commons.wikimedia.org/wiki/File%3AInsead_Hans_Ippisch.jpg"
+  }
+ ],
  "school-lbs": [
   {
    "title": "File:London Business School 03.jpg",
@@ -1837,7 +1877,34 @@
    "page": "https://commons.wikimedia.org/wiki/File%3AHarvard_Business_School_-_Baker_Library_%2854939977732%29.jpg"
   }
  ],
- "school-wharton": [],
+ "school-wharton": [
+  {
+   "title": "File:Huntsman Hall South.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Huntsman_Hall_South.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Huntsman_Hall_South.jpg/960px-Huntsman_Hall_South.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "width": 3613,
+   "height": 2316,
+   "mime": "image/jpeg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "DMT490",
+   "credit": "Own work",
+   "page": "https://commons.wikimedia.org/wiki/File%3AHuntsman_Hall_South.jpg"
+  },
+  {
+   "title": "File:Huntsman Hall at the University of Pennsylvania.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Huntsman_Hall_at_the_University_of_Pennsylvania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Huntsman_Hall_at_the_University_of_Pennsylvania.jpg/960px-Huntsman_Hall_at_the_University_of_Pennsylvania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "width": 1920,
+   "height": 1280,
+   "mime": "image/jpeg",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "WestCoastivieS",
+   "credit": "Own work",
+   "page": "https://commons.wikimedia.org/wiki/File%3AHuntsman_Hall_at_the_University_of_Pennsylvania.jpg"
+  }
+ ],
  "school-hec": [
   {
    "title": "File:Chateau, HEC Paris, Jouy-en-Josas, South view 20160501 1.jpg",
@@ -1948,17 +2015,17 @@
  ],
  "school-esade": [
   {
-   "title": "File:Esade logo nuevo.png",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Esade_logo_nuevo.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Esade_logo_nuevo.png/960px-Esade_logo_nuevo.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "width": 2230,
-   "height": 1525,
-   "mime": "image/png",
-   "licence": "CC BY-SA 4.0",
-   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Esade Business School",
-   "credit": "Esade Business School",
-   "page": "https://commons.wikimedia.org/wiki/File%3AEsade_logo_nuevo.png"
+   "title": "File:Esade - Rambla de la Innovación.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Esade_-_Rambla_de_la_Innovaci%C3%B3n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Esade_-_Rambla_de_la_Innovaci%C3%B3n.jpg/960px-Esade_-_Rambla_de_la_Innovaci%C3%B3n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "width": 5835,
+   "height": 3502,
+   "mime": "image/jpeg",
+   "licence": "CC BY 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "Jorge Franganillo",
+   "credit": "https://www.flickr.com/photos/franganillo/54583279275/",
+   "page": "https://commons.wikimedia.org/wiki/File%3AEsade_-_Rambla_de_la_Innovaci%C3%B3n.jpg"
   }
  ],
  "school-said": [
@@ -2099,19 +2166,6 @@
    "page": "https://commons.wikimedia.org/wiki/File%3ARenzo_Piano_%2816722112967%29.jpg"
   },
   {
-   "title": "File:Renzo Piano (16741777248).jpg",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Renzo_Piano_%2816741777248%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Renzo_Piano_%2816741777248%29.jpg/960px-Renzo_Piano_%2816741777248%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "width": 5050,
-   "height": 3366,
-   "mime": "image/jpeg",
-   "licence": "CC BY 2.0",
-   "licence_url": "https://creativecommons.org/licenses/by/2.0",
-   "author": "Columbia GSAPP",
-   "credit": "Renzo Piano",
-   "page": "https://commons.wikimedia.org/wiki/File%3ARenzo_Piano_%2816741777248%29.jpg"
-  },
-  {
    "title": "File:Renzo Piano (16741778318).jpg",
    "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Renzo_Piano_%2816741778318%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Renzo_Piano_%2816741778318%29.jpg/960px-Renzo_Piano_%2816741778318%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2149,6 +2203,19 @@
    "author": "Columbia GSAPP",
    "credit": "Renzo Piano",
    "page": "https://commons.wikimedia.org/wiki/File%3ARenzo_Piano_%2816742018580%29.jpg"
+  },
+  {
+   "title": "File:Renzo Piano (16928459571).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Renzo_Piano_%2816928459571%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Renzo_Piano_%2816928459571%29.jpg/960px-Renzo_Piano_%2816928459571%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "width": 4638,
+   "height": 3092,
+   "mime": "image/jpeg",
+   "licence": "CC BY 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "Columbia GSAPP",
+   "credit": "Renzo Piano",
+   "page": "https://commons.wikimedia.org/wiki/File%3ARenzo_Piano_%2816928459571%29.jpg"
   },
   {
    "title": "File:Renzo Piano (Columbia GSAPP).jpg",
@@ -2244,5 +2311,71 @@
    "page": "https://commons.wikimedia.org/wiki/File%3ABooth_School_of_Business_Harper_Center%2C_University_of_Chicago%2C_Woodlawn_Avenue_and_58th_Street%2C_Hyde_Park%2C_Chicago%2C_IL_%2854213850759%29.jpg"
   }
  ],
- "school-mbs": []
+ "school-mbs": [
+  {
+   "title": "File:Belly Dancing School demonstration - Carrara Market (2569637885).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Belly_Dancing_School_demonstration_-_Carrara_Market_%282569637885%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Belly_Dancing_School_demonstration_-_Carrara_Market_%282569637885%29.jpg/960px-Belly_Dancing_School_demonstration_-_Carrara_Market_%282569637885%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "width": 2048,
+   "height": 1536,
+   "mime": "image/jpeg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "author": "Alpha from Melbourne, Australia",
+   "credit": "Belly Dancing School demonstration - Carrara Market",
+   "page": "https://commons.wikimedia.org/wiki/File%3ABelly_Dancing_School_demonstration_-_Carrara_Market_%282569637885%29.jpg"
+  },
+  {
+   "title": "File:Don't tell me my planet isn't my business - - Melbourne climate strike - IMG 4017 (47385011631).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Don%27t_tell_me_my_planet_isn%27t_my_business_-_-_Melbourne_climate_strike_-_IMG_4017_%2847385011631%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Don%27t_tell_me_my_planet_isn%27t_my_business_-_-_Melbourne_climate_strike_-_IMG_4017_%2847385011631%29.jpg/960px-Don%27t_tell_me_my_planet_isn%27t_my_business_-_-_Melbourne_climate_strike_-_IMG_4017_%2847385011631%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "width": 3456,
+   "height": 2304,
+   "mime": "image/jpeg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "author": "Takver from Australia",
+   "credit": "Don't tell me my planet isn't my business -  - Melbourne climate strike - IMG_4017",
+   "page": "https://commons.wikimedia.org/wiki/File%3ADon%27t_tell_me_my_planet_isn%27t_my_business_-_-_Melbourne_climate_strike_-_IMG_4017_%2847385011631%29.jpg"
+  },
+  {
+   "title": "File:Jenny George at Fraser Symposium.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Jenny_George_at_Fraser_Symposium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Jenny_George_at_Fraser_Symposium.jpg/960px-Jenny_George_at_Fraser_Symposium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "width": 6000,
+   "height": 4000,
+   "mime": "image/jpeg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Alison Newman",
+   "credit": "Own work",
+   "page": "https://commons.wikimedia.org/wiki/File%3AJenny_George_at_Fraser_Symposium.jpg"
+  },
+  {
+   "title": "File:The University of Melbourne.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/The_University_of_Melbourne.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/The_University_of_Melbourne.JPG/960px-The_University_of_Melbourne.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "width": 3920,
+   "height": 2204,
+   "mime": "image/jpeg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Polly clip",
+   "credit": "Own work",
+   "page": "https://commons.wikimedia.org/wiki/File%3AThe_University_of_Melbourne.JPG"
+  },
+  {
+   "title": "File:Warped 2 ( In Explore) - Flickr - bobarcpics.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Warped_2_%28_In_Explore%29_-_Flickr_-_bobarcpics.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Warped_2_%28_In_Explore%29_-_Flickr_-_bobarcpics.jpg/960px-Warped_2_%28_In_Explore%29_-_Flickr_-_bobarcpics.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "width": 2896,
+   "height": 1944,
+   "mime": "image/jpeg",
+   "licence": "CC BY 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "Rob Deutscher from Melbourne, Australia",
+   "credit": "Warped 2 [ In Explore]",
+   "page": "https://commons.wikimedia.org/wiki/File%3AWarped_2_%28_In_Explore%29_-_Flickr_-_bobarcpics.jpg"
+  }
+ ]
 }
