@@ -1,0 +1,32 @@
+[
+ {
+  "url": "https://mbsc.edu.sa/robots.txt",
+  "status": null,
+  "error": "<urlopen error [Errno -5] No address associated with hostname>"
+ },
+ {
+  "url": "https://mbsc.edu.sa/executive-education/",
+  "status": null,
+  "error": "<urlopen error [Errno -5] No address associated with hostname>"
+ },
+ {
+  "url": "https://mbsc.edu.sa/",
+  "status": null,
+  "error": "<urlopen error [Errno -5] No address associated with hostname>"
+ },
+ {
+  "url": "https://mbsc.edu.sa/wp-content/uploads/2026/06/MBSC-Executive-Education-2026-Programs-Portfolio.pdf",
+  "status": null,
+  "error": "<urlopen error [Errno -5] No address associated with hostname>"
+ },
+ {
+  "url": "https://mbsc.edu.sa/wp-content/uploads/2026/02/MBSC-Executive-Education-Programs-Portfolio-2026.pdf",
+  "status": null,
+  "error": "<urlopen error [Errno -5] No address associated with hostname>"
+ },
+ {
+  "url": "https://mbsc.edu.sa/wp-content/uploads/2025/08/MBSC-Executive-Education-Program-Calendar-2025.pdf",
+  "status": null,
+  "error": "<urlopen error [Errno -5] No address associated with hostname>"
+ }
+]
