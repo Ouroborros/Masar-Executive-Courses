@@ -1,0 +1,16 @@
+@prefix https://www.sbs.ox.ac.uk/programmes/executive-education/
+@prefix https://www.sbs.ox.ac.uk/programmes/online-learning/
+@prefix https://www.sbs.ox.ac.uk/programmes/oxford-executive-diplomas/
+@max 160
+@depth 2
+https://www.sbs.ox.ac.uk/programmes/executive-education
+https://www.sbs.ox.ac.uk/programmes/executive-education/person-programmes
+https://www.sbs.ox.ac.uk/programmes/executive-education/blended-programmes
+https://www.sbs.ox.ac.uk/programmes/online-learning/online-executive-education
+https://www.sbs.ox.ac.uk/programmes/executive-education/ai-programmes
+https://www.sbs.ox.ac.uk/programmes/executive-education/leadership
+https://www.sbs.ox.ac.uk/programmes/executive-education/finance
+https://www.sbs.ox.ac.uk/programmes/executive-education/impact-finance-and-sustainability
+https://www.sbs.ox.ac.uk/programmes/executive-education/strategy
+https://www.sbs.ox.ac.uk/programmes/executive-education/entrepreneurship-and-innovation
+https://www.sbs.ox.ac.uk/programmes/oxford-executive-diplomas
