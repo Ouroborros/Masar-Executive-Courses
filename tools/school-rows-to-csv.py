@@ -52,12 +52,15 @@ REGION_BY_COUNTRY = {
     "Belgium": "europe", "United Kingdom": "europe", "Netherlands": "europe",
     "Singapore": "asia", "Australia": "oceania", "South Africa": "africa",
     "United Arab Emirates": "mena", "Saudi Arabia": "mena",
+    "France": "europe", "Spain": "europe", "Italy": "europe", "Sweden": "europe",
 }
 COUNTRY_AR = {
     "United States": "الولايات المتحدة", "Canada": "كندا", "Switzerland": "سويسرا",
     "Denmark": "الدنمارك", "Germany": "ألمانيا", "Belgium": "بلجيكا",
     "United Kingdom": "المملكة المتحدة", "Singapore": "سنغافورة",
     "Australia": "أستراليا", "South Africa": "جنوب أفريقيا",
+    "France": "فرنسا", "Spain": "إسبانيا", "Saudi Arabia": "المملكة العربية السعودية",
+    "United Arab Emirates": "الإمارات العربية المتحدة",
 }
 CITY_AR = {
     "Cambridge": "كامبريدج", "Evanston": "إيفانستون", "Miami": "ميامي",
@@ -68,6 +71,11 @@ CITY_AR = {
     "Colorado Springs": "كولورادو سبرينغز", "Greensboro": "غرينزبورو",
     "San Diego": "سان دييغو", "Brussels": "بروكسل", "Berlin": "برلين",
     "Chicago": "شيكاغو", "Boston": "بوسطن", "San Francisco": "سان فرانسيسكو",
+    "Fontainebleau": "فونتينبلو", "London": "لندن", "Philadelphia": "فيلادلفيا",
+    "Paris": "باريس", "Jouy-en-Josas": "جوي-أون-جوزاس", "Barcelona": "برشلونة",
+    "Madrid": "مدريد", "Oxford": "أكسفورد", "Melbourne": "ملبورن",
+    "King Abdullah Economic City": "مدينة الملك عبدالله الاقتصادية",
+    "Riyadh": "الرياض", "Jeddah": "جدة", "Abu Dhabi": "أبوظبي", "Dubai": "دبي",
 }
 MONTH_AR = ["", "يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو",
             "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"]
