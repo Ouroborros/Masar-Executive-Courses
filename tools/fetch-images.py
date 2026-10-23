@@ -39,7 +39,7 @@ TERMS = {
   "school-sauder":   ["Henry Angus Building UBC Sauder", "UBC Sauder School of Business building"],
   "school-stgallen": ["University of St. Gallen main building", "Universität St. Gallen Hauptgebäude"],
   "school-ccl":      ["Center for Creative Leadership Greensboro", "Greensboro North Carolina downtown skyline", "Greensboro Historical Museum", "Greensboro North Carolina Elm Street"],
-  "school-insead":   ["INSEAD campus Fontainebleau", "INSEAD Singapore campus", "INSEAD business school building", "INSEAD"],
+  "school-insead":   ["Château de Fontainebleau cour du Cheval Blanc", "Château de Fontainebleau", "Fontainebleau forest"],
   "school-lbs":      ["London Business School Sussex Place", "London Business School Regent's Park"],
   "school-hbs":      ["Harvard Business School Baker Library", "Harvard Business School campus"],
   "school-wharton":  ["Huntsman Hall", "Jon M. Huntsman Hall Philadelphia", "Wharton School University of Pennsylvania building", "Steinberg-Dietrich Hall"],
@@ -49,7 +49,7 @@ TERMS = {
   "school-said":     ["Said Business School Oxford", "Saïd Business School building Oxford"],
   "school-judge":    ["Cambridge Judge Business School building", "Judge Business School Trumpington Street"],
   "school-mbsc":     ["King Abdullah Economic City", "KAEC Saudi Arabia Bay La Sun", "Prince Mohammad Bin Salman College"],
-  "school-columbia": ["Henry R. Kravis Hall", "David Geffen Hall Columbia Business School", "Columbia Business School Manhattanville campus", "Columbia University Low Memorial Library"],
+  "school-columbia": ["Low Memorial Library Columbia University", "Columbia University Morningside Heights campus", "Alma Mater statue Columbia University"],
   "school-booth":    ["Charles M. Harper Center Chicago Booth", "Chicago Booth School of Business building"],
   "school-mbs":      ["Melbourne Business School", "Carlton Victoria Leicester Street", "University of Melbourne Parkville campus", "University of Melbourne Old Quad"],
   # places
