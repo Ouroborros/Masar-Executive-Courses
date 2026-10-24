@@ -210,7 +210,7 @@ def check_course(c, known_course_ids, school_ids, errs, where, scraped=False):
         errs.append("{} [{}]: unknown currency '{}'".format(where, cid, currency))
     elif c["price"] is None:
         pass
-    elif not isinstance(c["price"], int) or not 100 <= usd <= 120000:
+    elif not isinstance(c["price"], int) or not 50 <= usd <= 200000:
         errs.append("{} [{}]: price out of range ({} {})".format(
             where, cid, c["price"], currency))
     elif c["days"] is None:

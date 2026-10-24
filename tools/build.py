@@ -560,7 +560,7 @@ HOME["en"] += """
           </div>
 
           <div class="plate">
-            <p class="plate__codes"><span>USD</span><span>CHF</span><span>CAD</span><span>SGD</span><span>AUD</span><span>DKK</span><span>EUR</span></p>
+            <p class="plate__codes"><span>USD</span><span>EUR</span><span>GBP</span><span>CHF</span><span>CAD</span><span>AUD</span><span>SGD</span><span>DKK</span><span>INR</span><span>CNY</span><span>BRL</span></p>
             <div>
               <p>Seven currencies appear in this index because seven currencies appear on the
                 schools' own pages. Converting them would be a guess printed as a fact.</p>
@@ -630,7 +630,7 @@ HOME["ar"] += """
           </div>
 
           <div class="plate">
-            <p class="plate__codes"><span>USD</span><span>CHF</span><span>CAD</span><span>SGD</span><span>AUD</span><span>DKK</span><span>EUR</span></p>
+            <p class="plate__codes"><span>USD</span><span>EUR</span><span>GBP</span><span>CHF</span><span>CAD</span><span>AUD</span><span>SGD</span><span>DKK</span><span>INR</span><span>CNY</span><span>BRL</span></p>
             <div>
               <p>تظهر سبع عملات في هذا الفهرس لأن سبع عملات تظهر في صفحات الكليات نفسها.
                 وتحويلها سيكون تخمينًا يُطبَع بوصفه واقعة.</p>

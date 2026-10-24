@@ -24,6 +24,8 @@ USD_PER = {
     "DKK": 0.157,
     "SGD": 0.78,
     "INR": 0.0112,
+    "CNY": 0.14,
+    "BRL": 0.18,
     "SAR": 1 / SAR_PER_USD,
 }
 

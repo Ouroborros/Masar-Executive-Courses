@@ -75,7 +75,7 @@ def main():
         if price is not None and usd is None:
             why.append("price/currency unusable")
         elif usd is not None:
-            if not 100 <= usd <= 120000:
+            if not 50 <= usd <= 200000:
                 why.append("USD-equivalent price out of range ({:.0f})".format(usd))
             elif isinstance(days, int):
                 # IMD's two-day board programmes list at 6,600–8,600 CHF; a

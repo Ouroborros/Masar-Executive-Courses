@@ -44,6 +44,28 @@
   }
  },
  {
+  "id": "s-cambridge-judge-business-school",
+  "name": {
+   "en": "Cambridge Judge Business School",
+   "ar": "كلية كامبريدج جادج للأعمال"
+  },
+  "city": {
+   "en": "Cambridge",
+   "ar": "كامبريدج"
+  },
+  "country": {
+   "en": "United Kingdom",
+   "ar": "المملكة المتحدة"
+  },
+  "region": "europe",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
   "id": "s-center-for-creative-leadership",
   "name": {
    "en": "Center for Creative Leadership",
@@ -52,6 +74,116 @@
   "city": {
    "en": "Greensboro",
    "ar": "غرينزبورو"
+  },
+  "country": {
+   "en": "United States",
+   "ar": "الولايات المتحدة"
+  },
+  "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-chicago-booth-school-of-business",
+  "name": {
+   "en": "Chicago Booth School of Business",
+   "ar": "كلية بوث للأعمال بجامعة شيكاغو"
+  },
+  "city": {
+   "en": "Chicago",
+   "ar": "شيكاغو"
+  },
+  "country": {
+   "en": "United States",
+   "ar": "الولايات المتحدة"
+  },
+  "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-columbia-business-school",
+  "name": {
+   "en": "Columbia Business School",
+   "ar": "كلية كولومبيا للأعمال"
+  },
+  "city": {
+   "en": "New York",
+   "ar": "نيويورك"
+  },
+  "country": {
+   "en": "United States",
+   "ar": "الولايات المتحدة"
+  },
+  "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-esade-business-school",
+  "name": {
+   "en": "Esade Business School",
+   "ar": "كلية إيسادي (Esade) للأعمال"
+  },
+  "city": {
+   "en": "Barcelona",
+   "ar": "برشلونة"
+  },
+  "country": {
+   "en": "Spain",
+   "ar": "إسبانيا"
+  },
+  "region": "europe",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-hec-paris",
+  "name": {
+   "en": "HEC Paris",
+   "ar": "كلية HEC باريس للأعمال"
+  },
+  "city": {
+   "en": "Paris",
+   "ar": "باريس"
+  },
+  "country": {
+   "en": "France",
+   "ar": "فرنسا"
+  },
+  "region": "europe",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-harvard-business-school",
+  "name": {
+   "en": "Harvard Business School",
+   "ar": "كلية هارفارد للأعمال"
+  },
+  "city": {
+   "en": "Boston",
+   "ar": "بوسطن"
   },
   "country": {
    "en": "United States",
@@ -80,6 +212,28 @@
    "ar": "الولايات المتحدة"
   },
   "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-iese-business-school",
+  "name": {
+   "en": "IESE Business School",
+   "ar": "كلية IESE للأعمال"
+  },
+  "city": {
+   "en": "Barcelona",
+   "ar": "برشلونة"
+  },
+  "country": {
+   "en": "Spain",
+   "ar": "إسبانيا"
+  },
+  "region": "europe",
   "founded": 0,
   "accreditation": [],
   "about": {
@@ -132,6 +286,28 @@
   }
  },
  {
+  "id": "s-london-business-school",
+  "name": {
+   "en": "London Business School",
+   "ar": "كلية لندن للأعمال"
+  },
+  "city": {
+   "en": "London",
+   "ar": "لندن"
+  },
+  "country": {
+   "en": "United Kingdom",
+   "ar": "المملكة المتحدة"
+  },
+  "region": "europe",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
   "id": "s-mit-sloan-school-of-management",
   "name": {
    "en": "MIT Sloan School of Management",
@@ -146,6 +322,28 @@
    "ar": "الولايات المتحدة"
   },
   "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-melbourne-business-school",
+  "name": {
+   "en": "Melbourne Business School",
+   "ar": "كلية ملبورن للأعمال"
+  },
+  "city": {
+   "en": "Melbourne",
+   "ar": "ملبورن"
+  },
+  "country": {
+   "en": "Australia",
+   "ar": "أستراليا"
+  },
+  "region": "oceania",
   "founded": 0,
   "accreditation": [],
   "about": {
@@ -322,6 +520,28 @@
    "ar": "سويسرا"
   },
   "region": "europe",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-wharton-school-university-of-pennsylva",
+  "name": {
+   "en": "Wharton School, University of Pennsylvania",
+   "ar": "كلية وارتون بجامعة بنسلفانيا"
+  },
+  "city": {
+   "en": "Philadelphia",
+   "ar": "فيلادلفيا"
+  },
+  "country": {
+   "en": "United States",
+   "ar": "الولايات المتحدة"
+  },
+  "region": "americas",
   "founded": 0,
   "accreditation": [],
   "about": {

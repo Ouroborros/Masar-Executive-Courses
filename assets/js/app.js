@@ -76,7 +76,20 @@
     's-stanford-graduate-school-of-business': 'school-stanford',
     's-ubc-sauder-school-of-business': 'school-sauder',
     's-uc-berkeley-haas-school-of-business': 'school-haas',
-    's-university-of-st-gallen-executive-scho': 'school-stgallen'
+    's-university-of-st-gallen-executive-scho': 'school-stgallen',
+    's-insead': 'school-insead',
+    's-london-business-school': 'school-lbs',
+    's-harvard-business-school': 'school-hbs',
+    's-wharton-school-university-of-pennsylva': 'school-wharton',
+    's-hec-paris': 'school-hec',
+    's-iese-business-school': 'school-iese',
+    's-esade-business-school': 'school-esade',
+    's-said-business-school-university-of-oxf': 'school-said',
+    's-cambridge-judge-business-school': 'school-judge',
+    's-prince-mohammad-bin-salman-college-mbs': 'school-mbsc',
+    's-columbia-business-school': 'school-columbia',
+    's-chicago-booth-school-of-business': 'school-booth',
+    's-melbourne-business-school': 'school-mbs'
   };
   const CREDITS = window.MASAR_CREDITS || {};
   function imgSrc(key, small) {
