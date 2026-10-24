@@ -431,10 +431,11 @@ Totals across the catalogue: formats {'in-person': 918, 'online': 453, 'blended'
 - Oxford Saïd's site answered the runner with HTTP 403 and the HTTP client
   with 60-second timeouts; only the Firefox crawl got through, at about one
   page every two and a half minutes.
-- Photographs: eleven of the twelve new schools have an openly licensed
-  campus or place photograph (Wharton's is Huntsman Hall, Melbourne's is
-  University Square, Esade's is Sant Cugat); INSEAD and Columbia have none
-  yet (Commons searches returned portraits and unrelated files).
+- Photographs: all twelve new schools have an openly licensed campus or
+  place photograph from Wikimedia Commons (Wharton's is Huntsman Hall,
+  Melbourne's is University Square, INSEAD's the Château de Fontainebleau,
+  Columbia's Low Library); the Center for Creative Leadership remains the
+  only school without one.
 
 ## Runbook (unchanged)
 
