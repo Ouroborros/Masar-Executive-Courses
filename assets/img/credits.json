@@ -180,5 +180,19 @@
   "licence": "CC BY-SA 4.0",
   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File%3AThe_University_of_Melbourne.JPG"
+ },
+ "school-insead": {
+  "title": "File:La cour du cheval blanc (Château de Fontainebleau).jpg",
+  "author": "Jean-Pierre Dalbéra",
+  "licence": "CC BY 2.0",
+  "licence_url": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File%3ALa_cour_du_cheval_blanc_%28Ch%C3%A2teau_de_Fontainebleau%29.jpg"
+ },
+ "school-columbia": {
+  "title": "File:Low Memorial Library Columbia University College Walk Court Yard 05.jpg",
+  "author": "Ad Meskens",
+  "licence": "CC BY-SA 3.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File%3ALow_Memorial_Library_Columbia_University_College_Walk_Court_Yard_05.jpg"
  }
 }
