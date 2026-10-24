@@ -9,11 +9,14 @@ Plain HTML, CSS and vanilla JavaScript. No framework, no bundler, no runtime
 dependencies. It runs from `file://`, GitHub Pages, Netlify, or any static
 host.
 
-> **Sample data.** Every school, programme, date, fee and review in
-> `assets/js/data.js` is invented. Attaching made-up prices and dates to real
-> business schools would misrepresent them, so the catalogue uses fictional
-> institutions throughout. Replace the dataset before this is used for
-> anything real.
+> **Real data, facts only.** Every school and programme in
+> `assets/js/data.js` comes from the school's own published programme pages,
+> crawled with robots.txt respected and reduced to facts: title, dates, fee
+> in the school's currency, duration, format, language and the page URL as
+> provenance. No descriptions or marketing copy are reproduced. The crawl
+> log is `apify-actor/CRAWL-STATUS.md`; the robots reviews are under
+> `docs/research/`. Fees and dates are a snapshot and must be confirmed on
+> the school's page before anyone enrols.
 
 ## What is in it
 
@@ -24,7 +27,7 @@ host.
 | `course.html?id=…` | Programme detail, booking panel, similar programmes |
 | `schools.html` / `school.html?id=…` | School directory filtered by region, and per-school profiles |
 | `lists.html` / `list.html?id=…` | Editorial collections ("best courses for…") |
-| `about.html` | Editorial policy, privacy, and the sample-data disclosure |
+| `about.html` | Method, data policy, photograph credits and privacy |
 | `contact.html` | Enquiry form, pre-filled when you arrive from a course page |
 
 Each page exists twice: English at the root, Arabic under `ar/`.
@@ -40,8 +43,10 @@ cell that does not parse is still an error. See `docs/DESIGN.md`.
 
 ## Photographs
 
-Every photograph is an openly licensed image of the school's own campus
-from Wikimedia Commons, with the Riyadh skyline for the home hero. They are
+Every photograph is an openly licensed image from Wikimedia Commons: the
+school's own campus where Commons has one, otherwise a place photograph of
+its town (the Château de Fontainebleau for INSEAD, University Square for
+Melbourne), with the Riyadh skyline for the home hero. They are
 fetched by `.github/workflows/fetch-images.yml` running
 `tools/fetch-images.py`: a *candidates* pass saves small previews and
 licence metadata under `import/img-candidates/` for review, the picks go in
@@ -49,6 +54,12 @@ licence metadata under `import/img-candidates/` for review, the picks go in
 (1800px and 900px) plus `assets/img/credits.json`. `tools/build.py` turns the
 credits into `assets/js/credits.js` and a credits table on the Method page.
 Only CC BY, CC BY-SA, CC0 and public-domain files pass the filter.
+
+A second runner workflow, `.github/workflows/fetch-pages.yml` with
+`tools/fetch-pages.py`, fetches a short list of pages politely (robots.txt
+read first, three seconds between requests, links followed only under a
+given prefix) for hosts the crawler's proxies cannot reach; requests are
+files under `import/fetch-requests/`.
 
 ## How the bilingual part works
 
