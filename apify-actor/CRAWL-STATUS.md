@@ -362,3 +362,86 @@ Follow-up run `cIZjfKSqViPHEr6zo` (11 pages). Totals: formats {'in-person': 484,
     python3 tools/merge-catalogue.py import --scraped --write
     python3 tools/curate-lists.py --write
     python3 tools/build.py && python3 tools/bundle.py
+
+
+# Thirteen more schools — 2026-10-24
+The operator chose thirteen providers from `docs/research/missing-providers-2026-10-23.md`:
+INSEAD, London Business School, Harvard Business School, Wharton, HEC Paris,
+IESE, Esade, Oxford Saïd, Cambridge Judge, MBSC, Columbia, Chicago Booth and
+Melbourne Business School. Twelve were sourced from their own programme pages
+under the same rules as before (robots review in
+`docs/research/school-robots-2026-10-23.md`, facts only, one row per intake,
+nulls where the school prints nothing). MBSC could not be reached: see below.
+
+## What ran
+
+| Step | Detail |
+| --- | --- |
+| Discovery | Each listing page fetched once with the HTTP client and read by an agent to learn the programme-page pattern and which facts the cards print. London and Harvard render their listings client-side, so those were re-fetched in Firefox (Harvard's finder still showed 25 of 67 cards; the rest came from its three learning-track pages). HEC lists only ten cards per topic, so the crawl seeded all topic and format pages. |
+| Crawl | One bounded `apify/website-content-crawler` run per school, `respectRobotsTxtFile: true`, `htmlTransformer: none`, one concurrent request where robots sets a Crawl-delay (INSEAD, Esade) and on Oxford. HTTP client for nine hosts; Firefox for London (client-side cards), INSEAD and Oxford (both behind Cloudflare: the HTTP client was routed through an unblocker at a few pages an hour, Firefox fetched INSEAD's 185 pages in an hour and Oxford's 101 in four). Esade's listing links to most programmes only through JavaScript and its pagination uses query strings its robots.txt forbids, so Esade carries the programmes reachable from its sitemap and cards. |
+| Extraction | Sonnet agents over shards of 25–40 pages under `EXTRACT-RULES v2` plus the 2026-10 additions (translations of a page already captured are duplicates; sub-pages fold into their programme; listing cards are a valid fact source; fees without a currency sign take the school's obvious currency). Shards merged by (URL, start, title), a non-null fee winning. |
+| Conversion | `tools/school-rows-to-csv.py` over the fifteen earlier schools' extracts plus the twelve new ones: 5 rows dropped (start beyond window ×5), 1535 courses written. Arabic titles and duration lines from `import/translations-school.json` (1735 strings). New countries, cities and currencies (EUR, GBP, INR, CNY, BRL) added to the converter and the rate table. |
+| Gates + merge | reset → `catalogue-gates.py` (0 rejected: none) → `merge-catalogue.py --scraped`: **27 schools, 1535 courses, validation clean**. |
+| Build | `build.py`, `bundle.py`, browser sweep in both locales at desktop and phone widths; artifact republished. |
+
+## The new schools
+
+| School | Courses | Undated | No fee | No day count | Source host | Run |
+| --- | --- | --- | --- | --- | --- | --- |
+| Wharton School, University of Pennsylvania | 119 | 68 | 18 | 72 | executiveeducation.wharton.upenn.edu | `GFh9xB8cv3TzFpVnB` |
+| HEC Paris | 99 | 18 | 1 | 6 | www.hec.edu | `FGcDXdDXP7ftcqGfP` |
+| INSEAD | 85 | 16 | 7 | 34 | www.insead.edu | `qeFg33shcbLAe3D5Y` |
+| Columbia Business School | 74 | 11 | 3 | 40 | execed.business.columbia.edu | `01pFnJ7G940ATQ2A3` |
+| London Business School | 66 | 19 | 1 | 26 | www.london.edu | `ZZb6iZo8rWDRv8ItB` |
+| Cambridge Judge Business School | 53 | 9 | 3 | 24 | www.jbs.cam.ac.uk | `JkFMTbgY7jcH3ZRPS` |
+| Harvard Business School | 47 | 5 | 5 | 11 | www.exed.hbs.edu | `L1kcMERmcrUpBCkld` |
+| IESE Business School | 45 | 8 | 2 | 21 | www.iese.edu | `sfj8jombHDEayziSB` |
+| Chicago Booth School of Business | 40 | 11 | 3 | 21 | www.chicagobooth.edu | `IZLId6fkkrr0x94FQ` |
+| Saïd Business School, University of Oxford | 40 | 9 | 0 | 31 | www.sbs.ox.ac.uk | `cVKhkWpTqwne7nVHs` |
+| Melbourne Business School | 33 | 6 | 1 | 8 | mbs.edu | `C5xOCfJcy3evpvrab` |
+| Esade Business School | 16 | 1 | 7 | 12 | www.esade.edu | `CXjdGl1nuAxTUTfwN` |
+
+Totals across the catalogue: formats {'in-person': 918, 'online': 453, 'blended': 164}; languages {'en': 1291, 'da': 44, 'es': 34, 'fr': 56, 'de': 110}; currencies {'AUD': 61, 'DKK': 66, 'GBP': 140, 'USD': 652, 'EUR': 221, 'INR': 1, 'CNY': 1, 'BRL': 1, 'CHF': 211, 'SGD': 59, 'CAD': 122}.
+
+## Decisions worth knowing
+
+- **MBSC (Prince Mohammad bin Salman College) is not in the index.** Its host
+  `www.mbsc.edu.sa` refused the crawler's datacenter and residential proxies
+  (CONNECT 590, connection refused) and did not resolve from a GitHub Actions
+  runner either (no address for `www.mbsc.edu.sa` or `mbsc.edu.sa`), so not
+  even its robots.txt could be read. Nothing was fetched or guessed. Retry
+  with `tools/fetch-pages.py` from a network that resolves the host.
+- London Business School runs the same programme names in London (GBP),
+  Dubai and Riyadh (USD); each location is its own record because the fee,
+  dates and city differ. The Riyadh and Dubai records are the index's first
+  in-Kingdom and in-Gulf sessions.
+- IESE and HEC publish many programmes only in Spanish or French; those keep
+  the school's title and are tagged `es` / `fr`, as German and Danish were.
+  Spanish or German pages that mirror an English programme page were skipped.
+- Harvard's finder shows 25 of its 67 programmes without JavaScript; the
+  learning-track pages list the rest, and the only programme page missing
+  from the dataset (Senior Executive Leadership Program China, priced in CNY)
+  was built from the leadership-immersions hub. Invitation-only CEO
+  programmes were excluded.
+- Wharton publishes the same programme under two URLs with different facts
+  in several cases (an all-programs page and a self-paced page); both rows
+  were kept with their own facts, then folded by title at conversion.
+- Esade: only 16 programmes of the 28 its listing counts are reachable
+  without JavaScript; the others are language-gated cards with `#` links.
+- Oxford Saïd's site answered the runner with HTTP 403 and the HTTP client
+  with 60-second timeouts; only the Firefox crawl got through, at about one
+  page every two and a half minutes.
+- Photographs: eleven of the twelve new schools have an openly licensed
+  campus or place photograph (Wharton's is Huntsman Hall, Melbourne's is
+  University Square, Esade's is Sant Cugat); INSEAD and Columbia have none
+  yet (Commons searches returned portraits and unrelated files).
+
+## Runbook (unchanged)
+
+    # per school: robots review, discovery agent, bounded crawl, extraction shards -> extract/<school>.json
+    python3 tools/school-rows-to-csv.py <extract-dir> --out import/courses-school.csv \
+        --schools-existing <schools.json from data.js + new schools> --translations import/translations-school.json
+    python3 tools/spreadsheet-to-batch.py import/courses-school.csv --out import/batch-school.json
+    python3 tools/reset-catalogue.py --write && python3 tools/catalogue-gates.py import/batch-school.json
+    python3 tools/merge-catalogue.py import --scraped --write && python3 tools/curate-lists.py --write
+    python3 tools/build.py && python3 tools/bundle.py

@@ -264,6 +264,28 @@
   }
  },
  {
+  "id": "s-insead",
+  "name": {
+   "en": "INSEAD",
+   "ar": "إنسياد (INSEAD)"
+  },
+  "city": {
+   "en": "Fontainebleau",
+   "ar": "فونتينبلو"
+  },
+  "country": {
+   "en": "France",
+   "ar": "فرنسا"
+  },
+  "region": "europe",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
   "id": "s-kellogg-school-of-management",
   "name": {
    "en": "Kellogg School of Management",
@@ -410,6 +432,28 @@
    "ar": "الولايات المتحدة"
   },
   "region": "americas",
+  "founded": 0,
+  "accreditation": [],
+  "about": {
+   "en": "",
+   "ar": ""
+  }
+ },
+ {
+  "id": "s-said-business-school-university-of-oxf",
+  "name": {
+   "en": "Saïd Business School, University of Oxford",
+   "ar": "كلية سعيد للأعمال بجامعة أكسفورد"
+  },
+  "city": {
+   "en": "Oxford",
+   "ar": "أكسفورد"
+  },
+  "country": {
+   "en": "United Kingdom",
+   "ar": "المملكة المتحدة"
+  },
+  "region": "europe",
   "founded": 0,
   "accreditation": [],
   "about": {

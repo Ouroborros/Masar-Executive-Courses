@@ -201,3 +201,13 @@ epe.qatar.georgetown.edu, hbku.edu.qa/eec. Asia-Pacific and Africa:
 mbs.edu short-course calendar, execed.isb.edu, exed.iima.ac.in calendar,
 execed.hkust.edu.hk, execed.hkubs.hku.hk, ceibs.edu, lbs.edu.ng 2026
 calendar PDF, gsb.uct.ac.za/short-courses, sbs.strathmore.edu.
+
+## Outcome (2026-10-24)
+
+The operator chose INSEAD, London Business School, Harvard Business School,
+Wharton, HEC Paris, IESE, Esade, Oxford Saïd, Cambridge Judge, MBSC,
+Columbia, Chicago Booth and Melbourne Business School. Twelve were added
+from their own programme pages the next day (see
+`apify-actor/CRAWL-STATUS.md`, "Thirteen more schools — 2026-10-24").
+MBSC could not be reached from any route available to this project (its
+host did not resolve or refused the connection), so it remains absent.

@@ -37,7 +37,7 @@ programme listing and programme detail paths are allowed for
 | execed.business.columbia.edu | Long list of landing, download and thank-you pages (`/landing-*`, `/download-*`, `/upcoming-programs`, `/upcoming-online-programs`, `/c-suite-general-management` …), `/_next/data/`, `/api/`, `/search`, `/cart`, `/checkout`, `/account`, `/emba/*`, `/tokyo` | Programme pages from the `/all-programs` listing only; the disallowed calendar and landing pages are not fetched |
 | www.chicagobooth.edu | `Disallow: /*.pdf`, `/landing/`, `/smlanding/`, `/topic/`, `/en/`, `/?source=`, `/?utm_source=`, `/executiveeducation/back-to-booth`, **`/executiveeducation/programs/leadership/organizational-resilience`**, `/masterclass-experience/`, admissions and internal paths | Programme pages only; the one disallowed programme page is excluded by glob; no PDFs |
 | mbs.edu | `User-Agent: *` with no Disallow; sitemap `googlesitemap.xml` | None needed; still throttled |
-| www.mbsc.edu.sa | Unreachable from Apify's datacenter proxy (CONNECT 590, then `NS_ERROR_PROXY_CONNECTION_REFUSED`); re-tried through a residential proxy group, see `CRAWL-STATUS.md` for the outcome | No page fetched until the file is read |
+| www.mbsc.edu.sa | Unreachable from every route: Apify datacenter proxy (CONNECT 590), residential proxy (connection refused), and a GitHub Actions runner (no DNS address for `www.mbsc.edu.sa` or `mbsc.edu.sa`); not even robots.txt could be read | Nothing fetched; MBSC not added |
 
 `apify/website-content-crawler` does not implement `Crawl-delay`, so for
 INSEAD and Esade the run is pinned to one concurrent request and a bounded

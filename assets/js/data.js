@@ -142,6 +142,14 @@ window.MASAR_DATA = (function () {
       about: { en: '', ar: '' }
     },
     {
+      id: 's-insead',
+      name: { en: 'INSEAD', ar: 'إنسياد (INSEAD)' },
+      city: { en: 'Fontainebleau', ar: 'فونتينبلو' },
+      country: { en: 'France', ar: 'فرنسا' },
+      region: 'europe', founded: 0, accreditation: [],
+      about: { en: '', ar: '' }
+    },
+    {
       id: 's-kellogg-school-of-management',
       name: { en: 'Kellogg School of Management', ar: 'كلية كيلوغ للإدارة' },
       city: { en: 'Evanston', ar: 'إيفانستون' },
@@ -195,6 +203,14 @@ window.MASAR_DATA = (function () {
       city: { en: 'New York', ar: 'نيويورك' },
       country: { en: 'United States', ar: 'الولايات المتحدة' },
       region: 'americas', founded: 0, accreditation: [],
+      about: { en: '', ar: '' }
+    },
+    {
+      id: 's-said-business-school-university-of-oxf',
+      name: { en: 'Saïd Business School, University of Oxford', ar: 'كلية سعيد للأعمال بجامعة أكسفورد' },
+      city: { en: 'Oxford', ar: 'أكسفورد' },
+      country: { en: 'United Kingdom', ar: 'المملكة المتحدة' },
+      region: 'europe', founded: 0, accreditation: [],
       about: { en: '', ar: '' }
     },
     {
@@ -928,7 +944,7 @@ window.MASAR_DATA = (function () {
     },
     {
       id: 'c-cbs-executive-bestyrelsesuddannelsen-f', school: 's-cbs-executive-copenhagen-business-scho', subject: 'leadership', format: 'in-person',
-      start: '2027-02-01', days: 16, price: 120000, currency: 'DKK', langs: ['da'], featured: true, popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/cbs-executive-bestyrelsesuddannelsen-februar-2027', end: '2027-06-05',
+      start: '2027-02-01', days: 16, price: 120000, currency: 'DKK', langs: ['da'], popularity: 50, sourceUrl: 'https://cbs-executive.dk/da/program/cbs-executive-bestyrelsesuddannelsen-februar-2027', end: '2027-06-05',
       title: {
         en: 'CBS Executive Bestyrelsesuddannelsen Februar 2027',
         ar: 'CBS Executive برنامج تأهيل أعضاء مجلس الإدارة - فبراير 2027'
@@ -3885,6 +3901,20 @@ window.MASAR_DATA = (function () {
       summary: {
         en: 'A blended program from Columbia Business School, 18 weeks, 3-5 hours per week, running 25 March 2027 to 23 September 2027.',
         ar: 'برنامج مدمج من كلية كولومبيا للأعمال، 18 أسبوعًا، 3–5 ساعات في الأسبوع، من 25 مارس 2027 إلى 23 سبتمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-global-chairmen-and-presidents-program', school: 's-columbia-business-school', subject: 'leadership', format: 'in-person',
+      start: '2027-04-01', days: null, price: 192000, langs: ['en'], popularity: 50, sourceUrl: 'https://execed.business.columbia.edu/programs/global-chairmen-and-presidents-program', end: '2029-10-15', duration: { en: '17 modules', ar: '17 وحدة' },
+      title: { en: 'Global Chairmen and Presidents Program', ar: 'برنامج رؤساء مجالس الإدارة والرؤساء العالمي' },
+      summary: {
+        en: 'An on-campus program from Columbia Business School, 17 modules, running 1 April 2027 to 15 October 2029.',
+        ar: 'برنامج حضوري من كلية كولومبيا للأعمال، 17 وحدة، من 1 أبريل 2027 إلى 15 أكتوبر 2029.'
       },
       highlights: {
         en: [],
@@ -8986,6 +9016,1238 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-supply-chain-strategies-for-business-o', school: 's-insead', subject: 'operations', format: 'online',
+      start: '2026-09-10', days: null, price: 2050, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/programmes-delivered-emeritus/supply-chain-strategies-business', duration: { en: '5 weeks', ar: '5 أسابيع' },
+      title: {
+        en: 'Supply Chain Strategies for Business - Online',
+        ar: 'استراتيجيات سلاسل الإمداد للأعمال – عبر الإنترنت'
+      },
+      summary: {
+        en: 'An online program from INSEAD, 5 weeks, starting 10 September 2026.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 5 أسابيع، يبدأ في 10 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-insead-healthcare-ethics-compliance-pr', school: 's-insead', subject: 'healthcare', format: 'online',
+      start: '2026-09-22', days: 2, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/partner-programmes/insead-healthcare-ethics-compliance-programme', end: '2026-09-23',
+      title: {
+        en: 'INSEAD Healthcare Ethics & Compliance Programme',
+        ar: 'برنامج أخلاقيات الرعاية الصحية والامتثال من INSEAD'
+      },
+      summary: {
+        en: 'A 2-day online program from INSEAD, running 22 September 2026 to 23 September 2026.',
+        ar: 'برنامج عبر الإنترنت لمدة يومين من إنسياد (INSEAD)، من 22 سبتمبر 2026 إلى 23 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-future-food-ag-leadership-programme-fr', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2026-10-12', days: 3, price: 9000, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/partner-programmes/future-food-ag-leadership-programme-agrohub-agfunder', end: '2026-10-14',
+      title: {
+        en: 'Future Food & Ag Leadership programme from Agrohub and INSEAD',
+        ar: 'برنامج قيادة مستقبل الغذاء والزراعة من Agrohub و INSEAD'
+      },
+      summary: {
+        en: 'A 3-day on-campus program from INSEAD, running 12 October 2026 to 14 October 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من إنسياد (INSEAD)، من 12 أكتوبر 2026 إلى 14 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-aspiring-directors-programme', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2026-10-26', days: 5, price: 12500, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/corporate-governance/aspiring-directors-programme', end: '2026-10-30',
+      title: { en: 'Aspiring Directors Programme', ar: 'برنامج الطامحين إلى عضوية مجالس الإدارة' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 26 October 2026 to 30 October 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 26 أكتوبر 2026 إلى 30 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-international-directors-programme', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2026-10-26', days: null, price: 28900, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/corporate-governance/international-directors-programme', end: '2027-01-15', duration: { en: '5 + 5 days', ar: '5.5 أيام' },
+      title: { en: 'International Directors Programme', ar: 'برنامج أعضاء مجالس الإدارة الدوليين' },
+      summary: {
+        en: 'An on-campus program from INSEAD, 5 + 5 days, running 26 October 2026 to 15 January 2027.',
+        ar: 'برنامج حضوري من إنسياد (INSEAD)، 5.5 أيام، من 26 أكتوبر 2026 إلى 15 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-advanced-international-corporate-finan', school: 's-insead', subject: 'finance', format: 'in-person',
+      start: '2026-11-02', days: 5, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/finance/advanced-international-corporate-finance', end: '2026-11-06',
+      title: { en: 'Advanced International Corporate Finance', ar: 'التمويل الدولي المتقدم للشركات' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 2 November 2026 to 6 November 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 2 نوفمبر 2026 إلى 6 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-insead-coaching-certificate', school: 's-insead', subject: 'people', format: 'in-person',
+      start: '2026-11-02', days: null, price: 23600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/coaching/coaching-certificate', end: '2027-06-24', duration: { en: '3 modules (4.5 + 4 + 3 days)', ar: '3 وحدات (4.5 + 4 + 3 أيام)' },
+      title: { en: 'INSEAD Coaching Certificate', ar: 'شهادة الكوتشينغ من INSEAD' },
+      summary: {
+        en: 'An on-campus program from INSEAD, 3 modules (4.5 + 4 + 3 days), running 2 November 2026 to 24 June 2027.',
+        ar: 'برنامج حضوري من إنسياد (INSEAD)، 3 وحدات (4.5 + 4 + 3 أيام)، من 2 نوفمبر 2026 إلى 24 يونيو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leap-leadership-excellence-through-awa', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2026-11-02', days: 20, price: 46200, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/top-management/leap-leadership-excellence-awareness-practice', end: '2027-04-23', duration: { en: '3 modules (10 + 5 + 5 days)', ar: '3 وحدات (10 + 5 + 5 أيام)' },
+      title: {
+        en: 'LEAP: Leadership Excellence through Awareness and Practice',
+        ar: 'ليب (LEAP): التميز القيادي من خلال الوعي والممارسة'
+      },
+      summary: {
+        en: 'A 20-day on-campus program from INSEAD, running 2 November 2026 to 23 April 2027.',
+        ar: 'برنامج حضوري لمدة 20 يومًا من إنسياد (INSEAD)، من 2 نوفمبر 2026 إلى 23 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-advanced-management-programme', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2026-11-09', days: null, price: 47500, currency: 'EUR', langs: ['en'], featured: true, popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/general-management/advanced-management-programme', end: '2026-12-03', duration: { en: '4 weeks', ar: '4 أسابيع' },
+      title: { en: 'Advanced Management Programme', ar: 'برنامج الإدارة المتقدمة' },
+      summary: {
+        en: 'An on-campus program from INSEAD, 4 weeks, running 9 November 2026 to 3 December 2026.',
+        ar: 'برنامج حضوري من إنسياد (INSEAD)، 4 أسابيع، من 9 نوفمبر 2026 إلى 3 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-m-as-and-corporate-strategy', school: 's-insead', subject: 'strategy', format: 'in-person',
+      start: '2026-11-09', days: 5, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/strategy/merger-acquisition-corporate-strategy', end: '2026-11-13',
+      title: { en: 'M&As and Corporate Strategy', ar: 'عمليات الاندماج والاستحواذ (M&As) واستراتيجية الشركات' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 9 November 2026 to 13 November 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 9 نوفمبر 2026 إلى 13 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-high-impact-leadership-programme', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2026-11-16', days: 5, price: 16600, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/leadership/high-impact-leadership-programme', end: '2026-11-20',
+      title: { en: 'High Impact Leadership Programme', ar: 'برنامج القيادة عالية التأثير' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 16 November 2026 to 20 November 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 16 نوفمبر 2026 إلى 20 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-ai-and-digital-transformation', school: 's-insead', subject: 'digital', format: 'in-person',
+      start: '2026-11-16', days: 5, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/digital-transformation-ai/leading-ai-and-digital-transformation', end: '2026-11-20',
+      title: { en: 'Leading AI and Digital Transformation', ar: 'قيادة الذكاء الاصطناعي والتحول الرقمي' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 16 November 2026 to 20 November 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 16 نوفمبر 2026 إلى 20 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-for-business-strategic-opportunitie', school: 's-insead', subject: 'digital', format: 'in-person',
+      start: '2026-11-23', days: 5, price: 16600, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/digital-transformation-ai/ai-business-strategic-opportunities-ai', end: '2026-11-27',
+      title: {
+        en: 'AI for Business: Strategic Opportunities with AI',
+        ar: 'الذكاء الاصطناعي للأعمال: الفرص الاستراتيجية مع الذكاء الاصطناعي'
+      },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 23 November 2026 to 27 November 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 23 نوفمبر 2026 إلى 27 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-essentials-of-coaching', school: 's-insead', subject: 'people', format: 'in-person',
+      start: '2026-11-23', days: 5, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/coaching/essentials-coaching', end: '2026-11-27',
+      title: { en: 'Essentials of Coaching', ar: 'أساسيات الكوتشينغ' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 23 November 2026 to 27 November 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 23 نوفمبر 2026 إلى 27 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-growth-through-innovation-and', school: 's-insead', subject: 'strategy', format: 'in-person',
+      start: '2026-11-23', days: 4, price: 9800, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/strategy/leading-growth-through-innovation-and-technology', end: '2026-11-26',
+      title: { en: 'Leading Growth through Innovation and Technology', ar: 'قيادة النمو من خلال الابتكار والتقنية' },
+      summary: {
+        en: 'A 4-day on-campus program from INSEAD, running 23 November 2026 to 26 November 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من إنسياد (INSEAD)، من 23 نوفمبر 2026 إلى 26 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategic-decision-making-for-lead-2', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2026-11-23', days: 4, price: 9800, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/leadership/strategic-decision-making-leaders', end: '2026-11-26',
+      title: { en: 'Strategic Decision Making for Leaders', ar: 'اتخاذ القرارات الاستراتيجية للقادة' },
+      summary: {
+        en: 'A 4-day on-campus program from INSEAD, running 23 November 2026 to 26 November 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من إنسياد (INSEAD)، من 23 نوفمبر 2026 إلى 26 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-transition-to-general-management', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2026-11-23', days: null, price: 37900, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/general-management/transition-general-management', end: '2027-02-26', duration: { en: '2 + 2 weeks', ar: 'أسبوعان + أسبوعان' },
+      title: { en: 'Transition to General Management', ar: 'الانتقال إلى الإدارة العامة' },
+      summary: {
+        en: 'An on-campus program from INSEAD, 2 + 2 weeks, running 23 November 2026 to 26 February 2027.',
+        ar: 'برنامج حضوري من إنسياد (INSEAD)، أسبوعان + أسبوعان، من 23 نوفمبر 2026 إلى 26 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-negotiation-dynamics', school: 's-insead', subject: 'negotiation', format: 'in-person',
+      start: '2026-11-25', days: 3, price: 9000, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/marketing-sales/negotiation-dynamics', end: '2026-11-27',
+      title: { en: 'Negotiation Dynamics', ar: 'ديناميكيات التفاوض' },
+      summary: {
+        en: 'A 3-day on-campus program from INSEAD, running 25 November 2026 to 27 November 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من إنسياد (INSEAD)، من 25 نوفمبر 2026 إلى 27 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-avira-awareness-vision-imagination-rol', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2026-11-26', days: 5, price: 35600, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/top-management/avira-awareness-vision-imagination-role-action', end: '2026-11-30',
+      title: {
+        en: 'AVIRA: Awareness, Vision, Imagination, Role, Action',
+        ar: 'أفيرا (AVIRA): الوعي والرؤية والخيال والدور والفعل'
+      },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 26 November 2026 to 30 November 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 26 نوفمبر 2026 إلى 30 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-sustainability-leadership-and-strategy', school: 's-insead', subject: 'sustainability', format: 'online',
+      start: '2026-11-26', days: null, price: 15000, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/programmes-delivered-emeritus/sustainability-leadership-strategy-programme', duration: { en: '6 months', ar: '6 أشهر' },
+      title: { en: 'Sustainability Leadership and Strategy Programme', ar: 'برنامج القيادة والاستراتيجية في الاستدامة' },
+      summary: {
+        en: 'An online program from INSEAD, 6 months, starting 26 November 2026.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 6 أشهر، يبدأ في 26 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-human-capital-in-the-age-of-ai', school: 's-insead', subject: 'people', format: 'in-person',
+      start: '2026-11-30', days: 3, price: 12700, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/top-management/human-capital-age-ai', end: '2026-12-02',
+      title: { en: 'Human Capital in the Age of AI', ar: 'رأس المال البشري في عصر الذكاء الاصطناعي' },
+      summary: {
+        en: 'A 3-day on-campus program from INSEAD, running 30 November 2026 to 2 December 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من إنسياد (INSEAD)، من 30 نوفمبر 2026 إلى 2 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-ai-and-digital-marketing-strat', school: 's-insead', subject: 'marketing', format: 'in-person',
+      start: '2026-11-30', days: 5, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/marketing-sales/leading-ai-and-digital-marketing-strategy', end: '2026-12-04',
+      title: {
+        en: 'Leading AI and Digital Marketing Strategy',
+        ar: 'قيادة استراتيجية الذكاء الاصطناعي والتسويق الرقمي'
+      },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 30 November 2026 to 4 December 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 30 نوفمبر 2026 إلى 4 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-for-results', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2026-11-30', days: 5, price: 16950, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/leadership/leading-results', end: '2026-12-04',
+      title: { en: 'Leading for Results', ar: 'القيادة لتحقيق النتائج' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 30 November 2026 to 4 December 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 30 نوفمبر 2026 إلى 4 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategy-execution-programme', school: 's-insead', subject: 'strategy', format: 'in-person',
+      start: '2026-11-30', days: 8, price: 17300, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/strategy/strategy-execution-programme', end: '2027-04-01', duration: { en: '2 modules (4 + 4 days)', ar: 'وحدتان (4 + 4 أيام)' },
+      title: { en: 'Strategy Execution Programme', ar: 'برنامج تنفيذ الاستراتيجية' },
+      summary: {
+        en: 'A 8-day on-campus program from INSEAD, running 30 November 2026 to 1 April 2027.',
+        ar: 'برنامج حضوري لمدة 8 أيام من إنسياد (INSEAD)، من 30 نوفمبر 2026 إلى 1 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-for-boards', school: 's-insead', subject: 'digital', format: 'in-person',
+      start: '2026-12-01', days: 4, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/corporate-governance/ai-boards', end: '2026-12-04',
+      title: { en: 'AI for Boards', ar: 'الذكاء الاصطناعي لمجالس الإدارة' },
+      summary: {
+        en: 'A 4-day on-campus program from INSEAD, running 1 December 2026 to 4 December 2026.',
+        ar: 'برنامج حضوري لمدة 4 أيام من إنسياد (INSEAD)، من 1 ديسمبر 2026 إلى 4 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-finance-for-executives-2', school: 's-insead', subject: 'finance', format: 'in-person',
+      start: '2026-12-02', days: 8, price: 16200, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/finance/finance-executives', end: '2026-12-11',
+      title: { en: 'Finance for Executives', ar: 'المالية للتنفيذيين' },
+      summary: {
+        en: 'A 8-day on-campus program from INSEAD, running 2 December 2026 to 11 December 2026.',
+        ar: 'برنامج حضوري لمدة 8 أيام من إنسياد (INSEAD)، من 2 ديسمبر 2026 إلى 11 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-from-the-chair', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2026-12-02', days: 3, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/corporate-governance/leading-from-the-chair', end: '2026-12-04',
+      title: { en: 'Leading from the Chair', ar: 'القيادة من موقع الرئاسة' },
+      summary: {
+        en: 'A 3-day on-campus program from INSEAD, running 2 December 2026 to 4 December 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من إنسياد (INSEAD)، من 2 ديسمبر 2026 إلى 4 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-across-borders-and-cultures', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2026-12-07', days: 5, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/leadership/leading-across-borders-cultures', end: '2026-12-11',
+      title: { en: 'Leading Across Borders and Cultures', ar: 'القيادة عبر الحدود والثقافات' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 7 December 2026 to 11 December 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 7 ديسمبر 2026 إلى 11 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategic-r-d-management', school: 's-insead', subject: 'operations', format: 'in-person',
+      start: '2026-12-07', days: 5, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/rd-and-operations-management/strategic-rd-management', end: '2026-12-11',
+      title: { en: 'Strategic R&D Management', ar: 'الإدارة الاستراتيجية للبحث والتطوير (R&D)' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 7 December 2026 to 11 December 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 7 ديسمبر 2026 إلى 11 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-competitive-strategy', school: 's-insead', subject: 'strategy', format: 'in-person',
+      start: '2026-12-09', days: 3, price: 9000, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/strategy/competitive-strategy', end: '2026-12-11',
+      title: { en: 'Competitive Strategy', ar: 'الاستراتيجية التنافسية' },
+      summary: {
+        en: 'A 3-day on-campus program from INSEAD, running 9 December 2026 to 11 December 2026.',
+        ar: 'برنامج حضوري لمدة 3 أيام من إنسياد (INSEAD)، من 9 ديسمبر 2026 إلى 11 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategic-management-in-banking', school: 's-insead', subject: 'finance', format: 'in-person',
+      start: '2026-12-14', days: 5, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/finance/strategic-management-banking', end: '2026-12-18',
+      title: { en: 'Strategic Management in Banking', ar: 'الإدارة الاستراتيجية في القطاع المصرفي' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 14 December 2026 to 18 December 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 14 ديسمبر 2026 إلى 18 ديسمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-the-challenge-of-leadership', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2027-01-18', days: 20, price: 46200, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/top-management/challenge-leadership', end: '2027-12-17', duration: { en: '4 modules (5 + 5 + 5 + 5 days)', ar: '4 وحدات (5 + 5 + 5 + 5 أيام)' },
+      title: { en: 'The Challenge of Leadership', ar: 'تحدي القيادة' },
+      summary: {
+        en: 'A 20-day on-campus program from INSEAD, running 18 January 2027 to 17 December 2027.',
+        ar: 'برنامج حضوري لمدة 20 يومًا من إنسياد (INSEAD)، من 18 يناير 2027 إلى 17 ديسمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-business-strategy-and-financial-perfor', school: 's-insead', subject: 'strategy', format: 'online',
+      start: '2027-02-01', days: null, price: 2530, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/business-strategy-financial-performance', end: '2027-04-21', duration: { en: '7 content weeks', ar: '7 أسابيع من المحتوى' },
+      title: { en: 'Business Strategy and Financial Performance', ar: 'استراتيجية الأعمال والأداء المالي' },
+      summary: {
+        en: 'An online program from INSEAD, 7 content weeks, running 1 February 2027 to 21 April 2027.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 7 أسابيع من المحتوى، من 1 فبراير 2027 إلى 21 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-insead-blue-ocean-strategy', school: 's-insead', subject: 'strategy', format: 'in-person',
+      start: '2027-02-01', days: 5, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/strategy/blue-ocean-strategy', end: '2027-02-05',
+      title: { en: 'INSEAD Blue Ocean Strategy', ar: 'استراتيجية المحيط الأزرق من INSEAD' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 1 February 2027 to 5 February 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 1 فبراير 2027 إلى 5 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategic-negotiations', school: 's-insead', subject: 'negotiation', format: 'online',
+      start: '2027-02-01', days: null, price: 2100, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/strategic-negotiations', end: '2027-04-07', duration: { en: '5 content weeks', ar: '5 أسابيع من المحتوى' },
+      title: { en: 'Strategic Negotiations', ar: 'التفاوض الاستراتيجي' },
+      summary: {
+        en: 'An online program from INSEAD, 5 content weeks, running 1 February 2027 to 7 April 2027.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 5 أسابيع من المحتوى، من 1 فبراير 2027 إلى 7 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-the-leadership-transition', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2027-02-01', days: 7, price: 14950, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/leadership/leadership-transition', end: '2027-05-19', duration: { en: '2 modules (5 + 2 days)', ar: 'وحدتان (5 + 2 أيام)' },
+      title: { en: 'The Leadership Transition', ar: 'الانتقال القيادي' },
+      summary: {
+        en: 'A 7-day on-campus program from INSEAD, running 1 February 2027 to 19 May 2027.',
+        ar: 'برنامج حضوري لمدة 7 أيام من إنسياد (INSEAD)، من 1 فبراير 2027 إلى 19 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-developing-emerging-leaders', school: 's-insead', subject: 'leadership', format: 'online',
+      start: '2027-02-15', days: null, price: 2100, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/developing-emerging-leaders', duration: { en: '5 content weeks', ar: '5 أسابيع من المحتوى' },
+      title: { en: 'Developing Emerging Leaders', ar: 'تطوير القادة الناشئين' },
+      summary: {
+        en: 'An online program from INSEAD, 5 content weeks, starting 15 February 2027.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 5 أسابيع من المحتوى، يبدأ في 15 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-impactful-communication-for-leaders', school: 's-insead', subject: 'leadership', format: 'online',
+      start: '2027-02-15', days: null, price: 2530, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/impactful-communication-leaders', duration: { en: '5 content weeks', ar: '5 أسابيع من المحتوى' },
+      title: { en: 'Impactful Communication for Leaders', ar: 'التواصل المؤثر للقادة' },
+      summary: {
+        en: 'An online program from INSEAD, 5 content weeks, starting 15 February 2027.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 5 أسابيع من المحتوى، يبدأ في 15 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-chief-operating-officer-coo-programme', school: 's-insead', subject: 'operations', format: 'online',
+      start: '2027-02-17', days: null, price: 25850, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/programmes-delivered-emeritus/COO-programme', duration: { en: '10-12 months', ar: '10–12 شهرًا' },
+      title: { en: 'Chief Operating Officer (COO) Programme', ar: 'برنامج الرئيس التنفيذي للعمليات (COO)' },
+      summary: {
+        en: 'An online program from INSEAD, 10-12 months, starting 17 February 2027.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 10–12 شهرًا، يبدأ في 17 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-chief-strategy-officer-cso-programme', school: 's-insead', subject: 'strategy', format: 'online',
+      start: '2027-02-17', days: null, price: 25850, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/programmes-delivered-emeritus/chief-strategy-officer-programme', duration: { en: '10-12 months', ar: '10–12 شهرًا' },
+      title: { en: 'Chief Strategy Officer (CSO) Programme', ar: 'برنامج الرئيس التنفيذي للاستراتيجية (CSO)' },
+      summary: {
+        en: 'An online program from INSEAD, 10-12 months, starting 17 February 2027.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 10–12 شهرًا، يبدأ في 17 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-transforming-your-business-with-ai', school: 's-insead', subject: 'digital', format: 'online',
+      start: '2027-03-01', days: null, price: 2100, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/transform-business-ai', end: '2027-05-05', duration: { en: '5 content weeks', ar: '5 أسابيع من المحتوى' },
+      title: { en: 'Transforming Your Business with AI', ar: 'تحويل أعمالك بالذكاء الاصطناعي' },
+      summary: {
+        en: 'An online program from INSEAD, 5 content weeks, running 1 March 2027 to 5 May 2027.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 5 أسابيع من المحتوى، من 1 مارس 2027 إلى 5 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategy-in-the-age-of-digital-and-ai', school: 's-insead', subject: 'strategy', format: 'online',
+      start: '2027-03-08', days: null, price: 2100, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/strategy-age-digital-ai', end: '2027-05-12', duration: { en: '5 content weeks', ar: '5 أسابيع من المحتوى' },
+      title: {
+        en: 'Strategy in the Age of Digital and AI',
+        ar: 'الاستراتيجية في عصر التقنيات الرقمية والذكاء الاصطناعي'
+      },
+      summary: {
+        en: 'An online program from INSEAD, 5 content weeks, running 8 March 2027 to 12 May 2027.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 5 أسابيع من المحتوى، من 8 مارس 2027 إلى 12 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-b2b-marketing-strategies', school: 's-insead', subject: 'marketing', format: 'in-person',
+      start: '2027-03-15', days: 5, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/marketing-sales/b2b-marketing-strategies', end: '2027-03-19',
+      title: { en: 'B2B Marketing Strategies', ar: 'استراتيجيات التسويق بين الشركات (B2B)' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 15 March 2027 to 19 March 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 15 مارس 2027 إلى 19 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-financial-analysis-for-non-financial-m', school: 's-insead', subject: 'finance', format: 'online',
+      start: '2027-03-15', days: null, price: 1950, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/financial-analysis-managers', end: '2027-05-19', duration: { en: '5 content weeks', ar: '5 أسابيع من المحتوى' },
+      title: { en: 'Financial Analysis for Non-Financial Managers', ar: 'التحليل المالي للمديرين من غير الماليين' },
+      summary: {
+        en: 'An online program from INSEAD, 5 content weeks, running 15 March 2027 to 19 May 2027.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 5 أسابيع من المحتوى، من 15 مارس 2027 إلى 19 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-organisations-in-disruptive-ti', school: 's-insead', subject: 'leadership', format: 'online',
+      start: '2027-03-15', days: null, price: 2530, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/leading-organisations-disruptive-times', duration: { en: '6 content weeks', ar: '6 أسابيع من المحتوى' },
+      title: { en: 'Leading Organisations in Disruptive Times', ar: 'قيادة المؤسسات في أوقات الاضطراب' },
+      summary: {
+        en: 'An online program from INSEAD, 6 content weeks, starting 15 March 2027.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 6 أسابيع من المحتوى، يبدأ في 15 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-learning-to-lead', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2027-03-16', days: 4, price: 8800, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/leadership/learning-lead', end: '2027-03-19',
+      title: { en: 'Learning to Lead', ar: 'تعلّم القيادة' },
+      summary: {
+        en: 'A 4-day on-campus program from INSEAD, running 16 March 2027 to 19 March 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من إنسياد (INSEAD)، من 16 مارس 2027 إلى 19 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-executive-presence-and-influence', school: 's-insead', subject: 'leadership', format: 'online',
+      start: '2027-03-22', days: null, price: 2100, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/executive-presence-influence', duration: { en: '5 content weeks', ar: '5 أسابيع من المحتوى' },
+      title: { en: 'Executive Presence and Influence', ar: 'الحضور التنفيذي والتأثير' },
+      summary: {
+        en: 'An online program from INSEAD, 5 content weeks, starting 22 March 2027.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 5 أسابيع من المحتوى، يبدأ في 22 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-reinventing-teams-with-ai', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2027-03-22', days: 3, price: 9000, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/leadership/reinventing-teams-ai', end: '2027-03-24',
+      title: { en: 'Reinventing Teams with AI', ar: 'إعادة ابتكار الفرق بالذكاء الاصطناعي' },
+      summary: {
+        en: 'A 3-day on-campus program from INSEAD, running 22 March 2027 to 24 March 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من إنسياد (INSEAD)، من 22 مارس 2027 إلى 24 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-for-business-from-strategy-to-execu', school: 's-insead', subject: 'digital', format: 'in-person',
+      start: '2027-03-29', days: 3, price: 9000, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/digital-transformation-ai/ai-business-strategy-execution', end: '2027-03-31',
+      title: {
+        en: 'AI for Business: from Strategy to Execution',
+        ar: 'الذكاء الاصطناعي للأعمال: من الاستراتيجية إلى التنفيذ'
+      },
+      summary: {
+        en: 'A 3-day on-campus program from INSEAD, running 29 March 2027 to 31 March 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من إنسياد (INSEAD)، من 29 مارس 2027 إلى 31 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-lead-the-future', school: 's-insead', subject: 'leadership', format: 'blended',
+      start: '2027-03-31', days: null, price: 19950, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/lead-future', end: '2028-03-22', duration: { en: '1 year', ar: 'سنة واحدة' },
+      title: { en: 'Lead the Future', ar: 'قيادة المستقبل' },
+      summary: {
+        en: 'A blended program from INSEAD, 1 year, running 31 March 2027 to 22 March 2028.',
+        ar: 'برنامج مدمج من إنسياد (INSEAD)، سنة واحدة، من 31 مارس 2027 إلى 22 مارس 2028.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-management-acceleration-programme', school: 's-insead', subject: 'leadership', format: 'blended',
+      start: '2027-04-05', days: null, price: 24400, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/general-management/management-acceleration-programme', end: '2027-06-18', duration: {
+        en: 'Approximately 2 months; 2 modules (7 days live virtual, 6,5 days Singapore)',
+        ar: 'نحو شهرين؛ وحدتان (7 أيام افتراضية مباشرة، 6.5 أيام في سنغافورة)'
+      },
+      title: { en: 'Management Acceleration Programme', ar: 'برنامج تسريع الإدارة' },
+      summary: {
+        en: 'A blended program from INSEAD, Approximately 2 months; 2 modules (7 days live virtual, 6,5 days Singapore), running 5 April 2027 to 18 June 2027.',
+        ar: 'برنامج مدمج من إنسياد (INSEAD)، نحو شهرين؛ وحدتان (7 أيام افتراضية مباشرة، 6.5 أيام في سنغافورة)، من 5 أبريل 2027 إلى 18 يونيو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-value-creation-for-owners-and-director', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2027-04-12', days: 5, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/corporate-governance/value-creation-owners-directors', end: '2027-04-16',
+      title: { en: 'Value Creation for Owners and Directors', ar: 'خلق القيمة للملاك وأعضاء مجالس الإدارة' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 12 April 2027 to 16 April 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 12 أبريل 2027 إلى 16 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-managing-partnerships-and-strategic-al', school: 's-insead', subject: 'strategy', format: 'in-person',
+      start: '2027-04-26', days: 5, price: 16400, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/strategy/managing-partnerships-strategic-alliances', end: '2027-04-30',
+      title: { en: 'Managing Partnerships and Strategic Alliances', ar: 'إدارة الشراكات والتحالفات الاستراتيجية' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 26 April 2027 to 30 April 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 26 أبريل 2027 إلى 30 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-strategic-marketing-programme', school: 's-insead', subject: 'marketing', format: 'in-person',
+      start: '2027-05-03', days: 5, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/marketing-sales/strategic-marketing-programme', end: '2027-05-07',
+      title: { en: 'Strategic Marketing Programme', ar: 'برنامج التسويق الاستراتيجي' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 3 May 2027 to 7 May 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 3 مايو 2027 إلى 7 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-change-in-an-age-of-digital-tr', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2027-05-11', days: 4, price: 9800, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/leadership/leading-change-age-digital-transformation', end: '2027-05-14',
+      title: { en: 'Leading Change in an Age of Digital Transformation', ar: 'قيادة التغيير في عصر التحول الرقمي' },
+      summary: {
+        en: 'A 4-day on-campus program from INSEAD, running 11 May 2027 to 14 May 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من إنسياد (INSEAD)، من 11 مايو 2027 إلى 14 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-the-effective-sales-force', school: 's-insead', subject: 'marketing', format: 'in-person',
+      start: '2027-05-17', days: 5, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/marketing-sales/leading-effective-sales-force', end: '2027-05-21',
+      title: { en: 'Leading the Effective Sales Force', ar: 'قيادة فريق مبيعات فعّال' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 17 May 2027 to 21 May 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 17 مايو 2027 إلى 21 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-crisis-management-for-boards', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2027-05-24', days: 3, price: 9800, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/corporate-governance/crisis-management-boards', end: '2027-05-26',
+      title: { en: 'Crisis Management for Boards', ar: 'إدارة الأزمات لمجالس الإدارة' },
+      summary: {
+        en: 'A 3-day on-campus program from INSEAD, running 24 May 2027 to 26 May 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من إنسياد (INSEAD)، من 24 مايو 2027 إلى 26 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-women-leaders-programme', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2027-05-24', days: 4, price: 9800, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/leadership/women-leaders-programme', end: '2027-05-27',
+      title: { en: 'Women Leaders Programme', ar: 'برنامج القيادات النسائية' },
+      summary: {
+        en: 'A 4-day on-campus program from INSEAD, running 24 May 2027 to 27 May 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من إنسياد (INSEAD)، من 24 مايو 2027 إلى 27 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-product-leadership-programme', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2027-06-21', days: 5, price: 9200, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/partner-programmes/product-leadership-programme', end: '2027-06-25',
+      title: { en: 'Product Leadership Programme', ar: 'برنامج قيادة المنتجات' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 21 June 2027 to 25 June 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 21 يونيو 2027 إلى 25 يونيو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-supply-chain-management', school: 's-insead', subject: 'operations', format: 'in-person',
+      start: '2027-06-21', days: 5, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/rd-and-operations-management/supply-chain-management', end: '2027-06-25',
+      title: { en: 'Supply Chain Management', ar: 'إدارة سلاسل الإمداد' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 21 June 2027 to 25 June 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 21 يونيو 2027 إلى 25 يونيو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-collaborative-leadership', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2027-06-28', days: 5, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/leadership/collaborative-leadership', end: '2027-07-02',
+      title: { en: 'Collaborative Leadership', ar: 'القيادة التشاركية' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 28 June 2027 to 2 July 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 28 يونيو 2027 إلى 2 يوليو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-corporate-strategy-for-board-members', school: 's-insead', subject: 'strategy', format: 'in-person',
+      start: '2027-06-28', days: 5, price: 12200, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/corporate-governance/corporate-strategy-board-members', end: '2027-07-02',
+      title: { en: 'Corporate Strategy for Board Members', ar: 'استراتيجية الشركات لأعضاء مجالس الإدارة' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 28 June 2027 to 2 July 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 28 يونيو 2027 إلى 2 يوليو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-teams', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2027-06-28', days: 5, price: 11600, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/leadership/leading-teams', end: '2027-07-02',
+      title: { en: 'Leading Teams', ar: 'قيادة الفرق' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 28 June 2027 to 2 July 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 28 يونيو 2027 إلى 2 يوليو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-insead-hans-h-wahl-impact-entrepreneur', school: 's-insead', subject: 'entrepreneurship', format: 'online',
+      start: '2027-06-29', days: 4, price: 2000, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/partner-programmes/insead-hans-h-wahl-impact-entrepreneurship-programme', end: '2027-07-02',
+      title: {
+        en: 'INSEAD Hans H. Wahl Impact Entrepreneurship Programme',
+        ar: 'برنامج Hans H. Wahl لريادة الأعمال ذات الأثر من INSEAD'
+      },
+      summary: {
+        en: 'A 4-day online program from INSEAD, running 29 June 2027 to 2 July 2027.',
+        ar: 'برنامج عبر الإنترنت لمدة 4 أيام من إنسياد (INSEAD)، من 29 يونيو 2027 إلى 2 يوليو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-insead-for-impact', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2027-07-05', days: 3, price: 8900, currency: 'SGD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/leadership/insead-impact', end: '2027-07-07',
+      title: { en: 'INSEAD for Impact', ar: 'INSEAD من أجل الأثر' },
+      summary: {
+        en: 'A 3-day on-campus program from INSEAD, running 5 July 2027 to 7 July 2027.',
+        ar: 'برنامج حضوري لمدة 3 أيام من إنسياد (INSEAD)، من 5 يوليو 2027 إلى 7 يوليو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-successful-change', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: '2027-07-06', days: 4, price: 9800, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/leadership/leading-successful-change', end: '2027-07-09',
+      title: { en: 'Leading Successful Change', ar: 'قيادة التغيير الناجح' },
+      summary: {
+        en: 'A 4-day on-campus program from INSEAD, running 6 July 2027 to 9 July 2027.',
+        ar: 'برنامج حضوري لمدة 4 أيام من إنسياد (INSEAD)، من 6 يوليو 2027 إلى 9 يوليو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-entrepreneurship-new-business-ventures', school: 's-insead', subject: 'entrepreneurship', format: 'in-person',
+      start: '2027-07-12', days: 5, price: 11400, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/entrepreneurship/entrepreneurship-new-business-ventures', end: '2027-07-16',
+      title: { en: 'Entrepreneurship: New Business Ventures', ar: 'ريادة الأعمال: المشاريع التجارية الجديدة' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD, running 12 July 2027 to 16 July 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD)، من 12 يوليو 2027 إلى 16 يوليو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-insead-leadership-programme-for-senior', school: 's-insead', subject: 'leadership', format: 'blended',
+      start: '2027-08-15', days: null, price: 55000, langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/partner-programmes/insead-leadership-programme-senior-executives-india', end: '2028-07-15', duration: { en: '12 Months', ar: '12 شهرًا' },
+      title: {
+        en: 'INSEAD Leadership Programme for Senior Executives – India',
+        ar: 'برنامج القيادة لكبار التنفيذيين من INSEAD – الهند'
+      },
+      summary: {
+        en: 'A blended program from INSEAD, 12 Months, running 15 August 2027 to 15 July 2028.',
+        ar: 'برنامج مدمج من إنسياد (INSEAD)، 12 شهرًا، من 15 أغسطس 2027 إلى 15 يوليو 2028.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-advanced-negotiations', school: 's-insead', subject: 'negotiation', format: 'online',
+      start: '2027-10-11', days: null, price: 2530, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/advanced-negotiations', end: '2027-12-06', duration: { en: '4 content weeks', ar: '4 أسابيع من المحتوى' },
+      title: { en: 'Advanced Negotiations', ar: 'التفاوض المتقدم' },
+      summary: {
+        en: 'An online program from INSEAD, 4 content weeks, running 11 October 2027 to 6 December 2027.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 4 أسابيع من المحتوى، من 11 أكتوبر 2027 إلى 6 ديسمبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-advanced-programme-in-coaching-groups', school: 's-insead', subject: 'people', format: 'in-person',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/coaching/advanced-programme-coaching-groups', duration: { en: '1 module', ar: 'وحدة واحدة' },
+      title: { en: 'Advanced Programme in Coaching Groups', ar: 'البرنامج المتقدم في كوتشينغ المجموعات' },
+      summary: {
+        en: 'An on-campus program from INSEAD, 1 module. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من إنسياد (INSEAD)، وحدة واحدة. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-advancing-diversity-and-inclusion', school: 's-insead', subject: 'people', format: 'online',
+      start: null, days: null, price: 740, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/advancing-diversity-inclusion', duration: { en: '6–8 hours', ar: '6–8 ساعات' },
+      title: { en: 'Advancing Diversity and Inclusion', ar: 'تعزيز التنوع والشمول' },
+      summary: {
+        en: 'An online program from INSEAD, 6–8 hours. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 6–8 ساعات. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-building-strategic-partnerships-and-ec', school: 's-insead', subject: 'strategy', format: 'online',
+      start: null, days: null, price: 740, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/building-strategic-partnerships-ecosystems', duration: { en: '6–8 hours', ar: '6–8 ساعات' },
+      title: { en: 'Building Strategic Partnerships and Ecosystems', ar: 'بناء الشراكات الاستراتيجية والنظم البيئية' },
+      summary: {
+        en: 'An online program from INSEAD, 6–8 hours. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 6–8 ساعات. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ctam-europe-executive-management-progr', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: null, days: 5, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/partner-programmes/ctam-europe-executive-management-programme',
+      title: { en: 'CTAM Europe Executive Management Programme', ar: 'برنامج الإدارة التنفيذية من CTAM أوروبا' },
+      summary: {
+        en: 'A 5-day on-campus program from INSEAD. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 5 أيام من إنسياد (INSEAD). تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-driving-innovation-for-growth', school: 's-insead', subject: 'entrepreneurship', format: 'online',
+      start: null, days: null, price: 740, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/driving-innovation-growth', duration: { en: '6 – 8 hours, self-paced', ar: '6–8 ساعات، تعلّم ذاتي' },
+      title: { en: 'Driving Innovation for Growth', ar: 'قيادة الابتكار لتحقيق النمو' },
+      summary: {
+        en: 'An online program from INSEAD, 6 – 8 hours, self-paced. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 6–8 ساعات، تعلّم ذاتي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-financial-statement-analysis-and-valua', school: 's-insead', subject: 'finance', format: 'in-person',
+      start: null, days: 4, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/partner-programmes/financial-statement-analysis-and-valuation',
+      title: { en: 'Financial Statement Analysis and Valuation', ar: 'تحليل القوائم المالية والتقييم' },
+      summary: {
+        en: 'A 4-day on-campus program from INSEAD. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة 4 أيام من إنسياد (INSEAD). تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-idp-connect-boardroom-in-practice', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/corporate-governance/idp-connect-boardroom-practice', duration: { en: '3 eligible days', ar: '3 أيام مؤهلة' },
+      title: {
+        en: 'IDP Connect - Boardroom in Practice',
+        ar: 'برنامج الربط (IDP Connect) – قاعة مجلس الإدارة في الممارسة العملية'
+      },
+      summary: {
+        en: 'An on-campus program from INSEAD, 3 eligible days. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من إنسياد (INSEAD)، 3 أيام مؤهلة. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-insead-business-sustainability-program', school: 's-insead', subject: 'sustainability', format: 'in-person',
+      start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/strategy/business-sustainability-programme',
+      title: { en: 'INSEAD Business Sustainability Programme', ar: 'برنامج استدامة الأعمال من INSEAD' },
+      summary: {
+        en: 'An on-campus program from INSEAD. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من إنسياد (INSEAD). تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-leading-through-change-and-uncertainty', school: 's-insead', subject: 'leadership', format: 'online',
+      start: null, days: null, price: 740, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/leading-through-change-uncertainty', duration: { en: '6 – 8 hours, self-paced', ar: '6–8 ساعات، تعلّم ذاتي' },
+      title: { en: 'Leading Through Change and Uncertainty', ar: 'القيادة في ظل التغيير وعدم اليقين' },
+      summary: {
+        en: 'An online program from INSEAD, 6 – 8 hours, self-paced. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 6–8 ساعات، تعلّم ذاتي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-m-a-success-strategies-online', school: 's-insead', subject: 'strategy', format: 'online',
+      start: null, days: null, price: 2100, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/programmes-delivered-emeritus/mergers-acquisitions-success-strategies', duration: { en: '5 weeks', ar: '5 أسابيع' },
+      title: { en: 'M&A Success Strategies - Online', ar: 'استراتيجيات نجاح الاندماج والاستحواذ (M&A) – عبر الإنترنت' },
+      summary: {
+        en: 'An online program from INSEAD, 5 weeks. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 5 أسابيع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-mastering-creative-thinking', school: 's-insead', subject: 'entrepreneurship', format: 'online',
+      start: null, days: null, price: 740, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/mastering-creative-thinking', duration: { en: '6 – 8 hours, self-paced', ar: '6–8 ساعات، تعلّم ذاتي' },
+      title: { en: 'Mastering Creative Thinking', ar: 'إتقان التفكير الإبداعي' },
+      summary: {
+        en: 'An online program from INSEAD, 6 – 8 hours, self-paced. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 6–8 ساعات، تعلّم ذاتي. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-negotiation-fundamentals', school: 's-insead', subject: 'negotiation', format: 'online',
+      start: null, days: null, price: 740, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/negotiation-fundamentals', duration: { en: '6–8 hours', ar: '6–8 ساعات' },
+      title: { en: 'Negotiation Fundamentals', ar: 'أساسيات التفاوض' },
+      summary: {
+        en: 'An online program from INSEAD, 6–8 hours. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 6–8 ساعات. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-rethinking-global-strategy-online', school: 's-insead', subject: 'strategy', format: 'online',
+      start: null, days: null, price: 2050, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/programmes-delivered-emeritus/rethinking-global-strategy', duration: { en: '5 weeks', ar: '5 أسابيع' },
+      title: { en: 'Rethinking Global Strategy - Online', ar: 'إعادة التفكير في الاستراتيجية العالمية – عبر الإنترنت' },
+      summary: {
+        en: 'An online program from INSEAD, 5 weeks. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 5 أسابيع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-sal-insead-legal-leadership-and-strate', school: 's-insead', subject: 'leadership', format: 'in-person',
+      start: null, days: 2, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/partner-programmes/sal-insead-legal-leadership-and-strategy-programme',
+      title: {
+        en: 'SAL-INSEAD Legal Leadership and Strategy Programme',
+        ar: 'برنامج القيادة القانونية والاستراتيجية من SAL-INSEAD'
+      },
+      summary: {
+        en: 'A 2-day on-campus program from INSEAD. Dates to be announced by the school.',
+        ar: 'برنامج حضوري لمدة يومين من إنسياد (INSEAD). تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-the-future-of-work', school: 's-insead', subject: 'people', format: 'online',
+      start: null, days: null, price: 349, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/open-online-programmes/future-of-work', duration: { en: '6 – 8 hours', ar: '6–8 ساعات' },
+      title: { en: 'The Future of Work', ar: 'مستقبل العمل' },
+      summary: {
+        en: 'An online program from INSEAD, 6 – 8 hours. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 6–8 ساعات. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-virtual-executive-coaching', school: 's-insead', subject: 'leadership', format: 'online',
+      start: null, days: null, price: 3000, currency: 'EUR', langs: ['en'], popularity: 50, sourceUrl: 'https://www.insead.edu/executive-education/insead-executive-coaching/coaching-sessions', duration: { en: '4 sessions of 1 hour each', ar: '4 جلسات مدة كل منها ساعة واحدة' },
+      title: { en: 'Virtual Executive Coaching', ar: 'الكوتشينغ التنفيذي الافتراضي' },
+      summary: {
+        en: 'An online program from INSEAD, 4 sessions of 1 hour each. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من إنسياد (INSEAD)، 4 جلسات مدة كل منها ساعة واحدة. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-professional-certificate-in-digital-ma', school: 's-kellogg-school-of-management', subject: 'marketing', format: 'online',
       start: '2026-09-30', days: null, price: 7025, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/online-programs/pcdigmark/', end: '2027-03-17', duration: {
         en: '20 modules over 6 months; 15-20 hours per week',
@@ -9271,7 +10533,7 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-finance-for-executives-2', school: 's-kellogg-school-of-management', subject: 'finance', format: 'in-person',
+      id: 'c-finance-for-executives-3', school: 's-kellogg-school-of-management', subject: 'finance', format: 'in-person',
       start: '2026-11-01', days: 6, price: 11500, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/finexec/', end: '2026-11-06',
       title: { en: 'Finance for Executives', ar: 'المالية للتنفيذيين' },
       summary: {
@@ -9724,7 +10986,7 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-competitive-strategy', school: 's-kellogg-school-of-management', subject: 'strategy', format: 'in-person',
+      id: 'c-competitive-strategy-2', school: 's-kellogg-school-of-management', subject: 'strategy', format: 'in-person',
       start: '2027-05-10', days: 5, price: 9950, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/compete/', end: '2027-05-14',
       title: { en: 'Competitive Strategy', ar: 'الاستراتيجية التنافسية' },
       summary: {
@@ -9836,7 +11098,7 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-supply-chain-management', school: 's-kellogg-school-of-management', subject: 'operations', format: 'in-person',
+      id: 'c-supply-chain-management-2', school: 's-kellogg-school-of-management', subject: 'operations', format: 'in-person',
       start: null, days: null, price: null, langs: ['en'], popularity: 50, sourceUrl: 'https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/supply/',
       title: { en: 'Supply Chain Management', ar: 'إدارة سلاسل الإمداد' },
       summary: {
@@ -12571,7 +13833,7 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-advanced-negotiations', school: 's-melbourne-business-school', subject: 'negotiation', format: 'in-person',
+      id: 'c-advanced-negotiations-2', school: 's-melbourne-business-school', subject: 'negotiation', format: 'in-person',
       start: '2027-05-10', days: 3, price: 7500, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://mbs.edu/short-courses/advanced-negotiations', end: '2027-05-12',
       title: { en: 'Advanced Negotiations', ar: 'التفاوض المتقدم' },
       summary: {
@@ -14285,6 +15547,611 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
+      id: 'c-oxford-executive-finance-programme', school: 's-said-business-school-university-of-oxf', subject: 'finance', format: 'online',
+      start: '2026-09-02', days: null, price: 2650, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/online-learning/oxford-executive-finance-programme', duration: { en: '6 weeks', ar: '6 أسابيع' },
+      title: { en: 'Oxford Executive Finance Programme', ar: 'برنامج أكسفورد التنفيذي للتمويل' },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 6 weeks, starting 2 September 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 6 أسابيع، يبدأ في 2 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-sustainability-reporting-and-es', school: 's-said-business-school-university-of-oxf', subject: 'sustainability', format: 'online',
+      start: '2026-09-02', days: null, price: 2200, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-sustainability-reporting-and-esg-data-management-programme', duration: { en: '7 weeks', ar: '7 أسابيع' },
+      title: {
+        en: 'Oxford Sustainability Reporting and ESG Data Management Programme',
+        ar: 'برنامج أكسفورد لإعداد تقارير الاستدامة وإدارة بيانات المعايير البيئية والاجتماعية والحوكمة (ESG)'
+      },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 7 weeks, starting 2 September 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 7 أسابيع، يبدأ في 2 سبتمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-healthcare-leadership-programme', school: 's-said-business-school-university-of-oxf', subject: 'healthcare', format: 'in-person',
+      start: '2026-10-04', days: 6, price: 9500, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/campus-open-programmes/oxford-healthcare-leadership-programme',
+      title: { en: 'Oxford Healthcare Leadership Programme', ar: 'برنامج أكسفورد للقيادة في الرعاية الصحية' },
+      summary: {
+        en: 'A 6-day on-campus program from Saïd Business School, University of Oxford, running 4 October 2026 to 9 October 2026.',
+        ar: 'برنامج حضوري لمدة 6 أيام من كلية سعيد للأعمال بجامعة أكسفورد، من 4 أكتوبر 2026 إلى 9 أكتوبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-advanced-management-and-leaders', school: 's-said-business-school-university-of-oxf', subject: 'leadership', format: 'in-person',
+      start: '2026-10-25', days: 21, price: 26000, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/person-programmes/oxford-advanced-management-and-leadership-programme',
+      title: {
+        en: 'Oxford Advanced Management and Leadership Programme',
+        ar: 'برنامج أكسفورد للإدارة والقيادة المتقدمة'
+      },
+      summary: {
+        en: 'A 21-day on-campus program from Saïd Business School, University of Oxford, running 25 October 2026 to 14 November 2026.',
+        ar: 'برنامج حضوري لمدة 21 يومًا من كلية سعيد للأعمال بجامعة أكسفورد، من 25 أكتوبر 2026 إلى 14 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-impact-finance-innovations-prog', school: 's-said-business-school-university-of-oxf', subject: 'finance', format: 'in-person',
+      start: '2026-11-09', days: 5, price: 8500, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/campus-open-programmes/oxford-impact-finance-innovations-programme',
+      title: { en: 'Oxford Impact Finance Innovations Programme', ar: 'برنامج أكسفورد لابتكارات التمويل ذي الأثر' },
+      summary: {
+        en: 'A 5-day on-campus program from Saïd Business School, University of Oxford, running 9 November 2026 to 13 November 2026.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية سعيد للأعمال بجامعة أكسفورد، من 9 نوفمبر 2026 إلى 13 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-artificial-intelligence-program', school: 's-said-business-school-university-of-oxf', subject: 'digital', format: 'online',
+      start: '2026-11-11', days: null, price: 2450, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-artificial-intelligence-programme', duration: { en: '6 weeks', ar: '6 أسابيع' },
+      title: { en: 'Oxford Artificial Intelligence Programme', ar: 'برنامج أكسفورد للذكاء الاصطناعي' },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 6 weeks, starting 11 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 6 أسابيع، يبدأ في 11 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-generative-and-agentic-ai-progr', school: 's-said-business-school-university-of-oxf', subject: 'digital', format: 'online',
+      start: '2026-11-11', days: null, price: 1500, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-generative-and-agentic-ai-programme', duration: { en: '4 weeks', ar: '4 أسابيع' },
+      title: {
+        en: 'Oxford Generative and Agentic AI Programme',
+        ar: 'برنامج أكسفورد للذكاء الاصطناعي التوليدي والوكيلي'
+      },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 4 weeks, starting 11 November 2026.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 4 أسابيع، يبدأ في 11 نوفمبر 2026.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-emerging-leaders-programme', school: 's-said-business-school-university-of-oxf', subject: 'leadership', format: 'blended',
+      start: '2027-01-13', days: null, price: 7600, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-emerging-leaders-programme', duration: {
+        en: '13 weeks online plus a 3-day Oxford immersion (14-16 June 2027)',
+        ar: '13 أسبوعًا عبر الإنترنت، إضافةً إلى برنامج مكثف لمدة 3 أيام في أكسفورد (14–16 يونيو 2027)'
+      },
+      title: { en: 'Oxford Emerging Leaders Programme', ar: 'برنامج أكسفورد للقادة الناشئين' },
+      summary: {
+        en: 'A blended program from Saïd Business School, University of Oxford, 13 weeks online plus a 3-day Oxford immersion (14-16 June 2027), starting 13 January 2027.',
+        ar: 'برنامج مدمج من كلية سعيد للأعمال بجامعة أكسفورد، 13 أسبوعًا عبر الإنترنت، إضافةً إلى برنامج مكثف لمدة 3 أيام في أكسفورد (14–16 يونيو 2027)، يبدأ في 13 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-ai-strategy-and-leadership-programme', school: 's-said-business-school-university-of-oxf', subject: 'digital', format: 'in-person',
+      start: '2027-01-18', days: 5, price: 10000, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/person-programmes/ai-strategy-and-leadership-programme',
+      title: { en: 'AI Strategy and Leadership Programme', ar: 'برنامج استراتيجية الذكاء الاصطناعي والقيادة' },
+      summary: {
+        en: 'A 5-day on-campus program from Saïd Business School, University of Oxford, running 18 January 2027 to 22 January 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية سعيد للأعمال بجامعة أكسفورد، من 18 يناير 2027 إلى 22 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-algorithmic-trading-programme', school: 's-said-business-school-university-of-oxf', subject: 'finance', format: 'online',
+      start: '2027-01-20', days: null, price: 2100, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-algorithmic-trading-programme', duration: { en: '6 weeks', ar: '6 أسابيع' },
+      title: { en: 'Oxford Algorithmic Trading Programme', ar: 'برنامج أكسفورد للتداول الخوارزمي' },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 6 weeks, starting 20 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 6 أسابيع، يبدأ في 20 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-leading-sustainable-corporation', school: 's-said-business-school-university-of-oxf', subject: 'sustainability', format: 'online',
+      start: '2027-01-20', days: null, price: 2100, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/online-programmes/oxford-leading-sustainable-corporations-programme', duration: { en: '6 weeks', ar: '6 أسابيع' },
+      title: { en: 'Oxford Leading Sustainable Corporations Programme', ar: 'برنامج أكسفورد لقيادة الشركات المستدامة' },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 6 weeks, starting 20 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 6 أسابيع، يبدأ في 20 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-mba-fundamentals', school: 's-said-business-school-university-of-oxf', subject: 'leadership', format: 'online',
+      start: '2027-01-20', days: null, price: 3500, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/online-programmes/oxford-mba-fundamentals', duration: { en: '10 weeks', ar: '10 أسابيع' },
+      title: { en: 'Oxford MBA Fundamentals', ar: 'أساسيات ماجستير إدارة الأعمال (MBA) من أكسفورد' },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 10 weeks, starting 20 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 10 أسابيع، يبدأ في 20 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-private-markets-investments-pro', school: 's-said-business-school-university-of-oxf', subject: 'finance', format: 'online',
+      start: '2027-01-20', days: null, price: 2450, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-private-markets-investments-programme', duration: { en: '6 weeks', ar: '6 أسابيع' },
+      title: { en: 'Oxford Private Markets Investments Programme', ar: 'برنامج أكسفورد للاستثمار في الأسواق الخاصة' },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 6 weeks, starting 20 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 6 أسابيع، يبدأ في 20 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-strategic-management-executive', school: 's-said-business-school-university-of-oxf', subject: 'strategy', format: 'online',
+      start: '2027-01-20', days: null, price: 6600, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-strategic-management-executive-programme', duration: { en: '6 months', ar: '6 أشهر' },
+      title: {
+        en: 'Oxford Strategic Management Executive Programme',
+        ar: 'برنامج أكسفورد التنفيذي للإدارة الاستراتيجية'
+      },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 6 months, starting 20 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 6 أشهر، يبدأ في 20 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-executive-diploma-in-financial', school: 's-said-business-school-university-of-oxf', subject: 'finance', format: 'in-person',
+      start: '2027-01-25', days: null, price: 36370, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/oxford-executive-diplomas/oxford-executive-diploma-financial-strategy', end: '2027-10-15', duration: { en: '4 modules over 1 year', ar: '4 وحدات على مدى سنة واحدة' },
+      title: {
+        en: 'Oxford Executive Diploma in Financial Strategy',
+        ar: 'دبلوم أكسفورد التنفيذي في الاستراتيجية المالية'
+      },
+      summary: {
+        en: 'An on-campus program from Saïd Business School, University of Oxford, 4 modules over 1 year, running 25 January 2027 to 15 October 2027.',
+        ar: 'برنامج حضوري من كلية سعيد للأعمال بجامعة أكسفورد، 4 وحدات على مدى سنة واحدة، من 25 يناير 2027 إلى 15 أكتوبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-leading-ai-implementation-progr', school: 's-said-business-school-university-of-oxf', subject: 'digital', format: 'online',
+      start: '2027-01-27', days: null, price: 1950, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-leading-ai-implementation-programme', duration: { en: '5 weeks', ar: '5 أسابيع' },
+      title: { en: 'Oxford Leading AI Implementation Programme', ar: 'برنامج أكسفورد لقيادة تطبيق الذكاء الاصطناعي' },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 5 weeks, starting 27 January 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 5 أسابيع، يبدأ في 27 يناير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-leading-ai-adoption-in-financia', school: 's-said-business-school-university-of-oxf', subject: 'digital', format: 'online',
+      start: '2027-02-03', days: null, price: 1950, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/person-programmes/oxford-leading-ai-adoption-financial-services-programme', duration: { en: '5 weeks', ar: '5 أسابيع' },
+      title: {
+        en: 'Oxford Leading AI Adoption in Financial Services Programme',
+        ar: 'برنامج أكسفورد لقيادة تبنّي الذكاء الاصطناعي في الخدمات المالية'
+      },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 5 weeks, starting 3 February 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 5 أسابيع، يبدأ في 3 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-women-s-leadership-development', school: 's-said-business-school-university-of-oxf', subject: 'leadership', format: 'online',
+      start: '2027-02-03', days: null, price: 2450, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-womens-leadership-development-programme', duration: { en: '6 weeks', ar: '6 أسابيع' },
+      title: { en: "Oxford Women's Leadership Development Programme", ar: 'برنامج أكسفورد لتطوير القيادات النسائية' },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 6 weeks, starting 3 February 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 6 أسابيع، يبدأ في 3 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-executive-diploma-in-organisati', school: 's-said-business-school-university-of-oxf', subject: 'leadership', format: 'in-person',
+      start: '2027-02-08', days: null, price: 36370, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/oxford-executive-diplomas/oxford-executive-diploma-organisational-leadership', end: '2027-10-22', duration: { en: '1 year, part time (four in-person modules)', ar: 'سنة واحدة، دوام جزئي (4 وحدات حضورية)' },
+      title: {
+        en: 'Oxford Executive Diploma in Organisational Leadership',
+        ar: 'دبلوم أكسفورد التنفيذي في القيادة المؤسسية'
+      },
+      summary: {
+        en: 'An on-campus program from Saïd Business School, University of Oxford, 1 year, part time (four in-person modules), running 8 February 2027 to 22 October 2027.',
+        ar: 'برنامج حضوري من كلية سعيد للأعمال بجامعة أكسفورد، سنة واحدة، دوام جزئي (4 وحدات حضورية)، من 8 فبراير 2027 إلى 22 أكتوبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-leading-strategic-projects-prog', school: 's-said-business-school-university-of-oxf', subject: 'operations', format: 'online',
+      start: '2027-02-17', days: null, price: 2450, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-leading-strategic-projects-programme', duration: { en: '6 weeks', ar: '6 أسابيع' },
+      title: { en: 'Oxford Leading Strategic Projects Programme', ar: 'برنامج أكسفورد لقيادة المشاريع الاستراتيجية' },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 6 weeks, starting 17 February 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 6 أسابيع، يبدأ في 17 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-executive-strategy-programme', school: 's-said-business-school-university-of-oxf', subject: 'strategy', format: 'online',
+      start: '2027-02-24', days: null, price: 2650, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-executive-strategy-programme', duration: { en: '7 weeks', ar: '7 أسابيع' },
+      title: { en: 'Oxford Executive Strategy Programme', ar: 'برنامج أكسفورد التنفيذي للاستراتيجية' },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 7 weeks, starting 24 February 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 7 أسابيع، يبدأ في 24 فبراير 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-corporate-affairs-academy', school: 's-said-business-school-university-of-oxf', subject: 'strategy', format: 'blended',
+      start: '2027-03-01', days: null, price: 14000, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/campus-open-programmes/corporate-affairs-academy', end: '2027-07-09', duration: { en: '4 virtual sessions and 4.5 days in-person', ar: '4 جلسات افتراضية و4.5 أيام حضورية' },
+      title: { en: 'Corporate Affairs Academy', ar: 'أكاديمية شؤون الشركات' },
+      summary: {
+        en: 'A blended program from Saïd Business School, University of Oxford, 4 virtual sessions and 4.5 days in-person, running 1 March 2027 to 9 July 2027.',
+        ar: 'برنامج مدمج من كلية سعيد للأعمال بجامعة أكسفورد، 4 جلسات افتراضية و4.5 أيام حضورية، من 1 مارس 2027 إلى 9 يوليو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-women-transforming-leadership-programm', school: 's-said-business-school-university-of-oxf', subject: 'leadership', format: 'in-person',
+      start: '2027-03-08', days: 5, price: 8500, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/campus-open-programmes/women-transforming-leadership-programme',
+      title: { en: 'Women Transforming Leadership Programme', ar: 'برنامج المرأة في تحويل القيادة' },
+      summary: {
+        en: 'A 5-day on-campus program from Saïd Business School, University of Oxford, running 8 March 2027 to 12 March 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية سعيد للأعمال بجامعة أكسفورد، من 8 مارس 2027 إلى 12 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-leading-through-uncertainty-and', school: 's-said-business-school-university-of-oxf', subject: 'leadership', format: 'online',
+      start: '2027-03-17', days: null, price: 2450, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/online-programmes/oxford-leading-through-uncertainty-and-disruption', duration: { en: '6 weeks', ar: '6 أسابيع' },
+      title: {
+        en: 'Oxford Leading Through Uncertainty and Disruption Programme',
+        ar: 'برنامج أكسفورد للقيادة في ظل عدم اليقين والاضطراب'
+      },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 6 weeks, starting 17 March 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 6 أسابيع، يبدأ في 17 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-real-estate-investment-programm', school: 's-said-business-school-university-of-oxf', subject: 'finance', format: 'online',
+      start: '2027-03-17', days: null, price: 2100, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-real-estate-investment-programme', duration: { en: '6 weeks', ar: '6 أسابيع' },
+      title: { en: 'Oxford Real Estate Investment Programme', ar: 'برنامج أكسفورد للاستثمار العقاري' },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 6 weeks, starting 17 March 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 6 أسابيع، يبدأ في 17 مارس 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-leading-professional-service-fi', school: 's-said-business-school-university-of-oxf', subject: 'leadership', format: 'online',
+      start: '2027-04-07', days: null, price: 2650, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-leading-professional-service-firms-programme', duration: { en: '6 weeks', ar: '6 أسابيع' },
+      title: {
+        en: 'Oxford Leading Professional Service Firms Programme',
+        ar: 'برنامج أكسفورد لقيادة شركات الخدمات المهنية'
+      },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 6 weeks, starting 7 April 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 6 أسابيع، يبدأ في 7 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-enterprise-leadership-programme', school: 's-said-business-school-university-of-oxf', subject: 'leadership', format: 'online',
+      start: '2027-04-14', days: null, price: 2450, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/online-programmes/oxford-enterprise-leadership-programme', duration: { en: '6 weeks', ar: '6 أسابيع' },
+      title: { en: 'Oxford Enterprise Leadership Programme', ar: 'برنامج أكسفورد لقيادة المؤسسات' },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 6 weeks, starting 14 April 2027.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 6 أسابيع، يبدأ في 14 أبريل 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-strategy-lab', school: 's-said-business-school-university-of-oxf', subject: 'strategy', format: 'in-person',
+      start: '2027-05-24', days: 5, price: 9500, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/person-programmes/oxford-strategy-lab',
+      title: { en: 'Oxford Strategy Lab', ar: 'مختبر أكسفورد للاستراتيجية' },
+      summary: {
+        en: 'A 5-day on-campus program from Saïd Business School, University of Oxford, running 24 May 2027 to 28 May 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية سعيد للأعمال بجامعة أكسفورد، من 24 مايو 2027 إلى 28 مايو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-impact-measurement-programme', school: 's-said-business-school-university-of-oxf', subject: 'sustainability', format: 'in-person',
+      start: '2027-06-14', days: 5, price: 8500, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/campus-open-programmes/oxford-impact-measurement-programme',
+      title: { en: 'Oxford Impact Measurement Programme', ar: 'برنامج أكسفورد لقياس الأثر' },
+      summary: {
+        en: 'A 5-day on-campus program from Saïd Business School, University of Oxford, running 14 June 2027 to 18 June 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية سعيد للأعمال بجامعة أكسفورد، من 14 يونيو 2027 إلى 18 يونيو 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-programme-on-valuation-of-priva', school: 's-said-business-school-university-of-oxf', subject: 'finance', format: 'in-person',
+      start: '2027-10-11', days: 5, price: 9500, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/campus-open-programmes/oxford-programme-valuation-private-assets',
+      title: { en: 'Oxford Programme on Valuation of Private Assets', ar: 'برنامج أكسفورد لتقييم الأصول الخاصة' },
+      summary: {
+        en: 'A 5-day on-campus program from Saïd Business School, University of Oxford, running 11 October 2027 to 15 October 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية سعيد للأعمال بجامعة أكسفورد، من 11 أكتوبر 2027 إلى 15 أكتوبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-sustainable-business-programme', school: 's-said-business-school-university-of-oxf', subject: 'sustainability', format: 'in-person',
+      start: '2027-10-18', days: 5, price: 8500, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/person-programmes/oxford-sustainable-business-programme',
+      title: { en: 'Oxford Sustainable Business Programme', ar: 'برنامج أكسفورد للأعمال المستدامة' },
+      summary: {
+        en: 'A 5-day on-campus program from Saïd Business School, University of Oxford, running 18 October 2027 to 22 October 2027.',
+        ar: 'برنامج حضوري لمدة 5 أيام من كلية سعيد للأعمال بجامعة أكسفورد، من 18 أكتوبر 2027 إلى 22 أكتوبر 2027.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-ai-driven-business-transformati', school: 's-said-business-school-university-of-oxf', subject: 'digital', format: 'online',
+      start: null, days: null, price: 6600, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-ai-driven-business-transformation-executive-programme', duration: { en: '5 months', ar: '5 أشهر' },
+      title: {
+        en: 'Oxford AI-Driven Business Transformation Executive Programme',
+        ar: 'برنامج أكسفورد التنفيذي لتحول الأعمال المدفوع بالذكاء الاصطناعي'
+      },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 5 months. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 5 أشهر. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-alternative-investment-series', school: 's-said-business-school-university-of-oxf', subject: 'finance', format: 'online',
+      start: null, days: null, price: 5653, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/oxford-alternative-investment-series', duration: { en: '18 weeks', ar: '18 أسبوعًا' },
+      title: { en: 'Oxford Alternative Investment Series', ar: 'سلسلة أكسفورد للاستثمارات البديلة' },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 18 weeks. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 18 أسبوعًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-artificial-intelligence-in-mark', school: 's-said-business-school-university-of-oxf', subject: 'marketing', format: 'online',
+      start: null, days: null, price: 3868, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-artificial-intelligence-marketing-series', duration: { en: '14 weeks', ar: '14 أسبوعًا' },
+      title: {
+        en: 'Oxford Artificial Intelligence in Marketing Series',
+        ar: 'سلسلة أكسفورد للذكاء الاصطناعي في التسويق'
+      },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 14 weeks. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 14 أسبوعًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-artificial-intelligence-in-trad', school: 's-said-business-school-university-of-oxf', subject: 'finance', format: 'online',
+      start: null, days: null, price: 3868, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-artificial-intelligence-trading-series', duration: { en: '12 weeks', ar: '12 أسبوعًا' },
+      title: { en: 'Oxford Artificial Intelligence in Trading Series', ar: 'سلسلة أكسفورد للذكاء الاصطناعي في التداول' },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 12 weeks. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 12 أسبوعًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-digital-marketing-disruptive-st', school: 's-said-business-school-university-of-oxf', subject: 'marketing', format: 'online',
+      start: null, days: null, price: 2100, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-digital-marketing-disruptive-strategy-programme', duration: { en: '8 weeks', ar: '8 أسابيع' },
+      title: {
+        en: 'Oxford Digital Marketing: Disruptive Strategy Programme',
+        ar: 'برنامج أكسفورد للتسويق الرقمي: استراتيجية التغيير الجذري'
+      },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 8 weeks. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 8 أسابيع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-entrepreneurship-venture-creati', school: 's-said-business-school-university-of-oxf', subject: 'entrepreneurship', format: 'online',
+      start: null, days: null, price: 2100, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/online-learning/oxford-entrepreneurship-venture-creation-programme', duration: { en: '6 weeks', ar: '6 أسابيع' },
+      title: {
+        en: 'Oxford Entrepreneurship: Venture Creation Programme',
+        ar: 'برنامج أكسفورد لريادة الأعمال: تأسيس المشاريع الناشئة'
+      },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 6 weeks. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 6 أسابيع. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-executive-diploma-in-strategy-a', school: 's-said-business-school-university-of-oxf', subject: 'strategy', format: 'in-person',
+      start: null, days: null, price: 36370, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/oxford-executive-diplomas/oxford-executive-diploma-strategy-and-innovation', duration: { en: '1 year, part time (four modules)', ar: 'سنة واحدة، دوام جزئي (4 وحدات)' },
+      title: {
+        en: 'Oxford Executive Diploma in Strategy and Innovation',
+        ar: 'دبلوم أكسفورد التنفيذي في الاستراتيجية والابتكار'
+      },
+      summary: {
+        en: 'An on-campus program from Saïd Business School, University of Oxford, 1 year, part time (four modules). Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية سعيد للأعمال بجامعة أكسفورد، سنة واحدة، دوام جزئي (4 وحدات). تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-oxford-venture-series', school: 's-said-business-school-university-of-oxf', subject: 'entrepreneurship', format: 'online',
+      start: null, days: null, price: 6600, currency: 'GBP', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/online-programmes/oxford-venture-series', duration: { en: '22 weeks', ar: '22 أسبوعًا' },
+      title: { en: 'Oxford Venture Series', ar: 'سلسلة أكسفورد للمشاريع الناشئة' },
+      summary: {
+        en: 'An online program from Saïd Business School, University of Oxford, 22 weeks. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سعيد للأعمال بجامعة أكسفورد، 22 أسبوعًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-uq-oxford-executive-leadership-program', school: 's-said-business-school-university-of-oxf', subject: 'leadership', format: 'in-person',
+      start: null, days: null, price: 40000, currency: 'AUD', langs: ['en'], popularity: 50, sourceUrl: 'https://www.sbs.ox.ac.uk/programmes/executive-education/person-programmes/uq-oxford-executive-leadership-programme', duration: { en: '6 months', ar: '6 أشهر' },
+      title: { en: 'UQ-Oxford Executive Leadership Programme', ar: 'برنامج القيادة التنفيذية من UQ وأكسفورد' },
+      summary: {
+        en: 'An on-campus program from Saïd Business School, University of Oxford, 6 months. Dates to be announced by the school.',
+        ar: 'برنامج حضوري من كلية سعيد للأعمال بجامعة أكسفورد، 6 أشهر. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
       id: 'c-developing-your-leadership-presence', school: 's-smith-school-of-business-queen-s-unive', subject: 'leadership', format: 'in-person',
       start: '2026-10-01', days: 2, price: 3900, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/leadership_presence.php', end: '2026-10-02',
       title: { en: 'Developing Your Leadership Presence', ar: 'تطوير حضورك القيادي' },
@@ -14414,7 +16281,7 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-learning-to-lead', school: 's-smith-school-of-business-queen-s-unive', subject: 'leadership', format: 'in-person',
+      id: 'c-learning-to-lead-2', school: 's-smith-school-of-business-queen-s-unive', subject: 'leadership', format: 'in-person',
       start: '2026-11-02', days: 2, price: 2700, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://smith.queensu.ca/executiveeducation/programs/learning-to-lead.php', end: '2026-11-03',
       title: { en: 'Learning to Lead', ar: 'تعلّم القيادة' },
       summary: {
@@ -16591,6 +18458,20 @@ window.MASAR_DATA = (function () {
       id: 'c-lean-six-sigma-white-belt', school: 's-ubc-sauder-school-of-business', subject: 'operations', format: 'online',
       start: null, days: null, price: 195, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/lean-six-sigma-white-belt', duration: { en: '90 days of unlimited access', ar: 'وصول غير محدود لمدة 90 يومًا' },
       title: { en: 'Lean Six Sigma White Belt', ar: 'الحزام الأبيض في Lean Six Sigma' },
+      summary: {
+        en: 'An online program from UBC Sauder School of Business, 90 days of unlimited access. Dates to be announced by the school.',
+        ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، وصول غير محدود لمدة 90 يومًا. تُعلن الكلية المواعيد لاحقًا.'
+      },
+      highlights: {
+        en: [],
+        ar: []
+      },
+      audience: { en: '', ar: '' }
+    },
+    {
+      id: 'c-math-refresher', school: 's-ubc-sauder-school-of-business', subject: 'finance', format: 'online',
+      start: null, days: null, price: 80, currency: 'CAD', langs: ['en'], popularity: 50, sourceUrl: 'https://growth.sauder.ubc.ca/courses/math-refresher', duration: { en: '90 days of unlimited access', ar: 'وصول غير محدود لمدة 90 يومًا' },
+      title: { en: 'Math Refresher', ar: 'مراجعة الرياضيات' },
       summary: {
         en: 'An online program from UBC Sauder School of Business, 90 days of unlimited access. Dates to be announced by the school.',
         ar: 'برنامج عبر الإنترنت من كلية سودر للأعمال بجامعة كولومبيا البريطانية، وصول غير محدود لمدة 90 يومًا. تُعلن الكلية المواعيد لاحقًا.'
@@ -20135,7 +22016,7 @@ window.MASAR_DATA = (function () {
       audience: { en: '', ar: '' }
     },
     {
-      id: 'c-leading-ai-and-digital-transformation', school: 's-wharton-school-university-of-pennsylva', subject: 'digital', format: 'in-person',
+      id: 'c-leading-ai-and-digital-transformat-2', school: 's-wharton-school-university-of-pennsylva', subject: 'digital', format: 'in-person',
       start: '2027-05-03', days: 5, price: 13250, langs: ['en'], popularity: 50, sourceUrl: 'https://executiveeducation.wharton.upenn.edu/for-individuals/all-programs/leading-ai-and-digital-transformation/', end: '2027-05-07',
       title: { en: 'Leading AI and Digital Transformation', ar: 'قيادة الذكاء الاصطناعي والتحول الرقمي' },
       summary: {
@@ -21315,7 +23196,7 @@ window.MASAR_DATA = (function () {
         en: 'Live cohorts and real feedback, not a video library with a certificate at the end.',
         ar: 'دفعات مباشرة وتغذية راجعة حقيقية، لا مكتبة فيديو تنتهي بشهادة.'
       },
-      courses: ['c-risk-management-online-seminar', 'c-change-management-bootcamp', 'c-business-analytics-and-ai-from-data-to', 'c-professional-certificate-in-digital-ma', 'c-business-analytics-for-leaders', 'c-financial-data-analysis-for-leaders-pr', 'c-leading-behavioral-change', 'c-your-path-to-a-board-seat']
+      courses: ['c-oxford-executive-finance-programme', 'c-oxford-sustainability-reporting-and-es', 'c-supply-chain-strategies-for-business-o', 'c-risk-management-online-seminar', 'c-insead-healthcare-ethics-compliance-pr', 'c-change-management-bootcamp', 'c-business-analytics-and-ai-from-data-to', 'c-professional-certificate-in-digital-ma']
     },
 {
       id: 'l-finance',
@@ -21324,7 +23205,7 @@ window.MASAR_DATA = (function () {
         en: 'Enough finance to challenge the numbers you are handed.',
         ar: 'قدر من المعرفة المالية يكفي لمساءلة الأرقام التي تُقدَّم إليك.'
       },
-      courses: ['c-bestyrelsesarbejde-i-pension-forsikrin', 'c-accounting-and-finance-fundamentals', 'c-basisseminar-fit-for-insurance', 'c-financial-data-analysis-for-leaders-pr', 'c-mergers-acquisitions', 'c-financial-analysis-and-business-decisi', 'c-nonprofit-financial-stewardship', 'c-retirement-management-advisor-rma-cert']
+      courses: ['c-oxford-executive-finance-programme', 'c-bestyrelsesarbejde-i-pension-forsikrin', 'c-accounting-and-finance-fundamentals', 'c-basisseminar-fit-for-insurance', 'c-financial-data-analysis-for-leaders-pr', 'c-mergers-acquisitions', 'c-financial-analysis-and-business-decisi', 'c-nonprofit-financial-stewardship']
     },
 {
       id: 'l-negotiation',
