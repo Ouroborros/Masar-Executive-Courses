@@ -446,3 +446,19 @@ Totals across the catalogue: formats {'in-person': 918, 'online': 453, 'blended'
     python3 tools/reset-catalogue.py --write && python3 tools/catalogue-gates.py import/batch-school.json
     python3 tools/merge-catalogue.py import --scraped --write && python3 tools/curate-lists.py --write
     python3 tools/build.py && python3 tools/bundle.py
+
+
+# English only — 2026-10-24 (later the same day)
+
+The operator decided that programmes not taught in English are left out.
+`tools/school-rows-to-csv.py` now drops a row whose printed language list
+does not include English (a bilingual programme that includes English
+stays; a page with no language note counts as English). The drop is
+recorded in `import/courses-school.csv.dropped.csv` as "not taught in
+English (…)". This removed 362 session rows: St. Gallen's German programmes
+(193 rows), HEC Paris's French ones (63), CBS Executive's Danish ones (44),
+IESE's Spanish ones (43) and Esade's Spanish ones (15). The catalogue is
+**27 schools, 1,292 programmes**; St. Gallen falls from 151 to 41, HEC from
+99 to 43, CBS from 66 to 22, IESE from 45 to 22, Esade from 16 to 6. The
+Arabic translations of the dropped titles stay in
+`import/translations-school.json` in case the rule is reversed.

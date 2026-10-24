@@ -295,6 +295,12 @@ def main():
                 r["days"] = ""
             if r.get("format") not in FORMAT_EN:
                 why.append("format '{}'".format(r.get("format")))
+            # English only (operator decision, 2026-10-24): a programme taught
+            # in another language is left out, bilingual ones that include
+            # English stay. A blank language means the page was in English.
+            langs = [l.strip().lower() for l in re.split(r"[,/;]", r.get("langs", "")) if l.strip()]
+            if langs and "en" not in langs:
+                why.append("not taught in English ({})".format(", ".join(langs)))
             if why:
                 dropped.append({"file": os.path.basename(path), "school": r["school"],
                                 "title": r.get("title", ""), "start": r.get("start", ""),

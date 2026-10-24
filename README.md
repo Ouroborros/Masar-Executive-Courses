@@ -41,6 +41,11 @@ announced"), `price: null` ("fee not published by the school") or
 converters, gates and merge validator all accept these blanks; a filled
 cell that does not parse is still an error. See `docs/DESIGN.md`.
 
+Only programmes taught in English are listed. A programme the school
+prints as taught in German, French, Spanish or Danish is dropped at
+conversion and recorded in `import/courses-school.csv.dropped.csv`; a
+bilingual programme that includes English stays.
+
 ## Photographs
 
 Every photograph is an openly licensed image from Wikimedia Commons: the
